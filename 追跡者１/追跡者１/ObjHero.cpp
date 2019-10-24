@@ -12,10 +12,10 @@ using namespace GameL;
 //イニシャライズ
 void CObjHero::Init()
 {
-	float m_px;//位置
-	float m_py;
-	float m_vx;//移動ベクトル
-	float m_vy;
+	m_px=0.0;//位置
+	m_py=0.0;
+	m_vx;//移動ベクトル
+	m_vy;
 	m_posture = 1.0f;//右向き0.0f 左向き1.0f
 }
 
@@ -53,8 +53,8 @@ void CObjHero::Draw()
 
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 64.0f;
-	src.m_bottom = 64.0f;
+	src.m_right = 160.0f;
+	src.m_bottom = 128.0f;
 
 	dst.m_top = 0.0f + m_py;
 	dst.m_left = 0.0f + m_px;
