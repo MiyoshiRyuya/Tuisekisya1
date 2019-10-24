@@ -4,10 +4,12 @@
 
 //GameLで使用するヘッダー
 #include "GameL\DrawTexture.h"
+#include "GameL\SceneObjManager.h"
 
 //使用するネームスペース
 using namespace GameL;
 
+//使用するヘッダー
 #include "SceneMain.h"
 #include "GameHead.h"
 
@@ -25,7 +27,7 @@ CSceneMain::~CSceneMain()
 void CSceneMain::InitScene()
 {
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
-	Draw::LoadImage(L"Hero.png", 0, TEX_SIZE_512);
+	Draw::LoadImage(L"image.png", 0, TEX_SIZE_512);
 
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
