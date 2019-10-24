@@ -1,5 +1,5 @@
 #pragma once
-#include"GameL/SceneObjManager.h"
+#include"GameL\SceneObjManager.h"
 using namespace GameL;
 
 //オブジェクト：敵
