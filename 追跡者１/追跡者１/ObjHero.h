@@ -16,4 +16,9 @@ public:
 	void Draw();//ƒhƒ[
 
 private:
+		float m_px;
+		float m_py;
+		float m_vx;
+		float m_vy;
+		float m_posture;
 };
