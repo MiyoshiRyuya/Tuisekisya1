@@ -27,22 +27,22 @@ void CObjHero::Action()
 	m_vy = 0.0f;
 
 	//ƒL[‚Ì“ü—Í•ûŒü
-	if (Input::GetVKey(VK_'D') == true)
+	if (Input::GetVKey('D') == true)
 	{
 		m_vx += 2.0f;
 	}
 
-	if (Input::GetVKey(VK_LEFT) == true)
+	if (Input::GetVKey('A') == true)
 	{
 		m_vx -= 2.0f;
 	}
 
-	if (Input::GetVKey(VK_UP) == true)
+	if (Input::GetVKey('W') == true)
 	{
 		m_vy -= 2.0f;
 	}
 
-	if (Input::GetVKey(VK_DOWN) == true)
+	if (Input::GetVKey('S') == true)
 	{
 		m_vy += 2.0f;
 	}
