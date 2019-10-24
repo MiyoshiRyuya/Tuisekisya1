@@ -27,14 +27,24 @@ void CObjHero::Action()
 	m_vy = 0.0f;
 
 	//キーの入力方向
-	if (Input::GetVKey(VK_RIGHT) == true)
+	if (Input::GetVKey(VK_'D') == true)
 	{
-		m_vx = +1.0f;
+		m_vx += 2.0f;
 	}
 
 	if (Input::GetVKey(VK_LEFT) == true)
 	{
-		m_vy = -1.0f;
+		m_vx -= 2.0f;
+	}
+
+	if (Input::GetVKey(VK_UP) == true)
+	{
+		m_vy -= 2.0f;
+	}
+
+	if (Input::GetVKey(VK_DOWN) == true)
+	{
+		m_vy += 2.0f;
 	}
 
 	//位置の更新
@@ -54,7 +64,7 @@ void CObjHero::Draw()
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
 	src.m_right = 160.0f;
-	src.m_bottom = 128.0f;
+	src.m_bottom = 160.0f;
 
 	dst.m_top = 0.0f + m_py;
 	dst.m_left = 0.0f + m_px;
