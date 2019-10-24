@@ -18,25 +18,25 @@ void CObjEnemy::Action()
 {
 	m_vx = -1.0f;
 	m_vy = 0.0f;
-	float r = 0.0f;
-	r = m_vx * m_vx + m_vy * m_vy;
-	r = sqrt(r);
-
-	if (r == 0.0f)
+	m_x = ex;
+	m_y = ey;
+	if (ex > m_vx)
 	{
-		;
+		ex--;
 	}
-	else
+	if (ex < m_vx)
 	{
-		m_vx *= 1.0f / r * m_vx;
-		m_vy *= 1.0f / r * m_vy;
+		ex++;
+	}
+	if (ey > m_vy)
+	{
+		ey--;
+	}
+	if (ey < m_vy)
+	{
+		ey++;
 	}
 
-	m_vx *= 1.5f;
-	m_vy *= 1.5f;
-
-	m_x += m_vx;
-	m_y += m_vy;
 }
 void CObjEnemy::Draw()
 {

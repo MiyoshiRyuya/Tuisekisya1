@@ -13,6 +13,8 @@ public:
 	void Draw();
 private:
 
+	float ex;
+	float ey;
 	float m_x;
 	float m_y;
 	float m_vx;
