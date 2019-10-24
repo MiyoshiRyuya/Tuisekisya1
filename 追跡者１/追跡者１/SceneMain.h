@@ -1,5 +1,5 @@
 #pragma once
-//使用するヘッダーファイル」
+//使用するヘッダーファイル
 #include "GameL\SceneManager.h"
 
 //使用するネームスペース
