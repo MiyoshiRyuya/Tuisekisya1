@@ -35,11 +35,11 @@ void CObjTitle::Draw()
 {
 	float c[4] = { 1,1,1,1 };
 	
-	//仮マウス表示位置
+	//マウス表示位置
 	wchar_t str[256];
 	swprintf_s(str, L"x=%f,y=%f", m_mou_x, m_mou_y);
 	Font::StrDraw(str, 20, 20, 12, c);
-	//仮マウスのボタンの状態
+	//マウスのボタンの状態
 	if (m_mou_r == true)
 		Font::StrDraw(L"R=押している", 20, 30, 12, c);
 	else
