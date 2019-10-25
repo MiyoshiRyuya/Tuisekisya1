@@ -4,7 +4,7 @@
 //使用するネームスペース
 using namespace GameL;
 
-class CObjstage :public CObj
+class CObjstage:public CObj
 {
 public:
 	CObjstage();
@@ -17,4 +17,5 @@ public:
 private:
 	int m_map[10][10];
 };
+
 

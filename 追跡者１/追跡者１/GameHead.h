@@ -7,8 +7,11 @@ enum OBJ_NAME
 	//ゲームで使うオブジェクトの名前
 	//OBJ_○○と表記
 	OBJ_HERO,
-	OBJ_ENEMY,
 	OBJ_STAGE,
+	OBJ_ENEMY,
+
+
+	OBJ_TITLE,
 };
 //------------------------------------------------
 
@@ -53,15 +56,18 @@ struct UserData
 
 //ゲームシーンオブジェクトヘッダ------------------
 #include "ObjHero.h"
-#include"ObjEnemy.h"
 #include "Objstage.h"
+#include "ObjEnemy.h"
+
+#include "ObjTitle.h"
 //------------------------------------------------
 
 //ゲームシーンクラスヘッダ------------------------
 #include "SceneMain.h"
+#include "SceneTitle.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMain
+#define SET_GAME_START  CSceneTitle
 //-----------------------------------------------
