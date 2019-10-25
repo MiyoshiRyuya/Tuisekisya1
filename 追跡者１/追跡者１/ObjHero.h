@@ -15,6 +15,10 @@ public:
 	void Action();//アクション
 	void Draw();//ドロー
 
+	float GetX() { return m_px; }
+	float GetY() { return m_py; }
+
+
 private:
 		float m_px;
 		float m_py;

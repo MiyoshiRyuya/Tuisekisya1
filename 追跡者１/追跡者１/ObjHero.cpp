@@ -51,6 +51,13 @@ void CObjHero::Action()
 		m_vy += 2.0f;
 	}
 
+	if (m_vx+32.0f>800.0f)
+	{
+		m_vx = 800.0f - 32.0f;
+	}
+
+
+
 	//à íuÇÃçXêV
 	m_px += m_vx;
 	m_py += m_vy;
