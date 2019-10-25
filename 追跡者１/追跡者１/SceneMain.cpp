@@ -36,6 +36,10 @@ void CSceneMain::InitScene()
 	//敵オブジェクト
 	CObjEnemy*obj_enemy = new CObjEnemy();
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
+
+	//blockオブジェクト作成
+	CObjstage*objb = new CObjstage();
+	Objs::InsertObj(objb, OBJ_STAGE,9);
 }
 //ゲームメイン実行中メソッド
 void CSceneMain::Scene()
