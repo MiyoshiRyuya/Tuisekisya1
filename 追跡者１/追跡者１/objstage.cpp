@@ -44,6 +44,14 @@ void CObjstage::Draw()
 	RECT_F src;
 	RECT_F dst;
 
+
+
+
+
+
+
+
+
 	src.m_top = 0.0f;
 	src.m_left = 320.0f;
 	src.m_right = src.m_left + 64.0f;
