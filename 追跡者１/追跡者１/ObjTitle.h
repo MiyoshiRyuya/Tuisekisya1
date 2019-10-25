@@ -5,22 +5,21 @@
 //使用するネームスペース
 using namespace GameL;
 
-//オブジェクト:主人公
-class CObjHero :public CObj
+//オブジェクト:タイトル
+class CObjTitle :public CObj
 {
 public:
-	CObjHero() {};
-	~CObjHero() {};
+	CObjTitle() {};
+	~CObjTitle() {};
 	void Init();//イニシャライズ
 	void Action();//アクション
 	void Draw();//ドロー
 
 private:
-		float m_px;
-		float m_py;
-		float m_vx;
-		float m_vy;
-		float m_posture;
-		float m_mos_x; //マウスX座標
-		float m_mos_y; //マウスY座標
+	float m_mou_x;//マウスの位置X
+	float m_mou_y;//マウスの位置Y
+	bool m_mou_r;//マウスの右ボタン
+	bool m_mou_l;//マウスの左ボタン
+
 };
+
