@@ -24,7 +24,8 @@ void CObjHero::Init()
 //アクション
 void CObjHero::Action()
 {
-	//マウス
+	//マウス操作
+
 	//移動ベクトルの破棄
 	m_vx = 0.0f;
 	m_vy = 0.0f;
