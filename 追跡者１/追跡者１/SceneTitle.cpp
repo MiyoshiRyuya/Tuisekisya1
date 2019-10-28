@@ -28,11 +28,11 @@ CSceneTitle::~CSceneTitle()
 void CSceneTitle::InitScene()
 {
 	//音楽情報読み込み
-	//Audio::LoadAudio(0, L"TitleBGM.wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::LoadAudio(0, L"TitleBGM.wav", SOUND_TYPE::BACK_MUSIC);
 
 	//バックミュージックスタート
 	//float Volume = Audio::VolumeMaster(-0.8f);//マスターボリュームを0.8下げる
-	//Audio::Start(0);
+	//Audio::Start(0);//BGMスタート
 
 	//外部グラフィックファイルを読み込み1番目に登録(512*512)
 	//Draw::LoadImage(L"Title.png", 1, TEX_SIZE_512);
