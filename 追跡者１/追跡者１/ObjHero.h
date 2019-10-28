@@ -17,7 +17,18 @@ public:
 
 	float GetX() { return m_px; }
 	float GetY() { return m_py; }
+	float GetVY() { return m_vy; }
+	float GetVX() { return m_vx; }
 
+	void SetX(float x) { m_px = x; }
+	void SetY(float y) { m_py = y; }
+	void SetVY(float vy) { m_vy = vy; }
+	void SetVX(float vx) { m_vx = vx; }
+
+	void SetUp(bool b) { m_hit_up = b; }
+	void SetDown(bool b) { m_hit_down = b; }
+	void SetLeft(bool b) { m_hit_left = b; }
+	void SetRight(bool b) { m_hit_right = b; }
 
 private:
 		float m_px;
@@ -26,7 +37,13 @@ private:
 		float m_vy;
 		float m_x;
 		float m_y;
-		float m_posture;
+		float m_posture; //姿勢
 		float m_mos_x; //マウスX座標
 		float m_mos_y; //マウスY座標
+
+		//stageとの衝突確認用
+		bool m_hit_up;
+		bool m_hit_down;
+		bool m_hit_left;
+		bool m_hit_right;
 };
