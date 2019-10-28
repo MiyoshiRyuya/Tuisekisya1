@@ -24,7 +24,7 @@ void CObjstage::Init()
 //アクション
 void CObjstage::Action()
 {
-
+	//a
 }
 //ドロー
 void CObjstage::Draw()
