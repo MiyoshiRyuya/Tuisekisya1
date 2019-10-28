@@ -2,6 +2,7 @@
 #include "GameL\DrawTexture.h"
 #include "GameL\WinInputs.h"
 #include "GameL\SceneManager.h"
+#include "GameL\HitBoxManager.h"
 
 #include "GameHead.h"
 #include "ObjHero.h"
@@ -12,13 +13,17 @@ using namespace GameL;
 //イニシャライズ
 void CObjHero::Init()
 {
+	
 	m_px=0.0f;//位置
 	m_py=0.0f;
-	m_vx;//移動ベクトル
-	m_vy;
+	m_vx=0;//移動ベクトル
+	m_vy=0;
 	m_posture = 1.0f;//右向き0.0f 左向き1.0f
 	m_mos_x = 0.0f;
 	m_mos_y = 0.0f;
+
+	Hits::SetHitBox(this, m_vx, m_vy, 40,60, ELEMENT_PLAYER, OBJ_HERO, 1);
+
 }
 
 //アクション
@@ -56,6 +61,10 @@ void CObjHero::Action()
 		m_vx = 800.0f - 32.0f;
 	}
 
+	CHitBox*hit = Hits::GetHitBox(this);
+	hit->SetPos(m_px+27, m_py+5);
+
+
 
 
 	//位置の更新
@@ -74,8 +83,8 @@ void CObjHero::Draw()
 
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 160.0f;
-	src.m_bottom = 160.0f;
+	src.m_right = 175.0f;
+	src.m_bottom = 133.0f;
 
 	dst.m_top = 0.0f + m_py;
 	dst.m_left = 0.0f + m_px;

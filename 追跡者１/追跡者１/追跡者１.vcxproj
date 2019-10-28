@@ -131,9 +131,21 @@
     <ClCompile Include="GameL\WinInputs.cpp" />
     <ClCompile Include="ObjEnemy.cpp" />
     <ClCompile Include="ObjHero.cpp" />
+    <ClCompile Include="ObjItem.cpp" />
+    <ClCompile Include="ObjmainSave.cpp" />
+    <ClCompile Include="ObjMenu.cpp" />
+    <ClCompile Include="ObjSave1.cpp" />
+    <ClCompile Include="ObjSave2.cpp" />
+    <ClCompile Include="ObjSave3.cpp" />
     <ClCompile Include="objstage.cpp" />
     <ClCompile Include="ObjTitle.cpp" />
+    <ClCompile Include="SceneItem.cpp" />
     <ClCompile Include="SceneMain.cpp" />
+    <ClCompile Include="ScenemainSave.cpp" />
+    <ClCompile Include="SceneMenu.cpp" />
+    <ClCompile Include="SceneSave1.cpp" />
+    <ClCompile Include="SceneSave2.cpp" />
+    <ClCompile Include="SceneSave3.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -152,9 +164,22 @@
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjEnemy.h" />
     <ClInclude Include="ObjHero.h" />
+    <ClInclude Include="ObjItem.h" />
+    <ClInclude Include="ObjmainSave.h" />
+    <ClInclude Include="ObjMenu.h" />
+    <ClInclude Include="ObjSave1.h" />
+    <ClInclude Include="ObjSave2.h" />
+    <ClInclude Include="ObjSave3.h" />
     <ClInclude Include="objstage.h" />
     <ClInclude Include="ObjTitle.h" />
+    <ClInclude Include="SceneItem.h" />
     <ClInclude Include="SceneMain.h" />
+    <ClInclude Include="ScenemainSave.h" />
+    <ClInclude Include="SceneMenu.h" />
+    <ClInclude Include="SceneSave1.h" />
+    <ClInclude Include="SceneSave1.h" />
+    <ClInclude Include="SceneSave2.h" />
+    <ClInclude Include="SceneSave3.h" />
     <ClInclude Include="SceneTitle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
