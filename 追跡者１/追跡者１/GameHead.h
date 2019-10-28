@@ -11,6 +11,7 @@ enum OBJ_NAME
 	OBJ_ENEMY,
 
 	OBJ_TITLE,
+	OBJ_GAME_OVER,
 };
 //------------------------------------------------
 
@@ -59,11 +60,13 @@ struct UserData
 #include "ObjEnemy.h"
 
 #include "ObjTitle.h"
+#include "ObjGameOver.h"
 //------------------------------------------------
 
 //ゲームシーンクラスヘッダ------------------------
 #include "SceneMain.h"
 #include "SceneTitle.h"
+#include "SceneGameOver.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
