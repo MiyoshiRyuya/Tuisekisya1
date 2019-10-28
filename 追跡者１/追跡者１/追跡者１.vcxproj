@@ -176,11 +176,13 @@
     <ClInclude Include="SceneMain.h" />
     <ClInclude Include="ScenemainSave.h" />
     <ClInclude Include="SceneMenu.h" />
-   
     <ClInclude Include="SceneSave1.h" />
     <ClInclude Include="SceneSave2.h" />
     <ClInclude Include="SceneSave3.h" />
     <ClInclude Include="SceneTitle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="x64\Debug\SceneTitle.obj" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

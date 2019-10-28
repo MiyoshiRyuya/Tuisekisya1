@@ -97,9 +97,6 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ObjItem.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjItem.cpp">
       <Filter>ソース ファイル\Item</Filter>
     </ClCompile>
     <ClCompile Include="SceneItem.cpp">
@@ -134,6 +131,9 @@
     </ClCompile>
     <ClCompile Include="SceneMenu.cpp">
       <Filter>ソース ファイル\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjItem.cpp">
+      <Filter>ソース ファイル\Item</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -191,9 +191,6 @@
     <ClInclude Include="SceneTitle.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjItem.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="ObjHero.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
@@ -239,5 +236,13 @@
     <ClInclude Include="SceneSave1.h">
       <Filter>ソース ファイル\セーブスロット1</Filter>
     </ClInclude>
+    <ClInclude Include="ObjItem.h">
+      <Filter>ソース ファイル\Item</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="x64\Debug\SceneTitle.obj">
+      <Filter>ソース ファイル</Filter>
+    </Object>
   </ItemGroup>
 </Project>
