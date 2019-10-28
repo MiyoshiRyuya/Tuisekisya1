@@ -25,7 +25,22 @@ void CObjEnemy::Action()
 	//移動ベクトルを座標にに加算する
 	m_x += m_vx;
 	m_y += m_vy;
-
+	if (m_x>m_vx)
+	{
+		m_x--;
+	}
+	if (m_x < m_vx)
+	{
+		m_x++;
+	}
+	if (m_y > m_vy)
+	{
+		m_y--;
+	}
+	if (m_y < m_vy)
+	{
+		m_y++;
+	}
 
 }
 void CObjEnemy::Draw()
