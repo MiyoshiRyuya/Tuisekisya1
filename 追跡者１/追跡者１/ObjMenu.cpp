@@ -4,6 +4,7 @@
 #include"GameL\SceneManager.h"
 #include"GameL\DrawTexture.h"
 
+#include "SceneMenu.h"
 #include "GameHead.h"
 #include "ObjMenu.h"
 #include "ObjItem.h"

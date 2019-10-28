@@ -16,13 +16,13 @@ void CObjHero::Init()
 	
 	m_px=0.0f;//位置
 	m_py=0.0f;
-	m_vx;//移動ベクトル
-	m_vy;
+	m_vx=0;//移動ベクトル
+	m_vy=0;
 	m_posture = 1.0f;//右向き0.0f 左向き1.0f
 	m_mos_x = 0.0f;
 	m_mos_y = 0.0f;
 
-	Hits::SetHitBox(this, m_x, m_y, 38, 58, ELEMENT_PLAYER, OBJ_HERO, 1);
+	Hits::SetHitBox(this, m_vx, m_vy, 32,64, ELEMENT_PLAYER, OBJ_HERO, 1);
 
 }
 
@@ -62,7 +62,7 @@ void CObjHero::Action()
 	}
 
 	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_vx, m_y);
+	hit->SetPos(m_px, m_py);
 
 
 
