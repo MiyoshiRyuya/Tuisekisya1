@@ -4,7 +4,7 @@
 
 //GameLで使用するヘッダー
 #include "GameL\SceneObjManager.h"
-#include "GameL\DrawFont.h"
+#include"GameL\DrawFont.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -14,30 +14,30 @@ using namespace GameL;
 #include"GameHead.h"
 
 //コンストラクタ
-CSceneItem::CSceneItem()
+CScenemainSave::CScenemainSave()
 {
 
 }
 
 //デストラクタ
-CSceneItem::~CSceneItem()
+CScenemainSave::~CScenemainSave()
 {
 
 }
 
 //ゲームメイン初期化メソッド
-void CSceneItem::InitScene()
+void CScenemainSave::InitScene()
 {
 	//出力させる文字のグラフィックを作成
-	Font::SetStrTex(L"催涙スプレー");
+	Font::SetStrTex(L"セーブ画面");
 
-	//アイテムオブジェクト作成
-	CObjItem* obj = new CObjItem();
-	Objs::InsertObj(obj, OBJ_ITEM, 10);
+	//セーブ画面オブジェクト作成
+	CObjmainSave* obj = new CObjmainSave();      //セーブ画面オブジェクト作成
+	Objs::InsertObj(obj, OBJ_MAINSAVE, 10);  //主人公オブジェクト登録
 }
 
 //ゲームメイン実行中メソッド
-void CSceneItem::Scene()
+void CScenemainSave::Scene()
 {
 
 }

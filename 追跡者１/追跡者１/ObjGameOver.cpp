@@ -5,14 +5,14 @@
 #include "GameL\Audio.h"
 
 #include "GameHead.h"
-#include "ObjTitle.h"
-#include "SceneMain.h"
+#include "ObjGameOver.h"
+
 
 //使用するネームスペース
 using namespace GameL;
 
 //イニシャライズ
-void CObjTitle::Init()
+void CObjGameOver::Init()
 {
 	m_mou_x = 0.0f;
 	m_mou_y = 0.0f;
@@ -21,7 +21,7 @@ void CObjTitle::Init()
 }
 
 //アクション
-void CObjTitle::Action()
+void CObjGameOver::Action()
 {
 	//マウスの位置を取得
 	m_mou_x = (float)Input::GetPosX();
@@ -31,22 +31,22 @@ void CObjTitle::Action()
 	m_mou_l = Input::GetMouButtonL();
 
 	//マウス左クリックを押したらシーンメインに移行する
-	if (m_mou_x > 356 && m_mou_x < 445 && m_mou_y>345 && m_mou_y < 364)
+	if (m_mou_x > 356 && m_mou_x < 445 && m_mou_y>400 && m_mou_y < 450)
 	{
 		//マウスが押されたらシーンメインに移動
 		if (m_mou_l == true)
 		{
-			Scene::SetScene(new CSceneMain());
+			Scene::SetScene(new CSceneTitle());
 		}
 	}
 }
 
 //ドロー
-void CObjTitle::Draw()
+void CObjGameOver::Draw()
 {
 	float c[4] = { 1,1,1,1 };
-	
-	
+
+
 
 	RECT_F src;
 	RECT_F dst;
@@ -54,7 +54,7 @@ void CObjTitle::Draw()
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
 	src.m_right = 512.0f;
-	src.m_bottom = 209.0f;
+	src.m_bottom = 230.0f;
 
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f;
@@ -63,13 +63,13 @@ void CObjTitle::Draw()
 
 	Draw::Draw(0, &src, &dst, c, 0.0f);
 
-	//外部グラフィックファイルを読み込み0番目に登録(512*209)
-	Draw::LoadImage(L"Title.png", 0, TEX_SIZE_512);
+	//外部グラフィックファイルを読み込み0番目に登録(512*230)
+	Draw::LoadImage(L"GameOverScene.png", 0, TEX_SIZE_512);
+
+	Font::StrDraw(L"Left-Click", 360, 410, 24, c);
+
 	
 
-
-	Font::StrDraw(L"NEW GAME", 360, 350, 23, c);
-	Font::StrDraw(L"CONTINUE", 360, 410, 23, c);
 	
 
 }

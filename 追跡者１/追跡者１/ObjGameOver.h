@@ -6,11 +6,11 @@
 using namespace GameL;
 
 //オブジェクト:タイトル
-class CObjTitle :public CObj
+class CObjGameOver :public CObj
 {
 public:
-	CObjTitle() {};
-	~CObjTitle() {};
+	CObjGameOver() {};
+	~CObjGameOver() {};
 	void Init();//イニシャライズ
 	void Action();//アクション
 	void Draw();//ドロー
@@ -22,4 +22,3 @@ private:
 	bool m_mou_l;//マウスの左ボタン
 
 };
-
