@@ -35,15 +35,26 @@ void CObjstage::Draw()
 	RECT_F dst;
 
 	src.m_top = 0.0f;
-	src.m_left = 0.0f;
-	src.m_right = 160.0f;
-	src.m_bottom = 160.0;
+	src.m_left = 320.0f;
+	src.m_right = src.m_left+64.0f;
+	src.m_bottom = 64.0;
 
-	dst.m_top =  0.0f;
-	dst.m_left = 0.0f;
-	dst.m_right = 64.0f;
-	dst.m_bottom = 64.0;
+	for (int i = 0; i < 20; i++)
+	{
+		for (int j = 0; j < 20; j++)
+		{
+			if (m_map[i][j])
+			{
+				//•\Ž¦ˆÊ’u‚ÌÝ’è
+				dst.m_top = i * 32.0f;
+				dst.m_left = j * 32.0f + m_scroll;
+				dst.m_right = dst.m_left+32.0f;
+				dst.m_bottom = dst.m_top+32.0;
 
-	Draw::Draw(0, &src, &dst, c, 0.0f);
+				Draw::Draw(1, &src, &dst, c, 0.0f);
+			}
+		}
+	}
+
 
 }
