@@ -224,5 +224,8 @@
     <ClInclude Include="SceneMenu.h">
       <Filter>ソース ファイル\Menu</Filter>
     </ClInclude>
+    <ClInclude Include="SceneSave1.h">
+      <Filter>ソース ファイル\セーブスロット1</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
