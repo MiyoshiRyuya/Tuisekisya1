@@ -24,6 +24,8 @@ private:
 		float m_py;
 		float m_vx;
 		float m_vy;
+		float m_x;
+		float m_y;
 		float m_posture;
 		float m_mos_x; //マウスX座標
 		float m_mos_y; //マウスY座標
