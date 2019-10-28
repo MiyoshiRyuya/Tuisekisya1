@@ -6,6 +6,7 @@
 #include "SceneMain.h"
 #include "SceneTitle.h"
 
+#include "SceneMenu.h"
 #include "GameHead.h"
 #include "ObjMenu.h"
 #include "ObjItem.h"
