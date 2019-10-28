@@ -25,6 +25,16 @@ void CObjItem::Action()
 	//マウスのボタンの状態
 	m_mou_r = Input::GetMouButtonR();
 	m_mou_l = Input::GetMouButtonL();
+
+	//マウスの位置とクリックする場所で当たり判定
+	if (m_mou_x > 150 && m_mou_x < 210 && m_mou_y>110 && m_mou_y < 150)
+	{
+		//マウスの左が押されたらアイテム画面に移動する
+		if (m_mou_l == true)
+		{
+			Scene::SetScene(new CSceneMenu());
+		}
+	}
 }
 
 //ドロー
@@ -53,5 +63,7 @@ void CObjItem::Draw()
 
 	Font::StrDraw(L"屋根裏部屋の鍵", 190, 340, 64, c);
 
-	Font::StrDraw(L"十字架",300, 460, 64, c);
+	Font::StrDraw(L"十字架", 300, 460, 64, c);
+
+	Font::StrDraw(L"←", 150, 100, 64, c);
 }

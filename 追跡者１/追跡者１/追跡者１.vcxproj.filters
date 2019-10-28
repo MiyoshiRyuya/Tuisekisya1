@@ -13,8 +13,23 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ソース ファイル\Item">
+      <UniqueIdentifier>{9b52114c-5713-4afd-828f-eb41b447119f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\mainSave">
+      <UniqueIdentifier>{fe70343e-1eda-48b6-b5c2-0f157f5eedbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\セーブスロット1">
+      <UniqueIdentifier>{136ae6e4-b616-4e98-aa44-4aed89df6b3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\セーブスロット2">
+      <UniqueIdentifier>{650c72f8-b945-4bf8-89e9-6dbae3264978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\セーブスロット3">
+      <UniqueIdentifier>{0033fc82-399f-4c70-af4f-02dc5da637c8}</UniqueIdentifier>
+    </Filter>
     <Filter Include="ソース ファイル\Menu">
-      <UniqueIdentifier>{1e660f1e-bf3b-4305-946b-4c1e09c0f1cf}</UniqueIdentifier>
+      <UniqueIdentifier>{3ced9b1e-fdcc-4715-999c-2d980d697c62}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -84,6 +99,42 @@
     <ClCompile Include="ObjItem.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="ObjItem.cpp">
+      <Filter>ソース ファイル\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneItem.cpp">
+      <Filter>ソース ファイル\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjmainSave.cpp">
+      <Filter>ソース ファイル\mainSave</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenemainSave.cpp">
+      <Filter>ソース ファイル\mainSave</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSave1.cpp">
+      <Filter>ソース ファイル\セーブスロット1</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSave1.cpp">
+      <Filter>ソース ファイル\セーブスロット1</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSave2.cpp">
+      <Filter>ソース ファイル\セーブスロット2</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSave2.cpp">
+      <Filter>ソース ファイル\セーブスロット2</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSave3.cpp">
+      <Filter>ソース ファイル\セーブスロット3</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSave3.cpp">
+      <Filter>ソース ファイル\セーブスロット3</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMenu.cpp">
+      <Filter>ソース ファイル\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMenu.cpp">
+      <Filter>ソース ファイル\Menu</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -148,6 +199,42 @@
     </ClInclude>
     <ClInclude Include="objstage.h">
       <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjItem.h">
+      <Filter>ソース ファイル\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneItem.h">
+      <Filter>ソース ファイル\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjmainSave.h">
+      <Filter>ソース ファイル\mainSave</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenemainSave.h">
+      <Filter>ソース ファイル\mainSave</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSave1.h">
+      <Filter>ソース ファイル\セーブスロット1</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSave1.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSave2.h">
+      <Filter>ソース ファイル\セーブスロット2</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSave2.h">
+      <Filter>ソース ファイル\セーブスロット2</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSave3.h">
+      <Filter>ソース ファイル\セーブスロット3</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSave3.h">
+      <Filter>ソース ファイル\セーブスロット3</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMenu.h">
+      <Filter>ソース ファイル\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMenu.h">
+      <Filter>ソース ファイル\Menu</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

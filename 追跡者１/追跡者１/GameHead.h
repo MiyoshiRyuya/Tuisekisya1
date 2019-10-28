@@ -10,6 +10,13 @@ enum OBJ_NAME
 	OBJ_STAGE,
 	OBJ_ENEMY,
 
+	OBJ_MENU,
+	OBJ_MAINSAVE,
+	OBJ_SAVE1,
+	OBJ_SAVE2,
+	OBJ_SAVE3,
+	OBJ_ITEM,
+
 	OBJ_TITLE,
 };
 //------------------------------------------------
@@ -58,12 +65,25 @@ struct UserData
 #include "Objstage.h"
 #include "ObjEnemy.h"
 
+#include"ObjMenu.h"
+#include"ObjmainSave.h"
+#include"ObjSave1.h"
+#include"ObjSave2.h"
+#include"ObjSave3.h"
+#include"ObjItem.h"
+
 #include "ObjTitle.h"
 //------------------------------------------------
 
 //ゲームシーンクラスヘッダ------------------------
 #include "SceneMain.h"
 #include "SceneTitle.h"
+#include"SceneMenu.h"
+#include"ScenemainSave.h"
+#include"SceneSave1.h"
+#include"SceneSave2.h"
+#include"SceneSave3.h"
+#include"SceneItem.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
