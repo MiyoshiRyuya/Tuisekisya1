@@ -22,7 +22,7 @@ void CObjHero::Init()
 	m_mos_x = 0.0f;
 	m_mos_y = 0.0f;
 
-	Hits::SetHitBox(this, m_vx, m_vy, 32,64, ELEMENT_PLAYER, OBJ_HERO, 1);
+	Hits::SetHitBox(this, m_vx, m_vy, 40,60, ELEMENT_PLAYER, OBJ_HERO, 1);
 
 }
 
@@ -62,7 +62,7 @@ void CObjHero::Action()
 	}
 
 	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px, m_py);
+	hit->SetPos(m_px+27, m_py+5);
 
 
 
@@ -83,8 +83,8 @@ void CObjHero::Draw()
 
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 160.0f;
-	src.m_bottom = 160.0f;
+	src.m_right = 175.0f;
+	src.m_bottom = 133.0f;
 
 	dst.m_top = 0.0f + m_py;
 	dst.m_left = 0.0f + m_px;
