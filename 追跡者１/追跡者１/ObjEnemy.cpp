@@ -16,6 +16,50 @@ void CObjEnemy::Init()
 }
 void CObjEnemy::Action()
 {
+
+	CObjHero* obj = (CObjHero*)Objs::GetObj(OBJ_HERO);
+	float x = obj->GetX() - m_x;
+	float y = obj->GetY() - m_y;
+	if (m_x > x)
+		m_x--;
+	if (m_x < x)
+		m_x++;
+	if (m_y > y)
+		m_y--;
+	if (m_y < y)
+		m_y++;
+
+	/*float ar = atan2(-y, x)*180.0f / 3.14f;
+
+	if (ar < 0)
+	{
+		ar = 360 - abs(ar);
+	}
+
+	float br = atan2(-m_vy, m_vx)*180.0f / 3.14f;
+	if (br < 0)
+	{
+		br = 360 - abs(br);
+	}
+
+	if (ar - br > 20)
+	{
+		m_vx = cos(3.14 / 180 * ar);
+		m_vx = -sin(3.14 / 180 * ar);
+	}
+
+	float r = 3.14 / 180.0f;
+	if (ar < br)
+	{
+		m_vx = m_vx * cos(r) - m_vy * sin(r);
+		m_vy = m_vy * cos(r) + m_vx * sin(r);
+	}
+	else
+	{
+		m_vx = m_vx * cos(-r) - m_vy * sin(-r);
+		m_vy = m_vy * cos(-r) + m_vx * sin(-r);
+
+	}*/
 	//移動方向
 	m_vx = -1.0f;
 	m_vy = 0.0f;
@@ -25,22 +69,6 @@ void CObjEnemy::Action()
 	//移動ベクトルを座標にに加算する
 	m_x += m_vx;
 	m_y += m_vy;
-	if (m_x>m_vx)
-	{
-		m_x--;
-	}
-	if (m_x < m_vx)
-	{
-		m_x++;
-	}
-	if (m_y > m_vy)
-	{
-		m_y--;
-	}
-	if (m_y < m_vy)
-	{
-		m_y++;
-	}
 
 }
 void CObjEnemy::Draw()
