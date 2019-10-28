@@ -215,9 +215,6 @@
     <ClInclude Include="ObjSave1.h">
       <Filter>ソース ファイル\セーブスロット1</Filter>
     </ClInclude>
-    <ClInclude Include="SceneSave1.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="ObjSave2.h">
       <Filter>ソース ファイル\セーブスロット2</Filter>
     </ClInclude>
@@ -235,6 +232,9 @@
     </ClInclude>
     <ClInclude Include="SceneMenu.h">
       <Filter>ソース ファイル\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSave1.h">
+      <Filter>ソース ファイル\セーブスロット1</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave1.h">
       <Filter>ソース ファイル\セーブスロット1</Filter>
