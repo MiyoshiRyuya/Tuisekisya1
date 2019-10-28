@@ -163,6 +163,7 @@
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjEnemy.h" />
+    <ClInclude Include="ObjGameOver.h" />
     <ClInclude Include="ObjHero.h" />
     <ClInclude Include="ObjItem.h" />
     <ClInclude Include="ObjmainSave.h" />
@@ -172,6 +173,7 @@
     <ClInclude Include="ObjSave3.h" />
     <ClInclude Include="objstage.h" />
     <ClInclude Include="ObjTitle.h" />
+    <ClInclude Include="SceneGameOver.h" />
     <ClInclude Include="SceneItem.h" />
     <ClInclude Include="SceneMain.h" />
     <ClInclude Include="ScenemainSave.h" />

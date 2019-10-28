@@ -33,6 +33,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="SceneTitle.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
     <ClCompile Include="GameL\Audio.cpp">
       <Filter>リソース ファイル</Filter>
     </ClCompile>
@@ -72,13 +75,13 @@
     <ClCompile Include="GameL\WinInputs.cpp">
       <Filter>リソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="SceneMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
     <ClCompile Include="SceneTitle.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="ObjMenu.cpp">
-      <Filter>ソース ファイル\Menu</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjEnemy.cpp">
+    <ClCompile Include="ObjTitle.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ObjHero.cpp">
@@ -176,25 +179,22 @@
     <ClInclude Include="main.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjMenu.h">
-      <Filter>ソース ファイル\Menu</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjEnemy.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjTitle.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="SceneMain.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="SceneTitle.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjHero.h">
+    <ClInclude Include="ObjTitle.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="ObjHero.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
     <ClInclude Include="objstage.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjEnemy.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ObjItem.h">
@@ -230,8 +230,11 @@
     <ClInclude Include="SceneMenu.h">
       <Filter>ソース ファイル\Menu</Filter>
     </ClInclude>
-    <ClInclude Include="SceneSave1.h">
-      <Filter>ソース ファイル\セーブスロット1</Filter>
+    <ClInclude Include="SceneGameOver.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameOver.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave1.h">
       <Filter>ソース ファイル\セーブスロット1</Filter>
