@@ -8,11 +8,11 @@ using namespace GameL;
 //シーン：ゲームアイテム
 class CSceneItem :public CScene
 {
-   public:
-	  CSceneItem();
-	  ~CSceneItem();
+public:
+	CSceneItem();
+	~CSceneItem();
 
-	  void InitScene(); //ゲームアイテム初期化メソッド
-	  void Scene();     //ゲームアイテム実行中メソッド
-    private:
+	void InitScene(); //ゲームアイテム初期化メソッド
+	void Scene();     //ゲームアイテム実行中メソッド
+private:
 };
