@@ -9,34 +9,39 @@ using namespace GameL;
 
 void CObjEnemy::Init()
 {
-	m_x = 500.0f;
-	m_y = 100.0f;
+	m_x = 600;
+	m_y = 400;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
 }
 void CObjEnemy::Action()
 {
+	//移動方向
 	m_vx = -1.0f;
 	m_vy = 0.0f;
-	float r = 0.0f;
-	r = m_vx * m_vx + m_vy * m_vy;
-	r = sqrt(r);
-
-	if (r == 0.0f)
-	{
-		;
-	}
-	else
-	{
-		m_vx *= 1.0f / r * m_vx;
-		m_vy *= 1.0f / r * m_vy;
-	}
-
+	//速度を付ける
 	m_vx *= 1.5f;
 	m_vy *= 1.5f;
-
+	//移動ベクトルを座標にに加算する
 	m_x += m_vx;
 	m_y += m_vy;
+	if (m_x>m_vx)
+	{
+		m_x--;
+	}
+	if (m_x < m_vx)
+	{
+		m_x++;
+	}
+	if (m_y > m_vy)
+	{
+		m_y--;
+	}
+	if (m_y < m_vy)
+	{
+		m_y++;
+	}
+
 }
 void CObjEnemy::Draw()
 {

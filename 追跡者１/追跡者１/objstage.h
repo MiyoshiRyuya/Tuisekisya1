@@ -7,15 +7,18 @@ using namespace GameL;
 class CObjstage:public CObj
 {
 public:
-	CObjstage();
-	~CObjstage();
+	CObjstage(int map[20][20]);
+	~CObjstage() {};
 	void Init();
 	void Action();
 	void Draw();
 
 
 private:
-	int m_map[10][10];
+	float m_map[20][20];
+	float objb;
+
+	float m_scroll;
 };
 
 

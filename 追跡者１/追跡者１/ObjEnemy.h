@@ -21,8 +21,4 @@ private:
 
 	float m_speed_power;
 
-	bool m_hit_up;
-	bool m_hit_down;
-	bool m_hit_left;
-	bool m_hit_right;
 };

@@ -2,6 +2,7 @@
 #include "GameL\DrawTexture.h"
 #include "GameL\WinInputs.h"
 #include "GameL\SceneManager.h"
+#include "GameL\SceneObjManager.h"
 
 #include "GameHead.h"
 #include "objstage.h"
@@ -9,26 +10,16 @@
 //使用するネームスペース
 using namespace GameL;
 
+CObjstage::CObjstage(int map[20][20])
+{
+	//マップデータをコピー
+	memcpy(m_map, map, sizeof(int)*(20 * 20));
+}
+
 //イニシャライズ
 void CObjstage::Init()
 {
-	//マップ情報
-	int block_data[10][10] =
-	{
-		{1,1,1,1,1,1,1,1,1,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,0,0,0,0,0,0,0,0,1},
-		{1,1,1,1,1,1,1,1,1,1},
-	};
-
-	memcpy(m_map, block_data, sizeof(int)*(10 * 10));
-
+	m_scroll = 0.0f;
 }
 //アクション
 void CObjstage::Action()
@@ -44,11 +35,11 @@ void CObjstage::Draw()
 	RECT_F dst;
 
 	src.m_top = 0.0f;
-	src.m_left = 320.0f;
-	src.m_right = src.m_left + 64.0f;
-	src.m_bottom = 64.0;
+	src.m_left = 0.0f;
+	src.m_right = 160.0f;
+	src.m_bottom = 160.0;
 
-	dst.m_top = 0.0f;
+	dst.m_top =  0.0f;
 	dst.m_left = 0.0f;
 	dst.m_right = 64.0f;
 	dst.m_bottom = 64.0;

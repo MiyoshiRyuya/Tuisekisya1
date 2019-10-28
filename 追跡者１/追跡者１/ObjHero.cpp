@@ -12,16 +12,20 @@ using namespace GameL;
 //イニシャライズ
 void CObjHero::Init()
 {
-	m_px=0.0;//位置
-	m_py=0.0;
+	m_px=0.0f;//位置
+	m_py=0.0f;
 	m_vx;//移動ベクトル
 	m_vy;
 	m_posture = 1.0f;//右向き0.0f 左向き1.0f
+	m_mos_x = 0.0f;
+	m_mos_y = 0.0f;
 }
 
 //アクション
 void CObjHero::Action()
 {
+	//マウス操作
+
 	//移動ベクトルの破棄
 	m_vx = 0.0f;
 	m_vy = 0.0f;
@@ -46,6 +50,13 @@ void CObjHero::Action()
 	{
 		m_vy += 2.0f;
 	}
+
+	if (m_vx+32.0f>800.0f)
+	{
+		m_vx = 800.0f - 32.0f;
+	}
+
+
 
 	//位置の更新
 	m_px += m_vx;
