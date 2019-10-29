@@ -65,6 +65,12 @@ void CObjHero::Action()
 		m_vx = 800.0f - 32.0f;
 	}
 
+	//Eƒ{ƒ^ƒ“‚ð‰Ÿ‚·‚ÆƒQ[ƒ€‰æ–Ê‚ÉˆÚ“®‚·‚é
+	if (Input::GetVKey('M') == true)
+	{
+		Scene::SetScene(new CSceneMenu());
+	}
+
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_vx, m_y);
 
