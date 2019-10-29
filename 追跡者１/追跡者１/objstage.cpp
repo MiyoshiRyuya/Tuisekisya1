@@ -49,7 +49,7 @@ void CObjstage::Action()
 				//主人公とブロックのあたり判定
 				if ((hx+64.0f > x) && (hx < x+64.0f) && (hy+64.0f > y ) && (hy < y+64.0f) )
 				{
-					//上下判定
+					//上下sayuu判定
 
 					//vectorの作成
 					float vx = hx - x;
@@ -67,39 +67,42 @@ void CObjstage::Action()
 					else
 						r = 360.0f - abs(r);
 
-					//角度で上下判定を求める
-					if ((r < 45 && r>0) || r > 315)
+					//lenがある一定の長さより短い場合判定に入る
+					if (len<88.0f)
 					{
-						//右
-						hero->SetRight(true);
-						hero->SetX(x + 64.0f);
-						hero->SetVX(-hero->GetVX()*0.1f);
-					}
-					if (r > 45 && r > 135)
-					{
-						//上
-						hero->SetDown(true);//主事っこいから見て、下の部分が衝突している
-						hero->SetY(y - 64.0f);//ブロックの位置-主人公の幅
-						hero->SetVY(0.0f);
-					}
-					if (r > 135 && r > 225)
-					{
-						//左
-						hero->SetLeft(true);
-						hero->SetX(x - 64.0f);
-						hero->SetVX(-hero->GetVX()*0.1f);
-					}
-					if (r > 225 && r > 315)
-					{
-						//下
-						hero->SetUp(true);
-						hero->SetY(y + 64.0f);
-						if (hero->GetVY() < 0)
+						//角度で上下判定を求める
+						if ((r < 45 && r>0) || r > 315)
 						{
+							//右
+							hero->SetRight(true);
+							hero->SetX(x + 64.0f);
+							hero->SetVX(-hero->GetVX()*0.1f);
+						}
+						if (r > 45 && r < 135)
+						{
+							//上
+							hero->SetDown(true);//主事っこいから見て、下の部分が衝突している
+							hero->SetY(y - 64.0f);//ブロックの位置-主人公の幅
 							hero->SetVY(0.0f);
 						}
+						if (r > 135 && r < 225)
+						{
+							//左
+							hero->SetLeft(true);
+							hero->SetX(x - 64.0f);
+							hero->SetVX(-hero->GetVX()*0.1f);
+						}
+						if (r > 225 && r < 315)
+						{
+							//下
+							hero->SetUp(true);
+							hero->SetY(y + 64.0f);
+							if (hero->GetVY() < 0)
+							{
+								hero->SetVY(0.0f);
+							}
+						}
 					}
-					
 				}
 			}
 		}

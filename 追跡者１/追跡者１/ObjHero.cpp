@@ -6,6 +6,7 @@
 
 #include "GameHead.h"
 #include "ObjHero.h"
+#include "ObjMenu.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -38,6 +39,12 @@ void CObjHero::Action()
 	//移動ベクトルの破棄
 	m_vx = 0.0f;
 	m_vy = 0.0f;
+
+	//Eボタンを押すとゲーム画面に移動する
+	if (Input::GetVKey('M') == true)
+	{
+		Scene::SetScene(new CSceneMenu());
+	}
 
 	//キーの入力方向
 	if (Input::GetVKey('D') == true)
