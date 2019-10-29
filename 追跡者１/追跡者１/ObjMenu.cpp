@@ -41,7 +41,6 @@ void CObjMenu::Action()
 	//マウスの位置とクリックする場所で当たり判定
 	if (m_mou_x > 230 && m_mou_x < 510 && m_mou_y>240 && m_mou_y < 290)
 	{
-		//マウスの左が押されたらアイテム画面に移動する
 		if (m_mou_l == true)
 		{
 			Scene::SetScene(new CSceneItem());

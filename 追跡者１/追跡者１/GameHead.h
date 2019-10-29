@@ -18,6 +18,7 @@ enum OBJ_NAME
 	OBJ_ITEM,
 
 	OBJ_TITLE,
+	OBJ_GAME_OVER,
 };
 //------------------------------------------------
 
