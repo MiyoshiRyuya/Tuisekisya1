@@ -16,6 +16,7 @@ enum OBJ_NAME
 	OBJ_SAVE2,
 	OBJ_SAVE3,
 	OBJ_ITEM,
+	OBJ_ROAD,
 
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
@@ -72,6 +73,7 @@ struct UserData
 #include"ObjSave2.h"
 #include"ObjSave3.h"
 #include"ObjItem.h"
+#include"ObjRoad.h"
 
 #include "ObjTitle.h"
 #include "ObjGameOver.h"
@@ -87,6 +89,7 @@ struct UserData
 #include"SceneSave2.h"
 #include"SceneSave3.h"
 #include"SceneItem.h"
+#include"SceneRoad.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
