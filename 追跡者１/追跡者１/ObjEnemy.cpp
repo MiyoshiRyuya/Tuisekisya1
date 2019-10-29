@@ -34,7 +34,7 @@ void CObjEnemy::Action()
 	m_x += (x / m_len);
 	m_y += (y / m_len);
 
-	/*if (m_x > x)
+	if (m_x > x)
 		m_x--;
 	if (m_x < x)
 		m_x++;
@@ -73,7 +73,7 @@ void CObjEnemy::Action()
 		m_vx = m_vx * cos(-r) - m_vy * sin(-r);
 		m_vy = m_vy * cos(-r) + m_vx * sin(-r);
 
-	}*/
+	}
 	//ˆÚ“®•ûŒü
 	//‘¬“x‚ð•t‚¯‚é
 	m_vx *= 1.5f;
