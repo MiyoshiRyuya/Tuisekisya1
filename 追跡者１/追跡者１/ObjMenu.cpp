@@ -74,20 +74,6 @@ void CObjMenu::Action()
 void CObjMenu::Draw()
 {
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
-	//仮マウス位置表示
-	wchar_t str[256];
-	swprintf_s(str, L"x=%f,Y=%f", m_mou_x, m_mou_y);
-	Font::StrDraw(str, 20, 20, 12, c);
-	//仮マウスのボタンの状態
-	if (m_mou_r == true)
-		Font::StrDraw(L"R=押してる", 20, 30, 12, c);
-	else
-		Font::StrDraw(L"R=押してない", 20, 30, 12, c);
-
-	if (m_mou_l == true)
-		Font::StrDraw(L"L=押してる", 20, 40, 12, c);
-	else
-		Font::StrDraw(L"L=押してない", 20, 40, 12, c);
 
 	//メニュー画面表示
 	Font::StrDraw(L"MENU", 360, 100, 46, c);
