@@ -26,6 +26,8 @@ void CObjEnemy::Action()
 	CObjHero* obj = (CObjHero*)Objs::GetObj(OBJ_HERO);
 	float x = obj->GetX() - m_x;
 	float y = obj->GetY() - m_y;
+	
+		
 	if (m_x > x)
 		m_x--;
 	if (m_x < x)
