@@ -19,9 +19,6 @@
     <Filter Include="ソース ファイル\mainSave">
       <UniqueIdentifier>{fe70343e-1eda-48b6-b5c2-0f157f5eedbb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\セーブスロット1">
-      <UniqueIdentifier>{136ae6e4-b616-4e98-aa44-4aed89df6b3c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\セーブスロット2">
       <UniqueIdentifier>{650c72f8-b945-4bf8-89e9-6dbae3264978}</UniqueIdentifier>
     </Filter>
@@ -30,6 +27,9 @@
     </Filter>
     <Filter Include="ソース ファイル\Menu">
       <UniqueIdentifier>{3ced9b1e-fdcc-4715-999c-2d980d697c62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\セーブスロット2\セーブスロット1">
+      <UniqueIdentifier>{136ae6e4-b616-4e98-aa44-4aed89df6b3c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -112,7 +112,7 @@
       <Filter>ソース ファイル\mainSave</Filter>
     </ClCompile>
     <ClCompile Include="SceneSave1.cpp">
-      <Filter>ソース ファイル\セーブスロット1</Filter>
+      <Filter>ソース ファイル\セーブスロット2\セーブスロット1</Filter>
     </ClCompile>
     <ClCompile Include="SceneSave2.cpp">
       <Filter>ソース ファイル\セーブスロット2</Filter>
@@ -198,7 +198,7 @@
       <Filter>ソース ファイル\mainSave</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave1.h">
-      <Filter>ソース ファイル\セーブスロット1</Filter>
+      <Filter>ソース ファイル\セーブスロット2\セーブスロット1</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave2.h">
       <Filter>ソース ファイル\セーブスロット2</Filter>
