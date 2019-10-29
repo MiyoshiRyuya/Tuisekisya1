@@ -49,7 +49,7 @@ void CObjstage::Draw()
 				dst.m_top = i * 32.0f;
 				dst.m_left = j * 32.0f + m_scroll;
 				dst.m_right = dst.m_left+32.0f;
-				dst.m_bottom = dst.m_top+32.0;
+				dst.m_bottom = dst.m_top+32.0f;
 
 				Draw::Draw(1, &src, &dst, c, 0.0f);
 			}
