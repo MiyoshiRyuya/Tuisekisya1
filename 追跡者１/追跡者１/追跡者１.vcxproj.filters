@@ -129,6 +129,9 @@
     <ClCompile Include="ObjSave3.cpp">
       <Filter>ソース ファイル\セーブスロット3</Filter>
     </ClCompile>
+    <ClCompile Include="ObjGameOver.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -223,6 +226,9 @@
     </ClInclude>
     <ClInclude Include="ObjSave3.h">
       <Filter>ソース ファイル\セーブスロット3</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameOver.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
