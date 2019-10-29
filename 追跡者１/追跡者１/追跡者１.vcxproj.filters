@@ -138,6 +138,9 @@
     <ClCompile Include="ObjItem.cpp">
       <Filter>ソース ファイル\Item</Filter>
     </ClCompile>
+    <ClCompile Include="ObjEnemy.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -242,10 +245,5 @@
     <ClInclude Include="ObjItem.h">
       <Filter>ソース ファイル\Item</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Object Include="x64\Debug\SceneTitle.obj">
-      <Filter>ソース ファイル</Filter>
-    </Object>
   </ItemGroup>
 </Project>
