@@ -130,15 +130,19 @@
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
     <ClCompile Include="ObjEnemy.cpp" />
+    <ClCompile Include="ObjGameOver.cpp" />
     <ClCompile Include="ObjHero.cpp" />
     <ClCompile Include="ObjItem.cpp" />
     <ClCompile Include="ObjmainSave.cpp" />
-    <ClCompile Include="ObjMenu.cpp" />
+    <ClCompile Include="ObjMenu.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="ObjSave1.cpp" />
     <ClCompile Include="ObjSave2.cpp" />
     <ClCompile Include="ObjSave3.cpp" />
     <ClCompile Include="objstage.cpp" />
     <ClCompile Include="ObjTitle.cpp" />
+    <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneItem.cpp" />
     <ClCompile Include="SceneMain.cpp" />
     <ClCompile Include="ScenemainSave.cpp" />
@@ -167,7 +171,9 @@
     <ClInclude Include="ObjHero.h" />
     <ClInclude Include="ObjItem.h" />
     <ClInclude Include="ObjmainSave.h" />
-    <ClInclude Include="ObjMenu.h" />
+    <ClInclude Include="ObjMenu.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="ObjSave1.h" />
     <ClInclude Include="ObjSave2.h" />
     <ClInclude Include="ObjSave3.h" />
