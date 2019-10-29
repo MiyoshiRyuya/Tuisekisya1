@@ -142,6 +142,7 @@
     <ClCompile Include="ObjSave3.cpp" />
     <ClCompile Include="objstage.cpp" />
     <ClCompile Include="ObjTitle.cpp" />
+    <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneItem.cpp" />
     <ClCompile Include="SceneMain.cpp" />
     <ClCompile Include="ScenemainSave.cpp" />
@@ -178,6 +179,7 @@
     <ClInclude Include="ObjSave3.h" />
     <ClInclude Include="objstage.h" />
     <ClInclude Include="ObjTitle.h" />
+    <ClInclude Include="SceneGameOver.h" />
     <ClInclude Include="SceneItem.h" />
     <ClInclude Include="SceneMain.h" />
     <ClInclude Include="ScenemainSave.h" />
