@@ -43,11 +43,11 @@ void CObjstage::Action()
 			if (m_map[i][j] > 0)
 			{
 				//要素番号を座標に変更
-				float x = j * 64.0f;
-				float y = i * 64.0f;
+				float x = j * 32.0f;
+				float y = i * 32.0f;
 
 				//主人公とブロックのあたり判定
-				if ((hx+64.0f > x) && (hx < x+64.0f) && (hy+64.0f > y ) && (hy < y+64.0f) )
+				if ((hx+32.0f > x) && (hx < x+32.0f) && (hy+32.0f > y ) && (hy < y+32.0f) )
 				{
 					//上下sayuu判定
 
@@ -75,28 +75,28 @@ void CObjstage::Action()
 						{
 							//右
 							hero->SetRight(true);
-							hero->SetX(x + 64.0f);
+							hero->SetX(x + 32.0f);
 							hero->SetVX(-hero->GetVX()*0.1f);
 						}
 						if (r > 45 && r < 135)
 						{
 							//上
 							hero->SetDown(true);//主事っこいから見て、下の部分が衝突している
-							hero->SetY(y - 64.0f);//ブロックの位置-主人公の幅
+							hero->SetY(y - 32.0f);//ブロックの位置-主人公の幅
 							hero->SetVY(0.0f);
 						}
 						if (r > 135 && r < 225)
 						{
 							//左
 							hero->SetLeft(true);
-							hero->SetX(x - 64.0f);
+							hero->SetX(x - 32.0f);
 							hero->SetVX(-hero->GetVX()*0.1f);
 						}
 						if (r > 225 && r < 315)
 						{
 							//下
 							hero->SetUp(true);
-							hero->SetY(y + 64.0f);
+							hero->SetY(y + 32.0f);
 							if (hero->GetVY() < 0)
 							{
 								hero->SetVY(0.0f);
