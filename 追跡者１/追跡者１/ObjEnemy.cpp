@@ -14,6 +14,7 @@ void CObjEnemy::Init()
 	m_y = 400;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
+	m_len = 0.0f;
 
 	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_ENEMY, 1);
 
@@ -27,8 +28,13 @@ void CObjEnemy::Action()
 	float x = obj->GetX() - m_x;
 	float y = obj->GetY() - m_y;
 	
-		
-	if (m_x > x)
+	m_len = x * x + y + y;
+
+	m_len = sqrt(m_len);
+	m_x += (x / m_len);
+	m_y += (y / m_len);
+
+	/*if (m_x > x)
 		m_x--;
 	if (m_x < x)
 		m_x++;
@@ -37,7 +43,7 @@ void CObjEnemy::Action()
 	if (m_y < y)
 		m_y++;
 
-	/*float ar = atan2(-y, x)*180.0f / 3.14f;
+	float ar = atan2(-y, x)*180.0f / 3.14f;
 
 	if (ar < 0)
 	{
