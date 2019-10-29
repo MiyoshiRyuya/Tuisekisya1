@@ -68,7 +68,7 @@ void CObjmainSave::Action()
 	if (m_mou_x > 150 && m_mou_x < 210 && m_mou_y>110 && m_mou_y < 150)
 	{
 		//マウスの左が押されたらメニュ画面に移動する
-		if (m_time % 10 == 0 && m_mou_l == true)
+		if (m_time % 8 == 0 && m_mou_l == true)
 		{
 			Scene::SetScene(new CSceneMenu());
 		}
