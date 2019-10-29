@@ -1,6 +1,7 @@
 #include"GameL/DrawTexture.h"
 #include"GameL/WinInputs.h"
 #include"GameL/SceneManager.h"
+#include"GameL/HitBoxManager.h"
 
 #include"GameHead.h"
 #include"ObjEnemy.h"
@@ -13,13 +14,20 @@ void CObjEnemy::Init()
 	m_y = 400;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
+
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_ENEMY, 1);
+
 }
 void CObjEnemy::Action()
 {
+	CHitBox*hit = Hits::GetHitBox(this);
+	hit->SetPos(m_x, m_y);
 
 	CObjHero* obj = (CObjHero*)Objs::GetObj(OBJ_HERO);
 	float x = obj->GetX() - m_x;
 	float y = obj->GetY() - m_y;
+	
+		
 	if (m_x > x)
 		m_x--;
 	if (m_x < x)
@@ -61,8 +69,6 @@ void CObjEnemy::Action()
 
 	}*/
 	//ˆÚ“®•ûŒü
-	m_vx = -1.0f;
-	m_vy = 0.0f;
 	//‘¬“x‚ð•t‚¯‚é
 	m_vx *= 1.5f;
 	m_vy *= 1.5f;

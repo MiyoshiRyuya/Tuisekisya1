@@ -10,6 +10,7 @@
 #include "GameHead.h"
 #include "ObjMenu.h"
 #include "ObjItem.h"
+#include "ObjHero.h"
 
 
 //使用するネームスペース
@@ -36,6 +37,12 @@ void CObjMenu::Action()
 	if (Input::GetVKey('E') == true)
 	{
 		Scene::SetScene(new CSceneMain());
+
+		/*
+		if(Input::GetVKey('E') == true)
+		{
+
+		}*/
 	}
 
 	//マウスの位置とクリックする場所で当たり判定

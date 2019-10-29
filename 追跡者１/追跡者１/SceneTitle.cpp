@@ -6,6 +6,7 @@
 #include "GameL\SceneObjManager.h"
 #include "GameL\DrawTexture.h"
 #include "GameL\DrawFont.h"
+#include "GameL\Audio.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -35,6 +36,12 @@ void CSceneTitle::InitScene()
 	CObjTitle*obj = new CObjTitle();//タイトルオブジェクト作成
 	Objs::InsertObj(obj, OBJ_TITLE, 10);//タイトルオブジェクト登録
 
+	//音楽情報読み込み
+	//Audio::LoadAudio(0, L"TitleBGM.wav", SOUND_TYPE::BACK_MUSIC);
+
+	//バックミュージックスタート
+	//float Volume = Audio::VolumeMaster(-0.8f);
+	//Audio::Start(0);
 
 
 }
