@@ -15,7 +15,7 @@ public:
 
 
 private:
-	float m_map[20][20];
+	int m_map[20][20];
 	float objb;
 
 	float m_scroll;

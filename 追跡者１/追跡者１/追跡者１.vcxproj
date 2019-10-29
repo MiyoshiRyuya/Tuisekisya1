@@ -183,9 +183,6 @@
     <ClInclude Include="SceneSave3.h" />
     <ClInclude Include="SceneTitle.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Object Include="x64\Debug\SceneTitle.obj" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
