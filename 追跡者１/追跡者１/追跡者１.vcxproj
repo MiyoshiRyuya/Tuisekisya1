@@ -137,6 +137,7 @@
     <ClCompile Include="ObjMenu.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="ObjRoad.cpp" />
     <ClCompile Include="ObjSave1.cpp" />
     <ClCompile Include="ObjSave2.cpp" />
     <ClCompile Include="ObjSave3.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="SceneMain.cpp" />
     <ClCompile Include="ScenemainSave.cpp" />
     <ClCompile Include="SceneMenu.cpp" />
+    <ClCompile Include="SceneRoad.cpp" />
     <ClCompile Include="SceneSave1.cpp" />
     <ClCompile Include="SceneSave2.cpp" />
     <ClCompile Include="SceneSave3.cpp" />
@@ -174,6 +176,7 @@
     <ClInclude Include="ObjMenu.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
+    <ClInclude Include="ObjRoad.h" />
     <ClInclude Include="ObjSave1.h" />
     <ClInclude Include="ObjSave2.h" />
     <ClInclude Include="ObjSave3.h" />
@@ -184,6 +187,7 @@
     <ClInclude Include="SceneMain.h" />
     <ClInclude Include="ScenemainSave.h" />
     <ClInclude Include="SceneMenu.h" />
+    <ClInclude Include="SceneRoad.h" />
     <ClInclude Include="SceneSave1.h" />
     <ClInclude Include="SceneSave2.h" />
     <ClInclude Include="SceneSave3.h" />

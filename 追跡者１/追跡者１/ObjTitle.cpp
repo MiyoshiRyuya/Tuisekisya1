@@ -45,6 +45,13 @@ void CObjTitle::Action()
 void CObjTitle::Draw()
 {
 	float c[4] = { 1,1,1,1 };
+	wchar_t str[256];
+	swprintf_s(str, L"x=%f,y=%f", m_mou_x, m_mou_y);
+	Font::StrDraw(str, 20, 20, 12, c);
+	if (m_mou_r == true)
+		Font::StrDraw(L"R=‰Ÿ‚µ‚Ä‚é", 20, 30, 12, c);
+	else
+		Font::StrDraw(L"R=‰Ÿ‚µ‚Ä‚È‚¢", 20, 30, 12, c);
 	
 	
 
