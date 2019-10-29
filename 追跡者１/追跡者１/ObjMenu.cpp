@@ -32,17 +32,11 @@ void CObjMenu::Action()
 	//マウスのボタンの状態
 	m_mou_r = Input::GetMouButtonR();
 	m_mou_l = Input::GetMouButtonL();
-
+	
 	//Eボタンを押すとゲーム画面に移動する
 	if (Input::GetVKey('E') == true)
 	{
 		Scene::SetScene(new CSceneMain());
-
-		/*
-		if(Input::GetVKey('E') == true)
-		{
-
-		}*/
 	}
 
 	//マウスの位置とクリックする場所で当たり判定
