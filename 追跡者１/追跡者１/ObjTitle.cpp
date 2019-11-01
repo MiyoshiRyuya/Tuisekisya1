@@ -18,6 +18,14 @@ void CObjTitle::Init()
 	m_mou_y = 0.0f;
 	m_mou_r = false;
 	m_mou_l = false;
+
+	//ゲーム実行して一回のみ
+	/*static bool init_point = false;
+	if (init_pointf == false)
+	{
+		//ロード
+		Save::Open();//同フォルダ「UserData」からデータ取得。
+	}*/
 }
 
 //アクション
