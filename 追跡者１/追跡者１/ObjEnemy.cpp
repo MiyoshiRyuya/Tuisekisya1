@@ -28,7 +28,7 @@ void CObjEnemy::Action()
 	float x = obj->GetX() - m_x;
 	float y = obj->GetY() - m_y;
 	
-	m_len = x * x + y + y;
+	m_len = x * x + y * y;
 
 	m_len = sqrt(m_len);
 	m_x += (x / m_len);
