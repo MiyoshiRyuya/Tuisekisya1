@@ -78,16 +78,24 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneMenu());
 	}
 
-	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px+25, m_py);
-
-
 
 
 	//位置の更新
 	m_px += m_vx;
 	m_py += m_vy;
 
+	CHitBox*hit = Hits::GetHitBox(this);
+	hit->SetPos(m_px + 25, m_py);
+
+	//敵機オブジェクトと接触したら主人公削除
+	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		//主人公消滅でシーンをゲームオーバー画面に移行する
+		Scene::SetScene(new CSceneGameOver());
+	}
 }
 
 //ドロー

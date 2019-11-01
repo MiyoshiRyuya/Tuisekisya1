@@ -6,6 +6,7 @@ using namespace GameL;
 class CObjEnemy :public CObj
 {
 public:
+	
 	CObjEnemy() {};
 	~CObjEnemy() {};
 	void Init();
