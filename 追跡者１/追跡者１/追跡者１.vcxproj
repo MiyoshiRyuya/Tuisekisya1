@@ -153,7 +153,7 @@
     <ClCompile Include="SceneSave2.cpp" />
     <ClCompile Include="SceneSave3.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
-    <ClCompile Include="trap.cpp" />
+    <ClCompile Include="Objtrap.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h" />
@@ -193,7 +193,7 @@
     <ClInclude Include="SceneSave2.h" />
     <ClInclude Include="SceneSave3.h" />
     <ClInclude Include="SceneTitle.h" />
-    <ClInclude Include="trap.h" />
+    <ClInclude Include="Objtrap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
