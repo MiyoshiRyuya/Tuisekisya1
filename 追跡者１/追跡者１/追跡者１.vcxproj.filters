@@ -19,9 +19,6 @@
     <Filter Include="ソース ファイル\mainSave">
       <UniqueIdentifier>{fe70343e-1eda-48b6-b5c2-0f157f5eedbb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\セーブスロット2">
-      <UniqueIdentifier>{650c72f8-b945-4bf8-89e9-6dbae3264978}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\セーブスロット3">
       <UniqueIdentifier>{0033fc82-399f-4c70-af4f-02dc5da637c8}</UniqueIdentifier>
     </Filter>
@@ -39,6 +36,15 @@
     </Filter>
     <Filter Include="ソース ファイル\Road">
       <UniqueIdentifier>{8489e961-d085-43e2-ab10-a9fa266f78bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\セーブスロット3\セーブスロット2">
+      <UniqueIdentifier>{650c72f8-b945-4bf8-89e9-6dbae3264978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\催涙スプレー装備">
+      <UniqueIdentifier>{2d207246-329d-4230-9900-5f92a8bb0743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\十字架装備">
+      <UniqueIdentifier>{dd6b6aa5-3919-4793-b78a-6176f5f6455b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -109,7 +115,7 @@
       <Filter>ソース ファイル\セーブスロット1</Filter>
     </ClCompile>
     <ClCompile Include="SceneSave2.cpp">
-      <Filter>ソース ファイル\セーブスロット2</Filter>
+      <Filter>ソース ファイル\セーブスロット3\セーブスロット2</Filter>
     </ClCompile>
     <ClCompile Include="SceneSave3.cpp">
       <Filter>ソース ファイル\セーブスロット3</Filter>
@@ -121,7 +127,7 @@
       <Filter>ソース ファイル\セーブスロット1</Filter>
     </ClCompile>
     <ClCompile Include="ObjSave2.cpp">
-      <Filter>ソース ファイル\セーブスロット2</Filter>
+      <Filter>ソース ファイル\セーブスロット3\セーブスロット2</Filter>
     </ClCompile>
     <ClCompile Include="ObjSave3.cpp">
       <Filter>ソース ファイル\セーブスロット3</Filter>
@@ -141,12 +147,6 @@
     <ClCompile Include="SceneGameOver.cpp">
       <Filter>ソース ファイル\GameOver</Filter>
     </ClCompile>
-    <ClCompile Include="ObjTitle.cpp">
-      <Filter>ソース ファイル\Title</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneTitle.cpp">
-      <Filter>ソース ファイル\Title</Filter>
-    </ClCompile>
     <ClCompile Include="ObjRoad.cpp">
       <Filter>ソース ファイル\Road</Filter>
     </ClCompile>
@@ -155,6 +155,24 @@
     </ClCompile>
     <ClCompile Include="SceneTitle.cpp">
       <Filter>ソース ファイル\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTitle.cpp">
+      <Filter>ソース ファイル\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTitle.cpp">
+      <Filter>ソース ファイル\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEquipped.cpp">
+      <Filter>ソース ファイル\催涙スプレー装備</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJEquipped.cpp">
+      <Filter>ソース ファイル\催涙スプレー装備</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJEquipped2.cpp">
+      <Filter>ソース ファイル\十字架装備</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEquipped2.cpp">
+      <Filter>ソース ファイル\十字架装備</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -225,7 +243,7 @@
       <Filter>ソース ファイル\セーブスロット1</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave2.h">
-      <Filter>ソース ファイル\セーブスロット2</Filter>
+      <Filter>ソース ファイル\セーブスロット3\セーブスロット2</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave3.h">
       <Filter>ソース ファイル\セーブスロット3</Filter>
@@ -237,7 +255,7 @@
       <Filter>ソース ファイル\セーブスロット1</Filter>
     </ClInclude>
     <ClInclude Include="ObjSave2.h">
-      <Filter>ソース ファイル\セーブスロット2</Filter>
+      <Filter>ソース ファイル\セーブスロット3\セーブスロット2</Filter>
     </ClInclude>
     <ClInclude Include="ObjSave3.h">
       <Filter>ソース ファイル\セーブスロット3</Filter>
@@ -257,17 +275,29 @@
     <ClInclude Include="SceneGameOver.h">
       <Filter>ソース ファイル\GameOver</Filter>
     </ClInclude>
+    <ClInclude Include="ObjRoad.h">
+      <Filter>ソース ファイル\Road</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoad.h">
+      <Filter>ソース ファイル\Road</Filter>
+    </ClInclude>
     <ClInclude Include="ObjTitle.h">
       <Filter>ソース ファイル\Title</Filter>
     </ClInclude>
     <ClInclude Include="SceneTitle.h">
       <Filter>ソース ファイル\Title</Filter>
     </ClInclude>
-    <ClInclude Include="ObjRoad.h">
-      <Filter>ソース ファイル\Road</Filter>
+    <ClInclude Include="SceneEquipped.h">
+      <Filter>ソース ファイル\催涙スプレー装備</Filter>
     </ClInclude>
-    <ClInclude Include="SceneRoad.h">
-      <Filter>ソース ファイル\Road</Filter>
+    <ClInclude Include="ObjEquipped.h">
+      <Filter>ソース ファイル\催涙スプレー装備</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJEquipped2.h">
+      <Filter>ソース ファイル\十字架装備</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneEquipped2.h">
+      <Filter>ソース ファイル\十字架装備</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

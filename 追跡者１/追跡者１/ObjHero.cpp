@@ -11,12 +11,14 @@
 //使用するネームスペース
 using namespace GameL;
 
+float g_Xz;
+float g_Yz;
+
 //イニシャライズ
 void CObjHero::Init()
 {
-	
-	m_px=70.0f;//位置
-	m_py=70.0f;
+	m_px = g_Xz;//位置
+	m_py = g_Yz;
 	m_vx;//移動ベクトル
 	m_vy;
 	m_posture = 1.0f;//右向き0.0f 左向き1.0f
@@ -39,6 +41,18 @@ void CObjHero::Action()
 	//移動ベクトルの破棄
 	m_vx = 0.0f;
 	m_vy = 0.0f;
+	
+	/*if (m_x < -1 && m_y < -1) {
+		m_x = 0.0f;
+		m_y = 0.0f;
+	}*/
+
+	m_x = m_px;
+	m_y = m_py;
+
+	//	現在の位置を保存する
+	g_Xz = m_x; 
+	g_Yz = m_y;
 
 	//Eボタンを押すとゲーム画面に移動する
 	if (Input::GetVKey('M') == true)

@@ -4,7 +4,6 @@
 
 //GameLで使用するヘッダー
 #include "GameL\DrawTexture.h"
-#include "GameL\DrawTexture.h"
 #include "GameL\DrawFont.h"
 #include "GameL\UserData.h"
 
@@ -60,8 +59,8 @@ void CSceneMain::InitScene()
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
 
 	//blockオブジェクト作成
-	CObjstage*objb = new CObjstage(map);
-	Objs::InsertObj(objb, OBJ_STAGE,9);
+	//CObjstage*objb = new CObjstage(map);
+	//Objs::InsertObj(objb, OBJ_STAGE,9);
 }
 //ゲームメイン実行中メソッド
 void CSceneMain::Scene()

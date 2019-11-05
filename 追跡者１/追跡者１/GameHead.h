@@ -17,6 +17,8 @@ enum OBJ_NAME
 	OBJ_SAVE3,
 	OBJ_ITEM,
 	OBJ_ROAD,
+	OBJ_EQUIPPED,
+	OBJ_EQUIPPED2,
 
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
@@ -74,6 +76,8 @@ struct UserData
 #include"ObjSave3.h"
 #include"ObjItem.h"
 #include"ObjRoad.h"
+#include"ObjEquipped.h"
+#include"OBJEquipped2.h"
 
 #include "ObjTitle.h"
 #include "ObjGameOver.h"
@@ -90,9 +94,11 @@ struct UserData
 #include"SceneSave3.h"
 #include"SceneItem.h"
 #include"SceneRoad.h"
+#include"SceneEquipped.h"
+#include"SceneEquipped2.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneTitle
+#define SET_GAME_START  CSceneMain
 //-----------------------------------------------

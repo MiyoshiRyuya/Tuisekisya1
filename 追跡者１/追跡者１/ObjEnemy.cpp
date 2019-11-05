@@ -8,10 +8,13 @@
 
 using namespace GameL;
 
+float g_xz;
+float g_yz;
+
 void CObjEnemy::Init()
 {
-	m_x = 600;
-	m_y = 400;
+	m_ex = 600;
+	m_ey = 400;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
 	m_len = 0.0f;
@@ -21,6 +24,15 @@ void CObjEnemy::Init()
 }
 void CObjEnemy::Action()
 {
+	m_x = m_ex;
+	m_y = m_ey;
+
+	
+	//	Œ»Ý‚ÌˆÊ’u‚ð•Û‘¶‚·‚é
+	g_xz = m_x;
+	g_yz = m_y;
+
+
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
 

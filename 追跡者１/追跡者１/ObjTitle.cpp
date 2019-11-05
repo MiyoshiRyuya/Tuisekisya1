@@ -1,14 +1,12 @@
-//使用するヘッダーファイル
-#include "GameL\DrawFont.h"
-#include "GameL\WinInputs.h"
-#include "GameL\DrawTexture.h"
-#include "GameL\Audio.h"
+#include"GameL\DrawTexture.h"
+#include"GameL\WinInputs.h"
+#include"GameL\DrawFont.h"
+#include"GameL\Audio.h"
 
-#include "GameHead.h"
-#include "ObjTitle.h"
-#include "SceneMain.h"
+#include"GameHead.h"
+#include"ObjTitle.h"
+#include"SceneMain.h"
 
-//使用するネームスペース
 using namespace GameL;
 
 //イニシャライズ
@@ -18,14 +16,6 @@ void CObjTitle::Init()
 	m_mou_y = 0.0f;
 	m_mou_r = false;
 	m_mou_l = false;
-
-	//ゲーム実行して一回のみ
-	/*static bool init_point = false;
-	if (init_pointf == false)
-	{
-		//ロード
-		Save::Open();//同フォルダ「UserData」からデータ取得。
-	}*/
 }
 
 //アクション
@@ -53,15 +43,8 @@ void CObjTitle::Action()
 void CObjTitle::Draw()
 {
 	float c[4] = { 1,1,1,1 };
-	wchar_t str[256];
-	swprintf_s(str, L"x=%f,y=%f", m_mou_x, m_mou_y);
-	Font::StrDraw(str, 20, 20, 12, c);
-	if (m_mou_r == true)
-		Font::StrDraw(L"R=押してる", 20, 30, 12, c);
-	else
-		Font::StrDraw(L"R=押してない", 20, 30, 12, c);
-	
-	
+
+
 
 	RECT_F src;
 	RECT_F dst;
@@ -80,12 +63,25 @@ void CObjTitle::Draw()
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*209)
 	Draw::LoadImage(L"Title.png", 0, TEX_SIZE_512);
-	
+
 
 
 	Font::StrDraw(L"NEW GAME", 360, 350, 23, c);
 	Font::StrDraw(L"CONTINUE", 360, 410, 23, c);
-	
-	
+
+	//マウス表示位置
+	wchar_t str[256];
+	swprintf_s(str, L"x=%f,y=%f", m_mou_x, m_mou_y);
+	Font::StrDraw(str, 20, 20, 12, c);
+	//マウスのボタンの状態
+	if (m_mou_r == true)
+		Font::StrDraw(L"R=押している", 20, 30, 12, c);
+	else
+		Font::StrDraw(L"R=押していない", 20, 30, 12, c);
+
+	if (m_mou_l == true)
+		Font::StrDraw(L"L=押している", 20, 40, 12, c);
+	else
+		Font::StrDraw(L"L=押していない", 20, 40, 12, c);
 
 }
