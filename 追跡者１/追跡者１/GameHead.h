@@ -9,6 +9,8 @@ enum OBJ_NAME
 	OBJ_HERO,
 	OBJ_STAGE,
 	OBJ_ENEMY,
+	OBJ_TRAP,
+	OBJ_MAP,
 
 	OBJ_MENU,
 	OBJ_MAINSAVE,
@@ -68,6 +70,8 @@ struct UserData
 #include "ObjHero.h"
 #include "Objstage.h"
 #include "ObjEnemy.h"
+#include "Objtrap.h"
+#include "ObjMap.h"
 
 #include"ObjMenu.h"
 #include"ObjmainSave.h"

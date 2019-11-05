@@ -86,7 +86,7 @@ void CObjHero::Action()
 		m_vx = 800.0f - 32.0f;
 	}
 
-	//Eボタンを押すとゲーム画面に移動する
+	//Mキーを押すとゲーム画面に移動する
 	if (Input::GetVKey('M') == true)
 	{
 		Scene::SetScene(new CSceneMenu());
@@ -108,6 +108,14 @@ void CObjHero::Action()
 		Hits::DeleteHitBox(this);
 
 		//主人公消滅でシーンをゲームオーバー画面に移行する
+		Scene::SetScene(new CSceneGameOver());
+	}
+	//トラップオブジェクトと接触したら主人公削除
+	if (hit->CheckObjNameHit(OBJ_TRAP) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
 		Scene::SetScene(new CSceneGameOver());
 	}
 }
