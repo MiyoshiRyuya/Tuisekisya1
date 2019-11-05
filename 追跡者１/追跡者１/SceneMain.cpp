@@ -51,6 +51,10 @@ void CSceneMain::InitScene()
 	
 	Draw::LoadImageW(L"ブロック.png",1,TEX_SIZE_512);
 
+	//Draw::LoadImage(L"Enemy1.png", TEX_SIZE_64);
+
+
+
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
