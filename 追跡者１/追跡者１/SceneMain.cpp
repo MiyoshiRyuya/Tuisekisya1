@@ -51,7 +51,7 @@ void CSceneMain::InitScene()
 	
 	Draw::LoadImageW(L"ブロック.png",1,TEX_SIZE_512);
 
-	//Draw::LoadImage(L"Enemy1.png", TEX_SIZE_64);
+	Draw::LoadImage(L"Enemy1.png",2, TEX_SIZE_64);
 
 
 
@@ -61,7 +61,7 @@ void CSceneMain::InitScene()
 
 	//敵オブジェクト
 	CObjEnemy*obj_enemy = new CObjEnemy();
-	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
+	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 2);
 
 	//トラップオブジェクト
 	CObjtrap*obj_trap = new CObjtrap();

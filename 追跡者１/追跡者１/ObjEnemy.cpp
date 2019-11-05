@@ -10,7 +10,7 @@ using namespace GameL;
 
 void CObjEnemy::Init()
 {
-	m_x = 600;
+	m_x = 400;
 	m_y = 400;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
@@ -91,14 +91,14 @@ void CObjEnemy::Draw()
 	RECT_F dst;
 
 	src.m_top = 0.0f;
-	src.m_left = 32.0f;
-	src.m_right = 64.0f;
-	src.m_bottom = 32.0f;
+	src.m_left = 0.0f;
+	src.m_right = 16.0f;
+	src.m_bottom = 30.0f;
 
 	dst.m_top = 0.0f+m_y;
-	dst.m_left = 32.0f+m_x;
+	dst.m_left = 30.0f+m_x;
 	dst.m_right = 0.0f+m_x;
-	dst.m_bottom = 32.0f+m_y;
+	dst.m_bottom = 30.0f+m_y;
 
-	Draw::Draw(0, &src, &dst, c, 0.0f);
+	Draw::Draw(2, &src, &dst, c, 0.0f);
 }
