@@ -51,21 +51,33 @@ void CSceneMain::InitScene()
 	
 	Draw::LoadImageW(L"ブロック.png",1,TEX_SIZE_512);
 
+	Draw::LoadImageW(L"仮.png",3, TEX_SIZE_512);
+
+	Draw::LoadImageW(L"背景.png", 4, TEX_SIZE_512);
+
 	//Draw::LoadImage(L"Enemy1.png", TEX_SIZE_64);
 
 
 
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
-	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
+	Objs::InsertObj(obj, OBJ_HERO, 10);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
 	//敵オブジェクト
 	CObjEnemy*obj_enemy = new CObjEnemy();
-	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
+	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);//描画優先順位
 
 	//blockオブジェクト作成
-	CObjstage*objb = new CObjstage(map);
-	Objs::InsertObj(objb, OBJ_STAGE,9);
+	//CObjstage*objb = new CObjstage(map);
+	//Objs::InsertObj(objb, OBJ_STAGE,9);
+
+	//map作成
+	CObjMap*objb = new CObjMap();
+	Objs::InsertObj(objb, OBJ_MAP, 9);
+
+	//仮背景作成
+	//CObjMap*obj_haikei = new CObjMap();
+	//Objs::InsertObj(obj_haikei, OBJ_MAP, 2);
 }
 //ゲームメイン実行中メソッド
 void CSceneMain::Scene()

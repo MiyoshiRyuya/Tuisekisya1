@@ -40,6 +40,9 @@
     <Filter Include="ソース ファイル\Road">
       <UniqueIdentifier>{8489e961-d085-43e2-ab10-a9fa266f78bf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\マップデータ">
+      <UniqueIdentifier>{93f3b6d7-92c9-49bd-b089-46e8cebfcd15}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -88,9 +91,6 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ObjHero.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="objstage.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="SceneMain.cpp">
@@ -159,6 +159,12 @@
     <ClCompile Include="Objtrap.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="objstage.cpp">
+      <Filter>ソース ファイル\マップデータ</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMap.cpp">
+      <Filter>ソース ファイル\マップデータ</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -210,9 +216,6 @@
       <Filter>ソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ObjHero.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="objstage.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ObjItem.h">
@@ -274,6 +277,12 @@
     </ClInclude>
     <ClInclude Include="Objtrap.h">
       <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="objstage.h">
+      <Filter>ソース ファイル\マップデータ</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMap.h">
+      <Filter>ソース ファイル\マップデータ</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
