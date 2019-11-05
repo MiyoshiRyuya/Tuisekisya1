@@ -59,6 +59,10 @@ void CSceneMain::InitScene()
 	CObjEnemy*obj_enemy = new CObjEnemy();
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
 
+	//トラップオブジェクト
+	CObjtrap*obj_trap = new CObjtrap();
+	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
+
 	//blockオブジェクト作成
 	CObjstage*objb = new CObjstage(map);
 	Objs::InsertObj(objb, OBJ_STAGE,9);

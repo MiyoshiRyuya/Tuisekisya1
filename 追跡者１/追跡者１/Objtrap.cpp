@@ -13,7 +13,7 @@ void CObjtrap::Init()
 	m_x = 100;
 	m_y = 200;
 
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_TRAP, 1);
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_WHITE, OBJ_TRAP, 1);
 
 }
 void CObjtrap::Action()
