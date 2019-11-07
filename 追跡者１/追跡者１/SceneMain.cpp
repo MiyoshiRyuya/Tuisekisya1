@@ -4,7 +4,6 @@
 
 //GameLで使用するヘッダー
 #include "GameL\DrawTexture.h"
-#include "GameL\DrawTexture.h"
 #include "GameL\DrawFont.h"
 #include "GameL\UserData.h"
 
@@ -51,25 +50,17 @@ void CSceneMain::InitScene()
 	
 	Draw::LoadImageW(L"ブロック.png",1,TEX_SIZE_512);
 
-	Draw::LoadImage(L"Enemy1.png",2, TEX_SIZE_64);
-
-
-
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
 	//敵オブジェクト
 	CObjEnemy*obj_enemy = new CObjEnemy();
-	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 2);
-
-	//トラップオブジェクト
-	CObjtrap*obj_trap = new CObjtrap();
-	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
+	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
 
 	//blockオブジェクト作成
-	CObjstage*objb = new CObjstage(map);
-	Objs::InsertObj(objb, OBJ_STAGE,9);
+	//CObjstage*objb = new CObjstage(map);
+	//Objs::InsertObj(objb, OBJ_STAGE,9);
 }
 //ゲームメイン実行中メソッド
 void CSceneMain::Scene()

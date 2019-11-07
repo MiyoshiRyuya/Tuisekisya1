@@ -41,6 +41,9 @@ private:
 		float m_mos_x; //マウスX座標
 		float m_mos_y; //マウスY座標
 
+		float X;
+		float Y;
+
 		//stageとの衝突確認用
 		bool m_hit_up;
 		bool m_hit_down;

@@ -116,6 +116,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="OBJEquipped.cpp" />
     <ClCompile Include="GameL\Audio.cpp" />
     <ClCompile Include="GameL\DirectXDevice.cpp" />
     <ClCompile Include="GameL\Draw2DTex_Source.cpp" />
@@ -129,7 +130,9 @@
     <ClCompile Include="GameL\SetWindow.cpp" />
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
+    <ClCompile Include="ObjMap.cpp" />
     <ClCompile Include="ObjEnemy.cpp" />
+    <ClCompile Include="OBJEquipped2.cpp" />
     <ClCompile Include="ObjGameOver.cpp" />
     <ClCompile Include="ObjHero.cpp" />
     <ClCompile Include="ObjItem.cpp" />
@@ -143,6 +146,8 @@
     <ClCompile Include="ObjSave3.cpp" />
     <ClCompile Include="objstage.cpp" />
     <ClCompile Include="ObjTitle.cpp" />
+    <ClCompile Include="SceneEquipped.cpp" />
+    <ClCompile Include="SceneEquipped2.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneItem.cpp" />
     <ClCompile Include="SceneMain.cpp" />
@@ -169,7 +174,10 @@
     <ClInclude Include="GameL\UserData.h" />
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="ObjMap.h" />
     <ClInclude Include="ObjEnemy.h" />
+    <ClInclude Include="ObjEquipped.h" />
+    <ClInclude Include="OBJEquipped2.h" />
     <ClInclude Include="ObjGameOver.h" />
     <ClInclude Include="ObjHero.h" />
     <ClInclude Include="ObjItem.h" />
@@ -183,6 +191,8 @@
     <ClInclude Include="ObjSave3.h" />
     <ClInclude Include="objstage.h" />
     <ClInclude Include="ObjTitle.h" />
+    <ClInclude Include="SceneEquipped.h" />
+    <ClInclude Include="SceneEquipped2.h" />
     <ClInclude Include="SceneGameOver.h" />
     <ClInclude Include="SceneItem.h" />
     <ClInclude Include="SceneMain.h" />

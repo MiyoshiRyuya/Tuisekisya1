@@ -13,7 +13,10 @@ using namespace GameL;
 //イニシャライズ
 void CObjItem::Init()
 {
+	m_mou_x = (float)Input::GetPosX();
+	m_mou_y = (float)Input::GetPosY();
 
+	m_time = 0;
 }
 
 //アクション
@@ -26,6 +29,8 @@ void CObjItem::Action()
 	m_mou_r = Input::GetMouButtonR();
 	m_mou_l = Input::GetMouButtonL();
 
+	m_time++;
+
 	//マウスの位置とクリックする場所で当たり判定
 	if (m_mou_x > 150 && m_mou_x < 210 && m_mou_y>110 && m_mou_y < 150)
 	{
@@ -35,12 +40,48 @@ void CObjItem::Action()
 			Scene::SetScene(new CSceneMenu());
 		}
 	}
+
+	//マウスの位置とクリックする場所で当たり判定
+	if (m_mou_x > 240 && m_mou_x < 600 && m_mou_y>220 && m_mou_y < 280)
+	{
+		//マウスの左が押されたら装備画面に移動する
+		if (m_time % 10 == 0 && m_mou_l == true)
+		{
+			Scene::SetScene(new CSceneEquipped());
+		}
+	}
+
+	//マウスの位置とクリックする場所で当たり判定
+	if (m_mou_x > 300 && m_mou_x < 430 && m_mou_y>460 && m_mou_y < 500)
+	{
+		//マウスの左が押されたら装備画面に移動する
+		if (m_time % 10 == 0 && m_mou_l == true)
+		{
+			Scene::SetScene(new CSceneEquipped2());
+		}
+	}
 }
 
 //ドロー
 void CObjItem::Draw()
 {
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
+
+
+	//マウス表示位置
+	wchar_t str[256];
+	swprintf_s(str, L"x=%f,y=%f", m_mou_x, m_mou_y);
+	Font::StrDraw(str, 20, 20, 12, c);
+	//マウスのボタンの状態
+	if (m_mou_r == true)
+		Font::StrDraw(L"R=押している", 20, 30, 12, c);
+	else
+		Font::StrDraw(L"R=押していない", 20, 30, 12, c);
+
+	if (m_mou_l == true)
+		Font::StrDraw(L"L=押している", 20, 40, 12, c);
+	else
+		Font::StrDraw(L"L=押していない", 20, 40, 12, c);
 
 	Font::StrDraw(L"アイテム", 300, 100, 46, c);
 
