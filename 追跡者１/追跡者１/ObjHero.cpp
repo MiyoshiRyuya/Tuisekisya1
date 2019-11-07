@@ -11,12 +11,13 @@
 //使用するネームスペース
 using namespace GameL;
 
-float g_Xz;
-float g_Yz;
+float g_Xz=70;
+float g_Yz=70;
 
 //イニシャライズ
 void CObjHero::Init()
 {
+
 	m_px = g_Xz;//位置
 	m_py = g_Yz;
 	m_vx;//移動ベクトル
@@ -63,22 +64,22 @@ void CObjHero::Action()
 	//キーの入力方向
 	if (Input::GetVKey('D') == true)
 	{
-		m_vx += 2.0f;
+		m_vx += 5.0f;
 	}
 
 	if (Input::GetVKey('A') == true)
 	{
-		m_vx -= 2.0f;
+		m_vx -= 5.0f;
 	}
 
 	if (Input::GetVKey('W') == true)
 	{
-		m_vy -= 2.0f;
+		m_vy -= 5.0f;
 	}
 
 	if (Input::GetVKey('S') == true)
 	{
-		m_vy += 2.0f;
+		m_vy += 5.0f;
 	}
 
 	if (m_vx+32.0f>800.0f)
@@ -101,11 +102,14 @@ void CObjHero::Action()
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_px + 25, m_py);
 
-	//敵機オブジェクトと接触したら主人公削除
+	//敵オブジェクトと接触したら主人公削除
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+
+		g_Xz = 70;
+		g_Yz = 70;
 
 		//主人公消滅でシーンをゲームオーバー画面に移行する
 		Scene::SetScene(new CSceneGameOver());
@@ -115,6 +119,7 @@ void CObjHero::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+
 
 		Scene::SetScene(new CSceneGameOver());
 	}
