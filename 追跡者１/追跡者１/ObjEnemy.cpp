@@ -8,24 +8,24 @@
 
 using namespace GameL;
 
-float g_xz;
-float g_yz;
+float g_xz=600;
+float g_yz=400;
 
 void CObjEnemy::Init()
 {
-	m_ex = 600;
-	m_ey = 400;
+	m_x = g_xz;
+	m_y = g_yz;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
 	m_len = 0.0f;
 
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_ENEMY, 1);
+	Hits::SetHitBox(this, m_x, m_y, 16, 32, ELEMENT_ENEMY, OBJ_ENEMY, 1);
 
 }
 void CObjEnemy::Action()
 {
-	m_x = m_ex;
-	m_y = m_ey;
+	//m_x = m_ex;
+	//m_y = m_ey;
 
 	
 	//	現在の位置を保存する
@@ -94,6 +94,12 @@ void CObjEnemy::Action()
 	m_x += m_vx;
 	m_y += m_vy;
 
+	//敵オブジェクトと接触したら主人公削除
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+	{
+		g_xz = 600;
+		g_yz = 400;
+	}
 }
 void CObjEnemy::Draw()
 {
