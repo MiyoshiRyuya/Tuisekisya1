@@ -37,14 +37,26 @@
     <Filter Include="ソース ファイル\Road">
       <UniqueIdentifier>{8489e961-d085-43e2-ab10-a9fa266f78bf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\セーブスロット3\セーブスロット2">
-      <UniqueIdentifier>{650c72f8-b945-4bf8-89e9-6dbae3264978}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\催涙スプレー装備">
       <UniqueIdentifier>{2d207246-329d-4230-9900-5f92a8bb0743}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\十字架装備">
       <UniqueIdentifier>{dd6b6aa5-3919-4793-b78a-6176f5f6455b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\敵">
+      <UniqueIdentifier>{442e2d59-6d6e-42b4-b298-30514e2d4b9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\主人公">
+      <UniqueIdentifier>{4a77a3bf-f683-4e12-b3f8-ee0efd33c8f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ステージ">
+      <UniqueIdentifier>{d4c33757-cb2d-4436-bb40-914689050bf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\セーブスロット2">
+      <UniqueIdentifier>{650c72f8-b945-4bf8-89e9-6dbae3264978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\マップ">
+      <UniqueIdentifier>{2ce77504-a045-4121-bec6-79345c05866f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -90,15 +102,6 @@
     <ClCompile Include="ObjMenu.cpp">
       <Filter>ソース ファイル\Menu</Filter>
     </ClCompile>
-    <ClCompile Include="ObjEnemy.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjHero.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="objstage.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="SceneMain.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
@@ -115,7 +118,7 @@
       <Filter>ソース ファイル\セーブスロット1</Filter>
     </ClCompile>
     <ClCompile Include="SceneSave2.cpp">
-      <Filter>ソース ファイル\セーブスロット3\セーブスロット2</Filter>
+      <Filter>ソース ファイル\セーブスロット2</Filter>
     </ClCompile>
     <ClCompile Include="SceneSave3.cpp">
       <Filter>ソース ファイル\セーブスロット3</Filter>
@@ -127,7 +130,7 @@
       <Filter>ソース ファイル\セーブスロット1</Filter>
     </ClCompile>
     <ClCompile Include="ObjSave2.cpp">
-      <Filter>ソース ファイル\セーブスロット3\セーブスロット2</Filter>
+      <Filter>ソース ファイル\セーブスロット2</Filter>
     </ClCompile>
     <ClCompile Include="ObjSave3.cpp">
       <Filter>ソース ファイル\セーブスロット3</Filter>
@@ -174,6 +177,21 @@
     <ClCompile Include="SceneEquipped2.cpp">
       <Filter>ソース ファイル\十字架装備</Filter>
     </ClCompile>
+    <ClCompile Include="Objtrap.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjEnemy.cpp">
+      <Filter>ソース ファイル\敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjHero.cpp">
+      <Filter>ソース ファイル\主人公</Filter>
+    </ClCompile>
+    <ClCompile Include="objstage.cpp">
+      <Filter>ソース ファイル\ステージ</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMap.cpp">
+      <Filter>ソース ファイル\マップ</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -218,16 +236,7 @@
     <ClInclude Include="ObjMenu.h">
       <Filter>ソース ファイル\Menu</Filter>
     </ClInclude>
-    <ClInclude Include="ObjEnemy.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="SceneMain.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjHero.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="objstage.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ObjItem.h">
@@ -243,7 +252,7 @@
       <Filter>ソース ファイル\セーブスロット1</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave2.h">
-      <Filter>ソース ファイル\セーブスロット3\セーブスロット2</Filter>
+      <Filter>ソース ファイル\セーブスロット2</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave3.h">
       <Filter>ソース ファイル\セーブスロット3</Filter>
@@ -255,7 +264,7 @@
       <Filter>ソース ファイル\セーブスロット1</Filter>
     </ClInclude>
     <ClInclude Include="ObjSave2.h">
-      <Filter>ソース ファイル\セーブスロット3\セーブスロット2</Filter>
+      <Filter>ソース ファイル\セーブスロット2</Filter>
     </ClInclude>
     <ClInclude Include="ObjSave3.h">
       <Filter>ソース ファイル\セーブスロット3</Filter>
@@ -298,6 +307,21 @@
     </ClInclude>
     <ClInclude Include="SceneEquipped2.h">
       <Filter>ソース ファイル\十字架装備</Filter>
+    </ClInclude>
+    <ClInclude Include="Objtrap.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjEnemy.h">
+      <Filter>ソース ファイル\敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjHero.h">
+      <Filter>ソース ファイル\主人公</Filter>
+    </ClInclude>
+    <ClInclude Include="objstage.h">
+      <Filter>ソース ファイル\ステージ</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMap.h">
+      <Filter>ソース ファイル\マップ</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
