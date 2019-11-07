@@ -37,7 +37,10 @@ private:
 		float m_vy;
 		float m_x;
 		float m_y;
-		float m_posture; //姿勢
+		float m_hidari; //左向き
+		float m_ue;//上向き
+		float m_sita;//下向き
+		float m_migi;//右向き
 		float m_mos_x; //マウスX座標
 		float m_mos_y; //マウスY座標
 
