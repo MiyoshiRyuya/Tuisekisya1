@@ -308,9 +308,6 @@
     <ClInclude Include="SceneEquipped2.h">
       <Filter>ソース ファイル\十字架装備</Filter>
     </ClInclude>
-    <ClInclude Include="Objtrap.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="ObjEnemy.h">
       <Filter>ソース ファイル\敵</Filter>
     </ClInclude>
@@ -322,6 +319,9 @@
     </ClInclude>
     <ClInclude Include="ObjMap.h">
       <Filter>ソース ファイル\マップ</Filter>
+    </ClInclude>
+    <ClInclude Include="Objtrap.h">
+      <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

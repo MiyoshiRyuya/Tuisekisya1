@@ -69,7 +69,4 @@ void CObjGameOver::Draw()
 	Font::StrDraw(L"Left-Click", 360, 410, 24, c);
 
 	
-
-	
-
 }
