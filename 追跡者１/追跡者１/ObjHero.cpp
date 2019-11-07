@@ -54,6 +54,9 @@ void CObjHero::Action()
 	g_Xz = m_x; 
 	g_Yz = m_y;
 
+	//Enterキーを押すと前の物を調べる
+//	if(Input::GetVKey())
+
 	//Eボタンを押すとゲーム画面に移動する
 	if (Input::GetVKey('M') == true)
 	{
@@ -86,7 +89,7 @@ void CObjHero::Action()
 		m_vx = 800.0f - 32.0f;
 	}
 
-	//Mキーを押すとゲーム画面に移動する
+	//Mキーを押すと	メニュー画面に移動する
 	if (Input::GetVKey('M') == true)
 	{
 		Scene::SetScene(new CSceneMenu());
