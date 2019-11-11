@@ -23,7 +23,10 @@ void CObjHero::Init()
 	m_py = g_Yz;
 	m_vx;//移動ベクトル
 	m_vy;
-	m_posture = 1.0f;//右向き0.0f 左向き1.0f
+	m_hidari;//左向き
+	m_ue;//上
+	m_sita = 1;//下
+	m_migi;//右
 	m_mos_x = 0.0f;
 	m_mos_y = 0.0f;
 
@@ -68,21 +71,37 @@ void CObjHero::Action()
 	//キーの入力方向
 	if (Input::GetVKey('D') == true)
 	{
+		m_migi = 1;
+		m_sita = 0;
+		m_ue = 0;
+		m_hidari = 0;
 		m_vx += 5.0f;
 	}
 
 	if (Input::GetVKey('A') == true)
 	{
+		m_hidari = 1;
+		m_ue = 0;
+		m_sita = 0;
+		m_migi = 0;
 		m_vx -= 5.0f;
 	}
 
 	if (Input::GetVKey('W') == true)
 	{
+		m_ue = 1.0f;
+		m_sita = 0;
+		m_migi = 0;
+		m_hidari = 0;
 		m_vy -= 5.0f;
 	}
 
 	if (Input::GetVKey('S') == true)
 	{
+		m_sita = 1;
+		m_ue = 0;
+		m_migi = 0;
+		m_hidari = 0;
 		m_vy += 5.0f;
 	}
 
@@ -148,15 +167,59 @@ void CObjHero::Draw()
 	RECT_F src;
 	RECT_F dst;
 
-	src.m_top = 0.0f;
-	src.m_left = 0.0f;
-	src.m_right = 180.0f;
-	src.m_bottom = 130.0f;
+	if (m_ue == 1) {
+		src.m_top = 385.0f;
+		src.m_left = 180.0f;
+		src.m_right = 320.0f;
+		src.m_bottom = 512.0f;
 
-	dst.m_top = 0.0f + m_py;
-	dst.m_left = 0.0f + m_px;
-	dst.m_right = 64.0f + m_px;
-	dst.m_bottom = 64.0f + m_py;
+		dst.m_top = 0.0f + m_py;
+		dst.m_left = 0.0f + m_px;
+		dst.m_right = 64.0f + m_px;
+		dst.m_bottom = 64.0f + m_py;
 
-	Draw::Draw(0, &src, &dst, c, 0.0f);
+		Draw::Draw(0, &src, &dst, c, 0.0f);
+	}
+
+	if (m_migi == 1) {
+		src.m_top = 255.0f;
+		src.m_left = 180.0f;
+		src.m_right = 320.0f;
+		src.m_bottom = 385.0f;
+
+		dst.m_top = 0.0f + m_py;
+		dst.m_left = 0.0f + m_px;
+		dst.m_right = 64.0f + m_px;
+		dst.m_bottom = 64.0f + m_py;
+
+		Draw::Draw(0, &src, &dst, c, 0.0f);
+	}
+
+	if (m_hidari == 1) {
+		src.m_top = 130.0f;
+		src.m_left = 180.0f;
+		src.m_right = 320.0f;
+		src.m_bottom = 255.0f;
+
+		dst.m_top = 0.0f + m_py;
+		dst.m_left = 0.0f + m_px;
+		dst.m_right = 64.0f + m_px;
+		dst.m_bottom = 64.0f + m_py;
+
+		Draw::Draw(0, &src, &dst, c, 0.0f);
+	}
+
+	if (m_sita == 1) {
+		src.m_top = 0.0f;
+		src.m_left = 180.0f;
+		src.m_right = 320.0f;
+		src.m_bottom = 130.0f;
+
+		dst.m_top = 0.0f + m_py;
+		dst.m_left = 0.0f + m_px;
+		dst.m_right = 64.0f + m_px;
+		dst.m_bottom = 64.0f + m_py;
+
+		Draw::Draw(0, &src, &dst, c, 0.0f);
+	}
 }
