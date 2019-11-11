@@ -130,7 +130,9 @@
     <ClCompile Include="GameL\SetWindow.cpp" />
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
-    <ClCompile Include="ObjMap.cpp" />
+    <ClCompile Include="ObjMap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="ObjEnemy.cpp" />
     <ClCompile Include="OBJEquipped2.cpp" />
     <ClCompile Include="ObjGameOver.cpp" />
@@ -176,7 +178,9 @@
     <ClInclude Include="GameL\UserData.h" />
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
-    <ClInclude Include="ObjMap.h" />
+    <ClInclude Include="ObjMap.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="ObjEnemy.h" />
     <ClInclude Include="ObjEquipped.h" />
     <ClInclude Include="OBJEquipped2.h" />
