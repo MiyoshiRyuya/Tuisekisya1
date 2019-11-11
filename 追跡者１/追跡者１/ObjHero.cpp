@@ -120,6 +120,9 @@ void CObjHero::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
+		g_Xz = 70;
+		g_Yz = 70;
+
 
 		Scene::SetScene(new CSceneGameOver());
 	}
