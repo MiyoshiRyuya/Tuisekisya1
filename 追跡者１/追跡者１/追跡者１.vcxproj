@@ -147,7 +147,7 @@
     <ClCompile Include="ObjSave2.cpp" />
     <ClCompile Include="ObjSave3.cpp" />
     <ClCompile Include="objstage.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="SceneEquipped.cpp" />
@@ -196,7 +196,7 @@
     <ClInclude Include="ObjSave2.h" />
     <ClInclude Include="ObjSave3.h" />
     <ClInclude Include="objstage.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="ObjTitle.h" />
     <ClInclude Include="SceneEquipped.h" />
