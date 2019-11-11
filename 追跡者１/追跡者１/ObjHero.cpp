@@ -35,7 +35,8 @@ void CObjHero::Init()
 	m_hit_left = false;
 	m_hit_right = false;
 
-	Hits::SetHitBox(this, m_vx, m_vy, 40, 64, ELEMENT_PLAYER, OBJ_HERO, 1);
+	//“–‚½‚è”»’è—p‚ÌHitBox‚ðì¬
+	Hits::SetHitBox(this, m_vx, m_vy, 64, 64, ELEMENT_PLAYER, OBJ_HERO, 1);
 
 }
 
@@ -119,7 +120,7 @@ void CObjHero::Action()
 	m_py += m_vy;
 
 	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px + 25, m_py);
+	hit->SetPos(m_px , m_py);
 
 	//æ•µã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨æŽ¥è§¦ã—ãŸã‚‰ä¸»äººå…¬å‰Šé™¤
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
