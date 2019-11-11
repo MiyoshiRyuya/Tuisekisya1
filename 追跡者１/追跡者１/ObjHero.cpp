@@ -9,6 +9,7 @@
 #include "ObjMenu.h"
 #include "Objtrap.h"
 
+//hyhefgyseg
 //使用するネームスペース
 using namespace GameL;
 
