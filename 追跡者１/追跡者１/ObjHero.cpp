@@ -36,7 +36,8 @@ void CObjHero::Init()
 	m_hit_left = false;
 	m_hit_right = false;
 
-	Hits::SetHitBox(this, m_vx, m_vy, 40, 64, ELEMENT_PLAYER, OBJ_HERO, 1);
+	//当たり判定用のHitBoxを作成
+	Hits::SetHitBox(this, m_vx, m_vy, 64, 64, ELEMENT_PLAYER, OBJ_HERO, 1);
 
 }
 
@@ -123,7 +124,7 @@ void CObjHero::Action()
 	m_py += m_vy;
 
 	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px + 25, m_py);
+	hit->SetPos(m_px , m_py);
 
 	//敵オブジェクトと接触したら主人公削除
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
