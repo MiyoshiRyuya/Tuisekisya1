@@ -1,4 +1,4 @@
-//g—p‚·‚éƒwƒbƒ_[ƒtƒ@ƒCƒ‹
+ï»¿//ä½¿ç”¨ã™ã‚‹ãƒ˜ãƒƒãƒ€ãƒ¼ãƒ•ã‚¡ã‚¤ãƒ«
 #include "GameL\DrawTexture.h"
 #include "GameL\WinInputs.h"
 #include "GameL\SceneManager.h"
@@ -7,30 +7,29 @@
 #include "GameHead.h"
 #include "ObjHero.h"
 #include "ObjMenu.h"
-#include "Objtrap.h"
 
-//g—p‚·‚éƒl[ƒ€ƒXƒy[ƒX
+//ä½¿ç”¨ã™ã‚‹ãƒãƒ¼ãƒ ã‚¹ãƒšãƒ¼ã‚¹
 using namespace GameL;
 
 float g_Xz=70;
 float g_Yz=70;
 
-//ƒCƒjƒVƒƒƒ‰ƒCƒY
+//ã‚¤ãƒ‹ã‚·ãƒ£ãƒ©ã‚¤ã‚º
 void CObjHero::Init()
 {
 
-	m_px = g_Xz;//ˆÊ’u
+	m_px = g_Xz;//ä½ç½®
 	m_py = g_Yz;
-	m_vx;//ˆÚ“®ƒxƒNƒgƒ‹
+	m_vx;//ç§»å‹•ãƒ™ã‚¯ãƒˆãƒ«
 	m_vy;
-	m_hidari;//¶Œü‚«
-	m_ue;//ã
-	m_sita = 1;//‰º
-	m_migi;//‰E
+	m_hidari; //å·¦å‘ã
+	m_ue; //ä¸Š
+	m_sita = 1; //ä¸‹
+	m_migi; //å³
 	m_mos_x = 0.0f;
 	m_mos_y = 0.0f;
 
-	//stage‚Æ‚ÌÁ“”Šm”F—p
+	//stageã¨ã®æ¶ˆç¯ç¢ºèªç”¨
 	m_hit_up = false;
 	m_hit_down = false;
 	m_hit_left = false;
@@ -41,13 +40,13 @@ void CObjHero::Init()
 
 }
 
-//ƒAƒNƒVƒ‡ƒ“
+//ã‚¢ã‚¯ã‚·ãƒ§ãƒ³
 void CObjHero::Action()
 {
-	//ˆÚ“®ƒxƒNƒgƒ‹‚Ì”jŠü
+	//ç§»å‹•ãƒ™ã‚¯ãƒˆãƒ«ã®ç ´æ£„
 	m_vx = 0.0f;
 	m_vy = 0.0f;
-
+	
 	/*if (m_x < -1 && m_y < -1) {
 		m_x = 0.0f;
 		m_y = 0.0f;
@@ -56,20 +55,17 @@ void CObjHero::Action()
 	m_x = m_px;
 	m_y = m_py;
 
-	//	Œ»İ‚ÌˆÊ’u‚ğ•Û‘¶‚·‚é
-	g_Xz = m_x;
+	//	ç¾åœ¨ã®ä½ç½®ã‚’ä¿å­˜ã™ã‚‹
+	g_Xz = m_x; 
 	g_Yz = m_y;
 
-	//EnterƒL[‚ğ‰Ÿ‚·‚Æ‘O‚Ì•¨‚ğ’²‚×‚é
-//	if(Input::GetVKey())
-
-	//Eƒ{ƒ^ƒ“‚ğ‰Ÿ‚·‚ÆƒQ[ƒ€‰æ–Ê‚ÉˆÚ“®‚·‚é
+	//Eãƒœã‚¿ãƒ³ã‚’æŠ¼ã™ã¨ã‚²ãƒ¼ãƒ ç”»é¢ã«ç§»å‹•ã™ã‚‹
 	if (Input::GetVKey('M') == true)
 	{
 		Scene::SetScene(new CSceneMenu());
 	}
 
-	//ƒL[‚Ì“ü—Í•ûŒü
+	//ã‚­ãƒ¼ã®å…¥åŠ›æ–¹å‘
 	if (Input::GetVKey('D') == true)
 	{
 		m_migi = 1;
@@ -106,12 +102,12 @@ void CObjHero::Action()
 		m_vy += 5.0f;
 	}
 
-	if (m_vx + 32.0f > 800.0f)
+	if (m_vx+32.0f>800.0f)
 	{
 		m_vx = 800.0f - 32.0f;
 	}
 
-	//MƒL[‚ğ‰Ÿ‚·‚Æ	ƒƒjƒ…[‰æ–Ê‚ÉˆÚ“®‚·‚é
+	//Mã‚­ãƒ¼ã‚’æŠ¼ã™ã¨ã‚²ãƒ¼ãƒ ç”»é¢ã«ç§»å‹•ã™ã‚‹
 	if (Input::GetVKey('M') == true)
 	{
 		Scene::SetScene(new CSceneMenu());
@@ -119,14 +115,14 @@ void CObjHero::Action()
 
 
 
-	//ˆÊ’u‚ÌXV
+	//ä½ç½®ã®æ›´æ–°
 	m_px += m_vx;
 	m_py += m_vy;
 
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_px , m_py);
 
-	//“GƒIƒuƒWƒFƒNƒg‚ÆÚG‚µ‚½‚çålŒöíœ
+	//æ•µã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨æ¥è§¦ã—ãŸã‚‰ä¸»äººå…¬å‰Šé™¤
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
 		this->SetStatus(false);
@@ -135,36 +131,28 @@ void CObjHero::Action()
 		g_Xz = 70;
 		g_Yz = 70;
 
-		if (hit->CheckObjNameHit(OBJ_TRAP) != nullptr)
-		{
-			this->SetStatus(false);
-			Hits::DeleteHitBox(this);
-		}
-
-	
-		//ƒgƒ‰ƒbƒvƒIƒuƒWƒFƒNƒg‚ÆÚG‚µ‚½‚çålŒöíœ
-		if (hit->CheckObjNameHit(OBJ_TRAP) != nullptr)
-		{
-			this->SetStatus(false);
-			Hits::DeleteHitBox(this);
-
-
-			Scene::SetScene(new CSceneGameOver());
-		}
-
-		//ålŒöÁ–Å‚ÅƒV[ƒ“‚ğƒQ[ƒ€ƒI[ƒo[‰æ–Ê‚ÉˆÚs‚·‚é
+		//ä¸»äººå…¬æ¶ˆæ»…ã§ã‚·ãƒ¼ãƒ³ã‚’ã‚²ãƒ¼ãƒ ã‚ªãƒ¼ãƒãƒ¼ç”»é¢ã«ç§»è¡Œã™ã‚‹
 		Scene::SetScene(new CSceneGameOver());
+	}
+	//ãƒˆãƒ©ãƒƒãƒ—ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨æ¥è§¦ã—ãŸã‚‰ä¸»äººå…¬å‰Šé™¤
+	if (hit->CheckObjNameHit(OBJ_TRAP) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
 
+		g_Xz = 70;
+		g_Yz = 70;
+
+
+		Scene::SetScene(new CSceneGameOver());
 	}
 }
 
-//ƒhƒ[
+//ãƒ‰ãƒ­ãƒ¼
 void CObjHero::Draw()
 {
 
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
-
-
 	RECT_F src;
 	RECT_F dst;
 
@@ -223,4 +211,15 @@ void CObjHero::Draw()
 
 		Draw::Draw(0, &src, &dst, c, 0.0f);
 	}
+/*	src.m_top = 0.0f;
+	src.m_left = 0.0f;
+	src.m_right = 180.0f;
+	src.m_bottom = 130.0f;
+
+	dst.m_top = 0.0f + m_py;
+	dst.m_left = 0.0f + m_px;
+	dst.m_right = 64.0f + m_px;
+	dst.m_bottom = 64.0f + m_py;
+
+	Draw::Draw(0, &src, &dst, c, 0.0f);*/
 }
