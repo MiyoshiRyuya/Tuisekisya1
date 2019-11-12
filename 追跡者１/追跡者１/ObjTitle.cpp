@@ -31,9 +31,11 @@ void CObjTitle::Action()
 	//マウス左クリックを押したらシーンメインに移行する
 	if (m_mou_x > 356 && m_mou_x < 445 && m_mou_y>345 && m_mou_y < 364)
 	{
+		
 		//マウスが押されたらシーンメインに移動
 		if (m_mou_l == true)
 		{
+			Audio::Start(1);
 			Scene::SetScene(new CSceneMain());
 		}
 	}
@@ -65,9 +67,6 @@ void CObjTitle::Draw()
 	Draw::LoadImage(L"Title.png", 0, TEX_SIZE_512);
 
 
-
 	Font::StrDraw(L"NEW GAME", 360, 350, 23, c);
 	Font::StrDraw(L"CONTINUE", 360, 410, 23, c);
-
-
 }

@@ -35,7 +35,7 @@ void CObjHero::Init()
 	m_hit_left = false;
 	m_hit_right = false;
 
-	//“–‚½‚è”»’è—p‚ÌHitBox‚ğì¬
+	//ï¿½ï¿½ï¿½ï¿½ï¿½è”»ï¿½ï¿½pï¿½ï¿½HitBoxï¿½ï¿½ì¬
 	Hits::SetHitBox(this, m_vx, m_vy, 64, 64, ELEMENT_PLAYER, OBJ_HERO, 1);
 
 }
