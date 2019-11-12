@@ -31,7 +31,7 @@ void CObjGameOver::Action()
 	m_mou_l = Input::GetMouButtonL();
 
 	//マウス左クリックを押したらシーンメインに移行する
-	if (m_mou_x > 356 && m_mou_x < 445 && m_mou_y>400 && m_mou_y < 450)
+	if (m_mou_x > 0 && m_mou_x < 730 && m_mou_y>0 && m_mou_y < 600)
 	{
 		//マウスが押されたらシーンメインに移動
 		if (m_mou_l == true)
@@ -69,7 +69,4 @@ void CObjGameOver::Draw()
 	Font::StrDraw(L"Left-Click", 360, 410, 24, c);
 
 	
-
-	
-
 }

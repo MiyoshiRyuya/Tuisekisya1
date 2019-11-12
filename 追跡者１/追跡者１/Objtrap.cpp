@@ -13,15 +13,17 @@ void CObjtrap::Init()
 	m_x = 100;
 	m_y = 200;
 
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_WHITE, OBJ_TRAP, 1);
+	Hits::SetHitBox(this, m_x+10, m_y+10, 32, 32, ELEMENT_WHITE, OBJ_TRAP, 1);
 
 }
+
 void CObjtrap::Action()
 {
 	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_x, m_y);
+	hit->SetPos(m_x+10, m_y+10);
 
 }
+
 void CObjtrap::Draw()
 {
 	float c[4]{ 1.0f,1.0f, 1.0f, 1.0f };
