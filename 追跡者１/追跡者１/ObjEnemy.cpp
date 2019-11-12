@@ -19,7 +19,7 @@ void CObjEnemy::Init()
 	m_vy = 0.0f;
 	m_len = 0.0f;
 
-	Hits::SetHitBox(this, m_x, m_y, 16, 32, ELEMENT_ENEMY, OBJ_ENEMY, 1);
+	Hits::SetHitBox(this, m_x, m_y, 64, 64, ELEMENT_ENEMY, OBJ_ENEMY, 1);
 
 }
 void CObjEnemy::Action()
