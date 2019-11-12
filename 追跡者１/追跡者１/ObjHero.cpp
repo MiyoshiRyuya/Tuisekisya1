@@ -8,7 +8,9 @@
 #include "ObjHero.h"
 #include "ObjMenu.h"
 
+
 //使用するネームスペース
+
 using namespace GameL;
 
 float g_Xz=70;
