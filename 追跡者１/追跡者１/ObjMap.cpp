@@ -3,7 +3,6 @@
 #include "GameL\WinInputs.h"
 #include "GameL\SceneManager.h"
 #include "GameL\SceneObjManager.h"
-#include"GameL/HitBoxManager.h"
 
 #include "GameHead.h"
 #include "ObjMap.h"
@@ -32,19 +31,11 @@ void CObjMap::Init()
 	};
 	//マップデータをコピー
 	memcpy(m_map, block_date, sizeof(int)*(10 * 10));
-
-	m_x = 300;
-	m_y = 100;
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_BLUE, OBJ_MAP, 2);
-
 }
 
 //アクション
 void CObjMap::Action()
 {
-	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_x, m_y);
-
 	//主人公の位置を取得
 	CObjHero* hero = (CObjHero*)Objs::GetObj(OBJ_HERO);
 	float hx = hero->GetX();
@@ -167,7 +158,7 @@ void CObjMap::Draw()
 				dst.m_bottom = dst.m_top + 32.0f;
 
 				//描画
-				Draw::Draw(3, &src, &dst, c, 0.f);
+				//Draw::Draw(1, &src, &dst, c, 0.f);
 			}
 		}
 	}

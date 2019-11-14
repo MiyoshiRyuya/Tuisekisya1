@@ -19,14 +19,8 @@
     <Filter Include="ソース ファイル\mainSave">
       <UniqueIdentifier>{fe70343e-1eda-48b6-b5c2-0f157f5eedbb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\セーブスロット3">
-      <UniqueIdentifier>{0033fc82-399f-4c70-af4f-02dc5da637c8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Menu">
       <UniqueIdentifier>{3ced9b1e-fdcc-4715-999c-2d980d697c62}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\セーブスロット1">
-      <UniqueIdentifier>{136ae6e4-b616-4e98-aa44-4aed89df6b3c}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\GameOver">
       <UniqueIdentifier>{f0c22939-a381-41cf-85f7-075a0ca5687c}</UniqueIdentifier>
@@ -37,26 +31,35 @@
     <Filter Include="ソース ファイル\Road">
       <UniqueIdentifier>{8489e961-d085-43e2-ab10-a9fa266f78bf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\催涙スプレー装備">
-      <UniqueIdentifier>{2d207246-329d-4230-9900-5f92a8bb0743}</UniqueIdentifier>
+    <Filter Include="ソース ファイル\Furniture">
+      <UniqueIdentifier>{4c23f0bf-4208-4620-80e9-a4b6013188b1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\十字架装備">
-      <UniqueIdentifier>{dd6b6aa5-3919-4793-b78a-6176f5f6455b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\敵">
+    <Filter Include="ソース ファイル\Enemy">
       <UniqueIdentifier>{442e2d59-6d6e-42b4-b298-30514e2d4b9a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\主人公">
-      <UniqueIdentifier>{4a77a3bf-f683-4e12-b3f8-ee0efd33c8f7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\ステージ">
+    <Filter Include="ソース ファイル\Stage">
       <UniqueIdentifier>{d4c33757-cb2d-4436-bb40-914689050bf6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\セーブスロット2">
+    <Filter Include="ソース ファイル\Save1">
+      <UniqueIdentifier>{136ae6e4-b616-4e98-aa44-4aed89df6b3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Save2">
       <UniqueIdentifier>{650c72f8-b945-4bf8-89e9-6dbae3264978}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\マップ">
+    <Filter Include="ソース ファイル\Map">
       <UniqueIdentifier>{2ce77504-a045-4121-bec6-79345c05866f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Tear spray Equipment">
+      <UniqueIdentifier>{2d207246-329d-4230-9900-5f92a8bb0743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Cross Equipment">
+      <UniqueIdentifier>{dd6b6aa5-3919-4793-b78a-6176f5f6455b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Hero">
+      <UniqueIdentifier>{4a77a3bf-f683-4e12-b3f8-ee0efd33c8f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Save3">
+      <UniqueIdentifier>{0033fc82-399f-4c70-af4f-02dc5da637c8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -115,25 +118,25 @@
       <Filter>ソース ファイル\mainSave</Filter>
     </ClCompile>
     <ClCompile Include="SceneSave1.cpp">
-      <Filter>ソース ファイル\セーブスロット1</Filter>
+      <Filter>ソース ファイル\Save1</Filter>
     </ClCompile>
     <ClCompile Include="SceneSave2.cpp">
-      <Filter>ソース ファイル\セーブスロット2</Filter>
+      <Filter>ソース ファイル\Save2</Filter>
     </ClCompile>
     <ClCompile Include="SceneSave3.cpp">
-      <Filter>ソース ファイル\セーブスロット3</Filter>
+      <Filter>ソース ファイル\Save3</Filter>
     </ClCompile>
     <ClCompile Include="ObjmainSave.cpp">
       <Filter>ソース ファイル\mainSave</Filter>
     </ClCompile>
     <ClCompile Include="ObjSave1.cpp">
-      <Filter>ソース ファイル\セーブスロット1</Filter>
+      <Filter>ソース ファイル\Save1</Filter>
     </ClCompile>
     <ClCompile Include="ObjSave2.cpp">
-      <Filter>ソース ファイル\セーブスロット2</Filter>
+      <Filter>ソース ファイル\Save2</Filter>
     </ClCompile>
     <ClCompile Include="ObjSave3.cpp">
-      <Filter>ソース ファイル\セーブスロット3</Filter>
+      <Filter>ソース ファイル\Save3</Filter>
     </ClCompile>
     <ClCompile Include="SceneMenu.cpp">
       <Filter>ソース ファイル\Menu</Filter>
@@ -166,34 +169,43 @@
       <Filter>ソース ファイル\Title</Filter>
     </ClCompile>
     <ClCompile Include="SceneEquipped.cpp">
-      <Filter>ソース ファイル\催涙スプレー装備</Filter>
+      <Filter>ソース ファイル\Tear spray Equipment</Filter>
     </ClCompile>
     <ClCompile Include="OBJEquipped.cpp">
-      <Filter>ソース ファイル\催涙スプレー装備</Filter>
+      <Filter>ソース ファイル\Tear spray Equipment</Filter>
     </ClCompile>
     <ClCompile Include="OBJEquipped2.cpp">
-      <Filter>ソース ファイル\十字架装備</Filter>
+      <Filter>ソース ファイル\Cross Equipment</Filter>
     </ClCompile>
     <ClCompile Include="SceneEquipped2.cpp">
-      <Filter>ソース ファイル\十字架装備</Filter>
+      <Filter>ソース ファイル\Cross Equipment</Filter>
     </ClCompile>
     <ClCompile Include="Objtrap.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ObjEnemy.cpp">
-      <Filter>ソース ファイル\敵</Filter>
+      <Filter>ソース ファイル\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="ObjHero.cpp">
-      <Filter>ソース ファイル\主人公</Filter>
+      <Filter>ソース ファイル\Hero</Filter>
     </ClCompile>
     <ClCompile Include="objstage.cpp">
-      <Filter>ソース ファイル\ステージ</Filter>
+      <Filter>ソース ファイル\Stage</Filter>
     </ClCompile>
     <ClCompile Include="ObjMap.cpp">
-      <Filter>ソース ファイル\マップ</Filter>
+      <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
-    <ClCompile Include="SceneMap.cpp">
-      <Filter>ソース ファイル\マップ</Filter>
+    <ClCompile Include="ObjFurniture.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture1.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJEquipped3.cpp">
+      <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEquipped3.cpp">
+      <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
     </ClCompile>
     <ClCompile Include="SceneEquipped3.cpp">
       <Filter>ソース ファイル\催涙スプレー装備</Filter>
@@ -261,25 +273,25 @@
       <Filter>ソース ファイル\mainSave</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave1.h">
-      <Filter>ソース ファイル\セーブスロット1</Filter>
+      <Filter>ソース ファイル\Save1</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave2.h">
-      <Filter>ソース ファイル\セーブスロット2</Filter>
+      <Filter>ソース ファイル\Save2</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave3.h">
-      <Filter>ソース ファイル\セーブスロット3</Filter>
+      <Filter>ソース ファイル\Save3</Filter>
     </ClInclude>
     <ClInclude Include="ObjmainSave.h">
       <Filter>ソース ファイル\mainSave</Filter>
     </ClInclude>
     <ClInclude Include="ObjSave1.h">
-      <Filter>ソース ファイル\セーブスロット1</Filter>
+      <Filter>ソース ファイル\Save1</Filter>
     </ClInclude>
     <ClInclude Include="ObjSave2.h">
-      <Filter>ソース ファイル\セーブスロット2</Filter>
+      <Filter>ソース ファイル\Save2</Filter>
     </ClInclude>
     <ClInclude Include="ObjSave3.h">
-      <Filter>ソース ファイル\セーブスロット3</Filter>
+      <Filter>ソース ファイル\Save3</Filter>
     </ClInclude>
     <ClInclude Include="SceneMenu.h">
       <Filter>ソース ファイル\Menu</Filter>
@@ -309,34 +321,43 @@
       <Filter>ソース ファイル\Title</Filter>
     </ClInclude>
     <ClInclude Include="SceneEquipped.h">
-      <Filter>ソース ファイル\催涙スプレー装備</Filter>
+      <Filter>ソース ファイル\Tear spray Equipment</Filter>
     </ClInclude>
     <ClInclude Include="ObjEquipped.h">
-      <Filter>ソース ファイル\催涙スプレー装備</Filter>
+      <Filter>ソース ファイル\Tear spray Equipment</Filter>
     </ClInclude>
     <ClInclude Include="OBJEquipped2.h">
-      <Filter>ソース ファイル\十字架装備</Filter>
+      <Filter>ソース ファイル\Cross Equipment</Filter>
     </ClInclude>
     <ClInclude Include="SceneEquipped2.h">
-      <Filter>ソース ファイル\十字架装備</Filter>
+      <Filter>ソース ファイル\Cross Equipment</Filter>
     </ClInclude>
     <ClInclude Include="ObjEnemy.h">
-      <Filter>ソース ファイル\敵</Filter>
+      <Filter>ソース ファイル\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="ObjHero.h">
-      <Filter>ソース ファイル\主人公</Filter>
+      <Filter>ソース ファイル\Hero</Filter>
     </ClInclude>
     <ClInclude Include="objstage.h">
-      <Filter>ソース ファイル\ステージ</Filter>
+      <Filter>ソース ファイル\Stage</Filter>
     </ClInclude>
     <ClInclude Include="ObjMap.h">
-      <Filter>ソース ファイル\マップ</Filter>
+      <Filter>ソース ファイル\Map</Filter>
     </ClInclude>
     <ClInclude Include="Objtrap.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="SceneMap.h">
-      <Filter>ソース ファイル\マップ</Filter>
+    <ClInclude Include="ObjFurniture.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture1.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJEquipped3.h">
+      <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneEquipped3.h">
+      <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
     </ClInclude>
     <ClInclude Include="SceneEquipped3.h">
       <Filter>ソース ファイル\催涙スプレー装備</Filter>

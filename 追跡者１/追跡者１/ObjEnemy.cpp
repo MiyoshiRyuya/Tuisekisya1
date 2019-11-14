@@ -18,6 +18,10 @@ void CObjEnemy::Init()
 	m_vx = 0.0f;
 	m_vy = 0.0f;
 	m_len = 0.0f;
+	m_ani_time = 0;
+	m_ani_frame = 1;
+
+	m_ani_max_time = 4;
 
 	Hits::SetHitBox(this, m_x, m_y, 64, 64, ELEMENT_ENEMY, OBJ_ENEMY, 1);
 
@@ -90,9 +94,22 @@ void CObjEnemy::Action()
 	//速度を付ける
 	m_vx *= 1.5f;
 	m_vy *= 1.5f;
-	//移動ベクトルを座標にに加算する
+
+	//if(m_vx==false)
+	//移動ベクトルを座標に加算する
 	m_x += m_vx;
 	m_y += m_vy;
+
+	if (m_ani_time > m_ani_max_time)
+	{
+		m_ani_frame + 1;
+		m_ani_time = 0;
+	}
+
+	if (m_ani_frame == 2)
+	{
+		m_ani_frame = 0;
+	}
 
 	//敵オブジェクトと接触したら主人公削除
 	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
@@ -103,20 +120,25 @@ void CObjEnemy::Action()
 }
 void CObjEnemy::Draw()
 {
+	int AniData[4] =
+	{
+		1,2,3,4,
+	};
+
 	float c[4]{ 1.0f,1.0f, 1.0f, 1.0f };
 
 	RECT_F src;
 	RECT_F dst;
 
 	src.m_top = 0.0f;
-	src.m_left = 32.0f;
-	src.m_right = 64.0f;
+	src.m_left = 16.0f;
+	src.m_right = 42.0f;
 	src.m_bottom = 32.0f;
 
 	dst.m_top = 0.0f+m_y;
-	dst.m_left = 32.0f+m_x;
+	dst.m_left = 96.0f+m_x;
 	dst.m_right = 0.0f+m_x;
-	dst.m_bottom = 32.0f+m_y;
+	dst.m_bottom = 136.0f+m_y;
 
-	Draw::Draw(0, &src, &dst, c, 0.0f);
+	Draw::Draw(5, &src, &dst, c, 0.0f);
 }

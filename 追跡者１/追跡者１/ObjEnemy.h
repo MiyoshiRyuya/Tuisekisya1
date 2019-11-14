@@ -24,5 +24,9 @@ private:
 	float m_len;
 
 	float m_speed_power;
+	float m_ani_max_time;//アニメーション動作間隔最大値
+
+	int m_ani_time;//アニメーションフレーム動作間隔
+	int m_ani_frame;//描画フレーム
 
 };

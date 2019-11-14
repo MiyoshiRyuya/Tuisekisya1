@@ -29,7 +29,9 @@ void CSceneMain::InitScene()
 	//外部データの読み込み(ステージ情報)
 	unique_ptr<wchar_t> p;//ステージ情報ポインター
 	int size;//ステージ情報の大きさ
-	p = Save::ExternalDataOpen(L"Stage.csv", &size);//外部データ読み込み
+	p = Save::ExternalDataOpen(L"stage01.csv", &size);//外部データ読み込み
+
+	Font::SetStrTex(L"0123456789分秒");
 
 	int map[20][20];
 	int count = 1;
@@ -48,28 +50,52 @@ void CSceneMain::InitScene()
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 	
+
 	Draw::LoadImageW(L"ブロック.png",1,TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み2番目に登録(512*512pixel)
+	Draw::LoadImage(L"FloorEX.png", 2, TEX_SIZE_512);
+
+	//外部グラフィックファイルを読み込み3番目に登録(64*64pixel)
+	Draw::LoadImage(L"Horrorbear.png", 3, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み4番目に登録
+	Draw::LoadImage(L"Bookshelf.png", 4, TEX_SIZE_32);
+
+	//外部グラフィックファイルを読み込み5番目に登録
+	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
+
 	//主人公オブジェクト作成
-	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
+	CObjHero*obj = new CObjHero();
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
+
+	CObjstage*objb = new CObjstage(map);
+	Objs::InsertObj(objb, OBJ_STAGE, 9);
 
 	//敵オブジェクト
 	CObjEnemy*obj_enemy = new CObjEnemy();
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
 
-	//トラップオブジェクト
+	//罠オブジェクト作成
 	CObjtrap*obj_trap = new CObjtrap();
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
+
+	//家具オブジェクト作成
+	CObjFurniture*obj_Furnirure = new CObjFurniture();
+	Objs::InsertObj(obj_Furnirure, OBJ_FURNITURE,1);
+
+	//家具オブジェクト1作成
+	CObjFurniture1*obj_Furnirure1 = new CObjFurniture1();
+	Objs::InsertObj(obj_Furnirure1, OBJ_FURNITURE1, 1);
+
+	//マップ背景オブジェクト作成
+	CObjMap*obj_map = new CObjMap();
+	Objs::InsertObj(obj_map, OBJ_MAP, 1);
+
 
 	//blockオブジェクト作成
 	//CObjstage*objb = new CObjstage(map);
 	//Objs::InsertObj(objb, OBJ_STAGE,9);
-
-	//マップシーンオブジェクト
-	CObjMap*obj_map = new CObjMap();
-	Objs::InsertObj(obj_map, OBJ_MAP, 2);
-
 }
 //ゲームメイン実行中メソッド
 void CSceneMain::Scene()
