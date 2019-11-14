@@ -35,7 +35,9 @@ void CObjHero::Init()
 	m_hit_left = false;
 	m_hit_right = false;
 
-	//“–‚½‚è”»’è—p‚ÌHitBox‚ğì¬
+	m_stage_type = 0;
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½è”»ï¿½ï¿½pï¿½ï¿½HitBoxï¿½ï¿½ì¬
 	Hits::SetHitBox(this, m_vx, m_vy, 64, 64, ELEMENT_PLAYER, OBJ_HERO, 1);
 
 }
@@ -113,6 +115,12 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneMenu());
 	}
 
+
+	CObjstage*pb = (CObjstage*)Objs::GetObj(OBJ_STAGE);
+	pb->stageHit(&m_px, &m_py, true,
+		&m_hit_up, &m_hit_down, &m_hit_left, &m_hit_right, &m_vx, &m_vy,
+		&m_stage_type
+		);
 
 
 	//ä½ç½®ã®æ›´æ–°

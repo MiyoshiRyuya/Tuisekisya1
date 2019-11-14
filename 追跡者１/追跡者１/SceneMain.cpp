@@ -29,7 +29,9 @@ void CSceneMain::InitScene()
 	//外部データの読み込み(ステージ情報)
 	unique_ptr<wchar_t> p;//ステージ情報ポインター
 	int size;//ステージ情報の大きさ
-	p = Save::ExternalDataOpen(L"Stage.csv", &size);//外部データ読み込み
+	p = Save::ExternalDataOpen(L"stage01.csv", &size);//外部データ読み込み
+
+	Font::SetStrTex(L"0123456789分秒");
 
 	int map[20][20];
 	int count = 1;
@@ -53,6 +55,9 @@ void CSceneMain::InitScene()
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
+
+	CObjstage*objb = new CObjstage(map);
+	Objs::InsertObj(objb, OBJ_STAGE, 9);
 
 	//敵オブジェクト
 	CObjEnemy*obj_enemy = new CObjEnemy();

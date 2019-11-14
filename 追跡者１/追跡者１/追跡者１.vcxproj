@@ -136,7 +136,9 @@
     <ClCompile Include="ObjEnemy.cpp" />
     <ClCompile Include="OBJEquipped2.cpp" />
     <ClCompile Include="ObjGameOver.cpp" />
-    <ClCompile Include="ObjHero.cpp" />
+    <ClCompile Include="ObjHero.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="ObjItem.cpp" />
     <ClCompile Include="ObjmainSave.cpp" />
     <ClCompile Include="ObjMenu.cpp">

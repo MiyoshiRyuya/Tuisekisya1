@@ -84,6 +84,9 @@ void CObjstage::Action()
 							hero->SetDown(true);//主事っこいから見て、下の部分が衝突している
 							hero->SetY(y - 32.0f);//ブロックの位置-主人公の幅
 							hero->SetVY(0.0f);
+							if (m_map[i][j] >= 2)
+								hero->SetBT(m_map[i][j]);
+							hero->SetVY(0.0f);
 						}
 						if (r > 135 && r < 225)
 						{

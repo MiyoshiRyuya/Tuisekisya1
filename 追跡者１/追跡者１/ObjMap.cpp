@@ -27,7 +27,7 @@ void CObjMap::Init()
 		{1,0,0,0,0,0,0,0,0,1},
 		{1,0,0,0,0,0,0,0,0,1},
 		{1,0,0,0,0,0,0,0,0,1},
-		{1,1,1,1,1,1,1,1,1,1},
+		{1,1,1,1,2,1,3,1,1,1},
 	};
 	//マップデータをコピー
 	memcpy(m_map, block_date, sizeof(int)*(10 * 10));
@@ -86,6 +86,8 @@ void CObjMap::Action()
 						//上
 						hero->SetDown(true);//主人公から見て、下の部分が衝突している
 						hero->SetY(y - 64.0f);//ブロックの位置-主人公の幅
+						if(m_map[i][j]>=2)
+						hero->SetBT(m_map[i][j]);
 						hero->SetVY(0.0f);
 					}
 
@@ -136,11 +138,7 @@ void CObjMap::Draw()
 	dst.m_bottom = 600.0f;
 	Draw::Draw(4, &src, &dst, c, 0.0f);
 
-	//切り取り位置の設定
-	src.m_top = 0.0f;
-	src.m_left = 0.0f;
-	src.m_right = src.m_left + 64.0f;
-	src.m_bottom = 64.0f;
+	
 
 	for (int i = 0; i < 10; i++)
 	{
@@ -153,9 +151,22 @@ void CObjMap::Draw()
 				dst.m_left = j * 32.0f;
 				dst.m_right = dst.m_left + 32.0f;
 				dst.m_bottom = dst.m_top + 32.0f;
+				if (m_map[i][j] == 2)
+				{
+					//スタートブロック
+				}
+				else if (m_map[i][j] == 3)
+				{
+					;
+				}
+				else
+				{
 
-				//描画
-				Draw::Draw(3, &src, &dst, c, 0.f);
+
+
+					//描画
+					Draw::Draw(3, &src, &dst, c, 0.f);
+				}
 			}
 		}
 	}
