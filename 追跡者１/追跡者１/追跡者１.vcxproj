@@ -116,6 +116,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ObjFurnirure2.cpp" />
     <ClCompile Include="ObjFurniture.cpp" />
     <ClCompile Include="OBJEquipped.cpp" />
     <ClCompile Include="GameL\Audio.cpp" />
@@ -182,6 +183,7 @@
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjFurniture1.h" />
+    <ClInclude Include="ObjFurniture2.h" />
     <ClInclude Include="ObjMap.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>

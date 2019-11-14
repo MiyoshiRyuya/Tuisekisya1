@@ -49,8 +49,8 @@ void CObjMap::Action()
 			if (m_map[i][j] > 0)
 			{
 				//要素番号を座標に変更
-				float x = j * 64.0f;
-				float y = i * 64.0f;
+				float x = i * 64.0f;
+				float y = j * 64.0f;
 
 				//主人公とブロックの当たり判定
 				if ((hx + 64.0f > x) && (hx < x + 64.0f) && (hy + 64.0f > y) && (hy < 64.0f))
@@ -72,39 +72,41 @@ void CObjMap::Action()
 					//長さを求める
 					float len = sqrt(vx*vx + vy * vy);
 					if (len < 88.0f)
-
-					if ((r < 45 && r>0) || r > 315)
 					{
-						//右
-						hero->SetRight(true);//主人公の左の部分が衝突している
-						hero->SetX(x + 64.0f);//ブロックの位置-主人公の幅
-						hero->SetVX(-hero->GetVX()*0.1f);
-					}
 
-					if (r > 45 && r < 135)
-					{
-						//上
-						hero->SetDown(true);//主人公から見て、下の部分が衝突している
-						hero->SetY(y - 64.0f);//ブロックの位置-主人公の幅
-						hero->SetVY(0.0f);
-					}
-
-					if (r > 135 && r < 225)
-					{
-						//左
-						hero->SetLeft(true);//主人公の右の部分が衝突している
-						hero->SetY(y - 64.0f);//ブロックの位置-主人公の幅
-						hero->SetVY(0.0f);//-VX*反発係数
-					}
-
-					if (r > 225 && r < 315)
-					{
-						//下
-						hero->SetUp(true);//主人公の右の部分が衝突している
-						hero->SetVY(y + 64.0f);//ブロックの位置+主人公の幅
-						if (hero->GetVY()<0)
+						if ((r < 45 && r>0) || r > 315)
 						{
+							//右
+							hero->SetRight(true);//主人公の左の部分が衝突している
+							hero->SetX(x + 64.0f);//ブロックの位置-主人公の幅
+							hero->SetVX(-hero->GetVX()*0.1f);
+						}
+
+						if (r > 45 && r < 135)
+						{
+							//上
+							hero->SetDown(true);//主人公から見て、下の部分が衝突している
+							hero->SetY(y - 64.0f);//ブロックの位置-主人公の幅
 							hero->SetVY(0.0f);
+						}
+
+						if (r > 135 && r < 225)
+						{
+							//左
+							hero->SetLeft(true);//主人公の右の部分が衝突している
+							hero->SetY(x - 64.0f);//ブロックの位置-主人公の幅
+							hero->SetVY(0.0f);//-VX*反発係数
+						}
+
+						if (r > 225 && r < 315)
+						{
+							//下
+							hero->SetUp(true);//主人公の右の部分が衝突している
+							hero->SetVY(y + 64.0f);//ブロックの位置+主人公の幅
+							if (hero->GetVY() < 0)
+							{
+								hero->SetVY(0.0f);
+							}
 						}
 					}
 					//当たってる場合
@@ -128,8 +130,8 @@ void CObjMap::Draw()
 
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 1191.0f;
-	src.m_bottom = 842.0f;
+	src.m_right = 600.0f;
+	src.m_bottom = 500.0f;
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f;
 	dst.m_right = 800.0f;
@@ -141,7 +143,7 @@ void CObjMap::Draw()
 
 	//切り取り位置の設定
 	src.m_top = 0.0f;
-	src.m_left = 0.0f;
+	src.m_left =64.0f;
 	src.m_right = src.m_left + 64.0f;
 	src.m_bottom = 64.0f;
 
@@ -152,13 +154,13 @@ void CObjMap::Draw()
 			if (m_map[i][j] > 0)
 			{
 				//表示位置＾の瀬鄭
-				dst.m_top = i * 32.0f;
+				dst.m_top = i* 32.0f;
 				dst.m_left = j * 32.0f;
 				dst.m_right = dst.m_left + 32.0f;
 				dst.m_bottom = dst.m_top + 32.0f;
 
 				//描画
-				//Draw::Draw(1, &src, &dst, c, 0.f);
+				Draw::Draw(1, &src, &dst, c, 0.f);
 			}
 		}
 	}

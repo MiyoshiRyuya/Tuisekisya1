@@ -201,6 +201,9 @@
     <ClCompile Include="ObjFurniture1.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
+    <ClCompile Include="ObjFurnirure2.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -336,6 +339,9 @@
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture1.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture2.h">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
   </ItemGroup>
