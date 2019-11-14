@@ -27,23 +27,12 @@ void CObjSave1::Action()
 	m_mou_l = Input::GetMouButtonL();
 
 	//マウスの位置とクリックする場所で当たり判定
-	if (m_mou_x > 230 && m_mou_x < 530 && m_mou_y>400 && m_mou_y < 450)
+	if (m_mou_x > 520 && m_mou_x < 680 && m_mou_y>460 && m_mou_y < 510)
 	{
-		//マウスの左が押されたらセーブ画面1に移動する
-		if (m_mou_l == true)
-		{
-			Scene::SetScene(new CSceneSave2());
-		}
-	}
-
-	//マウスの位置とクリックする場所で当たり判定
-	if (m_mou_x > 150 && m_mou_x < 210 && m_mou_y>110 && m_mou_y < 150)
-	{
-		//マウスの左が押されたらセーブ画面に移動する
+		//マウスの左が押されたらアイテム画面に移動する
 		if (m_mou_l == true)
 		{
 			Scene::SetScene(new CScenemainSave());
-			m_time++;
 		}
 	}
 }
@@ -52,6 +41,7 @@ void CObjSave1::Action()
 void CObjSave1::Draw()
 {
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
+
 	Font::StrDraw(L"セーブ画面", 280, 100, 46, c);
 
 	Font::StrDraw(L"スロット1", 250, 180, 64, c);
@@ -59,6 +49,4 @@ void CObjSave1::Draw()
 	Font::StrDraw(L"セーブしますか？", 150, 320, 64, c);
 
 	Font::StrDraw(L"はい　　　　いいえ", 130, 460, 64, c);
-
-	Font::StrDraw(L"←", 150, 100, 64, c);
 }

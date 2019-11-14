@@ -3,18 +3,17 @@
 #include "GameL\WinInputs.h"
 #include"GameL\SceneManager.h"
 #include"GameL\DrawTexture.h"
-#include "SceneItem.h"
 
 #include "SceneMenu.h"
 #include "GameHead.h"
-#include "ObjEquipped2.h"
+#include "ObjEquipped3.h"
 
 
 //使用するネームスペース
 using namespace GameL;
 
 //イニシャライズ
-void CObjEquipped2::Init()
+void CObjEquipped3::Init()
 {
 	m_mou_x = (float)Input::GetPosX();
 	m_mou_y = (float)Input::GetPosY();
@@ -23,7 +22,7 @@ void CObjEquipped2::Init()
 }
 
 //アクション
-void CObjEquipped2::Action()
+void CObjEquipped3::Action()
 {
 	//マウスの位置を取得
 	m_mou_x = (float)Input::GetPosX();
@@ -33,7 +32,7 @@ void CObjEquipped2::Action()
 	m_mou_l = Input::GetMouButtonL();
 
 	//マウスの位置とクリックする場所で当たり判定
-	if (m_mou_x > 510 && m_mou_x < 680 && m_mou_y>440 && m_mou_y < 480)
+	if (m_mou_x > 520 && m_mou_x < 680 && m_mou_y>435 && m_mou_y < 500)
 	{
 		//マウスの左が押されたらアイテム画面に移動する
 		if (m_mou_l == true)
@@ -41,12 +40,10 @@ void CObjEquipped2::Action()
 			Scene::SetScene(new CSceneItem());
 		}
 	}
-
-
 }
 
 //ドロー
-void CObjEquipped2::Draw()
+void CObjEquipped3::Draw()
 {
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
@@ -54,17 +51,17 @@ void CObjEquipped2::Draw()
 	RECT_F dst;
 
 	//切り取り位置の設定
-	src.m_top    = 0.0f;
-	src.m_left   = 0.0f;
-	src.m_right  = 64.0f;
+	src.m_top = 0.0f;
+	src.m_left = 0.0f;
+	src.m_right = 64.0f;
 	src.m_bottom = 64.0f;
 
 	//表示位置の設定
-	dst.m_top    = 100.0f + m_y;
-	dst.m_left   = 110.0f + m_x;
-	dst.m_right  = 330.0f + m_x;
+	dst.m_top = 100.0f + m_y;
+	dst.m_left = 110.0f + m_x;
+	dst.m_right = 330.0f + m_x;
 	dst.m_bottom = 320.0f + m_y;
-	
+
 	//マウス表示位置
 	wchar_t str[256];
 	swprintf_s(str, L"x=%f,y=%f", m_mou_x, m_mou_y);
@@ -81,11 +78,9 @@ void CObjEquipped2::Draw()
 		Font::StrDraw(L"L=押していない", 20, 40, 12, c);
 
 	//装備画面表示
-	Font::StrDraw(L"十字架", 460, 100, 46, c);
+	Font::StrDraw(L"屋根裏部屋の鍵", 340, 100, 46, c);
 
-	Font::StrDraw(L"どこかで見たことがある形", 360, 160, 32, c);
-
-	Font::StrDraw(L"どこかで使えるかも・・・", 360, 220, 32, c);
+	Font::StrDraw(L"後々追加", 0, 150, 46, c);
 	//装備しますか表示
 	Font::StrDraw(L"装備しますか？", 250, 350, 46, c);
 	//はい　いいえ表示
