@@ -67,6 +67,4 @@ void CObjGameOver::Draw()
 	Draw::LoadImage(L"GameOverScene.png", 0, TEX_SIZE_512);
 
 	Font::StrDraw(L"Left-Click", 360, 410, 24, c);
-
-	
 }
