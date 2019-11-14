@@ -19,11 +19,14 @@ public:
 	float GetY() { return m_py; }
 	float GetVY() { return m_vy; }
 	float GetVX() { return m_vx; }
+	int  GetBT() { return m_stage_type;}
 
 	void SetX(float x) { m_px = x; }
 	void SetY(float y) { m_py = y; }
 	void SetVY(float vy) { m_vy = vy; }
 	void SetVX(float vx) { m_vx = vx; }
+	void SetBT(int t) { m_stage_type = t; }
+	
 
 	void SetUp(bool b) { m_hit_up = b; }
 	void SetDown(bool b) { m_hit_down = b; }
@@ -43,7 +46,6 @@ private:
 		float m_migi;//右向き
 		float m_mos_x; //マウスX座標
 		float m_mos_y; //マウスY座標
-
 		float X;
 		float Y;
 
@@ -52,4 +54,7 @@ private:
 		bool m_hit_down;
 		bool m_hit_left;
 		bool m_hit_right;
+		
+		//踏んでいる種類を確認用
+		int m_stage_type;
 };

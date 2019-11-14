@@ -48,7 +48,7 @@ void CObjmainSave::Action()
 	if (m_mou_x > 230 && m_mou_x < 530 && m_mou_y>300 && m_mou_y < 350)
 	{
 		//マウスの左が押されたらセーブスロット2に移動する
-		if (m_mou_l == true)
+		if (m_time % 10 == 0 && m_mou_l == true)
 		{
 			Scene::SetScene(new CSceneSave2());
 		}

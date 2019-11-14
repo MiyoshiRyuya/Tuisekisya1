@@ -5,11 +5,11 @@
 using namespace GameL;
 
 //オブジェクト：装備画面
-class CObjEquipped2 : public CObj
+class CObjEquipped3 : public CObj
 {
 public:
-	CObjEquipped2() {};
-	~CObjEquipped2() {};
+	CObjEquipped3() {};
+	~CObjEquipped3() {};
 
 	void Init();   //イニシャライズ
 	void Action(); //アクション

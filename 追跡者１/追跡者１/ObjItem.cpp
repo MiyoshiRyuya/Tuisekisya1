@@ -44,7 +44,7 @@ void CObjItem::Action()
 	//マウスの位置とクリックする場所で当たり判定
 	if (m_mou_x > 240 && m_mou_x < 600 && m_mou_y>220 && m_mou_y < 280)
 	{
-		//マウスの左が押されたら装備画面に移動する
+		//マウスの左が押されたら催涙スプレー装備画面に移動する
 		if (m_time % 10 == 0 && m_mou_l == true)
 		{
 			Scene::SetScene(new CSceneEquipped());
@@ -52,15 +52,27 @@ void CObjItem::Action()
 	}
 
 	//マウスの位置とクリックする場所で当たり判定
-	if (m_mou_x > 300 && m_mou_x < 430 && m_mou_y>460 && m_mou_y < 500)
+	if (m_mou_x > 300 && m_mou_x < 480 && m_mou_y>460 && m_mou_y < 510)
 	{
-		//マウスの左が押されたら装備画面に移動する
+		//マウスの左が押されたら十字架装備画面に移動する
 		if (m_time % 10 == 0 && m_mou_l == true)
 		{
 			Scene::SetScene(new CSceneEquipped2());
 		}
 	}
+
+	//マウスの位置とクリックする場所で当たり判定
+	if (m_mou_x > 190 && m_mou_x < 620 && m_mou_y>340 && m_mou_y < 390)
+	{
+		//マウスの左が押されたら屋根裏部屋の鍵画面に移動する
+		if (m_time %10 == 0 && m_mou_l == true)
+		{
+			Scene::SetScene(new CSceneEquipped3());
+		}
+	}
 }
+
+
 
 //ドロー
 void CObjItem::Draw()
