@@ -50,7 +50,7 @@ void CSceneMain::InitScene()
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 	
-	Draw::LoadImageW(L"ブロック.png",1,TEX_SIZE_512);
+	Draw::LoadImage(L"Block.png",1,TEX_SIZE_512);
 
 	Draw::LoadImage(L"FloorEX.png", 2, TEX_SIZE_512);
 

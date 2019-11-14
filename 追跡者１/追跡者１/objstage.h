@@ -14,6 +14,7 @@ public:
 	void Draw();
 
 
+
 private:
 	int m_map[20][20];
 	float objb;
