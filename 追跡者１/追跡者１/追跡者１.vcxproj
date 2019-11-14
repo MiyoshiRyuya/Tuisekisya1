@@ -116,6 +116,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ObjFurniture.cpp" />
     <ClCompile Include="OBJEquipped.cpp" />
     <ClCompile Include="GameL\Audio.cpp" />
     <ClCompile Include="GameL\DirectXDevice.cpp" />
@@ -137,9 +138,7 @@
     <ClCompile Include="ObjEnemy.cpp" />
     <ClCompile Include="OBJEquipped2.cpp" />
     <ClCompile Include="ObjGameOver.cpp" />
-    <ClCompile Include="ObjHero.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="ObjHero.cpp" />
     <ClCompile Include="ObjItem.cpp" />
     <ClCompile Include="ObjmainSave.cpp" />
     <ClCompile Include="ObjMenu.cpp">
@@ -160,7 +159,6 @@
     <ClCompile Include="SceneItem.cpp" />
     <ClCompile Include="SceneMain.cpp" />
     <ClCompile Include="ScenemainSave.cpp" />
-    <ClCompile Include="SceneMap.cpp" />
     <ClCompile Include="SceneMenu.cpp" />
     <ClCompile Include="SceneRoad.cpp" />
     <ClCompile Include="SceneSave1.cpp" />
@@ -170,6 +168,7 @@
     <ClCompile Include="Objtrap.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ObjFurniture.h" />
     <ClInclude Include="GameHead.h" />
     <ClInclude Include="GameL\Audio.h" />
     <ClInclude Include="GameL\DirectXDevice.h" />
@@ -183,7 +182,6 @@
     <ClInclude Include="GameL\UserData.h" />
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
-    <ClInclude Include="OBJEquipped3.h" />
     <ClInclude Include="ObjMap.h" />
     <ClInclude Include="ObjEnemy.h" />
     <ClInclude Include="ObjEquipped.h" />
@@ -210,7 +208,6 @@
     <ClInclude Include="SceneItem.h" />
     <ClInclude Include="SceneMain.h" />
     <ClInclude Include="ScenemainSave.h" />
-    <ClInclude Include="SceneMap.h" />
     <ClInclude Include="SceneMenu.h" />
     <ClInclude Include="SceneRoad.h" />
     <ClInclude Include="SceneSave1.h" />
