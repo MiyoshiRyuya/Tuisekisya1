@@ -137,6 +137,7 @@ void CObjstage::Draw()
 				dst.m_bottom = dst.m_top+32.0f;
 
 				Draw::Draw(1, &src, &dst, c, 0.0f);
+
 			}
 		}
 	}
