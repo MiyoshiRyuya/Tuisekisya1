@@ -58,6 +58,9 @@
     <Filter Include="ソース ファイル\マップ">
       <UniqueIdentifier>{2ce77504-a045-4121-bec6-79345c05866f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\屋根裏部屋の鍵">
+      <UniqueIdentifier>{ca4d952a-cc76-40f1-93e9-a61dabdcd4cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -195,6 +198,12 @@
     <ClCompile Include="SceneMap.cpp">
       <Filter>ソース ファイル\マップ</Filter>
     </ClCompile>
+    <ClCompile Include="OBJEquipped3.cpp">
+      <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEquipped3.cpp">
+      <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -328,6 +337,12 @@
     </ClInclude>
     <ClInclude Include="SceneMap.h">
       <Filter>ソース ファイル\マップ</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJEquipped3.h">
+      <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneEquipped3.h">
+      <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

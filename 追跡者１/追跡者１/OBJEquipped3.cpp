@@ -80,7 +80,7 @@ void CObjEquipped3::Draw()
 	//装備画面表示
 	Font::StrDraw(L"屋根裏部屋の鍵", 340, 100, 46, c);
 
-	Font::StrDraw(L"後々追加", 0, 150, 46, c);
+	Font::StrDraw(L"どこかで使えそうな鍵", 0, 150, 46, c);
 	//装備しますか表示
 	Font::StrDraw(L"装備しますか？", 250, 350, 46, c);
 	//はい　いいえ表示
