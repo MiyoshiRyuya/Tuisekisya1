@@ -22,7 +22,7 @@ void CObjHero::Init()
 	m_py = g_Yz;
 	m_vx;//移動ベクトル
 	m_vy;
-	m_posture = 1.0f;//右向き0.0f 左向き1.0f
+	//m_posture = 1.0f;//右向き0.0f 左向き1.0f
 	m_mos_x = 0.0f;
 	m_mos_y = 0.0f;
 
@@ -125,6 +125,17 @@ void CObjHero::Action()
 
 
 		Scene::SetScene(new CSceneGameOver());
+	}
+
+	if (hit->CheckObjNameHit(OBJ_MAP) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		g_Xz = 70;
+		g_Yz = 70;
+
+		Scene::SetScene(new CSceneMap());
 	}
 }
 

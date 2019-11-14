@@ -156,6 +156,7 @@
     <ClCompile Include="SceneItem.cpp" />
     <ClCompile Include="SceneMain.cpp" />
     <ClCompile Include="ScenemainSave.cpp" />
+    <ClCompile Include="SceneMap.cpp" />
     <ClCompile Include="SceneMenu.cpp" />
     <ClCompile Include="SceneRoad.cpp" />
     <ClCompile Include="SceneSave1.cpp" />
@@ -178,9 +179,7 @@
     <ClInclude Include="GameL\UserData.h" />
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
-    <ClInclude Include="ObjMap.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-    </ClInclude>
+    <ClInclude Include="ObjMap.h" />
     <ClInclude Include="ObjEnemy.h" />
     <ClInclude Include="ObjEquipped.h" />
     <ClInclude Include="OBJEquipped2.h" />
@@ -205,6 +204,7 @@
     <ClInclude Include="SceneItem.h" />
     <ClInclude Include="SceneMain.h" />
     <ClInclude Include="ScenemainSave.h" />
+    <ClInclude Include="SceneMap.h" />
     <ClInclude Include="SceneMenu.h" />
     <ClInclude Include="SceneRoad.h" />
     <ClInclude Include="SceneSave1.h" />

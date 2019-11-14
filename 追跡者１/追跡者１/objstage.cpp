@@ -20,6 +20,7 @@ CObjstage::CObjstage(int map[20][20])
 void CObjstage::Init()
 {
 	m_scroll = 0.0f;
+
 }
 //ƒAƒNƒVƒ‡ƒ“
 void CObjstage::Action()

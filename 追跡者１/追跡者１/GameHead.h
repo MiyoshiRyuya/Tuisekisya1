@@ -98,6 +98,7 @@ struct UserData
 #include"SceneSave3.h"
 #include"SceneItem.h"
 #include"SceneRoad.h"
+#include"SceneMap.h"
 #include"SceneEquipped.h"
 #include"SceneEquipped2.h"
 //-----------------------------------------------

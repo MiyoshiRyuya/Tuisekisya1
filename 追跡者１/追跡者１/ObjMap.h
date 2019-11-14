@@ -16,4 +16,6 @@ public:
 
 private:
 	int m_map[10][10]; //ƒ}ƒbƒvî•ñ
+	float m_x;
+	float m_y;
 };
