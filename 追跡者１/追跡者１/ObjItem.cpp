@@ -47,7 +47,7 @@ void CObjItem::Action()
 		//マウスの左が押されたら催涙スプレー装備画面に移動する
 		if (m_time % 10 == 0 && m_mou_l == true)
 		{
-			Scene::SetScene(new CSceneEquipped());
+			//Scene::SetScene(new CSceneEquipped());
 		}
 	}
 
@@ -67,7 +67,7 @@ void CObjItem::Action()
 		//マウスの左が押されたら屋根裏部屋の鍵画面に移動する
 		if (m_time %10 == 0 && m_mou_l == true)
 		{
-			Scene::SetScene(new CSceneEquipped3());
+			//Scene::SetScene(new CSceneEquipped3());
 		}
 	}
 }
