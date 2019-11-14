@@ -46,7 +46,6 @@ private:
 		float m_migi;//右向き
 		float m_mos_x; //マウスX座標
 		float m_mos_y; //マウスY座標
-
 		float X;
 		float Y;
 

@@ -52,6 +52,8 @@ void CSceneMain::InitScene()
 	
 	Draw::LoadImageW(L"ブロック.png",1,TEX_SIZE_512);
 
+	Draw::LoadImage(L"FloorEX.png", 2, TEX_SIZE_512);
+
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
@@ -63,8 +65,14 @@ void CSceneMain::InitScene()
 	CObjEnemy*obj_enemy = new CObjEnemy();
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
 
+	//罠オブジェクト作成
 	CObjtrap*obj_trap = new CObjtrap();
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
+
+	//マップ背景オブジェクト作成
+	CObjMap*obj_map = new CObjMap();
+	Objs::InsertObj(obj_map, OBJ_MAP, 1);
+
 
 	//blockオブジェクト作成
 	//CObjstage*objb = new CObjstage(map);
