@@ -31,7 +31,7 @@ void CObjHero::Init()
 	m_mos_x = 0.0f;
 	m_mos_y = 0.0f;
 
-	//stageとの消灯確認用
+	//stageとの衝突確認用
 	m_hit_up = false;
 	m_hit_down = false;
 	m_hit_left = false;
