@@ -87,12 +87,12 @@ void CSceneMain::InitScene()
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 
 	//家具オブジェクト作成
-	CObjFurniture*obj_Furnirure = new CObjFurniture();
+	/*CObjFurniture*obj_Furnirure = new CObjFurniture();
 	Objs::InsertObj(obj_Furnirure, OBJ_FURNITURE,1);
 
 	//家具オブジェクト1作成
 	CObjFurniture1*obj_Furnirure1 = new CObjFurniture1();
-	Objs::InsertObj(obj_Furnirure1, OBJ_FURNITURE1, 1);
+	Objs::InsertObj(obj_Furnirure1, OBJ_FURNITURE1, 1);*/
 
 	//家具オブジェクト2作成
 	CObjFurniture2*obj_Furnirure2 = new CObjFurniture2();

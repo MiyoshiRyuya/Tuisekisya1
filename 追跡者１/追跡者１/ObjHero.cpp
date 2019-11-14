@@ -7,14 +7,15 @@
 #include "GameHead.h"
 #include "ObjHero.h"
 #include "ObjMenu.h"
+#include "ObjEnemy.h"
 
 
 //使用するネームスペース
 
 using namespace GameL;
 
-float g_Xz=70;
-float g_Yz=70;
+float g_Xz = 70;
+float g_Yz = 70;
 
 //イニシャライズ
 void CObjHero::Init()
@@ -48,7 +49,7 @@ void CObjHero::Action()
 	//移動ベクトルの破棄
 	m_vx = 0.0f;
 	m_vy = 0.0f;
-	
+
 	/*if (m_x < -1 && m_y < -1) {
 		m_x = 0.0f;
 		m_y = 0.0f;
@@ -58,7 +59,7 @@ void CObjHero::Action()
 	m_y = m_py;
 
 	//	現在の位置を保存する
-	g_Xz = m_x; 
+	g_Xz = m_x;
 	g_Yz = m_y;
 
 	//Eボタンを押すとゲーム画面に移動する
@@ -104,7 +105,7 @@ void CObjHero::Action()
 		m_vy += 5.0f;
 	}
 
-	if (m_vx+32.0f>800.0f)
+	if (m_vx + 32.0f > 800.0f)
 	{
 		m_vx = 800.0f - 32.0f;
 	}
@@ -122,7 +123,7 @@ void CObjHero::Action()
 	m_py += m_vy;
 
 	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px , m_py);
+	hit->SetPos(m_px, m_py);
 
 	//敵オブジェクトと接触したら主人公削除
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
@@ -144,7 +145,8 @@ void CObjHero::Action()
 
 		g_Xz = 70;
 		g_Yz = 70;
-
+		m_x = 600;
+		m_y = 400;
 
 		Scene::SetScene(new CSceneGameOver());
 	}
@@ -213,15 +215,13 @@ void CObjHero::Draw()
 
 		Draw::Draw(0, &src, &dst, c, 0.0f);
 	}
-/*	src.m_top = 0.0f;
-	src.m_left = 0.0f;
-	src.m_right = 180.0f;
-	src.m_bottom = 130.0f;
-
-	dst.m_top = 0.0f + m_py;
-	dst.m_left = 0.0f + m_px;
-	dst.m_right = 64.0f + m_px;
-	dst.m_bottom = 64.0f + m_py;
-
-	Draw::Draw(0, &src, &dst, c, 0.0f);*/
+	/*	src.m_top = 0.0f;
+		src.m_left = 0.0f;
+		src.m_right = 180.0f;
+		src.m_bottom = 130.0f;
+		dst.m_top = 0.0f + m_py;
+		dst.m_left = 0.0f + m_px;
+		dst.m_right = 64.0f + m_px;
+		dst.m_bottom = 64.0f + m_py;
+		Draw::Draw(0, &src, &dst, c, 0.0f);*/
 }
