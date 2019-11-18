@@ -195,14 +195,23 @@
     <ClCompile Include="ObjMap.cpp">
       <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
-    <ClCompile Include="ObjFurniture.cpp">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClCompile Include="SceneEquipped3.cpp">
+      <Filter>ソース ファイル\催涙スプレー装備</Filter>
     </ClCompile>
-    <ClCompile Include="ObjFurniture1.cpp">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClCompile Include="OBJEquipped3.cpp">
+      <Filter>ソース ファイル\催涙スプレー装備</Filter>
     </ClCompile>
-    <ClCompile Include="ObjFurnirure2.cpp">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClCompile Include="ObjMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJEquipped3.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEquipped3.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap.cpp">
+      <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
     <ClCompile Include="Map2.cpp">
       <Filter>ソース ファイル\Map</Filter>
@@ -350,14 +359,23 @@
     <ClInclude Include="Objtrap.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjFurniture.h">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClInclude Include="SceneEquipped3.h">
+      <Filter>ソース ファイル\催涙スプレー装備</Filter>
     </ClInclude>
-    <ClInclude Include="ObjFurniture1.h">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClInclude Include="OBJEquipped3.h">
+      <Filter>ソース ファイル\催涙スプレー装備</Filter>
     </ClInclude>
-    <ClInclude Include="ObjFurniture2.h">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClInclude Include="ObjMain.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJEquipped3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneEquipped3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap.h">
+      <Filter>ソース ファイル\Map</Filter>
     </ClInclude>
     <ClInclude Include="Map2.h">
       <Filter>ソース ファイル\Map</Filter>

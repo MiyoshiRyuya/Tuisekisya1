@@ -62,25 +62,10 @@ void CObjEquipped3::Draw()
 	dst.m_right = 330.0f + m_x;
 	dst.m_bottom = 320.0f + m_y;
 
-	//マウス表示位置
-	wchar_t str[256];
-	swprintf_s(str, L"x=%f,y=%f", m_mou_x, m_mou_y);
-	Font::StrDraw(str, 20, 20, 12, c);
-	//マウスのボタンの状態
-	if (m_mou_r == true)
-		Font::StrDraw(L"R=押している", 20, 30, 12, c);
-	else
-		Font::StrDraw(L"R=押していない", 20, 30, 12, c);
-
-	if (m_mou_l == true)
-		Font::StrDraw(L"L=押している", 20, 40, 12, c);
-	else
-		Font::StrDraw(L"L=押していない", 20, 40, 12, c);
-
 	//装備画面表示
 	Font::StrDraw(L"屋根裏部屋の鍵", 340, 100, 46, c);
 
-	Font::StrDraw(L"どこかで使えそうな鍵", 0, 150, 46, c);
+	Font::StrDraw(L"後々追加", 350, 150, 46, c);
 	//装備しますか表示
 	Font::StrDraw(L"装備しますか？", 250, 350, 46, c);
 	//はい　いいえ表示
