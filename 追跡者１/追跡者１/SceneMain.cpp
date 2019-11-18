@@ -51,7 +51,7 @@ void CSceneMain::InitScene()
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 	
 
-	Draw::LoadImage(L"ブロック.png",1,TEX_SIZE_512);
+	//Draw::LoadImage(L"ブロック.png",1,TEX_SIZE_512);
 
 	//外部グラフィックファイルを読み込み2番目に登録(512*512pixel)
 	Draw::LoadImage(L"FloorEX.png", 2, TEX_SIZE_512);
@@ -105,10 +105,16 @@ void CSceneMain::InitScene()
 	CObjFurniture3*obj_Furnirure3 = new CObjFurniture3();
 	Objs::InsertObj(obj_Furnirure3, OBJ_FURNITURE3, 1);
 
-	//マップ背景オブジェクト作成
+	//マップ背景オブジェクト1作成
 	CObjMap*obj_map = new CObjMap();
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
 
+	//マップ背景オブジェクト2作成
+	//CObjMap*obj_map = new CObjMap();
+	//Objs::InsertObj(obj_map, OBJ_MAP, 1);
+
+	//CObjMap2*obj_m = new CObjMap2();
+	//Objs::InsertObj(obj_m, OBJ_MAP2, 2);
 
 	//blockオブジェクト作成
 	//CObjstage*objb = new CObjstage(map);

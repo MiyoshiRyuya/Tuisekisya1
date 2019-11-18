@@ -37,8 +37,6 @@ void CSceneMap::InitScene()
 	CObjtrap*obj_trap = new CObjtrap();
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 
-	CObjMain*obj_m = new CObjMain();
-	Objs::InsertObj(obj_m, OBJ_MAIN, 2);
 }
 //実行中メソッド
 void CSceneMap::Scene()
