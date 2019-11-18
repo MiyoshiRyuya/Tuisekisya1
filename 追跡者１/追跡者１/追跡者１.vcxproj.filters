@@ -195,22 +195,31 @@
     <ClCompile Include="ObjMap.cpp">
       <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
-    <ClCompile Include="SceneEquipped3.cpp">
-      <Filter>ソース ファイル\催涙スプレー装備</Filter>
-    </ClCompile>
     <ClCompile Include="OBJEquipped3.cpp">
-      <Filter>ソース ファイル\催涙スプレー装備</Filter>
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEquipped3.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurnirure2.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture1.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap.cpp">
+      <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
     <ClCompile Include="ObjMain.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="OBJEquipped3.cpp">
-      <Filter>ソース ファイル</Filter>
+    <ClCompile Include="ObjMap2.cpp">
+      <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
-    <ClCompile Include="SceneEquipped3.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneMap.cpp">
+    <ClCompile Include="SceneMap2.cpp">
       <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
   </ItemGroup>
@@ -344,22 +353,31 @@
     <ClInclude Include="Objtrap.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="SceneEquipped3.h">
-      <Filter>ソース ファイル\催涙スプレー装備</Filter>
-    </ClInclude>
     <ClInclude Include="OBJEquipped3.h">
-      <Filter>ソース ファイル\催涙スプレー装備</Filter>
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneEquipped3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture1.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap.h">
+      <Filter>ソース ファイル\Map</Filter>
     </ClInclude>
     <ClInclude Include="ObjMain.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="OBJEquipped3.h">
-      <Filter>ヘッダー ファイル</Filter>
+    <ClInclude Include="ObjMap2.h">
+      <Filter>ソース ファイル\Map</Filter>
     </ClInclude>
-    <ClInclude Include="SceneEquipped3.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneMap.h">
+    <ClInclude Include="SceneMap2.h">
       <Filter>ソース ファイル\Map</Filter>
     </ClInclude>
   </ItemGroup>
