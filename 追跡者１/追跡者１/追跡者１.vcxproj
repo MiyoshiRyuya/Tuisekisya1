@@ -166,6 +166,11 @@
     <ClCompile Include="SceneItem.cpp" />
     <ClCompile Include="SceneMain.cpp" />
     <ClCompile Include="ScenemainSave.cpp" />
+    <ClCompile Include="SceneMap2.cpp" />
+    <ClCompile Include="SceneMap3.cpp" />
+    <ClCompile Include="SceneMap4.cpp" />
+    <ClCompile Include="SceneMap5.cpp" />
+    <ClCompile Include="SceneMap6.cpp" />
     <ClCompile Include="SceneMenu.cpp" />
     <ClCompile Include="SceneRoad.cpp" />
     <ClCompile Include="SceneSave1.cpp" />
@@ -224,6 +229,11 @@
     <ClInclude Include="SceneItem.h" />
     <ClInclude Include="SceneMain.h" />
     <ClInclude Include="ScenemainSave.h" />
+    <ClInclude Include="SceneMap2.h" />
+    <ClInclude Include="SceneMap3.h" />
+    <ClInclude Include="SceneMap4.h" />
+    <ClInclude Include="SceneMap5.h" />
+    <ClInclude Include="SceneMap6.h" />
     <ClInclude Include="SceneMenu.h" />
     <ClInclude Include="SceneRoad.h" />
     <ClInclude Include="SceneSave1.h" />
