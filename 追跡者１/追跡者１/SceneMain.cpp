@@ -110,8 +110,8 @@ void CSceneMain::InitScene()
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
 
 	//マップ背景オブジェクト2作成
-	CObjMap*obj_map = new CObjMap();
-	Objs::InsertObj(obj_map, OBJ_MAP, 1);
+	CObjMap*obj_map2 = new CObjMap();
+	Objs::InsertObj(obj_map2, OBJ_MAP, 1);
 
 	//シーン切り替えオブジェクト
 	CObjMap2*obj_m = new CObjMap2();
