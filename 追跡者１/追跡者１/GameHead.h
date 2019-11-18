@@ -82,7 +82,7 @@ struct UserData
 #include "ObjFurniture2.h"
 #include "ObjFurniture3.h"
 #include "ObjMap.h"
-#include"ObjMain.h"
+#include "ObjMain.h"
 
 #include"ObjMenu.h"
 #include"ObjmainSave.h"
