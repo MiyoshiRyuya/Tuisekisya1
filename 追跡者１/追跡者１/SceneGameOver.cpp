@@ -27,10 +27,6 @@ CSceneGameOver::~CSceneGameOver()
 void CSceneGameOver::InitScene()
 {
 
-
-	//外部グラフィックファイルを読み込み1番目に登録(512*512)
-	//Draw::LoadImage(L"Title.png", 1, TEX_SIZE_512);
-
 	//タイトルオブジェクト作成
 	CObjGameOver*obj = new CObjGameOver();//ゲームオーバーオブジェクト作成
 	Objs::InsertObj(obj, OBJ_GAME_OVER, 10);//ゲームオーバーオブジェクト登録
