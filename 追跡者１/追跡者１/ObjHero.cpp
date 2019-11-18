@@ -105,12 +105,25 @@ void CObjHero::Action()
 		m_vy += 5.0f;
 	}
 
-	if (m_vx + 32.0f > 800.0f)
+	if (m_vx + 64.0f > 800.0f)
 	{
-		m_vx = 800.0f - 32.0f;
+		m_vx = 800.0f - 64.0f; //はみ出ない位置に移動させる
 	}
-
-	//Mキーを押すとゲーム画面に移動する
+	/*
+	if (m_vy + 64.0f > 600.0f)
+	{
+		m_vy = 600.0f - 64.0f;
+	}
+	if (m_vy < 0.0f)
+	{
+		m_vy = 0.0f;
+	}
+	if (m_vx < 0.0f)
+	{
+		m_vx = 0.0f;
+	}
+	*/
+	//Mキーを押すとメニュー画面に移動する
 	if (Input::GetVKey('M') == true)
 	{
 		Scene::SetScene(new CSceneMenu());
