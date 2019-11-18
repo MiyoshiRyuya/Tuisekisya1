@@ -195,12 +195,6 @@
     <ClCompile Include="ObjMap.cpp">
       <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
-    <ClCompile Include="OBJEquipped3.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneEquipped3.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="ObjFurnirure2.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
@@ -208,9 +202,6 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ObjFurniture1.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="savedata.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Map2.cpp">
@@ -358,12 +349,6 @@
     </ClInclude>
     <ClInclude Include="Objtrap.h">
       <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="OBJEquipped3.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneEquipped3.h">
-      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture.h">
       <Filter>ヘッダー ファイル</Filter>

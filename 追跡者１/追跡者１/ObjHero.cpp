@@ -20,8 +20,7 @@ using namespace GameL;
 void CObjHero::Init()
 {
 
-	m_px = g_Xz;//位置
-	m_py = g_Yz;
+	
 	m_vx;//移動ベクトル
 	m_vy;
 	m_hidari; //左向き
@@ -129,8 +128,6 @@ void CObjHero::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-		g_Xz = 70;
-		g_Yz = 70;
 
 		//主人公消滅でシーンをゲームオーバー画面に移行する
 		Scene::SetScene(new CSceneGameOver());
@@ -141,8 +138,7 @@ void CObjHero::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-		g_Xz = 70;
-		g_Yz = 70;
+	
 
 
 		Scene::SetScene(new CSceneGameOver());
