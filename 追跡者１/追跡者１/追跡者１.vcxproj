@@ -116,6 +116,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="OBJEquipped3.cpp" />
     <ClCompile Include="ObjFurnirure2.cpp" />
     <ClCompile Include="ObjFurniture.cpp" />
     <ClCompile Include="OBJEquipped.cpp" />
@@ -157,6 +158,7 @@
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="SceneEquipped.cpp" />
     <ClCompile Include="SceneEquipped2.cpp" />
+    <ClCompile Include="SceneEquipped3.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneItem.cpp" />
     <ClCompile Include="SceneMain.cpp" />
@@ -174,6 +176,7 @@
     <ClCompile Include="Objtrap.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="OBJEquipped3.h" />
     <ClInclude Include="ObjFurniture.h" />
     <ClInclude Include="GameHead.h" />
     <ClInclude Include="GameL\Audio.h" />
@@ -215,6 +218,7 @@
     <ClInclude Include="ObjTitle.h" />
     <ClInclude Include="SceneEquipped.h" />
     <ClInclude Include="SceneEquipped2.h" />
+    <ClInclude Include="SceneEquipped3.h" />
     <ClInclude Include="SceneGameOver.h" />
     <ClInclude Include="SceneItem.h" />
     <ClInclude Include="SceneMain.h" />

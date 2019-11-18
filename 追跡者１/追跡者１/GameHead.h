@@ -13,8 +13,8 @@ enum OBJ_NAME
 	OBJ_FURNITURE,
 	OBJ_FURNITURE1,
 	OBJ_FURNITURE2,
+	OBJ_FURNITURE3,
 	OBJ_MAP,
-	OBJ_MAP2,
 	OBJ_MAIN,
 
 	OBJ_MENU,
@@ -80,9 +80,9 @@ struct UserData
 #include "ObjFurniture.h"
 #include "ObjFurniture1.h"
 #include "ObjFurniture2.h"
+#include "ObjFurniture3.h"
 #include "ObjMap.h"
-#include"ObjMap2.h"
-#include"ObjMain.h"
+#include "ObjMain.h"
 
 #include"ObjMenu.h"
 #include"ObjmainSave.h"
@@ -111,7 +111,6 @@ struct UserData
 #include"SceneItem.h"
 #include"SceneRoad.h"
 #include"SceneMap.h"
-#include"SceneMap2.h"
 #include"SceneEquipped.h"
 #include"SceneEquipped2.h"
 #include"SceneEquipped3.h"
@@ -119,5 +118,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMain
+#define SET_GAME_START  CSceneTitle
 //-----------------------------------------------

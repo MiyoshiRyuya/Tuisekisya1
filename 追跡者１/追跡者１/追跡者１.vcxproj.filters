@@ -61,6 +61,9 @@
     <Filter Include="ソース ファイル\Save3">
       <UniqueIdentifier>{0033fc82-399f-4c70-af4f-02dc5da637c8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\NewFilter1">
+      <UniqueIdentifier>{1950bae1-5980-483f-a264-2e0e290c663c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -195,32 +198,20 @@
     <ClCompile Include="ObjMap.cpp">
       <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
-    <ClCompile Include="OBJEquipped3.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneEquipped3.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjFurnirure2.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="ObjFurniture.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
     <ClCompile Include="ObjFurniture1.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
-    <ClCompile Include="SceneMap.cpp">
-      <Filter>ソース ファイル\Map</Filter>
+    <ClCompile Include="ObjFurnirure2.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
-    <ClCompile Include="ObjMain.cpp">
-      <Filter>ソース ファイル</Filter>
+    <ClCompile Include="SceneEquipped3.cpp">
+      <Filter>ソース ファイル\NewFilter1</Filter>
     </ClCompile>
-    <ClCompile Include="ObjMap2.cpp">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneMap2.cpp">
-      <Filter>ソース ファイル\Map</Filter>
+    <ClCompile Include="OBJEquipped3.cpp">
+      <Filter>ソース ファイル\NewFilter1</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -353,32 +344,20 @@
     <ClInclude Include="Objtrap.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="OBJEquipped3.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneEquipped3.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="ObjFurniture.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture1.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture2.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
-    <ClInclude Include="SceneMap.h">
-      <Filter>ソース ファイル\Map</Filter>
+    <ClInclude Include="SceneEquipped3.h">
+      <Filter>ソース ファイル\NewFilter1</Filter>
     </ClInclude>
-    <ClInclude Include="ObjMain.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjMap2.h">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneMap2.h">
-      <Filter>ソース ファイル\Map</Filter>
+    <ClInclude Include="OBJEquipped3.h">
+      <Filter>ソース ファイル\NewFilter1</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
