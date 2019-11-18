@@ -160,7 +160,7 @@ void CObjMap::Draw()
 				dst.m_bottom = dst.m_top + 32.0f;
 
 				//•`‰æ
-				Draw::Draw(1, &src, &dst, c, 0.f);
+				//Draw::Draw(2, &src, &dst, c, 0.f);
 			}
 		}
 	}
