@@ -102,13 +102,14 @@ void CSceneMain::InitScene()
 	Objs::InsertObj(obj_Furnirure2, OBJ_FURNITURE1, 1);
 
 	//家具オブジェクト3作成
-	CObjFurniture3*obj_Furnirure3 = new CObjFurniture3();
-	Objs::InsertObj(obj_Furnirure3, OBJ_FURNITURE3, 1);
+	//CObjFurniture3*obj_Furnirure3 = new CObjFurniture3();
+	//Objs::InsertObj(obj_Furnirure3, OBJ_FURNITURE3, 1);
 
 	//マップ背景オブジェクト作成
 	CObjMap*obj_map = new CObjMap();
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
 
+	//シーン切り替えオブジェクト
 	CObjMap2*obj_m = new CObjMap2();
 	Objs::InsertObj(obj_m, OBJ_MAP2, 2);
 
