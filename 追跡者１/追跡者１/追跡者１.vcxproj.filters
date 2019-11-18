@@ -207,6 +207,27 @@
     <ClCompile Include="ObjFurniture1.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="ObjFurniture3.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap2.cpp">
+      <Filter>ソース ファイル\Map\SceneMap</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJEquipped3.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMap2.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEquipped3.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
     <ClCompile Include="Map2.cpp">
       <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
@@ -221,12 +242,6 @@
     </ClCompile>
     <ClCompile Include="Map6.cpp">
       <Filter>ソース ファイル\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture3.cpp">
-      <Filter>ソース ファイル\Furniture</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneMap2.cpp">
-      <Filter>ソース ファイル\Map\SceneMap</Filter>
     </ClCompile>
     <ClCompile Include="SceneMap3.cpp">
       <Filter>ソース ファイル\Map\SceneMap</Filter>
@@ -380,6 +395,27 @@
     <ClInclude Include="ObjFurniture2.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="ObjFurniture3.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap2.h">
+      <Filter>ソース ファイル\Map\SceneMap</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJEquipped3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMain.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMap2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneEquipped3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
     <ClInclude Include="Map2.h">
       <Filter>ソース ファイル\Map</Filter>
     </ClInclude>
@@ -394,12 +430,6 @@
     </ClInclude>
     <ClInclude Include="Map6.h">
       <Filter>ソース ファイル\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjFurniture3.h">
-      <Filter>ソース ファイル\Furniture</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneMap2.h">
-      <Filter>ソース ファイル\Map\SceneMap</Filter>
     </ClInclude>
     <ClInclude Include="SceneMap3.h">
       <Filter>ソース ファイル\Map\SceneMap</Filter>
