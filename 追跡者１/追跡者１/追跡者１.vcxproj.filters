@@ -16,9 +16,6 @@
     <Filter Include="ソース ファイル\Item">
       <UniqueIdentifier>{9b52114c-5713-4afd-828f-eb41b447119f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\mainSave">
-      <UniqueIdentifier>{fe70343e-1eda-48b6-b5c2-0f157f5eedbb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Menu">
       <UniqueIdentifier>{3ced9b1e-fdcc-4715-999c-2d980d697c62}</UniqueIdentifier>
     </Filter>
@@ -60,6 +57,12 @@
     </Filter>
     <Filter Include="ソース ファイル\Save3">
       <UniqueIdentifier>{0033fc82-399f-4c70-af4f-02dc5da637c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\NewFilter1">
+      <UniqueIdentifier>{1950bae1-5980-483f-a264-2e0e290c663c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Item\mainSave">
+      <UniqueIdentifier>{fe70343e-1eda-48b6-b5c2-0f157f5eedbb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -115,7 +118,7 @@
       <Filter>ソース ファイル\Menu</Filter>
     </ClCompile>
     <ClCompile Include="ScenemainSave.cpp">
-      <Filter>ソース ファイル\mainSave</Filter>
+      <Filter>ソース ファイル\Item\mainSave</Filter>
     </ClCompile>
     <ClCompile Include="SceneSave1.cpp">
       <Filter>ソース ファイル\Save1</Filter>
@@ -127,7 +130,7 @@
       <Filter>ソース ファイル\Save3</Filter>
     </ClCompile>
     <ClCompile Include="ObjmainSave.cpp">
-      <Filter>ソース ファイル\mainSave</Filter>
+      <Filter>ソース ファイル\Item\mainSave</Filter>
     </ClCompile>
     <ClCompile Include="ObjSave1.cpp">
       <Filter>ソース ファイル\Save1</Filter>
@@ -195,29 +198,20 @@
     <ClCompile Include="ObjMap.cpp">
       <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
-    <ClCompile Include="ObjFurnirure2.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="ObjFurniture.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
     <ClCompile Include="ObjFurniture1.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
-    <ClCompile Include="Map2.cpp">
-      <Filter>ソース ファイル\Map</Filter>
+    <ClCompile Include="ObjFurnirure2.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
-    <ClCompile Include="Map3.cpp">
-      <Filter>ソース ファイル\Map</Filter>
+    <ClCompile Include="SceneEquipped3.cpp">
+      <Filter>ソース ファイル\NewFilter1</Filter>
     </ClCompile>
-    <ClCompile Include="Map4.cpp">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="Map5.cpp">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="Map6.cpp">
-      <Filter>ソース ファイル\Map</Filter>
+    <ClCompile Include="OBJEquipped3.cpp">
+      <Filter>ソース ファイル\NewFilter1</Filter>
     </ClCompile>
     <ClCompile Include="ObjMain.cpp">
       <Filter>ソース ファイル</Filter>
@@ -285,7 +279,7 @@
       <Filter>ソース ファイル\Menu</Filter>
     </ClInclude>
     <ClInclude Include="ScenemainSave.h">
-      <Filter>ソース ファイル\mainSave</Filter>
+      <Filter>ソース ファイル\Item\mainSave</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave1.h">
       <Filter>ソース ファイル\Save1</Filter>
@@ -297,7 +291,7 @@
       <Filter>ソース ファイル\Save3</Filter>
     </ClInclude>
     <ClInclude Include="ObjmainSave.h">
-      <Filter>ソース ファイル\mainSave</Filter>
+      <Filter>ソース ファイル\Item\mainSave</Filter>
     </ClInclude>
     <ClInclude Include="ObjSave1.h">
       <Filter>ソース ファイル\Save1</Filter>
@@ -363,28 +357,19 @@
       <Filter>ソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture1.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture2.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
-    <ClInclude Include="Map2.h">
-      <Filter>ソース ファイル\Map</Filter>
+    <ClInclude Include="SceneEquipped3.h">
+      <Filter>ソース ファイル\NewFilter1</Filter>
     </ClInclude>
-    <ClInclude Include="Map3.h">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Map4.h">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Map5.h">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Map6.h">
-      <Filter>ソース ファイル\Map</Filter>
+    <ClInclude Include="OBJEquipped3.h">
+      <Filter>ソース ファイル\NewFilter1</Filter>
     </ClInclude>
     <ClInclude Include="ObjMain.h">
       <Filter>ヘッダー ファイル</Filter>

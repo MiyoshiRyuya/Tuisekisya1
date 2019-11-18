@@ -5,7 +5,7 @@
 //使用するネームスペース
 using namespace GameL;
 
-//シーン:ゲームタイトル
+//シーン:マップシーン２
 class CSceneMap2 :public CScene
 {
 public:
