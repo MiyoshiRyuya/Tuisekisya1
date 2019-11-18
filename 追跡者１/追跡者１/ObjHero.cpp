@@ -14,7 +14,8 @@
 
 using namespace GameL;
 
-
+float g_Xz;
+float g_Yz;
 
 //イニシャライズ
 void CObjHero::Init()
