@@ -181,8 +181,7 @@ void CObjHero::Draw()
 
 using namespace GameL;
 
-float g_Xz=70;
-float g_Yz=70;
+
 
 //イニシャライズ
 void CObjHero::Init()
@@ -226,8 +225,7 @@ void CObjHero::Action()
 	m_y = m_py;
 
 	//	現在の位置を保存する
-	g_Xz = m_x; 
-	g_Yz = m_y;
+	
 
 	//Eボタンを押すとゲーム画面に移動する
 	if (Input::GetVKey('M') == true)
