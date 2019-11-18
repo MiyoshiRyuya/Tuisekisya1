@@ -195,27 +195,6 @@
     <ClCompile Include="ObjMap.cpp">
       <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
-    <ClCompile Include="savedata.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="Map2.cpp">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="Map3.cpp">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="Map4.cpp">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="Map5.cpp">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="Map6.cpp">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture3.cpp">
-      <Filter>ソース ファイル\Furniture</Filter>
-    </ClCompile>
     <ClCompile Include="ObjFurnirure2.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
@@ -224,6 +203,18 @@
     </ClCompile>
     <ClCompile Include="ObjFurniture.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMap2.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap2.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -356,24 +347,6 @@
     <ClInclude Include="Objtrap.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Map2.h">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Map3.h">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Map4.h">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Map5.h">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Map6.h">
-      <Filter>ソース ファイル\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjFurniture3.h">
-      <Filter>ソース ファイル\Furniture</Filter>
-    </ClInclude>
     <ClInclude Include="ObjFurniture2.h">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
@@ -381,6 +354,21 @@
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture1.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMain.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMap2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture3.h">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
   </ItemGroup>

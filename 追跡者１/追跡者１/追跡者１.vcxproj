@@ -190,6 +190,7 @@
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjFurniture1.h" />
     <ClInclude Include="ObjFurniture2.h" />
+    <ClInclude Include="ObjFurniture3.h" />
     <ClInclude Include="ObjMain.h" />
     <ClInclude Include="ObjMap.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
