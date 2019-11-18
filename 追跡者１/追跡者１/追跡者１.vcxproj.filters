@@ -61,6 +61,9 @@
     <Filter Include="ソース ファイル\Save3">
       <UniqueIdentifier>{0033fc82-399f-4c70-af4f-02dc5da637c8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\NewFilter1">
+      <UniqueIdentifier>{1950bae1-5980-483f-a264-2e0e290c663c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -204,6 +207,12 @@
     <ClCompile Include="ObjFurnirure2.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
+    <ClCompile Include="SceneEquipped3.cpp">
+      <Filter>ソース ファイル\NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJEquipped3.cpp">
+      <Filter>ソース ファイル\NewFilter1</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -343,6 +352,12 @@
     </ClInclude>
     <ClInclude Include="ObjFurniture2.h">
       <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneEquipped3.h">
+      <Filter>ソース ファイル\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJEquipped3.h">
+      <Filter>ソース ファイル\NewFilter1</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
