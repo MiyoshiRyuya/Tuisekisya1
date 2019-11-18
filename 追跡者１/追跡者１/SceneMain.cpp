@@ -71,6 +71,9 @@ void CSceneMain::InitScene()
 	//外部グラフィックファイルを読み込み7番目に登録
 	Draw::LoadImage(L"Horrorbear.png", 7, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み8番目に登録
+	Draw::LoadImage(L"Skull.png", 8, TEX_SIZE_64);
+
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
@@ -87,16 +90,20 @@ void CSceneMain::InitScene()
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 
 	//家具オブジェクト作成
-	/*CObjFurniture*obj_Furnirure = new CObjFurniture();
+	CObjFurniture*obj_Furnirure = new CObjFurniture();
 	Objs::InsertObj(obj_Furnirure, OBJ_FURNITURE,1);
 
 	//家具オブジェクト1作成
 	CObjFurniture1*obj_Furnirure1 = new CObjFurniture1();
-	Objs::InsertObj(obj_Furnirure1, OBJ_FURNITURE1, 1);*/
+	Objs::InsertObj(obj_Furnirure1, OBJ_FURNITURE1, 1);
 
 	//家具オブジェクト2作成
 	CObjFurniture2*obj_Furnirure2 = new CObjFurniture2();
 	Objs::InsertObj(obj_Furnirure2, OBJ_FURNITURE1, 1);
+
+	//家具オブジェクト3作成
+	CObjFurniture3*obj_Furnirure3 = new CObjFurniture3();
+	Objs::InsertObj(obj_Furnirure3, OBJ_FURNITURE3, 1);
 
 	//マップ背景オブジェクト作成
 	CObjMap*obj_map = new CObjMap();
