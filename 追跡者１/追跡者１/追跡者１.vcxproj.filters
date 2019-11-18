@@ -207,9 +207,6 @@
     <ClCompile Include="ObjFurniture1.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="savedata.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="Map2.cpp">
       <Filter>ソース ファイル\Map</Filter>
     </ClCompile>

@@ -38,8 +38,8 @@ void CSceneMap2::InitScene()
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 
 	//メインシーンオブジェクト
-	CObjMain*obj_main = new CObjMain();
-	Objs::InsertObj(obj_main, OBJ_MAIN, 2);
+	//CObjMain*obj_main = new CObjMain();
+	//Objs::InsertObj(obj_main, OBJ_MAIN, 2);
 }
 //実行中メソッド
 void CSceneMap2::Scene()
