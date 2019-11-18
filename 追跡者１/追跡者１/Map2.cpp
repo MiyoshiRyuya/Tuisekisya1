@@ -29,13 +29,13 @@ void CObjMap2::Action()
 //ドロー
 void CObjMap2::Draw()
 {
-	//描写カラー情報
+	//描画カラー情報
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
 	RECT_F src; //描画元切り取り位置
 	RECT_F dst; //描画先表示位置
 
-	//桐戸伊一の設定
+	//切り取り位置の設定
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
 	src.m_right = 600.0f;

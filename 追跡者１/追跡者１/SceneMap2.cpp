@@ -13,21 +13,21 @@ using namespace GameL;
 
 #include "SceneMain.h"
 #include "GameHead.h"
-#include"SceneMap.h"
+#include"SceneMap2.h"
 
 
 //コンストラクタ
-CSceneMap::CSceneMap()
+CSceneMap2::CSceneMap2()
 {
 
 }
 //デストラクタ
-CSceneMap::~CSceneMap()
+CSceneMap2::~CSceneMap2()
 {
 
 }
 //初期化メソッド
-void CSceneMap::InitScene()
+void CSceneMap2::InitScene()
 {
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
@@ -37,9 +37,12 @@ void CSceneMap::InitScene()
 	CObjtrap*obj_trap = new CObjtrap();
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 
+	//メインシーンオブジェクト
+	CObjMain*obj_main = new CObjMain();
+	Objs::InsertObj(obj_main, OBJ_MAIN, 2);
 }
 //実行中メソッド
-void CSceneMap::Scene()
+void CSceneMap2::Scene()
 {
 
 }
