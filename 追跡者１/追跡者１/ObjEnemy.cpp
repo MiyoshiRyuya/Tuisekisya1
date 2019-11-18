@@ -23,7 +23,7 @@ void CObjEnemy::Init()
 
 	m_ani_max_time = 4;
 
-	Hits::SetHitBox(this, m_x, m_y, 64, 64, ELEMENT_ENEMY, OBJ_ENEMY, 1);
+	Hits::SetHitBox(this, m_x, m_y, 43, 140, ELEMENT_ENEMY, OBJ_ENEMY, 1);
 
 }
 void CObjEnemy::Action()
@@ -136,9 +136,9 @@ void CObjEnemy::Draw()
 	src.m_bottom = 32.0f;
 
 	dst.m_top = 0.0f+m_y;
-	dst.m_left = 96.0f+m_x;
+	dst.m_left = 84.0f+m_x;
 	dst.m_right = 0.0f+m_x;
-	dst.m_bottom = 136.0f+m_y;
+	dst.m_bottom = 156.0f+m_y;
 
 	Draw::Draw(5, &src, &dst, c, 0.0f);
 }

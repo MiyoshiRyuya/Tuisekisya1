@@ -6,6 +6,7 @@
 
 #include "ObjTitle.h"
 #include "ObjRoad.h"
+#include "SceneTitle.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -31,7 +32,15 @@ void CObjRoad::Action()
 
 	m_time++;
 
-
+	//マウスの位置とクリックする場所で当たり判定
+	if (m_mou_x > 150 && m_mou_x < 210 && m_mou_y>110 && m_mou_y < 150)
+	{
+		//マウスの左が押されたらメニュ画面に移動する
+		if (m_time % 8 == 0 && m_mou_l == true)
+		{
+			Scene::SetScene(new CSceneTitle());
+		}
+	}
 }
 
 //ドロー
