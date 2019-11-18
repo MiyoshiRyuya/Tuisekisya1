@@ -67,7 +67,7 @@ void CObjItem::Action()
 		//ƒ}ƒEƒX‚Ì¶‚ª‰Ÿ‚³‚ê‚½‚ç‰®ª— •”‰®‚ÌŒ®‰æ–Ê‚ÉˆÚ“®‚·‚é
 		if (m_time %10 == 0 && m_mou_l == true)
 		{
-			Scene::SetScene(new CSceneEquipped3());
+			//Scene::SetScene(new CSceneEquipped3());
 		}
 	}
 }

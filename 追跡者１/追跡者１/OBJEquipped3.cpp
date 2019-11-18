@@ -72,5 +72,5 @@ void CObjEquipped3::Draw()
 	Font::StrDraw(L"はい　　　　いいえ", 130, 440, 64, c);
 
 	//一番目に登録したグラフィックをsrc.dst.cの情報を元に描画
-	Draw::Draw(1, &src, &dst, c, 0.0f);
+	//Draw::Draw(1, &src, &dst, c, 0.0f);
 }
