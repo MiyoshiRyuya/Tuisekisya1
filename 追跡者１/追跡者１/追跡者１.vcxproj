@@ -134,6 +134,7 @@
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
     <ClCompile Include="ObjFurniture1.cpp" />
+    <ClCompile Include="ObjFurniture3.cpp" />
     <ClCompile Include="ObjMain.cpp" />
     <ClCompile Include="ObjMap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
