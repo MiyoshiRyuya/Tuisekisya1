@@ -16,6 +16,11 @@ enum OBJ_NAME
 	OBJ_FURNITURE3,
 	OBJ_MAP,
 	OBJ_MAP2,
+	OBJ_MAP3,
+	OBJ_MAP4,
+	OBJ_MAP5,
+	OBJ_MAP6,
+
 	OBJ_MAIN,
 
 	OBJ_MENU,
@@ -116,7 +121,7 @@ struct UserData
 #include"SceneSave3.h"
 #include"SceneItem.h"
 #include"SceneRoad.h"
-#include"SceneMap.h"
+//#include"SceneMap.h"
 #include"SceneMap2.h"
 #include"SceneMap3.h"
 #include"SceneMap4.h"
