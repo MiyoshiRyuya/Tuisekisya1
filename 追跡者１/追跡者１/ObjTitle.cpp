@@ -39,6 +39,16 @@ void CObjTitle::Action()
 			Scene::SetScene(new CSceneMain());
 		}
 	}
+
+	//マウスの位置とクリックする場所で当たり判定
+	if (m_mou_x > 355 && m_mou_x < 445 && m_mou_y>400 && m_mou_y < 420)
+	{
+		//マウスの左が押されたらロード画面に移動する
+		if (m_mou_l == true)
+		{
+			Scene::SetScene(new CScenemainRoad());
+		}
+	}
 }
 
 //ドロー

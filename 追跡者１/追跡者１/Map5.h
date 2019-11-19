@@ -4,22 +4,15 @@
 //使用するネームスペース
 using namespace GameL;
 
-class CObjstage:public CObj
+//オブジェクト：ブロック＆背景
+class CObjMap5 : public CObj
 {
 public:
-	CObjstage(int map[20][20]);
-	~CObjstage() {};
+	CObjMap5() {};
+	~CObjMap5() {};
 	void Init();
 	void Action();
 	void Draw();
 
-
-
 private:
-	int m_map[20][20];
-	float objb;
-
-	float m_scroll;
 };
-
-

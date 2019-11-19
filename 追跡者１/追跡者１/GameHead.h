@@ -10,7 +10,13 @@ enum OBJ_NAME
 	OBJ_STAGE,
 	OBJ_ENEMY,
 	OBJ_TRAP,
+	OBJ_FURNITURE,
+	OBJ_FURNITURE1,
+	OBJ_FURNITURE2,
+	OBJ_FURNITURE3,
 	OBJ_MAP,
+	OBJ_MAP2,
+	OBJ_MAIN,
 
 	OBJ_MENU,
 	OBJ_MAINSAVE,
@@ -18,7 +24,10 @@ enum OBJ_NAME
 	OBJ_SAVE2,
 	OBJ_SAVE3,
 	OBJ_ITEM,
-	OBJ_ROAD,
+	OBJ_MAINROAD,
+	OBJ_ROAD1,
+	OBJ_ROAD2,
+	OBJ_ROAD3,
 	OBJ_EQUIPPED,
 	OBJ_EQUIPPED2,
 	OBJ_EQUIPPED3,
@@ -72,7 +81,13 @@ struct UserData
 #include "Objstage.h"
 #include "ObjEnemy.h"
 #include "Objtrap.h"
+#include "ObjFurniture.h"
+#include "ObjFurniture1.h"
+#include "ObjFurniture2.h"
+#include "ObjFurniture3.h"
 #include "ObjMap.h"
+#include "ObjMap2.h"
+#include "ObjMain.h"
 
 #include"ObjMenu.h"
 #include"ObjmainSave.h"
@@ -80,7 +95,10 @@ struct UserData
 #include"ObjSave2.h"
 #include"ObjSave3.h"
 #include"ObjItem.h"
-#include"ObjRoad.h"
+#include"ObjmainRoad.h"
+#include"ObjRoad1.h"
+#include"ObjRoad2.h"
+#include"ObjRoad3.h"
 #include"ObjEquipped.h"
 #include"OBJEquipped2.h"
 #include"OBJEquipped3.h"
@@ -99,8 +117,12 @@ struct UserData
 #include"SceneSave2.h"
 #include"SceneSave3.h"
 #include"SceneItem.h"
-#include"SceneRoad.h"
+#include"ScenemainRoad.h"
+#include"SceneRoad1.h"
+#include"SceneRoad2.h"
+#include"SceneRoad3.h"
 #include"SceneMap.h"
+#include"SceneMap2.h"
 #include"SceneEquipped.h"
 #include"SceneEquipped2.h"
 #include"SceneEquipped3.h"

@@ -38,10 +38,8 @@ void CObjMenu::Action()
 	{
 		Scene::SetScene(new CSceneMain());
 	}
-	if (Input::GetVKey('E') == true)
-	{
-		Scene::SetScene(new CSceneMap());
-	}
+
+	
 
 
 	//マウスの位置とクリックする場所で当たり判定
