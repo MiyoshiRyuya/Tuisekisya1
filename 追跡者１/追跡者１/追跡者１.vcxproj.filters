@@ -255,6 +255,12 @@
     <ClCompile Include="Map6.cpp">
       <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
+    <ClCompile Include="ObjFurnirure4.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurnirure5.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -442,6 +448,12 @@
     </ClInclude>
     <ClInclude Include="SceneMap6.h">
       <Filter>ソース ファイル\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture4.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture5.h">
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
