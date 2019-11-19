@@ -108,8 +108,8 @@ void CSceneMain::InitScene()
 	Objs::InsertObj(obj_Furnirure2, OBJ_FURNITURE2, 1);
 
 	//家具オブジェクト3作成
-	CObjFurniture3*obj_Furnirure3 = new CObjFurniture3();
-	Objs::InsertObj(obj_Furnirure3, OBJ_FURNITURE3, 1);
+	//CObjFurniture3*obj_Furnirure3 = new CObjFurniture3();
+	//Objs::InsertObj(obj_Furnirure3, OBJ_FURNITURE3, 1);
 
 	//家具オブジェクト4作成
 	CObjFurniture4*obj_Furnirure4 = new CObjFurniture4();
@@ -124,11 +124,9 @@ void CSceneMain::InitScene()
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
 
 	//マップ背景オブジェクト2作成
-	//CObjMap*obj_map = new CObjMap();
-	//Objs::InsertObj(obj_map, OBJ_MAP, 1);
 
-	//CObjMap2*obj_m = new CObjMap2();
-	//Objs::InsertObj(obj_m, OBJ_MAP2, 2);
+	CObjMap2*obj_m = new CObjMap2();
+	Objs::InsertObj(obj_m, OBJ_MAP2, 2);
 
 	//blockオブジェクト作成
 	//CObjstage*objb = new CObjstage(map);
