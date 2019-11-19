@@ -28,9 +28,6 @@
     <Filter Include="ソース ファイル\Title">
       <UniqueIdentifier>{820ba590-211d-4b31-a712-8981ea1eb56c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Road">
-      <UniqueIdentifier>{8489e961-d085-43e2-ab10-a9fa266f78bf}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Furniture">
       <UniqueIdentifier>{4c23f0bf-4208-4620-80e9-a4b6013188b1}</UniqueIdentifier>
     </Filter>
@@ -61,8 +58,20 @@
     <Filter Include="ソース ファイル\Save3">
       <UniqueIdentifier>{0033fc82-399f-4c70-af4f-02dc5da637c8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\NewFilter1">
+    <Filter Include="ソース ファイル\Road1">
+      <UniqueIdentifier>{58bdfa09-165b-4b9d-81a6-156fa9d4fd10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Road2">
+      <UniqueIdentifier>{44f6b7af-b97a-4a43-a95d-7798efda6099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Road3">
+      <UniqueIdentifier>{a962d5d1-aa1f-4670-8801-e7df278faeda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\屋根裏部屋の鍵">
       <UniqueIdentifier>{1950bae1-5980-483f-a264-2e0e290c663c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\mainRoad">
+      <UniqueIdentifier>{8489e961-d085-43e2-ab10-a9fa266f78bf}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -156,12 +165,6 @@
     <ClCompile Include="SceneGameOver.cpp">
       <Filter>ソース ファイル\GameOver</Filter>
     </ClCompile>
-    <ClCompile Include="ObjRoad.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneRoad.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
     <ClCompile Include="SceneTitle.cpp">
       <Filter>ソース ファイル\Title</Filter>
     </ClCompile>
@@ -208,10 +211,46 @@
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
     <ClCompile Include="SceneEquipped3.cpp">
-      <Filter>ソース ファイル\NewFilter1</Filter>
+      <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
     </ClCompile>
     <ClCompile Include="OBJEquipped3.cpp">
-      <Filter>ソース ファイル\NewFilter1</Filter>
+      <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMain.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMap2.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap2.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjmainRoad.cpp">
+      <Filter>ソース ファイル\mainRoad</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenemainRoad.cpp">
+      <Filter>ソース ファイル\mainRoad</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjRoad1.cpp">
+      <Filter>ソース ファイル\Road1</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRoad1.cpp">
+      <Filter>ソース ファイル\Road1</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjRoad2.cpp">
+      <Filter>ソース ファイル\Road2</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRoad2.cpp">
+      <Filter>ソース ファイル\Road2</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRoad3.cpp">
+      <Filter>ソース ファイル\Road3</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjRoad3.cpp">
+      <Filter>ソース ファイル\Road3</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -249,9 +288,6 @@
       <Filter>リソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="GameHead.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="main.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ObjMenu.h">
@@ -305,12 +341,6 @@
     <ClInclude Include="SceneGameOver.h">
       <Filter>ソース ファイル\GameOver</Filter>
     </ClInclude>
-    <ClInclude Include="ObjRoad.h">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneRoad.h">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClInclude>
     <ClInclude Include="ObjTitle.h">
       <Filter>ソース ファイル\Title</Filter>
     </ClInclude>
@@ -354,10 +384,49 @@
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
     <ClInclude Include="SceneEquipped3.h">
-      <Filter>ソース ファイル\NewFilter1</Filter>
+      <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
     </ClInclude>
     <ClInclude Include="OBJEquipped3.h">
-      <Filter>ソース ファイル\NewFilter1</Filter>
+      <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjmainRoad.h">
+      <Filter>ソース ファイル\mainRoad</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenemainRoad.h">
+      <Filter>ソース ファイル\mainRoad</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMain.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMap2.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap2.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjRoad1.h">
+      <Filter>ソース ファイル\Road1</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoad1.h">
+      <Filter>ソース ファイル\Road1</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjRoad2.h">
+      <Filter>ソース ファイル\Road2</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoad2.h">
+      <Filter>ソース ファイル\Road2</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjRoad3.h">
+      <Filter>ソース ファイル\Road3</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoad3.h">
+      <Filter>ソース ファイル\Road3</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
