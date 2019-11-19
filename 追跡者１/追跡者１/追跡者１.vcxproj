@@ -116,13 +116,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Map2.cpp" />
+    <ClCompile Include="Map2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Map3.cpp" />
     <ClCompile Include="Map4.cpp" />
     <ClCompile Include="Map5.cpp" />
     <ClCompile Include="Map6.cpp" />
     <ClCompile Include="OBJEquipped3.cpp" />
     <ClCompile Include="ObjFurnirure2.cpp" />
+    <ClCompile Include="ObjFurnirure4.cpp" />
+    <ClCompile Include="ObjFurnirure5.cpp" />
     <ClCompile Include="ObjFurniture.cpp" />
     <ClCompile Include="OBJEquipped.cpp" />
     <ClCompile Include="GameL\Audio.cpp" />
@@ -143,8 +147,11 @@
     <ClCompile Include="ObjMain.cpp" />
     <ClCompile Include="ObjMap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ObjEnemy.cpp" />
+    <ClCompile Include="ObjEnemy.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="OBJEquipped2.cpp" />
     <ClCompile Include="ObjGameOver.cpp" />
     <ClCompile Include="ObjHero.cpp" />
@@ -152,11 +159,14 @@
     <ClCompile Include="ObjmainSave.cpp" />
     <ClCompile Include="ObjMap2.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="ObjMenu.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ObjRoad.cpp" />
+    <ClCompile Include="ObjmainRoad.cpp" />
+    <ClCompile Include="ObjRoad2.cpp" />
+    <ClCompile Include="ObjRoad3.cpp" />
     <ClCompile Include="ObjSave1.cpp" />
     <ClCompile Include="ObjSave2.cpp" />
     <ClCompile Include="ObjSave3.cpp" />
@@ -164,6 +174,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="ObjTitle.cpp" />
+    <ClCompile Include="ObjRoad1.cpp" />
     <ClCompile Include="SceneEquipped.cpp" />
     <ClCompile Include="SceneEquipped2.cpp" />
     <ClCompile Include="SceneEquipped3.cpp" />
@@ -180,7 +191,10 @@
     <ClCompile Include="SceneMap5.cpp" />
     <ClCompile Include="SceneMap6.cpp" />
     <ClCompile Include="SceneMenu.cpp" />
-    <ClCompile Include="SceneRoad.cpp" />
+    <ClCompile Include="ScenemainRoad.cpp" />
+    <ClCompile Include="SceneRoad1.cpp" />
+    <ClCompile Include="SceneRoad2.cpp" />
+    <ClCompile Include="SceneRoad3.cpp" />
     <ClCompile Include="SceneSave1.cpp" />
     <ClCompile Include="SceneSave2.cpp" />
     <ClCompile Include="SceneSave3.cpp" />
@@ -188,7 +202,9 @@
     <ClCompile Include="Objtrap.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Map2.h" />
+    <ClInclude Include="Map2.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="Map3.h" />
     <ClInclude Include="Map4.h" />
     <ClInclude Include="Map5.h" />
@@ -211,6 +227,8 @@
     <ClInclude Include="ObjFurniture1.h" />
     <ClInclude Include="ObjFurniture2.h" />
     <ClInclude Include="ObjFurniture3.h" />
+    <ClInclude Include="ObjFurniture4.h" />
+    <ClInclude Include="ObjFurniture5.h" />
     <ClInclude Include="ObjMain.h" />
     <ClInclude Include="ObjMap.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -224,14 +242,19 @@
     <ClInclude Include="ObjmainSave.h" />
     <ClInclude Include="ObjMap2.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="ObjMenu.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
-    <ClInclude Include="ObjRoad.h" />
+    <ClInclude Include="ObjmainRoad.h" />
+    <ClInclude Include="ObjRoad1.h" />
+    <ClInclude Include="ObjRoad2.h" />
+    <ClInclude Include="ObjRoad3.h" />
     <ClInclude Include="ObjSave1.h" />
     <ClInclude Include="ObjSave2.h" />
     <ClInclude Include="ObjSave3.h" />
+    <ClInclude Include="SceneRoad3.h" />
     <ClInclude Include="objstage.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
@@ -252,7 +275,9 @@
     <ClInclude Include="SceneMap5.h" />
     <ClInclude Include="SceneMap6.h" />
     <ClInclude Include="SceneMenu.h" />
-    <ClInclude Include="SceneRoad.h" />
+    <ClInclude Include="ScenemainRoad.h" />
+    <ClInclude Include="SceneRoad1.h" />
+    <ClInclude Include="SceneRoad2.h" />
     <ClInclude Include="SceneSave1.h" />
     <ClInclude Include="SceneSave2.h" />
     <ClInclude Include="SceneSave3.h" />
