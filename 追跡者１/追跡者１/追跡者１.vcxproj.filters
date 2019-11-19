@@ -58,11 +58,11 @@
     <Filter Include="ソース ファイル\Save3">
       <UniqueIdentifier>{0033fc82-399f-4c70-af4f-02dc5da637c8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\NewFilter1">
-      <UniqueIdentifier>{1950bae1-5980-483f-a264-2e0e290c663c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Item\mainSave">
       <UniqueIdentifier>{fe70343e-1eda-48b6-b5c2-0f157f5eedbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Road\NewFilter1">
+      <UniqueIdentifier>{1950bae1-5980-483f-a264-2e0e290c663c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -210,40 +210,49 @@
     <ClCompile Include="SceneMap2.cpp">
       <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
-    <ClCompile Include="Map2.cpp">
+    <ClCompile Include="ObjMap2.cpp">
+      <Filter>ソース ファイル\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJEquipped3.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Map3.cpp">
+    <ClCompile Include="ObjMain.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Map4.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="Map5.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="Map6.cpp">
+    <ClCompile Include="SceneEquipped3.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ObjFurniture3.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
-    <ClCompile Include="savedata.cpp">
-      <Filter>ソース ファイル</Filter>
+    <ClCompile Include="SceneMap.cpp">
+      <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
     <ClCompile Include="SceneMap3.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
     <ClCompile Include="SceneMap4.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
     <ClCompile Include="SceneMap5.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
     <ClCompile Include="SceneMap6.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
-    <ClCompile Include="ObjMap2.cpp">
+    <ClCompile Include="Map2.cpp">
+      <Filter>ソース ファイル\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map3.cpp">
+      <Filter>ソース ファイル\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map4.cpp">
+      <Filter>ソース ファイル\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map5.cpp">
+      <Filter>ソース ファイル\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Map6.cpp">
       <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
   </ItemGroup>
@@ -389,37 +398,49 @@
     <ClInclude Include="SceneMap2.h">
       <Filter>ソース ファイル\Map</Filter>
     </ClInclude>
-    <ClInclude Include="Map2.h">
+    <ClInclude Include="ObjMap2.h">
+      <Filter>ソース ファイル\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJEquipped3.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Map3.h">
+    <ClInclude Include="ObjMain.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Map4.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="Map5.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="Map6.h">
+    <ClInclude Include="SceneEquipped3.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture3.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="Map2.h">
+      <Filter>ソース ファイル\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map3.h">
+      <Filter>ソース ファイル\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map4.h">
+      <Filter>ソース ファイル\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map5.h">
+      <Filter>ソース ファイル\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Map6.h">
+      <Filter>ソース ファイル\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap.h">
+      <Filter>ソース ファイル\Map</Filter>
     </ClInclude>
     <ClInclude Include="SceneMap3.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ソース ファイル\Map</Filter>
     </ClInclude>
     <ClInclude Include="SceneMap4.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ソース ファイル\Map</Filter>
     </ClInclude>
     <ClInclude Include="SceneMap5.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ソース ファイル\Map</Filter>
     </ClInclude>
     <ClInclude Include="SceneMap6.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjMap2.h">
       <Filter>ソース ファイル\Map</Filter>
     </ClInclude>
   </ItemGroup>
