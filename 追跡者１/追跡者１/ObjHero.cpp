@@ -14,14 +14,13 @@
 
 using namespace GameL;
 
-float g_Xz;
-float g_Yz;
+float g_Xz=70;
+float g_Yz=70;
 
 //イニシャライズ
 void CObjHero::Init()
 {
-
-	m_px = g_Xz;//位置
+	m_px = g_Xz; //移動
 	m_py = g_Yz;
 	m_vx;//移動ベクトル
 	m_vy;
@@ -59,7 +58,8 @@ void CObjHero::Action()
 	m_y = m_py;
 
 	//	現在の位置を保存する
-	
+	g_Xz = m_x;
+	g_Yz = m_y;
 
 	//Eボタンを押すとゲーム画面に移動する
 	if (Input::GetVKey('M') == true)
@@ -130,8 +130,6 @@ void CObjHero::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-		g_Xz = 70;
-		g_Yz = 70;
 
 		//主人公消滅でシーンをゲームオーバー画面に移行する
 		Scene::SetScene(new CSceneGameOver());
@@ -142,13 +140,12 @@ void CObjHero::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-		g_Xz = 70;
-		g_Yz = 70;
+	
 
 
 		Scene::SetScene(new CSceneGameOver());
 	}
-	//
+	/*
 	if (hit->CheckObjNameHit(OBJ_MAP2) != nullptr)
 	{
 		this->SetStatus(false);
@@ -169,7 +166,7 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneMain());
 	}
-
+	*/
 }
 
 //ドロー

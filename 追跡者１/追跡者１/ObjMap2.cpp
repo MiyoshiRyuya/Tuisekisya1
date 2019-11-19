@@ -13,7 +13,7 @@ void CObjMap2::Init()
 	m_x = 300;
 	m_y = 100;
 
-	Hits::SetHitBox(this, m_x + 10, m_y + 10, 32, 32, ELEMENT_BLUE, OBJ_MAP2, 3);
+	//Hits::SetHitBox(this, m_x + 10, m_y + 10, 32, 32, ELEMENT_BLUE, OBJ_MAP2, 3);
 
 }
 
