@@ -145,6 +145,21 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneGameOver());
 	}
+
+	//主人公が領域外にいかない様にする処理
+	if (m_px + 64.0f > 800.0f) {
+		m_px = 800.0f - 64.0f;
+	}
+	if (m_py + 64.0f > 600.0f) {
+		m_py = 600.0f - 64.0f;
+	}
+	if (m_px < 0.0f) {
+		m_px = 0.0f;
+	}
+	if (m_py < 0.0f) {
+		m_py = 0.0f;
+	}
+
 	/*
 	if (hit->CheckObjNameHit(OBJ_MAP2) != nullptr)
 	{

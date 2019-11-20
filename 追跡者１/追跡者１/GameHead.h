@@ -16,6 +16,10 @@ enum OBJ_NAME
 	OBJ_FURNITURE3,
 	OBJ_MAP,
 	OBJ_MAP2,
+	OBJ_MAP3,
+	OBJ_MAP4,
+	OBJ_MAP5,
+	OBJ_MAP6,
 	OBJ_MAIN,
 
 	OBJ_MENU,
@@ -50,6 +54,8 @@ enum HIT_ELEMENTS
 	ELEMENT_BLUE,
 	ELEMENT_BLACK,
 	ELEMENT_WHITE,
+
+	ELEMENT_KABE,
 };
 //------------------------------------------------
 
@@ -129,5 +135,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMain
+#define SET_GAME_START  CSceneMap6
 //-----------------------------------------------
