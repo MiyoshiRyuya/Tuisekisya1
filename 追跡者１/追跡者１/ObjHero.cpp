@@ -20,8 +20,9 @@ float g_Yz=70;
 //イニシャライズ
 void CObjHero::Init()
 {
-	m_px = g_Xz; //移動
+	m_px = g_Xz;
 	m_py = g_Yz;
+	
 	m_vx;//移動ベクトル
 	m_vy;
 	m_hidari; //左向き
@@ -58,6 +59,7 @@ void CObjHero::Action()
 	m_y = m_py;
 
 	//	現在の位置を保存する
+	
 	g_Xz = m_x;
 	g_Yz = m_y;
 
@@ -125,7 +127,6 @@ void CObjHero::Action()
 	hit->SetPos(m_px , m_py);
 
 	//敵オブジェクトと接触したら主人公削除
-	/*
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
 		this->SetStatus(false);
@@ -135,7 +136,6 @@ void CObjHero::Action()
 		//主人公消滅でシーンをゲームオーバー画面に移行する
 		Scene::SetScene(new CSceneGameOver());
 	}
-	*/
 	//トラップオブジェクトと接触したら主人公削除
 	if (hit->CheckObjNameHit(OBJ_TRAP) != nullptr)
 	{
@@ -147,7 +147,7 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneGameOver());
 	}
-	
+	/*
 	if (hit->CheckObjNameHit(OBJ_MAP2) != nullptr)
 	{
 		this->SetStatus(false);
@@ -168,7 +168,7 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneMain());
 	}
-	
+	*/
 }
 
 //ドロー
