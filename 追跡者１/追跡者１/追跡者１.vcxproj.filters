@@ -64,6 +64,9 @@
     <Filter Include="ソース ファイル\Map\Scene">
       <UniqueIdentifier>{da1e7cf5-09bf-4d53-ac6a-6fab1b73af61}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\To solve mystery">
+      <UniqueIdentifier>{5cb68e86-4710-49cb-b375-c7a7cd101551}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -252,6 +255,42 @@
     <ClCompile Include="SceneMap2.cpp">
       <Filter>ソース ファイル\Map\Scene</Filter>
     </ClCompile>
+    <ClCompile Include="Map2.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Map3.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Map4.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Map5.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Map6.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture3.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap3.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap4.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap5.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMap6.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTo solve mystery.cpp">
+      <Filter>ソース ファイル\To solve mystery</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTo solve mystery.cpp">
+      <Filter>ソース ファイル\To solve mystery</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -436,6 +475,42 @@
     </ClInclude>
     <ClInclude Include="SceneMap2.h">
       <Filter>ソース ファイル\Map\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Map2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Map3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Map4.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Map5.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Map6.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap4.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap5.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMap6.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTo solve mystery.h">
+      <Filter>ソース ファイル\To solve mystery</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTo solve mystery.h">
+      <Filter>ソース ファイル\To solve mystery</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

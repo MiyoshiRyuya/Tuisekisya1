@@ -12,31 +12,29 @@
 using namespace GameL;
 
 //使用ヘッダー
-#include"Scenemain.h"
-#include"GameHead.h"
-#include"SceneItem.h"
+#include"SceneTo solve mystery.h"
 
 //コンストラクタ
-CSceneEquipped::CSceneEquipped()
+CSceneTosolvemystery::CSceneTosolvemystery()
 {
 
 }
 
 //デストラクタ
-CSceneEquipped::~CSceneEquipped()
+CSceneTosolvemystery::~CSceneTosolvemystery()
 {
 
 }
 
 //ゲームメイン初期化メソッド
-void CSceneEquipped::InitScene()
+void CSceneTosolvemystery::InitScene()
 {
 	//外部グラフィックファイルを読み込み1番に登録（64×64ピクセル）
-	Draw::LoadImage(L"kari.png",1, TEX_SIZE_512);
+	Draw::LoadImage(L"sairyu.png", 1, TEX_SIZE_512);
 }
 
 //ゲームメイン実行中メソッド
-void CSceneEquipped::Scene()
+void CSceneTosolvemystery::Scene()
 {
 
 }
