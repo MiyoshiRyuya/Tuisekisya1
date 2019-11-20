@@ -147,6 +147,7 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneGameOver());
 	}
+
 	/*
 	if (hit->CheckObjNameHit(OBJ_MAP2) != nullptr)
 	{
