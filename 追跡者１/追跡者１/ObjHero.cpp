@@ -20,9 +20,8 @@ float g_Yz=70;
 //イニシャライズ
 void CObjHero::Init()
 {
-	m_px = g_Xz;
+	m_px = g_Xz; //移動
 	m_py = g_Yz;
-	
 	m_vx;//移動ベクトル
 	m_vy;
 	m_hidari; //左向き
@@ -59,7 +58,6 @@ void CObjHero::Action()
 	m_y = m_py;
 
 	//	現在の位置を保存する
-	
 	g_Xz = m_x;
 	g_Yz = m_y;
 
@@ -148,7 +146,21 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneGameOver());
 	}
 
-	/*
+	//主人公が領域外にいかない様にする処理
+	if (m_px + 64.0f > 800.0f) {
+		m_px = 800.0f - 64.0f;
+	}
+	if (m_py + 64.0f > 600.0f) {
+		m_py = 600.0f - 64.0f;
+	}
+	if (m_px < 0.0f) {
+		m_px = 0.0f;
+	}
+	if (m_py < 0.0f) {
+		m_py = 0.0f;
+	}
+
+	/*//
 	if (hit->CheckObjNameHit(OBJ_MAP2) != nullptr)
 	{
 		this->SetStatus(false);
