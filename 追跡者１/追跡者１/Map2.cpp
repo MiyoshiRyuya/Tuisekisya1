@@ -17,13 +17,13 @@ using namespace GameL;
 //イニシャライズ
 void CObjMap2::Init()
 {
-
+	;
 }
 
 //アクション
 void CObjMap2::Action()
 {
-
+	;
 }
 
 //ドロー

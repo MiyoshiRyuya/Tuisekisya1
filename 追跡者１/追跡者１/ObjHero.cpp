@@ -14,13 +14,14 @@
 
 using namespace GameL;
 
-float g_Xz;
-float g_Yz;
+float g_Xz=70;
+float g_Yz=70;
 
 //イニシャライズ
 void CObjHero::Init()
 {
-
+	m_px = g_Xz;
+	m_py = g_Yz;
 	
 	m_vx;//移動ベクトル
 	m_vy;
@@ -59,6 +60,8 @@ void CObjHero::Action()
 
 	//	現在の位置を保存する
 	
+	g_Xz = m_x;
+	g_Yz = m_y;
 
 	//Eボタンを押すとゲーム画面に移動する
 	if (Input::GetVKey('M') == true)
