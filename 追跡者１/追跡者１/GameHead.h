@@ -31,6 +31,7 @@ enum OBJ_NAME
 	OBJ_EQUIPPED,
 	OBJ_EQUIPPED2,
 	OBJ_EQUIPPED3,
+	OBJ_TOSOLVEMYATERY,
 
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
@@ -102,6 +103,7 @@ struct UserData
 #include"ObjEquipped.h"
 #include"OBJEquipped2.h"
 #include"OBJEquipped3.h"
+#include"ObjTo solve mystery.h"
 
 #include "ObjTitle.h"
 #include "ObjGameOver.h"
@@ -126,9 +128,10 @@ struct UserData
 #include"SceneEquipped.h"
 #include"SceneEquipped2.h"
 #include"SceneEquipped3.h"
+#include"SceneTo solve mystery.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneTitle
+#define SET_GAME_START  SceneTo solve mystery
 //-----------------------------------------------
