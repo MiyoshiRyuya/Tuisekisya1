@@ -78,8 +78,8 @@ void CSceneMain::InitScene()
 	CObjHero*obj = new CObjHero();
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
-	CObjstage*objb = new CObjstage(map);
-	Objs::InsertObj(objb, OBJ_STAGE, 9);
+	//CObjstage*objb = new CObjstage(map);
+	//Objs::InsertObj(objb, OBJ_STAGE, 9);
 
 	//敵オブジェクト
 	CObjEnemy*obj_enemy = new CObjEnemy();
@@ -102,15 +102,14 @@ void CSceneMain::InitScene()
 	Objs::InsertObj(obj_Furnirure2, OBJ_FURNITURE2, 1);
 
 	//家具オブジェクト3作成
-	//CObjFurniture3*obj_Furnirure3 = new CObjFurniture3();
-	//Objs::InsertObj(obj_Furnirure3, OBJ_FURNITURE3, 1);
+	CObjFurniture3*obj_Furnirure3 = new CObjFurniture3();
+	Objs::InsertObj(obj_Furnirure3, OBJ_FURNITURE3, 1);
 
 	//マップ背景オブジェクト1作成
 	CObjMap*obj_map = new CObjMap();
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
 
-	//マップ背景オブジェクト2作成
-
+	//マップシーン切り替えオブジェクト2作成
 	CObjMap2*obj_m = new CObjMap2();
 	Objs::InsertObj(obj_m, OBJ_MAP2, 2);
 
