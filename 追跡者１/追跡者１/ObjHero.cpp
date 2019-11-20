@@ -160,7 +160,7 @@ void CObjHero::Action()
 		m_py = 0.0f;
 	}
 
-	/*//
+	
 	if (hit->CheckObjNameHit(OBJ_MAP2) != nullptr)
 	{
 		this->SetStatus(false);
@@ -181,7 +181,7 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneMain());
 	}
-	*/
+	
 }
 
 //ドロー
