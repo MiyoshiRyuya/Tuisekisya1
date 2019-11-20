@@ -20,6 +20,7 @@ enum OBJ_NAME
 	OBJ_MAP4,
 	OBJ_MAP5,
 	OBJ_MAP6,
+
 	OBJ_MAIN,
 
 	OBJ_MENU,
@@ -54,8 +55,6 @@ enum HIT_ELEMENTS
 	ELEMENT_BLUE,
 	ELEMENT_BLACK,
 	ELEMENT_WHITE,
-
-	ELEMENT_KABE,
 };
 //------------------------------------------------
 
@@ -102,7 +101,7 @@ struct UserData
 #include"ObjSave2.h"
 #include"ObjSave3.h"
 #include"ObjItem.h"
-#include"ObjRoad.h"
+//#include"ObjRoad.h"
 #include"ObjEquipped.h"
 #include"OBJEquipped2.h"
 #include"OBJEquipped3.h"
@@ -121,8 +120,8 @@ struct UserData
 #include"SceneSave2.h"
 #include"SceneSave3.h"
 #include"SceneItem.h"
-#include"SceneRoad.h"
-#include"SceneMap.h"
+//#include"SceneRoad.h"
+//#include"SceneMap.h"
 #include"SceneMap2.h"
 #include"SceneMap3.h"
 #include"SceneMap4.h"
@@ -135,5 +134,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap6
+#define SET_GAME_START  CSceneMain
 //-----------------------------------------------
