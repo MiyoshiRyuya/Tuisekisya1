@@ -29,7 +29,7 @@ void CObjMap2::Init()
 void CObjMap2::Action()
 {
 	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_x + 10, m_y + 10);
+	hit->SetPos(m_x , m_y );
 
 }
 
@@ -42,15 +42,15 @@ void CObjMap2::Draw()
 	RECT_F dst;
 
 	src.m_top = 0.0f;
-	src.m_left = 64.0f;
-	src.m_right = 0.0f;
+	src.m_left = 32.0f;
+	src.m_right = 64.0f;
 	src.m_bottom = 32.0f;
 
 	dst.m_top = 0.0f + m_y;
-	dst.m_left = 64.0f + m_x;
+	dst.m_left = 32.0f + m_x;
 	dst.m_right = 0.0f + m_x;
-	dst.m_bottom = 64.0f + m_y;
+	dst.m_bottom = 32.0f + m_y;
 
-	Draw::Draw(2, &src, &dst, c, 0.0f);
+	Draw::Draw(0, &src, &dst, c, 0.0f);
 
 }
