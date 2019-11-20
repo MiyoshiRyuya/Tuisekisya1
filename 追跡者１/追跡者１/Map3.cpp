@@ -5,6 +5,7 @@
 #include "GameL\WinInputs.h"
 #include "GameL\SceneManager.h"
 #include "GameL\SceneObjManager.h"
+#include"GameL/HitBoxManager.h"
 
 #include "GameHead.h"
 #include "Map3.h"
@@ -17,12 +18,18 @@ using namespace GameL;
 //イニシャライズ
 void CObjMap3::Init()
 {
+	m_x = 300;
+	m_y = 100;
+
+	//Hits::SetHitBox(this, m_x + 10, m_y + 10, 32, 32, ELEMENT_BLUE, OBJ_MAP3, 3);
 
 }
 
 //アクション
 void CObjMap3::Action()
 {
+	CHitBox*hit = Hits::GetHitBox(this);
+	hit->SetPos(m_x + 10, m_y + 10);
 
 }
 

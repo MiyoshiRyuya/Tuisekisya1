@@ -6,19 +6,21 @@
 using namespace GameL;
 
 //シーン：セーブ画面
-class CObjRoad : public CObj
+class CObjRoad1 : public CObj
 {
 public:
-	CObjRoad() {};
-	~CObjRoad() {};
+	CObjRoad1() {};
+	~CObjRoad1() {};
 
 	void Init();
 	void Action();
 	void Draw();
+	int m_time;  //時間制御
 private:
 	float m_mou_x; //マウスの位置X 
 	float m_mou_y; //マウスの位置Y
 	bool  m_mou_r; //マウスの右ボタン
 	bool  m_mou_l; //マウスの左ボタン
-	int m_time;    //マウス時間制御用
+
+
 };

@@ -5,13 +5,14 @@
 //使用するネームスペース
 using namespace GameL;
 
-//シーン:マップシーン２
+//シーン：ゲームメイン
 class CSceneMap2 :public CScene
 {
 public:
 	CSceneMap2();
 	~CSceneMap2();
-	void InitScene();//初期化メソッド
-	void Scene();//実行中メソッド
+	void InitScene();//ゲームメインの初期化メソッド
+	void Scene();//ゲームメインの実行中メソッド:
 private:
+
 };
