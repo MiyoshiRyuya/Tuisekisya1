@@ -273,12 +273,6 @@
     <ClCompile Include="SceneMap6.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="ObjTo solve mystery.cpp">
-      <Filter>ソース ファイル\To solve mystery</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneTo solve mystery.cpp">
-      <Filter>ソース ファイル\To solve mystery</Filter>
-    </ClCompile>
     <ClCompile Include="ObjMain.cpp">
       <Filter>ソース ファイル\Main</Filter>
     </ClCompile>
@@ -289,9 +283,6 @@
       <Filter>ソース ファイル\Road</Filter>
     </ClCompile>
     <ClCompile Include="ObjmainRoad.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjMap2.cpp">
       <Filter>ソース ファイル\Road</Filter>
     </ClCompile>
     <ClCompile Include="ObjRoad1.cpp">
@@ -320,6 +311,24 @@
     </ClCompile>
     <ClCompile Include="Objtrap.cpp">
       <Filter>ソース ファイル\Trap</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTo solve mystery.cpp">
+      <Filter>ソース ファイル\To solve mystery</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTo solve mystery.cpp">
+      <Filter>ソース ファイル\To solve mystery</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurnirure4.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurnirure5.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture6.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMap2.cpp">
+      <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -515,12 +524,6 @@
     <ClInclude Include="SceneMap6.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjTo solve mystery.h">
-      <Filter>ソース ファイル\To solve mystery</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneTo solve mystery.h">
-      <Filter>ソース ファイル\To solve mystery</Filter>
-    </ClInclude>
     <ClInclude Include="ObjMap2.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
@@ -562,6 +565,21 @@
     </ClInclude>
     <ClInclude Include="Objtrap.h">
       <Filter>ソース ファイル\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTo solve mystery.h">
+      <Filter>ソース ファイル\To solve mystery</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTo solve mystery.h">
+      <Filter>ソース ファイル\To solve mystery</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture4.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture5.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture6.h">
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -176,6 +176,7 @@
     </ClCompile>
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="ObjRoad1.cpp" />
+    <ClCompile Include="ObjTo solve mystery.cpp" />
     <ClCompile Include="SceneEquipped.cpp" />
     <ClCompile Include="SceneEquipped2.cpp" />
     <ClCompile Include="SceneEquipped3.cpp" />
@@ -201,6 +202,7 @@
     <ClCompile Include="SceneSave3.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
     <ClCompile Include="Objtrap.cpp" />
+    <ClCompile Include="SceneTo solve mystery.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Map2.h">
@@ -256,6 +258,7 @@
     <ClInclude Include="ObjSave1.h" />
     <ClInclude Include="ObjSave2.h" />
     <ClInclude Include="ObjSave3.h" />
+    <ClInclude Include="ObjTo solve mystery.h" />
     <ClInclude Include="SceneRoad3.h" />
     <ClInclude Include="objstage.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -285,6 +288,7 @@
     <ClInclude Include="SceneSave3.h" />
     <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="Objtrap.h" />
+    <ClInclude Include="SceneTo solve mystery.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
