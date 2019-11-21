@@ -24,7 +24,11 @@ void CObjTosolvemystery::Init()
 //アクション
 void CObjTosolvemystery::Action()
 {
+	m_mou_x = (float)Input::GetPosX();
+	m_mou_y = (float)Input::GetPosY();
 
+	m_mou_r = Input::GetMouButtonR();
+	m_mou_l = Input::GetMouButtonL();
 }
 
 //ドロー
@@ -38,13 +42,13 @@ void CObjTosolvemystery::Draw()
 
 	if (m_mou_r == true)
 		Font::StrDraw(L"R=押してる", 20, 30, 12, c);
-	else (m_mou_r == true)
-		Font::StrDraw(L"R=押してる", 20, 30, 12, c);
+	else 
+		Font::StrDraw(L"R=押してない", 20, 30, 12, c);
 
 	if (m_mou_l == true)
-		Font::StrDraw(L"R=押してる", 20, 30, 12, c);
-	else (m_mou_l == true)
-		Font::StrDraw(L"R=押してる", 20, 30, 12, c);
+		Font::StrDraw(L"L=押してる", 20, 30, 12, c);
+	else 
+		Font::StrDraw(L"L=押しない", 20, 30, 12, c);
 
 	RECT_F src;
 	RECT_F dst;
@@ -52,13 +56,13 @@ void CObjTosolvemystery::Draw()
 	//切り取り位置の設定
 	src.m_top    = 0.0f;
 	src.m_left   = 0.0f;
-	src.m_right  = 64.0f;
-	src.m_bottom = 64.0f;
+	src.m_right  = 512.0f;
+	src.m_bottom = 512.0f;
 
 	//表示位置の設定
-	dst.m_top    = 150.0f + m_y;
+	dst.m_top    = 100.0f + m_y;
 	dst.m_left   = 200.0f + m_x;
-	dst.m_right  = 700.0f + m_x;
+	dst.m_right  = 600.0f + m_x;
 	dst.m_bottom = 450.0f + m_y;
 
 	//一番目に登録したグラフィックをsrc.dst.cの情報を元に描画

@@ -93,7 +93,7 @@ void CSceneMain::InitScene()
 	CObjstage*objb = new CObjstage(map);
 	Objs::InsertObj(objb, OBJ_STAGE, 9);
 
-	//敵オブジェクト
+	/*敵オブジェクト
 	CObjEnemy*obj_enemy = new CObjEnemy();
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
 
@@ -154,7 +154,7 @@ void CSceneMain::InitScene()
 
 	//家具オブジェクト8作成
 	CObjFurniture8*obj_Furnirure8 = new CObjFurniture8();
-	Objs::InsertObj(obj_Furnirure8, OBJ_FURNITURE8, 1);
+	Objs::InsertObj(obj_Furnirure8, OBJ_FURNITURE8, 1);*/
 
 
 

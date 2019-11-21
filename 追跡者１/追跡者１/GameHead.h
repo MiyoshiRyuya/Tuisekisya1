@@ -11,8 +11,6 @@ enum OBJ_NAME
 	OBJ_ENEMY,
 	OBJ_TRAP,
 	OBJ_TRAP1,
-	OBJ_TRAP2,
-	OBJ_TRAP3,
 	OBJ_FURNITURE,
 	OBJ_FURNITURE1,
 	OBJ_FURNITURE2,
@@ -23,7 +21,11 @@ enum OBJ_NAME
 	OBJ_FURNITURE7,
 	OBJ_FURNITURE8,
 	OBJ_MAP,
-	//OBJ_MAP2,
+	OBJ_MAP2,
+	OBJ_MAP3,
+	OBJ_MAP4,
+	OBJ_MAP5,
+	OBJ_MAP6,
 	OBJ_MAIN,
 
 	OBJ_MENU,
@@ -39,6 +41,7 @@ enum OBJ_NAME
 	OBJ_EQUIPPED,
 	OBJ_EQUIPPED2,
 	OBJ_EQUIPPED3,
+	OBJ_TOSOLVEMYATERY,
 
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
@@ -90,8 +93,6 @@ struct UserData
 #include "ObjEnemy.h"
 #include "Objtrap.h"
 #include "Objtrap1.h"
-#include "Objtrap2.h"
-#include "Objtrap3.h"
 #include "ObjFurniture.h"
 #include "ObjFurniture1.h"
 #include "ObjFurniture2.h"
@@ -102,7 +103,11 @@ struct UserData
 #include "ObjFurnirure7.h"
 #include "ObjFurniture8.h"
 #include "ObjMap.h"
-//#include "ObjMap2.h"
+#include "Map2.h"
+#include "Map3.h"
+#include "Map4.h"
+#include "Map5.h"
+#include "Map6.h"
 #include "ObjMain.h"
 
 #include"ObjMenu.h"
@@ -118,6 +123,7 @@ struct UserData
 #include"ObjEquipped.h"
 #include"OBJEquipped2.h"
 #include"OBJEquipped3.h"
+#include"ObjTo solve mystery.h"
 
 #include "ObjTitle.h"
 #include "ObjGameOver.h"
@@ -139,12 +145,17 @@ struct UserData
 #include"SceneRoad3.h"
 #include"SceneMap.h"
 #include"SceneMap2.h"
+#include"SceneMap3.h"
+#include"SceneMap4.h"
+#include"SceneMap5.h"
+#include"SceneMap6.h"
 #include"SceneEquipped.h"
 #include"SceneEquipped2.h"
 #include"SceneEquipped3.h"
+#include"SceneTo solve mystery.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMain
+#define SET_GAME_START  CSceneTosolvemystery
 //-----------------------------------------------
