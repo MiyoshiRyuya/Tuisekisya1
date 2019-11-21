@@ -97,6 +97,9 @@ void CSceneMain::InitScene()
 	CObjEnemy*obj_enemy = new CObjEnemy();
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
 
+
+
+
 	//罠オブジェクト作成
 	CObjtrap*obj_trap = new CObjtrap();
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
@@ -104,6 +107,18 @@ void CSceneMain::InitScene()
 	//罠オブジェクト1作成
 	CObjtrap1*obj_trap1 = new CObjtrap1();
 	Objs::InsertObj(obj_trap1, OBJ_TRAP1, 1);
+
+	//罠オブジェクト2作成
+	CObjtrap2*obj_trap2 = new CObjtrap2();
+	Objs::InsertObj(obj_trap2, OBJ_TRAP2, 1);
+	
+	//罠オブジェクト3作成
+	//CObjtrap3*obj_trap3 = new CObjtrap3();
+	//Objs::InsertObj(obj_trap, OBJ_TRAP3, 1);
+
+
+
+
 
 	//家具オブジェクト作成
 	CObjFurniture*obj_Furnirure = new CObjFurniture();
@@ -140,6 +155,11 @@ void CSceneMain::InitScene()
 	//家具オブジェクト8作成
 	CObjFurniture8*obj_Furnirure8 = new CObjFurniture8();
 	Objs::InsertObj(obj_Furnirure8, OBJ_FURNITURE8, 1);
+
+
+
+
+
 
 
 	//マップ背景オブジェクト1作成

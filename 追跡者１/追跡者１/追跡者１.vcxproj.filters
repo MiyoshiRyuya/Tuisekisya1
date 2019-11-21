@@ -360,6 +360,12 @@
     <ClCompile Include="Objtrap1.cpp">
       <Filter>ソース ファイル\Trap</Filter>
     </ClCompile>
+    <ClCompile Include="Objtrap2.cpp">
+      <Filter>ソース ファイル\Trap</Filter>
+    </ClCompile>
+    <ClCompile Include="Objtrap3.cpp">
+      <Filter>ソース ファイル\Trap</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -642,6 +648,12 @@
       <Filter>ソース ファイル\Trap</Filter>
     </ClInclude>
     <ClInclude Include="Objtrap1.h">
+      <Filter>ソース ファイル\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="Objtrap2.h">
+      <Filter>ソース ファイル\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="Objtrap3.h">
       <Filter>ソース ファイル\Trap</Filter>
     </ClInclude>
   </ItemGroup>
