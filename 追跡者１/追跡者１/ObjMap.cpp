@@ -43,4 +43,6 @@ void CObjMap::Draw()
 	dst.m_bottom = 600.0f;
 
 	Draw::Draw(2, &src, &dst, c, 0.0f);
+
+
 }

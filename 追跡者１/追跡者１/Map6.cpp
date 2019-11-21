@@ -21,7 +21,7 @@ void CObjMap6::Init()
 	m_x = 0;
 	m_y = 0;
 
-	Hits::SetHitBox(this, m_x, m_y, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
+//	Hits::SetHitBox(this, m_x, m_y, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
 }
 
 //ƒAƒNƒVƒ‡ƒ“

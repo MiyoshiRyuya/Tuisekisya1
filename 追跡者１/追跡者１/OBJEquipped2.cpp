@@ -70,7 +70,7 @@ void CObjEquipped2::Draw()
 	//装備画面表示
 	Font::StrDraw(L"十字架", 460, 100, 46, c);
 
-	Font::StrDraw(L"どこかで見たことがある形", 360, 160, 32, c);
+	Font::StrDraw(L"見覚えのある形", 360, 160, 32, c);
 
 	Font::StrDraw(L"どこかで使えるかも・・・", 360, 220, 32, c);
 	//装備しますか表示
