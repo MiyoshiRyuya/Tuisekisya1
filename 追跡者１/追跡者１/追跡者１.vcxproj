@@ -144,6 +144,7 @@
     <ClCompile Include="GameL\WinInputs.cpp" />
     <ClCompile Include="ObjFurniture1.cpp" />
     <ClCompile Include="ObjFurniture3.cpp" />
+    <ClCompile Include="ObjFurniture6.cpp" />
     <ClCompile Include="ObjMain.cpp" />
     <ClCompile Include="ObjMap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -203,7 +204,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Map2.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="Map3.h" />
     <ClInclude Include="Map4.h" />
@@ -229,6 +230,7 @@
     <ClInclude Include="ObjFurniture3.h" />
     <ClInclude Include="ObjFurniture4.h" />
     <ClInclude Include="ObjFurniture5.h" />
+    <ClInclude Include="ObjFurniture6.h" />
     <ClInclude Include="ObjMain.h" />
     <ClInclude Include="ObjMap.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
