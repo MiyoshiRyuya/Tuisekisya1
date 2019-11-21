@@ -10,7 +10,7 @@ using namespace GameL;
 
 void CObjtrap::Init()
 {
-	m_x = 100;
+	m_x = 180;
 	m_y = 200;
 
 	Hits::SetHitBox(this, m_x+10, m_y+10, 44, 64, ELEMENT_RED, OBJ_TRAP, 1);
