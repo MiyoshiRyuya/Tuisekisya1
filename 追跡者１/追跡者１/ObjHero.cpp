@@ -116,7 +116,6 @@ void CObjHero::Action()
 
 
 	//敵オブジェクトと接触したら主人公削除
-
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
 		this->SetStatus(false);
@@ -128,8 +127,6 @@ void CObjHero::Action()
 		//主人公消滅でシーンをゲームオーバー画面に移行する
 		Scene::SetScene(new CSceneGameOver());
 	}
-
-
 
 	//トラップオブジェクトと接触したら主人公削除
 	if (hit->CheckObjNameHit(OBJ_TRAP) != nullptr)

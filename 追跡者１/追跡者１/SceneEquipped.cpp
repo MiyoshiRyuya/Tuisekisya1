@@ -31,8 +31,15 @@ CSceneEquipped::~CSceneEquipped()
 //ゲームメイン初期化メソッド
 void CSceneEquipped::InitScene()
 {
+	//出力させる文字のグラフィックを作成
+	Font::SetStrTex(L"アイテム説明");
+
+	//メニューオブジェクト作成
+	CObjEquipped* obj = new CObjEquipped();     //メニューオブジェクト作成
+	Objs::InsertObj(obj, OBJ_EQUIPPED, 10); //主人公オブジェクト登録
+
 	//外部グラフィックファイルを読み込み1番に登録（64×64ピクセル）
-	Draw::LoadImage(L"sairyu.png", 5, TEX_SIZE_512);
+	Draw::LoadImage(L"sairyu.png", 1, TEX_SIZE_512);
 }
 
 //ゲームメイン実行中メソッド
