@@ -22,7 +22,11 @@ void CObjTosolvemystery::Init()
 //アクション
 void CObjTosolvemystery::Action()
 {
-
+	//Eボタンを押すとゲーム画面に移動する
+	if (Input::GetVKey('E') == true)
+	{
+		Scene::SetScene(new CSceneMain());
+	}
 }
 
 //ドロー

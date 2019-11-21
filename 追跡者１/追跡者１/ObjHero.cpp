@@ -114,12 +114,9 @@ void CObjHero::Action()
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_px + 25, m_py);
 
-//<<<<<<< HEAD
-	//謨ｵ繧ｪ繝悶ず繧ｧ繧ｯ繝医→謗･隗ｦ縺励◆繧我ｸｻ莠ｺ蜈ｬ蜑企勁
-	/*
-=======
+
 	//敵オブジェクトと接触したら主人公削除
->>>>>>> e29ef8977e5a01c10721ad06e31d12977120d66c
+
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
 		this->SetStatus(false);
@@ -131,11 +128,10 @@ void CObjHero::Action()
 		//主人公消滅でシーンをゲームオーバー画面に移行する
 		Scene::SetScene(new CSceneGameOver());
 	}
-<<<<<<< HEAD
-	*/
-	//繝医Λ繝・・繧ｪ繝悶ず繧ｧ繧ｯ繝医→謗･隗ｦ縺励◆繧我ｸｻ莠ｺ蜈ｬ蜑企勁
 
-	//トラップオブジェクトと接触したら主人公削除 e29ef8977e5a01c10721ad06e31d12977120d66c
+
+
+	//トラップオブジェクトと接触したら主人公削除
 	if (hit->CheckObjNameHit(OBJ_TRAP) != nullptr)
 	{
 		this->SetStatus(false);
@@ -184,10 +180,16 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneGameOver());
 	}
 
+	if (hit->CheckObjNameHit(OBJ_FURNITURE) != nullptr)
+	{
+		this->SetStatus(false);
 
+		g_Xz = 70;
+		g_Yz = 70;
 
-
-
+		//主人公が当たったらシーンを謎解き画面に移行する
+		Scene::SetScene(new CSceneTosolvemystery());
+	}
 
 	if (hit->CheckObjNameHit(OBJ_MAP) != nullptr)
 	{
