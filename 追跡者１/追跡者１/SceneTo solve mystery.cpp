@@ -32,7 +32,7 @@ CSceneTosolvemystery::~CSceneTosolvemystery()
 void CSceneTosolvemystery::InitScene()
 {
 	//外部グラフィックファイルを読み込み0番に登録（64×64ピクセル）
-	Draw::LoadImage(L"kari.png", 1, TEX_SIZE_512);
+	Draw::LoadImage(L"Nazotoki.png", 1, TEX_SIZE_512);
 
 	//謎解き画面表示
 	CObjTosolvemystery*obj = new CObjTosolvemystery();

@@ -10,6 +10,7 @@ enum OBJ_NAME
 	OBJ_STAGE,
 	OBJ_ENEMY,
 	OBJ_TRAP,
+	OBJ_TRAP1,
 	OBJ_FURNITURE,
 	OBJ_FURNITURE1,
 	OBJ_FURNITURE2,
@@ -17,6 +18,8 @@ enum OBJ_NAME
 	OBJ_FURNITURE4,
 	OBJ_FURNITURE5,
 	OBJ_FURNITURE6,
+	OBJ_FURNITURE7,
+	OBJ_FURNITURE8,
 	OBJ_MAP,
 	OBJ_MAP2,
 	OBJ_MAP3,
@@ -89,6 +92,7 @@ struct UserData
 #include "Objstage.h"
 #include "ObjEnemy.h"
 #include "Objtrap.h"
+#include "Objtrap1.h"
 #include "ObjFurniture.h"
 #include "ObjFurniture1.h"
 #include "ObjFurniture2.h"
@@ -96,6 +100,8 @@ struct UserData
 #include "ObjFurniture4.h"
 #include "ObjFurniture5.h"
 #include "ObjFurniture6.h"
+#include "ObjFurnirure7.h"
+#include "ObjFurniture8.h"
 #include "ObjMap.h"
 #include "Map2.h"
 #include "Map3.h"
