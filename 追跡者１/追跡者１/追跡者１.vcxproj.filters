@@ -70,6 +70,9 @@
     <Filter Include="ソース ファイル\Scene Main">
       <UniqueIdentifier>{731db71c-dbf1-4507-a57b-ba135bd1d5dc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Trap">
+      <UniqueIdentifier>{98068357-c056-4901-a3ab-8a54a1c7136a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -179,9 +182,6 @@
     </ClCompile>
     <ClCompile Include="SceneEquipped2.cpp">
       <Filter>ソース ファイル\Cross Equipment</Filter>
-    </ClCompile>
-    <ClCompile Include="Objtrap.cpp">
-      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ObjEnemy.cpp">
       <Filter>ソース ファイル\Enemy</Filter>
@@ -354,6 +354,12 @@
     <ClCompile Include="ObjFurniture8.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
+    <ClCompile Include="Objtrap.cpp">
+      <Filter>ソース ファイル\Trap</Filter>
+    </ClCompile>
+    <ClCompile Include="Objtrap1.cpp">
+      <Filter>ソース ファイル\Trap</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -472,9 +478,6 @@
     </ClInclude>
     <ClInclude Include="ObjMap.h">
       <Filter>ソース ファイル\Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Objtrap.h">
-      <Filter>ソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture2.h">
       <Filter>ソース ファイル\Furniture</Filter>
@@ -634,6 +637,12 @@
     </ClInclude>
     <ClInclude Include="ObjFurniture8.h">
       <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="Objtrap.h">
+      <Filter>ソース ファイル\Trap</Filter>
+    </ClInclude>
+    <ClInclude Include="Objtrap1.h">
+      <Filter>ソース ファイル\Trap</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

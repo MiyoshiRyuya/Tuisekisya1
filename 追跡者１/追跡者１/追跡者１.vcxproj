@@ -178,6 +178,7 @@
     </ClCompile>
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="ObjRoad1.cpp" />
+    <ClCompile Include="Objtrap1.cpp" />
     <ClCompile Include="SceneEquipped.cpp" />
     <ClCompile Include="SceneEquipped2.cpp" />
     <ClCompile Include="SceneEquipped3.cpp" />
@@ -260,6 +261,7 @@
     <ClInclude Include="ObjSave1.h" />
     <ClInclude Include="ObjSave2.h" />
     <ClInclude Include="ObjSave3.h" />
+    <ClInclude Include="Objtrap1.h" />
     <ClInclude Include="SceneRoad3.h" />
     <ClInclude Include="objstage.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>

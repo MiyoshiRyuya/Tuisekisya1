@@ -101,6 +101,10 @@ void CSceneMain::InitScene()
 	CObjtrap*obj_trap = new CObjtrap();
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 
+	//罠オブジェクト1作成
+	CObjtrap1*obj_trap1 = new CObjtrap1();
+	Objs::InsertObj(obj_trap1, OBJ_TRAP1, 1);
+
 	//家具オブジェクト作成
 	CObjFurniture*obj_Furnirure = new CObjFurniture();
 	Objs::InsertObj(obj_Furnirure, OBJ_FURNITURE,1);
