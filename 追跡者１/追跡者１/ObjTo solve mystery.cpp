@@ -15,8 +15,6 @@ using namespace GameL;
 //イニシャライズ
 void CObjTosolvemystery::Init()
 {
-	m_mou_x = (float)Input::GetPosX();
-	m_mou_y = (float)Input::GetPosY();
 	m_x = 0.0f;
 	m_y = 0.0f;
 }
