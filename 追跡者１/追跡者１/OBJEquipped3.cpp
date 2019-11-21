@@ -24,13 +24,6 @@ void CObjEquipped3::Init()
 //アクション
 void CObjEquipped3::Action()
 {
-	//マウスの位置を取得
-	m_mou_x = (float)Input::GetPosX();
-	m_mou_y = (float)Input::GetPosY();
-	//マウスのボタンの状態
-	m_mou_r = Input::GetMouButtonR();
-	m_mou_l = Input::GetMouButtonL();
-
 	//マウスの位置とクリックする場所で当たり判定
 	if (m_mou_x > 520 && m_mou_x < 680 && m_mou_y>435 && m_mou_y < 500)
 	{
@@ -51,15 +44,15 @@ void CObjEquipped3::Draw()
 	RECT_F dst;
 
 	//切り取り位置の設定
-	src.m_top = 0.0f;
-	src.m_left = 0.0f;
-	src.m_right = 64.0f;
+	src.m_top    = 0.0f;
+	src.m_left   = 0.0f;
+	src.m_right  = 64.0f;
 	src.m_bottom = 64.0f;
 
 	//表示位置の設定
-	dst.m_top = 100.0f + m_y;
-	dst.m_left = 110.0f + m_x;
-	dst.m_right = 330.0f + m_x;
+	dst.m_top    = 100.0f + m_y;
+	dst.m_left   = 110.0f + m_x;
+	dst.m_right  = 330.0f + m_x;
 	dst.m_bottom = 320.0f + m_y;
 
 	//装備画面表示

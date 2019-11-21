@@ -13,6 +13,8 @@ using namespace GameL;
 
 //使用ヘッダー
 #include"SceneTo solve mystery.h"
+#include"GameHead.h"
+
 
 //コンストラクタ
 CSceneTosolvemystery::CSceneTosolvemystery()
@@ -29,8 +31,12 @@ CSceneTosolvemystery::~CSceneTosolvemystery()
 //ゲームメイン初期化メソッド
 void CSceneTosolvemystery::InitScene()
 {
-	//外部グラフィックファイルを読み込み1番に登録（64×64ピクセル）
-	Draw::LoadImage(L"sairyu.png", 5, TEX_SIZE_512);
+	//外部グラフィックファイルを読み込み0番に登録（64×64ピクセル）
+	Draw::LoadImage(L"kari.png", 1, TEX_SIZE_512);
+
+	//謎解き画面表示
+	CObjTosolvemystery*obj = new CObjTosolvemystery();
+	Objs::InsertObj(obj, OBJ_TOSOLVEMYATERY, 1);
 }
 
 //ゲームメイン実行中メソッド
