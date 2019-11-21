@@ -67,9 +67,6 @@
     <Filter Include="ソース ファイル\To solve mystery">
       <UniqueIdentifier>{5cb68e86-4710-49cb-b375-c7a7cd101551}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Scene Main">
-      <UniqueIdentifier>{731db71c-dbf1-4507-a57b-ba135bd1d5dc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Trap">
       <UniqueIdentifier>{98068357-c056-4901-a3ab-8a54a1c7136a}</UniqueIdentifier>
     </Filter>
@@ -321,9 +318,6 @@
     <ClCompile Include="ObjFurnirure7.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
-    <ClCompile Include="SceneMain.cpp">
-      <Filter>ソース ファイル\Scene Main</Filter>
-    </ClCompile>
     <ClCompile Include="ObjFurniture8.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
@@ -377,6 +371,9 @@
     </ClCompile>
     <ClCompile Include="SceneEquipped3.cpp">
       <Filter>ソース ファイル\屋根裏部屋の鍵</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain.cpp">
+      <Filter>ソース ファイル\Main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -614,9 +611,6 @@
     <ClInclude Include="ObjFurnirure7.h">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
-    <ClInclude Include="SceneMain.h">
-      <Filter>ソース ファイル\Scene Main</Filter>
-    </ClInclude>
     <ClInclude Include="ObjFurniture8.h">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
@@ -673,6 +667,9 @@
     </ClInclude>
     <ClInclude Include="ObjMap2.h">
       <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMain.h">
+      <Filter>ソース ファイル\Main</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
