@@ -148,6 +148,47 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneGameOver());
 	}
 
+	if (hit->CheckObjNameHit(OBJ_TRAP1) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		g_Xz = 70;
+		g_Yz = 70;
+
+
+		Scene::SetScene(new CSceneGameOver());
+	}
+
+	if (hit->CheckObjNameHit(OBJ_TRAP2) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		g_Xz = 70;
+		g_Yz = 70;
+
+
+		Scene::SetScene(new CSceneGameOver());
+	}
+
+	if (hit->CheckObjNameHit(OBJ_TRAP3) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		g_Xz = 70;
+		g_Yz = 70;
+
+
+		Scene::SetScene(new CSceneGameOver());
+	}
+
+
+
+
+
+
 	if (hit->CheckObjNameHit(OBJ_MAP) != nullptr)
 	{
 		this->SetStatus(false);

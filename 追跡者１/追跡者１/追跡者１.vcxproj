@@ -127,6 +127,7 @@
     <ClCompile Include="ObjFurnirure2.cpp" />
     <ClCompile Include="ObjFurnirure4.cpp" />
     <ClCompile Include="ObjFurnirure5.cpp" />
+    <ClCompile Include="ObjFurnirure7.cpp" />
     <ClCompile Include="ObjFurniture.cpp" />
     <ClCompile Include="OBJEquipped.cpp" />
     <ClCompile Include="GameL\Audio.cpp" />
@@ -145,6 +146,7 @@
     <ClCompile Include="ObjFurniture1.cpp" />
     <ClCompile Include="ObjFurniture3.cpp" />
     <ClCompile Include="ObjFurniture6.cpp" />
+    <ClCompile Include="ObjFurniture8.cpp" />
     <ClCompile Include="ObjMain.cpp" />
     <ClCompile Include="ObjMap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -176,7 +178,11 @@
     </ClCompile>
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="ObjRoad1.cpp" />
-    <ClCompile Include="ObjTo solve mystery.cpp" />
+    <ClCompile Include="Objtrap1.cpp" />
+    <ClCompile Include="Objtrap2.cpp" />
+    <ClCompile Include="Objtrap3.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="SceneEquipped.cpp" />
     <ClCompile Include="SceneEquipped2.cpp" />
     <ClCompile Include="SceneEquipped3.cpp" />
@@ -202,7 +208,6 @@
     <ClCompile Include="SceneSave3.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
     <ClCompile Include="Objtrap.cpp" />
-    <ClCompile Include="SceneTo solve mystery.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Map2.h">
@@ -213,6 +218,7 @@
     <ClInclude Include="Map5.h" />
     <ClInclude Include="Map6.h" />
     <ClInclude Include="OBJEquipped3.h" />
+    <ClInclude Include="ObjFurnirure7.h" />
     <ClInclude Include="ObjFurniture.h" />
     <ClInclude Include="GameHead.h" />
     <ClInclude Include="GameL\Audio.h" />
@@ -233,6 +239,7 @@
     <ClInclude Include="ObjFurniture4.h" />
     <ClInclude Include="ObjFurniture5.h" />
     <ClInclude Include="ObjFurniture6.h" />
+    <ClInclude Include="ObjFurniture8.h" />
     <ClInclude Include="ObjMain.h" />
     <ClInclude Include="ObjMap.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -258,7 +265,9 @@
     <ClInclude Include="ObjSave1.h" />
     <ClInclude Include="ObjSave2.h" />
     <ClInclude Include="ObjSave3.h" />
-    <ClInclude Include="ObjTo solve mystery.h" />
+    <ClInclude Include="Objtrap1.h" />
+    <ClInclude Include="Objtrap2.h" />
+    <ClInclude Include="Objtrap3.h" />
     <ClInclude Include="SceneRoad3.h" />
     <ClInclude Include="objstage.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -288,7 +297,6 @@
     <ClInclude Include="SceneSave3.h" />
     <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="Objtrap.h" />
-    <ClInclude Include="SceneTo solve mystery.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

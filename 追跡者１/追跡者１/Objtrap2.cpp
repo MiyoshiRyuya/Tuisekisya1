@@ -4,27 +4,27 @@
 #include"GameL/HitBoxManager.h"
 
 #include"GameHead.h"
-#include"Objtrap1.h"
+#include"Objtrap2.h"
 
 using namespace GameL;
 
-void CObjtrap1::Init()
+void CObjtrap2::Init()
 {
-	m_x = 16;
-	m_y = 289;
+	m_x = 600;
+	m_y = 210;
 
-	Hits::SetHitBox(this, m_x + 10, m_y + 10, 44, 64, ELEMENT_RED, OBJ_TRAP1, 1);
+	Hits::SetHitBox(this, m_x + 10, m_y + 10, 44, 64, ELEMENT_RED, OBJ_TRAP2, 1);
 
 }
 
-void CObjtrap1::Action()
+void CObjtrap2::Action()
 {
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x + 10, m_y + 10);
 
 }
 
-void CObjtrap1::Draw()
+void CObjtrap2::Draw()
 {
 	float c[4]{ 1.0f,1.0f, 1.0f, 1.0f };
 
