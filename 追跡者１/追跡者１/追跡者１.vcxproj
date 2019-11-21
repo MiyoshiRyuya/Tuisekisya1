@@ -117,7 +117,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Map2.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Map3.cpp" />
     <ClCompile Include="Map4.cpp" />
@@ -125,6 +125,8 @@
     <ClCompile Include="Map6.cpp" />
     <ClCompile Include="OBJEquipped3.cpp" />
     <ClCompile Include="ObjFurnirure2.cpp" />
+    <ClCompile Include="ObjFurnirure4.cpp" />
+    <ClCompile Include="ObjFurnirure5.cpp" />
     <ClCompile Include="ObjFurniture.cpp" />
     <ClCompile Include="OBJEquipped.cpp" />
     <ClCompile Include="GameL\Audio.cpp" />
@@ -142,11 +144,15 @@
     <ClCompile Include="GameL\WinInputs.cpp" />
     <ClCompile Include="ObjFurniture1.cpp" />
     <ClCompile Include="ObjFurniture3.cpp" />
+    <ClCompile Include="ObjFurniture6.cpp" />
     <ClCompile Include="ObjMain.cpp" />
     <ClCompile Include="ObjMap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ObjEnemy.cpp" />
+    <ClCompile Include="ObjEnemy.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="OBJEquipped2.cpp" />
     <ClCompile Include="ObjGameOver.cpp" />
     <ClCompile Include="ObjHero.cpp" />
@@ -154,6 +160,7 @@
     <ClCompile Include="ObjmainSave.cpp" />
     <ClCompile Include="ObjMap2.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="ObjMenu.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -169,7 +176,6 @@
     </ClCompile>
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="ObjRoad1.cpp" />
-    <ClCompile Include="ObjTo solve mystery.cpp" />
     <ClCompile Include="SceneEquipped.cpp" />
     <ClCompile Include="SceneEquipped2.cpp" />
     <ClCompile Include="SceneEquipped3.cpp" />
@@ -195,10 +201,11 @@
     <ClCompile Include="SceneSave3.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
     <ClCompile Include="Objtrap.cpp" />
-    <ClCompile Include="SceneTo solve mystery.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Map2.h" />
+    <ClInclude Include="Map2.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="Map3.h" />
     <ClInclude Include="Map4.h" />
     <ClInclude Include="Map5.h" />
@@ -221,6 +228,9 @@
     <ClInclude Include="ObjFurniture1.h" />
     <ClInclude Include="ObjFurniture2.h" />
     <ClInclude Include="ObjFurniture3.h" />
+    <ClInclude Include="ObjFurniture4.h" />
+    <ClInclude Include="ObjFurniture5.h" />
+    <ClInclude Include="ObjFurniture6.h" />
     <ClInclude Include="ObjMain.h" />
     <ClInclude Include="ObjMap.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -234,6 +244,7 @@
     <ClInclude Include="ObjmainSave.h" />
     <ClInclude Include="ObjMap2.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="ObjMenu.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -245,7 +256,6 @@
     <ClInclude Include="ObjSave1.h" />
     <ClInclude Include="ObjSave2.h" />
     <ClInclude Include="ObjSave3.h" />
-    <ClInclude Include="ObjTo solve mystery.h" />
     <ClInclude Include="SceneRoad3.h" />
     <ClInclude Include="objstage.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -275,7 +285,6 @@
     <ClInclude Include="SceneSave3.h" />
     <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="Objtrap.h" />
-    <ClInclude Include="SceneTo solve mystery.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

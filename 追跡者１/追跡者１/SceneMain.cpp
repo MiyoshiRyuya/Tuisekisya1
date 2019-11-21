@@ -74,12 +74,18 @@ void CSceneMain::InitScene()
 	//外部グラフィックファイルを読み込み8番目に登録
 	Draw::LoadImage(L"Skull.png", 8, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み9番目に登録
+	Draw::LoadImage(L"SofaandTable.png", 9, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み10番目に登録
+	Draw::LoadImage(L"BlackMirror.png", 10, TEX_SIZE_64);
+
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
-	//CObjstage*objb = new CObjstage(map);
-	//Objs::InsertObj(objb, OBJ_STAGE, 9);
+	CObjstage*objb = new CObjstage(map);
+	Objs::InsertObj(objb, OBJ_STAGE, 9);
 
 	//敵オブジェクト
 	CObjEnemy*obj_enemy = new CObjEnemy();
@@ -102,16 +108,29 @@ void CSceneMain::InitScene()
 	Objs::InsertObj(obj_Furnirure2, OBJ_FURNITURE2, 1);
 
 	//家具オブジェクト3作成
-	CObjFurniture3*obj_Furnirure3 = new CObjFurniture3();
-	Objs::InsertObj(obj_Furnirure3, OBJ_FURNITURE3, 1);
+	//CObjFurniture3*obj_Furnirure3 = new CObjFurniture3();
+	//Objs::InsertObj(obj_Furnirure3, OBJ_FURNITURE3, 1);
+
+	//家具オブジェクト4作成
+	CObjFurniture4*obj_Furnirure4 = new CObjFurniture4();
+	Objs::InsertObj(obj_Furnirure4, OBJ_FURNITURE4, 1);
+
+	//家具オブジェクト5作成
+	CObjFurniture5*obj_Furnirure5 = new CObjFurniture5();
+	Objs::InsertObj(obj_Furnirure5, OBJ_FURNITURE5, 1);
+
+	//家具オブジェクト6作成
+	CObjFurniture6*obj_Furnirure6 = new CObjFurniture6();
+	Objs::InsertObj(obj_Furnirure6, OBJ_FURNITURE6, 1);
 
 	//マップ背景オブジェクト1作成
 	CObjMap*obj_map = new CObjMap();
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
 
-	//マップシーン切り替えオブジェクト2作成
-	CObjMap2*obj_m = new CObjMap2();
-	Objs::InsertObj(obj_m, OBJ_MAP2, 2);
+	//マップ背景オブジェクト2作成
+
+	//CObjMap2*obj_m = new CObjMap2();
+	//Objs::InsertObj(obj_m, OBJ_MAP2, 2);
 
 	//blockオブジェクト作成
 	//CObjstage*objb = new CObjstage(map);
