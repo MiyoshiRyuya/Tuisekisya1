@@ -297,6 +297,7 @@
     <ClInclude Include="SceneSave3.h" />
     <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="Objtrap.h" />
+    <ClInclude Include="SceneTo solve mystery.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

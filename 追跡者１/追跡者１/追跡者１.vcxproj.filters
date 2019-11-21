@@ -656,5 +656,8 @@
     <ClInclude Include="Objtrap3.h">
       <Filter>ソース ファイル\Trap</Filter>
     </ClInclude>
+    <ClInclude Include="SceneTo solve mystery.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

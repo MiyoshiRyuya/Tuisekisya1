@@ -11,6 +11,8 @@ enum OBJ_NAME
 	OBJ_ENEMY,
 	OBJ_TRAP,
 	OBJ_TRAP1,
+	OBJ_TRAP2,
+	OBJ_TRAP3,
 	OBJ_FURNITURE,
 	OBJ_FURNITURE1,
 	OBJ_FURNITURE2,
@@ -93,6 +95,8 @@ struct UserData
 #include "ObjEnemy.h"
 #include "Objtrap.h"
 #include "Objtrap1.h"
+#include "Objtrap2.h"
+#include "Objtrap3.h"
 #include "ObjFurniture.h"
 #include "ObjFurniture1.h"
 #include "ObjFurniture2.h"
