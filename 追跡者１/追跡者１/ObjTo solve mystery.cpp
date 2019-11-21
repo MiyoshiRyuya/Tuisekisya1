@@ -24,31 +24,13 @@ void CObjTosolvemystery::Init()
 //アクション
 void CObjTosolvemystery::Action()
 {
-	m_mou_x = (float)Input::GetPosX();
-	m_mou_y = (float)Input::GetPosY();
 
-	m_mou_r = Input::GetMouButtonR();
-	m_mou_l = Input::GetMouButtonL();
 }
 
 //ドロー
 void CObjTosolvemystery::Draw()
 {
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
-
-	wchar_t str[256];
-	swprintf_s(str, L"x=%f,y=%f", m_mou_x, m_mou_y);
-	Font::StrDraw(str, 20, 20, 12, c);
-
-	if (m_mou_r == true)
-		Font::StrDraw(L"R=押してる", 20, 30, 12, c);
-	else 
-		Font::StrDraw(L"R=押してない", 20, 30, 12, c);
-
-	if (m_mou_l == true)
-		Font::StrDraw(L"L=押してる", 20, 30, 12, c);
-	else 
-		Font::StrDraw(L"L=押しない", 20, 30, 12, c);
 
 	RECT_F src;
 	RECT_F dst;
