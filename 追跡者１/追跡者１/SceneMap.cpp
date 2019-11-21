@@ -29,6 +29,11 @@ CSceneMap::~CSceneMap()
 //初期化メソッド
 void CSceneMap::InitScene()
 {
+	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
+	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
+
+	//外部グラフィックファイルを読み込み6番目に登録
+	Draw::LoadImage(L"Hari.png", 6, TEX_SIZE_64);
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
