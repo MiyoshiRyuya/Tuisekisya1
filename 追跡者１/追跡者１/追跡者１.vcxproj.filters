@@ -67,6 +67,9 @@
     <Filter Include="ソース ファイル\To solve mystery">
       <UniqueIdentifier>{5cb68e86-4710-49cb-b375-c7a7cd101551}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Scene Main">
+      <UniqueIdentifier>{731db71c-dbf1-4507-a57b-ba135bd1d5dc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -110,9 +113,6 @@
     </ClCompile>
     <ClCompile Include="ObjMenu.cpp">
       <Filter>ソース ファイル\Menu</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneMain.cpp">
-      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ObjItem.cpp">
       <Filter>ソース ファイル\Item</Filter>
@@ -158,12 +158,6 @@
     </ClCompile>
     <ClCompile Include="SceneGameOver.cpp">
       <Filter>ソース ファイル\GameOver</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjRoad.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneRoad.cpp">
-      <Filter>ソース ファイル\Road</Filter>
     </ClCompile>
     <ClCompile Include="SceneTitle.cpp">
       <Filter>ソース ファイル\Title</Filter>
@@ -285,12 +279,6 @@
     <ClCompile Include="SceneMap6.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="ObjTo solve mystery.cpp">
-      <Filter>ソース ファイル\To solve mystery</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneTo solve mystery.cpp">
-      <Filter>ソース ファイル\To solve mystery</Filter>
-    </ClCompile>
     <ClCompile Include="Map2.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
@@ -322,6 +310,48 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ObjFurniture6.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMap2.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjmainRoad.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjRoad2.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjRoad3.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjRoad1.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenemainRoad.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRoad1.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRoad2.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRoad3.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurnirure5.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurnirure4.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurnirure7.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain.cpp">
+      <Filter>ソース ファイル\Scene Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture8.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
   </ItemGroup>
@@ -368,9 +398,6 @@
     <ClInclude Include="ObjMenu.h">
       <Filter>ソース ファイル\Menu</Filter>
     </ClInclude>
-    <ClInclude Include="SceneMain.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="ObjItem.h">
       <Filter>ソース ファイル\Item</Filter>
     </ClInclude>
@@ -415,12 +442,6 @@
     </ClInclude>
     <ClInclude Include="SceneGameOver.h">
       <Filter>ソース ファイル\GameOver</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjRoad.h">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneRoad.h">
-      <Filter>ソース ファイル\Road</Filter>
     </ClInclude>
     <ClInclude Include="ObjTitle.h">
       <Filter>ソース ファイル\Title</Filter>
@@ -539,12 +560,6 @@
     <ClInclude Include="SceneMap6.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjTo solve mystery.h">
-      <Filter>ソース ファイル\To solve mystery</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneTo solve mystery.h">
-      <Filter>ソース ファイル\To solve mystery</Filter>
-    </ClInclude>
     <ClInclude Include="Map2.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
@@ -576,6 +591,48 @@
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture6.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMap2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjmainRoad.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjRoad1.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjRoad2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjRoad3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoad3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenemainRoad.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoad1.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoad2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture4.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture5.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurnirure7.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMain.h">
+      <Filter>ソース ファイル\Scene Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture8.h">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
   </ItemGroup>

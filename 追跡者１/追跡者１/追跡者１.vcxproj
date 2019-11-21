@@ -127,6 +127,7 @@
     <ClCompile Include="ObjFurnirure2.cpp" />
     <ClCompile Include="ObjFurnirure4.cpp" />
     <ClCompile Include="ObjFurnirure5.cpp" />
+    <ClCompile Include="ObjFurnirure7.cpp" />
     <ClCompile Include="ObjFurniture.cpp" />
     <ClCompile Include="OBJEquipped.cpp" />
     <ClCompile Include="GameL\Audio.cpp" />
@@ -145,6 +146,7 @@
     <ClCompile Include="ObjFurniture1.cpp" />
     <ClCompile Include="ObjFurniture3.cpp" />
     <ClCompile Include="ObjFurniture6.cpp" />
+    <ClCompile Include="ObjFurniture8.cpp" />
     <ClCompile Include="ObjMain.cpp" />
     <ClCompile Include="ObjMap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -211,6 +213,7 @@
     <ClInclude Include="Map5.h" />
     <ClInclude Include="Map6.h" />
     <ClInclude Include="OBJEquipped3.h" />
+    <ClInclude Include="ObjFurnirure7.h" />
     <ClInclude Include="ObjFurniture.h" />
     <ClInclude Include="GameHead.h" />
     <ClInclude Include="GameL\Audio.h" />
@@ -231,6 +234,7 @@
     <ClInclude Include="ObjFurniture4.h" />
     <ClInclude Include="ObjFurniture5.h" />
     <ClInclude Include="ObjFurniture6.h" />
+    <ClInclude Include="ObjFurniture8.h" />
     <ClInclude Include="ObjMain.h" />
     <ClInclude Include="ObjMap.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
