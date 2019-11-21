@@ -144,9 +144,11 @@
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
     <ClCompile Include="ObjFurniture1.cpp" />
+    <ClCompile Include="ObjFurniture10.cpp" />
     <ClCompile Include="ObjFurniture3.cpp" />
     <ClCompile Include="ObjFurniture6.cpp" />
     <ClCompile Include="ObjFurniture8.cpp" />
+    <ClCompile Include="ObjFurniture9.cpp" />
     <ClCompile Include="ObjMain.cpp" />
     <ClCompile Include="ObjMap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -236,12 +238,14 @@
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjFurniture1.h" />
+    <ClInclude Include="ObjFurniture10.h" />
     <ClInclude Include="ObjFurniture2.h" />
     <ClInclude Include="ObjFurniture3.h" />
     <ClInclude Include="ObjFurniture4.h" />
     <ClInclude Include="ObjFurniture5.h" />
     <ClInclude Include="ObjFurniture6.h" />
     <ClInclude Include="ObjFurniture8.h" />
+    <ClInclude Include="ObjFurniture9.h" />
     <ClInclude Include="ObjMain.h" />
     <ClInclude Include="ObjMap.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
