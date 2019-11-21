@@ -92,8 +92,8 @@ void CObjEnemy::Action()
 	}*/
 	//移動方向
 	//速度を付ける
-	m_vx *= 1.5f;
-	m_vy *= 1.5f;
+	m_vx *= 3.0f;
+	m_vy *= 3.0f;
 
 	//if(m_vx==false)
 	//移動ベクトルを座標に加算する
@@ -112,13 +112,12 @@ void CObjEnemy::Action()
 	}
 
 	//敵オブジェクトと接触したら主人公削除
-	/*
 	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
 		g_xz = 600;
 		g_yz = 400;
 	}
-	*/
+	
 }
 void CObjEnemy::Draw()
 {

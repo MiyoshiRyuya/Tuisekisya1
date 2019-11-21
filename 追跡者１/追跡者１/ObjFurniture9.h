@@ -3,16 +3,17 @@
 using namespace GameL;
 
 //オブジェクト：家具
-class CObjFurniture :public CObj
+class CObjFurniture9 :public CObj
 {
 public:
 
-	CObjFurniture() {};
-	~CObjFurniture() {};
+	CObjFurniture9() {};
+	~CObjFurniture9() {};
 	void Init();
 	void Action();
 	void Draw();
 private:
 	float m_x;
 	float m_y;
+
 };

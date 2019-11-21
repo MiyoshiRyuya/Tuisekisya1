@@ -46,8 +46,8 @@ void CSceneMap6::InitScene()
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
 	//マップ背景オブジェクト1作成
-	CObjMap6*map6 = new CObjMap6();
-	Objs::InsertObj(map6, OBJ_MAP6, 1);
+//	CObjMap6*map6 = new CObjMap6();
+//	Objs::InsertObj(map6, OBJ_MAP6, 1);
 
 
 		//敵オブジェクト

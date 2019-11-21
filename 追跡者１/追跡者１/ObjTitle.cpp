@@ -46,7 +46,7 @@ void CObjTitle::Action()
 		//マウスの左が押されたらロード画面に移動する
 		if (m_mou_l == true)
 		{
-			//Scene::SetScene(new CScenemainRoad());
+			Scene::SetScene(new CScenemainRoad());
 		}
 	}
 }

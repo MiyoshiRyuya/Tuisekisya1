@@ -74,20 +74,51 @@ void CSceneMain::InitScene()
 	//外部グラフィックファイルを読み込み8番目に登録
 	Draw::LoadImage(L"Skull.png", 8, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み9番目に登録
+	Draw::LoadImage(L"SofaandTable.png", 9, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み10番目に登録
+	Draw::LoadImage(L"BlackMirror.png", 10, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み11番目に登録
+	Draw::LoadImage(L"SC-Candle.png", 11, TEX_SIZE_64);
+
+
+
+
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
-	//CObjstage*objb = new CObjstage(map);
-	//Objs::InsertObj(objb, OBJ_STAGE, 9);
+	CObjstage*objb = new CObjstage(map);
+	Objs::InsertObj(objb, OBJ_STAGE, 9);
 
 	//敵オブジェクト
 	CObjEnemy*obj_enemy = new CObjEnemy();
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
 
+
+
+
 	//罠オブジェクト作成
 	CObjtrap*obj_trap = new CObjtrap();
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
+
+	//罠オブジェクト1作成
+	CObjtrap1*obj_trap1 = new CObjtrap1();
+	Objs::InsertObj(obj_trap1, OBJ_TRAP1, 1);
+
+	//罠オブジェクト2作成
+	CObjtrap2*obj_trap2 = new CObjtrap2();
+	Objs::InsertObj(obj_trap2, OBJ_TRAP2, 1);
+	
+	//罠オブジェクト3作成
+	CObjtrap3*obj_trap3 = new CObjtrap3();
+	Objs::InsertObj(obj_trap3, OBJ_TRAP3, 1);
+
+
+
+
 
 	//家具オブジェクト作成
 	CObjFurniture*obj_Furnirure = new CObjFurniture();
@@ -105,13 +136,46 @@ void CSceneMain::InitScene()
 	CObjFurniture3*obj_Furnirure3 = new CObjFurniture3();
 	Objs::InsertObj(obj_Furnirure3, OBJ_FURNITURE3, 1);
 
+	//家具オブジェクト4作成
+	CObjFurniture4*obj_Furnirure4 = new CObjFurniture4();
+	Objs::InsertObj(obj_Furnirure4, OBJ_FURNITURE4, 1);
+
+	//家具オブジェクト5作成
+	CObjFurniture5*obj_Furnirure5 = new CObjFurniture5();
+	Objs::InsertObj(obj_Furnirure5, OBJ_FURNITURE5, 1);
+
+	//家具オブジェクト6作成
+	CObjFurniture6*obj_Furnirure6 = new CObjFurniture6();
+	Objs::InsertObj(obj_Furnirure6, OBJ_FURNITURE6, 1);
+
+	//家具オブジェクト7作成
+	CObjFurniture7*obj_Furnirure7 = new CObjFurniture7();
+	Objs::InsertObj(obj_Furnirure7, OBJ_FURNITURE7, 1);
+
+	//家具オブジェクト8作成
+	CObjFurniture8*obj_Furnirure8 = new CObjFurniture8();
+	Objs::InsertObj(obj_Furnirure8, OBJ_FURNITURE8, 1);
+
+	//家具オブジェクト9作成
+	CObjFurniture9*obj_Furnirure9 = new CObjFurniture9();
+	Objs::InsertObj(obj_Furnirure9, OBJ_FURNITURE9, 1);
+
+	//家具オブジェクト10作成
+	CObjFurniture10*obj_Furnirure10 = new CObjFurniture10();
+	Objs::InsertObj(obj_Furnirure10, OBJ_FURNITURE10, 1);
+
+
+
+
+
 	//マップ背景オブジェクト1作成
 	CObjMap*obj_map = new CObjMap();
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
 
-	//マップシーン切り替えオブジェクト2作成
-	CObjMap2*obj_m = new CObjMap2();
-	Objs::InsertObj(obj_m, OBJ_MAP2, 2);
+	//マップ背景オブジェクト2作成
+
+	//CObjMap2*obj_m = new CObjMap2();
+	//Objs::InsertObj(obj_m, OBJ_MAP2, 2);
 
 	//blockオブジェクト作成
 	//CObjstage*objb = new CObjstage(map);
