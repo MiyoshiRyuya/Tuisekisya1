@@ -156,7 +156,13 @@ void CSceneMain::InitScene()
 	CObjFurniture8*obj_Furnirure8 = new CObjFurniture8();
 	Objs::InsertObj(obj_Furnirure8, OBJ_FURNITURE8, 1);
 
+	//家具オブジェクト9作成
+	CObjFurniture9*obj_Furnirure9 = new CObjFurniture9();
+	Objs::InsertObj(obj_Furnirure9, OBJ_FURNITURE9, 1);
 
+	//家具オブジェクト10作成
+	CObjFurniture10*obj_Furnirure10 = new CObjFurniture10();
+	Objs::InsertObj(obj_Furnirure10, OBJ_FURNITURE10, 1);
 
 
 
