@@ -30,7 +30,7 @@ CSceneTosolvemystery::~CSceneTosolvemystery()
 void CSceneTosolvemystery::InitScene()
 {
 	//外部グラフィックファイルを読み込み1番に登録（64×64ピクセル）
-	Draw::LoadImage(L"sairyu.png", 1, TEX_SIZE_512);
+	Draw::LoadImage(L"sairyu.png", 5, TEX_SIZE_512);
 }
 
 //ゲームメイン実行中メソッド
