@@ -11,10 +11,10 @@
 //使用するネームスペース
 using namespace GameL;
 
-CObjstage::CObjstage(int map[20][20])
+CObjstage::CObjstage(int map[10][13])
 {
 	//マップデータをコピー
-	memcpy(m_map, map, sizeof(int)*(20 * 20));
+	memcpy(m_map, map, sizeof(int)*(10 * 13));
 }
 
 //イニシャライズ
@@ -38,9 +38,9 @@ void CObjstage::Action()
 	hero->SetRight(false);
 
 	//m_mapの全要素にアクセス
-	for (int i = 0; i < 20; i++)
+	for (int i = 0; i < 10; i++)
 	{
-		for (int j = 0; j < 20; j++)
+		for (int j = 0; j < 13; j++)
 		{
 			if (m_map[i][j] > 0)
 			{
@@ -70,7 +70,7 @@ void CObjstage::Action()
 						r = 360.0f - abs(r);
 
 					//lenがある一定の長さより短い場合判定に入る
-					if (len<88.0f)
+					if (len<42.0f)
 					{
 						//角度で上下判定を求める
 						if ((r < 45 && r>0) || r > 315)

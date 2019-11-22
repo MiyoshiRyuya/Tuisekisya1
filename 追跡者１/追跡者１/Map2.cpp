@@ -7,7 +7,7 @@
 #include "GameL\SceneObjManager.h"
 
 #include "GameHead.h"
-#include "Map2.h"
+#include "ObjMap2.h"
 #include"ObjHero.h"
 #include"Objtrap.h"
 
