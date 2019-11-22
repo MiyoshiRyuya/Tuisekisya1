@@ -677,11 +677,11 @@
     <ClInclude Include="SceneMain.h">
       <Filter>ソース ファイル\Main</Filter>
     </ClInclude>
-    <ClInclude Include="ObjFurniture10.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="ObjFurniture9.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture10.h">
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

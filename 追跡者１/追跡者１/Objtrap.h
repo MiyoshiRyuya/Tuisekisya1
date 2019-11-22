@@ -7,6 +7,7 @@ class CObjtrap :public CObj
 {
 public:
 
+	CObjtrap(float x,float y);
 	CObjtrap() {};
 	~CObjtrap() {};
 	void Init();
