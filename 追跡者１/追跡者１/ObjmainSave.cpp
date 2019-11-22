@@ -3,6 +3,7 @@
 #include "GameL\WinInputs.h"
 #include "GameL\SceneManager.h"
 #include "GameL\DrawTexture.h"
+#include "GameL\Audio.h"
 
 #include "ObjSave1.h"
 #include "GameHead.h"
@@ -41,6 +42,7 @@ void CObjmainSave::Action()
 		if (m_mou_l == true)
 		{
 			Scene::SetScene(new CSceneSave1());
+			//Audio::Start(1);
 		}
 	}
 
@@ -51,6 +53,7 @@ void CObjmainSave::Action()
 		if (m_time % 10 == 0 && m_mou_l == true)
 		{
 			Scene::SetScene(new CSceneSave2());
+			//Audio::Start(1);
 		}
 	}
 
@@ -61,6 +64,7 @@ void CObjmainSave::Action()
 		if (m_mou_l == true)
 		{
 			Scene::SetScene(new CSceneSave3());
+			//Audio::Start(1);
 		}
 	}
 
@@ -71,6 +75,7 @@ void CObjmainSave::Action()
 		if (m_time % 8 == 0 && m_mou_l == true)
 		{
 			Scene::SetScene(new CSceneMenu());
+			//Audio::Start(1);
 		}
 	}
 
