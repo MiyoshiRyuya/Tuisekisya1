@@ -112,13 +112,12 @@ void CObjEnemy::Action()
 	}
 
 	//敵オブジェクトと接触したら主人公削除
-	/*
 	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
 		g_xz = 600;
 		g_yz = 400;
 	}
-	*/
+	
 }
 void CObjEnemy::Draw()
 {

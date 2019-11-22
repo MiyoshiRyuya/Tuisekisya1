@@ -22,11 +22,7 @@ void CObjTosolvemystery::Init()
 //アクション
 void CObjTosolvemystery::Action()
 {
-	//Eボタンを押すとゲーム画面に移動する
-	if (Input::GetVKey('E') == true)
-	{
-		Scene::SetScene(new CSceneMain());
-	}
+
 }
 
 //ドロー
@@ -44,7 +40,7 @@ void CObjTosolvemystery::Draw()
 	src.m_bottom = 512.0f;
 
 	//表示位置の設定
-	dst.m_top    = 100.0f + m_y;
+	dst.m_top    = 50.0f + m_y;
 	dst.m_left   = 200.0f + m_x;
 	dst.m_right  = 600.0f + m_x;
 	dst.m_bottom = 450.0f + m_y;

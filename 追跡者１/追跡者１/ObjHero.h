@@ -58,4 +58,6 @@ private:
 		
 		//踏んでいる種類を確認用
 		int m_stage_type;
+
+		int hitbo; //HitBox確認用
 };
