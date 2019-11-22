@@ -174,8 +174,8 @@ void CSceneMain::InitScene()
 
 	//マップ背景オブジェクト2作成
 
-	//CObjMap2*obj_m = new CObjMap2();
-	//Objs::InsertObj(obj_m, OBJ_MAP2, 2);
+	CObjMap2*obj_m = new CObjMap2();
+	Objs::InsertObj(obj_m, OBJ_MAP2, 2);
 
 	//blockオブジェクト作成
 	//CObjstage*objb = new CObjstage(map);
