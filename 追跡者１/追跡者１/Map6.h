@@ -19,4 +19,5 @@ private:
 	float m_y;
 	float hon_x; //–{’I‰¡•À‚Ñ‚P—p
 	float hon_y;
+
 };
