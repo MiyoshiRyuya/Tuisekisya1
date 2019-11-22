@@ -18,14 +18,13 @@ using namespace GameL;
 //イニシャライズ
 void CObjMap2::Init()
 {
-	m_x = 540;
-	m_y = 0;
-
-	Hits::SetHitBox(this, m_x , m_y , 75, 80, ELEMENT_BLUE, OBJ_MAP2, 1);
+	m_x = 300;
+	m_y = 100;
+	Hits::SetHitBox(this, m_x + 10, m_y + 10, 32, 32, ELEMENT_BLUE, OBJ_MAP2, 2);
 
 	ax = 700;
 	ay = 100;
-	Hits::SetHitBox(this, ax , ay , 32, 32, ELEMENT_BLUE, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, ax + 10, ay + 10, 32, 32, ELEMENT_BLUE, OBJ_MAP6, 2);
 
 }
 
