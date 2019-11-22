@@ -159,12 +159,6 @@
     <ClCompile Include="SceneGameOver.cpp">
       <Filter>ソース ファイル\GameOver</Filter>
     </ClCompile>
-    <ClCompile Include="ObjRoad.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneRoad.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
     <ClCompile Include="SceneTitle.cpp">
       <Filter>ソース ファイル\Title</Filter>
     </ClCompile>
@@ -211,12 +205,6 @@
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
     <ClCompile Include="ObjMain.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="OBJEquipped3.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneEquipped3.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ObjFurniture3.cpp">
@@ -290,6 +278,39 @@
     </ClCompile>
     <ClCompile Include="SceneTo solve mystery.cpp">
       <Filter>ソース ファイル\To solve mystery</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMap2.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjRoad1.cpp">
+      <Filter>ソース ファイル\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjRoad2.cpp">
+      <Filter>ソース ファイル\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjRoad3.cpp">
+      <Filter>ソース ファイル\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRoad1.cpp">
+      <Filter>ソース ファイル\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRoad2.cpp">
+      <Filter>ソース ファイル\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenemainRoad.cpp">
+      <Filter>ソース ファイル\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneRoad3.cpp">
+      <Filter>ソース ファイル\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjmainRoad.cpp">
+      <Filter>ソース ファイル\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEquipped3.cpp">
+      <Filter>ソース ファイル\Cross Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJEquipped3.cpp">
+      <Filter>ソース ファイル\Cross Equipment</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -382,12 +403,6 @@
     </ClInclude>
     <ClInclude Include="SceneGameOver.h">
       <Filter>ソース ファイル\GameOver</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjRoad.h">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneRoad.h">
-      <Filter>ソース ファイル\Road</Filter>
     </ClInclude>
     <ClInclude Include="ObjTitle.h">
       <Filter>ソース ファイル\Title</Filter>
@@ -511,6 +526,33 @@
     </ClInclude>
     <ClInclude Include="SceneTo solve mystery.h">
       <Filter>ソース ファイル\To solve mystery</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMap2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjmainRoad.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjRoad1.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjRoad2.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjRoad3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoad3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenemainRoad.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoad1.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoad2.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

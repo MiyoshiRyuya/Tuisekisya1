@@ -6,7 +6,7 @@
 #include "GameL\SceneManager.h"
 #include "GameL\SceneObjManager.h"
 #include"GameL/HitBoxManager.h"
-
+#include "SceneMap3.h"
 #include "GameHead.h"
 #include "Map3.h"
 #include "ObjHero.h"
