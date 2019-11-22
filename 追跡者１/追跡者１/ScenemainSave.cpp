@@ -5,6 +5,7 @@
 //GameLで使用するヘッダー
 #include "GameL\SceneObjManager.h"
 #include"GameL\DrawFont.h"
+#include "GameL\Audio.h"
 
 
 //使用するネームスペース
@@ -31,6 +32,12 @@ void CScenemainSave::InitScene()
 {
 	//出力させる文字のグラフィックを作成
 	Font::SetStrTex(L"セーブ画面");
+
+	//効果音情報読み込み
+	Audio::LoadAudio(0, L"menyu.wav", SOUND_TYPE::EFFECT);
+
+	float Volume = Audio::VolumeMaster(-0.5f); //マスターボリュームを0.5下げる
+	Audio::Start(0); //音楽スタート
 
 	//セーブ画面オブジェクト作成
 	CObjmainSave* obj = new CObjmainSave();      //セーブ画面オブジェクト作成

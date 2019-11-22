@@ -20,10 +20,9 @@ void CObjFurniture::Init()
 
 void CObjFurniture::Action()
 {
-	
+
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x + 10, m_y + 10);
-	
 }
 
 void CObjFurniture::Draw()

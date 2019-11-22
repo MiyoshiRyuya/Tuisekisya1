@@ -23,7 +23,7 @@ void CObjEnemy::Init()
 
 	m_ani_max_time = 4;
 
-	Hits::SetHitBox(this, m_x, m_y, 43, 140, ELEMENT_ENEMY, OBJ_ENEMY, 1);
+	Hits::SetHitBox(this, m_x, m_y, 44, 140, ELEMENT_ENEMY, OBJ_ENEMY, 1);
 
 }
 void CObjEnemy::Action()
@@ -92,8 +92,8 @@ void CObjEnemy::Action()
 	}*/
 	//移動方向
 	//速度を付ける
-	m_vx *= 1.5f;
-	m_vy *= 1.5f;
+	m_vx *= 3.0f;
+	m_vy *= 3.0f;
 
 	//if(m_vx==false)
 	//移動ベクトルを座標に加算する
@@ -117,6 +117,7 @@ void CObjEnemy::Action()
 		g_xz = 600;
 		g_yz = 400;
 	}
+	
 }
 void CObjEnemy::Draw()
 {

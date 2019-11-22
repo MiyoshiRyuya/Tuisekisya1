@@ -16,6 +16,10 @@ enum OBJ_NAME
 	OBJ_FURNITURE3,
 	OBJ_MAP,
 	OBJ_MAP2,
+	OBJ_MAP3,
+	OBJ_MAP4,
+	OBJ_MAP5,
+	OBJ_MAP6,
 	OBJ_MAIN,
 
 	OBJ_MENU,
@@ -31,6 +35,7 @@ enum OBJ_NAME
 	OBJ_EQUIPPED,
 	OBJ_EQUIPPED2,
 	OBJ_EQUIPPED3,
+	OBJ_TOSOLVEMYATERY,
 
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
@@ -86,7 +91,11 @@ struct UserData
 #include "ObjFurniture2.h"
 #include "ObjFurniture3.h"
 #include "ObjMap.h"
-#include "ObjMap2.h"
+#include "Map2.h"
+#include "Map3.h"
+#include "Map4.h"
+#include "Map5.h"
+#include "Map6.h"
 #include "ObjMain.h"
 
 #include"ObjMenu.h"
@@ -102,6 +111,7 @@ struct UserData
 #include"ObjEquipped.h"
 #include"OBJEquipped2.h"
 #include"OBJEquipped3.h"
+#include"ObjTo solve mystery.h"
 
 #include "ObjTitle.h"
 #include "ObjGameOver.h"
@@ -123,12 +133,17 @@ struct UserData
 #include"SceneRoad3.h"
 #include"SceneMap.h"
 #include"SceneMap2.h"
+#include"SceneMap3.h"
+#include"SceneMap4.h"
+#include"SceneMap5.h"
+#include"SceneMap6.h"
 #include"SceneEquipped.h"
 #include"SceneEquipped2.h"
 #include"SceneEquipped3.h"
+#include"SceneTo solve mystery.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneTitle
+#define SET_GAME_START  CSceneMap6
 //-----------------------------------------------

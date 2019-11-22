@@ -39,7 +39,7 @@ void CSceneEquipped::InitScene()
 	Objs::InsertObj(obj, OBJ_EQUIPPED, 10); //主人公オブジェクト登録
 
 	//外部グラフィックファイルを読み込み1番に登録（64×64ピクセル）
-	Draw::LoadImage(L"sairyu.png",1, TEX_SIZE_512);
+	Draw::LoadImage(L"sairyu.png", 1, TEX_SIZE_512);
 }
 
 //ゲームメイン実行中メソッド

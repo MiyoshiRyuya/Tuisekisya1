@@ -15,4 +15,8 @@ public:
 	void Draw();
 
 private:
+	float m_x; //•Ç—p
+	float m_y;
+	float hon_x; //–{’I‰¡•À‚Ñ‚P—p
+	float hon_y;
 };
