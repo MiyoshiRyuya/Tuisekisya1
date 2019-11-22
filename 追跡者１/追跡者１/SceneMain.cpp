@@ -90,9 +90,9 @@ void CSceneMain::InitScene()
 	CObjHero*obj = new CObjHero();
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
-	CObjstage*objb = new CObjstage(map);
+	/*CObjstage*objb = new CObjstage(map);
 	Objs::InsertObj(objb, OBJ_STAGE, 9);
-
+	*/
 	//敵オブジェクト
 	CObjEnemy*obj_enemy = new CObjEnemy();
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
