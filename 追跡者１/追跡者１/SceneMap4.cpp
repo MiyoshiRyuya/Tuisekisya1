@@ -15,6 +15,19 @@ using namespace GameL;
 #include "GameHead.h"
 #include"SceneMap4.h"
 
+#include "ObjFurniture.h"
+#include "ObjFurniture1.h"
+#include "ObjFurniture2.h"
+#include "ObjFurniture3.h"
+#include "ObjFurniture4.h"
+#include "ObjFurniture5.h"
+#include "ObjFurniture6.h"
+#include "ObjFurnirure7.h"
+#include "ObjFurniture8.h"
+#include "ObjFurniture9.h"
+#include "ObjFurniture10.h"
+
+
 
 //コンストラクタ
 CSceneMap4::CSceneMap4()
@@ -41,6 +54,30 @@ void CSceneMap4::InitScene()
 	//トラップオブジェクト
 	CObjtrap*obj_trap = new CObjtrap();
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
+
+	//外部グラフィックファイルを読み込み3番目に登録(64*64pixel)
+	Draw::LoadImage(L"Horrorbear.png", 3, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み4番目に登録
+	Draw::LoadImage(L"Bookshelf.png", 4, TEX_SIZE_32);
+
+	//外部グラフィックファイルを読み込み6番目に登録
+	Draw::LoadImage(L"Hari.png", 6, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み7番目に登録
+	Draw::LoadImage(L"Horrorbear.png", 7, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み8番目に登録
+	Draw::LoadImage(L"Skull.png", 8, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み9番目に登録
+	Draw::LoadImage(L"SofaandTable.png", 9, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み10番目に登録
+	Draw::LoadImage(L"BlackMirror.png", 10, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み11番目に登録
+	Draw::LoadImage(L"SC-Candle.png", 11, TEX_SIZE_64);
 
 }
 //実行中メソッド

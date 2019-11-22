@@ -20,9 +20,12 @@ void CObjMap2::Init()
 {
 	m_x = 300;
 	m_y = 100;
-
 	Hits::SetHitBox(this, m_x + 10, m_y + 10, 32, 32, ELEMENT_BLUE, OBJ_MAP2, 2);
-	
+
+	ax = 700;
+	ay = 100;
+	Hits::SetHitBox(this, ax + 10, ay + 10, 32, 32, ELEMENT_BLUE, OBJ_MAP6, 2);
+
 }
 
 //ƒAƒNƒVƒ‡ƒ“
@@ -30,6 +33,8 @@ void CObjMap2::Action()
 {
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x , m_y );
+	CHitBox*hito = Hits::GetHitBox(this);
+	hito->SetPos(ax, ay);
 
 }
 

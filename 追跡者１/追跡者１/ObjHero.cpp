@@ -14,8 +14,8 @@
 
 using namespace GameL;
 
-float g_Xz=70;
-float g_Yz=70;
+float g_Xz=100;
+float g_Yz=120;
 
 //イニシャライズ
 void CObjHero::Init()
@@ -30,6 +30,7 @@ void CObjHero::Init()
 	m_migi; //右
 	m_mos_x = 0.0f;
 	m_mos_y = 0.0f;
+	hitbo = 0; //HitBox確認用
 
 	//stageとの衝突確認用
 	m_hit_up = false;
@@ -121,10 +122,13 @@ void CObjHero::Action()
 	m_px += m_vx;
 	m_py += m_vy;
 
+
+
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_px , m_py);
 
 	//敵オブジェクトと接触したら主人公削除
+	/*
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
 		this->SetStatus(false);
@@ -134,6 +138,7 @@ void CObjHero::Action()
 		//主人公消滅でシーンをゲームオーバー画面に移行する
 		Scene::SetScene(new CSceneGameOver());
 	}
+	*/
 	//トラップオブジェクトと接触したら主人公削除
 	if (hit->CheckObjNameHit(OBJ_TRAP) != nullptr)
 	{
@@ -146,17 +151,74 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneGameOver());
 	}
 
+	//OBJ_MAP６に接触したら押し返されるプログラム
+	if (hit->CheckObjNameHit(OBJ_MAP6) != nullptr)
+	{
+		if (hitbo == 0 && hitbo != 2)
+		{
+			if (Input::GetVKey('W') == true || Input::GetVKey('S') == true)
+			{
+				hitbo = 1;
+			}
+		}
+		if (hitbo == 0 && hitbo != 1) {
+			if (Input::GetVKey('A') == true || Input::GetVKey('D') == true)
+			{
+				hitbo = 2;
+			}
+		}
+
+		if (hitbo == 1 && hitbo != 2)
+		{
+			if (Input::GetVKey('W') == true) 
+			{
+				if (Input::GetVKey('S') == false)
+					m_py = g_Yz;
+			}
+			if (Input::GetVKey('S') == true)
+			{
+				if (Input::GetVKey('W') == false)
+					m_py = g_Yz;
+			}
+		}
+
+		if (hitbo == 2 && hitbo != 1)
+		{
+			if (Input::GetVKey('A') == true) 
+			{
+				if (Input::GetVKey('D') == false)
+					m_px = g_Xz;
+			}
+			if (Input::GetVKey('D') == true) 
+			{
+				if (Input::GetVKey('A') == false)
+					m_px = g_Xz;
+			}
+		}
+
+		//m_px = g_Xz;
+		//m_py = g_Yz;
+	}
+	else 
+	{
+		hitbo = 0;
+	}
+
 	//主人公が領域外にいかない様にする処理
-	if (m_px + 64.0f > 800.0f) {
+	if (m_px + 64.0f > 800.0f)
+	{
 		m_px = 800.0f - 64.0f;
 	}
-	if (m_py + 64.0f > 600.0f) {
+	if (m_py + 64.0f > 600.0f) 
+	{
 		m_py = 600.0f - 64.0f;
 	}
-	if (m_px < 0.0f) {
+	if (m_px < 0.0f) 
+	{
 		m_px = 0.0f;
 	}
-	if (m_py < 0.0f) {
+	if (m_py < 0.0f)
+	{
 		m_py = 0.0f;
 	}
 
@@ -171,6 +233,7 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneMap2());
 	}
+
 	if (hit->CheckObjNameHit(OBJ_MAIN) != nullptr)
 	{
 		this->SetStatus(false);
@@ -181,7 +244,17 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneMain());
 	}
-	
+
+	//Furnitureに当たると謎解き画面に移動
+	if (hit->CheckObjNameHit(OBJ_FURNITURE) != nullptr)
+	{
+		this->SetStatus(false);
+
+		g_Xz = 70;
+		g_Yz = 70;
+
+		Scene::SetScene(new CSceneTosolvemystery());
+	}
 }
 
 //ドロー
