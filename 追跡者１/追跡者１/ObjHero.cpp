@@ -219,6 +219,7 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneMap2());
 	}
+
 	if (hit->CheckObjNameHit(OBJ_MAIN) != nullptr)
 	{
 		this->SetStatus(false);
@@ -228,6 +229,16 @@ void CObjHero::Action()
 		g_Yz = 70;
 
 		Scene::SetScene(new CSceneMain());
+	}
+
+	if (hit->CheckObjNameHit(OBJ_FURNITURE) != nullptr)
+	{
+		this->SetStatus(false);
+
+		g_Xz = 70;
+		g_Yz = 70;
+
+		Scene::SetScene(new CSceneTosolvemystery());
 	}
 	
 }
