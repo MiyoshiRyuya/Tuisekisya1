@@ -9,13 +9,10 @@ enum OBJ_NAME
 	OBJ_HERO,
 	OBJ_STAGE,
 	OBJ_ENEMY,
-
 	OBJ_TRAP,
 	OBJ_TRAP1,
 	OBJ_TRAP2,
 	OBJ_TRAP3,
-	OBJ_TRAP4,
-
 	OBJ_FURNITURE,
 	OBJ_FURNITURE1,
 	OBJ_FURNITURE2,
@@ -27,7 +24,6 @@ enum OBJ_NAME
 	OBJ_FURNITURE8,
 	OBJ_FURNITURE9,
 	OBJ_FURNITURE10,
-	
 	OBJ_MAP,
 	OBJ_MAP2,
 	OBJ_MAP3,
@@ -99,12 +95,10 @@ struct UserData
 #include "ObjHero.h"
 #include "Objstage.h"
 #include "ObjEnemy.h"
-
 #include "Objtrap.h"
 #include "Objtrap1.h"
 #include "Objtrap2.h"
 #include "Objtrap3.h"
-
 #include "ObjFurniture.h"
 #include "ObjFurniture1.h"
 #include "ObjFurniture2.h"
@@ -116,7 +110,6 @@ struct UserData
 #include "ObjFurniture8.h"
 #include "ObjFurniture9.h"
 #include "ObjFurniture10.h"
-
 #include "ObjMap.h"
 #include "Map2.h"
 #include "Map3.h"
@@ -130,18 +123,14 @@ struct UserData
 #include"ObjSave1.h"
 #include"ObjSave2.h"
 #include"ObjSave3.h"
-
 #include"ObjItem.h"
-
 #include"ObjmainRoad.h"
 #include"ObjRoad1.h"
 #include"ObjRoad2.h"
 #include"ObjRoad3.h"
-
 #include"ObjEquipped.h"
 #include"OBJEquipped2.h"
 #include"OBJEquipped3.h"
-
 #include"ObjTo solve mystery.h"
 
 #include "ObjTitle.h"
@@ -153,34 +142,28 @@ struct UserData
 #include "SceneTitle.h"
 #include "SceneGameOver.h"
 #include"SceneMenu.h"
-
 #include"ScenemainSave.h"
 #include"SceneSave1.h"
 #include"SceneSave2.h"
 #include"SceneSave3.h"
-
 #include"SceneItem.h"
-
 #include"ScenemainRoad.h"
 #include"SceneRoad1.h"
 #include"SceneRoad2.h"
 #include"SceneRoad3.h"
-
 #include"SceneMap.h"
 #include"SceneMap2.h"
 #include"SceneMap3.h"
 #include"SceneMap4.h"
 #include"SceneMap5.h"
 #include"SceneMap6.h"
-
 #include"SceneEquipped.h"
 #include"SceneEquipped2.h"
 #include"SceneEquipped3.h"
-
 #include"SceneTo solve mystery.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap4
+#define SET_GAME_START  CSceneMap3
 //-----------------------------------------------
