@@ -1,4 +1,4 @@
-//g—p‚·‚éƒwƒbƒ_[ƒtƒ@ƒCƒ‹
+ï»¿//ä½¿ç”¨ã™ã‚‹ãƒ˜ãƒƒãƒ€ãƒ¼ãƒ•ã‚¡ã‚¤ãƒ«
 #include "GameL\DrawTexture.h"
 #include "GameL\WinInputs.h"
 #include "GameL\SceneManager.h"
@@ -8,25 +8,25 @@
 #include "ObjHero.h"
 #include "ObjMenu.h"
 
-//g—p‚·‚éƒl[ƒ€ƒXƒy[ƒX
+//ä½¿ç”¨ã™ã‚‹ãƒãƒ¼ãƒ ã‚¹ãƒšãƒ¼ã‚¹
 using namespace GameL;
 
 float g_Xz=70;
 float g_Yz=70;
 
-//ƒCƒjƒVƒƒƒ‰ƒCƒY
+//ã‚¤ãƒ‹ã‚·ãƒ£ãƒ©ã‚¤ã‚º
 void CObjHero::Init()
 {
 
-	m_px = g_Xz;//ˆÊ’u
+	m_px = g_Xz;//ä½ç½®
 	m_py = g_Yz;
-	m_vx;//ˆÚ“®ƒxƒNƒgƒ‹
+	m_vx;//ç§»å‹•ãƒ™ã‚¯ãƒˆãƒ«
 	m_vy;
-	//m_posture = 1.0f;//‰EŒü‚«0.0f ¶Œü‚«1.0f
+	//m_posture = 1.0f;//å³å‘ã0.0f å·¦å‘ã1.0f
 	m_mos_x = 0.0f;
 	m_mos_y = 0.0f;
 
-	//stage‚Æ‚ÌÁ“”Šm”F—p
+	//stageã¨ã®æ¶ˆç¯ç¢ºèªç”¨
 	m_hit_up = false;
 	m_hit_down = false;
 	m_hit_left = false;
@@ -35,17 +35,17 @@ void CObjHero::Init()
 
 	m_stage_type = 0;
 
-	//E½E½E½E½E½è”»E½E½pE½E½HitBoxE½E½E¬
+	//ãƒ»ï½½ãƒ»ï½½ãƒ»ï½½ãƒ»ï½½ãƒ»ï½½é˜¡ï½»ãƒ»ï½½ãƒ»ï½½pãƒ»ï½½ãƒ»ï½½HitBoxãƒ»ï½½ãƒ»ï½½ãƒ»ï½¬
 	Hits::SetHitBox(this, m_vx, m_vy, 64, 64, ELEMENT_PLAYER, OBJ_HERO, 1);
 
 	Hits::SetHitBox(this, m_vx, m_vy, 40, 64, ELEMENT_PLAYER, OBJ_HERO, 1); 
 
 }
 
-//ƒAƒNƒVƒ‡ƒ“
+//ã‚¢ã‚¯ã‚·ãƒ§ãƒ³
 void CObjHero::Action()
 {
-	//ˆÚ“®ƒxƒNƒgƒ‹‚Ì”jŠü
+	//ç§»å‹•ãƒ™ã‚¯ãƒˆãƒ«ã®ç ´æ£„
 	m_vx = 0.0f;
 	m_vy = 0.0f;
 	
@@ -57,17 +57,17 @@ void CObjHero::Action()
 	m_x = m_px;
 	m_y = m_py;
 
-	//	Œ»İ‚ÌˆÊ’u‚ğ•Û‘¶‚·‚é
+	//	ç¾åœ¨ã®ä½ç½®ã‚’ä¿å­˜ã™ã‚‹
 	g_Xz = m_x; 
 	g_Yz = m_y;
 
-	//Eƒ{ƒ^ƒ“‚ğ‰Ÿ‚·‚ÆƒQ[ƒ€‰æ–Ê‚ÉˆÚ“®‚·‚é
+	//Eãƒœã‚¿ãƒ³ã‚’æŠ¼ã™ã¨ã‚²ãƒ¼ãƒ ç”»é¢ã«ç§»å‹•ã™ã‚‹
 	if (Input::GetVKey('M') == true)
 	{
 		Scene::SetScene(new CSceneMenu());
 	}
 
-	//ƒL[‚Ì“ü—Í•ûŒü
+	//ã‚­ãƒ¼ã®å…¥åŠ›æ–¹å‘
 	if (Input::GetVKey('D') == true)
 	{
 		m_vx += 5.0f;
@@ -93,7 +93,7 @@ void CObjHero::Action()
 		m_vx = 800.0f - 32.0f;
 	}
 
-	//MƒL[‚ğ‰Ÿ‚·‚ÆƒQ[ƒ€‰æ–Ê‚ÉˆÚ“®‚·‚é
+	//Mã‚­ãƒ¼ã‚’æŠ¼ã™ã¨ã‚²ãƒ¼ãƒ ç”»é¢ã«ç§»å‹•ã™ã‚‹
 	if (Input::GetVKey('M') == true)
 	{
 		Scene::SetScene(new CSceneMenu());
@@ -107,14 +107,14 @@ void CObjHero::Action()
 		);
 
 
-	//ˆÊ’u‚ÌXV
+	//ä½ç½®ã®æ›´æ–°
 	m_px += m_vx;
 	m_py += m_vy;
 
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_px + 25, m_py);
 
-	//“GƒIƒuƒWƒFƒNƒg‚ÆÚG‚µ‚½‚çålŒöíœ
+	//æ•µã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨æ¥è§¦ã—ãŸã‚‰ä¸»äººå…¬å‰Šé™¤
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
 		this->SetStatus(false);
@@ -123,10 +123,10 @@ void CObjHero::Action()
 		g_Xz = 70;
 		g_Yz = 70;
 
-		//ålŒöÁ–Å‚ÅƒV[ƒ“‚ğƒQ[ƒ€ƒI[ƒo[‰æ–Ê‚ÉˆÚs‚·‚é
+		//ä¸»äººå…¬æ¶ˆæ»…ã§ã‚·ãƒ¼ãƒ³ã‚’ã‚²ãƒ¼ãƒ ã‚ªãƒ¼ãƒãƒ¼ç”»é¢ã«ç§»è¡Œã™ã‚‹
 		Scene::SetScene(new CSceneGameOver());
 	}
-	//ƒgƒ‰ƒbƒvƒIƒuƒWƒFƒNƒg‚ÆÚG‚µ‚½‚çålŒöíœ
+	//ãƒˆãƒ©ãƒƒãƒ—ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨æ¥è§¦ã—ãŸã‚‰ä¸»äººå…¬å‰Šé™¤
 	if (hit->CheckObjNameHit(OBJ_TRAP) != nullptr)
 	{
 		this->SetStatus(false);
@@ -151,7 +151,7 @@ void CObjHero::Action()
 	}
 }
 
-//ƒhƒ[
+//ãƒ‰ãƒ­ãƒ¼
 void CObjHero::Draw()
 {
 
@@ -170,4 +170,250 @@ void CObjHero::Draw()
 	dst.m_bottom = 64.0f + m_py;
 
 	Draw::Draw(0, &src, &dst, c, 0.0f);
+}
+
+//ä½¿ç”¨ã™ã‚‹ãƒ˜ãƒƒãƒ€ãƒ¼ãƒ•ã‚¡ã‚¤ãƒ«
+#include "GameL\DrawTexture.h"
+#include "GameL\WinInputs.h"
+#include "GameL\SceneManager.h"
+#include "GameL\HitBoxManager.h"
+
+#include "GameHead.h"
+#include "ObjHero.h"
+#include "ObjMenu.h"
+
+
+//ä½¿ç”¨ã™ã‚‹ãƒãƒ¼ãƒ ã‚¹ãƒšãƒ¼ã‚¹
+
+using namespace GameL;
+
+float g_Xz=70;
+float g_Yz=70;
+
+//ã‚¤ãƒ‹ã‚·ãƒ£ãƒ©ã‚¤ã‚º
+void CObjHero::Init()
+{
+	m_px = g_Xz; //ç§»å‹•
+	m_py = g_Yz;
+	m_vx;//ç§»å‹•ãƒ™ã‚¯ãƒˆãƒ«
+	m_vy;
+	m_hidari; //å·¦å‘ã
+	m_ue; //ä¸Š
+	m_sita = 1; //ä¸‹
+	m_migi; //å³
+	m_mos_x = 0.0f;
+	m_mos_y = 0.0f;
+
+	//stageã¨ã®è¡çªç¢ºèªç”¨
+	m_hit_up = false;
+	m_hit_down = false;
+	m_hit_left = false;
+	m_hit_right = false;
+
+	//ï¿½ï¿½ï¿½ï¿½ï¿½è”»ï¿½ï¿½pï¿½ï¿½HitBoxï¿½ï¿½ì¬
+	Hits::SetHitBox(this, m_vx, m_vy, 64, 64, ELEMENT_PLAYER, OBJ_HERO, 1);
+
+}
+
+//ã‚¢ã‚¯ã‚·ãƒ§ãƒ³
+void CObjHero::Action()
+{
+	//ç§»å‹•ãƒ™ã‚¯ãƒˆãƒ«ã®ç ´æ£„
+	m_vx = 0.0f;
+	m_vy = 0.0f;
+	
+	/*if (m_x < -1 && m_y < -1) {
+		m_x = 0.0f;
+		m_y = 0.0f;
+	}*/
+
+	m_x = m_px;
+	m_y = m_py;
+
+	//	ç¾åœ¨ã®ä½ç½®ã‚’ä¿å­˜ã™ã‚‹
+	g_Xz = m_x;
+	g_Yz = m_y;
+
+	//Eãƒœã‚¿ãƒ³ã‚’æŠ¼ã™ã¨ã‚²ãƒ¼ãƒ ç”»é¢ã«ç§»å‹•ã™ã‚‹
+	if (Input::GetVKey('M') == true)
+	{
+		Scene::SetScene(new CSceneMenu());
+	}
+
+	//ã‚­ãƒ¼ã®å…¥åŠ›æ–¹å‘
+	if (Input::GetVKey('D') == true)
+	{
+		m_migi = 1;
+		m_sita = 0;
+		m_ue = 0;
+		m_hidari = 0;
+		m_vx += 5.0f;
+	}
+
+	if (Input::GetVKey('A') == true)
+	{
+		m_hidari = 1;
+		m_ue = 0;
+		m_sita = 0;
+		m_migi = 0;
+		m_vx -= 5.0f;
+	}
+
+	if (Input::GetVKey('W') == true)
+	{
+		m_ue = 1.0f;
+		m_sita = 0;
+		m_migi = 0;
+		m_hidari = 0;
+		m_vy -= 5.0f;
+	}
+
+	if (Input::GetVKey('S') == true)
+	{
+		m_sita = 1;
+		m_ue = 0;
+		m_migi = 0;
+		m_hidari = 0;
+		m_vy += 5.0f;
+	}
+
+	if (m_vx+32.0f>800.0f)
+	{
+		m_vx = 800.0f - 32.0f;
+	}
+
+	//Mã‚­ãƒ¼ã‚’æŠ¼ã™ã¨ã‚²ãƒ¼ãƒ ç”»é¢ã«ç§»å‹•ã™ã‚‹
+	if (Input::GetVKey('M') == true)
+	{
+		Scene::SetScene(new CSceneMenu());
+	}
+
+
+
+	//ä½ç½®ã®æ›´æ–°
+	m_px += m_vx;
+	m_py += m_vy;
+
+	CHitBox*hit = Hits::GetHitBox(this);
+	hit->SetPos(m_px , m_py);
+
+	//æ•µã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨æ¥è§¦ã—ãŸã‚‰ä¸»äººå…¬å‰Šé™¤
+	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+
+		//ä¸»äººå…¬æ¶ˆæ»…ã§ã‚·ãƒ¼ãƒ³ã‚’ã‚²ãƒ¼ãƒ ã‚ªãƒ¼ãƒãƒ¼ç”»é¢ã«ç§»è¡Œã™ã‚‹
+		Scene::SetScene(new CSceneGameOver());
+	}
+	//ãƒˆãƒ©ãƒƒãƒ—ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¨æ¥è§¦ã—ãŸã‚‰ä¸»äººå…¬å‰Šé™¤
+	if (hit->CheckObjNameHit(OBJ_TRAP) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+	
+
+
+		Scene::SetScene(new CSceneGameOver());
+	}
+	/*
+	if (hit->CheckObjNameHit(OBJ_MAP2) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		g_Xz = 70;
+		g_Yz = 70;
+
+		Scene::SetScene(new CSceneMap2());
+	}
+	if (hit->CheckObjNameHit(OBJ_MAIN) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		g_Xz = 70;
+		g_Yz = 70;
+
+		Scene::SetScene(new CSceneMain());
+	}
+	*/
+}
+
+//ãƒ‰ãƒ­ãƒ¼
+void CObjHero::Draw()
+{
+
+	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
+	RECT_F src;
+	RECT_F dst;
+
+	if (m_ue == 1) {
+		src.m_top = 385.0f;
+		src.m_left = 180.0f;
+		src.m_right = 320.0f;
+		src.m_bottom = 512.0f;
+
+		dst.m_top = 0.0f + m_py;
+		dst.m_left = 0.0f + m_px;
+		dst.m_right = 64.0f + m_px;
+		dst.m_bottom = 64.0f + m_py;
+
+		Draw::Draw(0, &src, &dst, c, 0.0f);
+	}
+
+	if (m_migi == 1) {
+		src.m_top = 255.0f;
+		src.m_left = 180.0f;
+		src.m_right = 320.0f;
+		src.m_bottom = 385.0f;
+
+		dst.m_top = 0.0f + m_py;
+		dst.m_left = 0.0f + m_px;
+		dst.m_right = 64.0f + m_px;
+		dst.m_bottom = 64.0f + m_py;
+
+		Draw::Draw(0, &src, &dst, c, 0.0f);
+	}
+
+	if (m_hidari == 1) {
+		src.m_top = 130.0f;
+		src.m_left = 180.0f;
+		src.m_right = 320.0f;
+		src.m_bottom = 255.0f;
+
+		dst.m_top = 0.0f + m_py;
+		dst.m_left = 0.0f + m_px;
+		dst.m_right = 64.0f + m_px;
+		dst.m_bottom = 64.0f + m_py;
+
+		Draw::Draw(0, &src, &dst, c, 0.0f);
+	}
+
+	if (m_sita == 1) {
+		src.m_top = 0.0f;
+		src.m_left = 180.0f;
+		src.m_right = 320.0f;
+		src.m_bottom = 130.0f;
+
+		dst.m_top = 0.0f + m_py;
+		dst.m_left = 0.0f + m_px;
+		dst.m_right = 64.0f + m_px;
+		dst.m_bottom = 64.0f + m_py;
+
+		Draw::Draw(0, &src, &dst, c, 0.0f);
+	}
+/*	src.m_top = 0.0f;
+	src.m_left = 0.0f;
+	src.m_right = 180.0f;
+	src.m_bottom = 130.0f;
+
+	dst.m_top = 0.0f + m_py;
+	dst.m_left = 0.0f + m_px;
+	dst.m_right = 64.0f + m_px;
+	dst.m_bottom = 64.0f + m_py;
+
+	Draw::Draw(0, &src, &dst, c, 0.0f);*/
 }
