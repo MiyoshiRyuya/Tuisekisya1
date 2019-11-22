@@ -22,9 +22,6 @@
     <Filter Include="ソース ファイル\Menu">
       <UniqueIdentifier>{3ced9b1e-fdcc-4715-999c-2d980d697c62}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\GameOver">
-      <UniqueIdentifier>{f0c22939-a381-41cf-85f7-075a0ca5687c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Title">
       <UniqueIdentifier>{820ba590-211d-4b31-a712-8981ea1eb56c}</UniqueIdentifier>
     </Filter>
@@ -75,6 +72,9 @@
     </Filter>
     <Filter Include="ソース ファイル\謎解き">
       <UniqueIdentifier>{5cb68e86-4710-49cb-b375-c7a7cd101551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameOver">
+      <UniqueIdentifier>{f0c22939-a381-41cf-85f7-075a0ca5687c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -677,11 +677,11 @@
     <ClInclude Include="SceneMain.h">
       <Filter>ソース ファイル\Main</Filter>
     </ClInclude>
-    <ClInclude Include="ObjFurniture10.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="ObjFurniture9.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture10.h">
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
