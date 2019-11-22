@@ -42,7 +42,7 @@ void CSceneTitle::InitScene()
 	Audio::LoadAudio(1, L"menyu.wav", SOUND_TYPE::EFFECT);
 
 		//バックミュージックスタート
-	float Volume = Audio::VolumeMaster(-0.8f); //マスターぶりゅーむを0.8下げる
+	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
 	Audio::Start(0); //音楽スタート
 
 }
