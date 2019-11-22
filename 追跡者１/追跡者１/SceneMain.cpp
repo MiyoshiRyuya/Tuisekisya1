@@ -83,6 +83,11 @@ void CSceneMain::InitScene()
 	//外部グラフィックファイルを読み込み11番目に登録
 	Draw::LoadImage(L"SC-Candle.png", 11, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み12番目に登録(512*512pixel)
+	Draw::LoadImage(L"KitchenFloor.png", 12, TEX_SIZE_512);
+
+
+
 
 
 
@@ -90,9 +95,9 @@ void CSceneMain::InitScene()
 	CObjHero*obj = new CObjHero();
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
-	/*CObjstage*objb = new CObjstage(map);
-	Objs::InsertObj(objb, OBJ_STAGE, 9);
-	*/
+	//CObjstage*objb = new CObjstage(map);
+	//Objs::InsertObj(objb, OBJ_STAGE, 9);
+
 	//敵オブジェクト
 	CObjEnemy*obj_enemy = new CObjEnemy();
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
@@ -173,9 +178,8 @@ void CSceneMain::InitScene()
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
 
 	//マップ背景オブジェクト2作成
-
-	//CObjMap2*obj_m = new CObjMap2();
-	//Objs::InsertObj(obj_m, OBJ_MAP2, 2);
+	CObjMap6*obj_m6 = new CObjMap6();
+	Objs::InsertObj(obj_m6, OBJ_MAP6, 2);
 
 	//blockオブジェクト作成
 	//CObjstage*objb = new CObjstage(map);

@@ -5,6 +5,7 @@
 
 #include"GameHead.h"
 #include"ObjFurniture2.h"
+#include"Map6.h"
 
 using namespace GameL;
 

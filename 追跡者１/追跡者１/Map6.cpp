@@ -12,6 +12,20 @@
 #include "ObjHero.h"
 #include "Objtrap.h"
 
+#include "ObjFurniture.h"
+#include "ObjFurniture1.h"
+#include "ObjFurniture2.h"
+#include "ObjFurniture3.h"
+#include "ObjFurniture4.h"
+#include "ObjFurniture5.h"
+#include "ObjFurniture6.h"
+#include "ObjFurnirure7.h"
+#include "ObjFurniture8.h"
+#include "ObjFurniture9.h"
+#include "ObjFurniture10.h"
+
+
+
 //使用するネームスペース
 using namespace GameL;
 
@@ -22,6 +36,7 @@ void CObjMap6::Init()
 	m_y = 0;
 	hon_x = 200;
 	hon_y = 240;
+	
 	
 	Hits::SetHitBox(this, m_x, m_y, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
 	Hits::SetHitBox(this, m_x += 200, m_y += 240, 50, 250, ELEMENT_GREEN, OBJ_MAP6, 1);
@@ -62,7 +77,34 @@ void CObjMap6::Draw()
 	//描画
 	Draw::Draw(2, &src, &dst, c, 0.0f);
 
+
+	src.m_top = 32.0f;
+	src.m_left = 64.0f;
+	src.m_right = 32.0f;
+	src.m_bottom = 64.0f;
+
+	dst.m_top = 0.0f + m_y;
+	dst.m_left = 110.0f + m_x;
+	dst.m_right = 0.0f + m_x;
+	dst.m_bottom = 110.0f + m_y;
+
+	Draw::Draw(7, &src, &dst, c, 0.0f);
+
+	src.m_top = 0.0f;
+	src.m_left = 81.0f;
+	src.m_right = 0.0f;
+	src.m_bottom = 66.0f;
+
+	dst.m_top = 0.0f + m_y;
+	dst.m_left = 81.0f + m_x;
+	dst.m_right = 0.0f + m_x;
+	dst.m_bottom = 66.0f + m_y;
+
+	Draw::Draw(8, &src, &dst, c, 0.0f);
+
+
 	//切り取り位置の設定
+	/*
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
 	src.m_right = 800.0f;
@@ -90,4 +132,5 @@ void CObjMap6::Draw()
 
 	//描画
 	Draw::Draw(10, &src, &dst, c, 0.0f);
+	*/
 }

@@ -8,7 +8,7 @@
 #include"GameL/HitBoxManager.h"
 
 #include "GameHead.h"
-//#include "ObjMap2.h"
+#include "Map2.h"
 #include"ObjHero.h"
 #include"Objtrap.h"
 
