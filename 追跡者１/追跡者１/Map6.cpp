@@ -12,6 +12,9 @@
 #include "ObjHero.h"
 #include "Objtrap.h"
 
+
+
+
 //使用するネームスペース
 using namespace GameL;
 
@@ -22,6 +25,7 @@ void CObjMap6::Init()
 	m_y = 0;
 	hon_x = 200;
 	hon_y = 240;
+	
 	
 	Hits::SetHitBox(this, m_x, m_y, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
 	Hits::SetHitBox(this, m_x += 200, m_y += 240, 50, 250, ELEMENT_GREEN, OBJ_MAP6, 1);
@@ -62,7 +66,11 @@ void CObjMap6::Draw()
 	//描画
 	Draw::Draw(2, &src, &dst, c, 0.0f);
 
+
+
+
 	//切り取り位置の設定
+	/*
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
 	src.m_right = 800.0f;
@@ -90,4 +98,5 @@ void CObjMap6::Draw()
 
 	//描画
 	Draw::Draw(10, &src, &dst, c, 0.0f);
+	*/
 }

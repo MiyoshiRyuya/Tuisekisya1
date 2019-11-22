@@ -1,5 +1,5 @@
 //ここにマップ名書いてください
-
+//
 //使用するヘッダーファイル
 #include "GameL\DrawTexture.h"
 #include "GameL\WinInputs.h"
@@ -11,6 +11,19 @@
 #include "Map4.h"
 #include "ObjHero.h"
 #include "Objtrap.h"
+
+#include "ObjFurniture.h"
+#include "ObjFurniture1.h"
+#include "ObjFurniture2.h"
+#include "ObjFurniture3.h"
+#include "ObjFurniture4.h"
+#include "ObjFurniture5.h"
+#include "ObjFurniture6.h"
+#include "ObjFurnirure7.h"
+#include "ObjFurniture8.h"
+#include "ObjFurniture9.h"
+#include "ObjFurniture10.h"
+
 
 //使用するネームスペース
 using namespace GameL;
@@ -57,4 +70,29 @@ void CObjMap4::Draw()
 	//描画
 	Draw::Draw(2, &src, &dst, c, 0.0f);
 
+
+
+	src.m_top = 32.0f;
+	src.m_left = 64.0f;
+	src.m_right = 32.0f;
+	src.m_bottom = 64.0f;
+
+	dst.m_top = 0.0f + m_y;
+	dst.m_left = 110.0f + m_x;
+	dst.m_right = 0.0f + m_x;
+	dst.m_bottom = 110.0f + m_y;
+
+	Draw::Draw(7, &src, &dst, c, 0.0f);
+
+	src.m_top = 0.0f;
+	src.m_left = 81.0f;
+	src.m_right = 0.0f;
+	src.m_bottom = 66.0f;
+
+	dst.m_top = 0.0f + m_y;
+	dst.m_left = 81.0f + m_x;
+	dst.m_right = 0.0f + m_x;
+	dst.m_bottom = 66.0f + m_y;
+
+	Draw::Draw(8, &src, &dst, c, 0.0f);
 }

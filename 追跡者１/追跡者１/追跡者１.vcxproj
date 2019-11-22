@@ -116,6 +116,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ObjCloset.cpp" />
     <ClCompile Include="Map2.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -186,6 +187,7 @@
     <ClCompile Include="Objtrap3.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="ScceneCloset.cpp" />
     <ClCompile Include="SceneEquipped.cpp" />
     <ClCompile Include="SceneEquipped2.cpp" />
     <ClCompile Include="SceneEquipped3.cpp" />
@@ -221,6 +223,7 @@
     <ClInclude Include="Map4.h" />
     <ClInclude Include="Map5.h" />
     <ClInclude Include="Map6.h" />
+    <ClInclude Include="ObjCloset.h" />
     <ClInclude Include="OBJEquipped3.h" />
     <ClInclude Include="ObjFurnirure7.h" />
     <ClInclude Include="ObjFurniture.h" />
@@ -275,6 +278,7 @@
     <ClInclude Include="Objtrap1.h" />
     <ClInclude Include="Objtrap2.h" />
     <ClInclude Include="Objtrap3.h" />
+    <ClInclude Include="SceneCloset.h" />
     <ClInclude Include="SceneRoad3.h" />
     <ClInclude Include="objstage.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
