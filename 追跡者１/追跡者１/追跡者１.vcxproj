@@ -194,7 +194,7 @@
     <ClCompile Include="Objtrap3.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="ScceneCloset.cpp" />
+    <ClCompile Include="SceneCloset.cpp" />
     <ClCompile Include="SceneEquipped.cpp" />
     <ClCompile Include="SceneEquipped2.cpp" />
     <ClCompile Include="SceneEquipped3.cpp" />

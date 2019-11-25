@@ -55,6 +55,7 @@ enum OBJ_NAME
 	OBJ_EQUIPPED2,
 	OBJ_EQUIPPED3,
 	OBJ_TOSOLVEMYATERY,
+	OBJ_CLOSET,
 
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
@@ -142,6 +143,7 @@ struct UserData
 #include"ObjSave3.h"
 
 #include"ObjItem.h"
+#include"ObjCloset.h"
 
 #include"ObjmainRoad.h"
 #include"ObjRoad1.h"
@@ -168,29 +170,25 @@ struct UserData
 #include"SceneSave1.h"
 #include"SceneSave2.h"
 #include"SceneSave3.h"
-
 #include"SceneItem.h"
-
 #include"ScenemainRoad.h"
 #include"SceneRoad1.h"
 #include"SceneRoad2.h"
 #include"SceneRoad3.h"
-
 #include"SceneMap.h"
 #include"SceneMap2.h"
 #include"SceneMap3.h"
 #include"SceneMap4.h"
 #include"SceneMap5.h"
 #include"SceneMap6.h"
-
 #include"SceneEquipped.h"
 #include"SceneEquipped2.h"
 #include"SceneEquipped3.h"
-
+#include"SceneCloset.h"
 #include"SceneTo solve mystery.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap4
+#define SET_GAME_START  CSceneMap
 //-----------------------------------------------

@@ -44,12 +44,19 @@ void CSceneMap3::InitScene()
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
+	//外部グラフィックファイルを読み込み3番目に登録
+	Draw::LoadImage(L"Hari.png", 3, TEX_SIZE_64);
+
+	//トラップオブジェクト
+	CObjtrap*obj_trap = new CObjtrap(542,292);
+	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
+
 	//マップ背景オブジェクト1作成
-//	CObjMap6*map6 = new CObjMap6();
-	//Objs::InsertObj(map6, OBJ_MAP6, 1);
+	CObjMap3*map3 = new CObjMap3();
+	Objs::InsertObj(map3, OBJ_MAP3, 1);
 }
 //実行中メソッド
 void CSceneMap3::Scene()
 {
-
+	
 }
