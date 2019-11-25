@@ -22,7 +22,7 @@ void CObjMap::Init()
 //アクション
 void CObjMap::Action()
 {
-
+	
 }
 
 //ドロー
@@ -45,5 +45,11 @@ void CObjMap::Draw()
 
 	Draw::Draw(2, &src, &dst, c, 0.0f);
 
+	
+
+	
+	
+	
+	
 
 }

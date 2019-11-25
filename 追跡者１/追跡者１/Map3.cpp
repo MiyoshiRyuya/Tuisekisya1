@@ -6,7 +6,7 @@
 #include "GameL\SceneManager.h"
 #include "GameL\SceneObjManager.h"
 #include"GameL/HitBoxManager.h"
-
+#include "SceneMap3.h"
 #include "GameHead.h"
 #include "Map3.h"
 #include "ObjHero.h"
@@ -18,10 +18,10 @@ using namespace GameL;
 //イニシャライズ
 void CObjMap3::Init()
 {
-	m_x = 300;
+	m_x = 400;
 	m_y = 100;
 
-	//Hits::SetHitBox(this, m_x + 10, m_y + 10, 32, 32, ELEMENT_BLUE, OBJ_MAP3, 3);
+	Hits::SetHitBox(this, m_x + 10, m_y + 10, 32, 32, ELEMENT_BLUE, OBJ_MAP3, 3);
 
 }
 
@@ -58,6 +58,8 @@ void CObjMap3::Draw()
 
 		//描画
 		Draw::Draw(2, &src, &dst, c, 0.0f);
+
+
 
 		//切り取り位置の設定
 		src.m_top = 0.0f;
