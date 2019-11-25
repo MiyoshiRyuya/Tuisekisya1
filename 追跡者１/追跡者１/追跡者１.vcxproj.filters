@@ -387,7 +387,7 @@
     <ClCompile Include="ObjCloset.cpp">
       <Filter>ソース ファイル\クローゼット</Filter>
     </ClCompile>
-    <ClCompile Include="ScceneCloset.cpp">
+    <ClCompile Include="SceneCloset.cpp">
       <Filter>ソース ファイル\クローゼット</Filter>
     </ClCompile>
   </ItemGroup>
