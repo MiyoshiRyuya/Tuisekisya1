@@ -27,6 +27,11 @@ enum OBJ_NAME
 	OBJ_FURNITURE8,
 	OBJ_FURNITURE9,
 	OBJ_FURNITURE10,
+	OBJ_FURNITURE11,
+	OBJ_FURNITURE12,
+	OBJ_FURNITURE13,
+	OBJ_FURNITURE14,
+	OBJ_FURNITURE15,
 	
 	OBJ_MAP,
 	OBJ_MAP2,
@@ -116,6 +121,11 @@ struct UserData
 #include "ObjFurniture8.h"
 #include "ObjFurniture9.h"
 #include "ObjFurniture10.h"
+#include "ObjFurniture11.h"
+#include "ObjFurniture12.h"
+#include "ObjFurniture13.h"
+#include "ObjFurniture14.h"
+#include "ObjFurniture15.h"
 
 #include "ObjMap.h"
 #include "Map2.h"

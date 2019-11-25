@@ -6,6 +6,7 @@
 #include"GameHead.h"
 #include"ObjEnemy.h"
 
+
 using namespace GameL;
 
 float g_xz=600;

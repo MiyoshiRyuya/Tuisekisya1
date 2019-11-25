@@ -390,6 +390,21 @@
     <ClCompile Include="ScceneCloset.cpp">
       <Filter>ソース ファイル\クローゼット</Filter>
     </ClCompile>
+    <ClCompile Include="ObjFurniture11.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture12.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture13.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture14.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture15.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -697,6 +712,21 @@
     </ClInclude>
     <ClInclude Include="SceneCloset.h">
       <Filter>ソース ファイル\クローゼット</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture11.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture12.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture13.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture14.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture15.h">
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
