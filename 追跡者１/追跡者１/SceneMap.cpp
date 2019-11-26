@@ -14,6 +14,7 @@ using namespace GameL;
 #include "SceneMain.h"
 #include "GameHead.h"
 #include"SceneMap.h"
+#include "SceneCloset.h"
 
 
 //コンストラクタ
@@ -35,12 +36,19 @@ void CSceneMap::InitScene()
 	//外部グラフィックファイルを読み込み6番目に登録
 	Draw::LoadImage(L"Hari.png", 6, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み1番に登録（64×64ピクセル）
+	Draw::LoadImage(L"Closet1.png", 11, TEX_SIZE_64);
+
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
 	//トラップオブジェクト
-	CObjtrap*obj_trap = new CObjtrap(200,180);
-	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
+	CObjtrap*obj_trap = new CObjtrap();
+	Objs::InsertObj(obj_trap, OBJ_TRAP, 6);
+
+	//クローゼット表示
+	CObjCloset*obj_Closet = new CObjCloset();
+	Objs::InsertObj(obj_Closet, OBJ_CLOSET, 11);
 
 }
 //実行中メソッド

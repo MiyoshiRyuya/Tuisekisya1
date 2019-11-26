@@ -9,10 +9,13 @@ enum OBJ_NAME
 	OBJ_HERO,
 	OBJ_STAGE,
 	OBJ_ENEMY,
+
 	OBJ_TRAP,
 	OBJ_TRAP1,
 	OBJ_TRAP2,
 	OBJ_TRAP3,
+	OBJ_TRAP4,
+
 	OBJ_FURNITURE,
 	OBJ_FURNITURE1,
 	OBJ_FURNITURE2,
@@ -24,6 +27,12 @@ enum OBJ_NAME
 	OBJ_FURNITURE8,
 	OBJ_FURNITURE9,
 	OBJ_FURNITURE10,
+	OBJ_FURNITURE11,
+	OBJ_FURNITURE12,
+	OBJ_FURNITURE13,
+	OBJ_FURNITURE14,
+	OBJ_FURNITURE15,
+	
 	OBJ_MAP,
 	OBJ_MAP2,
 	OBJ_MAP3,
@@ -46,6 +55,7 @@ enum OBJ_NAME
 	OBJ_EQUIPPED2,
 	OBJ_EQUIPPED3,
 	OBJ_TOSOLVEMYATERY,
+	OBJ_CLOSET,
 
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
@@ -95,10 +105,12 @@ struct UserData
 #include "ObjHero.h"
 #include "Objstage.h"
 #include "ObjEnemy.h"
+
 #include "Objtrap.h"
 #include "Objtrap1.h"
 #include "Objtrap2.h"
 #include "Objtrap3.h"
+
 #include "ObjFurniture.h"
 #include "ObjFurniture1.h"
 #include "ObjFurniture2.h"
@@ -110,6 +122,12 @@ struct UserData
 #include "ObjFurniture8.h"
 #include "ObjFurniture9.h"
 #include "ObjFurniture10.h"
+#include "ObjFurniture11.h"
+#include "ObjFurniture12.h"
+#include "ObjFurniture13.h"
+#include "ObjFurniture14.h"
+#include "ObjFurniture15.h"
+
 #include "ObjMap.h"
 #include "Map2.h"
 #include "Map3.h"
@@ -123,14 +141,19 @@ struct UserData
 #include"ObjSave1.h"
 #include"ObjSave2.h"
 #include"ObjSave3.h"
+
 #include"ObjItem.h"
+#include"ObjCloset.h"
+
 #include"ObjmainRoad.h"
 #include"ObjRoad1.h"
 #include"ObjRoad2.h"
 #include"ObjRoad3.h"
+
 #include"ObjEquipped.h"
 #include"OBJEquipped2.h"
 #include"OBJEquipped3.h"
+
 #include"ObjTo solve mystery.h"
 
 #include "ObjTitle.h"
@@ -142,6 +165,7 @@ struct UserData
 #include "SceneTitle.h"
 #include "SceneGameOver.h"
 #include"SceneMenu.h"
+
 #include"ScenemainSave.h"
 #include"SceneSave1.h"
 #include"SceneSave2.h"
@@ -160,10 +184,11 @@ struct UserData
 #include"SceneEquipped.h"
 #include"SceneEquipped2.h"
 #include"SceneEquipped3.h"
+#include"SceneCloset.h"
 #include"SceneTo solve mystery.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap3
+#define SET_GAME_START  CSceneMap
 //-----------------------------------------------

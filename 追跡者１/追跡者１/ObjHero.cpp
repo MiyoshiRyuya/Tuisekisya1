@@ -246,6 +246,7 @@ void CObjHero::Action()
 	}
 
 	//Furnitureに当たると謎解き画面に移動
+	/*
 	if (hit->CheckObjNameHit(OBJ_FURNITURE) != nullptr)
 	{
 		this->SetStatus(false);
@@ -255,6 +256,7 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneTosolvemystery());
 	}
+	*/
 }
 
 //ドロー
