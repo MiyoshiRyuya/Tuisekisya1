@@ -149,6 +149,46 @@ void CSceneMap4::InitScene()
 	CObjFurniture15*obj_Furnirure15 = new CObjFurniture15();
 	Objs::InsertObj(obj_Furnirure15, OBJ_FURNITURE15, 2);
 
+	//家具オブジェクト16作成
+	CObjFurniture16*obj_Furnirure16 = new CObjFurniture16();
+	Objs::InsertObj(obj_Furnirure16, OBJ_FURNITURE16, 1);
+
+	//家具オブジェクト17作成
+	CObjFurniture17*obj_Furnirure17 = new CObjFurniture17();
+	Objs::InsertObj(obj_Furnirure17, OBJ_FURNITURE17, 1);
+
+	//家具オブジェクト18作成
+	CObjFurniture18*obj_Furnirure18 = new CObjFurniture18();
+	Objs::InsertObj(obj_Furnirure18, OBJ_FURNITURE18, 1);
+
+	//家具オブジェクト19作成
+	CObjFurniture19*obj_Furnirure19 = new CObjFurniture19();
+	Objs::InsertObj(obj_Furnirure19, OBJ_FURNITURE19, 1);
+
+	//家具オブジェクト20作成
+	CObjFurniture20*obj_Furnirure20 = new CObjFurniture20();
+	Objs::InsertObj(obj_Furnirure20, OBJ_FURNITURE20, 1);
+
+	//家具オブジェクト21作成
+	CObjFurniture21*obj_Furnirure21 = new CObjFurniture21();
+	Objs::InsertObj(obj_Furnirure21, OBJ_FURNITURE21, 1);
+
+	//家具オブジェクト22作成
+	CObjFurniture22*obj_Furnirure22 = new CObjFurniture22();
+	Objs::InsertObj(obj_Furnirure22, OBJ_FURNITURE22, 1);
+
+	//家具オブジェクト23作成
+	CObjFurniture23*obj_Furnirure23 = new CObjFurniture23();
+	Objs::InsertObj(obj_Furnirure23, OBJ_FURNITURE23, 1);
+
+	//家具オブジェクト24作成
+	CObjFurniture24*obj_Furnirure24 = new CObjFurniture24();
+	Objs::InsertObj(obj_Furnirure24, OBJ_FURNITURE24, 2);
+
+	//家具オブジェクト25作成
+	CObjFurniture25*obj_Furnirure25 = new CObjFurniture25();
+	Objs::InsertObj(obj_Furnirure25, OBJ_FURNITURE25, 2);
+
 
 
 	//マップ背景オブジェクト4作成
