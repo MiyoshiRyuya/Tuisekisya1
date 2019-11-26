@@ -76,5 +76,17 @@ void CObjMap3::Draw()
 		//ï`âÊ
 		Draw::Draw(9, &src, &dst, c, 0.0f);
 	
+		src.m_top = 0.0f;
+		src.m_left = 0.0f;
+		src.m_right = 600.0f;
+		src.m_bottom = 500.0f;
 
+		//ï\é¶à íuÇÃê›íË
+		dst.m_top = 0.0f;
+		dst.m_left = 0.0f;
+		dst.m_right = 800.0f;
+		dst.m_bottom = 600.0f;
+
+		//ï`âÊ
+		Draw::Draw(2, &src, &dst, c, 0.0f);
 }
