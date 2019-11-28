@@ -1,5 +1,6 @@
 //ここにマップ名書いてください
-//
+//Kitcen
+
 //使用するヘッダーファイル
 #include "GameL\DrawTexture.h"
 #include "GameL\WinInputs.h"
@@ -12,17 +13,7 @@
 #include "ObjHero.h"
 #include "Objtrap.h"
 
-#include "ObjFurniture.h"
-#include "ObjFurniture1.h"
-#include "ObjFurniture2.h"
-#include "ObjFurniture3.h"
-#include "ObjFurniture4.h"
-#include "ObjFurniture5.h"
-#include "ObjFurniture6.h"
-#include "ObjFurnirure7.h"
-#include "ObjFurniture8.h"
-#include "ObjFurniture9.h"
-#include "ObjFurniture10.h"
+
 
 
 //使用するネームスペース
@@ -34,7 +25,7 @@ void CObjMap4::Init()
 	m_x = 300;
 	m_y = 100;
 
-	//Hits::SetHitBox(this, m_x + 10, m_y + 10, 32, 32, ELEMENT_BLUE, OBJ_MAP4, 3);
+	Hits::SetHitBox(this, m_x + 10, m_y + 10, 0, 0, ELEMENT_BLUE, OBJ_MAP4, 3);
 
 }
 
@@ -56,6 +47,7 @@ void CObjMap4::Draw()
 	RECT_F dst; //描画先表示位置
 
 	//切り取り位置の設定
+	
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
 	src.m_right = 600.0f;
@@ -69,9 +61,9 @@ void CObjMap4::Draw()
 
 	//描画
 	Draw::Draw(2, &src, &dst, c, 0.0f);
+	
 
-
-
+	/*
 	src.m_top = 32.0f;
 	src.m_left = 64.0f;
 	src.m_right = 32.0f;
@@ -82,7 +74,7 @@ void CObjMap4::Draw()
 	dst.m_right = 0.0f + m_x;
 	dst.m_bottom = 110.0f + m_y;
 
-	Draw::Draw(7, &src, &dst, c, 0.0f);
+	Draw::Draw(7, &src, &dst, c, 0.0f);//ロウソク
 
 	src.m_top = 0.0f;
 	src.m_left = 81.0f;
@@ -94,5 +86,24 @@ void CObjMap4::Draw()
 	dst.m_right = 0.0f + m_x;
 	dst.m_bottom = 66.0f + m_y;
 
-	Draw::Draw(8, &src, &dst, c, 0.0f);
+	Draw::Draw(8, &src, &dst, c, 0.0f);//ロウソク
+	*/
+
+	src.m_top = 0.0f;
+	src.m_left = 260.0f;
+	src.m_right = 0.0f;
+	src.m_bottom = 180.0f;
+
+	dst.m_top = 0.0f + m_y;
+	dst.m_left = 260.0f + m_x;
+	dst.m_right = 0.0f + m_x;
+	dst.m_bottom = 180.0f + m_y;
+
+	Draw::Draw(12, &src, &dst, c, 0.0f);//キッチン
+
+	
+	
+
+	
+	
 }
