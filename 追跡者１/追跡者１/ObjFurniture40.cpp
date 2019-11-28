@@ -13,7 +13,7 @@ void CObjFurniture40::Init()
 	m_x = 234;
 	m_y = 338;
 
-	Hits::SetHitBox(this, m_x + 10, m_y + 10, 40, 70, ELEMENT_BLUE, OBJ_FURNITURE40, 1);
+	Hits::SetHitBox(this, m_x + 10, m_y + 10, 40, 70, ELEMENT_BLUE, OBJ_MAP6, 1);
 
 }
 
