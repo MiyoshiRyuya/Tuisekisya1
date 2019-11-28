@@ -54,7 +54,16 @@ enum OBJ_NAME
 	OBJ_FURNITURE33,
 	OBJ_FURNITURE34,
 	OBJ_FURNITURE35,
-	
+	OBJ_FURNITURE36,
+	OBJ_FURNITURE37,
+	OBJ_FURNITURE38,
+	OBJ_FURNITURE39,
+	OBJ_FURNITURE40,
+	OBJ_FURNITURE41,
+	OBJ_FURNITURE42,
+	OBJ_FURNITURE43,
+
+
 	
 	//ƒ}ƒbƒv
 	OBJ_MAP,
@@ -177,6 +186,18 @@ struct UserData
 #include "ObjFurniture32.h"
 #include "ObjFurniture33.h"
 #include "ObjFurniture34.h"
+#include "ObjFurniture35.h"
+#include "ObjFurniture36.h"
+#include "ObjFurniture37.h"
+#include "ObjFurniture38.h"
+#include "ObjFurniture39.h"
+#include "ObjFurniture40.h"
+#include "ObjFurniture41.h"
+#include "ObjFurniture42.h"
+#include "ObjFurniture43.h"
+
+
+
 
 
 

@@ -504,6 +504,33 @@
     <ClCompile Include="ObjFurniture34.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
+    <ClCompile Include="ObjFurniture35.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture36.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture37.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture38.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture39.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture40.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture41.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture42.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture43.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -915,6 +942,33 @@
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture34.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture35.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture36.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture37.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture38.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture39.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture40.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture41.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture42.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture43.h">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
   </ItemGroup>
