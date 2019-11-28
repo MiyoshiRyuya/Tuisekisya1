@@ -10,14 +10,12 @@ enum OBJ_NAME
 	OBJ_STAGE,
 	OBJ_ENEMY,
 
-	//罠
 	OBJ_TRAP,
 	OBJ_TRAP1,
 	OBJ_TRAP2,
 	OBJ_TRAP3,
 	OBJ_TRAP4,
 
-	//家具
 	OBJ_FURNITURE,
 	OBJ_FURNITURE1,
 	OBJ_FURNITURE2,
@@ -29,24 +27,7 @@ enum OBJ_NAME
 	OBJ_FURNITURE8,
 	OBJ_FURNITURE9,
 	OBJ_FURNITURE10,
-	OBJ_FURNITURE11,
-	OBJ_FURNITURE12,
-	OBJ_FURNITURE13,
-	OBJ_FURNITURE14,
-	OBJ_FURNITURE15,
-	OBJ_FURNITURE16,
-	OBJ_FURNITURE17,
-	OBJ_FURNITURE18,
-	OBJ_FURNITURE19,
-	OBJ_FURNITURE20,
-	OBJ_FURNITURE21,
-	OBJ_FURNITURE22,
-	OBJ_FURNITURE23,
-	OBJ_FURNITURE24,
-	OBJ_FURNITURE25,
 	
-	
-	//マップ
 	OBJ_MAP,
 	OBJ_MAP2,
 	OBJ_MAP3,
@@ -55,7 +36,6 @@ enum OBJ_NAME
 	OBJ_MAP6,
 	OBJ_MAIN,
 
-	//システム
 	OBJ_MENU,
 	OBJ_MAINSAVE,
 	OBJ_SAVE1,
@@ -72,9 +52,9 @@ enum OBJ_NAME
 	OBJ_TOSOLVEMYATERY,
 	OBJ_CLOSET,
 
-	//タイトル系
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
+	OBJ_GAME_CLEAR,
 };
 //------------------------------------------------
 
@@ -122,13 +102,11 @@ struct UserData
 #include "Objstage.h"
 #include "ObjEnemy.h"
 
-//罠
 #include "Objtrap.h"
 #include "Objtrap1.h"
 #include "Objtrap2.h"
 #include "Objtrap3.h"
 
-//家具
 #include "ObjFurniture.h"
 #include "ObjFurniture1.h"
 #include "ObjFurniture2.h"
@@ -140,23 +118,7 @@ struct UserData
 #include "ObjFurniture8.h"
 #include "ObjFurniture9.h"
 #include "ObjFurniture10.h"
-#include "ObjFurniture11.h"
-#include "ObjFurniture12.h"
-#include "ObjFurniture13.h"
-#include "ObjFurniture14.h"
-#include "ObjFurniture15.h"
-#include "ObjFurniture16.h"
-#include "ObjFurniture17.h"
-#include "ObjFurniture18.h"
-#include "ObjFurniture19.h"
-#include "ObjFurniture20.h"
-#include "ObjFurniture21.h"
-#include "ObjFurniture22.h"
-#include "ObjFurniture23.h"
-#include "ObjFurniture24.h"
-#include "ObjFurniture25.h"
 
-//マップ
 #include "ObjMap.h"
 #include "Map2.h"
 #include "Map3.h"
@@ -187,12 +149,14 @@ struct UserData
 
 #include "ObjTitle.h"
 #include "ObjGameOver.h"
+#include "ObjGameClear.h"
 //------------------------------------------------
 
 //ゲームシーンクラスヘッダ------------------------
 #include "SceneMain.h"
 #include "SceneTitle.h"
 #include "SceneGameOver.h"
+#include "SceneGameClear.h"
 #include"SceneMenu.h"
 
 #include"ScenemainSave.h"
@@ -219,5 +183,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap4
+#define SET_GAME_START  CSceneGameClear
 //-----------------------------------------------
