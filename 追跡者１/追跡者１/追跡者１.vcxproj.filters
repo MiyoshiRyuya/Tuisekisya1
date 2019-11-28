@@ -79,6 +79,9 @@
     <Filter Include="ソース ファイル\クローゼット">
       <UniqueIdentifier>{131aeec8-3eae-4dc6-9382-8face9f286e8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\GameClear">
+      <UniqueIdentifier>{c31bc9a4-6fd9-41ca-a943-66aabe53774c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -390,6 +393,12 @@
     <ClCompile Include="SceneCloset.cpp">
       <Filter>ソース ファイル\クローゼット</Filter>
     </ClCompile>
+    <ClCompile Include="SceneGameClear.cpp">
+      <Filter>ソース ファイル\GameClear</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameClear.cpp">
+      <Filter>ソース ファイル\GameClear</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -697,6 +706,12 @@
     </ClInclude>
     <ClInclude Include="SceneCloset.h">
       <Filter>ソース ファイル\クローゼット</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameClear.h">
+      <Filter>ソース ファイル\GameClear</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGameClear.h">
+      <Filter>ソース ファイル\GameClear</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

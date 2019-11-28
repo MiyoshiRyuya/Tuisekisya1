@@ -41,6 +41,9 @@ void CSceneMap3::InitScene()
 	//外部グラフィックファイルを読み込み9番目に登録
 	Draw::LoadImage(L"kabe1.png", 9, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み11番に登録（64×64ピクセル）
+	Draw::LoadImage(L"Closet1.png", 11, TEX_SIZE_64);
+
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
