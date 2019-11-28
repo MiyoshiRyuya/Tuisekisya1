@@ -4,6 +4,7 @@
 #include "GameL\WinInputs.h"
 #include "GameL\SceneManager.h"
 #include "GameL\HitBoxManager.h"
+#include"GameL\Audio.h"
 
 #include "GameHead.h"
 #include "ObjHero.h"
@@ -128,7 +129,6 @@ void CObjHero::Action()
 	hit->SetPos(m_px , m_py);
 
 	//敵オブジェクトと接触したら主人公削除
-	/*
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
 		this->SetStatus(false);
@@ -138,7 +138,6 @@ void CObjHero::Action()
 		//主人公消滅でシーンをゲームオーバー画面に移行する
 		Scene::SetScene(new CSceneGameOver());
 	}
-	*/
 	//トラップオブジェクトと接触したら主人公削除
 	if (hit->CheckObjNameHit(OBJ_TRAP) != nullptr)
 	{
@@ -154,43 +153,34 @@ void CObjHero::Action()
 	//OBJ_MAP６に接触したら押し返されるプログラム
 	if (hit->CheckObjNameHit(OBJ_MAP6) != nullptr)
 	{
-		if (hitbo == 0 && hitbo != 2)
-		{
-			if (Input::GetVKey('W') == true || Input::GetVKey('S') == true)
-			{
+		if (hitbo == 0 && hitbo != 2) {
+			if (Input::GetVKey('W') == true || Input::GetVKey('S') == true) {
 				hitbo = 1;
 			}
 		}
 		if (hitbo == 0 && hitbo != 1) {
-			if (Input::GetVKey('A') == true || Input::GetVKey('D') == true)
-			{
+			if (Input::GetVKey('A') == true || Input::GetVKey('D') == true) {
 				hitbo = 2;
 			}
 		}
 
-		if (hitbo == 1 && hitbo != 2)
-		{
-			if (Input::GetVKey('W') == true) 
-			{
+		if (hitbo == 1 && hitbo != 2) {
+			if (Input::GetVKey('W') == true) {
 				if (Input::GetVKey('S') == false)
 					m_py = g_Yz;
 			}
-			if (Input::GetVKey('S') == true)
-			{
+			if (Input::GetVKey('S') == true) {
 				if (Input::GetVKey('W') == false)
 					m_py = g_Yz;
 			}
 		}
 
-		if (hitbo == 2 && hitbo != 1)
-		{
-			if (Input::GetVKey('A') == true) 
-			{
+		if (hitbo == 2 && hitbo != 1) {
+			if (Input::GetVKey('A') == true) {
 				if (Input::GetVKey('D') == false)
 					m_px = g_Xz;
 			}
-			if (Input::GetVKey('D') == true) 
-			{
+			if (Input::GetVKey('D') == true) {
 				if (Input::GetVKey('A') == false)
 					m_px = g_Xz;
 			}
@@ -199,26 +189,21 @@ void CObjHero::Action()
 		//m_px = g_Xz;
 		//m_py = g_Yz;
 	}
-	else 
-	{
+	else {
 		hitbo = 0;
 	}
 
 	//主人公が領域外にいかない様にする処理
-	if (m_px + 64.0f > 800.0f)
-	{
+	if (m_px + 64.0f > 800.0f) {
 		m_px = 800.0f - 64.0f;
 	}
-	if (m_py + 64.0f > 600.0f) 
-	{
+	if (m_py + 64.0f > 600.0f) {
 		m_py = 600.0f - 64.0f;
 	}
-	if (m_px < 0.0f) 
-	{
+	if (m_px < 0.0f) {
 		m_px = 0.0f;
 	}
-	if (m_py < 0.0f)
-	{
+	if (m_py < 0.0f) {
 		m_py = 0.0f;
 	}
 
@@ -245,8 +230,6 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneMain());
 	}
 
-	//Furnitureに当たると謎解き画面に移動
-	/*
 	if (hit->CheckObjNameHit(OBJ_FURNITURE) != nullptr)
 	{
 		this->SetStatus(false);
@@ -256,7 +239,48 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneTosolvemystery());
 	}
-	*/
+	
+	// 強引なマップ移動用HitBox判定プログラム
+	if (hit->CheckObjNameHit(OBJ_MOVE1) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+			//this->SetStatus(false);
+			Hits::DeleteHitBox(this);
+
+			Audio::Start(1);
+			g_Xz = 800;
+			g_Yz = 310;
+
+			Scene::SetScene(new CSceneMap5());
+		}
+	}
+	if (hit->CheckObjNameHit(OBJ_MOVE2) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+			//this->SetStatus(false);
+			Hits::DeleteHitBox(this);
+
+			Audio::Start(1);
+			g_Xz = 0;
+			g_Yz = 310;
+
+			Scene::SetScene(new CSceneMap6());
+		}
+	}
+	//ここが反応するとゲームクリア
+	if (hit->CheckObjNameHit(OBJ_ESC) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+			//this->SetStatus(false);
+			Hits::DeleteHitBox(this);
+
+			Audio::Start(1);
+			g_Xz = 100;
+			g_Yz = 120;
+
+			Scene::SetScene(new CSceneTitle());
+		}
+	}
 }
 
 //ドロー
