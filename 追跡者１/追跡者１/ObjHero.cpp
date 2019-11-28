@@ -267,6 +267,32 @@ void CObjHero::Action()
 			Scene::SetScene(new CSceneMap6());
 		}
 	}
+	if (hit->CheckObjNameHit(OBJ_MOVE3) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+			//this->SetStatus(false);
+			Hits::DeleteHitBox(this);
+
+			Audio::Start(1);
+			g_Xz = 286;
+			g_Yz = 800;
+
+			Scene::SetScene(new CSceneMap4());
+		}
+	}
+	if (hit->CheckObjNameHit(OBJ_MOVE4) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+			//this->SetStatus(false);
+			Hits::DeleteHitBox(this);
+
+			//Audio::Start(1);
+			g_Xz = 0;
+			g_Yz = 310;
+
+			Scene::SetScene(new CSceneMap5());
+		}
+	}
 	//ここが反応するとゲームクリア
 	if (hit->CheckObjNameHit(OBJ_ESC) != nullptr)
 	{

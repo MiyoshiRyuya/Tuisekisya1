@@ -79,6 +79,9 @@
     <Filter Include="ソース ファイル\クローゼット">
       <UniqueIdentifier>{131aeec8-3eae-4dc6-9382-8face9f286e8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\GameClear">
+      <UniqueIdentifier>{b25c3e49-e4ad-4226-8ea7-d951b70b2d84}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -492,12 +495,6 @@
     <ClCompile Include="ObjFurniture32.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
-    <ClCompile Include="ObjGameClear.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneGameClear.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="ObjFurniture33.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
@@ -530,6 +527,12 @@
     </ClCompile>
     <ClCompile Include="ObjFurniture43.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameClear.cpp">
+      <Filter>ソース ファイル\GameClear</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGameClear.cpp">
+      <Filter>ソース ファイル\GameClear</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -932,12 +935,6 @@
     <ClInclude Include="ObjFurniture32.h">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
-    <ClInclude Include="ObjGameClear.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneGameClear.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="ObjFurniture33.h">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
@@ -970,6 +967,12 @@
     </ClInclude>
     <ClInclude Include="ObjFurniture43.h">
       <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameClear.h">
+      <Filter>ソース ファイル\GameClear</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGameClear.h">
+      <Filter>ソース ファイル\GameClear</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
