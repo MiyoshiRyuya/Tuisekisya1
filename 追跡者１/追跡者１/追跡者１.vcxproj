@@ -117,6 +117,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ObjFurniture33.cpp" />
+    <ClCompile Include="ObjFurniture34.cpp" />
     <ClCompile Include="ObjGameClear.cpp" />
     <ClCompile Include="ObjCloset.cpp" />
     <ClCompile Include="Map2.cpp">
@@ -300,6 +301,7 @@
     <ClInclude Include="ObjFurniture31.h" />
     <ClInclude Include="ObjFurniture32.h" />
     <ClInclude Include="ObjFurniture33.h" />
+    <ClInclude Include="ObjFurniture34.h" />
     <ClInclude Include="ObjFurniture4.h" />
     <ClInclude Include="ObjFurniture5.h" />
     <ClInclude Include="ObjFurniture6.h" />

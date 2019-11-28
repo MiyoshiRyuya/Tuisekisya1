@@ -57,7 +57,8 @@ void CSceneMap4::InitScene()
 	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
 
 
-
+	//外部グラフィックファイルを読み込み10番目に登録
+	Draw::LoadImage(L"BlackMirror.png", 10, TEX_SIZE_64);
 
 	//外部グラフィックファイルを読み込み11番目に登録
 	Draw::LoadImage(L"SC-Candle.png", 11, TEX_SIZE_64);
@@ -92,6 +93,8 @@ void CSceneMap4::InitScene()
 	//外部グラフィックファイルを読み込み21番目に登録
 	Draw::LoadImage(L"Mom.png", 21, TEX_SIZE_64);
 	
+	//外部グラフィックファイルを読み込み22番目に登録
+	Draw::LoadImage(L"Nabe2.png", 22, TEX_SIZE_64);
 
 
 
@@ -109,7 +112,8 @@ void CSceneMap4::InitScene()
 	CObjEnemy*obj_enemy = new CObjEnemy();
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
 
-
+	//CObjMap4*map4 = new CObjMap4();
+	//Objs::InsertObj(map4, OBJ_MAP4, 0);
 
 	
 
@@ -211,7 +215,9 @@ void CSceneMap4::InitScene()
 	CObjFurniture33*obj_Furnirure33 = new CObjFurniture33();
 	Objs::InsertObj(obj_Furnirure33, OBJ_FURNITURE31, 2);
 
-
+	//家具オブジェクト34作成
+	CObjFurniture34*obj_Furnirure34 = new CObjFurniture34();
+	Objs::InsertObj(obj_Furnirure34, OBJ_FURNITURE34, 2);
 
 
 

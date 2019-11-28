@@ -234,6 +234,19 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneMap2());
 	}
 
+	if (hit->CheckObjNameHit(OBJ_MOVE5) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+			this->SetStatus(false);
+			Hits::DeleteHitBox(this);
+
+			g_Xz = 372;
+			g_Yz = 0;
+
+			Scene::SetScene(new CSceneMap5());
+		}
+	}
+
 	if (hit->CheckObjNameHit(OBJ_MAIN) != nullptr)
 	{
 		this->SetStatus(false);

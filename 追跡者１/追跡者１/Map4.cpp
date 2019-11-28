@@ -22,19 +22,25 @@ using namespace GameL;
 //イニシャライズ
 void CObjMap4::Init()
 {
-	m_x = 300;
-	m_y = 100;
+	
+	m_x = 371;
+	m_y = 0;
 
 	Hits::SetHitBox(this, m_x + 10, m_y + 10, 0, 0, ELEMENT_BLUE, OBJ_MAP4, 3);
+	Hits::SetHitBox(this, m_x + 10, m_y + 10, 50, 50, ELEMENT_RED, OBJ_MOVE5, 3);
 
+	
 }
 
 //アクション
 void CObjMap4::Action()
 {
+	
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x + 10, m_y + 10);
+	
 
+	
 }
 
 //ドロー
@@ -61,49 +67,19 @@ void CObjMap4::Draw()
 
 	//描画
 	Draw::Draw(2, &src, &dst, c, 0.0f);
+
 	
-
-	/*
-	src.m_top = 32.0f;
-	src.m_left = 64.0f;
-	src.m_right = 32.0f;
-	src.m_bottom = 64.0f;
-
-	dst.m_top = 0.0f + m_y;
-	dst.m_left = 110.0f + m_x;
-	dst.m_right = 0.0f + m_x;
-	dst.m_bottom = 110.0f + m_y;
-
-	Draw::Draw(7, &src, &dst, c, 0.0f);//ロウソク
 
 	src.m_top = 0.0f;
-	src.m_left = 81.0f;
-	src.m_right = 0.0f;
-	src.m_bottom = 66.0f;
+	src.m_left = 96.0f;
+	src.m_right = 64.0f;
+	src.m_bottom = 45.0f;
 
 	dst.m_top = 0.0f + m_y;
-	dst.m_left = 81.0f + m_x;
+	dst.m_left = 84.0f + m_x;
 	dst.m_right = 0.0f + m_x;
-	dst.m_bottom = 66.0f + m_y;
+	dst.m_bottom = 40.0f + m_y;
 
-	Draw::Draw(8, &src, &dst, c, 0.0f);//ロウソク
-	*/
-
-	src.m_top = 0.0f;
-	src.m_left = 260.0f;
-	src.m_right = 0.0f;
-	src.m_bottom = 180.0f;
-
-	dst.m_top = 0.0f + m_y;
-	dst.m_left = 260.0f + m_x;
-	dst.m_right = 0.0f + m_x;
-	dst.m_bottom = 180.0f + m_y;
-
-	Draw::Draw(12, &src, &dst, c, 0.0f);//キッチン
-
-	
-	
-
-	
+	Draw::Draw(10, &src, &dst, c, 0.0f);//鏡
 	
 }

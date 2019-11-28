@@ -65,6 +65,9 @@ enum OBJ_NAME
 	OBJ_MAP6,
 	OBJ_MAIN,
 
+	//マップ移動用
+	OBJ_MOVE5,
+
 	//システム
 	OBJ_MENU,
 	OBJ_MAINSAVE,
@@ -173,6 +176,7 @@ struct UserData
 #include "ObjFurniture31.h"
 #include "ObjFurniture32.h"
 #include "ObjFurniture33.h"
+#include "ObjFurniture34.h"
 
 
 
