@@ -116,10 +116,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ObjFurniture33.cpp" />
     <ClCompile Include="ObjGameClear.cpp" />
     <ClCompile Include="ObjCloset.cpp" />
     <ClCompile Include="Map2.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Map3.cpp" />
     <ClCompile Include="Map4.cpp" />
@@ -216,7 +217,9 @@
     <ClCompile Include="SceneEquipped.cpp" />
     <ClCompile Include="SceneEquipped2.cpp" />
     <ClCompile Include="SceneEquipped3.cpp" />
-    <ClCompile Include="SceneGameClear.cpp" />
+    <ClCompile Include="SceneGameClear.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneItem.cpp" />
     <ClCompile Include="SceneMain.cpp" />
@@ -224,7 +227,9 @@
     <ClCompile Include="SceneMap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SceneMap2.cpp" />
+    <ClCompile Include="SceneMap2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="SceneMap3.cpp" />
     <ClCompile Include="SceneMap4.cpp" />
     <ClCompile Include="SceneMap5.cpp" />
@@ -294,6 +299,7 @@
     <ClInclude Include="ObjFurniture30.h" />
     <ClInclude Include="ObjFurniture31.h" />
     <ClInclude Include="ObjFurniture32.h" />
+    <ClInclude Include="ObjFurniture33.h" />
     <ClInclude Include="ObjFurniture4.h" />
     <ClInclude Include="ObjFurniture5.h" />
     <ClInclude Include="ObjFurniture6.h" />

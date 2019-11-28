@@ -7,6 +7,9 @@
 #include "GameL\DrawTexture.h"
 #include "GameL\DrawFont.h"
 #include "GameL\UserData.h"
+#include "GameL\Audio.h"
+
+
 
 //使用するネームスペース
 using namespace GameL;
@@ -30,6 +33,17 @@ CSceneMap4::~CSceneMap4()
 //初期化メソッド
 void CSceneMap4::InitScene()
 {
+
+	//音楽情報の読み込み
+	Audio::LoadAudio(0, L"bgm_noroi.wav", SOUND_TYPE::BACK_MUSIC);
+
+
+	//バックミュージックスタート
+	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
+	Audio::Start(0); //音楽スタート
+
+
+
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 
@@ -44,13 +58,6 @@ void CSceneMap4::InitScene()
 
 
 
-	
-
-	//外部グラフィックファイルを読み込み8番目に登録
-	//Draw::LoadImage(L"Skull.png", 8, TEX_SIZE_64);
-
-
-	
 
 	//外部グラフィックファイルを読み込み11番目に登録
 	Draw::LoadImage(L"SC-Candle.png", 11, TEX_SIZE_64);
@@ -199,6 +206,13 @@ void CSceneMap4::InitScene()
 	//家具オブジェクト32作成
 	CObjFurniture32*obj_Furnirure32 = new CObjFurniture32();
 	Objs::InsertObj(obj_Furnirure32, OBJ_FURNITURE31, 1);
+
+	//家具オブジェクト33作成
+	CObjFurniture33*obj_Furnirure33 = new CObjFurniture33();
+	Objs::InsertObj(obj_Furnirure33, OBJ_FURNITURE31, 2);
+
+
+
 
 
 

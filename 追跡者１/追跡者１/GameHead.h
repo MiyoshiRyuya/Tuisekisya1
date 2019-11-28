@@ -51,6 +51,9 @@ enum OBJ_NAME
 	OBJ_FURNITURE30,
 	OBJ_FURNITURE31,
 	OBJ_FURNITURE32,
+	OBJ_FURNITURE33,
+	OBJ_FURNITURE34,
+	OBJ_FURNITURE35,
 	
 	
 	//ƒ}ƒbƒv
@@ -169,6 +172,7 @@ struct UserData
 #include "ObjFurniture30.h"
 #include "ObjFurniture31.h"
 #include "ObjFurniture32.h"
+#include "ObjFurniture33.h"
 
 
 
@@ -211,24 +215,35 @@ struct UserData
 #include "SceneGameOver.h"
 #include"SceneMenu.h"
 
+
 #include"ScenemainSave.h"
 #include"SceneSave1.h"
 #include"SceneSave2.h"
 #include"SceneSave3.h"
+
+
 #include"SceneItem.h"
+
+
 #include"ScenemainRoad.h"
 #include"SceneRoad1.h"
 #include"SceneRoad2.h"
 #include"SceneRoad3.h"
+
+
 #include"SceneMap.h"
 #include"SceneMap2.h"
 #include"SceneMap3.h"
 #include"SceneMap4.h"
 #include"SceneMap5.h"
 #include"SceneMap6.h"
+
+
 #include"SceneEquipped.h"
 #include"SceneEquipped2.h"
 #include"SceneEquipped3.h"
+
+
 #include"SceneCloset.h"
 #include"SceneTo solve mystery.h"
 //-----------------------------------------------
