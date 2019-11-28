@@ -27,11 +27,16 @@ CSceneMap2::CSceneMap2()
 	Draw::LoadImage(L"Hari.png", 6, TEX_SIZE_64);
 
 	//外部グラフィックファイルを読み込み2番目に登録(512*512pixel)
-	Draw::LoadImage(L"FloorEX.png", 2, TEX_SIZE_512);
+	Draw::LoadImage(L"FloorEX3.png", 2, TEX_SIZE_512);
 
-	Draw::LoadImage(L"Chair.png", 13, TEX_SIZE_64);
+	//外部グラフィックファイルを読み込み9番目に登録
+	Draw::LoadImage(L"kabe1.png", 9, TEX_SIZE_512);
 
-	Draw::LoadImage(L"desk.png", 14, TEX_SIZE_64);
+	Draw::LoadImage(L"Chair.png", 50, TEX_SIZE_64);
+
+	Draw::LoadImage(L"desk.png", 51, TEX_SIZE_64);
+
+	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_64);
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
