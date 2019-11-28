@@ -70,9 +70,20 @@ void CSceneMap4::InitScene()
 	//外部グラフィックファイルを読み込み16番目に登録
 	Draw::LoadImage(L"Heart.png", 16, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み17番目に登録
+	Draw::LoadImage(L"Cake.png", 17, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み18番目に登録
+	Draw::LoadImage(L"Nabe1.png", 18, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み19番目に登録
+	Draw::LoadImage(L"Cake1.png", 19, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み20番目に登録
+	Draw::LoadImage(L"Meat.png", 20, TEX_SIZE_64);
 	
-
+	//外部グラフィックファイルを読み込み21番目に登録
+	Draw::LoadImage(L"Mom.png", 21, TEX_SIZE_64);
 	
 
 
@@ -93,38 +104,10 @@ void CSceneMap4::InitScene()
 
 
 
-	/*
-	//罠オブジェクト作成
-	CObjtrap*obj_trap = new CObjtrap();
-	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
-
-	//罠オブジェクト1作成
-	CObjtrap1*obj_trap1 = new CObjtrap1();
-	Objs::InsertObj(obj_trap1, OBJ_TRAP1, 1);
-
-	//罠オブジェクト2作成
-	CObjtrap2*obj_trap2 = new CObjtrap2();
-	Objs::InsertObj(obj_trap2, OBJ_TRAP2, 1);
-
-	//罠オブジェクト3作成
-	CObjtrap3*obj_trap3 = new CObjtrap3();
-	Objs::InsertObj(obj_trap3, OBJ_TRAP3, 1);
-	*/
-
-
-
 	
-	//家具オブジェクト作成
-	
-	/*
-	//家具オブジェクト7作成
-	CObjFurniture7*obj_Furnirure7 = new CObjFurniture7();/////
-	Objs::InsertObj(obj_Furnirure7, OBJ_FURNITURE7, 1);
-	
-	//家具オブジェクト8作成
-	CObjFurniture8*obj_Furnirure8 = new CObjFurniture8();/////
-	Objs::InsertObj(obj_Furnirure8, OBJ_FURNITURE8, 1);
-	*/
+
+
+
 	
 	
 	
@@ -188,6 +171,38 @@ void CSceneMap4::InitScene()
 	//家具オブジェクト25作成
 	CObjFurniture25*obj_Furnirure25 = new CObjFurniture25();
 	Objs::InsertObj(obj_Furnirure25, OBJ_FURNITURE25, 2);
+
+	//家具オブジェクト26作成
+	CObjFurniture26*obj_Furnirure26 = new CObjFurniture26();
+	Objs::InsertObj(obj_Furnirure26, OBJ_FURNITURE26, 2);
+
+	//家具オブジェクト27作成
+	CObjFurniture27*obj_Furnirure27 = new CObjFurniture27();
+	Objs::InsertObj(obj_Furnirure27, OBJ_FURNITURE27, 2);
+
+	//家具オブジェクト28作成
+	CObjFurniture28*obj_Furnirure28 = new CObjFurniture28();
+	Objs::InsertObj(obj_Furnirure28, OBJ_FURNITURE28, 2);
+
+	//家具オブジェクト29作成
+	CObjFurniture29*obj_Furnirure29 = new CObjFurniture29();
+	Objs::InsertObj(obj_Furnirure29, OBJ_FURNITURE29, 2);
+
+	//家具オブジェクト30作成
+	CObjFurniture30*obj_Furnirure30 = new CObjFurniture30();
+	Objs::InsertObj(obj_Furnirure30, OBJ_FURNITURE30, 2);
+
+	//家具オブジェクト31作成
+	CObjFurniture31*obj_Furnirure31 = new CObjFurniture31();
+	Objs::InsertObj(obj_Furnirure31, OBJ_FURNITURE31, 2);
+
+	//家具オブジェクト32作成
+	CObjFurniture32*obj_Furnirure32 = new CObjFurniture32();
+	Objs::InsertObj(obj_Furnirure32, OBJ_FURNITURE31, 1);
+
+
+
+
 
 
 

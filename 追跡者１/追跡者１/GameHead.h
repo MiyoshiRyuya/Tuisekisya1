@@ -44,6 +44,13 @@ enum OBJ_NAME
 	OBJ_FURNITURE23,
 	OBJ_FURNITURE24,
 	OBJ_FURNITURE25,
+	OBJ_FURNITURE26,
+	OBJ_FURNITURE27,
+	OBJ_FURNITURE28,
+	OBJ_FURNITURE29,
+	OBJ_FURNITURE30,
+	OBJ_FURNITURE31,
+	OBJ_FURNITURE32,
 	
 	
 	//マップ
@@ -155,6 +162,15 @@ struct UserData
 #include "ObjFurniture23.h"
 #include "ObjFurniture24.h"
 #include "ObjFurniture25.h"
+#include "ObjFurniture26.h"
+#include "ObjFurniture27.h"
+#include "ObjFurniture28.h"
+#include "ObjFurniture29.h"
+#include "ObjFurniture30.h"
+#include "ObjFurniture31.h"
+#include "ObjFurniture32.h"
+
+
 
 //マップ
 #include "ObjMap.h"
