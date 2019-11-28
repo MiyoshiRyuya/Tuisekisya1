@@ -50,9 +50,15 @@ void CSceneMap3::InitScene()
 	//外部グラフィックファイルを読み込み3番目に登録
 	Draw::LoadImage(L"Hari.png", 3, TEX_SIZE_64);
 
+	Draw::LoadImage(L"Skull.png", 8, TEX_SIZE_64);
+
 	//トラップオブジェクト
 	CObjtrap*obj_trap = new CObjtrap(542,292);
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
+
+	
+
+	
 
 	//マップ背景オブジェクト1作成
 	CObjMap3*map3 = new CObjMap3();

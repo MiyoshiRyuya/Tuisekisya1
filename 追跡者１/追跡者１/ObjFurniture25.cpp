@@ -4,20 +4,20 @@
 #include"GameL/HitBoxManager.h"
 
 #include"GameHead.h"
-#include"ObjFurniture3.h"
+#include"ObjFurniture25.h"
 
 using namespace GameL;
 
-void CObjFurniture3::Init()
+void CObjFurniture25::Init()
 {
-	m_x = 540;
-	m_y = 400;
+	m_x = -6;
+	m_y = 450;
 
-	Hits::SetHitBox(this, m_x + 10, m_y + 10, 65, 60, ELEMENT_BLUE, OBJ_FURNITURE3, 1);
+	Hits::SetHitBox(this, m_x + 10, m_y + 10, 40, 50, ELEMENT_BLUE, OBJ_FURNITURE25, 1);
 
 }
 
-void CObjFurniture3::Action()
+void CObjFurniture25::Action()
 {
 
 	CHitBox*hit = Hits::GetHitBox(this);
@@ -25,7 +25,7 @@ void CObjFurniture3::Action()
 
 }
 
-void CObjFurniture3::Draw()
+void CObjFurniture25::Draw()
 {
 	float c[4]{ 1.0f,1.0f, 1.0f, 1.0f };
 
@@ -33,14 +33,14 @@ void CObjFurniture3::Draw()
 	RECT_F dst;
 
 	src.m_top = 0.0f;
-	src.m_left = 81.0f;
+	src.m_left = 64.0f;
 	src.m_right = 0.0f;
-	src.m_bottom = 66.0f;
+	src.m_bottom = 64.0f;
 
 	dst.m_top = 0.0f + m_y;
-	dst.m_left = 81.0f + m_x;
+	dst.m_left = 64.0f + m_x;
 	dst.m_right = 0.0f + m_x;
-	dst.m_bottom = 66.0f + m_y;
+	dst.m_bottom = 64.0f + m_y;
 
-	Draw::Draw(8, &src, &dst, c, 0.0f);
+	Draw::Draw(16, &src, &dst, c, 0.0f);
 }
