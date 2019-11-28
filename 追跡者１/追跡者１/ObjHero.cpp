@@ -4,6 +4,7 @@
 #include "GameL\WinInputs.h"
 #include "GameL\SceneManager.h"
 #include "GameL\HitBoxManager.h"
+#include"GameL\Audio.h"
 
 #include "GameHead.h"
 #include "ObjHero.h"
@@ -239,6 +240,47 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneTosolvemystery());
 	}
 	
+	// 強引なマップ移動用HitBox判定プログラム
+	if (hit->CheckObjNameHit(OBJ_MOVE1) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+			//this->SetStatus(false);
+			Hits::DeleteHitBox(this);
+
+			Audio::Start(1);
+			g_Xz = 800;
+			g_Yz = 310;
+
+			Scene::SetScene(new CSceneMap5());
+		}
+	}
+	if (hit->CheckObjNameHit(OBJ_MOVE2) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+			//this->SetStatus(false);
+			Hits::DeleteHitBox(this);
+
+			Audio::Start(1);
+			g_Xz = 0;
+			g_Yz = 310;
+
+			Scene::SetScene(new CSceneMap6());
+		}
+	}
+	//ここが反応するとゲームクリア
+	if (hit->CheckObjNameHit(OBJ_ESC) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+			//this->SetStatus(false);
+			Hits::DeleteHitBox(this);
+
+			Audio::Start(1);
+			g_Xz = 100;
+			g_Yz = 120;
+
+			Scene::SetScene(new CSceneTitle());
+		}
+	}
 }
 
 //ドロー

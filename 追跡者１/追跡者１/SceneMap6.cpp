@@ -7,6 +7,7 @@
 #include "GameL\DrawTexture.h"
 #include "GameL\DrawFont.h"
 #include "GameL\UserData.h"
+#include "GameL\Audio.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -41,6 +42,11 @@ void CSceneMap6::InitScene()
 	Draw::LoadImage(L"kabe1.png", 9, TEX_SIZE_512);
 
 	Draw::LoadImageW(L"本棚横並び.png", 10, TEX_SIZE_512);
+
+	Draw::LoadImageW(L"カーペット２.png", 11, TEX_SIZE_512);
+
+	//効果音
+	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録

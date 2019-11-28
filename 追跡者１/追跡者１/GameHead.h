@@ -49,6 +49,13 @@ enum OBJ_NAME
 
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
+
+	OBJ_MOVE1,
+	OBJ_MOVE2,
+	OBJ_MOVE3,
+	OBJ_MOVE4,
+
+	OBJ_ESC,
 };
 //------------------------------------------------
 
@@ -82,7 +89,8 @@ struct UserData
 
 
 //ゲーム内で使用されるグローバル変数・定数・列挙--
-
+extern float g_Xz; //主人公
+extern float g_Yz;
 
 
 //------------------------------------------------
@@ -165,5 +173,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneTitle
+#define SET_GAME_START  CSceneMap5
 //-----------------------------------------------
