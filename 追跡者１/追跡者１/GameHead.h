@@ -75,6 +75,10 @@ enum OBJ_NAME
 	OBJ_MAIN,
 
 	//マップ移動用
+	OBJ_MOVE1,
+	OBJ_MOVE2,
+	OBJ_MOVE3,
+	OBJ_MOVE4,
 	OBJ_MOVE5,
 
 	//システム
@@ -97,6 +101,12 @@ enum OBJ_NAME
 	//タイトル系
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
+
+
+
+	//出口
+	OBJ_ESC,
+
 };
 //------------------------------------------------
 
@@ -275,5 +285,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap4
+#define SET_GAME_START  CSceneMap5
 //-----------------------------------------------
