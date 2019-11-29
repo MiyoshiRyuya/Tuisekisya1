@@ -20,11 +20,17 @@ void CObjMap2::Init()
 {
 	m_x = 300;
 	m_y = 100;
-	Hits::SetHitBox(this, m_x + 10, m_y + 10, 32, 32, ELEMENT_BLUE, OBJ_MAP2, 2);
+	Hits::SetHitBox(this, m_x , m_y , 50, 60, ELEMENT_NULL, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, m_x-200, m_y+10, 50, 60, ELEMENT_NULL, OBJ_MAP6, 2);
 
-	ax = 700;
-	ay = 100;
-	Hits::SetHitBox(this, ax + 10, ay + 10, 32, 32, ELEMENT_BLUE, OBJ_MAP6, 2);
+	ax = 730;
+	ay = 530;
+	Hits::SetHitBox(this, ax , ay , 64, 64, ELEMENT_BLUE, OBJ_MAP6, 2);
+
+	kx = 0;
+	ky = 200;
+	Hits::SetHitBox(this, kx, ky, 64, 64, ELEMENT_NULL, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, kx-190, ky+10, 64, 64, ELEMENT_NULL, OBJ_MAP6, 2);
 
 }
 
@@ -35,6 +41,8 @@ void CObjMap2::Action()
 	hit->SetPos(m_x , m_y );
 	CHitBox*hito = Hits::GetHitBox(this);
 	hito->SetPos(ax, ay);
+	CHitBox*hitoo = Hits::GetHitBox(this);
+	hito->SetPos(kx, ky);
 
 }
 
@@ -45,17 +53,65 @@ void CObjMap2::Draw()
 
 	RECT_F src;
 	RECT_F dst;
-
+	//à÷éqï`âÊ1
 	src.m_top = 0.0f;
-	src.m_left = 32.0f;
-	src.m_right = 64.0f;
-	src.m_bottom = 32.0f;
+	src.m_left = 64.0f;
+	src.m_right = 0.0f;
+	src.m_bottom = 64.0f;
 
 	dst.m_top = 0.0f + m_y;
-	dst.m_left = 32.0f + m_x;
+	dst.m_left = 64.0f + m_x;
 	dst.m_right = 0.0f + m_x;
-	dst.m_bottom = 32.0f + m_y;
+	dst.m_bottom = 64.0f + m_y;
 
-	Draw::Draw(0, &src, &dst, c, 0.0f);
+	Draw::Draw(50, &src, &dst, c, 0.0f);
+
+	//à÷éqï`âÊ2
+	dst.m_top = 0.0f + m_y;
+	dst.m_left = 64.0f + 100;
+	dst.m_right = 0.0f + 100;
+	dst.m_bottom = 64.0f + m_y;
+
+	Draw::Draw(50, &src, &dst, c, 0.0f);
+
+	//ä˜ï`âÊ
+	dst.m_top = 0.0f + ay;
+	dst.m_left = 64.0f + ax;
+	dst.m_right = 0.0f + ax;
+	dst.m_bottom = 64.0f + ay;
+
+	Draw::Draw(51, &src, &dst, c, 0.0f);
+
+	//êAñÿï`âÊ1
+	dst.m_top = 0.0f + ky;
+	dst.m_left = 64.0f + kx;
+	dst.m_right = 0.0f + kx;
+	dst.m_bottom = 64.0f + ky;
+
+	Draw::Draw(52, &src, &dst, c, 0.0f);
+
+	//êAñÿï`âÊ2
+	dst.m_top = 0.0f + ky;
+	dst.m_left = 64.0f + 100;
+	dst.m_right = 0.0f + 100;
+	dst.m_bottom = 64.0f + ky;
+
+	Draw::Draw(52, &src, &dst, c, 0.0f);
+
+	//êÿÇËéÊÇËà íuÇÃê›íË
+
+src.m_top = 0.0f;
+src.m_left = 0.0f;
+src.m_right = 800.0f;
+src.m_bottom = 100.0f;
+
+//ï\é¶à íuÇÃê›íË
+dst.m_top = 0.0f;
+dst.m_left = 0.0f;
+dst.m_right = 800.0f;
+dst.m_bottom = 110.0f;
+
+//ï`âÊ
+Draw::Draw(9, &src, &dst, c, 0.0f);
 
 }

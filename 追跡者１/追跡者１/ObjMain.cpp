@@ -11,9 +11,9 @@ using namespace GameL;
 void CObjMain::Init()
 {
 	m_x = 500;
-	m_y = 100;
+	m_y = 500;
 
-	Hits::SetHitBox(this, m_x + 10, m_y + 10, 32, 32, ELEMENT_BLUE, OBJ_MAIN, 2);
+	Hits::SetHitBox(this, m_x , m_y , 100, 32, ELEMENT_BLUE, OBJ_MAIN, 2);
 
 }
 

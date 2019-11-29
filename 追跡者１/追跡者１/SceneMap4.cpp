@@ -7,6 +7,9 @@
 #include "GameL\DrawTexture.h"
 #include "GameL\DrawFont.h"
 #include "GameL\UserData.h"
+#include "GameL\Audio.h"
+
+
 
 //使用するネームスペース
 using namespace GameL;
@@ -30,6 +33,17 @@ CSceneMap4::~CSceneMap4()
 //初期化メソッド
 void CSceneMap4::InitScene()
 {
+
+	//音楽情報の読み込み
+	Audio::LoadAudio(0, L"bgm_noroi.wav", SOUND_TYPE::BACK_MUSIC);
+
+
+	//バックミュージックスタート
+	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
+	Audio::Start(0); //音楽スタート
+
+
+
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 
@@ -43,14 +57,8 @@ void CSceneMap4::InitScene()
 	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
 
 
-
-	
-
-	//外部グラフィックファイルを読み込み8番目に登録
-	//Draw::LoadImage(L"Skull.png", 8, TEX_SIZE_64);
-
-
-	
+	//外部グラフィックファイルを読み込み10番目に登録
+	Draw::LoadImage(L"BlackMirror.png", 10, TEX_SIZE_64);
 
 	//外部グラフィックファイルを読み込み11番目に登録
 	Draw::LoadImage(L"SC-Candle.png", 11, TEX_SIZE_64);
@@ -70,10 +78,35 @@ void CSceneMap4::InitScene()
 	//外部グラフィックファイルを読み込み16番目に登録
 	Draw::LoadImage(L"Heart.png", 16, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み17番目に登録
+	Draw::LoadImage(L"Cake.png", 17, TEX_SIZE_64);
 
-	
+	//外部グラフィックファイルを読み込み18番目に登録
+	Draw::LoadImage(L"Nabe1.png", 18, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み19番目に登録
+	Draw::LoadImage(L"Cake1.png", 19, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み20番目に登録
+	Draw::LoadImage(L"Meat.png", 20, TEX_SIZE_64);
 	
+	//外部グラフィックファイルを読み込み21番目に登録
+	Draw::LoadImage(L"Mom.png", 21, TEX_SIZE_64);
+	
+	//外部グラフィックファイルを読み込み22番目に登録
+	Draw::LoadImage(L"Nabe2.png", 22, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み23番目に登録
+	Draw::LoadImage(L"Hukuro.png", 23, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み24番目に登録
+	Draw::LoadImage(L"Meat2.png", 24, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み25番目に登録
+	Draw::LoadImage(L"Meat3.png", 25, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み25番目に登録
+	Draw::LoadImage(L"Knife1.png", 26, TEX_SIZE_64);
 
 
 
@@ -91,40 +124,13 @@ void CSceneMap4::InitScene()
 	CObjEnemy*obj_enemy = new CObjEnemy();
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
 
-
-
-	/*
-	//罠オブジェクト作成
-	CObjtrap*obj_trap = new CObjtrap();
-	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
-
-	//罠オブジェクト1作成
-	CObjtrap1*obj_trap1 = new CObjtrap1();
-	Objs::InsertObj(obj_trap1, OBJ_TRAP1, 1);
-
-	//罠オブジェクト2作成
-	CObjtrap2*obj_trap2 = new CObjtrap2();
-	Objs::InsertObj(obj_trap2, OBJ_TRAP2, 1);
-
-	//罠オブジェクト3作成
-	CObjtrap3*obj_trap3 = new CObjtrap3();
-	Objs::InsertObj(obj_trap3, OBJ_TRAP3, 1);
-	*/
-
-
+	//CObjMap4*map4 = new CObjMap4();
+	//Objs::InsertObj(map4, OBJ_MAP4, 0);
 
 	
-	//家具オブジェクト作成
-	
-	/*
-	//家具オブジェクト7作成
-	CObjFurniture7*obj_Furnirure7 = new CObjFurniture7();/////
-	Objs::InsertObj(obj_Furnirure7, OBJ_FURNITURE7, 1);
-	
-	//家具オブジェクト8作成
-	CObjFurniture8*obj_Furnirure8 = new CObjFurniture8();/////
-	Objs::InsertObj(obj_Furnirure8, OBJ_FURNITURE8, 1);
-	*/
+
+
+
 	
 	
 	
@@ -188,6 +194,79 @@ void CSceneMap4::InitScene()
 	//家具オブジェクト25作成
 	CObjFurniture25*obj_Furnirure25 = new CObjFurniture25();
 	Objs::InsertObj(obj_Furnirure25, OBJ_FURNITURE25, 2);
+
+	//家具オブジェクト26作成
+	CObjFurniture26*obj_Furnirure26 = new CObjFurniture26();
+	Objs::InsertObj(obj_Furnirure26, OBJ_FURNITURE26, 2);
+
+	//家具オブジェクト27作成
+	CObjFurniture27*obj_Furnirure27 = new CObjFurniture27();
+	Objs::InsertObj(obj_Furnirure27, OBJ_FURNITURE27, 2);
+
+	//家具オブジェクト28作成
+	CObjFurniture28*obj_Furnirure28 = new CObjFurniture28();
+	Objs::InsertObj(obj_Furnirure28, OBJ_FURNITURE28, 2);
+
+	//家具オブジェクト29作成
+	CObjFurniture29*obj_Furnirure29 = new CObjFurniture29();
+	Objs::InsertObj(obj_Furnirure29, OBJ_FURNITURE29, 2);
+
+	//家具オブジェクト30作成
+	CObjFurniture30*obj_Furnirure30 = new CObjFurniture30();
+	Objs::InsertObj(obj_Furnirure30, OBJ_FURNITURE30, 2);
+
+	//家具オブジェクト31作成
+	CObjFurniture31*obj_Furnirure31 = new CObjFurniture31();
+	Objs::InsertObj(obj_Furnirure31, OBJ_FURNITURE31, 2);
+
+	//家具オブジェクト32作成
+	CObjFurniture32*obj_Furnirure32 = new CObjFurniture32();
+	Objs::InsertObj(obj_Furnirure32, OBJ_FURNITURE31, 1);
+
+	//家具オブジェクト33作成
+	CObjFurniture33*obj_Furnirure33 = new CObjFurniture33();
+	Objs::InsertObj(obj_Furnirure33, OBJ_FURNITURE31, 2);
+
+	//家具オブジェクト34作成
+	CObjFurniture34*obj_Furnirure34 = new CObjFurniture34();
+	Objs::InsertObj(obj_Furnirure34, OBJ_FURNITURE34, 2);
+
+	//家具オブジェクト35作成
+	CObjFurniture35*obj_Furnirure35 = new CObjFurniture35();
+	Objs::InsertObj(obj_Furnirure35, OBJ_FURNITURE35, 1);
+
+	//家具オブジェクト36作成
+	CObjFurniture36*obj_Furnirure36 = new CObjFurniture36();
+	Objs::InsertObj(obj_Furnirure36, OBJ_FURNITURE36, 1);
+
+	//家具オブジェクト37作成
+	CObjFurniture37*obj_Furnirure37 = new CObjFurniture37();
+	Objs::InsertObj(obj_Furnirure37, OBJ_FURNITURE37, 1);
+
+	//家具オブジェクト38作成
+	CObjFurniture38*obj_Furnirure38 = new CObjFurniture38();
+	Objs::InsertObj(obj_Furnirure38, OBJ_FURNITURE38, 1);
+
+	//家具オブジェクト39作成
+	CObjFurniture39*obj_Furnirure39 = new CObjFurniture39();
+	Objs::InsertObj(obj_Furnirure39, OBJ_FURNITURE39, 1);
+
+	//家具オブジェクト40作成
+	CObjFurniture40*obj_Furnirure40 = new CObjFurniture40();
+	Objs::InsertObj(obj_Furnirure40, OBJ_FURNITURE40, 2);
+
+	//家具オブジェクト41作成
+	CObjFurniture41*obj_Furnirure41 = new CObjFurniture41();
+	Objs::InsertObj(obj_Furnirure41, OBJ_FURNITURE41, 2);
+
+	//家具オブジェクト42作成
+	CObjFurniture42*obj_Furnirure42 = new CObjFurniture42();
+	Objs::InsertObj(obj_Furnirure42, OBJ_FURNITURE42, 2);
+
+	//家具オブジェクト43作成
+	CObjFurniture43*obj_Furnirure43 = new CObjFurniture43();
+	Objs::InsertObj(obj_Furnirure43, OBJ_FURNITURE43, 2);
+
 
 
 

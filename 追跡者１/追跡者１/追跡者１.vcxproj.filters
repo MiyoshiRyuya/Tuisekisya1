@@ -40,6 +40,9 @@
     <Filter Include="ソース ファイル\Save1">
       <UniqueIdentifier>{136ae6e4-b616-4e98-aa44-4aed89df6b3c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Save2">
+      <UniqueIdentifier>{650c72f8-b945-4bf8-89e9-6dbae3264978}</UniqueIdentifier>
+    </Filter>
     <Filter Include="ソース ファイル\Map">
       <UniqueIdentifier>{2ce77504-a045-4121-bec6-79345c05866f}</UniqueIdentifier>
     </Filter>
@@ -58,6 +61,9 @@
     <Filter Include="ソース ファイル\Map\Scene">
       <UniqueIdentifier>{da1e7cf5-09bf-4d53-ac6a-6fab1b73af61}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Trap">
+      <UniqueIdentifier>{98068357-c056-4901-a3ab-8a54a1c7136a}</UniqueIdentifier>
+    </Filter>
     <Filter Include="ソース ファイル\Main">
       <UniqueIdentifier>{4b1e66fe-d1a0-4007-973f-de8b8d5d27cc}</UniqueIdentifier>
     </Filter>
@@ -74,13 +80,7 @@
       <UniqueIdentifier>{131aeec8-3eae-4dc6-9382-8face9f286e8}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\GameClear">
-      <UniqueIdentifier>{c31bc9a4-6fd9-41ca-a943-66aabe53774c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Road\Save2">
-      <UniqueIdentifier>{650c72f8-b945-4bf8-89e9-6dbae3264978}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Trap">
-      <UniqueIdentifier>{98068357-c056-4901-a3ab-8a54a1c7136a}</UniqueIdentifier>
+      <UniqueIdentifier>{b25c3e49-e4ad-4226-8ea7-d951b70b2d84}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -139,7 +139,7 @@
       <Filter>ソース ファイル\Save1</Filter>
     </ClCompile>
     <ClCompile Include="SceneSave2.cpp">
-      <Filter>ソース ファイル\Road\Save2</Filter>
+      <Filter>ソース ファイル\Save2</Filter>
     </ClCompile>
     <ClCompile Include="SceneSave3.cpp">
       <Filter>ソース ファイル\Save3</Filter>
@@ -151,7 +151,7 @@
       <Filter>ソース ファイル\Save1</Filter>
     </ClCompile>
     <ClCompile Include="ObjSave2.cpp">
-      <Filter>ソース ファイル\Road\Save2</Filter>
+      <Filter>ソース ファイル\Save2</Filter>
     </ClCompile>
     <ClCompile Include="ObjSave3.cpp">
       <Filter>ソース ファイル\Save3</Filter>
@@ -212,6 +212,9 @@
     </ClCompile>
     <ClCompile Include="ObjFurniture.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMain.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ObjFurniture3.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
@@ -390,29 +393,38 @@
     <ClCompile Include="ObjCloset.cpp">
       <Filter>ソース ファイル\クローゼット</Filter>
     </ClCompile>
-    <ClCompile Include="SceneCloset.cpp">
-      <Filter>ソース ファイル\クローゼット</Filter>
+    <ClCompile Include="ObjMap2.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="SceneGameClear.cpp">
-      <Filter>ソース ファイル\GameClear</Filter>
+    <ClCompile Include="ObjRoad1.cpp">
+      <Filter>ソース ファイル\Road</Filter>
     </ClCompile>
-    <ClCompile Include="ObjGameClear.cpp">
-      <Filter>ソース ファイル\GameClear</Filter>
+    <ClCompile Include="ObjRoad2.cpp">
+      <Filter>ソース ファイル\Road</Filter>
     </ClCompile>
-    <ClCompile Include="ObjFurniture11.cpp">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClCompile Include="ObjRoad3.cpp">
+      <Filter>ソース ファイル\Road</Filter>
     </ClCompile>
-    <ClCompile Include="ObjFurniture12.cpp">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClCompile Include="SceneRoad1.cpp">
+      <Filter>ソース ファイル\Road</Filter>
     </ClCompile>
-    <ClCompile Include="ObjFurniture13.cpp">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClCompile Include="SceneRoad2.cpp">
+      <Filter>ソース ファイル\Road</Filter>
     </ClCompile>
-    <ClCompile Include="ObjFurniture14.cpp">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClCompile Include="ScenemainRoad.cpp">
+      <Filter>ソース ファイル\Road</Filter>
     </ClCompile>
-    <ClCompile Include="ObjFurniture15.cpp">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClCompile Include="SceneRoad3.cpp">
+      <Filter>ソース ファイル\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjmainRoad.cpp">
+      <Filter>ソース ファイル\Road</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEquipped3.cpp">
+      <Filter>ソース ファイル\Cross Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJEquipped3.cpp">
+      <Filter>ソース ファイル\Cross Equipment</Filter>
     </ClCompile>
     <ClCompile Include="ObjFurniture16.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
@@ -432,10 +444,10 @@
     <ClCompile Include="ObjFurniture21.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
-    <ClCompile Include="ObjFurniture23.cpp">
+    <ClCompile Include="ObjFurniture22.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
-    <ClCompile Include="ObjFurniture22.cpp">
+    <ClCompile Include="ObjFurniture23.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
     <ClCompile Include="objFurniture24.cpp">
@@ -443,6 +455,126 @@
     </ClCompile>
     <ClCompile Include="ObjFurniture25.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneCloset.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture11.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture12.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture13.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture14.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture15.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture26.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture27.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture28.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture29.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture30.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture31.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture32.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture33.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture34.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture35.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture36.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture37.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture38.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture39.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture40.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture41.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture42.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture43.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameClear.cpp">
+      <Filter>ソース ファイル\GameClear</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGameClear.cpp">
+      <Filter>ソース ファイル\GameClear</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture12.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture13.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture14.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture15.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture16.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture17.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture18.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture19.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture20.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture21.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture22.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture23.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="objFurniture24.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurniture25.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -501,7 +633,7 @@
       <Filter>ソース ファイル\Save1</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave2.h">
-      <Filter>ソース ファイル\Road\Save2</Filter>
+      <Filter>ソース ファイル\Save2</Filter>
     </ClInclude>
     <ClInclude Include="SceneSave3.h">
       <Filter>ソース ファイル\Save3</Filter>
@@ -513,7 +645,7 @@
       <Filter>ソース ファイル\Save1</Filter>
     </ClInclude>
     <ClInclude Include="ObjSave2.h">
-      <Filter>ソース ファイル\Road\Save2</Filter>
+      <Filter>ソース ファイル\Save2</Filter>
     </ClInclude>
     <ClInclude Include="ObjSave3.h">
       <Filter>ソース ファイル\Save3</Filter>
@@ -752,26 +884,32 @@
     <ClInclude Include="SceneCloset.h">
       <Filter>ソース ファイル\クローゼット</Filter>
     </ClInclude>
-    <ClInclude Include="ObjGameClear.h">
-      <Filter>ソース ファイル\GameClear</Filter>
+    <ClInclude Include="ObjMap2.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="SceneGameClear.h">
-      <Filter>ソース ファイル\GameClear</Filter>
+    <ClInclude Include="ObjmainRoad.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjFurniture13.h">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClInclude Include="ObjRoad1.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjFurniture12.h">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClInclude Include="ObjRoad2.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjFurniture11.h">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClInclude Include="ObjRoad3.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjFurniture14.h">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClInclude Include="SceneRoad3.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjFurniture15.h">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClInclude Include="ScenemainRoad.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoad1.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneRoad2.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture16.h">
       <Filter>ソース ファイル\Furniture</Filter>
@@ -802,6 +940,81 @@
     </ClInclude>
     <ClInclude Include="ObjFurniture25.h">
       <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture11.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture13.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture12.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture14.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture15.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture26.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture27.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture28.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture29.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture30.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture31.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture32.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture33.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture34.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture35.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture36.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture37.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture38.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture39.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture40.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture41.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture42.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurniture43.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameClear.h">
+      <Filter>ソース ファイル\GameClear</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGameClear.h">
+      <Filter>ソース ファイル\GameClear</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
