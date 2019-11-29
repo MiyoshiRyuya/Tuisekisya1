@@ -268,7 +268,7 @@ void CObjHero::Action()
 			Scene::SetScene(new CSceneMap5());
 		}
 	}
-	if (hit->CheckObjNameHit(OBJ_MOVE2) != nullptr)
+	else if (hit->CheckObjNameHit(OBJ_MOVE2) != nullptr)
 	{
 		if (Input::GetVKey(VK_RETURN) == true) {
 			//this->SetStatus(false);
@@ -281,7 +281,7 @@ void CObjHero::Action()
 			Scene::SetScene(new CSceneMap6());
 		}
 	}
-	if (hit->CheckObjNameHit(OBJ_MOVE3) != nullptr)
+	else if (hit->CheckObjNameHit(OBJ_MOVE3) != nullptr)
 	{
 		if (Input::GetVKey(VK_RETURN) == true) {
 			//this->SetStatus(false);
@@ -294,7 +294,20 @@ void CObjHero::Action()
 			Scene::SetScene(new CSceneMap4());
 		}
 	}
-	if (hit->CheckObjNameHit(OBJ_MOVE4) != nullptr)
+	else if (hit->CheckObjNameHit(OBJ_MOVE6) != nullptr)
+	{
+		
+			this->SetStatus(false);
+			Hits::DeleteHitBox(this);
+
+			//Audio::Start(1);
+			g_Xz = 305;
+			g_Yz = 536;
+
+			Scene::SetScene(new CSceneMap2());
+		
+	}
+	else if (hit->CheckObjNameHit(OBJ_MOVE4) != nullptr)
 	{
 		if (Input::GetVKey(VK_RETURN) == true) {
 			//this->SetStatus(false);
@@ -307,8 +320,9 @@ void CObjHero::Action()
 			Scene::SetScene(new CSceneMap5());
 		}
 	}
+
 	//ここが反応するとゲームクリア
-	if (hit->CheckObjNameHit(OBJ_ESC) != nullptr)
+	else if (hit->CheckObjNameHit(OBJ_ESC) != nullptr)
 	{
 		if (Input::GetVKey(VK_RETURN) == true) {
 			//this->SetStatus(false);

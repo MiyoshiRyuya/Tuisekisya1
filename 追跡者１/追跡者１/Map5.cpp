@@ -17,6 +17,8 @@
 //使用するネームスペース
 using namespace GameL;
 
+extern float genzaiti; //現在地
+
 //イニシャライズ
 void CObjMap5::Init()
 {
@@ -30,6 +32,7 @@ void CObjMap5::Init()
 	Hits::SetHitBox(this, m_x -= 736, m_y, 64, 100, ELEMENT_GREEN, OBJ_MOVE3, 1);
 	Hits::SetHitBox(this, m_x += 465, m_y -= 300, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
 	Hits::SetHitBox(this, m_x -= 140, m_y += 550, 150, 50, ELEMENT_RED, OBJ_ESC, 1);
+	Hits::SetHitBox(this, m_x , m_y -= 550, 150, 10, ELEMENT_BLUE, OBJ_MOVE6, 1);
 }
 
 //アクション
@@ -38,6 +41,7 @@ void CObjMap5::Action()
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
 
+	genzaiti = 5;
 }
 
 //ドロー

@@ -16,6 +16,8 @@
 //使用するネームスペース
 using namespace GameL;
 
+float genzaiti; //現在地
+
 //イニシャライズ
 void CObjMenu::Init()
 {
@@ -36,7 +38,18 @@ void CObjMenu::Action()
 	//Eボタンを押すとゲーム画面に移動する
 	if (Input::GetVKey('E') == true)
 	{
-		Scene::SetScene(new CSceneMain());
+		if (genzaiti == 1)
+			Scene::SetScene(new CSceneMain());
+		else if (genzaiti == 2)
+			Scene::SetScene(new CSceneMap2());
+		else if (genzaiti == 3)
+			Scene::SetScene(new CSceneMap3());
+		else if (genzaiti == 4)
+			Scene::SetScene(new CSceneMap4());
+		else if (genzaiti == 5)
+			Scene::SetScene(new CSceneMap5());
+		else if (genzaiti == 6)
+			Scene::SetScene(new CSceneMap6());
 	}
 
 	

@@ -20,6 +20,16 @@ using namespace GameL;
 //コンストラクタ
 CSceneMap2::CSceneMap2()
 {
+
+}
+//デストラクタ
+CSceneMap2::~CSceneMap2()
+{
+
+}
+//初期化メソッド
+void CSceneMap2::InitScene()
+{
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 
@@ -54,19 +64,8 @@ CSceneMap2::CSceneMap2()
 
 
 	//メインシーンオブジェクト
-	CObjMain*obj_main = new CObjMain();
-	Objs::InsertObj(obj_main, OBJ_MAIN, 2);
-
-}
-//デストラクタ
-CSceneMap2::~CSceneMap2()
-{
-
-}
-//初期化メソッド
-void CSceneMap2::InitScene()
-{
-
+	//CObjMain*obj_main = new CObjMain();
+	//Objs::InsertObj(obj_main, OBJ_MAIN, 2);
 
 }
 //実行中メソッド
