@@ -56,6 +56,7 @@ enum OBJ_NAME
 	OBJ_FURNITURE36,
 	OBJ_FURNITURE37,
 	OBJ_FURNITURE38,
+	OBJ_FURNITURE39,
 	OBJ_FURNITURE40,
 	OBJ_FURNITURE41,
 	OBJ_FURNITURE42,
@@ -175,7 +176,7 @@ struct UserData
 #include "ObjFurniture15.h"
 #include "ObjFurniture16.h"
 #include "ObjFurniture17.h"
-//#include "ObjFurnirure18.h"
+#include "ObjFurniture18.h"
 #include "ObjFurniture19.h"
 #include "ObjFurniture20.h"
 #include "ObjFurniture21.h"
@@ -186,14 +187,14 @@ struct UserData
 #include "ObjFurniture26.h"
 #include "ObjFurniture27.h"
 #include "ObjFurniture28.h"
-//#include "ObjFurnirure29.h"
+#include "ObjFurniture29.h"
 #include "ObjFurniture30.h"
 #include "ObjFurniture31.h"
 #include "ObjFurniture32.h"
 #include "ObjFurniture33.h"
 #include "ObjFurniture34.h"
 #include "ObjFurniture35.h"
-//#include "ObjFurnirure36.h"
+#include "ObjFurniture36.h"
 #include "ObjFurniture37.h"
 #include "ObjFurniture38.h"
 #include "ObjFurniture39.h"
@@ -278,5 +279,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap5
+#define SET_GAME_START  CSceneMap3
 //-----------------------------------------------

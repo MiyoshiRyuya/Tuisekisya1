@@ -163,9 +163,9 @@ void CSceneMap4::InitScene()
 	CObjFurniture17*obj_Furnirure17 = new CObjFurniture17();
 	Objs::InsertObj(obj_Furnirure17, OBJ_FURNITURE17, 1);
 
-	/*/家具オブジェクト18作成
+	//家具オブジェクト18作成
 	CObjFurniture18*obj_Furnirure18 = new CObjFurniture18();
-	Objs::InsertObj(obj_Furnirure18, OBJ_FURNITURE18, 1);*/
+	Objs::InsertObj(obj_Furnirure18, OBJ_FURNITURE18, 1);
 
 	//家具オブジェクト19作成
 	CObjFurniture19*obj_Furnirure19 = new CObjFurniture19();
@@ -207,9 +207,9 @@ void CSceneMap4::InitScene()
 	CObjFurniture28*obj_Furnirure28 = new CObjFurniture28();
 	Objs::InsertObj(obj_Furnirure28, OBJ_FURNITURE28, 2);
 
-	/*/家具オブジェクト29作成
+	//家具オブジェクト29作成
 	CObjFurniture29*obj_Furnirure29 = new CObjFurniture29();
-	Objs::InsertObj(obj_Furnirure29, OBJ_FURNITURE29, 2);*/
+	Objs::InsertObj(obj_Furnirure29, OBJ_FURNITURE29, 2);
 
 	//家具オブジェクト30作成
 	CObjFurniture30*obj_Furnirure30 = new CObjFurniture30();
@@ -235,9 +235,9 @@ void CSceneMap4::InitScene()
 	CObjFurniture35*obj_Furnirure35 = new CObjFurniture35();
 	Objs::InsertObj(obj_Furnirure35, OBJ_FURNITURE35, 1);
 
-	/*/家具オブジェクト36作成
+	//家具オブジェクト36作成
 	CObjFurniture36*obj_Furnirure36 = new CObjFurniture36();
-	Objs::InsertObj(obj_Furnirure36, OBJ_FURNITURE36, 1);*/
+	Objs::InsertObj(obj_Furnirure36, OBJ_FURNITURE36, 1);
 
 	//家具オブジェクト37作成
 	CObjFurniture37*obj_Furnirure37 = new CObjFurniture37();
@@ -247,9 +247,9 @@ void CSceneMap4::InitScene()
 	CObjFurniture38*obj_Furnirure38 = new CObjFurniture38();
 	Objs::InsertObj(obj_Furnirure38, OBJ_FURNITURE38, 1);
 
-	/*/家具オブジェクト39作成
+	//家具オブジェクト39作成
 	CObjFurniture39*obj_Furnirure39 = new CObjFurniture39();
-	Objs::InsertObj(obj_Furnirure39, OBJ_FURNITURE39, 1);*/
+	Objs::InsertObj(obj_Furnirure39, OBJ_FURNITURE39, 1);
 
 	//家具オブジェクト40作成
 	CObjFurniture40*obj_Furnirure40 = new CObjFurniture40();
