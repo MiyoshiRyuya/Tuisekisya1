@@ -93,8 +93,8 @@ void CObjEnemy::Action()
 	}*/
 	//移動方向
 	//速度を付ける
-	m_vx *= 3.0f;
-	m_vy *= 3.0f;
+	m_vx *= 5.8f;
+	m_vy *= 5.8f;
 
 	//if(m_vx==false)
 	//移動ベクトルを座標に加算する

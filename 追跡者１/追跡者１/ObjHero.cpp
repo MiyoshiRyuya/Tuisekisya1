@@ -76,7 +76,7 @@ void CObjHero::Action()
 		m_sita = 0;
 		m_ue = 0;
 		m_hidari = 0;
-		m_vx += 5.0f;
+		m_vx += 3.0f;
 	}
 
 	if (Input::GetVKey('A') == true)
@@ -85,7 +85,7 @@ void CObjHero::Action()
 		m_ue = 0;
 		m_sita = 0;
 		m_migi = 0;
-		m_vx -= 5.0f;
+		m_vx -= 3.0f;
 	}
 
 	if (Input::GetVKey('W') == true)
@@ -94,7 +94,7 @@ void CObjHero::Action()
 		m_sita = 0;
 		m_migi = 0;
 		m_hidari = 0;
-		m_vy -= 5.0f;
+		m_vy -= 3.0f;
 	}
 
 	if (Input::GetVKey('S') == true)
@@ -103,7 +103,7 @@ void CObjHero::Action()
 		m_ue = 0;
 		m_migi = 0;
 		m_hidari = 0;
-		m_vy += 5.0f;
+		m_vy += 3.0f;
 	}
 
 	if (m_vx+32.0f>800.0f)
