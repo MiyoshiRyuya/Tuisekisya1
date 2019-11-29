@@ -116,6 +116,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ObjFurniture11.cpp" />
+    <ClCompile Include="ObjFurniture12.cpp" />
+    <ClCompile Include="ObjFurniture13.cpp" />
+    <ClCompile Include="ObjFurniture14.cpp" />
+    <ClCompile Include="ObjFurniture15.cpp" />
+    <ClCompile Include="ObjFurniture16.cpp" />
+    <ClCompile Include="ObjFurniture17.cpp" />
+    <ClCompile Include="ObjFurniture18.cpp" />
+    <ClCompile Include="ObjFurniture19.cpp" />
+    <ClCompile Include="ObjFurniture20.cpp" />
+    <ClCompile Include="ObjFurniture21.cpp" />
+    <ClCompile Include="ObjFurniture22.cpp" />
+    <ClCompile Include="ObjFurniture23.cpp" />
+    <ClCompile Include="objFurniture24.cpp" />
+    <ClCompile Include="ObjFurniture25.cpp" />
     <ClCompile Include="ObjFurniture33.cpp" />
     <ClCompile Include="ObjFurniture34.cpp" />
     <ClCompile Include="ObjFurniture35.cpp" />
@@ -158,66 +173,6 @@
     <ClCompile Include="GameL\WinInputs.cpp" />
     <ClCompile Include="ObjFurniture1.cpp" />
     <ClCompile Include="ObjFurniture10.cpp" />
-    <ClCompile Include="ObjFurniture11.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture12.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture13.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture14.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture15.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture16.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture17.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture18.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture19.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture20.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture21.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture22.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture23.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="objFurniture24.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture25.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture11.cpp" />
-    <ClCompile Include="ObjFurniture12.cpp" />
-    <ClCompile Include="ObjFurniture13.cpp" />
-    <ClCompile Include="ObjFurniture14.cpp" />
-    <ClCompile Include="ObjFurniture15.cpp" />
-    <ClCompile Include="ObjFurniture16.cpp" />
-    <ClCompile Include="ObjFurniture17.cpp" />
-    <ClCompile Include="ObjFurniture18.cpp" />
-    <ClCompile Include="ObjFurniture19.cpp" />
-    <ClCompile Include="ObjFurniture20.cpp" />
-    <ClCompile Include="ObjFurniture21.cpp" />
-    <ClCompile Include="ObjFurniture22.cpp" />
-    <ClCompile Include="ObjFurniture23.cpp" />
-    <ClCompile Include="objFurniture24.cpp" />
-    <ClCompile Include="ObjFurniture25.cpp" />
     <ClCompile Include="ObjFurniture26.cpp" />
     <ClCompile Include="ObjFurniture27.cpp" />
     <ClCompile Include="ObjFurniture28.cpp" />
@@ -273,7 +228,7 @@
     <ClCompile Include="SceneEquipped2.cpp" />
     <ClCompile Include="SceneEquipped3.cpp" />
     <ClCompile Include="SceneGameClear.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneItem.cpp" />
