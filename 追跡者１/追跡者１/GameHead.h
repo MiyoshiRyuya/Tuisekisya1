@@ -56,7 +56,7 @@ enum OBJ_NAME
 	OBJ_FURNITURE36,
 	OBJ_FURNITURE37,
 	OBJ_FURNITURE38,
-    OBJ_FURNITURE39,
+	OBJ_FURNITURE39,
 	OBJ_FURNITURE40,
 	OBJ_FURNITURE41,
 	OBJ_FURNITURE42,
@@ -279,5 +279,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap5
+#define SET_GAME_START  CSceneMap3
 //-----------------------------------------------
