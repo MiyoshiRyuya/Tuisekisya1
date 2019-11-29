@@ -101,7 +101,7 @@ void CObjEnemy::Action()
 	m_x += m_vx;
 	m_y += m_vy;
 
-	if (m_ani_time > m_ani_max_time)
+	/*if (m_ani_time > m_ani_max_time)
 	{
 		m_ani_frame - 1;
 		m_ani_time = 0;
@@ -113,7 +113,7 @@ void CObjEnemy::Action()
 	}
 
 	//敵オブジェクトと接触したら主人公削除
-	/*
+	
 	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
 		g_xz = 600;
