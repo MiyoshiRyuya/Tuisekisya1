@@ -31,7 +31,9 @@ CSceneCloset::~CSceneCloset()
 //ゲームメイン初期化メソッド
 void CSceneCloset::InitScene()
 {
-
+	//クローゼットオブジェクト
+	CObjCloset*obj_closet = new CObjCloset();
+	Objs::InsertObj(obj_closet, OBJ_CLOSET, 1);
 }
 
 //ゲームメイン実行中メソッド

@@ -8,6 +8,7 @@
 #include "GameHead.h"
 #include "ObjHero.h"
 #include "ObjMenu.h"
+#include "ObjCloset.h"
 
 
 //使用するネームスペース
@@ -38,7 +39,7 @@ void CObjHero::Init()
 	m_hit_left = false;
 	m_hit_right = false;
 
-	//�����蔻��p��HitBox��쐬
+	
 	Hits::SetHitBox(this, m_vx, m_vy, 64, 64, ELEMENT_PLAYER, OBJ_HERO, 1);
 
 }
@@ -115,7 +116,6 @@ void CObjHero::Action()
 	{
 		Scene::SetScene(new CSceneMenu());
 	}
-
 
 
 	//位置の更新
@@ -243,6 +243,21 @@ void CObjHero::Action()
 		g_Yz = 70;
 
 		Scene::SetScene(new CSceneMain());
+	}
+
+	//
+	if (hit->CheckObjNameHit(OBJ_CLOSET) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+			//this->SetStatus(false);
+			Hits::DeleteHitBox(this);
+
+			g_Xz = 70;
+			g_Yz = 70;
+
+			Scene::SetScene(new CSceneCloset());
+		}
+
 	}
 
 	//Furnitureに当たると謎解き画面に移動
