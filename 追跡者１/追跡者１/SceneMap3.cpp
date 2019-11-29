@@ -7,6 +7,7 @@
 #include "GameL\DrawTexture.h"
 #include "GameL\DrawFont.h"
 #include "GameL\UserData.h"
+#include "GameL\Audio.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -14,6 +15,7 @@ using namespace GameL;
 #include "SceneMain.h"
 #include "GameHead.h"
 #include"SceneMap3.h"
+#include "ObjCloset.h"
 
 
 //コンストラクタ
@@ -33,7 +35,7 @@ void CSceneMap3::InitScene()
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 
 	//外部グラフィックファイルを読み込み2番目に登録(512*512pixel)
-	Draw::LoadImage(L"KitchenFloorEX.png", 2, TEX_SIZE_512);
+	Draw::LoadImage(L"FloorEX.png", 2, TEX_SIZE_512);
 
 	//外部グラフィックファイルを読み込み5番目に登録
 	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
@@ -55,6 +57,10 @@ void CSceneMap3::InitScene()
 	//トラップオブジェクト
 	CObjtrap*obj_trap = new CObjtrap(542,292);
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
+
+	//クローゼットオブジェクト
+	CObjCloset*obj_closet = new CObjCloset();
+	Objs::InsertObj(obj_closet, OBJ_CLOSET, 1);
 
 	
 

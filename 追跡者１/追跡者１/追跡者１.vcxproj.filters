@@ -534,6 +534,9 @@
     <ClCompile Include="SceneGameClear.cpp">
       <Filter>ソース ファイル\GameClear</Filter>
     </ClCompile>
+    <ClCompile Include="ObjFurniture11.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
     <ClCompile Include="ObjFurniture12.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>

@@ -15,6 +15,8 @@
 //使用するネームスペース
 using namespace GameL;
 
+extern float genzaiti; //現在地
+
 //イニシャライズ
 void CObjMap2::Init()
 {
@@ -44,6 +46,7 @@ void CObjMap2::Action()
 	CHitBox*hitoo = Hits::GetHitBox(this);
 	hito->SetPos(kx, ky);
 
+	genzaiti = 2;
 }
 
 //ドロー

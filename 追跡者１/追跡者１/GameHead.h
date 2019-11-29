@@ -75,10 +75,6 @@ enum OBJ_NAME
 	OBJ_MAIN,
 
 	//マップ移動用
-	OBJ_MOVE1,
-	OBJ_MOVE2,
-	OBJ_MOVE3,
-	OBJ_MOVE4,
 	OBJ_MOVE5,
 
 	//システム
@@ -101,12 +97,17 @@ enum OBJ_NAME
 	//タイトル系
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
+	OBJ_GAME_CLEAR,
 
-
+	//マップ移動用
+	OBJ_MOVE1,
+	OBJ_MOVE2,
+	OBJ_MOVE3,
+	OBJ_MOVE4,
+	OBJ_MOVE6,
 
 	//出口
 	OBJ_ESC,
-
 };
 //------------------------------------------------
 
@@ -140,7 +141,9 @@ struct UserData
 
 
 //ゲーム内で使用されるグローバル変数・定数・列挙--
-
+extern float g_Xz; //主人公
+extern float g_Yz;
+extern float genzaiti; //現在地
 
 
 //------------------------------------------------
@@ -242,12 +245,14 @@ struct UserData
 
 #include "ObjTitle.h"
 #include "ObjGameOver.h"
+#include "ObjGameClear.h"
 //------------------------------------------------
 
 //ゲームシーンクラスヘッダ------------------------
 #include "SceneMain.h"
 #include "SceneTitle.h"
 #include "SceneGameOver.h"
+#include "SceneGameClear.h"
 #include"SceneMenu.h"
 
 

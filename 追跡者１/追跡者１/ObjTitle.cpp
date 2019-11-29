@@ -36,7 +36,7 @@ void CObjTitle::Action()
 		if (m_mou_l == true)
 		{
 			Audio::Start(1);
-			Scene::SetScene(new CSceneMain());
+			Scene::SetScene(new CSceneMap5());
 		}
 	}
 
