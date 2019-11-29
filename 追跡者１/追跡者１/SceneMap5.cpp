@@ -33,6 +33,7 @@ void CSceneMap5::InitScene()
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 
+
 	//外部グラフィックファイルを読み込み6番目に登録
 	Draw::LoadImage(L"Hari.png", 6, TEX_SIZE_64);
 
@@ -61,6 +62,7 @@ void CSceneMap5::InitScene()
 	//トラップオブジェクト
 	//CObjtrap*obj_trap = new CObjtrap();
 	//Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
+
 
 }
 //実行中メソッド

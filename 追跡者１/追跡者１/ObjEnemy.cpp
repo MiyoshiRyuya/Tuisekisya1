@@ -2,6 +2,8 @@
 #include"GameL/WinInputs.h"
 #include"GameL/SceneManager.h"
 #include"GameL/HitBoxManager.h"
+#include"GameL\Audio.h"
+
 
 #include"GameHead.h"
 #include"ObjEnemy.h"
@@ -31,6 +33,7 @@ void CObjEnemy::Action()
 {
 	//m_x = m_ex;
 	//m_y = m_ey;
+
 
 	
 	//	現在の位置を保存する
@@ -111,15 +114,17 @@ void CObjEnemy::Action()
 	{
 		m_ani_frame = 0;
 	}
-
+	*/
 	//敵オブジェクトと接触したら主人公削除
 	
 	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
+	
 		g_xz = 600;
 		g_yz = 400;
+
 	}
-	*/
+	
 }
 void CObjEnemy::Draw()
 {
