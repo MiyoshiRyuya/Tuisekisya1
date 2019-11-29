@@ -207,6 +207,20 @@ void CObjHero::Action()
 		m_py = 0.0f;
 	}
 
+	if (hit->CheckObjNameHit(OBJ_CLOSET) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+			//this->SetStatus(false);
+			Hits::DeleteHitBox(this);
+
+			g_Xz = 70;
+			g_Yz = 70;
+
+			Scene::SetScene(new CSceneCloset());
+		}
+
+	}
+
 	
 	if (hit->CheckObjNameHit(OBJ_MAP2) != nullptr)
 	{
@@ -304,7 +318,7 @@ void CObjHero::Action()
 			g_Xz = 100;
 			g_Yz = 120;
 
-			Scene::SetScene(new CSceneTitle());
+			Scene::SetScene(new CSceneGameClear());
 		}
 	}
 }

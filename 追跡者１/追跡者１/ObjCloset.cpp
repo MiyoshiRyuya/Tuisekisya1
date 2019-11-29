@@ -22,7 +22,6 @@ void CObjCloset::Init()
 //ƒAƒNƒVƒ‡ƒ“
 void CObjCloset::Action()
 {
-
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
 
