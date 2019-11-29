@@ -18,6 +18,8 @@ using namespace GameL;
 extern float g_Xz;
 extern float g_Yz;
 
+extern float genzaiti; //現在地
+
 //イニシャライズ
 void CObjMap6::Init()
 {
@@ -59,6 +61,7 @@ void CObjMap6::Action()
 		g_Xz = 400;
 		g_Yz = 300;
 	}*/
+	genzaiti = 6;
 }
 
 //ドロー

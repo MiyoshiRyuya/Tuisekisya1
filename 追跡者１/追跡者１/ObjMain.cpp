@@ -8,6 +8,9 @@
 
 using namespace GameL;
 
+
+extern float genzaiti; //Œ»Ý’n
+
 void CObjMain::Init()
 {
 	m_x = 500;
@@ -21,6 +24,8 @@ void CObjMain::Action()
 {
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x + 10, m_y + 10);
+
+	genzaiti = 1;
 }
 
 void CObjMain::Draw()

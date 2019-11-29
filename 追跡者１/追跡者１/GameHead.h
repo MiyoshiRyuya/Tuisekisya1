@@ -104,6 +104,7 @@ enum OBJ_NAME
 	OBJ_MOVE2,
 	OBJ_MOVE3,
 	OBJ_MOVE4,
+	OBJ_MOVE6,
 
 	//出口
 	OBJ_ESC,
@@ -142,6 +143,7 @@ struct UserData
 //ゲーム内で使用されるグローバル変数・定数・列挙--
 extern float g_Xz; //主人公
 extern float g_Yz;
+extern float genzaiti; //現在地
 
 
 //------------------------------------------------
