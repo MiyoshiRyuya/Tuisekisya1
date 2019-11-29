@@ -17,5 +17,7 @@ public:
 private:
 	float m_x;
 	float m_y;
+	float m_xx; //ПoМы
+	float m_yy;
 
 };

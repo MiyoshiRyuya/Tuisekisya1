@@ -11,7 +11,7 @@
 #include "Map3.h"
 #include "ObjHero.h"
 #include "Objtrap.h"
-#include"ObjFurniture3.h"
+#include "ObjCloset.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -22,7 +22,7 @@ void CObjMap3::Init()
 	m_x = 400;
 	m_y = 100;
 
-	Hits::SetHitBox(this, m_x + 20, m_y + 10, 70, 70, ELEMENT_BLUE, OBJ_FURNITURE6, 1);
+	Hits::SetHitBox(this, m_x + 10, m_y + 10, 32, 32, ELEMENT_BLUE, OBJ_MAP3, 3);
 
 }
 
@@ -77,21 +77,18 @@ void CObjMap3::Draw()
 		//描画
 		Draw::Draw(9, &src, &dst, c, 0.0f);
 	
-		src.m_top = 0.0f;
-		src.m_left = 81.0f;
-		src.m_right = 0.0f;
-		src.m_bottom = 66.0f;
+		//切り取り位置の設定
+		src.m_top = 250.0f;
+		src.m_left = 0.0f;
+		src.m_right = 65.0f;
+		src.m_bottom = 430.0f;
 
-		dst.m_top = 0.0f + m_y;
-		dst.m_left = 81.0f + m_x;
-		dst.m_right = 0.0f + m_x;
-		dst.m_bottom = 66.0f + m_y;
+		//表示位置の設定
+		dst.m_top    = 150.0f;
+		dst.m_left   = 300.0f;
+		dst.m_right  = 380.0f;
+		dst.m_bottom = 350.0f;
 
-
-		Draw::Draw(8, &src, &dst, c, 0.0f);
-
-	
-
-		
-
+		//描画
+		Draw::Draw(11, &src, &dst, c, 0.0f);
 }
