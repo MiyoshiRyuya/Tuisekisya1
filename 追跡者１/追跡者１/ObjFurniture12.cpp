@@ -10,7 +10,7 @@ using namespace GameL;
 
 void CObjFurniture12::Init()
 {
-	m_x = 280;
+	m_x = 1000;
 	m_y = 150;
 
 	Hits::SetHitBox(this, m_x + 10, m_y + 10, 70, 100, ELEMENT_BLUE, OBJ_MAP6, 1);

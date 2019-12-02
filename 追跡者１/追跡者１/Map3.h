@@ -17,5 +17,10 @@ public:
 private:
 	float m_x;
 	float m_y;
-
+	float v_x;
+	float v_y;
+	float mx;
+	float my;
+	float px;
+	float py;
 };
