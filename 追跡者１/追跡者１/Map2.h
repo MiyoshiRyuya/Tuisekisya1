@@ -15,10 +15,12 @@ public:
 	void Draw();
 
 private:
-	float m_x;
+	float m_x;//ˆÖq
 	float m_y;
-	float ax;
+	float ax;//Š÷
 	float ay;
-	float kx;
+	float kx;//A–Ø
 	float ky;
+	float bx;//•Ç
+	float by;
 };

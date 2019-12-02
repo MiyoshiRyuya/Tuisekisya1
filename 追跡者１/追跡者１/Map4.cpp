@@ -19,6 +19,8 @@
 //使用するネームスペース
 using namespace GameL;
 
+extern float genzaiti; //現在地
+
 //イニシャライズ
 void CObjMap4::Init()
 {
@@ -26,6 +28,8 @@ void CObjMap4::Init()
 	m_x = 371;
 	m_y = 0;
 
+
+	//移動関連
 	Hits::SetHitBox(this, m_x + 10, m_y + 10, 0, 0, ELEMENT_BLUE, OBJ_MAP4, 3);
 	Hits::SetHitBox(this, m_x + 10, m_y + 10, 50, 50, ELEMENT_RED, OBJ_MOVE4, 3);
 
@@ -39,7 +43,7 @@ void CObjMap4::Action()
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x + 10, m_y + 10);
 	
-
+	genzaiti = 4;
 	
 }
 

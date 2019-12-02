@@ -17,6 +17,7 @@ enum OBJ_NAME
 	OBJ_TRAP3,
 	OBJ_TRAP4,
 
+	//家具
 	OBJ_FURNITURE,
 	OBJ_FURNITURE1,
 	OBJ_FURNITURE2,
@@ -56,11 +57,15 @@ enum OBJ_NAME
 	OBJ_FURNITURE36,
 	OBJ_FURNITURE37,
 	OBJ_FURNITURE38,
+	OBJ_FURNITURE39,
 	OBJ_FURNITURE40,
 	OBJ_FURNITURE41,
 	OBJ_FURNITURE42,
 	OBJ_FURNITURE43,
+
+
 	
+	//マップ
 	OBJ_MAP,
 	OBJ_MAP2,
 	OBJ_MAP3,
@@ -70,10 +75,6 @@ enum OBJ_NAME
 	OBJ_MAIN,
 
 	//マップ移動用
-	OBJ_MOVE1,
-	OBJ_MOVE2,
-	OBJ_MOVE3,
-	OBJ_MOVE4,
 	OBJ_MOVE5,
 
 	//システム
@@ -98,11 +99,15 @@ enum OBJ_NAME
 	OBJ_GAME_OVER,
 	OBJ_GAME_CLEAR,
 
-
+	//マップ移動用
+	OBJ_MOVE1,
+	OBJ_MOVE2,
+	OBJ_MOVE3,
+	OBJ_MOVE4,
+	OBJ_MOVE6,
 
 	//出口
 	OBJ_ESC,
-
 };
 //------------------------------------------------
 
@@ -136,7 +141,9 @@ struct UserData
 
 
 //ゲーム内で使用されるグローバル変数・定数・列挙--
-
+extern float g_Xz; //主人公
+extern float g_Yz;
+extern float genzaiti; //現在地
 
 
 //------------------------------------------------
@@ -175,7 +182,7 @@ struct UserData
 #include "ObjFurniture15.h"
 #include "ObjFurniture16.h"
 #include "ObjFurniture17.h"
-//#include "ObjFurnirure18.h"
+#include "ObjFurniture18.h"
 #include "ObjFurniture19.h"
 #include "ObjFurniture20.h"
 #include "ObjFurniture21.h"
@@ -186,14 +193,14 @@ struct UserData
 #include "ObjFurniture26.h"
 #include "ObjFurniture27.h"
 #include "ObjFurniture28.h"
-//#include "ObjFurnirure29.h"
+#include "ObjFurniture29.h"
 #include "ObjFurniture30.h"
 #include "ObjFurniture31.h"
 #include "ObjFurniture32.h"
 #include "ObjFurniture33.h"
 #include "ObjFurniture34.h"
 #include "ObjFurniture35.h"
-//#include "ObjFurnirure36.h"
+#include "ObjFurniture36.h"
 #include "ObjFurniture37.h"
 #include "ObjFurniture38.h"
 #include "ObjFurniture39.h"
@@ -201,6 +208,11 @@ struct UserData
 #include "ObjFurniture41.h"
 #include "ObjFurniture42.h"
 #include "ObjFurniture43.h"
+
+
+
+
+
 
 //マップ
 #include "ObjMap.h"

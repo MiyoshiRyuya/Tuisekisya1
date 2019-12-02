@@ -2,6 +2,8 @@
 #include"GameL/WinInputs.h"
 #include"GameL/SceneManager.h"
 #include"GameL/HitBoxManager.h"
+#include"GameL\Audio.h"
+
 
 #include"GameHead.h"
 #include"ObjEnemy.h"
@@ -31,6 +33,7 @@ void CObjEnemy::Action()
 {
 	//m_x = m_ex;
 	//m_y = m_ey;
+
 
 	
 	//	現在の位置を保存する
@@ -93,8 +96,8 @@ void CObjEnemy::Action()
 	}*/
 	//移動方向
 	//速度を付ける
-	m_vx *= 3.0f;
-	m_vy *= 3.0f;
+	m_vx *= 5.8f;
+	m_vy *= 5.8f;
 
 	//if(m_vx==false)
 	//移動ベクトルを座標に加算する
@@ -111,15 +114,17 @@ void CObjEnemy::Action()
 	{
 		m_ani_frame = 0;
 	}
-
+	*/
 	//敵オブジェクトと接触したら主人公削除
 	
 	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
+	
 		g_xz = 600;
 		g_yz = 400;
+
 	}
-	*/
+	
 }
 void CObjEnemy::Draw()
 {
