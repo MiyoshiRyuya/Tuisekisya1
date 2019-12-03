@@ -302,11 +302,25 @@ void CObjHero::Action()
 
 			//Audio::Start(1);
 			g_Xz = 305;
-			g_Yz = 536;
+			g_Yz = 500;
 
 			Scene::SetScene(new CSceneMap2());
 		
 	}
+	else if (hit->CheckObjNameHit(OBJ_MOVE7) != nullptr)
+	{
+
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		//Audio::Start(1);
+		g_Xz = 350;
+		g_Yz = 36;
+
+		Scene::SetScene(new CSceneMap5());
+
+	}
+
 	else if (hit->CheckObjNameHit(OBJ_MOVE4) != nullptr)
 	{
 		if (Input::GetVKey(VK_RETURN) == true) {
