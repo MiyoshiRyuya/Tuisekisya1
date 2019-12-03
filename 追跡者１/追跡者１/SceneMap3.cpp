@@ -52,7 +52,9 @@ void CSceneMap3::InitScene()
 	//外部グラフィックファイルを読み込み3番目に登録
 	Draw::LoadImage(L"Hari.png", 3, TEX_SIZE_64);
 
-	Draw::LoadImage(L"Skull.png", 8, TEX_SIZE_64);
+	Draw::LoadImage(L"bed.png", 13, TEX_SIZE_64);
+
+	Draw::LoadImage(L"SofaandTable.png", 14, TEX_SIZE_64);
 
 	//トラップオブジェクト
 	CObjtrap*obj_trap = new CObjtrap(542,292);
@@ -62,9 +64,7 @@ void CSceneMap3::InitScene()
 	CObjCloset*obj_closet = new CObjCloset();
 	Objs::InsertObj(obj_closet, OBJ_CLOSET, 1);
 
-	
 
-	
 
 	//マップ背景オブジェクト1作成
 	CObjMap3*map3 = new CObjMap3();

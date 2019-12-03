@@ -13,11 +13,15 @@ using namespace GameL;
 //イニシャライズ
 void CObjCloset::Init()
 {
-	m_x = 0;
+	m_x = 20;
 	m_y = 0;
+	v_x = 0;
+	v_y = 0;
 
-	Hits::SetHitBox(this, m_x, m_y, 100, 100, ELEMENT_RED, OBJ_CLOSET, 11);
+	Hits::SetHitBox(this, m_x, m_y, 160, 130, ELEMENT_RED, OBJ_CLOSET, 11);
 }
+
+
 
 //アクション
 void CObjCloset::Action()

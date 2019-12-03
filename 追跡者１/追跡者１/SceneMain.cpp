@@ -86,6 +86,9 @@ void CSceneMain::InitScene()
 	//外部グラフィックファイルを読み込み12番目に登録(512*512pixel)
 	Draw::LoadImage(L"KitchenFloor.png", 12, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み11番目に登録
+	Draw::LoadImage(L"bed.png", 13, TEX_SIZE_64);
+
 
 
 
@@ -169,9 +172,7 @@ void CSceneMain::InitScene()
 	CObjFurniture10*obj_Furnirure10 = new CObjFurniture10();
 	Objs::InsertObj(obj_Furnirure10, OBJ_FURNITURE10, 1);
 
-
-
-
+	
 
 	//マップ背景オブジェクト1作成
 	CObjMap*obj_map = new CObjMap();
