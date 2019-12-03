@@ -25,4 +25,6 @@ private:
 	float ky;
 	float bx;//•Ç
 	float by;
+	float idouX;
+	float idouY;
 };
