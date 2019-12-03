@@ -106,6 +106,7 @@ enum OBJ_NAME
 	OBJ_MOVE4,
 	OBJ_MOVE6,
 	OBJ_MOVE7,
+	OBJ_MOVE8,
 
 	//出口
 	OBJ_ESC,
@@ -291,5 +292,5 @@ extern float genzaiti; //現在地
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap3
+#define SET_GAME_START  CSceneMap2
 //-----------------------------------------------

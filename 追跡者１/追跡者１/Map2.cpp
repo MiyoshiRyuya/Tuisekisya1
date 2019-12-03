@@ -40,6 +40,9 @@ void CObjMap2::Init()
 	by = 0;
 	Hits::SetHitBox(this, bx, by, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
 
+	idouX = 0;
+	idouY = 0;
+	Hits::SetHitBox(this, idouX + 770, idouY + 250, 30, 100, ELEMENT_BLUE, OBJ_MOVE8, 1);
 }
 
 //ƒAƒNƒVƒ‡ƒ“
