@@ -320,7 +320,19 @@ void CObjHero::Action()
 			Scene::SetScene(new CSceneMap5());
 		}
 	}
+	else if (hit->CheckObjNameHit(OBJ_MOVE7) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+			//this->SetStatus(false);
+			Hits::DeleteHitBox(this);
 
+			//Audio::Start(1);
+			g_Xz = 800;
+			g_Yz = 310;
+
+			Scene::SetScene(new CSceneMap2());
+		}
+	}
 	//ここが反応するとゲームクリア
 	else if (hit->CheckObjNameHit(OBJ_ESC) != nullptr)
 	{

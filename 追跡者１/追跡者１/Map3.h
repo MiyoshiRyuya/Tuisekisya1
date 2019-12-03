@@ -23,4 +23,6 @@ private:
 	float my;
 	float px;
 	float py;
+	float idouX;
+	float idouY;
 };
