@@ -7,6 +7,7 @@
 #include "GameL\SceneManager.h"
 #include "GameL\SceneObjManager.h"
 #include"GameL/HitBoxManager.h"
+#include "GameL\Audio.h"
 
 #include "GameHead.h"
 #include "Map4.h"
@@ -39,7 +40,7 @@ void CObjMap4::Init()
 //ƒAƒNƒVƒ‡ƒ“
 void CObjMap4::Action()
 {
-	
+
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x + 10, m_y + 10);
 	
