@@ -245,6 +245,7 @@ extern float genzaiti; //åªç›ín
 #include"SceneMap6.h"
 #include"SceneMenu2.h"
 
+#include"SceneMenu2.h"
 #include"SceneCloset.h"
 #include"SceneTo solve mystery.h"
 //-----------------------------------------------
