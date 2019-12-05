@@ -19,6 +19,8 @@ using namespace GameL;
 float g_Xz=100;
 float g_Yz=120;
 
+//extern float genzaiti; //現在地
+
 //イニシャライズ
 void CObjHero::Init()
 {
@@ -64,11 +66,7 @@ void CObjHero::Action()
 	g_Xz = m_x;
 	g_Yz = m_y;
 
-	//Eボタンを押すとゲーム画面に移動する
-	if (Input::GetVKey('M') == true)
-	{
-		Scene::SetScene(new CSceneMenu());
-	}
+
 
 	//キーの入力方向
 	if (Input::GetVKey('D') == true)

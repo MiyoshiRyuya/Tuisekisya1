@@ -78,19 +78,6 @@ enum OBJ_NAME
 	OBJ_MOVE5,
 
 	//システム
-	OBJ_MENU,
-	OBJ_MAINSAVE,
-	OBJ_SAVE1,
-	OBJ_SAVE2,
-	OBJ_SAVE3,
-	OBJ_ITEM,
-	OBJ_MAINROAD,
-	OBJ_ROAD1,
-	OBJ_ROAD2,
-	OBJ_ROAD3,
-	OBJ_EQUIPPED,
-	OBJ_EQUIPPED2,
-	OBJ_EQUIPPED3,
 	OBJ_TOSOLVEMYATERY,
 	OBJ_CLOSET,
 
@@ -227,23 +214,7 @@ extern float genzaiti; //現在地
 #include "Map6.h"
 #include "ObjMain.h"
 
-#include"ObjMenu.h"
-#include"ObjmainSave.h"
-#include"ObjSave1.h"
-#include"ObjSave2.h"
-#include"ObjSave3.h"
-
-#include"ObjItem.h"
 #include"ObjCloset.h"
-
-#include"ObjmainRoad.h"
-#include"ObjRoad1.h"
-#include"ObjRoad2.h"
-#include"ObjRoad3.h"
-
-#include"ObjEquipped.h"
-#include"OBJEquipped2.h"
-#include"OBJEquipped3.h"
 
 #include"ObjTo solve mystery.h"
 
@@ -259,22 +230,6 @@ extern float genzaiti; //現在地
 #include "SceneGameClear.h"
 #include"SceneMenu.h"
 
-
-#include"ScenemainSave.h"
-#include"SceneSave1.h"
-#include"SceneSave2.h"
-#include"SceneSave3.h"
-
-
-#include"SceneItem.h"
-
-
-#include"ScenemainRoad.h"
-#include"SceneRoad1.h"
-#include"SceneRoad2.h"
-#include"SceneRoad3.h"
-
-
 #include"SceneMap.h"
 #include"SceneMap2.h"
 #include"SceneMap3.h"
@@ -282,17 +237,11 @@ extern float genzaiti; //現在地
 #include"SceneMap5.h"
 #include"SceneMap6.h"
 
-
-#include"SceneEquipped.h"
-#include"SceneEquipped2.h"
-#include"SceneEquipped3.h"
-
-
 #include"SceneCloset.h"
 #include"SceneTo solve mystery.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap6
+#define SET_GAME_START  CSceneMap5
 //-----------------------------------------------

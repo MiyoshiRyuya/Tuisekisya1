@@ -5,31 +5,41 @@
 #include"GameL\Audio.h"
 #include<time.h>
 
-
 #include"GameHead.h"
 #include"ObjEnemy.h"
 
 
 using namespace GameL;
 
-float g_xz=600;
-float g_yz=400;
-int s,ss;
+float g_xz=0;
+float g_yz=0;
+
 
 void CObjEnemy::Init()
 {
-	srand(time(NULL));
+	int px;           //“Gƒ‰ƒ“ƒ_ƒ€
+	int py;
 
-	s = rand() % 801;
-
-	m_x = s;
-	m_y = ss;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
 	m_len = 0.0f;
 	m_ani_time = 0;
 	m_ani_frame = 1;
+
+	CObjHero* obj = (CObjHero*)Objs::GetObj(OBJ_HERO);
 	
+
+	do
+	{
+		srand(time(NULL));
+
+		px = rand() % 801; 
+
+		py = rand() % 501; 
+
+		m_x = px;
+		m_y = py;
+	} while ((128 + obj->GetX() < m_x || 128 - obj->GetX() > m_x) && (192 + obj->GetY() < m_y || 128 - obj->GetY() > m_y));
 
 	m_ani_max_time = 4;
 

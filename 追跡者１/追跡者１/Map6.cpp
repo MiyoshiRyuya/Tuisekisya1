@@ -168,4 +168,5 @@ void CObjMap6::Draw()
 
 	//•`‰æ
 	Draw::Draw(11, &src, &dst, c, 0.0f);
+
 }

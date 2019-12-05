@@ -15,7 +15,7 @@ using namespace GameL;
 #include"SceneMap2.h"
 #include "SceneMain.h"
 #include "ObjFurniture.h"
-
+#include<time.h>
 
 //コンストラクタ
 CSceneMap2::CSceneMap2()
@@ -39,6 +39,9 @@ void CSceneMap2::InitScene()
 	//外部グラフィックファイルを読み込み2番目に登録(512*512pixel)
 	Draw::LoadImage(L"FloorEX3.png", 2, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み5番目に登録
+	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
+
 	//外部グラフィックファイルを読み込み9番目に登録
 	Draw::LoadImage(L"kabe1.png", 9, TEX_SIZE_512);
 
@@ -57,6 +60,15 @@ void CSceneMap2::InitScene()
 	//マップ背景オブジェクト1作成
 	CObjMap*obj_map = new CObjMap();
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
+
+	srand(time(NULL));
+
+	int s = rand() % 2 + 1; //50％の確立で敵出現
+	if (s == 1)
+	{
+		CObjEnemy*obj_enemy = new CObjEnemy();
+		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
+	}
 
 }
 //実行中メソッド

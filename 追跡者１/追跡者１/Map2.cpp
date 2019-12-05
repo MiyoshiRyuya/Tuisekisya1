@@ -14,8 +14,7 @@
 
 //使用するネームスペース
 using namespace GameL;
-
-extern float genzaiti; //現在地
+float genzaiti; //現在地
 
 //イニシャライズ
 void CObjMap2::Init()
