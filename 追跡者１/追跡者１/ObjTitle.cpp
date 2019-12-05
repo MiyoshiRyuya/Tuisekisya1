@@ -40,7 +40,7 @@ void CObjTitle::Action()
 		}
 	}
 
-	//マウスの位置とクリックする場所で当たり判定
+	/*/マウスの位置とクリックする場所で当たり判定
 	if (m_mou_x > 355 && m_mou_x < 445 && m_mou_y>400 && m_mou_y < 420)
 	{
 		//マウスの左が押されたらロード画面に移動する
@@ -48,7 +48,7 @@ void CObjTitle::Action()
 		{
 			Scene::SetScene(new CScenemainRoad());
 		}
-	}
+	}*/
 }
 
 //ドロー
@@ -78,5 +78,5 @@ void CObjTitle::Draw()
 
 
 	Font::StrDraw(L"NEW GAME", 360, 350, 23, c);
-	Font::StrDraw(L"CONTINUE", 360, 410, 23, c);
+	//Font::StrDraw(L"CONTINUE", 360, 410, 23, c);
 }

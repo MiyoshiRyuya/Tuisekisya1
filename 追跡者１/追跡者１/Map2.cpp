@@ -20,6 +20,10 @@ extern float genzaiti; //現在地
 //イニシャライズ
 void CObjMap2::Init()
 {
+	x=0;
+	y=0;
+	Hits::SetHitBox(this, x+=300, y += 590, 150, 10, ELEMENT_RED, OBJ_MOVE7, 1);
+
 	m_x = 0;
 	m_y = 350;
 	Hits::SetHitBox(this, m_x, m_y + 10, 60, 50, ELEMENT_GREEN, OBJ_MAP6, 2);
@@ -38,13 +42,23 @@ void CObjMap2::Init()
 
 	bx = 0;
 	by = 0;
-	Hits::SetHitBox(this, bx, by, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
+	Hits::SetHitBox(this, bx, by, 800, 110, ELEMENT_GREEN, OBJ_MAP4, 1);
+
+	idouX = 0;
+	idouY = 0;
+	Hits::SetHitBox(this, idouX + 770, idouY + 250, 30, 100, ELEMENT_BLUE, OBJ_MOVE9, 1);
+
+	mx = 0;
+	my = 0;
+	Hits::SetHitBox(this, mx + 0, my + 250, 30, 100, ELEMENT_BLUE, OBJ_MOVE10, 1);
 
 }
 
 //アクション
 void CObjMap2::Action()
 {
+
+	genzaiti = 2;
 
 }
 

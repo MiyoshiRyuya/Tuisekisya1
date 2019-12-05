@@ -25,6 +25,22 @@ void CObjMenu::Init()
 	m_mou_y = (float)Input::GetPosY();
 }
 
+/*イニシャライズ
+void CObjHero::Init()
+{
+	m_px = g_Xz; //移動
+	m_py = g_Yz;
+	m_vx;//移動ベクトル
+	m_vy;
+	m_hidari; //左向き
+	m_ue; //上
+	m_sita = 1; //下
+	m_migi; //右
+	m_mos_x = 0.0f;
+	m_mos_y = 0.0f;
+	hitbo = 0; //HitBox確認用
+}*/
+
 //アクション
 void CObjMenu::Action()
 {
