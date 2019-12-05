@@ -321,8 +321,8 @@ void CObjHero::Action()
 			Hits::DeleteHitBox(this);
 
 			//Audio::Start(1);
-			g_Xz = 800;
-			g_Yz = 310;
+			g_Xz = 370;
+			g_Yz = 100;
 
 			Scene::SetScene(new CSceneMap5());
 		}
@@ -360,7 +360,7 @@ void CObjHero::Action()
 		Hits::DeleteHitBox(this);
 
 		//Audio::Start(1);
-		g_Xz = 800;
+		g_Xz = 0;
 		g_Yz = 310;
 
 		Scene::SetScene(new CSceneMain());
@@ -373,8 +373,34 @@ void CObjHero::Action()
 		Hits::DeleteHitBox(this);
 
 		//Audio::Start(1);
-		g_Xz = 800;
+		g_Xz = 700;
 		g_Yz = 310;
+
+		Scene::SetScene(new CSceneMain());
+	}
+	}
+	else if (hit->CheckObjNameHit(OBJ_MOVE12) != nullptr)
+	{
+	if (Input::GetVKey(VK_RETURN) == true) {
+		//this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		//Audio::Start(1);
+		g_Xz = 0;
+		g_Yz = 290;
+
+		Scene::SetScene(new CSceneMap2());
+	}
+	}
+	else if (hit->CheckObjNameHit(OBJ_MOVE13) != nullptr)
+	{
+	if (Input::GetVKey(VK_RETURN) == true) {
+		//this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		//Audio::Start(1);
+		g_Xz = 0;
+		g_Yz = 290;
 
 		Scene::SetScene(new CSceneMap2());
 	}

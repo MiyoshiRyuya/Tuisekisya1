@@ -6,6 +6,8 @@
 #include "GameL\DrawTexture.h"
 #include "GameL\DrawFont.h"
 #include "GameL\UserData.h"
+#include "GameL\HitBoxManager.h"
+
 
 //使用するネームスペース
 using namespace GameL;
@@ -46,6 +48,12 @@ void CSceneMain::InitScene()
 			count += 2;
 		}
 	}
+
+	x = 0;
+	y = 0;
+	Hits::SetHitBox(this, x =- 10, y +=250, 80, 120, ELEMENT_RED, OBJ_MOVE12, 1);
+
+
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
