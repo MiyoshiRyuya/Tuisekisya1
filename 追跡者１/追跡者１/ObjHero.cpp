@@ -112,12 +112,6 @@ void CObjHero::Action()
 		m_vx = 800.0f - 32.0f;
 	}
 
-	/*//Mキーを押すとゲーム画面に移動する
-	if (Input::GetVKey('M') == true)
-	{
-		Scene::SetScene(new CSceneMenu());
-	}*/
-
 
 	//位置の更新
 	m_px += m_vx;
