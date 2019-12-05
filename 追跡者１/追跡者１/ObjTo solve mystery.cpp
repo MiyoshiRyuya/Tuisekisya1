@@ -27,6 +27,8 @@ void CObjTosolvemystery::Action()
 	{
 		Scene::SetScene(new CSceneMain());
 	}
+
+
 }
 
 //ƒhƒ[

@@ -235,7 +235,7 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneMain());
 	}
-	/*
+	
 	if (hit->CheckObjNameHit(OBJ_FURNITURE) != nullptr)
 	{
 		this->SetStatus(false);
@@ -245,7 +245,7 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneTosolvemystery());
 	}
-	*/
+	
 	// 強引なマップ移動用HitBox判定プログラム
 	if (hit->CheckObjNameHit(OBJ_MOVE1) != nullptr)
 	{
