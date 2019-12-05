@@ -244,7 +244,7 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneMain());
 	}
 	
-	if (hit->CheckObjNameHit(OBJ_FURNITURE) != nullptr)
+	if (hit->CheckObjNameHit(OBJ_FURNITURE3) != nullptr)
 	{
 		this->SetStatus(false);
 

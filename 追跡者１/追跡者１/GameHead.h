@@ -80,6 +80,7 @@ enum OBJ_NAME
 	//システム
 	OBJ_TOSOLVEMYATERY,
 	OBJ_CLOSET,
+	OBJ_MENU2,
 
 	//タイトル系
 	OBJ_TITLE,
@@ -216,7 +217,7 @@ extern float genzaiti; //現在地
 #include "ObjMain.h"
 
 #include"ObjCloset.h"
-
+#include"ObjMenu2.h"
 #include"ObjTo solve mystery.h"
 
 #include "ObjTitle.h"
@@ -238,6 +239,7 @@ extern float genzaiti; //現在地
 #include"SceneMap5.h"
 #include"SceneMap6.h"
 
+#include"SceneMenu2.h"
 #include"SceneCloset.h"
 #include"SceneTo solve mystery.h"
 //-----------------------------------------------
