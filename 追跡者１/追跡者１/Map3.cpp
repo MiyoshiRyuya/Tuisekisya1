@@ -36,7 +36,7 @@ void CObjMap3::Init()
 	
 	Hits::SetHitBox(this, mx+10, my+10, 190, 200, ELEMENT_BLUE, OBJ_MAP6, 1);
 
-	Hits::SetHitBox(this, idouX + 325, idouY + 550, 150, 10, ELEMENT_RED, OBJ_MOVE7, 1);
+	Hits::SetHitBox(this, idouX + 325, idouY + 550, 150, 10, ELEMENT_RED, OBJ_MOVE11, 1);
 }
 
 //ƒAƒNƒVƒ‡ƒ“
