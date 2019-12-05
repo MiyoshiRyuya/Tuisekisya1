@@ -342,9 +342,6 @@
     <ClCompile Include="ObjFurniture25.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
-    <ClCompile Include="SceneCloset.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="ObjFurniture11.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
@@ -473,6 +470,9 @@
     </ClCompile>
     <ClCompile Include="ObjMain.cpp">
       <Filter>ソース ファイル\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneCloset.cpp">
+      <Filter>ソース ファイル\クローゼット</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -97,6 +97,8 @@ enum OBJ_NAME
 	OBJ_MOVE9,
 	OBJ_MOVE10,
 	OBJ_MOVE11,
+	OBJ_MOVE12,
+	OBJ_MOVE13,
 
 	//ПoМы
 	OBJ_ESC,
@@ -242,6 +244,7 @@ extern float genzaiti; //МїНЁТn
 #include"SceneMap6.h"
 #include"SceneMenu2.h"
 
+#include"SceneMenu2.h"
 #include"SceneCloset.h"
 #include"SceneTo solve mystery.h"
 //-----------------------------------------------
