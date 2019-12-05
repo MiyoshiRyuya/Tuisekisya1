@@ -22,6 +22,9 @@
     <Filter Include="ソース ファイル\Enemy">
       <UniqueIdentifier>{442e2d59-6d6e-42b4-b298-30514e2d4b9a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Stage">
+      <UniqueIdentifier>{d4c33757-cb2d-4436-bb40-914689050bf6}</UniqueIdentifier>
+    </Filter>
     <Filter Include="ソース ファイル\Map">
       <UniqueIdentifier>{2ce77504-a045-4121-bec6-79345c05866f}</UniqueIdentifier>
     </Filter>
@@ -120,6 +123,9 @@
     <ClCompile Include="ObjHero.cpp">
       <Filter>ソース ファイル\Hero</Filter>
     </ClCompile>
+    <ClCompile Include="objstage.cpp">
+      <Filter>ソース ファイル\Stage</Filter>
+    </ClCompile>
     <ClCompile Include="ObjMap.cpp">
       <Filter>ソース ファイル\Map</Filter>
     </ClCompile>
@@ -131,9 +137,6 @@
     </ClCompile>
     <ClCompile Include="ObjFurniture.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjMain.cpp">
-      <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="ObjFurniture3.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
@@ -339,9 +342,6 @@
     <ClCompile Include="ObjFurniture25.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
-    <ClCompile Include="SceneCloset.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="ObjFurniture11.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
@@ -468,6 +468,12 @@
     <ClCompile Include="SceneMenu2.cpp">
       <Filter>ソース ファイル\新しいMenu</Filter>
     </ClCompile>
+    <ClCompile Include="ObjMain.cpp">
+      <Filter>ソース ファイル\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneCloset.cpp">
+      <Filter>ソース ファイル\クローゼット</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -532,6 +538,9 @@
     </ClInclude>
     <ClInclude Include="ObjHero.h">
       <Filter>ソース ファイル\Hero</Filter>
+    </ClInclude>
+    <ClInclude Include="objstage.h">
+      <Filter>ソース ファイル\Stage</Filter>
     </ClInclude>
     <ClInclude Include="ObjMap.h">
       <Filter>ソース ファイル\Map</Filter>

@@ -6,12 +6,15 @@
 #include "GameL\DrawTexture.h"
 #include "GameL\DrawFont.h"
 #include "GameL\UserData.h"
+#include "GameL\HitBoxManager.h"
+
 
 //使用するネームスペース
 using namespace GameL;
 
 #include "SceneMain.h"
 #include "GameHead.h"
+#include<time.h>
 
 //コンストラクタ
 CSceneMain::CSceneMain()
@@ -45,6 +48,19 @@ void CSceneMain::InitScene()
 			map[i][j] = w;
 			count += 2;
 		}
+	}
+
+	x = 0;
+	y = 0;
+	Hits::SetHitBox(this, x =- 10, y +=250, 80, 120, ELEMENT_RED, OBJ_MOVE12, 1);
+
+	srand(time(NULL));
+
+	int s = rand() % 2 + 1; //50％の確立で敵出現
+	if (s == 1)
+	{
+		CObjEnemy*obj_enemy = new CObjEnemy();
+		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
 	}
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
