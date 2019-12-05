@@ -67,7 +67,7 @@ void CObjHero::Action()
 	//Eボタンを押すとゲーム画面に移動する
 	if (Input::GetVKey('M') == true)
 	{
-		Scene::SetScene(new CSceneMenu());
+		Scene::SetScene(new CSceneMenu2());
 	}
 
 	//キーの入力方向

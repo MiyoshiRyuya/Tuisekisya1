@@ -197,14 +197,11 @@
     <ClCompile Include="ObjHero.cpp" />
     <ClCompile Include="ObjItem.cpp" />
     <ClCompile Include="ObjmainSave.cpp" />
-    <ClCompile Include="ObjMap2.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="ObjMenu.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="ObjmainRoad.cpp" />
+    <ClCompile Include="ObjMenu2.cpp" />
     <ClCompile Include="ObjRoad2.cpp" />
     <ClCompile Include="ObjRoad3.cpp" />
     <ClCompile Include="ObjSave1.cpp" />
@@ -248,6 +245,7 @@
     <ClCompile Include="SceneMap6.cpp" />
     <ClCompile Include="SceneMenu.cpp" />
     <ClCompile Include="ScenemainRoad.cpp" />
+    <ClCompile Include="SceneMenu2.cpp" />
     <ClCompile Include="SceneRoad1.cpp" />
     <ClCompile Include="SceneRoad2.cpp" />
     <ClCompile Include="SceneRoad3.cpp" />
@@ -339,14 +337,11 @@
     <ClInclude Include="ObjHero.h" />
     <ClInclude Include="ObjItem.h" />
     <ClInclude Include="ObjmainSave.h" />
-    <ClInclude Include="ObjMap2.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="ObjMenu.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="ObjmainRoad.h" />
+    <ClInclude Include="ObjMenu2.h" />
     <ClInclude Include="ObjRoad1.h" />
     <ClInclude Include="ObjRoad2.h" />
     <ClInclude Include="ObjRoad3.h" />
@@ -361,6 +356,7 @@
     <ClInclude Include="Objtrap3.h" />
     <ClInclude Include="SceneGameClear.h" />
     <ClInclude Include="SceneCloset.h" />
+    <ClInclude Include="SceneMenu2.h" />
     <ClInclude Include="SceneRoad3.h" />
     <ClInclude Include="objstage.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>

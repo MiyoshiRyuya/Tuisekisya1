@@ -79,6 +79,7 @@ enum OBJ_NAME
 
 	//システム
 	OBJ_MENU,
+	OBJ_MENU2,
 	OBJ_MAINSAVE,
 	OBJ_SAVE1,
 	OBJ_SAVE2,
@@ -225,6 +226,7 @@ extern float genzaiti; //現在地
 #include "ObjMain.h"
 
 #include"ObjMenu.h"
+#include "ObjMenu2.h"
 #include"ObjmainSave.h"
 #include"ObjSave1.h"
 #include"ObjSave2.h"
@@ -255,6 +257,7 @@ extern float genzaiti; //現在地
 #include "SceneGameOver.h"
 #include "SceneGameClear.h"
 #include"SceneMenu.h"
+#include "SceneMenu2.h"
 
 
 #include"ScenemainSave.h"
