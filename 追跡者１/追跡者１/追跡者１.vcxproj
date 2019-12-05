@@ -151,13 +151,11 @@
     <ClCompile Include="Map4.cpp" />
     <ClCompile Include="Map5.cpp" />
     <ClCompile Include="Map6.cpp" />
-    <ClCompile Include="OBJEquipped3.cpp" />
     <ClCompile Include="ObjFurnirure2.cpp" />
     <ClCompile Include="ObjFurnirure4.cpp" />
     <ClCompile Include="ObjFurnirure5.cpp" />
     <ClCompile Include="ObjFurnirure7.cpp" />
     <ClCompile Include="ObjFurniture.cpp" />
-    <ClCompile Include="OBJEquipped.cpp" />
     <ClCompile Include="GameL\Audio.cpp" />
     <ClCompile Include="GameL\DirectXDevice.cpp" />
     <ClCompile Include="GameL\Draw2DTex_Source.cpp" />
@@ -192,26 +190,10 @@
     <ClCompile Include="ObjEnemy.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="OBJEquipped2.cpp" />
     <ClCompile Include="ObjGameOver.cpp" />
     <ClCompile Include="ObjHero.cpp" />
-    <ClCompile Include="ObjItem.cpp" />
-    <ClCompile Include="ObjmainSave.cpp" />
-    <ClCompile Include="ObjMenu.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="ObjmainRoad.cpp" />
     <ClCompile Include="ObjMenu2.cpp" />
-    <ClCompile Include="ObjRoad2.cpp" />
-    <ClCompile Include="ObjRoad3.cpp" />
-    <ClCompile Include="ObjSave1.cpp" />
-    <ClCompile Include="ObjSave2.cpp" />
-    <ClCompile Include="ObjSave3.cpp" />
-    <ClCompile Include="objstage.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="ObjTitle.cpp" />
-    <ClCompile Include="ObjRoad1.cpp" />
     <ClCompile Include="ObjTo solve mystery.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -221,16 +203,11 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="SceneCloset.cpp" />
-    <ClCompile Include="SceneEquipped.cpp" />
-    <ClCompile Include="SceneEquipped2.cpp" />
-    <ClCompile Include="SceneEquipped3.cpp" />
     <ClCompile Include="SceneGameClear.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="SceneGameOver.cpp" />
-    <ClCompile Include="SceneItem.cpp" />
     <ClCompile Include="SceneMain.cpp" />
-    <ClCompile Include="ScenemainSave.cpp" />
     <ClCompile Include="SceneMap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
@@ -243,15 +220,7 @@
     </ClCompile>
     <ClCompile Include="SceneMap5.cpp" />
     <ClCompile Include="SceneMap6.cpp" />
-    <ClCompile Include="SceneMenu.cpp" />
-    <ClCompile Include="ScenemainRoad.cpp" />
     <ClCompile Include="SceneMenu2.cpp" />
-    <ClCompile Include="SceneRoad1.cpp" />
-    <ClCompile Include="SceneRoad2.cpp" />
-    <ClCompile Include="SceneRoad3.cpp" />
-    <ClCompile Include="SceneSave1.cpp" />
-    <ClCompile Include="SceneSave2.cpp" />
-    <ClCompile Include="SceneSave3.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
     <ClCompile Include="Objtrap.cpp" />
     <ClCompile Include="SceneTo solve mystery.cpp">
@@ -267,7 +236,6 @@
     <ClInclude Include="Map5.h" />
     <ClInclude Include="Map6.h" />
     <ClInclude Include="ObjCloset.h" />
-    <ClInclude Include="OBJEquipped3.h" />
     <ClInclude Include="ObjFurnirure7.h" />
     <ClInclude Include="ObjFurniture.h" />
     <ClInclude Include="GameHead.h" />
@@ -331,23 +299,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="ObjEnemy.h" />
-    <ClInclude Include="ObjEquipped.h" />
-    <ClInclude Include="OBJEquipped2.h" />
     <ClInclude Include="ObjGameOver.h" />
     <ClInclude Include="ObjHero.h" />
-    <ClInclude Include="ObjItem.h" />
-    <ClInclude Include="ObjmainSave.h" />
-    <ClInclude Include="ObjMenu.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-    </ClInclude>
-    <ClInclude Include="ObjmainRoad.h" />
     <ClInclude Include="ObjMenu2.h" />
-    <ClInclude Include="ObjRoad1.h" />
-    <ClInclude Include="ObjRoad2.h" />
-    <ClInclude Include="ObjRoad3.h" />
-    <ClInclude Include="ObjSave1.h" />
-    <ClInclude Include="ObjSave2.h" />
-    <ClInclude Include="ObjSave3.h" />
     <ClInclude Include="ObjTo solve mystery.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClInclude>
@@ -357,18 +311,9 @@
     <ClInclude Include="SceneGameClear.h" />
     <ClInclude Include="SceneCloset.h" />
     <ClInclude Include="SceneMenu2.h" />
-    <ClInclude Include="SceneRoad3.h" />
-    <ClInclude Include="objstage.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="ObjTitle.h" />
-    <ClInclude Include="SceneEquipped.h" />
-    <ClInclude Include="SceneEquipped2.h" />
-    <ClInclude Include="SceneEquipped3.h" />
     <ClInclude Include="SceneGameOver.h" />
-    <ClInclude Include="SceneItem.h" />
     <ClInclude Include="SceneMain.h" />
-    <ClInclude Include="ScenemainSave.h" />
     <ClInclude Include="SceneMap.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
@@ -377,13 +322,6 @@
     <ClInclude Include="SceneMap4.h" />
     <ClInclude Include="SceneMap5.h" />
     <ClInclude Include="SceneMap6.h" />
-    <ClInclude Include="SceneMenu.h" />
-    <ClInclude Include="ScenemainRoad.h" />
-    <ClInclude Include="SceneRoad1.h" />
-    <ClInclude Include="SceneRoad2.h" />
-    <ClInclude Include="SceneSave1.h" />
-    <ClInclude Include="SceneSave2.h" />
-    <ClInclude Include="SceneSave3.h" />
     <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="Objtrap.h" />
     <ClInclude Include="SceneTo solve mystery.h">

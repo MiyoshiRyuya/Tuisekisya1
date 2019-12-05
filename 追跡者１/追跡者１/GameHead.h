@@ -100,6 +100,9 @@ enum OBJ_NAME
 
 	//出口
 	OBJ_ESC,
+
+	//メニュー
+	OBJ_MENU2,
 };
 //------------------------------------------------
 
@@ -201,8 +204,8 @@ extern float genzaiti; //現在地
 #include "ObjFurniture42.h"
 #include "ObjFurniture43.h"
 
-
-
+//メニュー
+#include "ObjMenu2.h"
 
 
 
@@ -229,7 +232,7 @@ extern float genzaiti; //現在地
 #include "SceneTitle.h"
 #include "SceneGameOver.h"
 #include "SceneGameClear.h"
-#include"SceneMenu.h"
+#include"SceneMenu2.h"
 
 #include"SceneMap.h"
 #include"SceneMap2.h"
@@ -244,5 +247,5 @@ extern float genzaiti; //現在地
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneTitle
+#define SET_GAME_START  CSceneMap5
 //-----------------------------------------------
