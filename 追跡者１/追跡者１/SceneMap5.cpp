@@ -15,7 +15,7 @@ using namespace GameL;
 #include "SceneMain.h"
 #include "GameHead.h"
 #include"SceneMap5.h"
-
+#include<time.h>
 
 //コンストラクタ
 CSceneMap5::CSceneMap5()
@@ -37,7 +37,14 @@ void CSceneMap5::InitScene()
 	//外部グラフィックファイルを読み込み6番目に登録
 	Draw::LoadImage(L"Hari.png", 6, TEX_SIZE_64);
 
+
+	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
+
+
 	Draw::LoadImage(L"FloorEX.png", 2, TEX_SIZE_512);
+
+	//外部グラフィックファイルを読み込み5番目に登録
+	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
 
 	Draw::LoadImage(L"石畳.png", 12, TEX_SIZE_512);
 
@@ -63,7 +70,14 @@ void CSceneMap5::InitScene()
 	//CObjtrap*obj_trap = new CObjtrap();
 	//Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 
+	srand(time(NULL));
 
+	int s = rand() % 2 + 1; //50％の確立で敵出現
+	if (s == 1)
+	{
+		CObjEnemy*obj_enemy = new CObjEnemy();
+		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
+	}
 }
 //実行中メソッド
 void CSceneMap5::Scene()

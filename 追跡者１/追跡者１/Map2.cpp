@@ -14,12 +14,13 @@
 
 //使用するネームスペース
 using namespace GameL;
-
-extern float genzaiti; //現在地
+float genzaiti; //現在地
 
 //イニシャライズ
 void CObjMap2::Init()
 {
+
+
 	m_x = 0;
 	m_y = 350;
 	Hits::SetHitBox(this, m_x, m_y + 10, 60, 50, ELEMENT_GREEN, OBJ_MAP6, 2);
@@ -38,13 +39,26 @@ void CObjMap2::Init()
 
 	bx = 0;
 	by = 0;
-	Hits::SetHitBox(this, bx, by, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
+	Hits::SetHitBox(this, bx, by, 800, 110, ELEMENT_GREEN, OBJ_MAP4, 1);
 
+	idouX = 0;
+	idouY = 0;
+	Hits::SetHitBox(this, idouX + 770, idouY + 250, 30, 100, ELEMENT_GREEN, OBJ_MOVE9, 1);
+
+	mx = 0;
+	my = 0;
+	Hits::SetHitBox(this, mx + 0, my + 250, 30, 100, ELEMENT_BLUE, OBJ_MOVE10, 1);
+
+	x = 0;
+	y = 0;
+	Hits::SetHitBox(this, x += 300, y += 590, 150, 10, ELEMENT_RED, OBJ_MOVE7, 1);
 }
 
 //アクション
 void CObjMap2::Action()
 {
+
+	genzaiti = 2;
 
 }
 
@@ -65,7 +79,7 @@ void CObjMap2::Draw()
 	dst.m_left = 64.0f + m_x;
 	dst.m_right = 0.0f + m_x;
 	dst.m_bottom = 64.0f + m_y;
-
+	
 	Draw::Draw(50, &src, &dst, c, 90.0f);
 
 	//椅子描画2
@@ -131,5 +145,36 @@ void CObjMap2::Draw()
 
 	//描画
 	Draw::Draw(9, &src, &dst, c, 0.0f);
+
+
+
+
+
+
+
+
+
+
+
+	//敵
+	src.m_top = 0.0f;
+	src.m_left = 16.0f;
+	src.m_right = 42.0f;
+	src.m_bottom = 32.0f;
+
+	dst.m_top = 0.0f + m_y;
+	dst.m_left = 84.0f + m_x;
+	dst.m_right = 0.0f + m_x;
+	dst.m_bottom = 156.0f + m_y;
+
+	//描画
+	Draw::Draw(5, &src, &dst, c, 0.0f);
+
+
+
+
+
+
+
 
 }

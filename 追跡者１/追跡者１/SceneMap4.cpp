@@ -8,7 +8,7 @@
 #include "GameL\DrawFont.h"
 #include "GameL\UserData.h"
 #include "GameL\Audio.h"
-
+#include<time.h>
 
 
 //使用するネームスペース
@@ -121,18 +121,19 @@ void CSceneMap4::InitScene()
 	//Objs::InsertObj(objb, OBJ_STAGE, 9);
 
 	//敵オブジェクト
-	CObjEnemy*obj_enemy = new CObjEnemy();
-	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
+	srand(time(NULL));
+
+	int s = rand() % 2 + 1; //50％の確立で敵出現
+	if (s == 1)
+	{
+		CObjEnemy*obj_enemy = new CObjEnemy();
+		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
+	}
+	
 
 	//CObjMap4*map4 = new CObjMap4();
 	//Objs::InsertObj(map4, OBJ_MAP4, 0);
 
-	
-
-
-
-	
-	
 	
 	
 	//家具オブジェクト11作成
