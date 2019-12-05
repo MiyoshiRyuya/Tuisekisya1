@@ -43,7 +43,7 @@ void CObjMap2::Init()
 
 	idouX = 0;
 	idouY = 0;
-	Hits::SetHitBox(this, idouX + 770, idouY + 250, 30, 100, ELEMENT_GREEN, OBJ_MOVE9, 1);
+	Hits::SetHitBox(this, idouX + 770, idouY + 220, 30, 100, ELEMENT_GREEN, OBJ_MOVE9, 1);
 
 	mx = 0;
 	my = 0;

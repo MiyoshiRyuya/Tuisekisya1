@@ -67,7 +67,7 @@ void CObjHero::Action()
 	//Eボタンを押すとゲーム画面に移動する
 	if (Input::GetVKey('M') == true)
 	{
-		Scene::SetScene(new CSceneMenu());
+		Scene::SetScene(new CSceneMenu2());
 	}
 
 	//キーの入力方向
@@ -376,7 +376,7 @@ void CObjHero::Action()
 		g_Xz = 700;
 		g_Yz = 310;
 
-		Scene::SetScene(new CSceneMain());
+		Scene::SetScene(new CSceneMap2());
 	}
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE12) != nullptr)
