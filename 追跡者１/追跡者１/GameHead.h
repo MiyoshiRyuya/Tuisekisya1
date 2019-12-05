@@ -96,6 +96,7 @@ enum OBJ_NAME
 	OBJ_MOVE8,
 	OBJ_MOVE9,
 	OBJ_MOVE10,
+	OBJ_MOVE11,
 
 	//ПoМы
 	OBJ_ESC,
