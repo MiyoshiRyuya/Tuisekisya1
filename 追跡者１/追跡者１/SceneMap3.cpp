@@ -16,7 +16,7 @@ using namespace GameL;
 #include "GameHead.h"
 #include"SceneMap3.h"
 #include "ObjCloset.h"
-
+#include<time.h>
 
 //コンストラクタ
 CSceneMap3::CSceneMap3()
@@ -69,6 +69,15 @@ void CSceneMap3::InitScene()
 	//マップ背景オブジェクト1作成
 	CObjMap3*map3 = new CObjMap3();
 	Objs::InsertObj(map3, OBJ_MAP3, 1);
+
+	srand(time(NULL));
+
+	int s = rand() % 2 + 1; //50％の確立で敵出現
+	if (s == 1)
+	{
+		CObjEnemy*obj_enemy = new CObjEnemy();
+		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
+	}
 }
 //実行中メソッド
 void CSceneMap3::Scene()

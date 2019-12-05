@@ -15,7 +15,7 @@ using namespace GameL;
 #include "GameHead.h"
 #include"SceneMap.h"
 #include "SceneCloset.h"
-
+#include<time.h>
 
 //コンストラクタ
 CSceneMap::CSceneMap()
@@ -33,6 +33,9 @@ void CSceneMap::InitScene()
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み5番目に登録
+	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
+
 	//外部グラフィックファイルを読み込み6番目に登録
 	Draw::LoadImage(L"Hari.png", 6, TEX_SIZE_64);
 
@@ -49,6 +52,16 @@ void CSceneMap::InitScene()
 	//クローゼット表示
 	CObjCloset*obj_Closet = new CObjCloset();
 	Objs::InsertObj(obj_Closet, OBJ_CLOSET, 11);
+
+
+	srand(time(NULL));
+
+	int s = rand() % 2 + 1; //50％の確立で敵出現
+	if (s == 1)
+	{
+		CObjEnemy*obj_enemy = new CObjEnemy();
+		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
+	}
 
 }
 //実行中メソッド

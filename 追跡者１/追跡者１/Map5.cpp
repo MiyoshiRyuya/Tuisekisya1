@@ -11,6 +11,7 @@
 #include "Map5.h"
 #include "ObjHero.h"
 #include "Objtrap.h"
+#include "ObjEnemy.h"
 
 
 
@@ -117,4 +118,22 @@ void CObjMap5::Draw()
 
 	//•`‰æ
 	Draw::Draw(9, &src, &dst, c, 0.0f);
+
+
+
+	//“G
+	/*
+	src.m_top = 0.0f;
+	src.m_left = 16.0f;
+	src.m_right = 42.0f;
+	src.m_bottom = 32.0f;
+
+	dst.m_top = 0.0f + m_y;
+	dst.m_left = 84.0f + m_x;
+	dst.m_right = 0.0f + m_x;
+	dst.m_bottom = 156.0f + m_y;
+
+	//•`‰æ
+	Draw::Draw(5, &src, &dst, c, 0.0f);
+	*/
 }

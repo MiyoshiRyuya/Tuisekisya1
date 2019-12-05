@@ -9,7 +9,7 @@
 using namespace GameL;
 
 
-extern float genzaiti; //åªç›ín
+//extern float genzaiti; //åªç›ín
 
 void CObjMain::Init()
 {
