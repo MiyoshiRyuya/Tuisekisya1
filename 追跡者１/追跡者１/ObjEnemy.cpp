@@ -3,6 +3,7 @@
 #include"GameL/SceneManager.h"
 #include"GameL/HitBoxManager.h"
 #include"GameL\Audio.h"
+#include<time.h>
 
 
 #include"GameHead.h"
@@ -13,16 +14,22 @@ using namespace GameL;
 
 float g_xz=600;
 float g_yz=400;
+int s,ss;
 
 void CObjEnemy::Init()
 {
-	m_x = g_xz;
-	m_y = g_yz;
+	srand(time(NULL));
+
+	s = rand() % 801;
+
+	m_x = s;
+	m_y = ss;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
 	m_len = 0.0f;
 	m_ani_time = 0;
 	m_ani_frame = 1;
+	
 
 	m_ani_max_time = 4;
 
@@ -33,7 +40,6 @@ void CObjEnemy::Action()
 {
 	//m_x = m_ex;
 	//m_y = m_ey;
-
 
 	
 	//	åªç›ÇÃà íuÇï€ë∂Ç∑ÇÈ
