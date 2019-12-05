@@ -15,6 +15,8 @@ public:
 	void Draw();
 
 private:
+	float x;
+	float y;
 	float m_x;//ˆÖŽq
 	float m_y;
 	float ax;//Š÷
@@ -23,4 +25,8 @@ private:
 	float ky;
 	float bx;//•Ç
 	float by;
+	float idouX;
+	float idouY;
+	float mx;
+	float my;
 };
