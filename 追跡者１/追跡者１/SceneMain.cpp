@@ -6,7 +6,8 @@
 #include "GameL\DrawTexture.h"
 #include "GameL\DrawFont.h"
 #include "GameL\UserData.h"
-#include <time.h>
+#include "GameL\HitBoxManager.h"
+
 
 //使用するネームスペース
 using namespace GameL;
@@ -47,6 +48,12 @@ void CSceneMain::InitScene()
 			count += 2;
 		}
 	}
+
+	x = 0;
+	y = 0;
+	Hits::SetHitBox(this, x =- 10, y +=250, 80, 120, ELEMENT_RED, OBJ_MOVE12, 1);
+
+
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
@@ -186,15 +193,6 @@ void CSceneMain::InitScene()
 	//blockオブジェクト作成
 	//CObjstage*objb = new CObjstage(map);
 	//Objs::InsertObj(objb, OBJ_STAGE,9);
-
-	srand(time(NULL));
-
-	int s = rand() % 2 + 1; //50％の確立で敵出現
-	if (s == 1)
-	{
-		CObjEnemy*obj_enemy = new CObjEnemy();
-		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
-	}
 }
 //ゲームメイン実行中メソッド
 void CSceneMain::Scene()
