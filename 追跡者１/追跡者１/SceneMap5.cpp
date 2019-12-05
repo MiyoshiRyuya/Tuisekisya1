@@ -37,6 +37,10 @@ void CSceneMap5::InitScene()
 	//外部グラフィックファイルを読み込み6番目に登録
 	Draw::LoadImage(L"Hari.png", 6, TEX_SIZE_64);
 
+
+	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
+
+
 	Draw::LoadImage(L"FloorEX.png", 2, TEX_SIZE_512);
 
 	Draw::LoadImage(L"石畳.png", 12, TEX_SIZE_512);
