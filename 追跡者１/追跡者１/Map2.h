@@ -27,4 +27,6 @@ private:
 	float by;
 	float idouX;
 	float idouY;
+	float mx;
+	float my;
 };
