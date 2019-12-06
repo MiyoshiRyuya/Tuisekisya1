@@ -77,7 +77,14 @@ void CObjHero::Action()
 		m_sita = 0;
 		m_ue = 0;
 		m_hidari = 0;
-		m_vx += 2.2f;
+		if (Input::GetVKey('L') == true)
+		{
+			m_vx += 10.2f;
+		}
+		else
+		{
+			m_vx += 2.2f;
+		}
 	}
 
 	if (Input::GetVKey('A') == true)
@@ -86,7 +93,15 @@ void CObjHero::Action()
 		m_ue = 0;
 		m_sita = 0;
 		m_migi = 0;
-		m_vx -= 2.2f;
+		if (Input::GetVKey('L') == true)
+		{
+			m_vx -= 10.2f;
+		}
+		else
+		{
+			m_vx -= 2.2f;
+		}
+		
 	}
 
 	if (Input::GetVKey('W') == true)
@@ -95,7 +110,15 @@ void CObjHero::Action()
 		m_sita = 0;
 		m_migi = 0;
 		m_hidari = 0;
-		m_vy -= 2.2f;
+		if (Input::GetVKey('L') == true)
+		{
+			m_vy -= 10.2f;
+		}
+		else
+		{
+			m_vy -= 2.2f;
+		}
+		
 	}
 
 	if (Input::GetVKey('S') == true)
@@ -104,7 +127,15 @@ void CObjHero::Action()
 		m_ue = 0;
 		m_migi = 0;
 		m_hidari = 0;
-		m_vy += 2.2f;
+		if (Input::GetVKey('L') == true)
+		{
+			m_vy += 10.2f;
+		}
+		else
+		{
+			m_vy += 2.2f;
+		}
+	
 	}
 
 	if (m_vx+32.0f>800.0f)
@@ -215,6 +246,7 @@ void CObjHero::Action()
 
 	}
 
+
 	
 	if (hit->CheckObjNameHit(OBJ_MAP2) != nullptr)
 	{
@@ -237,17 +269,19 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneMain());
 	}
-	/*
-	if (hit->CheckObjNameHit(OBJ_FURNITURE) != nullptr)
+	
+	if (hit->CheckObjNameHit(OBJ_FURNITURE3) != nullptr)
 	{
-		this->SetStatus(false);
+		if (Input::GetVKey(VK_RETURN) == true) {
+			Hits::DeleteHitBox(this);
 
-		g_Xz = 70;
-		g_Yz = 70;
+			m_px += m_vx;
+			m_py += m_vy;
 
-		Scene::SetScene(new CSceneTosolvemystery());
+			Scene::SetScene(new CSceneTosolvemystery());
+		}
 	}
-	*/
+	
 	// 強引なマップ移動用HitBox判定プログラム
 	if (hit->CheckObjNameHit(OBJ_MOVE1) != nullptr)
 	{

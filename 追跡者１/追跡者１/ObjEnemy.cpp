@@ -27,7 +27,8 @@ void CObjEnemy::Init()
 	m_ani_frame = 1;
 
 	CObjHero* obj = (CObjHero*)Objs::GetObj(OBJ_HERO);
-	
+	float s_x = obj->GetX();
+	float s_y= obj->GetY();
 
 	do
 	{
@@ -39,7 +40,7 @@ void CObjEnemy::Init()
 
 		m_x = px;
 		m_y = py;
-	} while ((192 + obj->GetX() < m_x ||obj->GetX()-192 > m_x) && (192 + obj->GetY() < m_y ||  obj->GetY()-192 > m_y));
+	} while ((192 + s_x < m_x || s_x - 192 > m_x) && (192 + s_y < m_y || s_y - 192 > m_y));
 
 	m_ani_max_time = 4;
 
