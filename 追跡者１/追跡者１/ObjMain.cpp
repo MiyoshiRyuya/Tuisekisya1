@@ -5,11 +5,12 @@
 
 #include"GameHead.h"
 #include"ObjMain.h"
+#include<time.h>
 
 using namespace GameL;
 
 
-//extern float genzaiti; //åªç›ín
+extern float genzaiti; //åªç›ín
 
 void CObjMain::Init()
 {

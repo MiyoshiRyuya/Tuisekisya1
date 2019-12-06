@@ -19,8 +19,6 @@ using namespace GameL;
 float g_Xz=100;
 float g_Yz=120;
 
-//extern float genzaiti; //現在地
-
 //イニシャライズ
 void CObjHero::Init()
 {
@@ -66,7 +64,11 @@ void CObjHero::Action()
 	g_Xz = m_x;
 	g_Yz = m_y;
 
-
+	//Eボタンを押すとゲーム画面に移動する
+	if (Input::GetVKey('M') == true)
+	{
+		Scene::SetScene(new CSceneMenu2());
+	}
 
 	//キーの入力方向
 	if (Input::GetVKey('D') == true)
@@ -319,8 +321,8 @@ void CObjHero::Action()
 			Hits::DeleteHitBox(this);
 
 			//Audio::Start(1);
-			g_Xz = 800;
-			g_Yz = 310;
+			g_Xz = 370;
+			g_Yz = 100;
 
 			Scene::SetScene(new CSceneMap5());
 		}
@@ -358,7 +360,7 @@ void CObjHero::Action()
 		Hits::DeleteHitBox(this);
 
 		//Audio::Start(1);
-		g_Xz = 800;
+		g_Xz = 0;
 		g_Yz = 310;
 
 		Scene::SetScene(new CSceneMain());
@@ -371,8 +373,34 @@ void CObjHero::Action()
 		Hits::DeleteHitBox(this);
 
 		//Audio::Start(1);
-		g_Xz = 800;
+		g_Xz = 700;
 		g_Yz = 310;
+
+		Scene::SetScene(new CSceneMap2());
+	}
+	}
+	else if (hit->CheckObjNameHit(OBJ_MOVE12) != nullptr)
+	{
+	if (Input::GetVKey(VK_RETURN) == true) {
+		//this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		//Audio::Start(1);
+		g_Xz = 0;
+		g_Yz = 290;
+
+		Scene::SetScene(new CSceneMap2());
+	}
+	}
+	else if (hit->CheckObjNameHit(OBJ_MOVE13) != nullptr)
+	{
+	if (Input::GetVKey(VK_RETURN) == true) {
+		//this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		//Audio::Start(1);
+		g_Xz = 0;
+		g_Yz = 290;
 
 		Scene::SetScene(new CSceneMap2());
 	}

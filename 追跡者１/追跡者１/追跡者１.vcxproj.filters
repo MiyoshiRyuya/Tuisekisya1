@@ -52,6 +52,9 @@
     <Filter Include="ソース ファイル\GameClear">
       <UniqueIdentifier>{b25c3e49-e4ad-4226-8ea7-d951b70b2d84}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\新しいMenu">
+      <UniqueIdentifier>{807d0d64-45a7-4cdf-98df-9223869e248e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -279,9 +282,6 @@
     <ClCompile Include="ObjCloset.cpp">
       <Filter>ソース ファイル\クローゼット</Filter>
     </ClCompile>
-    <ClCompile Include="ObjMap2.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="ObjRoad1.cpp">
       <Filter>ソース ファイル\Road</Filter>
     </ClCompile>
@@ -461,6 +461,12 @@
     </ClCompile>
     <ClCompile Include="ObjFurniture25.cpp">
       <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMenu2.cpp">
+      <Filter>ソース ファイル\新しいMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMenu2.cpp">
+      <Filter>ソース ファイル\新しいMenu</Filter>
     </ClCompile>
     <ClCompile Include="ObjMain.cpp">
       <Filter>ソース ファイル\Main</Filter>
@@ -695,9 +701,6 @@
     <ClInclude Include="SceneCloset.h">
       <Filter>ソース ファイル\クローゼット</Filter>
     </ClInclude>
-    <ClInclude Include="ObjMap2.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="ObjmainRoad.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
@@ -826,6 +829,12 @@
     </ClInclude>
     <ClInclude Include="SceneGameClear.h">
       <Filter>ソース ファイル\GameClear</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMenu2.h">
+      <Filter>ソース ファイル\新しいMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMenu2.h">
+      <Filter>ソース ファイル\新しいMenu</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

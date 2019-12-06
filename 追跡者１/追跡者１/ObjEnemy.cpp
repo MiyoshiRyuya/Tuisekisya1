@@ -33,13 +33,13 @@ void CObjEnemy::Init()
 	{
 		srand(time(NULL));
 
-		px = rand() % 801; 
+		px = rand() % 601+100; 
 
-		py = rand() % 501; 
+		py = rand() % 401+100; 
 
 		m_x = px;
 		m_y = py;
-	} while ((128 + obj->GetX() < m_x || 128 - obj->GetX() > m_x) && (192 + obj->GetY() < m_y || 128 - obj->GetY() > m_y));
+	} while ((192 + obj->GetX() < m_x ||obj->GetX()-192 > m_x) && (192 + obj->GetY() < m_y ||  obj->GetY()-192 > m_y));
 
 	m_ani_max_time = 4;
 
