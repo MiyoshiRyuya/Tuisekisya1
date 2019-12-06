@@ -29,7 +29,7 @@ void CObjMap3::Init()
 	my = 200;
 	px = -200;
 	py = -150;
-	idouX = 700; //マップ移動用
+	idouX = 750; //マップ移動用
 	idouY = 300;
 
 	Hits::SetHitBox(this, m_x + 10, m_y + 10, 248, 200, ELEMENT_BLUE, OBJ_MAP6, 3);
@@ -49,6 +49,8 @@ void CObjMap3::Action()
 	CHitBox*hit1 = Hits::GetHitBox(this);
 	hit->SetPos(mx+10 , my + 10);
 
+	CHitBox*hit2 = Hits::GetHitBox(this);
+	hit->SetPos(idouX + 10, idouY + 10);
 }
 
 //ドロー

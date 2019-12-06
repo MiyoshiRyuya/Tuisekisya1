@@ -37,7 +37,7 @@ void CSceneMap2::InitScene()
 	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
 
 	//外部グラフィックファイルを読み込み6番目に登録
-	Draw::LoadImage(L"Hari.png", 6, TEX_SIZE_64);
+	Draw::LoadImage(L"Hari.png", 3, TEX_SIZE_64);
 
 	//外部グラフィックファイルを読み込み2番目に登録(512*512pixel)
 	Draw::LoadImage(L"FloorEX3.png", 2, TEX_SIZE_512);
@@ -64,6 +64,9 @@ void CSceneMap2::InitScene()
 	CObjEnemy*obj_enemy = new CObjEnemy();
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
 
+	//トラップオブジェクト
+	CObjtrap*obj_trap = new CObjtrap(100, 100);
+	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 
 	//マップ背景オブジェクト1作成
 	CObjMap*obj_map = new CObjMap();

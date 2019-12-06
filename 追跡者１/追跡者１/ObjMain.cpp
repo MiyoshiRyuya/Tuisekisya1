@@ -5,6 +5,7 @@
 
 #include"GameHead.h"
 #include"ObjMain.h"
+#include<time.h>
 
 using namespace GameL;
 
