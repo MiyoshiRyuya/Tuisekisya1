@@ -37,7 +37,7 @@ void CSceneMap3::InitScene()
 	//外部グラフィックファイルを読み込み2番目に登録(512*512pixel)
 	Draw::LoadImage(L"FloorEX.png", 2, TEX_SIZE_512);
 
-	//外部グラフィックファイルを読み込み5番目に登録
+	//外部グラフィックファイルを読み込み5番目に登録w
 	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
 
 	//外部グラフィックファイルを読み込み9番目に登録
