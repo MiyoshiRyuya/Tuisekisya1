@@ -69,7 +69,7 @@ void CObjHero::Action()
 	{
 		Scene::SetScene(new CSceneMenu2());
 	}
-
+	
 	//キーの入力方向
 	if (Input::GetVKey('D') == true)
 	{
