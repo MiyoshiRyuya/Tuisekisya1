@@ -96,12 +96,6 @@
     <ClCompile Include="GameL\WinInputs.cpp">
       <Filter>リソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="ObjMenu.cpp">
-      <Filter>ソース ファイル\Menu</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjItem.cpp">
-      <Filter>ソース ファイル\Item</Filter>
-    </ClCompile>
     <ClCompile Include="ObjGameOver.cpp">
       <Filter>ソース ファイル\GameOver</Filter>
     </ClCompile>
@@ -281,36 +275,6 @@
     </ClCompile>
     <ClCompile Include="ObjCloset.cpp">
       <Filter>ソース ファイル\クローゼット</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjRoad1.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjRoad2.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjRoad3.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneRoad1.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneRoad2.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
-    <ClCompile Include="ScenemainRoad.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneRoad3.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjmainRoad.cpp">
-      <Filter>ソース ファイル\Road</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneEquipped3.cpp">
-      <Filter>ソース ファイル\Cross Equipment</Filter>
-    </ClCompile>
-    <ClCompile Include="OBJEquipped3.cpp">
-      <Filter>ソース ファイル\Cross Equipment</Filter>
     </ClCompile>
     <ClCompile Include="ObjFurniture16.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
@@ -515,12 +479,6 @@
     <ClInclude Include="main.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjMenu.h">
-      <Filter>ソース ファイル\Menu</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjItem.h">
-      <Filter>ソース ファイル\Item</Filter>
-    </ClInclude>
     <ClInclude Include="ObjGameOver.h">
       <Filter>ソース ファイル\GameOver</Filter>
     </ClInclude>
@@ -700,30 +658,6 @@
     </ClInclude>
     <ClInclude Include="SceneCloset.h">
       <Filter>ソース ファイル\クローゼット</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjmainRoad.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjRoad1.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjRoad2.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjRoad3.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneRoad3.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="ScenemainRoad.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneRoad1.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneRoad2.h">
-      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture16.h">
       <Filter>ソース ファイル\Furniture</Filter>

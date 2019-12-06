@@ -241,6 +241,7 @@ void CObjHero::Action()
 	
 	if (hit->CheckObjNameHit(OBJ_FURNITURE3) != nullptr)
 	{
+		
 		if (Input::GetVKey(VK_RETURN) == true) {
 			Hits::DeleteHitBox(this);
 
