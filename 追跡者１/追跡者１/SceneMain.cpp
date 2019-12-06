@@ -52,7 +52,7 @@ void CSceneMain::InitScene()
 
 	x = 0;
 	y = 0;
-	Hits::SetHitBox(this, x =- 10, y +=250, 80, 120, ELEMENT_RED, OBJ_MOVE12, 1);
+	Hits::SetHitBox(this, x =- 10, y +=250, 80, 120, ELEMENT_RED, OBJ_MOVE11, 1);
 
 
 	//主人公オブジェクト作成
@@ -67,6 +67,8 @@ void CSceneMain::InitScene()
 		CObjEnemy*obj_enemy = new CObjEnemy();
 		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
 	}
+
+
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
