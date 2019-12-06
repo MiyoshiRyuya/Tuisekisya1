@@ -52,7 +52,7 @@ void CSceneMain::InitScene()
 
 	x = 0;
 	y = 0;
-	Hits::SetHitBox(this, x =- 10, y +=250, 80, 120, ELEMENT_RED, OBJ_MOVE11, 1);
+	Hits::SetHitBox(this, x =770, y +=250, 80, 120, ELEMENT_RED, OBJ_MOVE11, 1);
 
 
 	//主人公オブジェクト作成
