@@ -80,7 +80,6 @@ enum OBJ_NAME
 	//システム
 	OBJ_TOSOLVEMYATERY,
 	OBJ_CLOSET,
-	
 
 	//タイトル系
 	OBJ_TITLE,
@@ -252,5 +251,5 @@ extern float genzaiti; //現在地
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap5
+#define SET_GAME_START  CSceneMap3
 //-----------------------------------------------
