@@ -18,5 +18,7 @@ private:
 	int Cross; //十字架の取得数確認用
 	int Item;  //Item確認画面変換用
 	int Migi;  //初期画面カーソル処理用
+	int Migi2; //GameOver選択画面カーソル処理用
+	int GameOver; //game終了の最終確認用
 	int time;  //時間
 }; 
