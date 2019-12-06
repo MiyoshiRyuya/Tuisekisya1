@@ -252,5 +252,5 @@ extern float genzaiti; //現在地
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap5
+#define SET_GAME_START  CSceneMap3
 //-----------------------------------------------
