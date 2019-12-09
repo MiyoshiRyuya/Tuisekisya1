@@ -29,6 +29,8 @@ void CObjMap4::Init()
 	m_x = 371;
 	m_y = 0;
 
+	
+
 
 	//ˆÚ“®ŠÖ˜A
 	Hits::SetHitBox(this, m_x + 10, m_y + 10, 0, 0, ELEMENT_BLUE, OBJ_MAP4, 3);
@@ -72,6 +74,20 @@ void CObjMap4::Draw()
 
 	//•`‰æ
 	Draw::Draw(2, &src, &dst, c, 0.0f);
+
+
+
+	src.m_top = 0.0f;
+	src.m_left = 64.0f;
+	src.m_right = 64.0f;
+	src.m_bottom = 45.0f;
+
+	dst.m_top = 0.0f + m_y;
+	dst.m_left = 64.0f + m_x;
+	dst.m_right = 0.0f + m_x;
+	dst.m_bottom = 64.0f + m_y;
+
+	Draw::Draw(4, &src, &dst, c, 0.0f);//”ò‚Ôˆð’Ž
 
 	
 
