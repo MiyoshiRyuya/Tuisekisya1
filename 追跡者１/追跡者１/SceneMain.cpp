@@ -125,18 +125,6 @@ void CSceneMain::InitScene()
 	CObjtrap*obj_trap = new CObjtrap();
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 
-	//罠オブジェクト1作成
-	CObjtrap1*obj_trap1 = new CObjtrap1();
-	Objs::InsertObj(obj_trap1, OBJ_TRAP1, 1);
-
-	//罠オブジェクト2作成
-	CObjtrap2*obj_trap2 = new CObjtrap2();
-	Objs::InsertObj(obj_trap2, OBJ_TRAP2, 1);
-	
-	//罠オブジェクト3作成
-	CObjtrap3*obj_trap3 = new CObjtrap3();
-	Objs::InsertObj(obj_trap3, OBJ_TRAP3, 1);
-
 
 
 
