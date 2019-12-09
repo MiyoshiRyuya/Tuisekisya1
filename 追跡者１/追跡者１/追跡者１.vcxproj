@@ -198,7 +198,7 @@
     </ClCompile>
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="ObjTo solve mystery.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="SceneCloset.cpp" />
     <ClCompile Include="SceneGameClear.cpp">
