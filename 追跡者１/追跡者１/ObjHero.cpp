@@ -286,8 +286,8 @@ void CObjHero::Action()
 			Hits::DeleteHitBox(this);
 
 			Audio::Start(1);
-			g_Xz = 286;
-			g_Yz = 800;
+			g_Xz = 350;
+			g_Yz = 0;
 
 			Scene::SetScene(new CSceneMap4());
 		}
