@@ -59,6 +59,9 @@ void CSceneMap3::InitScene()
 	//トラップオブジェクト
 	CObjtrap*obj_trap = new CObjtrap(542,292);
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
+	//トラップオブジェクト
+	CObjtrap1*obj_trap1 = new CObjtrap1(70, 550);
+	Objs::InsertObj(obj_trap1, OBJ_TRAP, 1);
 
 	//クローゼットオブジェクト
 	CObjCloset*obj_closet = new CObjCloset();
