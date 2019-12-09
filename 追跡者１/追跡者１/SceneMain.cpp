@@ -127,8 +127,6 @@ void CSceneMain::InitScene()
 	CObjtrap*obj_trap = new CObjtrap();
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 
-	
-
 
 
 
