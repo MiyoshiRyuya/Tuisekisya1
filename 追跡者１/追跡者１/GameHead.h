@@ -12,7 +12,7 @@ enum OBJ_NAME
 
 	//罠
 	OBJ_TRAP,
-	OBJ_TRAP4,
+
 
 	//家具
 	OBJ_FURNITURE,
@@ -245,5 +245,5 @@ extern float genzaiti; //現在地
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap3
+#define SET_GAME_START  CSceneMap5
 //-----------------------------------------------

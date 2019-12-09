@@ -5,15 +5,16 @@
 
 #include"GameHead.h"
 #include"Objtrap.h"
-
+#include<math.h>
 using namespace GameL;
 
 //コンストラクタ
 CObjtrap::CObjtrap(float x,float y)
 {
+	//位置座標
 	m_x = x;
 	m_y = y;
-
+	//ベクトル移動
 	vx = 1;
 	vy = 1;
 }
@@ -26,23 +27,30 @@ void CObjtrap::Init()
 
 void CObjtrap::Action()
 {
-
-	//m_y += vy;
+	m_y += vy;
 	m_x += vx;
+	//斜めバウンド
+		if (m_x + 32.0f >= 800 || m_y + 64.0f <= 80)
+		{
 
+			vy *= -1;
+			vx *= -1;
+
+		}
+	//縦バウンド
 	/*if (m_y + 64.0f >= 600 || m_y <= 100)
 	{
 	
 		vy *= -1;
 	}
-	*/
+	//横バウンド
     if (m_x + 32.0f >= 800 || m_x <= 100)
 	{
 
 		vx *= -1;
-	}
+	}*/
 
-	//m_y += vy;
+	m_y += vy;
 	m_x += vx;
 
 	CHitBox*hit = Hits::GetHitBox(this);

@@ -123,7 +123,6 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneMenu2());
 	}
 
-
 	//位置の更新
 	m_px += m_vx;
 	m_py += m_vy;
@@ -232,6 +231,7 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneMenu2());
 	}
 
+
 	
 	if (hit->CheckObjNameHit(OBJ_MAP2) != nullptr)
 	{
@@ -266,13 +266,7 @@ void CObjHero::Action()
 			Scene::SetScene(new CSceneTosolvemystery());
 		}
 	}
-	/*
-	if (Input::GetVKey('J') == true)
-	{
-		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
-	}*/
-	
+	*/
 	// 強引なマップ移動用HitBox判定プログラム
 	if (hit->CheckObjNameHit(OBJ_MOVE1) != nullptr)
 	{
@@ -314,13 +308,13 @@ void CObjHero::Action()
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE6) != nullptr)
 	{
-		
+
 			this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
 			//Audio::Start(1);
 			g_Xz = 305;
-			g_Yz = 536;
+			g_Yz = 500;
 
 			Scene::SetScene(new CSceneMap2());
 		
@@ -345,11 +339,89 @@ void CObjHero::Action()
 			Hits::DeleteHitBox(this);
 
 			//Audio::Start(1);
+			g_Xz = 370;
+			g_Yz = 100;
+
+			Scene::SetScene(new CSceneMap5());
+		}
+	}
+	else if (hit->CheckObjNameHit(OBJ_MOVE8) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+			//this->SetStatus(false);
+			Hits::DeleteHitBox(this);
+
+			//Audio::Start(1);
 			g_Xz = 800;
 			g_Yz = 310;
 
 			Scene::SetScene(new CSceneMap2());
 		}
+	}
+	else if (hit->CheckObjNameHit(OBJ_MOVE9) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+		//this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		//Audio::Start(1);
+		g_Xz = 800;
+		g_Yz = 270;
+
+		Scene::SetScene(new CSceneMap3());
+		}
+	}
+	else if (hit->CheckObjNameHit(OBJ_MOVE10) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true) {
+		//this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		//Audio::Start(1);
+		g_Xz = 800;
+		g_Yz = 270;
+
+		Scene::SetScene(new CSceneMain());
+		}
+	}
+	else if (hit->CheckObjNameHit(OBJ_MOVE11) != nullptr)
+	{
+	if (Input::GetVKey(VK_RETURN) == true) {
+		//this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		//Audio::Start(1);
+		g_Xz = 0;
+		g_Yz = 270;
+
+		Scene::SetScene(new CSceneMap2());
+	}
+	}
+	else if (hit->CheckObjNameHit(OBJ_MOVE12) != nullptr)
+	{
+	if (Input::GetVKey(VK_RETURN) == true) {
+		//this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		//Audio::Start(1);
+		g_Xz = 0;
+		g_Yz = 270;
+
+		Scene::SetScene(new CSceneMap2());
+	}
+	}
+	else if (hit->CheckObjNameHit(OBJ_MOVE13) != nullptr)
+	{
+	if (Input::GetVKey(VK_RETURN) == true) {
+		//this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		//Audio::Start(1);
+		g_Xz = 0;
+		g_Yz = 310;
+
+		Scene::SetScene(new CSceneMap2());
+	}
 	}
 	//ここが反応するとゲームクリア
 	else if (hit->CheckObjNameHit(OBJ_ESC) != nullptr)
