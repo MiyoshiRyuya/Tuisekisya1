@@ -55,6 +55,9 @@
     <Filter Include="ソース ファイル\新しいMenu">
       <UniqueIdentifier>{807d0d64-45a7-4cdf-98df-9223869e248e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\item">
+      <UniqueIdentifier>{d6044157-da1c-4c00-b0d1-7b8ffbf273e2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -429,6 +432,9 @@
     <ClCompile Include="SceneCloset.cpp">
       <Filter>ソース ファイル\クローゼット</Filter>
     </ClCompile>
+    <ClCompile Include="ObjItem.cpp">
+      <Filter>ソース ファイル\item</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -751,6 +757,9 @@
     </ClInclude>
     <ClInclude Include="SceneMenu2.h">
       <Filter>ソース ファイル\新しいMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjItem.h">
+      <Filter>ソース ファイル\item</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

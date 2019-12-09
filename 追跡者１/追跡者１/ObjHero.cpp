@@ -19,6 +19,8 @@ using namespace GameL;
 float g_Xz=100;
 float g_Yz=120;
 
+bool itemflag = false;
+
 //イニシャライズ
 void CObjHero::Init()
 {
@@ -412,30 +414,42 @@ void CObjHero::Action()
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE13) != nullptr)
 	{
-	if (Input::GetVKey(VK_RETURN) == true) {
-		//this->SetStatus(false);
-		Hits::DeleteHitBox(this);
-
-		//Audio::Start(1);
-		g_Xz = 0;
-		g_Yz = 310;
-
-		Scene::SetScene(new CSceneMap2());
-	}
-	}
-	//ここが反応するとゲームクリア
-	else if (hit->CheckObjNameHit(OBJ_ESC) != nullptr)
-	{
 		if (Input::GetVKey(VK_RETURN) == true) {
 			//this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
-			Audio::Start(1);
-			g_Xz = 100;
-			g_Yz = 120;
+			//Audio::Start(1);
+			g_Xz = 0;
+			g_Yz = 310;
 
-			Scene::SetScene(new CSceneGameClear());
+			Scene::SetScene(new CSceneMap2());
 		}
+	}
+	//ここが反応するとゲームクリア
+	else if (hit->CheckObjNameHit(OBJ_ESC) != nullptr)
+	{
+		if (itemflag == true)
+		{
+
+			if (Input::GetVKey(VK_RETURN) == true) {
+				//this->SetStatus(false);
+				Hits::DeleteHitBox(this);
+
+				Audio::Start(1);
+				g_Xz = 100;
+				g_Yz = 120;
+
+				Scene::SetScene(new CSceneGameClear());
+			}
+		}
+	}
+	else if (hit->CheckObjNameHit(OBJ_ITEM) != nullptr)
+	{
+		if (Input::GetVKey(VK_RETURN) == true)
+		{
+			itemflag = true;
+		}
+
 	}
 }
 
