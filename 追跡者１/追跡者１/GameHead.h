@@ -153,6 +153,9 @@ extern float genzaiti; //現在地
 
 //罠
 #include "Objtrap.h"
+#include "Objtrap1.h"
+#include "Objtrap2.h"
+#include "Objtrap3.h"
 
 //家具
 #include "ObjFurniture.h"
@@ -245,5 +248,5 @@ extern float genzaiti; //現在地
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMap4
+#define SET_GAME_START  CSceneMap5
 //-----------------------------------------------
