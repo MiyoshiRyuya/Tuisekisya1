@@ -36,7 +36,7 @@ void CObjMap3::Init()
 	
 	Hits::SetHitBox(this, mx+10, my+10, 190, 200, ELEMENT_BLUE, OBJ_MAP6, 1);
 
-	Hits::SetHitBox(this, idouX + 10, idouY + 10, 150, 100, ELEMENT_RED, OBJ_MOVE11, 1);
+	Hits::SetHitBox(this, idouX + 10, idouY + 10, 150, 100, ELEMENT_RED, OBJ_MOVE8, 1);
 }
 
 //アクション
@@ -51,6 +51,8 @@ void CObjMap3::Action()
 
 	CHitBox*hit2 = Hits::GetHitBox(this);
 	hit->SetPos(idouX + 10, idouY + 10);
+
+
 }
 
 //ドロー

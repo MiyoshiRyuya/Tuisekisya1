@@ -52,7 +52,12 @@ void CSceneMain::InitScene()
 
 	x = 0;
 	y = 0;
-	Hits::SetHitBox(this, x =- 10, y +=250, 80, 120, ELEMENT_RED, OBJ_MOVE12, 1);
+	Hits::SetHitBox(this, x =770, y +=250, 80, 120, ELEMENT_RED, OBJ_MOVE11, 1);
+
+
+	//主人公オブジェクト作成
+	CObjHero*obj = new CObjHero();
+	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
 	srand(time(NULL));
 
@@ -62,6 +67,8 @@ void CSceneMain::InitScene()
 		CObjEnemy*obj_enemy = new CObjEnemy();
 		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
 	}
+
+
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
@@ -110,17 +117,9 @@ void CSceneMain::InitScene()
 
 
 
-	//主人公オブジェクト作成
-	CObjHero*obj = new CObjHero();
-	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
 	//CObjstage*objb = new CObjstage(map);
 	//Objs::InsertObj(objb, OBJ_STAGE, 9);
-
-	//敵オブジェクト
-	CObjEnemy*obj_enemy = new CObjEnemy();
-	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 1);
-
 
 
 

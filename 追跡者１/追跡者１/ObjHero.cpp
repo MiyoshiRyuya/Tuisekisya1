@@ -69,7 +69,7 @@ void CObjHero::Action()
 	{
 		Scene::SetScene(new CSceneMenu2());
 	}
-
+	
 	//キーの入力方向
 	if (Input::GetVKey('D') == true)
 	{
@@ -215,6 +215,7 @@ void CObjHero::Action()
 
 	}
 
+
 	
 	if (hit->CheckObjNameHit(OBJ_MAP2) != nullptr)
 	{
@@ -237,17 +238,20 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneMain());
 	}
-	/*
-	if (hit->CheckObjNameHit(OBJ_FURNITURE) != nullptr)
+	
+	if (hit->CheckObjNameHit(OBJ_FURNITURE3) != nullptr)
 	{
-		this->SetStatus(false);
+		
+		if (Input::GetVKey(VK_RETURN) == true) {
+			Hits::DeleteHitBox(this);
 
-		g_Xz = 70;
-		g_Yz = 70;
+			m_px += m_vx;
+			m_py += m_vy;
 
-		Scene::SetScene(new CSceneTosolvemystery());
+			Scene::SetScene(new CSceneTosolvemystery());
+		}
 	}
-	*/
+	
 	// 強引なマップ移動用HitBox判定プログラム
 	if (hit->CheckObjNameHit(OBJ_MOVE1) != nullptr)
 	{

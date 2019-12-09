@@ -80,7 +80,6 @@ enum OBJ_NAME
 	//システム
 	OBJ_TOSOLVEMYATERY,
 	OBJ_CLOSET,
-	
 
 	//タイトル系
 	OBJ_TITLE,
