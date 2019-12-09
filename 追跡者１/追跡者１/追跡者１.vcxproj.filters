@@ -246,15 +246,6 @@
     <ClCompile Include="Objtrap.cpp">
       <Filter>ソース ファイル\Trap</Filter>
     </ClCompile>
-    <ClCompile Include="Objtrap1.cpp">
-      <Filter>ソース ファイル\Trap</Filter>
-    </ClCompile>
-    <ClCompile Include="Objtrap2.cpp">
-      <Filter>ソース ファイル\Trap</Filter>
-    </ClCompile>
-    <ClCompile Include="Objtrap3.cpp">
-      <Filter>ソース ファイル\Trap</Filter>
-    </ClCompile>
     <ClCompile Include="ObjTo solve mystery.cpp">
       <Filter>ソース ファイル\謎解き</Filter>
     </ClCompile>
@@ -624,15 +615,6 @@
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
     <ClInclude Include="Objtrap.h">
-      <Filter>ソース ファイル\Trap</Filter>
-    </ClInclude>
-    <ClInclude Include="Objtrap1.h">
-      <Filter>ソース ファイル\Trap</Filter>
-    </ClInclude>
-    <ClInclude Include="Objtrap2.h">
-      <Filter>ソース ファイル\Trap</Filter>
-    </ClInclude>
-    <ClInclude Include="Objtrap3.h">
       <Filter>ソース ファイル\Trap</Filter>
     </ClInclude>
     <ClInclude Include="ObjTo solve mystery.h">
