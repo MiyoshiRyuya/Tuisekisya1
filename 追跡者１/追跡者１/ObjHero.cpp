@@ -266,7 +266,7 @@ void CObjHero::Action()
 			Scene::SetScene(new CSceneTosolvemystery());
 		}
 	}
-	*/
+	
 	// 強引なマップ移動用HitBox判定プログラム
 	if (hit->CheckObjNameHit(OBJ_MOVE1) != nullptr)
 	{
