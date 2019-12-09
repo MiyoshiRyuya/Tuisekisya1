@@ -13,6 +13,8 @@ enum OBJ_NAME
 	//罠
 	OBJ_TRAP,
 
+	//アイテム
+	OBJ_ITEM,
 
 	//家具
 	OBJ_FURNITURE,
@@ -153,6 +155,9 @@ extern float genzaiti; //現在地
 
 //罠
 #include "Objtrap.h"
+
+//アイテム
+#include "ObjItem.h"
 
 //家具
 #include "ObjFurniture.h"

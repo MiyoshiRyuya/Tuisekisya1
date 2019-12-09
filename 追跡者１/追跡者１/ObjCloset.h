@@ -10,8 +10,8 @@ class CObjCloset : public CObj
 {
 public:
 	CObjCloset() {};
-	CObjCloset(bool closetflag) { flag = closetflag; };
-	~CObjCloset() {};
+	~CObjCloset() {};	CObjCloset(bool closetflag) { flag = closetflag; };
+
 
 	void Init();
 	void Action();
