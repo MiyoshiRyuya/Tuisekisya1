@@ -200,11 +200,6 @@
     <ClCompile Include="ObjTo solve mystery.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Objtrap1.cpp" />
-    <ClCompile Include="Objtrap2.cpp" />
-    <ClCompile Include="Objtrap3.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="SceneCloset.cpp" />
     <ClCompile Include="SceneGameClear.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
@@ -308,9 +303,6 @@
     <ClInclude Include="ObjTo solve mystery.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClInclude>
-    <ClInclude Include="Objtrap1.h" />
-    <ClInclude Include="Objtrap2.h" />
-    <ClInclude Include="Objtrap3.h" />
     <ClInclude Include="SceneGameClear.h" />
     <ClInclude Include="SceneCloset.h" />
     <ClInclude Include="SceneMenu2.h" />
