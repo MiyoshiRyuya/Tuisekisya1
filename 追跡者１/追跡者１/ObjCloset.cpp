@@ -3,7 +3,7 @@
 #include"GameL/WinInputs.h"
 #include"GameL/SceneManager.h"
 #include"GameL/HitBoxManager.h"
-
+#include"ObjHero.h"
 #include "GameHead.h"
 #include "ObjCloset.h"
 
@@ -26,13 +26,15 @@ void CObjCloset::Init()
 //アクション
 void CObjCloset::Action()
 {
-	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_x, m_y);
-
-	//Eボタンを押すとゲーム画面に移動する
-	if (Input::GetVKey('E') == true)
+	/*CHitBox*hit = Hits::GetHitBox(this);
+	hit->SetPos(m_x, m_y);*/
+	if (flag== true)
 	{
-		Scene::SetScene(new CSceneMap3());
+		//Eボタンを押すとゲーム画面に移動する
+		if (Input::GetVKey('E') == true)
+		{
+			Scene::SetScene(new CSceneMap3());
+		}
 	}
 }
 

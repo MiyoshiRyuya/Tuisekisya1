@@ -10,6 +10,7 @@ class CSceneCloset :public CScene
 {
 public:
 	CSceneCloset();
+	CSceneCloset(bool check);
 	~CSceneCloset();
 
 	void InitScene(); //メニュー画面の初期化メゾット
@@ -17,4 +18,5 @@ public:
 private:
 	float m_x;
 	float m_y;
+	bool closetflag;
 };

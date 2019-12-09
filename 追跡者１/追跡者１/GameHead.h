@@ -154,7 +154,6 @@ extern float genzaiti; //åªç›ín
 //„©
 #include "Objtrap.h"
 
-
 //â∆ãÔ
 #include "ObjFurniture.h"
 #include "ObjFurniture1.h"
