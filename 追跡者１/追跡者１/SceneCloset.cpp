@@ -19,7 +19,12 @@ using namespace GameL;
 //コンストラクタ
 CSceneCloset::CSceneCloset()
 {
+	closetflag = false;
+}
 
+CSceneCloset::CSceneCloset(bool check)
+{
+	closetflag = true;
 }
 
 //デストラクタ
@@ -31,9 +36,19 @@ CSceneCloset::~CSceneCloset()
 //ゲームメイン初期化メソッド
 void CSceneCloset::InitScene()
 {
-	//クローゼットオブジェクト
-	CObjCloset*obj_closet = new CObjCloset();
-	Objs::InsertObj(obj_closet, OBJ_CLOSET, 1);
+	if (closetflag==true)
+	{
+		//クローゼットオブジェクト
+		CObjCloset*obj_closet = new CObjCloset(closetflag);
+		Objs::InsertObj(obj_closet, OBJ_CLOSET, 1);
+	}
+	else
+	{
+		//クローゼットオブジェクト
+		CObjCloset*obj_closet = new CObjCloset();
+		Objs::InsertObj(obj_closet, OBJ_CLOSET, 1);
+	}
+
 }
 
 //ゲームメイン実行中メソッド

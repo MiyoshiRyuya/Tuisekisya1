@@ -15,8 +15,8 @@ CObjtrap::CObjtrap(float x,float y)
 	m_x = x;
 	m_y = y;
 	//ƒxƒNƒgƒ‹ˆÚ“®
-	vx = 1;
-	vy = 1;
+	vx = 6;
+	vy = 6;
 }
 
 void CObjtrap::Init()
@@ -237,5 +237,13 @@ void CObjtrap3::Draw()
 
 	//•`‰æ
 	Draw::Draw(3, &src, &dst, c, 90.0f);
+
+	dst.m_top = 0.0f + m_y;
+	dst.m_left = 64.0f + m_x;
+	dst.m_right = 0.0f + m_x;
+	dst.m_bottom = 64.0f + m_y;
+
+	//•`‰æ
+	Draw::Draw(4, &src, &dst, c, 90.0f);
 
 }
