@@ -4,13 +4,13 @@
 #include"GameL\DrawTexture.h"
 #include"GameL\SceneManager.h"
 #include"GameL/HitBoxManager.h"
-
+#include "ObjHero.h"
 #include "GameHead.h"
 #include "ObjItem.h"
 
 //使用するネームスペース
 using namespace GameL;
-
+bool deleteflag = false;
 //コンストラクタ
 CObjItem::CObjItem(float x, float y)
 {
@@ -18,11 +18,18 @@ CObjItem::CObjItem(float x, float y)
 	m_py = y;
 }
 
+
 //イニシャライズ
 void CObjItem::Init()
 {
+	bool flag= CObjHero::Getflag();
 	Hits::SetHitBox(this, m_px, m_py, 64, 64, ELEMENT_ITEM, OBJ_ITEM, 1);
-	
+	if (deleteflag==true&&flag==true)
+	{
+		this->SetStatus(false);   //自身に削除命令を出す。
+		Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
+	}
+
 }
 
 //アクション
@@ -34,6 +41,7 @@ void CObjItem::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == true)
 		{
+			deleteflag = true;
 			this->SetStatus(false);   //自身に削除命令を出す。
 			Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
 		}

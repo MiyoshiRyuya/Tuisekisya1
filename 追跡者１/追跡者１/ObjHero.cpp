@@ -20,7 +20,10 @@ float g_Xz=100;
 float g_Yz=120;
 
 bool itemflag = false;
-
+float CObjHero::Getflag()
+{
+	 return itemflag; 
+}
 //イニシャライズ
 void CObjHero::Init()
 {
@@ -140,7 +143,7 @@ void CObjHero::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-
+		itemflag = false;
 		//主人公消滅でシーンをゲームオーバー画面に移行する
 		Scene::SetScene(new CSceneGameOver());
 	}
@@ -438,6 +441,8 @@ void CObjHero::Action()
 				Audio::Start(1);
 				g_Xz = 100;
 				g_Yz = 120;
+
+				itemflag = false;
 
 				Scene::SetScene(new CSceneGameClear());
 			}

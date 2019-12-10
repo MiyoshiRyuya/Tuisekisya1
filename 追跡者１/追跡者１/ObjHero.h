@@ -26,7 +26,7 @@ public:
 	void SetVY(float vy) { m_vy = vy; }
 	void SetVX(float vx) { m_vx = vx; }
 	void SetBT(int t) { m_stage_type = t; }
-	
+	static float Getflag();
 
 	void SetUp(bool b) { m_hit_up = b; }
 	void SetDown(bool b) { m_hit_down = b; }
