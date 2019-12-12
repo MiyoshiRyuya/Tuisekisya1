@@ -6,11 +6,11 @@
 using namespace GameL;
 
 //シーン：メニュー画面
-class CSceneTosolvemystery :public CScene
+class CScenesolve :public CScene
 {
 public:
-	CSceneTosolvemystery();
-	~CSceneTosolvemystery();
+	CScenesolve();
+	~CScenesolve();
 
 	void InitScene(); //メニュー画面の初期化メゾット
 	void Scene();     //メニュー画面の実行中メソッド

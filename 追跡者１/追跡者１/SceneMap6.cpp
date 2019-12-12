@@ -51,14 +51,14 @@ void CSceneMap6::InitScene()
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
-	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
+	Objs::InsertObj(obj, OBJ_HERO, 100);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
-	CObjItem*obji = new CObjItem(400, 300);
+	CObjItem*obji = new CObjItem(393, 300);
 	Objs::InsertObj(obji, OBJ_ITEM, 1);
 
 	//マップ背景オブジェクト1作成
 	CObjMap6*map6 = new CObjMap6();
-	Objs::InsertObj(map6, OBJ_MAP6, 1);
+	Objs::InsertObj(map6, OBJ_MAP6, 10);
 
 
 
