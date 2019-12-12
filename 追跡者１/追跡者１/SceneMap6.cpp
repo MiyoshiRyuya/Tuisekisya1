@@ -45,11 +45,16 @@ void CSceneMap6::InitScene()
 
 	Draw::LoadImageW(L"カーペット２.png", 11, TEX_SIZE_512);
 
+	Draw::LoadImageW(L"十字架.png", 12, TEX_SIZE_64);
+
 	//効果音
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
+
+	CObjItem*obji = new CObjItem(400, 300);
+	Objs::InsertObj(obji, OBJ_ITEM, 1);
 
 	//マップ背景オブジェクト1作成
 	CObjMap6*map6 = new CObjMap6();

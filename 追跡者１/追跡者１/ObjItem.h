@@ -8,16 +8,14 @@ using namespace GameL;
 class CObjItem : public CObj
 {
 public:
-	CObjItem() {};
+	CObjItem(float x,float y) ;
 	~CObjItem() {};
 
 	void Init();   //イニシャライズ
 	void Action(); //アクション
 	void Draw();   //ドロー
 private:
-	float m_mou_x; //マウスの位置X 
-	float m_mou_y; //マウスの位置Y
-	bool  m_mou_r; //マウスの右ボタン
-	bool  m_mou_l; //マウスの左ボタン
-	int   m_time;    //マウス時間制御用
+	float m_px;
+	float m_py;
+
 };

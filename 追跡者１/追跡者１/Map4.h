@@ -19,4 +19,6 @@ private:
 	float m_y;
 	float ax;
 	float ay;
+	float t_x;
+	float t_y;
 };

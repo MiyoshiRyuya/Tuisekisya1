@@ -182,6 +182,7 @@
     <ClCompile Include="ObjFurniture6.cpp" />
     <ClCompile Include="ObjFurniture8.cpp" />
     <ClCompile Include="ObjFurniture9.cpp" />
+    <ClCompile Include="ObjItem.cpp" />
     <ClCompile Include="ObjMain.cpp" />
     <ClCompile Include="ObjMap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -198,7 +199,7 @@
     </ClCompile>
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="ObjTo solve mystery.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="SceneCloset.cpp" />
     <ClCompile Include="SceneGameClear.cpp">
@@ -292,6 +293,7 @@
     <ClInclude Include="ObjFurniture8.h" />
     <ClInclude Include="ObjFurniture9.h" />
     <ClInclude Include="ObjGameClear.h" />
+    <ClInclude Include="ObjItem.h" />
     <ClInclude Include="ObjMain.h" />
     <ClInclude Include="ObjMap.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
