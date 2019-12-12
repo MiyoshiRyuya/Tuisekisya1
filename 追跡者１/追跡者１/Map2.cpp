@@ -19,8 +19,6 @@ float genzaiti; //現在地
 //イニシャライズ
 void CObjMap2::Init()
 {
-
-
 	m_x = 0;
 	m_y = 350;
 	Hits::SetHitBox(this, m_x, m_y + 10, 60, 50, ELEMENT_GREEN, OBJ_MAP6, 2);
@@ -39,7 +37,7 @@ void CObjMap2::Init()
 
 	bx = 0;
 	by = 0;
-	Hits::SetHitBox(this, bx, by, 800, 110, ELEMENT_GREEN, OBJ_MAP4, 1);
+	Hits::SetHitBox(this, bx, by, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
 
 	idouX = 0;
 	idouY = 0;
