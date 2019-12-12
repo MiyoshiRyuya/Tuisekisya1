@@ -77,6 +77,6 @@ void CObjTitle::Draw()
 	Draw::LoadImage(L"Title.png", 0, TEX_SIZE_512);
 
 
-	Font::StrDraw(L"NEW GAME", 360, 350, 23, c);
+	Font::StrDraw(L"GAME START", 360, 350, 23, c);
 	//Font::StrDraw(L"CONTINUE", 360, 410, 23, c);
 }

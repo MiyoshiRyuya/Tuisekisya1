@@ -545,3 +545,11 @@ void CObjHero::Draw()
 
 	Draw::Draw(0, &src, &dst, c, 0.0f);*/
 }
+
+
+/*
+Hello!
+My name is Sire.
+Your Spret System.
+
+*/
