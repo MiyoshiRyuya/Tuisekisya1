@@ -263,6 +263,7 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneMain());
 	}
 	//謎解き
+	/*
 	if (hit->CheckElementHit(ELEMENT_MYS) == true)
 	{
 		if (Input::GetVKey(VK_RETURN) == true) 
@@ -274,7 +275,7 @@ void CObjHero::Action()
 			Scene::SetScene(new CScenesolve());
 		}
 	}
-
+	*/
 
 	// 強引なマップ移動用HitBox判定プログラム
 	if (hit->CheckObjNameHit(OBJ_MOVE1) != nullptr)
