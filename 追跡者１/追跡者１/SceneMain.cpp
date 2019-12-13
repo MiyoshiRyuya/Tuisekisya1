@@ -31,7 +31,7 @@ CSceneMain::~CSceneMain()
 void CSceneMain::InitScene()
 {
 
-	Audio::LoadAudio(0, L"desperate.wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::LoadAudio(0, L"desperate .wav", SOUND_TYPE::BACK_MUSIC);
 
 
 	//バックミュージックスタート
