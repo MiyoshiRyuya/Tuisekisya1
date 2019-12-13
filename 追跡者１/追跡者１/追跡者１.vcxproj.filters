@@ -429,17 +429,11 @@
     <ClCompile Include="ObjItem.cpp">
       <Filter>ソース ファイル\item</Filter>
     </ClCompile>
-    <ClCompile Include="Objsolve.cpp">
-      <Filter>ソース ファイル\謎解き</Filter>
+    <ClCompile Include="ObjTo solve mystery.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="Objsolve2.cpp">
-      <Filter>ソース ファイル\謎解き</Filter>
-    </ClCompile>
-    <ClCompile Include="Scenesolve.cpp">
-      <Filter>ソース ファイル\謎解き</Filter>
-    </ClCompile>
-    <ClCompile Include="Scenesolve2.cpp">
-      <Filter>ソース ファイル\謎解き</Filter>
+    <ClCompile Include="SceneTo solve mystery.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -761,17 +755,11 @@
     <ClInclude Include="ObjItem.h">
       <Filter>ソース ファイル\item</Filter>
     </ClInclude>
-    <ClInclude Include="Objsolve.h">
-      <Filter>ソース ファイル\謎解き</Filter>
+    <ClInclude Include="ObjTo solve mystery.h">
+      <Filter>ソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Objsolve2.h">
-      <Filter>ソース ファイル\謎解き</Filter>
-    </ClInclude>
-    <ClInclude Include="Scenesolve.h">
-      <Filter>ソース ファイル\謎解き</Filter>
-    </ClInclude>
-    <ClInclude Include="Scenesolve2.h">
-      <Filter>ソース ファイル\謎解き</Filter>
+    <ClInclude Include="SceneTo solve mystery.h">
+      <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

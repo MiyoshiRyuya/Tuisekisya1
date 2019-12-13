@@ -200,6 +200,7 @@
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="ObjTo solve mystery.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="SceneCloset.cpp" />
     <ClCompile Include="SceneGameClear.cpp">
@@ -226,6 +227,7 @@
     </ClCompile>
     <ClCompile Include="SceneTo solve mystery.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -306,6 +308,7 @@
     <ClInclude Include="ObjMenu2.h" />
     <ClInclude Include="ObjTo solve mystery.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="SceneGameClear.h" />
     <ClInclude Include="SceneCloset.h" />
@@ -328,6 +331,7 @@
     <ClInclude Include="Objtrap.h" />
     <ClInclude Include="SceneTo solve mystery.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClInclude>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
