@@ -32,12 +32,15 @@ CSceneMap3::~CSceneMap3()
 void CSceneMap3::InitScene()
 {
 
-	Audio::LoadAudio(0, L"n105wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::LoadAudio(0, L"n105.wav", SOUND_TYPE::BACK_MUSIC);
 
 
 	//バックミュージックスタート
 	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
 	Audio::Start(0); //音楽スタート
+
+
+
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
