@@ -61,6 +61,7 @@ enum OBJ_NAME
 	OBJ_FURNITURE41,
 	OBJ_FURNITURE42,
 	OBJ_FURNITURE43,
+	OBJ_FURNITURE44,
 
 
 	
@@ -207,6 +208,7 @@ extern float genzaiti; //åªç›ín
 #include "ObjFurniture41.h"
 #include "ObjFurniture42.h"
 #include "ObjFurniture43.h"
+#include "ObjFurnirure44.h"
 
 //ÉÅÉjÉÖÅ[
 #include "ObjMenu2.h"
