@@ -429,10 +429,10 @@
     <ClCompile Include="ObjItem.cpp">
       <Filter>ソース ファイル\item</Filter>
     </ClCompile>
-    <ClCompile Include="Objsolve.cpp">
-      <Filter>ソース ファイル\謎解き</Filter>
+    <ClCompile Include="ObjFurnirure44.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
-    <ClCompile Include="Objsolve2.cpp">
+    <ClCompile Include="Objsolve.cpp">
       <Filter>ソース ファイル\謎解き</Filter>
     </ClCompile>
     <ClCompile Include="Scenesolve.cpp">
@@ -441,8 +441,8 @@
     <ClCompile Include="Scenesolve2.cpp">
       <Filter>ソース ファイル\謎解き</Filter>
     </ClCompile>
-    <ClCompile Include="ObjFurnirure44.cpp">
-      <Filter>ソース ファイル\Furniture</Filter>
+    <ClCompile Include="Objsolve2.cpp">
+      <Filter>ソース ファイル\謎解き</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -764,6 +764,9 @@
     <ClInclude Include="ObjItem.h">
       <Filter>ソース ファイル\item</Filter>
     </ClInclude>
+    <ClInclude Include="ObjFurnirure44.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
     <ClInclude Include="Objsolve.h">
       <Filter>ソース ファイル\謎解き</Filter>
     </ClInclude>
@@ -775,9 +778,6 @@
     </ClInclude>
     <ClInclude Include="Scenesolve2.h">
       <Filter>ソース ファイル\謎解き</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjFurnirure44.h">
-      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
