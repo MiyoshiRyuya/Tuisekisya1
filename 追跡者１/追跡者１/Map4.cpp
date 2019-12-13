@@ -12,7 +12,7 @@
 #include "GameHead.h"
 #include "Map4.h"
 #include "ObjHero.h"
-#include "Objtrap.h"
+//#include "Objtrap.h"
 
 
 
