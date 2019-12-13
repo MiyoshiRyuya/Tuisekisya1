@@ -441,6 +441,9 @@
     <ClCompile Include="Scenesolve2.cpp">
       <Filter>ソース ファイル\謎解き</Filter>
     </ClCompile>
+    <ClCompile Include="ObjFurnirure44.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -772,6 +775,9 @@
     </ClInclude>
     <ClInclude Include="Scenesolve2.h">
       <Filter>ソース ファイル\謎解き</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurnirure44.h">
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
