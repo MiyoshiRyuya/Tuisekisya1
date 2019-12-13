@@ -32,7 +32,7 @@ CSceneMap3::~CSceneMap3()
 void CSceneMap3::InitScene()
 {
 
-	Audio::LoadAudio(0, L"n105wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::LoadAudio(0, L"n105.wav", SOUND_TYPE::BACK_MUSIC);
 
 
 	//バックミュージックスタート
