@@ -29,6 +29,19 @@ CSceneMap6::~CSceneMap6()
 //初期化メソッド
 void CSceneMap6::InitScene()
 {
+
+	//音楽情報の読み込み
+	Audio::LoadAudio(0, L"kamen-night.wav", SOUND_TYPE::BACK_MUSIC);
+
+
+	//バックミュージックスタート
+	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
+	Audio::Start(0); //音楽スタート
+
+
+
+
+
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 
@@ -51,14 +64,14 @@ void CSceneMap6::InitScene()
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
-	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
+	Objs::InsertObj(obj, OBJ_HERO, 100);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
-	CObjItem*obji = new CObjItem(400, 300);
+	CObjItem*obji = new CObjItem(393, 300);
 	Objs::InsertObj(obji, OBJ_ITEM, 1);
 
 	//マップ背景オブジェクト1作成
 	CObjMap6*map6 = new CObjMap6();
-	Objs::InsertObj(map6, OBJ_MAP6, 1);
+	Objs::InsertObj(map6, OBJ_MAP6, 10);
 
 
 

@@ -60,7 +60,7 @@ void CSceneMap2::InitScene()
 
 	Draw::LoadImage(L"desk.png", 51, TEX_SIZE_64);
 
-	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_64);
+	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録

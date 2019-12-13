@@ -61,6 +61,7 @@ enum OBJ_NAME
 	OBJ_FURNITURE41,
 	OBJ_FURNITURE42,
 	OBJ_FURNITURE43,
+	OBJ_FURNITURE44,
 
 
 	
@@ -77,7 +78,8 @@ enum OBJ_NAME
 	OBJ_MOVE5,
 
 	//システム
-	OBJ_TOSOLVEMYATERY,
+	OBJ_SOLVE,
+	OBJ_SOLVE2,
 	OBJ_CLOSET,
 
 	//タイトル系
@@ -123,6 +125,8 @@ enum HIT_ELEMENTS
 	ELEMENT_BLUE,
 	ELEMENT_BLACK,
 	ELEMENT_WHITE,
+	ELEMENT_MYS,
+	ELEMENT_SOLVE,
 };
 //------------------------------------------------
 
@@ -204,6 +208,7 @@ extern float genzaiti; //現在地
 #include "ObjFurniture41.h"
 #include "ObjFurniture42.h"
 #include "ObjFurniture43.h"
+#include "ObjFurnirure44.h"
 
 //メニュー
 #include "ObjMenu2.h"
@@ -221,7 +226,8 @@ extern float genzaiti; //現在地
 
 #include"ObjCloset.h"
 #include"ObjMenu2.h"
-#include"ObjTo solve mystery.h"
+#include"Objsolve.h"
+#include"Objsolve2.h"
 
 #include "ObjTitle.h"
 #include "ObjGameOver.h"
@@ -245,7 +251,8 @@ extern float genzaiti; //現在地
 
 #include"SceneMenu2.h"
 #include"SceneCloset.h"
-#include"SceneTo solve mystery.h"
+#include"Scenesolve.h"
+#include"Scenesolve2.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------

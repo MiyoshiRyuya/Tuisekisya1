@@ -20,6 +20,7 @@ float g_Xz=100;
 float g_Yz=120;
 
 bool itemflag = false;
+bool solveflag = false;
 float CObjHero::Getflag()
 {
 	 return itemflag; 
@@ -233,7 +234,9 @@ void CObjHero::Action()
 	//Eボタンを押すとゲーム画面に移動する
 	if (Input::GetVKey('M') == true)
 	{
-		Scene::SetScene(new CSceneMenu2());
+		//Scene::SetScene(new CSceneMenu2());
+		CObjMenu2*obj_menu = new CObjMenu2();
+		Objs::InsertObj(obj_menu, OBJ_MENU2, 1);
 	}
 
 
@@ -259,8 +262,9 @@ void CObjHero::Action()
 
 		Scene::SetScene(new CSceneMain());
 	}
-	
-	if (hit->CheckObjNameHit(OBJ_FURNITURE3) != nullptr)
+	//謎解き
+	/*
+	if (hit->CheckElementHit(ELEMENT_MYS) == true)
 	{
 		if (Input::GetVKey(VK_RETURN) == true) 
 		{
@@ -268,10 +272,11 @@ void CObjHero::Action()
 			g_Xz = m_x;
 			g_Yz = m_y;
 
-			Scene::SetScene(new CSceneTosolvemystery());
+			Scene::SetScene(new CScenesolve());
 		}
 	}
-	
+	*/
+
 	// 強引なマップ移動用HitBox判定プログラム
 	if (hit->CheckObjNameHit(OBJ_MOVE1) != nullptr)
 	{
@@ -285,19 +290,26 @@ void CObjHero::Action()
 			Scene::SetScene(new CSceneMap5());
 		}
 	}
+	//謎解きしないと入れないようにする
 	else if (hit->CheckObjNameHit(OBJ_MOVE2) != nullptr)
 	{
-		if (Input::GetVKey(VK_RETURN) == true) {
-			//this->SetStatus(false);
-			Hits::DeleteHitBox(this);
+		if (solveflag= true)
+		{
+			if (Input::GetVKey(VK_RETURN) == true) {
+				//this->SetStatus(false);
+				Hits::DeleteHitBox(this);
 
-			Audio::Start(1);
-			g_Xz = 0;
-			g_Yz = 310;
+				Audio::Start(1);
+				g_Xz = 0;
+				g_Yz = 310;
 
-			Scene::SetScene(new CSceneMap6());
+				solveflag = false;
+
+				Scene::SetScene(new CSceneMap6());
+			}
 		}
 	}
+
 	else if (hit->CheckObjNameHit(OBJ_MOVE3) != nullptr)
 	{
 		if (Input::GetVKey(VK_RETURN) == true) {
@@ -391,7 +403,8 @@ void CObjHero::Action()
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE11) != nullptr)
 	{
-	if (Input::GetVKey(VK_RETURN) == true) {
+	if (Input::GetVKey(VK_RETURN) == true)
+	 {
 		//this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
@@ -400,7 +413,7 @@ void CObjHero::Action()
 		g_Yz = 270;
 
 		Scene::SetScene(new CSceneMap2());
-	}
+	  }
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE12) != nullptr)
 	{
@@ -435,7 +448,6 @@ void CObjHero::Action()
 		{
 
 			if (Input::GetVKey(VK_RETURN) == true) {
-				//this->SetStatus(false);
 				Hits::DeleteHitBox(this);
 
 				Audio::Start(1);
@@ -446,6 +458,7 @@ void CObjHero::Action()
 
 				Scene::SetScene(new CSceneGameClear());
 			}
+
 		}
 	}
 	else if (hit->CheckObjNameHit(OBJ_ITEM) != nullptr)
