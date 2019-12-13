@@ -54,6 +54,7 @@ void CSceneMap5::InitScene()
 	//外部グラフィックファイルを読み込み6番目に登録
 	Draw::LoadImage(L"Hari.png", 6, TEX_SIZE_64);
 
+	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
 
 	Draw::LoadImage(L"FloorEX.png", 2, TEX_SIZE_512);
 

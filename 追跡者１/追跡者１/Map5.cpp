@@ -29,6 +29,14 @@ void CObjMap5::Init()
 	m_yy = 0;
 
 	Hits::SetHitBox(this, m_x, m_y, 340, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
+	Hits::SetHitBox(this, m_x+460, m_y+200, 90, 90, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
+	Hits::SetHitBox(this, m_x , m_y + 230, 60, 60, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
+	Hits::SetHitBox(this, m_x , m_y + 400, 60, 60, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
+	Hits::SetHitBox(this, m_x + 750, m_y + 230, 60, 60, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
+	Hits::SetHitBox(this, m_x + 750, m_y + 400, 60, 60, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
+	Hits::SetHitBox(this, m_x + 250, m_y + 500, 60, 95, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
+	Hits::SetHitBox(this, m_x + 480, m_y + 500, 60, 95, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
+
 	Hits::SetHitBox(this, m_x += 736, m_y += 300, 64, 100, ELEMENT_WHITE, OBJ_MOVE2, 1);
 	Hits::SetHitBox(this, m_x -= 736, m_y, 64, 100, ELEMENT_GREEN, OBJ_MOVE3, 1);
 	Hits::SetHitBox(this, m_x += 465, m_y -= 300, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
@@ -118,4 +126,87 @@ void CObjMap5::Draw()
 
 	//ï`âÊ
 	Draw::Draw(9, &src, &dst, c, 0.0f);
+
+	//êAñÿÇì
+	src.m_top = 0.0f;
+	src.m_left = 128.0f;
+	src.m_right = 64.0f;
+	src.m_bottom = 64.0f;
+
+	dst.m_top = 190.0f ;
+	dst.m_left =460.0f;
+	dst.m_right = 524.0f+40;
+	dst.m_bottom = 254.0f + 40;
+
+	Draw::Draw(52, &src, &dst, c, -90.0f);
+
+	//êAñÿÇì1
+	src.m_top = 0.0f;
+	src.m_left = 64.0f;
+	src.m_right = 0.0f;
+	src.m_bottom = 64.0f;
+
+	dst.m_top = 230.0f ;
+	dst.m_left = 804.0f ;
+	dst.m_right = 740.0f ;
+	dst.m_bottom = 294.0f ;
+
+	Draw::Draw(52, &src, &dst, c, 0.0f);
+	//êAñÿ2
+	dst.m_top = 230.0f;
+	dst.m_left = 64.0f;
+	dst.m_right = 0.0f;
+	dst.m_bottom = 294.0f;
+
+	Draw::Draw(52, &src, &dst, c, 0.0f);
+	//êAñÿ3
+
+	dst.m_top = 400.0f;
+	dst.m_left = 64.0f;
+	dst.m_right = 0.0f;
+	dst.m_bottom = 464.0f;
+
+	Draw::Draw(52, &src, &dst, c, 0.0f);
+	//êAñÿ4
+
+	dst.m_top = 400.0f;
+	dst.m_left = 804.0f;
+	dst.m_right = 740.0f;
+	dst.m_bottom = 464.0f;
+
+	Draw::Draw(52, &src, &dst, c, 0.0f);
+
+	//ï®ÇP
+	src.m_top = 0.0f;
+	src.m_left = 190.0f;
+	src.m_right = 128.0f;
+	src.m_bottom = 64.0f;
+
+	dst.m_top = 500.0f;
+	dst.m_left = 296.0f+30;
+	dst.m_right = 228.0f;
+	dst.m_bottom = 564.0f +30;
+
+	Draw::Draw(52, &src, &dst, c, 0.0f);
+	//ï®ÇQ
+	dst.m_top = 500.0f;
+	dst.m_left = 526.0f + 30;
+	dst.m_right = 458.0f;
+	dst.m_bottom = 564.0f + 30;
+
+	Draw::Draw(52, &src, &dst, c, 0.0f);
+
+	//„Oü~
+	src.m_top = 0.0f;
+	src.m_left = 256.0f;
+	src.m_right = 192.0f;
+	src.m_bottom = 64.0f;
+
+	dst.m_top = 240.0f;
+	dst.m_left = 376.0f + 100;
+	dst.m_right = 312.0f;
+	dst.m_bottom = 304.0f + 100;
+
+	Draw::Draw(52, &src, &dst, c, 0.0f);
+
 }

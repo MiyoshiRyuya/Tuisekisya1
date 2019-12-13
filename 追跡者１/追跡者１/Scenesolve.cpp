@@ -12,35 +12,35 @@
 using namespace GameL;
 
 //使用ヘッダー
-#include"SceneTo solve mystery.h"
+#include"Scenesolve.h"
 #include"GameHead.h"
 
 
 //コンストラクタ
-CSceneTosolvemystery::CSceneTosolvemystery()
+CScenesolve::CScenesolve()
 {
 
 }
 
 //デストラクタ
-CSceneTosolvemystery::~CSceneTosolvemystery()
+CScenesolve::~CScenesolve()
 {
 
 }
 
 //ゲームメイン初期化メソッド
-void CSceneTosolvemystery::InitScene()
+void CScenesolve::InitScene()
 {
 	//外部グラフィックファイルを読み込み0番に登録（64×64ピクセル）
 	Draw::LoadImage(L"Nazotoki.png", 1, TEX_SIZE_512);
 
 	//謎解き画面表示
-	CObjTosolvemystery*obj = new CObjTosolvemystery();
-	Objs::InsertObj(obj, OBJ_TOSOLVEMYATERY, 1);
+	CObjsolve*obj = new CObjsolve();
+	Objs::InsertObj(obj, OBJ_SOLVE, 1);
 }
 
 //ゲームメイン実行中メソッド
-void CSceneTosolvemystery::Scene()
+void CScenesolve::Scene()
 {
 
 }

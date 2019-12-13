@@ -5,7 +5,7 @@
 #include"GameL\DrawTexture.h"
 
 #include "GameHead.h"
-#include "SceneTo solve mystery.h"
+#include "Objsolve.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -13,26 +13,26 @@ using namespace GameL;
 
 
 //イニシャライズ
-void CObjTosolvemystery::Init()
+void CObjsolve::Init()
 {
 	m_x = 0.0f;
 	m_y = 0.0f;
 }
 
 //アクション
-void CObjTosolvemystery::Action()
+void CObjsolve::Action()
 {
+
 	//Eボタンを押すとゲーム画面に移動する
 	if (Input::GetVKey('E') == true)
 	{
 		Scene::SetScene(new CSceneMain());
 	}
 
-
 }
 
 //ドロー
-void CObjTosolvemystery::Draw()
+void CObjsolve::Draw()
 {
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
