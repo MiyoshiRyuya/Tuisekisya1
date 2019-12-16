@@ -59,6 +59,8 @@ void CSceneMap6::InitScene()
 
 	Draw::LoadImage(L"Chair.png", 50, TEX_SIZE_64);
 
+	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
+
 	Draw::LoadImageW(L"本棚横並び.png", 10, TEX_SIZE_512);
 
 	Draw::LoadImageW(L"カーペット２.png", 11, TEX_SIZE_512);

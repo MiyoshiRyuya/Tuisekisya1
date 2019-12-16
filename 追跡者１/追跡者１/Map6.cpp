@@ -184,4 +184,58 @@ void CObjMap6::Draw()
 
 	Draw::Draw(50, &src, &dst, c, -90.0f);
 
+	dst.m_top = 0.0f+400;
+	dst.m_left = 64.0f + 250;
+	dst.m_right = 0.0f + 250;
+	dst.m_bottom = 64.0f+400;
+
+	Draw::Draw(50, &src, &dst, c, -90.0f);
+
+	dst.m_top = 0.0f + 420;
+	dst.m_left = 64.0f + 450;
+	dst.m_right = 0.0f + 450;
+	dst.m_bottom = 64.0f + 420;
+
+	Draw::Draw(50, &src, &dst, c, -90.0f);
+
+	dst.m_top = 0.0f + 100;
+	dst.m_left = 64.0f + 100;
+	dst.m_right = 0.0f + 100;
+	dst.m_bottom = 64.0f + 100;
+
+	Draw::Draw(50, &src, &dst, c, 0.0f);
+
+	dst.m_top = 0.0f + 100;
+	dst.m_left = 64.0f + 300;
+	dst.m_right = 0.0f + 300;
+	dst.m_bottom = 64.0f + 100;
+
+	Draw::Draw(50, &src, &dst, c, 0.0f);
+
+	dst.m_top = 0.0f + 100;
+	dst.m_left = 64.0f + 500;
+	dst.m_right = 0.0f + 500;
+	dst.m_bottom = 64.0f + 100;
+
+	Draw::Draw(50, &src, &dst, c, 0.0f);
+
+	dst.m_top = 0.0f + 100;
+	dst.m_left = 64.0f + 700;
+	dst.m_right = 0.0f + 700;
+	dst.m_bottom = 64.0f + 100;
+
+	Draw::Draw(50, &src, &dst, c, 0.0f);
+
+	src.m_top = 0.0f;
+	src.m_left = 320.0f;
+	src.m_right = 256.0f;
+	src.m_bottom = 64.0f;
+
+	dst.m_top = 0.0f +100;
+	dst.m_left = 320.0f -250;
+	dst.m_right = 256.0f -250;
+	dst.m_bottom = 64.0f +100;
+
+	Draw::Draw(52, &src, &dst, c, 0.0f);
+
 }

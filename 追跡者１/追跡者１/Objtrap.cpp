@@ -199,13 +199,13 @@ void CObjtrap3::Action()
 	m_y += vy;
 	m_x += vx;
 	//cƒoƒEƒ“ƒh
-	if (m_y + 64.0f >= 600 || m_y <= 100)
+	if (m_y + 64.0f >= 600 || m_y <= 0)
 	{
 
 		vy *= -1;
 	}
 	//‰¡ƒoƒEƒ“ƒh
-	if (m_x + 32.0f >= 800 || m_x <= 100)
+	if (m_x + 32.0f >= 800 || m_x <= 0)
 	{
 
 		vx *= -1;
@@ -236,14 +236,7 @@ void CObjtrap3::Draw()
 	dst.m_bottom = 64.0f + m_y;
 
 	//•`‰æ
-	Draw::Draw(3, &src, &dst, c, 90.0f);
+	Draw::Draw(16, &src, &dst, c, 90.0f);
 
-	dst.m_top = 0.0f + m_y;
-	dst.m_left = 64.0f + m_x;
-	dst.m_right = 0.0f + m_x;
-	dst.m_bottom = 64.0f + m_y;
-
-	//•`‰æ
-	Draw::Draw(4, &src, &dst, c, 90.0f);
 
 }
