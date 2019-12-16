@@ -74,13 +74,13 @@ CObjtrap1::CObjtrap1(float x, float y)
 	m_x = x;
 	m_y = y;
 	//ƒxƒNƒgƒ‹ˆÚ“®
-	vx = 1;
-	vy = 1;
+	vx = 2;
+	vy = 2;
 }
 
 void CObjtrap1::Init()
 {
-	Hits::SetHitBox(this, m_x, m_y, 50, 64, ELEMENT_RED, OBJ_TRAP, 1);
+	Hits::SetHitBox(this, m_x, m_y, 65, 60, ELEMENT_RED, OBJ_TRAP, 1);
 
 }
 
