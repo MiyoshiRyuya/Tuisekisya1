@@ -14,6 +14,7 @@ using namespace GameL;
 
 #include "GameHead.h"
 #include "SceneMap6.h"
+#include "ObjEnemy.h"
 #include<time.h>
 
 //コンストラクタ

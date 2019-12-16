@@ -10,6 +10,7 @@
 #include "GameHead.h"
 #include "Map6.h"
 #include "ObjHero.h"
+#include "ObjEnemy.h"
 #include "Objtrap.h"
 
 //使用するネームスペース
