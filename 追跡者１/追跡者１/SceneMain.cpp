@@ -7,6 +7,7 @@
 #include "GameL\DrawFont.h"
 #include "GameL\UserData.h"
 #include "GameL\HitBoxManager.h"
+#include "GameL\Audio.h"
 
 
 //使用するネームスペース
@@ -29,6 +30,16 @@ CSceneMain::~CSceneMain()
 //ゲームメイン初期化メソッド
 void CSceneMain::InitScene()
 {
+
+	Audio::LoadAudio(0, L"desperate .wav", SOUND_TYPE::BACK_MUSIC);
+
+
+	//バックミュージックスタート
+	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
+	Audio::Start(0); //音楽スタート
+
+
+
 	//外部データの読み込み(ステージ情報)
 	unique_ptr<wchar_t> p;//ステージ情報ポインター
 	int size;//ステージ情報の大きさ
