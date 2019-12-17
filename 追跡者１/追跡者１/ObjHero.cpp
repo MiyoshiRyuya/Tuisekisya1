@@ -168,7 +168,7 @@ void CObjHero::Action()
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
 		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
+		//Hits::DeleteHitBox(this);
 
 	   itemflag = false;
 		//主人公消滅でシーンをゲームオーバー画面に移行する
@@ -178,7 +178,7 @@ void CObjHero::Action()
 	if (hit->CheckObjNameHit(OBJ_TRAP) != nullptr)
 	{
 		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
+		//Hits::DeleteHitBox(this);
 
 	
 
