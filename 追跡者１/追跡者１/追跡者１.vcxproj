@@ -116,7 +116,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ObjFurnirure44.cpp" />
     <ClCompile Include="ObjFurniture11.cpp" />
     <ClCompile Include="ObjFurniture12.cpp" />
     <ClCompile Include="ObjFurniture13.cpp" />
@@ -236,7 +235,6 @@
     <ClInclude Include="Map5.h" />
     <ClInclude Include="Map6.h" />
     <ClInclude Include="ObjCloset.h" />
-    <ClInclude Include="ObjFurnirure44.h" />
     <ClInclude Include="ObjFurnirure7.h" />
     <ClInclude Include="ObjFurniture.h" />
     <ClInclude Include="GameHead.h" />

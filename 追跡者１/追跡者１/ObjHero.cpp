@@ -40,12 +40,15 @@ void CObjHero::Init()
 	m_mos_y = 0.0f;
 	hitbo = 0; //HitBox確認用
 
+	m_ani_time_max = 4;
+
 	//stageとの衝突確認用
 	m_hit_up = false;
 	m_hit_down = false;
 	m_hit_left = false;
 	m_hit_right = false;
-
+	m_ani_time = 0;
+	m_ani_frame = 0;
 	
 	Hits::SetHitBox(this, m_vx, m_vy, 64, 64, ELEMENT_PLAYER, OBJ_HERO, 1);
 
@@ -72,12 +75,15 @@ void CObjHero::Action()
 		m_sita = 0;
 		m_ue = 0;
 		m_hidari = 0;
+
+		m_ani_time += 1;
 		if (Input::GetVKey('L') == true)
 		{
 			m_vx += 10.0f;
 		}
 		m_vx += 2.2f;
 	}
+	
 
 	if (Input::GetVKey('A') == true)
 	{
@@ -85,6 +91,8 @@ void CObjHero::Action()
 		m_ue = 0;
 		m_sita = 0;
 		m_migi = 0;
+
+		m_ani_time +=1;
 		if (Input::GetVKey('L') == true)
 		{
 			m_vx -= 10.0f;
@@ -98,25 +106,43 @@ void CObjHero::Action()
 		m_sita = 0;
 		m_migi = 0;
 		m_hidari = 0;
+
+		m_ani_time += 1;
 		if (Input::GetVKey('L') == true)
 		{
 			m_vy -= 10.0f;
 		}
 		m_vy -= 2.2f;
 	}
-
+	
 	if (Input::GetVKey('S') == true)
 	{
 		m_sita = 1;
 		m_ue = 0;
 		m_migi = 0;
 		m_hidari = 0;
+
+		m_ani_time += 1;
 		if (Input::GetVKey('L') == true)
 		{
 			m_vy += 10.0f;
 		}
 		m_vy += 2.2f;
 	}
+
+
+	//アニメーション動作--------------------
+	if (m_ani_time>=m_ani_time_max)
+	{
+		m_ani_frame += 1;
+		m_ani_time = 0;
+
+	}
+	if (m_ani_frame>=4)
+	{
+		m_ani_frame = 0;
+	}
+
 
 	if (m_vx+32.0f>800.0f)
 	{
@@ -144,7 +170,7 @@ void CObjHero::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-		itemflag = false;
+	   itemflag = false;
 		//主人公消滅でシーンをゲームオーバー画面に移行する
 		Scene::SetScene(new CSceneGameOver());
 	}
@@ -155,7 +181,6 @@ void CObjHero::Action()
 		Hits::DeleteHitBox(this);
 
 	
-
 
 		Scene::SetScene(new CSceneGameOver());
 	}
@@ -479,11 +504,32 @@ void CObjHero::Draw()
 	RECT_F src;
 	RECT_F dst;
 
+	int Ani1[4] =         // 上用
+	{
+		0,2,0,2,
+	};
+
+	int Ani2[4] =         //右用
+	{
+		0,2,0,2,
+	};
+
+	int Ani3[4] =         //左用
+	{
+		0,2,0,2,
+	};
+
+	int Ani4[4] =         //下用
+	{
+		0,2,0,2
+	};
+
+
 	if (m_ue == 1) {
-		src.m_top = 385.0f;
-		src.m_left = 180.0f;
-		src.m_right = 320.0f;
-		src.m_bottom = 512.0f;
+		src.m_top = /*3.0f + */387.0f;
+		src.m_left = 61.0f + Ani1[m_ani_frame] * 64;
+		src.m_right = 180.0f + Ani1[m_ani_frame] * 64;
+		src.m_bottom = 515.0f;
 
 		dst.m_top = 0.0f + m_py;
 		dst.m_left = 0.0f + m_px;
@@ -494,10 +540,10 @@ void CObjHero::Draw()
 	}
 
 	if (m_migi == 1) {
-		src.m_top = 255.0f;
-		src.m_left = 180.0f;
-		src.m_right = 320.0f;
-		src.m_bottom = 385.0f;
+		src.m_top = 3.0f + 256.0f;
+		src.m_left = 61.0f + Ani2[m_ani_frame] * 64;
+		src.m_right = 188.0f + Ani2[m_ani_frame] * 64;
+		src.m_bottom = 387.0f;
 
 		dst.m_top = 0.0f + m_py;
 		dst.m_left = 0.0f + m_px;
@@ -506,12 +552,11 @@ void CObjHero::Draw()
 
 		Draw::Draw(0, &src, &dst, c, 0.0f);
 	}
-
 	if (m_hidari == 1) {
-		src.m_top = 130.0f;
-		src.m_left = 180.0f;
-		src.m_right = 320.0f;
-		src.m_bottom = 255.0f;
+		src.m_top = 3.0f + 128.0f;
+		src.m_left = 61.0f + Ani3[m_ani_frame] * 64;
+		src.m_right = 180.0f + Ani3[m_ani_frame] * 64;
+		src.m_bottom = 131.0f + 128.0f;
 
 		dst.m_top = 0.0f + m_py;
 		dst.m_left = 0.0f + m_px;
@@ -522,10 +567,10 @@ void CObjHero::Draw()
 	}
 
 	if (m_sita == 1) {
-		src.m_top = 0.0f;
-		src.m_left = 180.0f;
-		src.m_right = 320.0f;
-		src.m_bottom = 130.0f;
+		src.m_top = 3.0f;
+		src.m_left = 61.0f + Ani4[m_ani_frame] * 64;
+		src.m_right = 188.0f + Ani4[m_ani_frame] * 64;
+		src.m_bottom = 131.0f;
 
 		dst.m_top = 0.0f + m_py;
 		dst.m_left = 0.0f + m_px;
@@ -534,23 +579,4 @@ void CObjHero::Draw()
 
 		Draw::Draw(0, &src, &dst, c, 0.0f);
 	}
-/*	src.m_top = 0.0f;
-	src.m_left = 0.0f;
-	src.m_right = 180.0f;
-	src.m_bottom = 130.0f;
-
-	dst.m_top = 0.0f + m_py;
-	dst.m_left = 0.0f + m_px;
-	dst.m_right = 64.0f + m_px;
-	dst.m_bottom = 64.0f + m_py;
-
-	Draw::Draw(0, &src, &dst, c, 0.0f);*/
 }
-
-
-/*
-Hello!
-My name is Sire.
-Your Spret System.
-
-*/

@@ -49,6 +49,8 @@ private:
 		float m_mos_y; //マウスY座標
 		float X;
 		float Y;
+		
+		
 
 		//stageとの衝突確認用
 		bool m_hit_up;
@@ -60,4 +62,8 @@ private:
 		int m_stage_type;
 
 		int hitbo; //HitBox確認用
+
+		int m_ani_frame; //アニメーションフレーム動作間隔
+		int m_ani_time; //アニメーション
+		int m_ani_time_max;//アニメーション間隔幅
 };

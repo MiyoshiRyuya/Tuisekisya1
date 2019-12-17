@@ -38,25 +38,31 @@ void CObjMenu2::Action()
 	{
 		if (GameOver == 0) {
 			if (Migi == 1) {
-				if (Input::GetVKey('W') == true) {
+				if (Input::GetVKey('W') == true) 
+				{
 					Migi = 3;
 					time = 0;
 				}
-				else if (Input::GetVKey('S') == true) {
+				else if (Input::GetVKey('S') == true) 
+				{
 					Migi = 2;
 					time = 0;
 				}
 			}
 			else if (Migi == 2) {
-				if (Input::GetVKey('W') == true) {
+				if (Input::GetVKey('W') == true) 
+				{
 					Migi = 1;
 					time = 0;
 				}
-				else if (Input::GetVKey('S') == true) {
+
+				else if (Input::GetVKey('S') == true) 
+				{
 					Migi = 3;
 					time = 0;
 				}
-				else if (Input::GetVKey(VK_RETURN) == true) {
+				else if (Input::GetVKey(VK_RETURN) == true) 
+				{
 					if (genzaiti == 1)
 						Scene::SetScene(new CSceneMain());
 					else if (genzaiti == 2)
@@ -72,15 +78,18 @@ void CObjMenu2::Action()
 				}
 			}
 			else if (Migi == 3) {
-				if (Input::GetVKey('W') == true) {
+				if (Input::GetVKey('W') == true) 
+				{
 					Migi = 2;
 					time = 0;
 				}
-				else if (Input::GetVKey('S') == true) {
+				else if (Input::GetVKey('S') == true) 
+				{
 					Migi = 1;
 					time = 0;
 				}
-				else if (Input::GetVKey(VK_RETURN) == true) {
+				else if (Input::GetVKey(VK_RETURN) == true) 
+				{
 					GameOver = 1;
 					time = 0;
 				}
@@ -88,29 +97,35 @@ void CObjMenu2::Action()
 		}
 		else if (GameOver == 1) {
 			if (Migi2 == 1) {
-				if (Input::GetVKey('A') == true) {
+				if (Input::GetVKey('A') == true) 
+				{
 					Migi2 = 2;
 					time = 0;
 				}
-				else if (Input::GetVKey('D') == true) {
+				else if (Input::GetVKey('D') == true)
+				{
 					Migi2 = 2;
 					time = 0;
 				}
-				else if (Input::GetVKey(VK_RETURN) == true) {
+				else if (Input::GetVKey(VK_RETURN) == true) 
+				{
 					GameOver = 0;
 					Scene::SetScene(new CSceneTitle());
 				}
 			}
 			else if (Migi2 == 2) {
-				if (Input::GetVKey('A') == true) {
+				if (Input::GetVKey('A') == true) 
+				{
 					Migi2 = 1;
 					time = 0;
 				}
-				else if (Input::GetVKey('D') == true) {
+				else if (Input::GetVKey('D') == true) 
+				{
 					Migi2 = 1;
 					time = 0;
 				}
-				else if (Input::GetVKey(VK_RETURN) == true) {
+				else if (Input::GetVKey(VK_RETURN) == true) 
+				{
 					GameOver = 0;
 					Migi2 = 1;
 					time = 0;
