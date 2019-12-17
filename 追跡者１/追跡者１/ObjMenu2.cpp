@@ -8,6 +8,7 @@
 
 #include "GameHead.h"
 #include "ObjMenu2.h"
+#include "GameL\Audio.h"
 
 
 //使用するネームスペース
@@ -22,7 +23,9 @@ void CObjMenu2::Init()
 	Item = 0;
 	Migi = 1; //初期画面
 	Migi2 = 1; //game終了画面
+	Migi3 = 1; //Item画面
 	GameOver = 0;
+	ItemKN; //アイテム確認
 
 	time = 0; // 時間測る君
 }
@@ -44,6 +47,11 @@ void CObjMenu2::Action()
 				}
 				else if (Input::GetVKey('S') == true) {
 					Migi = 2;
+					time = 0;
+				}
+				else if (Input::GetVKey(VK_RETURN) == true) {
+					GameOver = 2;
+					Item = 1;
 					time = 0;
 				}
 			}
@@ -117,6 +125,9 @@ void CObjMenu2::Action()
 				}
 			}
 		}
+		else if (Item == 1) {
+
+		}
 	}
 }
 
@@ -139,11 +150,20 @@ void CObjMenu2::Draw()
 	}
 
 	//ゲーム終了の最終確認
-	if (GameOver == 1) {
+	else if (GameOver == 1) {
 		Font::StrDraw(L"本当に終了しますか？", 240, 140, 32, c);
 		Font::StrDraw(L"(現在の進行内容は保存されません)", 140, 180, 32, c);
 		Font::StrDraw(L"はい", 250, 320, 32, c);
 		Font::StrDraw(L"いいえ", 450, 320, 32, c);
+	}
+
+	else if (Item == 1) {
+		if (Cross == 0) {
+			Font::StrDraw(L"十字架　×　0", 240, 140, 32, c);
+		}
+		else if (Cross == 1) {
+			Font::StrDraw(L"十字架　×　1", 240, 140, 32, c);
+		}
 	}
 
 	//カーソル（⇒）

@@ -7,10 +7,13 @@
 #include "ObjHero.h"
 #include "GameHead.h"
 #include "ObjItem.h"
+#include "ObjMenu2.h"
 
 //使用するネームスペース
 using namespace GameL;
+
 bool deleteflag = false;
+
 //コンストラクタ
 CObjItem::CObjItem(float x, float y)
 {
@@ -47,7 +50,6 @@ void CObjItem::Action()
 		}
 	}
 }
-
 
 
 //ドロー

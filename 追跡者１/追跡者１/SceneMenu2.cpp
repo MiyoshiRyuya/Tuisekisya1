@@ -38,6 +38,8 @@ void CSceneMenu2::InitScene()
 	Font::SetStrTex(L"ゲーム画面に戻る");
 	Font::SetStrTex(L"ゲームを終了する");
 	Font::SetStrTex(L"→");
+	Font::SetStrTex(L"十字架　×　0");
+	Font::SetStrTex(L"十字架　×　1");
 
 	//Menu2オブジェクト
 	CObjMenu2*obj_menu = new CObjMenu2();

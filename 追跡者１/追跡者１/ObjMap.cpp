@@ -12,6 +12,8 @@
 //使用するネームスペース
 using namespace GameL;
 
+extern float genzaiti; //現在地
+
 //イニシャライズ
 void CObjMap::Init()
 {
@@ -21,7 +23,7 @@ void CObjMap::Init()
 //アクション
 void CObjMap::Action()
 {
-
+	genzaiti = 1;
 }
 
 //ドロー
