@@ -54,6 +54,9 @@ void CObjHero::Init()
 //アクション
 void CObjHero::Action()
 {
+	CHitBox*hit = Hits::GetHitBox(this);
+	hit->SetPos(m_px, m_py);
+
 	//移動ベクトルの破棄
 	m_vx = 0.0f;
 	m_vy = 0.0f;
@@ -134,10 +137,6 @@ void CObjHero::Action()
 	m_py += m_vy;
 
 
-
-	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px , m_py);
-
 	//敵オブジェクトと接触したら主人公削除
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
@@ -154,9 +153,7 @@ void CObjHero::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-	
-
-
+		itemflag = false;
 		Scene::SetScene(new CSceneGameOver());
 	}
 
