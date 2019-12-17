@@ -117,9 +117,6 @@
     <ClCompile Include="ObjEnemy.cpp">
       <Filter>ソース ファイル\Enemy</Filter>
     </ClCompile>
-    <ClCompile Include="ObjHero.cpp">
-      <Filter>ソース ファイル\Hero</Filter>
-    </ClCompile>
     <ClCompile Include="objstage.cpp">
       <Filter>ソース ファイル\Stage</Filter>
     </ClCompile>
@@ -429,9 +426,6 @@
     <ClCompile Include="ObjItem.cpp">
       <Filter>ソース ファイル\item</Filter>
     </ClCompile>
-    <ClCompile Include="ObjFurnirure44.cpp">
-      <Filter>ソース ファイル\Furniture</Filter>
-    </ClCompile>
     <ClCompile Include="Objsolve.cpp">
       <Filter>ソース ファイル\謎解き</Filter>
     </ClCompile>
@@ -443,6 +437,9 @@
     </ClCompile>
     <ClCompile Include="Objsolve2.cpp">
       <Filter>ソース ファイル\謎解き</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjHero.cpp">
+      <Filter>ソース ファイル\Hero</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -763,9 +760,6 @@
     </ClInclude>
     <ClInclude Include="ObjItem.h">
       <Filter>ソース ファイル\item</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjFurnirure44.h">
-      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
     <ClInclude Include="Objsolve.h">
       <Filter>ソース ファイル\謎解き</Filter>

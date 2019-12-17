@@ -97,7 +97,7 @@ void CSceneMap6::InitScene()
 	if (s == 1)
 	{
 		CObjEnemy*obj_enemy = new CObjEnemy();
-		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 11);
+		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 50);
 	}
 }
 //実行中メソッド

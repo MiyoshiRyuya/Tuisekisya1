@@ -152,19 +152,4 @@ void CObjMap3::Draw()
 		dst.m_right = 380.0f + px;
 		dst.m_bottom = 350.0f + py;
 
-		//•`‰æ
-		Draw::Draw(11, &src, &dst, c, 0.0f);
-
-		src.m_top = 0.0f;
-		src.m_left = 64.0f;
-		src.m_right = 0.0f;
-		src.m_bottom = 64.0f;
-
-		dst.m_top = 0.0f + my;
-		dst.m_left = 200.0f + mx;
-		dst.m_right = 0.0f + mx;
-		dst.m_bottom = 200.0f + my;
-
-		Draw::Draw(51, &src, &dst, c, 0.0f);//’n‹…‹V
-
 }

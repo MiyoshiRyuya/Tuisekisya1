@@ -56,8 +56,6 @@ void CSceneMap3::InitScene()
 
 	//外部グラフィックファイルを読み込み11番に登録（64×64ピクセル）
 	Draw::LoadImage(L"Closet1.png", 11, TEX_SIZE_64);
-	//謎解きヒント
-	Draw::LoadImage(L"Tips2.png", 51, TEX_SIZE_64);
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//作った主人公オブジェクトをオブジェクトマネージャーに登録
@@ -69,18 +67,12 @@ void CSceneMap3::InitScene()
 
 	Draw::LoadImage(L"SofaandTable.png", 14, TEX_SIZE_64);
 
-	Draw::LoadImage(L"Tips2.png", 14, TEX_SIZE_64);
-
 	//トラップオブジェクト
 	CObjtrap*obj_trap = new CObjtrap(542,292);
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 	//トラップオブジェクト
 	CObjtrap1*obj_trap1 = new CObjtrap1(70, 550);
 	Objs::InsertObj(obj_trap1, OBJ_TRAP, 1);
-
-	//謎解きヒント
-	CObjFurniture44*obj_Furniture44 = new CObjFurniture44();
-	Objs::InsertObj(obj_Furniture44, OBJ_FURNITURE44, 5);
 
 	CObjCloset*obj_closet = new CObjCloset();
 	Objs::InsertObj(obj_closet, OBJ_CLOSET, 1);
