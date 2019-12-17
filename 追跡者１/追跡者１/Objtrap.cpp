@@ -74,13 +74,13 @@ CObjtrap1::CObjtrap1(float x, float y)
 	m_x = x;
 	m_y = y;
 	//ベクトル移動
-	vx = 1;
-	vy = 1;
+	vx = 2;
+	vy = 2;
 }
 
 void CObjtrap1::Init()
 {
-	Hits::SetHitBox(this, m_x, m_y, 50, 64, ELEMENT_RED, OBJ_TRAP, 1);
+	Hits::SetHitBox(this, m_x, m_y, 65, 60, ELEMENT_RED, OBJ_TRAP, 1);
 
 }
 
@@ -199,13 +199,13 @@ void CObjtrap3::Action()
 	m_y += vy;
 	m_x += vx;
 	//縦バウンド
-	if (m_y + 64.0f >= 600 || m_y <= 100)
+	if (m_y + 64.0f >= 600 || m_y <= 0)
 	{
 
 		vy *= -1;
 	}
 	//横バウンド
-	if (m_x + 32.0f >= 800 || m_x <= 100)
+	if (m_x + 32.0f >= 800 || m_x <= 0)
 	{
 
 		vx *= -1;
@@ -236,14 +236,7 @@ void CObjtrap3::Draw()
 	dst.m_bottom = 64.0f + m_y;
 
 	//描画
-	Draw::Draw(3, &src, &dst, c, 90.0f);
+	Draw::Draw(16, &src, &dst, c, 90.0f);
 
-	dst.m_top = 0.0f + m_y;
-	dst.m_left = 64.0f + m_x;
-	dst.m_right = 0.0f + m_x;
-	dst.m_bottom = 64.0f + m_y;
-
-	//描画
-	Draw::Draw(4, &src, &dst, c, 90.0f);
 
 }

@@ -100,7 +100,7 @@ void CSceneMain::InitScene()
 	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
 
 	//外部グラフィックファイルを読み込み6番目に登録
-	Draw::LoadImage(L"Hari.png", 6, TEX_SIZE_64);
+	Draw::LoadImage(L"Hari.png", 16, TEX_SIZE_64);
 
 	//外部グラフィックファイルを読み込み7番目に登録
 	Draw::LoadImage(L"Horrorbear.png", 7, TEX_SIZE_64);
@@ -124,22 +124,8 @@ void CSceneMain::InitScene()
 	Draw::LoadImage(L"bed.png", 13, TEX_SIZE_64);
 
 
-
-
-
-
-
 	//CObjstage*objb = new CObjstage(map);
 	//Objs::InsertObj(objb, OBJ_STAGE, 9);
-
-
-
-	//罠オブジェクト作成
-	CObjtrap*obj_trap = new CObjtrap();
-	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
-
-
-
 
 
 	//家具オブジェクト作成
@@ -187,6 +173,9 @@ void CSceneMain::InitScene()
 	Objs::InsertObj(obj_Furnirure10, OBJ_FURNITURE10, 1);
 
 	
+	//トラップオブジェクト
+	CObjtrap3*obj_trap1 = new CObjtrap3(170, 50);
+	Objs::InsertObj(obj_trap1, OBJ_TRAP, 2);
 
 	//マップ背景オブジェクト1作成
 	CObjMap*obj_map = new CObjMap();
