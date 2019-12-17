@@ -116,6 +116,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ObjFurnirure44.cpp" />
     <ClCompile Include="ObjFurniture11.cpp" />
     <ClCompile Include="ObjFurniture12.cpp" />
     <ClCompile Include="ObjFurniture13.cpp" />
@@ -194,13 +195,12 @@
     <ClCompile Include="ObjGameOver.cpp" />
     <ClCompile Include="ObjHero.cpp" />
     <ClCompile Include="ObjMenu2.cpp" />
+    <ClCompile Include="Objsolve.cpp" />
+    <ClCompile Include="Objsolve2.cpp" />
     <ClCompile Include="objstage.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="ObjTitle.cpp" />
-    <ClCompile Include="ObjTo solve mystery.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="SceneCloset.cpp" />
     <ClCompile Include="SceneGameClear.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
@@ -220,10 +220,11 @@
     <ClCompile Include="SceneMap5.cpp" />
     <ClCompile Include="SceneMap6.cpp" />
     <ClCompile Include="SceneMenu2.cpp" />
+    <ClCompile Include="Scenesolve.cpp" />
+    <ClCompile Include="Scenesolve2.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
-    <ClCompile Include="Objtrap.cpp" />
-    <ClCompile Include="SceneTo solve mystery.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    <ClCompile Include="Objtrap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -235,6 +236,7 @@
     <ClInclude Include="Map5.h" />
     <ClInclude Include="Map6.h" />
     <ClInclude Include="ObjCloset.h" />
+    <ClInclude Include="ObjFurnirure44.h" />
     <ClInclude Include="ObjFurnirure7.h" />
     <ClInclude Include="ObjFurniture.h" />
     <ClInclude Include="GameHead.h" />
@@ -302,9 +304,8 @@
     <ClInclude Include="ObjGameOver.h" />
     <ClInclude Include="ObjHero.h" />
     <ClInclude Include="ObjMenu2.h" />
-    <ClInclude Include="ObjTo solve mystery.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
-    </ClInclude>
+    <ClInclude Include="Objsolve.h" />
+    <ClInclude Include="Objsolve2.h" />
     <ClInclude Include="SceneGameClear.h" />
     <ClInclude Include="SceneCloset.h" />
     <ClInclude Include="SceneMenu2.h" />
@@ -322,11 +323,10 @@
     <ClInclude Include="SceneMap4.h" />
     <ClInclude Include="SceneMap5.h" />
     <ClInclude Include="SceneMap6.h" />
+    <ClInclude Include="Scenesolve.h" />
+    <ClInclude Include="Scenesolve2.h" />
     <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="Objtrap.h" />
-    <ClInclude Include="SceneTo solve mystery.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
-    </ClInclude>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

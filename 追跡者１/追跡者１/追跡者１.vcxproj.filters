@@ -249,12 +249,6 @@
     <ClCompile Include="Objtrap.cpp">
       <Filter>ソース ファイル\Trap</Filter>
     </ClCompile>
-    <ClCompile Include="ObjTo solve mystery.cpp">
-      <Filter>ソース ファイル\謎解き</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneTo solve mystery.cpp">
-      <Filter>ソース ファイル\謎解き</Filter>
-    </ClCompile>
     <ClCompile Include="ObjMain.cpp">
       <Filter>ソース ファイル\Main</Filter>
     </ClCompile>
@@ -434,6 +428,21 @@
     </ClCompile>
     <ClCompile Include="ObjItem.cpp">
       <Filter>ソース ファイル\item</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjFurnirure44.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
+    <ClCompile Include="Objsolve.cpp">
+      <Filter>ソース ファイル\謎解き</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenesolve.cpp">
+      <Filter>ソース ファイル\謎解き</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenesolve2.cpp">
+      <Filter>ソース ファイル\謎解き</Filter>
+    </ClCompile>
+    <ClCompile Include="Objsolve2.cpp">
+      <Filter>ソース ファイル\謎解き</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -623,12 +632,6 @@
     <ClInclude Include="Objtrap.h">
       <Filter>ソース ファイル\Trap</Filter>
     </ClInclude>
-    <ClInclude Include="ObjTo solve mystery.h">
-      <Filter>ソース ファイル\謎解き</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneTo solve mystery.h">
-      <Filter>ソース ファイル\謎解き</Filter>
-    </ClInclude>
     <ClInclude Include="ObjMain.h">
       <Filter>ソース ファイル\Main</Filter>
     </ClInclude>
@@ -760,6 +763,21 @@
     </ClInclude>
     <ClInclude Include="ObjItem.h">
       <Filter>ソース ファイル\item</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjFurnirure44.h">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="Objsolve.h">
+      <Filter>ソース ファイル\謎解き</Filter>
+    </ClInclude>
+    <ClInclude Include="Objsolve2.h">
+      <Filter>ソース ファイル\謎解き</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenesolve.h">
+      <Filter>ソース ファイル\謎解き</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenesolve2.h">
+      <Filter>ソース ファイル\謎解き</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

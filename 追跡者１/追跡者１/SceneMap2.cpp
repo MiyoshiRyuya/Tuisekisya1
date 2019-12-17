@@ -7,6 +7,7 @@
 #include "GameL\DrawTexture.h"
 #include "GameL\DrawFont.h"
 #include "GameL\UserData.h"
+#include "GameL\Audio.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -30,6 +31,16 @@ CSceneMap2::~CSceneMap2()
 //初期化メソッド
 void CSceneMap2::InitScene()
 {
+	Audio::LoadAudio(0, L"amenisuteraretaningyou.wav", SOUND_TYPE::BACK_MUSIC);
+
+
+	//バックミュージックスタート
+	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
+	Audio::Start(0); //音楽スタート
+
+
+
+
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 
@@ -49,7 +60,7 @@ void CSceneMap2::InitScene()
 
 	Draw::LoadImage(L"desk.png", 51, TEX_SIZE_64);
 
-	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_64);
+	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
