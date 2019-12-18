@@ -37,18 +37,6 @@ void CObjsolve2::Init()
 //アクション
 void CObjsolve2::Action()
 {
-	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px, m_py);
-	if (hit->CheckElementHit(ELEMENT_PLAYER) == true)
-	{
-		if (Input::GetVKey(VK_RETURN) == true)
-		{
-			deleteflag2 = true;
-			this->SetStatus(false);   //自身に削除命令を出す。
-			Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
-		}
-	}
-
 	//Eボタンを押すとゲーム画面に移動する
 	if (Input::GetVKey('E') == true)
 	{

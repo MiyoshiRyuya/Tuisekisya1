@@ -291,7 +291,7 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneMain());
 	}
 	//謎解き
-	/*
+	
 	if (hit->CheckElementHit(ELEMENT_MYS) == true)
 	{
 		if (Input::GetVKey(VK_RETURN) == true) 
@@ -303,7 +303,7 @@ void CObjHero::Action()
 			Scene::SetScene(new CScenesolve());
 		}
 	}
-	*/
+	
 
 	// 強引なマップ移動用HitBox判定プログラム
 	if (hit->CheckObjNameHit(OBJ_MOVE1) != nullptr)
@@ -507,24 +507,24 @@ void CObjHero::Draw()
 	RECT_F src;
 	RECT_F dst;
 
-	int Ani1[4] =         // 上用
+	int Ani1[6] =         // 上用
 	{
-		0,2,0,2,
+		0,2,4,0,2,4,
 	};
 
-	int Ani2[4] =         //右用
+	int Ani2[6] =         //右用
 	{
-		0,2,0,2,
+		0,2,4,0,2,4,
 	};
 
-	int Ani3[4] =         //左用
+	int Ani3[6] =         //左用
 	{
-		0,2,0,2,
+		0,2,4,0,2,4,
 	};
 
-	int Ani4[4] =         //下用
+	int Ani4[6] =         //下用
 	{
-		0,2,0,2
+		0,2,4,0,2,4
 	};
 
 

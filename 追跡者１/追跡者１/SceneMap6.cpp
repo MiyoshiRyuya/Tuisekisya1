@@ -60,7 +60,7 @@ void CSceneMap6::InitScene()
 
 	Draw::LoadImage(L"Chair.png", 50, TEX_SIZE_64);
 
-	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
+	Draw::LoadImage(L"ueki.png", 5, TEX_SIZE_512);
 
 	Draw::LoadImageW(L"本棚横並び.png", 10, TEX_SIZE_512);
 
@@ -97,7 +97,7 @@ void CSceneMap6::InitScene()
 	if (s == 1)
 	{
 		CObjEnemy*obj_enemy = new CObjEnemy();
-		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 50);
+		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 100);
 	}
 }
 //実行中メソッド

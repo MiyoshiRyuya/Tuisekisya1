@@ -26,8 +26,11 @@ void CObjCloset::Init()
 //アクション
 void CObjCloset::Action()
 {
-	/*CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_x, m_y);*/
+	if (Input::GetVKey(VK_RETURN) == true)
+	{
+
+	}
+
 	if (flag== true)
 	{
 		//Eボタンを押すとゲーム画面に移動する

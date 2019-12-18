@@ -32,11 +32,11 @@ CScenesolve2::~CScenesolve2()
 void CScenesolve2::InitScene()
 {
 	//外部グラフィックファイルを読み込み20番に登録（64×64ピクセル）
-	//Draw::LoadImage(L"Tips.png", 20, TEX_SIZE_512);
+	Draw::LoadImage(L"Tips.png", 20, TEX_SIZE_512);
 
 	//謎解き画面表示
-	//CObjsolve2*obj = new CObjsolve2(400,300);
-	//Objs::InsertObj(obj, OBJ_SOLVE2, 1);
+	CObjsolve2*obj = new CObjsolve2(400,300);
+	Objs::InsertObj(obj, OBJ_SOLVE2, 1);
 }
 
 //ゲームメイン実行中メソッド
