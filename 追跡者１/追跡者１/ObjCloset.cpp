@@ -9,6 +9,7 @@
 
 //使用するネームスペース
 using namespace GameL;
+bool Memoflag = false;
 
 //イニシャライズ
 void CObjCloset::Init()
@@ -17,6 +18,8 @@ void CObjCloset::Init()
 	m_y = 0;
 	v_x = 0;
 	v_y = 0;
+	m_px = 0;
+	m_py=0;
 
 	Hits::SetHitBox(this, m_x, m_y, 160, 130, ELEMENT_RED, OBJ_CLOSET, 11);
 }
@@ -28,7 +31,8 @@ void CObjCloset::Action()
 {
 	if (Input::GetVKey(VK_RETURN) == true)
 	{
-
+		
+			Memoflag = true;
 	}
 
 	if (flag== true)

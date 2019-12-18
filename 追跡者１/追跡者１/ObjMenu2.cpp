@@ -16,6 +16,7 @@ using namespace GameL;
 
 extern float genzaiti; //現在地
 extern bool itemflag;
+extern bool Memoflag;
 
 //イニシャライズ
 void CObjMenu2::Init()
@@ -201,13 +202,23 @@ void CObjMenu2::Draw()
 	}
 
 	else if (Item == 1) {
-		if (itemflag == false) {
+		if (itemflag == false && Memoflag == false) {
 			Font::StrDraw(L"所持アイテムがありません", 220, 200, 32, c);
 		}
-		else if (itemflag == true) {
-			Font::StrDraw(L"十字架", 340, 200, 32, c);
+		else {
+			if (itemflag == true && Memoflag == false) {
+				Font::StrDraw(L"十字架", 340, 200, 32, c);
+			}
+			else if (Memoflag == true && itemflag == false) {
+				Font::StrDraw(L"メモ1", 340, 200, 32, c);
+			}
+			else if (Memoflag == true && itemflag == true) {
+				Font::StrDraw(L"メモ1", 340, 200, 32, c);
+				Font::StrDraw(L"十字架", 340, 250, 32, c);
+			}
 		}
-		Font::StrDraw(L"戻る", 360, 380, 32, c);
+			Font::StrDraw(L"戻る", 360, 380, 32, c);
+		
 	}
 
 	//カーソル（⇒）
@@ -233,7 +244,7 @@ void CObjMenu2::Draw()
 			Font::StrDraw(L"→", 410, 320, 32, c);
 		}
 	}
-
+	
 	if (Item == 1) {
 		Font::StrDraw(L"→", 320, 380, 32, c);
 	}

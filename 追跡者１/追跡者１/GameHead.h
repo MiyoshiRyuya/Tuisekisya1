@@ -126,6 +126,7 @@ enum HIT_ELEMENTS
 	ELEMENT_WHITE,
 	ELEMENT_MYS,
 	ELEMENT_SOLVE,
+	ELEMENT_MEMO,
 };
 //------------------------------------------------
 

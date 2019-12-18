@@ -23,5 +23,7 @@ private:
 	float m_y;
 	float v_x;
 	float v_y;
+	float m_px;
+	float m_py;
 	bool flag;
 };
