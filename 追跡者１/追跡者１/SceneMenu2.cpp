@@ -41,6 +41,7 @@ void CSceneMenu2::InitScene()
 	Font::SetStrTex(L"→");
 	Font::SetStrTex(L"所持アイテムがありません");
 	Font::SetStrTex(L"十字架");
+	Font::SetStrTex(L"rランボルギーニでタピオカ回すSEIKIN");
 
 	//効果音一覧
 	Audio::LoadAudio(1, L"menu2_cansel.wav", SOUND_TYPE::EFFECT);

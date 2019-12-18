@@ -20,11 +20,12 @@ extern bool itemflag;
 //イニシャライズ
 void CObjMenu2::Init()
 {
-	Cross = 0;
+	Cross = 0; //十字架説明用
 	Item = 0;
 	Migi = 1; //初期画面
 	Migi2 = 1; //game終了画面
 	Migi3 = 1; //Item画面
+	Migi4 = 1; //Item選択
 	GameOver = 0;
 	ItemKN; //アイテム確認
 	oto = 0;
@@ -163,11 +164,56 @@ void CObjMenu2::Action()
 			}
 		}
 		else if (Item == 1) {
-			if (Input::GetVKey(VK_RETURN) == true)
+			if (Migi4 == 1)
 			{
+				if (itemflag == true) {
+					if (Input::GetVKey('W') == true) {
+						Audio::Start(2);
+						Migi4 = 2;
+						time = 0;
+					}
+					else if (Input::GetVKey('S') == true) {
+						Audio::Start(2);
+						Migi4 = 2;
+						time = 0;
+					}
+				}
+				if (Input::GetVKey(VK_RETURN) == true)
+				{
+					Audio::Start(1);
+					Item = 0;
+					GameOver = 0;
+					time = 0;
+				}
+			}
+			else if (Migi4 == 2)
+			{
+				if (Input::GetVKey('W') == true) {
+					Audio::Start(2);
+					Migi4 = 1;
+					time = 0;
+				}
+				else if (Input::GetVKey('S') == true) {
+					Audio::Start(2);
+					Migi4 = 1;
+					time = 0;
+				}
+				else if (Input::GetVKey(VK_RETURN) == true)
+				{
+					Audio::Start(3);
+					Item = 0;
+					//GameOver = 0;
+					Cross = 1;
+					time = 0;
+				}
+			}
+		}
+		else if (Cross == 1) {
+			if (Input::GetVKey(VK_RETURN) == true) {
 				Audio::Start(1);
-				Item = 0;
-				GameOver = 0;
+				Item = 1;
+				//GameOver = 0;
+				Cross = 0;
 				time = 0;
 			}
 		}
@@ -210,6 +256,10 @@ void CObjMenu2::Draw()
 		Font::StrDraw(L"戻る", 360, 380, 32, c);
 	}
 
+	else if (Cross == 1) {
+		Font::StrDraw(L"ランボルギーニでタピオカ回すSEIKIN", 140, 200, 32, c);
+		Font::StrDraw(L"戻る", 360, 380, 32, c);
+	}
 	//カーソル（⇒）
 	if (GameOver == 0) {
 		if (Migi == 1)
@@ -235,6 +285,15 @@ void CObjMenu2::Draw()
 	}
 
 	if (Item == 1) {
+		if (Migi4 == 1) {
+			Font::StrDraw(L"→", 320, 380, 32, c);
+		}
+		else if (Migi4 == 2) {
+			Font::StrDraw(L"→", 300, 200, 32, c);
+		}
+	}
+
+	if (Cross == 1) {
 		Font::StrDraw(L"→", 320, 380, 32, c);
 	}
 
