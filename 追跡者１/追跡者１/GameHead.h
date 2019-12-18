@@ -165,14 +165,8 @@ extern float genzaiti; //åªç›ín
 
 //â∆ãÔ
 #include "ObjFurniture.h"
-#include "ObjFurniture1.h"
-#include "ObjFurniture2.h"
-#include "ObjFurniture3.h"
 #include "ObjFurniture4.h"
 #include "ObjFurniture5.h"
-#include "ObjFurniture6.h"
-#include "ObjFurnirure7.h"
-#include "ObjFurniture8.h"
 #include "ObjFurniture9.h"
 #include "ObjFurniture10.h"
 #include "ObjFurniture11.h"
