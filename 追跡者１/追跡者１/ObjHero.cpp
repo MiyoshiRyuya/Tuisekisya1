@@ -171,6 +171,8 @@ void CObjHero::Action()
 		//Hits::DeleteHitBox(this);
 
 	   itemflag = false;
+	   g_Xz = 100;
+	   g_Yz = 120;
 		//主人公消滅でシーンをゲームオーバー画面に移行する
 		Scene::SetScene(new CSceneGameOver());
 	}
@@ -181,6 +183,8 @@ void CObjHero::Action()
 		//Hits::DeleteHitBox(this);
 
 		itemflag = false;
+		g_Xz = 100;
+		g_Yz = 120;
 		Scene::SetScene(new CSceneGameOver());
 	}
 
