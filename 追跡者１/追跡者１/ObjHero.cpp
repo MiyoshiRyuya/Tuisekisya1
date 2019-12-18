@@ -168,9 +168,11 @@ void CObjHero::Action()
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
 		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
+		//Hits::DeleteHitBox(this);
 
 	   itemflag = false;
+	   g_Xz = 100;
+	   g_Yz = 120;
 		//主人公消滅でシーンをゲームオーバー画面に移行する
 		Scene::SetScene(new CSceneGameOver());
 	}
@@ -178,10 +180,11 @@ void CObjHero::Action()
 	if (hit->CheckObjNameHit(OBJ_TRAP) != nullptr)
 	{
 		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
+		//Hits::DeleteHitBox(this);
 
-	
-
+		itemflag = false;
+		g_Xz = 100;
+		g_Yz = 120;
 		Scene::SetScene(new CSceneGameOver());
 	}
 
