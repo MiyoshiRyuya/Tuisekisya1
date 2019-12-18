@@ -5,16 +5,17 @@
 #include "GameL\SceneManager.h"
 #include "GameL\SceneObjManager.h"
 #include "GameL\HitBoxManager.h"
+#include "GameL\Audio.h"
 
 #include "GameHead.h"
 #include "ObjMenu2.h"
-#include "GameL\Audio.h"
 
 
 //使用するネームスペース
 using namespace GameL;
 
 extern float genzaiti; //現在地
+extern bool itemflag;
 
 //イニシャライズ
 void CObjMenu2::Init()
@@ -26,6 +27,7 @@ void CObjMenu2::Init()
 	Migi3 = 1; //Item画面
 	GameOver = 0;
 	ItemKN; //アイテム確認
+	oto = 0;
 
 	time = 0; // 時間測る君
 }
@@ -33,7 +35,11 @@ void CObjMenu2::Init()
 //アクション
 void CObjMenu2::Action()
 {
-
+	if (oto == 0) {
+		Audio::Start(4);
+		oto = 1;
+	}
+	
 	time++;
 	
 	//メニュー内の処理（複雑？）
@@ -43,15 +49,18 @@ void CObjMenu2::Action()
 			if (Migi == 1) {
 				if (Input::GetVKey('W') == true) 
 				{
+					Audio::Start(2);
 					Migi = 3;
 					time = 0;
 				}
 				else if (Input::GetVKey('S') == true) 
 				{
+					Audio::Start(2);
 					Migi = 2;
 					time = 0;
 				}
 				else if (Input::GetVKey(VK_RETURN) == true) {
+					Audio::Start(3);
 					GameOver = 2;
 					Item = 1;
 					time = 0;
@@ -60,17 +69,21 @@ void CObjMenu2::Action()
 			else if (Migi == 2) {
 				if (Input::GetVKey('W') == true) 
 				{
+					Audio::Start(2);
 					Migi = 1;
 					time = 0;
 				}
 
 				else if (Input::GetVKey('S') == true) 
 				{
+					Audio::Start(2);
 					Migi = 3;
 					time = 0;
 				}
 				else if (Input::GetVKey(VK_RETURN) == true) 
 				{
+					//Audio::Start(3);
+					oto = 0;
 					if (genzaiti == 1)
 						Scene::SetScene(new CSceneMain());
 					else if (genzaiti == 2)
@@ -88,16 +101,19 @@ void CObjMenu2::Action()
 			else if (Migi == 3) {
 				if (Input::GetVKey('W') == true) 
 				{
+					Audio::Start(2);
 					Migi = 2;
 					time = 0;
 				}
 				else if (Input::GetVKey('S') == true) 
 				{
+					Audio::Start(2);
 					Migi = 1;
 					time = 0;
 				}
 				else if (Input::GetVKey(VK_RETURN) == true) 
 				{
+					Audio::Start(3);
 					GameOver = 1;
 					time = 0;
 				}
@@ -107,16 +123,19 @@ void CObjMenu2::Action()
 			if (Migi2 == 1) {
 				if (Input::GetVKey('A') == true) 
 				{
+					Audio::Start(2);
 					Migi2 = 2;
 					time = 0;
 				}
 				else if (Input::GetVKey('D') == true)
 				{
+					Audio::Start(2);
 					Migi2 = 2;
 					time = 0;
 				}
 				else if (Input::GetVKey(VK_RETURN) == true) 
 				{
+					//Audio::Start(3);
 					GameOver = 0;
 					Scene::SetScene(new CSceneTitle());
 				}
@@ -124,16 +143,19 @@ void CObjMenu2::Action()
 			else if (Migi2 == 2) {
 				if (Input::GetVKey('A') == true) 
 				{
+					Audio::Start(2);
 					Migi2 = 1;
 					time = 0;
 				}
 				else if (Input::GetVKey('D') == true) 
 				{
+					Audio::Start(2);
 					Migi2 = 1;
 					time = 0;
 				}
 				else if (Input::GetVKey(VK_RETURN) == true) 
 				{
+					Audio::Start(1);
 					GameOver = 0;
 					Migi2 = 1;
 					time = 0;
@@ -141,7 +163,13 @@ void CObjMenu2::Action()
 			}
 		}
 		else if (Item == 1) {
-
+			if (Input::GetVKey(VK_RETURN) == true)
+			{
+				Audio::Start(1);
+				Item = 0;
+				GameOver = 0;
+				time = 0;
+			}
 		}
 	}
 }
@@ -173,12 +201,13 @@ void CObjMenu2::Draw()
 	}
 
 	else if (Item == 1) {
-		if (Cross == 0) {
-			Font::StrDraw(L"十字架　×　0", 240, 140, 32, c);
+		if (itemflag == false) {
+			Font::StrDraw(L"所持アイテムがありません", 220, 200, 32, c);
 		}
-		else if (Cross == 1) {
-			Font::StrDraw(L"十字架　×　1", 240, 140, 32, c);
+		else if (itemflag == true) {
+			Font::StrDraw(L"十字架", 340, 200, 32, c);
 		}
+		Font::StrDraw(L"戻る", 360, 380, 32, c);
 	}
 
 	//カーソル（⇒）
@@ -205,7 +234,9 @@ void CObjMenu2::Draw()
 		}
 	}
 
-
+	if (Item == 1) {
+		Font::StrDraw(L"→", 320, 380, 32, c);
+	}
 
 	//Menu画面
 	src.m_top = 0.0f;

@@ -22,5 +22,6 @@ private:
 	int Migi3; //Item確認画面カーソル処理用
 	int GameOver; //game終了の最終確認用
 	int ItemKN; //アイテム確認
+	int oto;   //音
 	int time;  //時間
 }; 
