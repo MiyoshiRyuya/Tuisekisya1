@@ -13,7 +13,7 @@
 using namespace GameL;
 
 bool deleteflag = false;
-extern bool Memoflag;
+extern bool Memo3flag;
 
 //コンストラクタ
 CObjItem::CObjItem(float x, float y)
@@ -45,7 +45,7 @@ void CObjItem::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == true)
 		{
-			if ( Memoflag==true)
+			if ( Memo3flag==true)
 			{
 				deleteflag = true;
 				this->SetStatus(false);   //自身に削除命令を出す。

@@ -56,6 +56,9 @@ void CSceneMap2::InitScene()
 	//外部グラフィックファイルを読み込み9番目に登録
 	Draw::LoadImage(L"kabe1.png", 9, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み9番目に登録
+	Draw::LoadImage(L"Earth.png", 31, TEX_SIZE_512);
+
 	Draw::LoadImage(L"Chair.png", 50, TEX_SIZE_64);
 
 	Draw::LoadImage(L"desk.png", 51, TEX_SIZE_64);
@@ -71,6 +74,9 @@ void CSceneMap2::InitScene()
 	//マップ背景オブジェクト1作成
 	CObjMap*obj_map = new CObjMap();
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
+
+	CObjTips2*obj_Tips2 = new CObjTips2();
+	Objs::InsertObj(obj_Tips2, OBJ_TIPS2, 10);
 
 	srand(time(NULL));
 

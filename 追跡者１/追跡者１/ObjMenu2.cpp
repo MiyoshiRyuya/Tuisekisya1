@@ -16,7 +16,9 @@ using namespace GameL;
 
 extern float genzaiti; //現在地
 extern bool itemflag;
-extern bool Memoflag;
+extern bool Memo3flag;
+extern bool Memoflag1;
+extern bool Memoflag2;
 
 //イニシャライズ
 void CObjMenu2::Init()
@@ -164,10 +166,10 @@ void CObjMenu2::Action()
 				}
 			}
 		}
-		else if (Item == 1&&Cross!=2) {
+		else if (Item == 1 && Cross == 0) {
 			if (Migi4 == 1)
 			{
-				if (itemflag == true || Memoflag == true) {
+				if (Memoflag1 == true) {
 					if (Input::GetVKey('S') == true) {
 						Audio::Start(2);
 						Migi4 = 2;
@@ -175,7 +177,11 @@ void CObjMenu2::Action()
 					}
 					else if (Input::GetVKey('W') == true) {
 						Audio::Start(2);
-						if (Memoflag == true && itemflag == true)
+						if (itemflag == true)
+							Migi4 = 5;
+						else if (Memo3flag == true)
+							Migi4 = 4;
+						else if (Memoflag2 == true)
 							Migi4 = 3;
 						else
 							Migi4 = 2;
@@ -199,7 +205,7 @@ void CObjMenu2::Action()
 				}
 				else if (Input::GetVKey('S') == true) {
 					Audio::Start(2);
-					if (Memoflag == true && itemflag == true)
+					if (Memoflag2 == true)
 						Migi4 = 3;
 					else
 						Migi4 = 1;
@@ -210,6 +216,7 @@ void CObjMenu2::Action()
 					Audio::Start(3);
 					//GameOver = 0;
 					Cross = 2;
+					time = 0;
 				}
 			}
 			else if (Migi4 == 3)
@@ -217,6 +224,52 @@ void CObjMenu2::Action()
 				if (Input::GetVKey('W') == true) {
 					Audio::Start(2);
 					Migi4 = 2;
+					time = 0;
+				}
+				else if (Input::GetVKey('S') == true) {
+					Audio::Start(2);
+					if (Memo3flag == true)
+						Migi4 = 4;
+					else
+						Migi4 = 1;
+					time = 0;
+				}
+				else if (Input::GetVKey(VK_RETURN) == true)
+				{
+					Audio::Start(3);
+					//GameOver = 0;
+					Cross = 3;
+					time = 0;
+				}
+			}
+			else if (Migi4 == 4)
+			{
+				if (Input::GetVKey('W') == true) {
+					Audio::Start(2);
+					Migi4 = 3;
+					time = 0;
+				}
+				else if (Input::GetVKey('S') == true) {
+					Audio::Start(2);
+					if (itemflag == true)
+						Migi4 = 5;
+					else
+						Migi4 = 1;
+					time = 0;
+				}
+				else if (Input::GetVKey(VK_RETURN) == true)
+				{
+					Audio::Start(3);
+					//GameOver = 0;
+					Cross = 4;
+					time = 0;
+				}
+			}
+			else if (Migi4 == 5)
+			{
+				if (Input::GetVKey('W') == true) {
+					Audio::Start(2);
+					Migi4 = 4;
 					time = 0;
 				}
 				else if (Input::GetVKey('S') == true) {
@@ -229,25 +282,19 @@ void CObjMenu2::Action()
 					Audio::Start(3);
 					//GameOver = 0;
 					Cross = 1;
+					time = 0;
 				}
 			}
 		}
-		else if (Cross == 1) {
+		else if (Cross != 0) {
 			if (Input::GetVKey(VK_RETURN) == true) {
 				Audio::Start(1);
-				Item = 1;
 				//GameOver = 0;
 				Cross = 0;
 				time = 0;
 			}
 		}
-		else if (Cross == 2) {
-			if (Input::GetVKey('E') == true) {
-				Audio::Start(1);
-				//GameOver = 0;
-				Cross = 0;
-			}
-		}
+
 	}
 }
 
@@ -277,20 +324,26 @@ void CObjMenu2::Draw()
 		Font::StrDraw(L"いいえ", 450, 320, 32, c);
 	}
 
-	else if (Item == 1) {
-		if (itemflag == false && Memoflag == false) {
+	else if (Item == 1&&Cross==0) {
+		if (itemflag == false && Memo3flag == false&&Memoflag1==false&&Memoflag2==false) {
 			Font::StrDraw(L"所持アイテムがありません", 220, 200, 32, c);
 		}
 		else {
-			if (itemflag == true && Memoflag == false) {
-				Font::StrDraw(L"十字架", 340, 200, 32, c);
+			if (Memoflag1==true)
+			{
+				Font::StrDraw(L"メモ1", 340, 150, 32, c);
 			}
-			else if (Memoflag == true && itemflag == false) {
-				Font::StrDraw(L"メモ1", 340, 200, 32, c);
+		    if (Memoflag2 == true ) 
+			{
+				Font::StrDraw(L"メモ2", 340, 200, 32, c);
 			}
-			else if (Memoflag == true && itemflag == true) {
-				Font::StrDraw(L"メモ1", 340, 200, 32, c);
-				Font::StrDraw(L"十字架", 340, 250, 32, c);
+			if (Memo3flag == true)
+			{
+				Font::StrDraw(L"メモ3", 340, 250, 32, c);
+			}
+			if (itemflag == true)
+			{
+				Font::StrDraw(L"十字架", 340, 300, 32, c);
 			}
 		}
 			Font::StrDraw(L"戻る", 360, 380, 32, c);
@@ -299,7 +352,6 @@ void CObjMenu2::Draw()
 
 	else if (Cross == 1) {
 		Font::StrDraw(L"ランボルギーニでタピオカ回すSEIKIN", 140, 200, 32, c);
-		Font::StrDraw(L"戻る", 360, 380, 32, c);
 	}
 	//カーソル（⇒）
 	if (GameOver == 0) {
@@ -325,36 +377,56 @@ void CObjMenu2::Draw()
 		}
 	}
 	
-	if (Item == 1) {
+	if (Item == 1&&Cross==0) {
 		if (Migi4 == 1) {
 			Font::StrDraw(L"→", 320, 380, 32, c);
 		}
 		else if (Migi4 == 2) {
-			Font::StrDraw(L"→", 300, 200, 32, c);
+			Font::StrDraw(L"→", 300, 150, 32, c);
 		}
 		else if (Migi4 == 3) {
+			Font::StrDraw(L"→", 300, 200, 32, c);
+		}
+		else if (Migi4 == 4) {
 			Font::StrDraw(L"→", 300, 250, 32, c);
+		}
+		else if (Migi4 == 5) {
+			Font::StrDraw(L"→", 300, 300, 32, c);
 		}
 	}
 
-	if (Cross == 1) {
-		Font::StrDraw(L"→", 320, 380, 32, c);
-	}
 
 	//Menu画面
-	src.m_top = 0.0f;
-	src.m_left = 0.0f;
-	src.m_right = 800.0f;
-	src.m_bottom = 600.0f;
+	if (Cross == 0)
+	{
+		src.m_top = 0.0f;
+		src.m_left = 0.0f;
+		src.m_right = 800.0f;
+		src.m_bottom = 600.0f;
 
-	dst.m_top = 0.0f;
-	dst.m_left = 0.0f;
-	dst.m_right = 800.0f;
-	dst.m_bottom = 600.0f;
+		dst.m_top = 0.0f;
+		dst.m_left = 0.0f;
+		dst.m_right = 800.0f;
+		dst.m_bottom = 600.0f;
 
-	Draw::Draw(0, &src, &dst, c, 0.0f);
-
+		Draw::Draw(0, &src, &dst, c, 0.0f);
+	}
 	if (Cross == 2)
+	{
+		src.m_top = 0.0f;
+		src.m_left = 0.0f;
+		src.m_right = 64.0f;
+		src.m_bottom = 64.0f;
+
+		dst.m_top = 0.0f;
+		dst.m_left = 100.0f;
+		dst.m_right = 700.0f;
+		dst.m_bottom = 600.0f;
+
+		Draw::Draw(2, &src, &dst, c, 0.0f);
+	}
+
+	if (Cross == 4)
 	{
 		src.m_top = 0.0f;
 		src.m_left = 0.0f;
@@ -368,4 +440,6 @@ void CObjMenu2::Draw()
 
 		Draw::Draw(1, &src, &dst, c, 0.0f);
 	}
+
+
 }

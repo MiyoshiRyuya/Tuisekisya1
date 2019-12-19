@@ -7,39 +7,41 @@
 #include"ObjTips1.h"
 
 using namespace GameL;
-bool Memoflag1 = false;
-
-void CObjTips1::Init()
+bool Memoflag2 = false;
+extern bool Memoflag1;
+void CObjTips2::Init()
 {
-	
 
-	m_x = 360;
-	m_y = 540;
-	Hits::SetHitBox(this, m_x, m_y, 64, 64, ELEMENT_GREEN, OBJ_HERO, 1);
+	m_px = 500;
+	m_py = 360;
+	Hits::SetHitBox(this, m_px + 64, m_py + 64, 40, 50, ELEMENT_GREEN, OBJ_TIPS2, 1);
 
-	if (Memoflag1 == true)
+	if (Memoflag2 == true)
 	{
 		this->SetStatus(false);   //自身に削除命令を出す。
 		Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
 	}
 }
 
-void CObjTips1::Action()
+void CObjTips2::Action()
 {
 	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_x, m_y);
+	hit->SetPos(m_px, m_py);
 	if (hit->CheckElementHit(ELEMENT_PLAYER) == true)
 	{
 		if (Input::GetVKey(VK_RETURN) == true)
 		{
-				Memoflag1 = true;
+			if (Memoflag1 == true)
+			{
+				Memoflag2 = true;
 				this->SetStatus(false);   //自身に削除命令を出す。
 				Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
+			}
 		}
 	}
 }
 
-void CObjTips1::Draw()
+void CObjTips2::Draw()
 {
 	float c[4]{ 1.0f,1.0f, 1.0f, 1.0f };
 
@@ -49,12 +51,12 @@ void CObjTips1::Draw()
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
 	src.m_right = 64.0f;
-	src.m_bottom = 52.0f;
+	src.m_bottom = 64.0f;
 
-	dst.m_top = 0.0f + m_y;
-	dst.m_left = 0.0f + m_x;
-	dst.m_right = 52.0f + m_x;
-	dst.m_bottom = 48.0f + m_y;
+	dst.m_top = 0.0f + m_py;
+	dst.m_left = 0.0f + m_px;
+	dst.m_right = 64.0f + m_px;
+	dst.m_bottom = 64.0f + m_py;
 
-	Draw::Draw(30, &src, &dst, c, 0.0f);
+	Draw::Draw(31, &src, &dst, c, 0.0f);
 }

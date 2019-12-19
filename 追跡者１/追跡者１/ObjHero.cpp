@@ -19,7 +19,7 @@ using namespace GameL;
 float g_Xz=100;
 float g_Yz=120;
 
-extern bool Memoflag;
+extern bool Memo3flag;
 bool itemflag = false;
 bool solveflag = false;
 float CObjHero::Getflag()
@@ -172,7 +172,7 @@ void CObjHero::Action()
 		//Hits::DeleteHitBox(this);
 
 	   itemflag = false;
-	   Memoflag = false;
+	   Memo3flag = false;
 	   g_Xz = 100;
 	   g_Yz = 120;
 		//主人公消滅でシーンをゲームオーバー画面に移行する
@@ -185,7 +185,7 @@ void CObjHero::Action()
 		//Hits::DeleteHitBox(this);
 
 		itemflag = false;
-		Memoflag = false;
+		Memo3flag = false;
 		g_Xz = 100;
 		g_Yz = 120;
 		Scene::SetScene(new CSceneGameOver());
@@ -496,7 +496,7 @@ void CObjHero::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == true)
 		{
-			if (Memoflag == true)
+			if (Memo3flag == true)
 			{
 				itemflag = true;
 			}

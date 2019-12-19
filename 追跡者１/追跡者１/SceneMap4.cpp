@@ -141,12 +141,6 @@ void CSceneMap4::InitScene()
 	CObjtrap*obj_trap = new CObjtrap(128, 188);
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 20);
 
-	//謎解きヒント
-	/*
-	CObjsolve2*obj_solve2 = new CObjsolve2(350,536);
-	Objs::InsertObj(obj_solve2, OBJ_SOLVE2, 1);
-	*/
-
 	//家具オブジェクト11作成
 	CObjFurniture11*obj_Furnirure11 = new CObjFurniture11();
 	Objs::InsertObj(obj_Furnirure11, OBJ_FURNITURE11, 10);

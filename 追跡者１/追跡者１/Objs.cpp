@@ -4,27 +4,20 @@
 #include"GameL/HitBoxManager.h"
 
 #include"GameHead.h"
-#include"ObjTips1.h"
+#include"Objs.h"
 
 using namespace GameL;
 bool Memoflag1 = false;
 
-void CObjTips1::Init()
+void CObjs::Init()
 {
-	
 
 	m_x = 360;
 	m_y = 540;
-	Hits::SetHitBox(this, m_x, m_y, 64, 64, ELEMENT_GREEN, OBJ_HERO, 1);
-
-	if (Memoflag1 == true)
-	{
-		this->SetStatus(false);   //自身に削除命令を出す。
-		Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
-	}
+	Hits::SetHitBox(this, m_x, m_y, 64, 64, ELEMENT_GREEN, OBJ_CLOSET, 1);
 }
 
-void CObjTips1::Action()
+void CObjs::Action()
 {
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
@@ -32,14 +25,14 @@ void CObjTips1::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == true)
 		{
-				Memoflag1 = true;
-				this->SetStatus(false);   //自身に削除命令を出す。
-				Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
+			Memoflag1 = true;
+			this->SetStatus(false);   //自身に削除命令を出す。
+			Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
 		}
 	}
 }
 
-void CObjTips1::Draw()
+void CObjs::Draw()
 {
 	float c[4]{ 1.0f,1.0f, 1.0f, 1.0f };
 

@@ -9,6 +9,10 @@
 
 using namespace GameL;
 
+extern bool Memoflag1;
+extern bool Memoflag2;
+extern bool Memo3flag;
+extern bool itemflag;
 //イニシャライズ
 void CObjTitle::Init()
 {
@@ -16,11 +20,17 @@ void CObjTitle::Init()
 	m_mou_y = 0.0f;
 	m_mou_r = false;
 	m_mou_l = false;
+
 }
 
 //アクション
 void CObjTitle::Action()
 {
+	Memoflag1 = false;
+	Memoflag2 = false;
+	Memo3flag = false;
+	itemflag = false;
+
 	//マウスの位置を取得
 	m_mou_x = (float)Input::GetPosX();
 	m_mou_y = (float)Input::GetPosY();
@@ -39,16 +49,6 @@ void CObjTitle::Action()
 			Scene::SetScene(new CSceneMap5());
 		}
 	}
-
-	/*/マウスの位置とクリックする場所で当たり判定
-	if (m_mou_x > 355 && m_mou_x < 445 && m_mou_y>400 && m_mou_y < 420)
-	{
-		//マウスの左が押されたらロード画面に移動する
-		if (m_mou_l == true)
-		{
-			Scene::SetScene(new CScenemainRoad());
-		}
-	}*/
 }
 
 //ドロー

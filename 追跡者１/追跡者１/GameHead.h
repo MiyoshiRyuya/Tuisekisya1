@@ -62,6 +62,8 @@ enum OBJ_NAME
 	OBJ_FURNITURE42,
 	OBJ_FURNITURE43,
 	OBJ_TIPS1,
+	OBJ_TIPS2,
+	OBJ_S,
 
 	
 	//マップ
@@ -203,6 +205,8 @@ extern float genzaiti; //現在地
 #include "ObjFurniture42.h"
 #include "ObjFurniture43.h"
 #include "ObjTips1.h"
+#include "ObjTips2.h"
+#include "Objs.h"
 
 //メニュー
 #include "ObjMenu2.h"
@@ -251,5 +255,5 @@ extern float genzaiti; //現在地
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneTitle
+#define SET_GAME_START  CSceneMap3
 //-----------------------------------------------
