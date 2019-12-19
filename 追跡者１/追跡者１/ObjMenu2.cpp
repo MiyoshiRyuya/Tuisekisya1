@@ -41,21 +41,21 @@ void CObjMenu2::Action()
 		Audio::Start(4);
 		oto = 1;
 	}
-	
+
 	time++;
-	
+
 	//メニュー内の処理（複雑？）
-	if (time>=10)
+	if (time >= 10)
 	{
 		if (GameOver == 0) {
 			if (Migi == 1) {
-				if (Input::GetVKey('W') == true) 
+				if (Input::GetVKey('W') == true)
 				{
 					Audio::Start(2);
 					Migi = 3;
 					time = 0;
 				}
-				else if (Input::GetVKey('S') == true) 
+				else if (Input::GetVKey('S') == true)
 				{
 					Audio::Start(2);
 					Migi = 2;
@@ -69,20 +69,20 @@ void CObjMenu2::Action()
 				}
 			}
 			else if (Migi == 2) {
-				if (Input::GetVKey('W') == true) 
+				if (Input::GetVKey('W') == true)
 				{
 					Audio::Start(2);
 					Migi = 1;
 					time = 0;
 				}
 
-				else if (Input::GetVKey('S') == true) 
+				else if (Input::GetVKey('S') == true)
 				{
 					Audio::Start(2);
 					Migi = 3;
 					time = 0;
 				}
-				else if (Input::GetVKey(VK_RETURN) == true) 
+				else if (Input::GetVKey(VK_RETURN) == true)
 				{
 					//Audio::Start(3);
 					oto = 0;
@@ -101,19 +101,19 @@ void CObjMenu2::Action()
 				}
 			}
 			else if (Migi == 3) {
-				if (Input::GetVKey('W') == true) 
+				if (Input::GetVKey('W') == true)
 				{
 					Audio::Start(2);
 					Migi = 2;
 					time = 0;
 				}
-				else if (Input::GetVKey('S') == true) 
+				else if (Input::GetVKey('S') == true)
 				{
 					Audio::Start(2);
 					Migi = 1;
 					time = 0;
 				}
-				else if (Input::GetVKey(VK_RETURN) == true) 
+				else if (Input::GetVKey(VK_RETURN) == true)
 				{
 					Audio::Start(3);
 					GameOver = 1;
@@ -123,7 +123,7 @@ void CObjMenu2::Action()
 		}
 		else if (GameOver == 1) {
 			if (Migi2 == 1) {
-				if (Input::GetVKey('A') == true) 
+				if (Input::GetVKey('A') == true)
 				{
 					Audio::Start(2);
 					Migi2 = 2;
@@ -135,7 +135,7 @@ void CObjMenu2::Action()
 					Migi2 = 2;
 					time = 0;
 				}
-				else if (Input::GetVKey(VK_RETURN) == true) 
+				else if (Input::GetVKey(VK_RETURN) == true)
 				{
 					//Audio::Start(3);
 					GameOver = 0;
@@ -143,19 +143,19 @@ void CObjMenu2::Action()
 				}
 			}
 			else if (Migi2 == 2) {
-				if (Input::GetVKey('A') == true) 
+				if (Input::GetVKey('A') == true)
 				{
 					Audio::Start(2);
 					Migi2 = 1;
 					time = 0;
 				}
-				else if (Input::GetVKey('D') == true) 
+				else if (Input::GetVKey('D') == true)
 				{
 					Audio::Start(2);
 					Migi2 = 1;
 					time = 0;
 				}
-				else if (Input::GetVKey(VK_RETURN) == true) 
+				else if (Input::GetVKey(VK_RETURN) == true)
 				{
 					Audio::Start(1);
 					GameOver = 0;
@@ -164,18 +164,21 @@ void CObjMenu2::Action()
 				}
 			}
 		}
-		else if (Item == 1) {
+		else if (Item == 1&&Cross!=2) {
 			if (Migi4 == 1)
 			{
-				if (itemflag == true) {
-					if (Input::GetVKey('W') == true) {
+				if (itemflag == true || Memoflag == true) {
+					if (Input::GetVKey('S') == true) {
 						Audio::Start(2);
 						Migi4 = 2;
 						time = 0;
 					}
-					else if (Input::GetVKey('S') == true) {
+					else if (Input::GetVKey('W') == true) {
 						Audio::Start(2);
-						Migi4 = 2;
+						if (Memoflag == true && itemflag == true)
+							Migi4 = 3;
+						else
+							Migi4 = 2;
 						time = 0;
 					}
 				}
@@ -196,16 +199,36 @@ void CObjMenu2::Action()
 				}
 				else if (Input::GetVKey('S') == true) {
 					Audio::Start(2);
+					if (Memoflag == true && itemflag == true)
+						Migi4 = 3;
+					else
+						Migi4 = 1;
+					time = 0;
+				}
+				else if (Input::GetVKey(VK_RETURN) == true)
+				{
+					Audio::Start(3);
+					//GameOver = 0;
+					Cross = 2;
+				}
+			}
+			else if (Migi4 == 3)
+			{
+				if (Input::GetVKey('W') == true) {
+					Audio::Start(2);
+					Migi4 = 2;
+					time = 0;
+				}
+				else if (Input::GetVKey('S') == true) {
+					Audio::Start(2);
 					Migi4 = 1;
 					time = 0;
 				}
 				else if (Input::GetVKey(VK_RETURN) == true)
 				{
 					Audio::Start(3);
-					Item = 0;
 					//GameOver = 0;
 					Cross = 1;
-					time = 0;
 				}
 			}
 		}
@@ -216,6 +239,13 @@ void CObjMenu2::Action()
 				//GameOver = 0;
 				Cross = 0;
 				time = 0;
+			}
+		}
+		else if (Cross == 2) {
+			if (Input::GetVKey('E') == true) {
+				Audio::Start(1);
+				//GameOver = 0;
+				Cross = 0;
 			}
 		}
 	}
@@ -302,6 +332,9 @@ void CObjMenu2::Draw()
 		else if (Migi4 == 2) {
 			Font::StrDraw(L"→", 300, 200, 32, c);
 		}
+		else if (Migi4 == 3) {
+			Font::StrDraw(L"→", 300, 250, 32, c);
+		}
 	}
 
 	if (Cross == 1) {
@@ -320,4 +353,19 @@ void CObjMenu2::Draw()
 	dst.m_bottom = 600.0f;
 
 	Draw::Draw(0, &src, &dst, c, 0.0f);
+
+	if (Cross == 2)
+	{
+		src.m_top = 0.0f;
+		src.m_left = 0.0f;
+		src.m_right = 800.0f;
+		src.m_bottom = 600.0f;
+
+		dst.m_top = 0.0f;
+		dst.m_left = 0.0f;
+		dst.m_right = 800.0f;
+		dst.m_bottom = 600.0f;
+
+		Draw::Draw(1, &src, &dst, c, 0.0f);
+	}
 }

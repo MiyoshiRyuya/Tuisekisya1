@@ -70,6 +70,7 @@ void CObjHero::Action()
 	g_Yz = m_y;
 
 	//キーの入力方向
+
 	if (Input::GetVKey('D') == true)
 	{
 		m_migi = 1;
@@ -496,9 +497,11 @@ void CObjHero::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == true)
 		{
-			itemflag = true;
+			if (Memoflag == true)
+			{
+				itemflag = true;
+			}
 		}
-
 	}
 }
 
@@ -510,24 +513,24 @@ void CObjHero::Draw()
 	RECT_F src;
 	RECT_F dst;
 
-	int Ani1[6] =         // 上用
+	int Ani1[5] =         // 上用
 	{
-		0,2,4,0,2,4,
+		0,2,4,2,0,
 	};
 
-	int Ani2[6] =         //右用
+	int Ani2[5] =         //右用
 	{
-		0,2,4,0,2,4,
+		0,2,4,2,4,
 	};
 
-	int Ani3[6] =         //左用
+	int Ani3[5] =         //左用
 	{
-		0,2,4,0,2,4,
+		0,2,4,2,0,
 	};
 
-	int Ani4[6] =         //下用
+	int Ani4[5] =         //下用
 	{
-		0,2,4,0,2,4
+		0,2,4,2,0,
 	};
 
 
