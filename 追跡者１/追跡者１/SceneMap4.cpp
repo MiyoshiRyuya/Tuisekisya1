@@ -64,6 +64,9 @@ void CSceneMap4::InitScene()
 	//外部グラフィックファイルを読み込み11番目に登録
 	Draw::LoadImage(L"SC-Candle.png", 11, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み
+	Draw::LoadImage(L"光.png", 30, TEX_SIZE_64);
+
 	//外部グラフィックファイルを読み込み12番目に登録
 	Draw::LoadImage(L"KitChen1.png", 12, TEX_SIZE_64);
 
@@ -129,9 +132,9 @@ void CSceneMap4::InitScene()
 		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 50);
 	}
 	
-
-	//CObjMap4*map4 = new CObjMap4();
-	//Objs::InsertObj(map4, OBJ_MAP4, 0);
+	//謎解き
+	CObjTips1*obj_Tips1 = new CObjTips1();
+	Objs::InsertObj(obj_Tips1, OBJ_TIPS1, 50);
 
 	
 	//トラップオブジェクト
@@ -143,6 +146,7 @@ void CSceneMap4::InitScene()
 	CObjsolve2*obj_solve2 = new CObjsolve2(350,536);
 	Objs::InsertObj(obj_solve2, OBJ_SOLVE2, 1);
 	*/
+
 	//家具オブジェクト11作成
 	CObjFurniture11*obj_Furnirure11 = new CObjFurniture11();
 	Objs::InsertObj(obj_Furnirure11, OBJ_FURNITURE11, 10);

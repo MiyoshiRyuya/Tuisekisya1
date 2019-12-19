@@ -61,7 +61,7 @@ enum OBJ_NAME
 	OBJ_FURNITURE41,
 	OBJ_FURNITURE42,
 	OBJ_FURNITURE43,
-
+	OBJ_TIPS1,
 
 	
 	//マップ
@@ -126,6 +126,7 @@ enum HIT_ELEMENTS
 	ELEMENT_WHITE,
 	ELEMENT_MYS,
 	ELEMENT_SOLVE,
+	ELEMENT_MEMO,
 };
 //------------------------------------------------
 
@@ -164,14 +165,8 @@ extern float genzaiti; //現在地
 
 //家具
 #include "ObjFurniture.h"
-#include "ObjFurniture1.h"
-#include "ObjFurniture2.h"
-#include "ObjFurniture3.h"
 #include "ObjFurniture4.h"
 #include "ObjFurniture5.h"
-#include "ObjFurniture6.h"
-#include "ObjFurnirure7.h"
-#include "ObjFurniture8.h"
 #include "ObjFurniture9.h"
 #include "ObjFurniture10.h"
 #include "ObjFurniture11.h"
@@ -207,6 +202,7 @@ extern float genzaiti; //現在地
 #include "ObjFurniture41.h"
 #include "ObjFurniture42.h"
 #include "ObjFurniture43.h"
+#include "ObjTips1.h"
 
 //メニュー
 #include "ObjMenu2.h"
