@@ -51,6 +51,8 @@ void CSceneMap4::InitScene()
 	//外部グラフィックファイルを読み込み2番目に登録(512*512pixel)
 	Draw::LoadImage(L"KitchenFloorEX.png", 2, TEX_SIZE_512);
 
+	Draw::LoadImage(L"Hari.png", 3, TEX_SIZE_64);
+
 	//外部グラフィックファイルを読み込み3番目に登録
 	Draw::LoadImage(L"ImomushiEnemy.png", 4, TEX_SIZE_64);
 
@@ -139,7 +141,7 @@ void CSceneMap4::InitScene()
 	
 	//トラップオブジェクト
 	CObjtrap*obj_trap = new CObjtrap(128, 188);
-	Objs::InsertObj(obj_trap, OBJ_TRAP, 20);
+	Objs::InsertObj(obj_trap, OBJ_TRAP, 10);
 
 	//家具オブジェクト11作成
 	CObjFurniture11*obj_Furnirure11 = new CObjFurniture11();
