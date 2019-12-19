@@ -306,8 +306,7 @@ void CObjMenu2::Draw()
 	RECT_F src;
 	RECT_F dst;
 
-	//メニュー画面表示
-	Font::StrDraw(L"MENU", 0, 0, 64, c);
+
 
 	//最初の画面
 	if (GameOver == 0) {
@@ -426,6 +425,21 @@ void CObjMenu2::Draw()
 		Draw::Draw(2, &src, &dst, c, 0.0f);
 	}
 
+	if (Cross == 3)
+	{
+		src.m_top = 0.0f;
+		src.m_left = 0.0f;
+		src.m_right = 512.0f;
+		src.m_bottom = 512.0f;
+
+		dst.m_top = 0.0f;
+		dst.m_left = 100.0f;
+		dst.m_right = 700.0f;
+		dst.m_bottom = 600.0f;
+
+		Draw::Draw(3, &src, &dst, c, 0.0f);
+	}
+
 	if (Cross == 4)
 	{
 		src.m_top = 0.0f;
@@ -441,5 +455,6 @@ void CObjMenu2::Draw()
 		Draw::Draw(1, &src, &dst, c, 0.0f);
 	}
 
-
+	//メニュー画面表示
+	Font::StrDraw(L"MENU", 0, 0, 64, c);
 }

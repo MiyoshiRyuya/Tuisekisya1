@@ -20,6 +20,7 @@ float g_Xz=100;
 float g_Yz=120;
 
 extern bool Memo3flag;
+bool Tipsflag = false;
 bool itemflag = false;
 bool solveflag = false;
 float CObjHero::Getflag()
@@ -300,7 +301,7 @@ void CObjHero::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == true) 
 		{
-
+			Tipsflag = true;
 			g_Xz = m_x;
 			g_Yz = m_y;
 

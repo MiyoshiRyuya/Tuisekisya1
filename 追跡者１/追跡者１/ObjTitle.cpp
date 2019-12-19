@@ -12,6 +12,7 @@ using namespace GameL;
 extern bool Memoflag1;
 extern bool Memoflag2;
 extern bool Memo3flag;
+extern bool Tipsflag;
 extern bool itemflag;
 //イニシャライズ
 void CObjTitle::Init()
@@ -29,6 +30,7 @@ void CObjTitle::Action()
 	Memoflag1 = false;
 	Memoflag2 = false;
 	Memo3flag = false;
+	Tipsflag = false;
 	itemflag = false;
 
 	//マウスの位置を取得

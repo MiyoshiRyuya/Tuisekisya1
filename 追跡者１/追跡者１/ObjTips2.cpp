@@ -9,6 +9,7 @@
 using namespace GameL;
 bool Memoflag2 = false;
 extern bool Memoflag1;
+extern bool Tipsflag;
 void CObjTips2::Init()
 {
 
@@ -31,8 +32,9 @@ void CObjTips2::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == true)
 		{
-			if (Memoflag1 == true)
+			if (Memoflag1 == true&&Tipsflag==true)
 			{
+				
 				Memoflag2 = true;
 				this->SetStatus(false);   //自身に削除命令を出す。
 				Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。

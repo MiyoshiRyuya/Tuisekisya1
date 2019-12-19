@@ -17,7 +17,7 @@ void CObjMain::Init()
 	m_x = 0;
 	m_y = 0;
 
-	Hits::SetHitBox(this, m_x, m_y+500, 100, 100, ELEMENT_GREEN, OBJ_MAP6, 2);//スカル
+	Hits::SetHitBox(this, m_x, m_y+500, 100, 100, ELEMENT_MYS, OBJ_MAP6, 2);//スカル
 	Hits::SetHitBox(this, m_x, m_y , 100, 100, ELEMENT_GREEN, OBJ_MAP6, 2);//クマ
 	Hits::SetHitBox(this, m_x, m_y+200, 100, 200, ELEMENT_GREEN, OBJ_MAP6, 2);//クマ
 	Hits::SetHitBox(this, m_x+730, m_y , 70, 240, ELEMENT_GREEN, OBJ_MAP6, 2);//クマ
