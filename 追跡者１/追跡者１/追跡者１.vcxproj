@@ -151,10 +151,8 @@
     <ClCompile Include="Map4.cpp" />
     <ClCompile Include="Map5.cpp" />
     <ClCompile Include="Map6.cpp" />
-    <ClCompile Include="ObjFurnirure2.cpp" />
     <ClCompile Include="ObjFurnirure4.cpp" />
     <ClCompile Include="ObjFurnirure5.cpp" />
-    <ClCompile Include="ObjFurnirure7.cpp" />
     <ClCompile Include="ObjFurniture.cpp" />
     <ClCompile Include="GameL\Audio.cpp" />
     <ClCompile Include="GameL\DirectXDevice.cpp" />
@@ -169,18 +167,14 @@
     <ClCompile Include="GameL\SetWindow.cpp" />
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
-    <ClCompile Include="ObjFurniture1.cpp" />
     <ClCompile Include="ObjFurniture10.cpp" />
     <ClCompile Include="ObjFurniture26.cpp" />
     <ClCompile Include="ObjFurniture27.cpp" />
     <ClCompile Include="ObjFurniture28.cpp" />
     <ClCompile Include="ObjFurniture29.cpp" />
-    <ClCompile Include="ObjFurniture3.cpp" />
     <ClCompile Include="ObjFurniture30.cpp" />
     <ClCompile Include="ObjFurniture31.cpp" />
     <ClCompile Include="ObjFurniture32.cpp" />
-    <ClCompile Include="ObjFurniture6.cpp" />
-    <ClCompile Include="ObjFurniture8.cpp" />
     <ClCompile Include="ObjFurniture9.cpp" />
     <ClCompile Include="ObjItem.cpp" />
     <ClCompile Include="ObjMain.cpp" />
@@ -236,7 +230,6 @@
     <ClInclude Include="Map5.h" />
     <ClInclude Include="Map6.h" />
     <ClInclude Include="ObjCloset.h" />
-    <ClInclude Include="ObjFurnirure7.h" />
     <ClInclude Include="ObjFurniture.h" />
     <ClInclude Include="GameHead.h" />
     <ClInclude Include="GameL\Audio.h" />
@@ -251,7 +244,6 @@
     <ClInclude Include="GameL\UserData.h" />
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
-    <ClInclude Include="ObjFurniture1.h" />
     <ClInclude Include="ObjFurniture10.h" />
     <ClInclude Include="ObjFurniture11.h" />
     <ClInclude Include="ObjFurniture12.h" />
@@ -262,7 +254,6 @@
     <ClInclude Include="ObjFurniture17.h" />
     <ClInclude Include="ObjFurniture18.h" />
     <ClInclude Include="ObjFurniture19.h" />
-    <ClInclude Include="ObjFurniture2.h" />
     <ClInclude Include="ObjFurniture20.h" />
     <ClInclude Include="ObjFurniture21.h" />
     <ClInclude Include="ObjFurniture22.h" />
@@ -273,7 +264,6 @@
     <ClInclude Include="ObjFurniture27.h" />
     <ClInclude Include="ObjFurniture28.h" />
     <ClInclude Include="ObjFurniture29.h" />
-    <ClInclude Include="ObjFurniture3.h" />
     <ClInclude Include="ObjFurniture30.h" />
     <ClInclude Include="ObjFurniture31.h" />
     <ClInclude Include="ObjFurniture32.h" />
@@ -290,8 +280,6 @@
     <ClInclude Include="ObjFurniture42.h" />
     <ClInclude Include="ObjFurniture43.h" />
     <ClInclude Include="ObjFurniture5.h" />
-    <ClInclude Include="ObjFurniture6.h" />
-    <ClInclude Include="ObjFurniture8.h" />
     <ClInclude Include="ObjFurniture9.h" />
     <ClInclude Include="ObjGameClear.h" />
     <ClInclude Include="ObjItem.h" />
