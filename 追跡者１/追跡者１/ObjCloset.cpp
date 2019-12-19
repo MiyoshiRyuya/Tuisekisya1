@@ -9,8 +9,8 @@
 
 //使用するネームスペース
 using namespace GameL;
-bool Memoflag = false;
-
+bool Memo3flag = false;
+extern bool Memoflag2;
 //イニシャライズ
 void CObjCloset::Init()
 {
@@ -29,14 +29,17 @@ void CObjCloset::Init()
 //アクション
 void CObjCloset::Action()
 {
-	if (Input::GetVKey(VK_RETURN) == true)
-	{
-		
-			Memoflag = true;
-	}
 
-	if (flag== true)
+	if (flag == true)
 	{
+		if (Memoflag2 == true)
+		{
+			if (Input::GetVKey(VK_RETURN) == true)
+			{
+
+				Memo3flag = true;
+			}
+		}
 		//Eボタンを押すとゲーム画面に移動する
 		if (Input::GetVKey('E') == true)
 		{
