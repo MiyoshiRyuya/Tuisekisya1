@@ -20,4 +20,10 @@ class CObjTitle :public CObj
 		 float m_mou_y; //マウスの位置ｙ
 		 bool  m_mou_r; //マウスの右ボタン
 		 bool  m_mou_l; //マウスの左ボタン
+
+		 //コマンド
+		 int K;
+		 int N;
+		 int M;
+		 int komando; // コマンド
 };

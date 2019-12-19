@@ -21,6 +21,7 @@ float g_Yz=120;
 
 extern bool Memo3flag;
 bool Tipsflag = false;
+extern bool idou;
 bool itemflag = false;
 bool solveflag = false;
 float CObjHero::Getflag()
@@ -70,8 +71,13 @@ void CObjHero::Action()
 	g_Xz = m_x;
 	g_Yz = m_y;
 
-	//キーの入力方向
+	if (idou == true) {
+		m_px = 100;
+		m_py = 120;
+		idou = false;
+	}
 
+	//キーの入力方向
 	if (Input::GetVKey('D') == true)
 	{
 		m_migi = 1;
