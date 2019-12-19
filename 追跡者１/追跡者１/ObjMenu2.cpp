@@ -14,6 +14,8 @@
 //使用するネームスペース
 using namespace GameL;
 
+bool idou = false; //ゲーム終了時に初期値に戻す用
+
 extern float genzaiti; //現在地
 extern bool itemflag;
 extern bool Memoflag;
@@ -139,6 +141,8 @@ void CObjMenu2::Action()
 				{
 					//Audio::Start(3);
 					GameOver = 0;
+					if (idou == false)
+						idou = true;
 					Scene::SetScene(new CSceneTitle());
 				}
 			}
@@ -210,6 +214,7 @@ void CObjMenu2::Action()
 					Audio::Start(3);
 					//GameOver = 0;
 					Cross = 2;
+					time = 0;
 				}
 			}
 			else if (Migi4 == 3)

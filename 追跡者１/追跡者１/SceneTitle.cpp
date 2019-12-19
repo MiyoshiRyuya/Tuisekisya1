@@ -27,7 +27,9 @@ CSceneTitle::~CSceneTitle()
 //ゲームメイン初期化メソッド
 void CSceneTitle::InitScene()
 {
-
+	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
+	//Draw::LoadImage(L"コントローラ.png", 1, TEX_SIZE_512);
+	Draw::LoadImage(L"Title.png", 0, TEX_SIZE_512);
 
 	//外部グラフィックファイルを読み込み1番目に登録(512*512)
 	//Draw::LoadImage(L"Title.png", 1, TEX_SIZE_512);
