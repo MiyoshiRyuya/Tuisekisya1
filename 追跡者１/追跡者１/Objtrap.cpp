@@ -210,7 +210,7 @@ void CObjtrap3::Action()
 
 		vx *= -1;
 	}
-	m_y += vy*5;
+	m_y += vy*4;
 	m_x += vx*2;
 
 	CHitBox*hit = Hits::GetHitBox(this);

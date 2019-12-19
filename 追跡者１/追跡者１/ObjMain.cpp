@@ -17,7 +17,7 @@ void CObjMain::Init()
 	m_x = 0;
 	m_y = 0;
 
-	Hits::SetHitBox(this, m_x, m_y+500, 500, 100, ELEMENT_GREEN, OBJ_MAP6, 2);//スカル
+	Hits::SetHitBox(this, m_x, m_y+500, 100, 100, ELEMENT_GREEN, OBJ_MAP6, 2);//スカル
 	Hits::SetHitBox(this, m_x, m_y , 100, 100, ELEMENT_GREEN, OBJ_MAP6, 2);//クマ
 	Hits::SetHitBox(this, m_x, m_y+200, 100, 200, ELEMENT_GREEN, OBJ_MAP6, 2);//クマ
 	Hits::SetHitBox(this, m_x+730, m_y , 70, 240, ELEMENT_GREEN, OBJ_MAP6, 2);//クマ
@@ -50,33 +50,6 @@ void CObjMain::Draw()
 
 	Draw::Draw(15, &src, &dst, c, 0.0f);
 
-	dst.m_top = 0.0f + 500;
-	dst.m_left = 0.0f+100;
-	dst.m_right = 100.0f+100;
-	dst.m_bottom = 100.0f + 500;
-
-	Draw::Draw(15, &src, &dst, c, 0.0f);
-
-	dst.m_top = 0.0f + 500;
-	dst.m_left = 0.0f + 200;
-	dst.m_right = 100.0f + 200;
-	dst.m_bottom = 100.0f + 500;
-
-	Draw::Draw(15, &src, &dst, c, 0.0f);
-
-	dst.m_top = 0.0f + 500;
-	dst.m_left = 0.0f + 300;
-	dst.m_right = 100.0f + 300;
-	dst.m_bottom = 100.0f + 500;
-
-	Draw::Draw(15, &src, &dst, c, 0.0f);
-
-	dst.m_top = 0.0f + 500;
-	dst.m_left = 0.0f + 400;
-	dst.m_right = 100.0f + 400;
-	dst.m_bottom = 100.0f + 500;
-
-	Draw::Draw(15, &src, &dst, c, 0.0f);
 
 	//クマ種類
 	src.m_top = 0.0f;
