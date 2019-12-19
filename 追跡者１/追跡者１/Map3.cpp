@@ -32,6 +32,8 @@ void CObjMap3::Init()
 	idouX = 750; //マップ移動用
 	idouY = 300;
 
+	Hits::SetHitBox(this, m_x -700, m_y + 400, 190, 200, ELEMENT_BLUE, OBJ_MAP6, 3);
+
 	Hits::SetHitBox(this, m_x + 10, m_y + 10, 248, 200, ELEMENT_BLUE, OBJ_MAP6, 3);
 	
 	Hits::SetHitBox(this, mx+10, my+10, 190, 200, ELEMENT_BLUE, OBJ_MAP6, 1);
@@ -81,23 +83,6 @@ void CObjMap3::Draw()
 		//描画
 		Draw::Draw(2, &src, &dst, c, 0.0f);
 
-
-
-		//切り取り位置の設定
-		src.m_top = 0.0f;
-		src.m_left = 0.0f;
-		src.m_right = 800.0f;
-		src.m_bottom = 100.0f;
-
-		//表示位置の設定
-		dst.m_top = 0.0f;
-		dst.m_left = 0.0f;
-		dst.m_right = .0f;
-		dst.m_bottom = 110.0f;
-
-		//描画
-		Draw::Draw(9, &src, &dst, c, 0.0f);
-	
 		//切り取り位置の設定
 		src.m_top = 250.0f;
 		src.m_left = 0.0f;
@@ -119,7 +104,7 @@ void CObjMap3::Draw()
 		src.m_top = 0.0f;
 		src.m_left = 90.0f;
 		src.m_right = 0.0f;
-		src.m_bottom = 90.0f;
+		src.m_bottom = 97.0f;
 
 		dst.m_top = 0.0f + m_y;
 		dst.m_left = 150.0f + m_x;
@@ -128,6 +113,39 @@ void CObjMap3::Draw()
 
 		//描画
 		Draw::Draw(13, &src, &dst, c, 0.0f);
+
+		src.m_top = 98.0f;
+		src.m_left = 90.0f;
+		src.m_right = 0.0f;
+		src.m_bottom = 193.0f;
+
+		dst.m_top = 0.0f +400;
+		dst.m_left = 150.0f ;
+		dst.m_right = 0.0f ;
+		dst.m_bottom = 200.0f +400;
+
+		//描画
+		Draw::Draw(13, &src, &dst, c, 180.0f);
+
+		//カーペット
+		src.m_top = 0.0f;
+		src.m_left = 320.0f;
+		src.m_right = 385.0f;
+		src.m_bottom = 64.0f;
+
+		dst.m_top = 0.0f + 155;
+		dst.m_left = 0.0f + 255;
+		dst.m_right = 300.0f + 255;
+		dst.m_bottom = 300.0f + 155;
+
+		Draw::Draw(12, &src, &dst, c, 0.0f);
+
+		dst.m_top = 0.0f + 290;
+		dst.m_left = 0.0f + 730;
+		dst.m_right = 70.0f + 730;
+		dst.m_bottom = 120.0f + 290;
+
+		Draw::Draw(12, &src, &dst, c, 0.0f);
 
 		src.m_top = 0.0f;
 		src.m_left = 128.0f;
@@ -139,17 +157,7 @@ void CObjMap3::Draw()
 		dst.m_right = 0.0f + mx;
 		dst.m_bottom = 200.0f + my;
 
-		Draw::Draw(14, &src, &dst, c, 0.0f);//キッチンテーブル2
+		Draw::Draw(14, &src, &dst, c, 0.0f);
 
-		src.m_top = 250.0f;
-		src.m_left = 0.0f;
-		src.m_right = 65.0f;
-		src.m_bottom = 430.0f;
-
-		//表示位置の設定
-		dst.m_top = 120.0f + py;
-		dst.m_left = 300.0f + px;
-		dst.m_right = 380.0f + px;
-		dst.m_bottom = 350.0f + py;
 
 }

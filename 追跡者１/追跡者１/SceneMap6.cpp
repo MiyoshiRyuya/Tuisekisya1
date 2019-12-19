@@ -60,6 +60,8 @@ void CSceneMap6::InitScene()
 
 	Draw::LoadImage(L"Chair.png", 50, TEX_SIZE_64);
 
+	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
+
 	Draw::LoadImageW(L"本棚横並び.png", 10, TEX_SIZE_512);
 
 	Draw::LoadImageW(L"カーペット２.png", 11, TEX_SIZE_512);
@@ -76,7 +78,7 @@ void CSceneMap6::InitScene()
 	Objs::InsertObj(obji, OBJ_ITEM, 1);
 
 	//トラップオブジェクト
-	CObjtrap1*obj_trap1 = new CObjtrap1(760, 530);
+	CObjtrap1*obj_trap1 = new CObjtrap1(760, 540);
 	Objs::InsertObj(obj_trap1, OBJ_TRAP, 10);
 
 	CObjtrap1*obj_trapp1 = new CObjtrap1(0, 150);

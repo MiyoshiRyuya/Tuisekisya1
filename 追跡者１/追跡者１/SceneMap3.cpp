@@ -51,9 +51,6 @@ void CSceneMap3::InitScene()
 	//外部グラフィックファイルを読み込み5番目に登録w
 	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
 
-	//外部グラフィックファイルを読み込み9番目に登録
-	Draw::LoadImage(L"kabe1.png", 9, TEX_SIZE_512);
-
 	//外部グラフィックファイルを読み込み11番に登録（64×64ピクセル）
 	Draw::LoadImage(L"Closet1.png", 11, TEX_SIZE_64);
 
@@ -63,13 +60,19 @@ void CSceneMap3::InitScene()
 	//外部グラフィックファイルを読み込み3番目に登録
 	Draw::LoadImage(L"Hari.png", 3, TEX_SIZE_64);
 
+	Draw::LoadImage(L"ueki.png", 12, TEX_SIZE_512);
+
 	Draw::LoadImage(L"bed.png", 13, TEX_SIZE_64);
 
 	Draw::LoadImage(L"SofaandTable.png", 14, TEX_SIZE_64);
 
 	//トラップオブジェクト
-	CObjtrap*obj_trap = new CObjtrap(542,292);
-	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
+	CObjtrap2*obj_trap2 = new CObjtrap2(500,0);
+	Objs::InsertObj(obj_trap2, OBJ_TRAP, 1);
+
+	CObjtrap2*obj_trap2a = new CObjtrap2(242, 520);
+	Objs::InsertObj(obj_trap2a, OBJ_TRAP, 1);
+
 	//トラップオブジェクト
 	CObjtrap1*obj_trap1 = new CObjtrap1(70, 550);
 	Objs::InsertObj(obj_trap1, OBJ_TRAP, 1);
