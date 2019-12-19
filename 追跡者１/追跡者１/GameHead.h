@@ -61,7 +61,7 @@ enum OBJ_NAME
 	OBJ_FURNITURE41,
 	OBJ_FURNITURE42,
 	OBJ_FURNITURE43,
-
+	OBJ_TIPS1,
 
 	
 	//マップ
@@ -208,6 +208,7 @@ extern float genzaiti; //現在地
 #include "ObjFurniture41.h"
 #include "ObjFurniture42.h"
 #include "ObjFurniture43.h"
+#include "ObjTips1.h"
 
 //メニュー
 #include "ObjMenu2.h"

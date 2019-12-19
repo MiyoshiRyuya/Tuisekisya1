@@ -441,6 +441,9 @@
     <ClCompile Include="ObjHero.cpp">
       <Filter>ソース ファイル\Hero</Filter>
     </ClCompile>
+    <ClCompile Include="ObjTips1.cpp">
+      <Filter>ソース ファイル\Furniture</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -772,6 +775,9 @@
     </ClInclude>
     <ClInclude Include="Scenesolve2.h">
       <Filter>ソース ファイル\謎解き</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTips1.h">
+      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

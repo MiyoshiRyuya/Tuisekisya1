@@ -225,6 +225,7 @@
     <ClCompile Include="Objtrap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="ObjTips1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Map2.h">
@@ -325,6 +326,7 @@
     <ClInclude Include="Scenesolve2.h" />
     <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="Objtrap.h" />
+    <ClInclude Include="ObjTips1.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

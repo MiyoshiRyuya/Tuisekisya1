@@ -33,6 +33,7 @@ void CSceneMenu2::InitScene()
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"ToukaMenu2.png", 0, TEX_SIZE_512);
 
+	Draw::LoadImage(L"無題.png", 1, TEX_SIZE_512);
 	//出力させる文字のグラフィックを作成
 	Font::SetStrTex(L"MENU");
 	Font::SetStrTex(L"所持アイテム確認");

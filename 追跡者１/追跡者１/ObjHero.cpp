@@ -496,9 +496,11 @@ void CObjHero::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == true)
 		{
-			itemflag = true;
+			if (Memoflag == true)
+			{
+				itemflag = true;
+			}
 		}
-
 	}
 }
 
