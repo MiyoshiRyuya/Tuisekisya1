@@ -30,7 +30,7 @@ void CObjtrap::Action()
 	m_y += vy;
 	m_x += vx;
 	//ŽÎ‚ßƒoƒEƒ“ƒh
-	if (m_x + 32.0f >= 800 || m_y + 64.0f <= 80)
+	if (m_x + 32.0f >= 780 || m_y + 64.0f <= 40)
 	{
 
 			vy *= -1;
@@ -80,7 +80,7 @@ CObjtrap1::CObjtrap1(float x, float y)
 
 void CObjtrap1::Init()
 {
-	Hits::SetHitBox(this, m_x, m_y, 64, 50, ELEMENT_RED, OBJ_TRAP, 1);
+	Hits::SetHitBox(this, m_x, m_y+10, 64, 50, ELEMENT_RED, OBJ_TRAP, 1);
 
 }
 
@@ -96,7 +96,7 @@ void CObjtrap1::Action()
 	m_x += vx;
 
 	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_x, m_y);
+	hit->SetPos(m_x, m_y+10);
 
 }
 
@@ -113,8 +113,8 @@ void CObjtrap1::Draw()
 	src.m_bottom = 32.0f;
 
 	dst.m_top = 0.0f + m_y;
-	dst.m_left = 64.0f + m_x;
-	dst.m_right = 0.0f + m_x;
+	dst.m_left = 0.0f + m_x;
+	dst.m_right = 64.0f + m_x;
 	dst.m_bottom = 64.0f + m_y;
 
 	//•`‰æ
@@ -135,7 +135,7 @@ CObjtrap2::CObjtrap2(float x, float y)
 
 void CObjtrap2::Init()
 {
-	Hits::SetHitBox(this, m_x, m_y, 64, 50, ELEMENT_RED, OBJ_TRAP, 1);
+	Hits::SetHitBox(this, m_x+10, m_y, 40, 64, ELEMENT_RED, OBJ_TRAP, 1);
 
 }
 
@@ -143,15 +143,15 @@ void CObjtrap2::Action()
 {
 	m_y += vy;
 	//cƒoƒEƒ“ƒh
-	if (m_y + 64.0f >= 600 || m_y <= 100)
+	if (m_y + 64.0f >= 600 || m_y <= 0)
 	{
 
 		vy *= -1;
 	}
-	m_y += vy;
+	m_y += vy*5;
 
 	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_x, m_y);
+	hit->SetPos(m_x+10, m_y);
 
 }
 
@@ -173,7 +173,7 @@ void CObjtrap2::Draw()
 	dst.m_bottom = 64.0f + m_y;
 
 	//•`‰æ
-	Draw::Draw(3, &src, &dst, c, 90.0f);
+	Draw::Draw(3, &src, &dst, c, 180.0f);
 
 }
 
