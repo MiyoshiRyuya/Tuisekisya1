@@ -43,6 +43,7 @@ void CObjCloset::Action()
 		//Eƒ{ƒ^ƒ“‚ğ‰Ÿ‚·‚ÆƒQ[ƒ€‰æ–Ê‚ÉˆÚ“®‚·‚é
 		if (Input::GetVKey('E') == true)
 		{
+
 			Scene::SetScene(new CSceneMap3());
 		}
 	}

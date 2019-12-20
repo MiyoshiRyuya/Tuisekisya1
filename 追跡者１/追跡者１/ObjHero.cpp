@@ -154,8 +154,10 @@ void CObjHero::Action()
 
 
 	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_px , m_py);
-
+	if (hit != nullptr)
+	{
+		hit->SetPos(m_px, m_py);
+	}
 	//敵オブジェクトと接触したら主人公削除
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
@@ -249,6 +251,7 @@ void CObjHero::Action()
 			g_Yz = 70;
 			bool closeton = false;
 			Scene::SetScene(new CSceneCloset(closeton));
+			return;
 		}
 
 	}

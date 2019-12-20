@@ -47,6 +47,7 @@ void CObjEnemy::Init()
 	Hits::SetHitBox(this, m_x, m_y, 44, 140, ELEMENT_ENEMY, OBJ_ENEMY, 1);
 
 }
+//アクション
 void CObjEnemy::Action()
 {
 	//m_x = m_ex;
@@ -71,46 +72,7 @@ void CObjEnemy::Action()
 	m_x += (x / m_len);
 	m_y += (y / m_len);
 
-	/*if (m_x > x)
-		m_x--;
-	if (m_x < x)
-		m_x++;
-	if (m_y > y)
-		m_y--;
-	if (m_y < y)
-		m_y++;
 
-	float ar = atan2(-y, x)*180.0f / 3.14f;
-
-	if (ar < 0)
-	{
-		ar = 360 - abs(ar);
-	}
-
-	float br = atan2(-m_vy, m_vx)*180.0f / 3.14f;
-	if (br < 0)
-	{
-		br = 360 - abs(br);
-	}
-
-	if (ar - br > 20)
-	{
-		m_vx = cos(3.14 / 180 * ar);
-		m_vx = -sin(3.14 / 180 * ar);
-	}
-
-	float r = 3.14 / 180.0f;
-	if (ar < br)
-	{
-		m_vx = m_vx * cos(r) - m_vy * sin(r);
-		m_vy = m_vy * cos(r) + m_vx * sin(r);
-	}
-	else
-	{
-		m_vx = m_vx * cos(-r) - m_vy * sin(-r);
-		m_vy = m_vy * cos(-r) + m_vx * sin(-r);
-
-	}*/
 	//移動方向
 	//速度を付ける
 	m_vx *= 5.8f;
@@ -121,19 +83,7 @@ void CObjEnemy::Action()
 	m_x += m_vx;
 	m_y += m_vy;
 
-	/*if (m_ani_time > m_ani_max_time)
-	{
-		m_ani_frame - 1;
-		m_ani_time = 0;
-	}
-
-	if (m_ani_frame == 2)
-	{
-		m_ani_frame = 0;
-	}
-	*/
 	//敵オブジェクトと接触したら主人公削除
-	
 	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
 	
