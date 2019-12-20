@@ -23,22 +23,12 @@ void CObjGameOver::Init()
 //アクション
 void CObjGameOver::Action()
 {
-	//マウスの位置を取得
-	m_mou_x = (float)Input::GetPosX();
-	m_mou_y = (float)Input::GetPosY();
-	//マウスのボタンの状態
-	m_mou_r = Input::GetMouButtonR();
-	m_mou_l = Input::GetMouButtonL();
-
-	//マウス左クリックを押したらシーンメインに移行する
-	if (m_mou_x > 0 && m_mou_x < 730 && m_mou_y>0 && m_mou_y < 600)
-	{
 		//マウスが押されたらシーンメインに移動
-		if (m_mou_l == true)
-		{
-			Scene::SetScene(new CSceneTitle());
-		}
+	if (Input::GetVKey(VK_RETURN) == true)
+	{
+		Scene::SetScene(new CSceneTitle());
 	}
+	
 }
 
 //ドロー
@@ -66,5 +56,5 @@ void CObjGameOver::Draw()
 	//外部グラフィックファイルを読み込み0番目に登録(512*230)
 	Draw::LoadImage(L"GameOverScene.png", 0, TEX_SIZE_512);
 
-	Font::StrDraw(L"Left-Click", 360, 410, 24, c);
+	Font::StrDraw(L"Press Enter", 360, 410, 24, c);
 }
