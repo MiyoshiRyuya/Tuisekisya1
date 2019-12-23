@@ -354,7 +354,7 @@ void CObjMenu2::Draw()
 	}
 
 	else if (Cross == 1) {
-		Font::StrDraw(L"この十字架どっかで使えるしょ", 140, 200, 32, c);
+		Font::StrDraw(L"You'll be left as long as you have this", 140, 200, 32, c);
 	}
 	//カーソル（⇒）
 	if (GameOver == 0) {
