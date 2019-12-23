@@ -354,7 +354,7 @@ void CObjMenu2::Draw()
 	}
 
 	else if (Cross == 1) {
-		Font::StrDraw(L"ランボルギーニでタピオカ回すSEIKIN", 140, 200, 32, c);
+		Font::StrDraw(L"この十字架どっかで使えるしょ", 140, 200, 32, c);
 	}
 	//カーソル（⇒）
 	if (GameOver == 0) {
