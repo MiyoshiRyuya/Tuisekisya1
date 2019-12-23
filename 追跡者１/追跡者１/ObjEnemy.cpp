@@ -29,18 +29,23 @@ void CObjEnemy::Init()
 	CObjHero* obj = (CObjHero*)Objs::GetObj(OBJ_HERO);
 	float s_x = obj->GetX();
 	float s_y= obj->GetY();
-
+	
+	srand(time(NULL));
 	do
 	{
-		srand(time(NULL));
+		
 
-		px = rand() % 601+100; 
+		px = (rand() % 801); 
 
-		py = rand() % 401+100; 
+		py = (rand() % 601); 
 
-		m_x = px;
-		m_y = py;
-	} while ((192 + s_x < m_x || s_x - 192 > m_x) && (192 + s_y < m_y || s_y - 192 > m_y));
+		m_x = s_x - px;
+		m_y = s_y - py;
+
+		r = sqrt(m_x*m_x + m_y * m_y);
+
+	
+	} while (r <= 300);
 
 	m_ani_max_time = 4;
 
@@ -49,11 +54,7 @@ void CObjEnemy::Init()
 }
 //アクション
 void CObjEnemy::Action()
-{
-	//m_x = m_ex;
-	//m_y = m_ey;
-
-	
+{	
 	//	現在の位置を保存する
 	g_xz = m_x;
 	g_yz = m_y;

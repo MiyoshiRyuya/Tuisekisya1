@@ -58,6 +58,9 @@
     <Filter Include="ソース ファイル\item">
       <UniqueIdentifier>{d6044157-da1c-4c00-b0d1-7b8ffbf273e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\操作説明">
+      <UniqueIdentifier>{656b15f6-d907-4b75-bbfc-69896e1f86de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -199,9 +202,6 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="Map6.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjFurniture3.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="SceneMap3.cpp">
@@ -426,6 +426,12 @@
     <ClCompile Include="ObjTips2.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
+    <ClCompile Include="ObjDesc.cpp">
+      <Filter>ソース ファイル\操作説明</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneDesc.cpp">
+      <Filter>ソース ファイル\操作説明</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -580,9 +586,6 @@
     </ClInclude>
     <ClInclude Include="SceneMap6.h">
       <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjFurniture3.h">
-      <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture4.h">
       <Filter>ソース ファイル\Furniture</Filter>
@@ -742,6 +745,12 @@
     </ClInclude>
     <ClInclude Include="ObjTips2.h">
       <Filter>ソース ファイル\Furniture</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjDesc.h">
+      <Filter>ソース ファイル\操作説明</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneDesc.h">
+      <Filter>ソース ファイル\操作説明</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

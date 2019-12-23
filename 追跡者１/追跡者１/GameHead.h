@@ -85,6 +85,7 @@ enum OBJ_NAME
 
 	//タイトル系
 	OBJ_TITLE,
+	OBJ_DESC,
 	OBJ_GAME_OVER,
 	OBJ_GAME_CLEAR,
 
@@ -158,6 +159,7 @@ extern float genzaiti; //現在地
 #include "ObjHero.h"
 #include "Objstage.h"
 #include "ObjEnemy.h"
+#include "ObjDesc.h"
 
 //罠
 #include "Objtrap.h"
@@ -235,6 +237,7 @@ extern float genzaiti; //現在地
 //ゲームシーンクラスヘッダ------------------------
 #include "SceneMain.h"
 #include "SceneTitle.h"
+#include "SceneDesc.h"
 #include "SceneGameOver.h"
 #include "SceneGameClear.h"
 #include"SceneMenu2.h"
