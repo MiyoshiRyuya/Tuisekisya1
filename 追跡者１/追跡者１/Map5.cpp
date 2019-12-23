@@ -30,6 +30,8 @@ void CObjMap5::Init()
 
 	Hits::SetHitBox(this, m_x, m_y, 340, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
 	Hits::SetHitBox(this, m_x+460, m_y+200, 90, 90, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
+	Hits::SetHitBox(this, m_x + 260, m_y + 200, 90, 90, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
+
 	Hits::SetHitBox(this, m_x , m_y + 230, 60, 60, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
 	Hits::SetHitBox(this, m_x , m_y + 400, 60, 60, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
 	Hits::SetHitBox(this, m_x + 750, m_y + 230, 60, 60, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
@@ -129,16 +131,23 @@ void CObjMap5::Draw()
 
 	//êAñÿÇì
 	src.m_top = 0.0f;
-	src.m_left = 128.0f;
-	src.m_right = 64.0f;
+	src.m_left = 64.0f;
+	src.m_right = 128.0f;
 	src.m_bottom = 64.0f;
 
-	dst.m_top = 190.0f ;
-	dst.m_left =460.0f;
-	dst.m_right = 524.0f+40;
-	dst.m_bottom = 254.0f + 40;
+	dst.m_top = 0.0f+195 ;
+	dst.m_left =0.0f+470;
+	dst.m_right = 100.0f+470;
+	dst.m_bottom = 100.0f + 195;
 
 	Draw::Draw(52, &src, &dst, c, -90.0f);
+
+	dst.m_top = 0.0f + 195;
+	dst.m_left = 0.0f + 250;
+	dst.m_right = 100.0f + 250;
+	dst.m_bottom = 100.0f + 195;
+
+	Draw::Draw(52, &src, &dst, c, 90.0f);
 
 	//êAñÿÇì1
 	src.m_top = 0.0f;
@@ -206,6 +215,26 @@ void CObjMap5::Draw()
 	dst.m_left = 376.0f + 100;
 	dst.m_right = 312.0f;
 	dst.m_bottom = 304.0f + 100;
+
+	Draw::Draw(52, &src, &dst, c, 0.0f);
+
+	//„Oü~
+	src.m_top = 0.0f;
+	src.m_left = 385.0f;
+	src.m_right = 448.0f;
+	src.m_bottom = 64.0f;
+
+	dst.m_top = 0.0f+110;
+	dst.m_left = 0.0f +100;
+	dst.m_right = 100.0f+100;
+	dst.m_bottom = 100.0f + 110;
+
+	Draw::Draw(52, &src, &dst, c, 0.0f);
+
+	dst.m_top = 0.0f + 510;
+	dst.m_left = 0.0f + 100;
+	dst.m_right = 100.0f + 100;
+	dst.m_bottom = 100.0f + 510;
 
 	Draw::Draw(52, &src, &dst, c, 0.0f);
 
