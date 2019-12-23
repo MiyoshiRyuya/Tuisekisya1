@@ -116,6 +116,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ObjDesc.cpp" />
     <ClCompile Include="ObjFurniture11.cpp" />
     <ClCompile Include="ObjFurniture12.cpp" />
     <ClCompile Include="ObjFurniture13.cpp" />
@@ -195,6 +196,7 @@
     </ClCompile>
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="SceneCloset.cpp" />
+    <ClCompile Include="SceneDesc.cpp" />
     <ClCompile Include="SceneGameClear.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
@@ -223,6 +225,7 @@
     <ClCompile Include="ObjTips2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ObjDesc.h" />
     <ClInclude Include="Map2.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClInclude>
@@ -294,6 +297,7 @@
     <ClInclude Include="ObjMenu2.h" />
     <ClInclude Include="Objsolve.h" />
     <ClInclude Include="Objsolve2.h" />
+    <ClInclude Include="SceneDesc.h" />
     <ClInclude Include="SceneGameClear.h" />
     <ClInclude Include="SceneCloset.h" />
     <ClInclude Include="SceneMenu2.h" />

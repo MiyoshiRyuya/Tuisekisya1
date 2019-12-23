@@ -7,7 +7,7 @@
 #include"ObjTitle.h"
 #include"SceneMain.h"
 
-using namespace GameL;
+using namespace GameL; 
 
 extern bool Memoflag1;
 extern bool Memoflag2;
@@ -21,7 +21,7 @@ void CObjTitle::Init()
 	m_mou_y = 0.0f;
 	m_mou_r = false;
 	m_mou_l = false;
-
+	Migi4 = 1;
 }
 
 //アクション
@@ -32,24 +32,35 @@ void CObjTitle::Action()
 	Memo3flag = false;
 	Tipsflag = false;
 	itemflag = false;
-
-	//マウスの位置を取得
-	m_mou_x = (float)Input::GetPosX();
-	m_mou_y = (float)Input::GetPosY();
-	//マウスのボタンの状態
-	m_mou_r = Input::GetMouButtonR();
-	m_mou_l = Input::GetMouButtonL();
-
-	//マウス左クリックを押したらシーンメインに移行する
-	if (m_mou_x > 356 && m_mou_x < 445 && m_mou_y>345 && m_mou_y < 364)
-	{
-		
+	
 		//マウスが押されたらシーンメインに移動
-		if (m_mou_l == true)
+	if (Migi4 == 1)
+	{
+		if (Input::GetVKey(VK_RETURN) == true)
 		{
+			Migi4 = 1;
 			Audio::Start(1);
 			Scene::SetScene(new CSceneMap5());
 		}
+	}
+
+	if (Migi4 == 2)
+	{
+		if (Input::GetVKey(VK_RETURN) == true)
+		{
+			Migi4 = 1;
+			Audio::Start(1);
+			Scene::SetScene(new CSceneDesc());
+		}
+	}
+
+	if (Input::GetVKey(VK_UP) == true) {
+		Migi4 = 1;
+		time = 0;
+	}
+	else if (Input::GetVKey(VK_DOWN) == true) {
+		Migi4 = 2;
+		time = 0;
 	}
 }
 
@@ -58,7 +69,15 @@ void CObjTitle::Draw()
 {
 	float c[4] = { 1,1,1,1 };
 
+	Font::StrDraw(L"ゲームスタート", 340, 350, 23, c);
+	Font::StrDraw(L"操作説明", 340, 380, 32, c);
 
+	if (Migi4 == 1) {
+		Font::StrDraw(L"→", 300, 350, 32, c);
+	}
+	else if (Migi4 == 2) {
+		Font::StrDraw(L"→", 300, 380, 32, c);
+	}
 
 	RECT_F src;
 	RECT_F dst;
@@ -78,7 +97,13 @@ void CObjTitle::Draw()
 	//外部グラフィックファイルを読み込み0番目に登録(512*209)
 	Draw::LoadImage(L"Title.png", 0, TEX_SIZE_512);
 
+	Font::StrDraw(L"GAME START", 340, 350, 23, c);
+	Font::StrDraw(L"操作説明", 340, 380, 32, c);
 
-	Font::StrDraw(L"GAME START", 360, 350, 23, c);
-	//Font::StrDraw(L"CONTINUE", 360, 410, 23, c);
+	if (Migi4 == 1) {
+		Font::StrDraw(L"→", 300, 350, 32, c);
+	}
+	else if (Migi4 == 2) {
+		Font::StrDraw(L"→", 300, 380, 32, c);
+	}
 }

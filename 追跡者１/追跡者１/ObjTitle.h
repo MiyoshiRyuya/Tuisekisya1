@@ -26,4 +26,6 @@ class CObjTitle :public CObj
 		 int N;
 		 int M;
 		 int komando; // ƒRƒ}ƒ“ƒh
+		 int Migi4;
+		 int time;
 };
