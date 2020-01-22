@@ -29,6 +29,7 @@ void CObjMap6::Init()
 	hon_x = 200;
 	hon_y = 240;
 	
+	//オブジェクトの配置
 	Hits::SetHitBox(this, m_x, m_y, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
 	Hits::SetHitBox(this, m_x += 200, m_y += 240, 50, 250, ELEMENT_GREEN, OBJ_MAP6, 1);
 	Hits::SetHitBox(this, m_x += 200, m_y, 50, 250, ELEMENT_GREEN, OBJ_MAP6, 1);

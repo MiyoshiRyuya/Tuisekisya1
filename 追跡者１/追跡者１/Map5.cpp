@@ -238,4 +238,17 @@ void CObjMap5::Draw()
 
 	Draw::Draw(52, &src, &dst, c, 0.0f);
 
+
+	//–îˆó<
+	src.m_top = 0.0f;
+	src.m_left = 64.0f;
+	src.m_right = 0.0f;
+	src.m_bottom = 64.0f;
+
+	dst.m_top = 96.0f;
+	dst.m_left = 96.0f;
+	dst.m_right = 32.0f;
+	dst.m_bottom = 32.0f;
+
+	Draw::Draw(1, &src, &dst, c, 0.0f);
 }

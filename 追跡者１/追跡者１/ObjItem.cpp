@@ -8,6 +8,7 @@
 #include "GameHead.h"
 #include "ObjItem.h"
 #include "ObjMenu2.h"
+#include "GameL\Audio.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -34,6 +35,8 @@ void CObjItem::Init()
 		Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
 	}
 
+
+
 }
 
 //アクション
@@ -47,13 +50,20 @@ void CObjItem::Action()
 		{
 			if ( Memo3flag==true)
 			{
+				Audio::Start(1);
+
 				deleteflag = true;
 				this->SetStatus(false);   //自身に削除命令を出す。
 				Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
 			}
 		}
 	}
+
 }
+
+
+
+
 
 
 //ドロー
