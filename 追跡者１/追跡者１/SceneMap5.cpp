@@ -38,7 +38,10 @@ void CSceneMap5::InitScene()
 	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
 	Audio::Start(0); //音楽スタート
 
-
+	//ドアの効果音
+	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
+	float Volume1 = Audio::VolumeMaster(1.0f);
+	Audio::Start(1);
 
 
 
@@ -76,10 +79,7 @@ void CSceneMap5::InitScene()
 	
 
 
-	//効果音
-	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
-	float Volume1 = Audio::VolumeMaster(1.0f);
-	Audio::Start(1);
+
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録

@@ -79,6 +79,10 @@ void CSceneMain::InitScene()
 		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
 	}
 
+	//ドアの効果音
+	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
+	float Volume1 = Audio::VolumeMaster(1.0f);
+	Audio::Start(1);
 
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
@@ -108,6 +112,7 @@ void CSceneMain::InitScene()
 
 	//CObjstage*objb = new CObjstage(map);
 	//Objs::InsertObj(objb, OBJ_STAGE, 9);
+
 
 
 	//家具オブジェクト4作成
