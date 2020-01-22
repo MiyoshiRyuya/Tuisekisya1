@@ -84,6 +84,8 @@ void CSceneMain::InitScene()
 	float Volume1 = Audio::VolumeMaster(1.0f);
 	Audio::Start(1);
 
+	
+
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
