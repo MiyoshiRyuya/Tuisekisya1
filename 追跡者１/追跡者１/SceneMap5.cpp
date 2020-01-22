@@ -50,6 +50,8 @@ void CSceneMap5::InitScene()
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み1番目に登録
+	Draw::LoadImage(L"Left.png", 1, TEX_SIZE_64);
 
 	//外部グラフィックファイルを読み込み6番目に登録
 	Draw::LoadImage(L"Hari.png", 6, TEX_SIZE_64);
@@ -70,6 +72,9 @@ void CSceneMap5::InitScene()
 	Draw::LoadImageW(L"カーペット２.png", 11, TEX_SIZE_512);
 
 	Draw::LoadImage(L"階段がある壁.png", 9, TEX_SIZE_512);
+
+	
+
 
 	//効果音
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
