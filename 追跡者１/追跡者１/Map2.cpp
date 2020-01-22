@@ -33,10 +33,10 @@ void CObjMap2::Init()
 
 	kx = 0;
 	ky = 200;
-	Hits::SetHitBox(this, kx, ky-15, 64, 64, ELEMENT_GREEN, OBJ_MAP6, 2);
-	Hits::SetHitBox(this, kx + 200, ky - 15, 64, 64, ELEMENT_GREEN, OBJ_MAP6, 2);
-	Hits::SetHitBox(this, kx + 400, ky - 15, 64, 64, ELEMENT_GREEN, OBJ_MAP6, 2);
-	Hits::SetHitBox(this, kx + 600, ky - 15, 64, 64, ELEMENT_GREEN, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, kx, ky-15, 60, 64, ELEMENT_GREEN, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, kx + 215, ky - 5, 35, 50, ELEMENT_GREEN, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, kx + 415, ky - 5, 35, 50, ELEMENT_GREEN, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, kx + 615, ky - 5, 35, 50, ELEMENT_GREEN, OBJ_MAP6, 2);
 
 	bx = 0;
 	by = 0;
