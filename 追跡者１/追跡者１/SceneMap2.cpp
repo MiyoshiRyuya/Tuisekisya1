@@ -56,6 +56,12 @@ void CSceneMap2::InitScene()
 	//外部グラフィックファイルを読み込み9番目に登録
 	Draw::LoadImage(L"Earth.png", 31, TEX_SIZE_512);
 
+	Draw::LoadImage(L"Jupiter.png", 32, TEX_SIZE_512);
+
+	Draw::LoadImage(L"Saturn.png", 33, TEX_SIZE_512);
+
+	Draw::LoadImage(L"Jupiter.png", 34, TEX_SIZE_512);
+
 	Draw::LoadImage(L"Chair.png", 50, TEX_SIZE_64);
 
 	Draw::LoadImage(L"desk.png", 51, TEX_SIZE_64);
@@ -76,6 +82,9 @@ void CSceneMap2::InitScene()
 
 	CObjTips2*obj_Tips2 = new CObjTips2();
 	Objs::InsertObj(obj_Tips2, OBJ_TIPS2, 10);
+
+	CObjTips3*obj_Tips3 = new CObjTips3();
+	Objs::InsertObj(obj_Tips3, OBJ_TIPS3, 10);
 
 	srand(time(NULL));
 

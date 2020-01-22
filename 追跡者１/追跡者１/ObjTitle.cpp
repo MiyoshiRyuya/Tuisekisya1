@@ -22,8 +22,7 @@ void CObjTitle::Init()
 	m_mou_r = false;
 	m_mou_l = false;
 	Migi4 = 1;
-}
-
+} 
 //アクション
 void CObjTitle::Action()
 {
@@ -69,14 +68,14 @@ void CObjTitle::Draw()
 {
 	float c[4] = { 1,1,1,1 };
 
-	Font::StrDraw(L"ゲームスタート", 340, 350, 23, c);
-	Font::StrDraw(L"操作説明", 340, 380, 23, c);
+	Font::StrDraw(L"ゲームスタート", 340, 350, 28, c);
+	Font::StrDraw(L"操作説明", 340, 400, 23, c);
 
 	if (Migi4 == 1) {
 		Font::StrDraw(L"→", 300, 350, 32, c);
 	}
 	else if (Migi4 == 2) {
-		Font::StrDraw(L"→", 300, 380, 32, c);
+		Font::StrDraw(L"→", 300, 400, 32, c);
 	}
 
 	RECT_F src;
