@@ -19,6 +19,8 @@ using namespace GameL;
 float g_Xz=100;
 float g_Yz=120;
 
+extern bool Memoflag1;
+extern bool Memoflag2;
 extern bool Memo3flag;
 bool Tipsflag = false;
 extern bool idou;
@@ -495,6 +497,13 @@ void CObjHero::Action()
 				itemflag = true;
 			}
 		}
+	}
+
+	if (Input::GetVKey('Z') == true)
+	{
+		Memoflag1 = true;
+		Memoflag2 = true;
+		Memo3flag = true;
 	}
 }
 

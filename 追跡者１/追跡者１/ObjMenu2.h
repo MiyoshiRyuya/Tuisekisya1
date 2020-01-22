@@ -25,4 +25,5 @@ private:
 	int ItemKN; //アイテム確認
 	int oto;   //音
 	int time;  //時間
+	bool flag;
 }; 

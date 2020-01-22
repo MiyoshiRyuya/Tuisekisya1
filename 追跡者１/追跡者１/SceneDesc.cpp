@@ -53,8 +53,8 @@ void CSceneDesc::InitScene()
 	Audio::LoadAudio(4, L"menyu.wav", SOUND_TYPE::EFFECT);
 
 	//Menu2オブジェクト
-	CObjMenu2*obj_menu = new CObjMenu2();
-	Objs::InsertObj(obj_menu, OBJ_MENU2, 1);
+	CObjDesc*obj_desc = new CObjDesc();
+	Objs::InsertObj(obj_desc, OBJ_DESC, 1);
 }
 //実行中メソッド
 void CSceneDesc::Scene()

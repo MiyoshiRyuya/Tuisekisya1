@@ -48,7 +48,7 @@ void CObjTitle::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == true)
 		{
-			Migi4 = 1;
+			Migi4 = 2;
 			Audio::Start(1);
 			Scene::SetScene(new CSceneDesc());
 		}
@@ -70,7 +70,7 @@ void CObjTitle::Draw()
 	float c[4] = { 1,1,1,1 };
 
 	Font::StrDraw(L"ゲームスタート", 340, 350, 23, c);
-	Font::StrDraw(L"操作説明", 340, 380, 32, c);
+	Font::StrDraw(L"操作説明", 340, 380, 23, c);
 
 	if (Migi4 == 1) {
 		Font::StrDraw(L"→", 300, 350, 32, c);

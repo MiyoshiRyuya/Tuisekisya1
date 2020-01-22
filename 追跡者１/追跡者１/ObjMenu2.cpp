@@ -34,13 +34,21 @@ void CObjMenu2::Init()
 	GameOver = 0;
 	ItemKN; //アイテム確認
 	oto = 0;
-
+	flag = false;
 	time = 0; // 時間測る君
 }
 
 //アクション
 void CObjMenu2::Action()
 {
+	if (flag == true)
+	{
+		if (Input::GetVKey(VK_RETURN) == false)
+		{
+			Scene::SetScene(new CSceneTitle());
+		}
+	}
+
 	if (oto == 0) {
 		Audio::Start(4);
 		oto = 1;
@@ -141,11 +149,8 @@ void CObjMenu2::Action()
 				}
 				else if (Input::GetVKey(VK_RETURN) == true)
 				{
-					//Audio::Start(3);
-					GameOver = 0;
-					if (idou == false)
-						idou = true;
-					Scene::SetScene(new CSceneTitle());
+					
+					flag = true;
 				}
 			}
 			else if (Migi2 == 2) {
@@ -300,6 +305,7 @@ void CObjMenu2::Action()
 		}
 
 	}
+	
 }
 
 //ドロー
@@ -354,7 +360,7 @@ void CObjMenu2::Draw()
 	}
 
 	else if (Cross == 1) {
-		Font::StrDraw(L"この十字架どっかで使えるしょ", 140, 200, 32, c);
+		Font::StrDraw(L"You'll be left as long as you have this", 140, 200, 32, c);
 	}
 	//カーソル（⇒）
 	if (GameOver == 0) {

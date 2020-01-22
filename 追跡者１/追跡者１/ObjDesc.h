@@ -16,5 +16,5 @@ public:
 	void Draw();   //ƒhƒ[
 
 private:
-	
+	bool flag;
 };
