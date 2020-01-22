@@ -12,7 +12,7 @@ extern bool Tipsflag;
 void CObjTips5::Init()
 {
 
-	m_px = 610;
+	m_px = 500;
 	m_py = 480;
 	Hits::SetHitBox(this, m_px + 64, m_py + 64, 40, 50, ELEMENT_GREEN, OBJ_TIPS5, 1);
 }
@@ -25,9 +25,12 @@ void CObjTips5::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == true)
 		{
-			this->SetStatus(false);   //自身に削除命令を出す。
-			Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
-			Scene::SetScene(new CSceneGameOver());
+			if (Memoflag1 == true && Tipsflag == true)
+			{
+				this->SetStatus(false);   //自身に削除命令を出す。
+				Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
+				Scene::SetScene(new CSceneGameOver());
+			}
 		}
 	}
 }
@@ -49,5 +52,5 @@ void CObjTips5::Draw()
 	dst.m_right = 64.0f + m_px;
 	dst.m_bottom = 64.0f + m_py;
 
-	Draw::Draw(34, &src, &dst, c, 0.0f);
+	Draw::Draw(29, &src, &dst, c, 0.0f);
 }

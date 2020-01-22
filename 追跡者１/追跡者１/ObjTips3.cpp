@@ -25,9 +25,12 @@ void CObjTips3::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == true)
 		{		
-			this->SetStatus(false);   //自身に削除命令を出す。
-			Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
-			Scene::SetScene(new CSceneGameOver());
+			if (Memoflag1 == true && Tipsflag == true)
+			{
+				this->SetStatus(false);   //自身に削除命令を出す。
+				Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
+				Scene::SetScene(new CSceneGameOver());
+			}
 		}
 	}
 }

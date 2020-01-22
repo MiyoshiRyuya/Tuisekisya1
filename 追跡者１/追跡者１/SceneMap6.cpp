@@ -15,7 +15,6 @@ using namespace GameL;
 #include "GameHead.h"
 #include "SceneMap6.h"
 #include "ObjEnemy.h"
-#include<time.h>
 
 //コンストラクタ
 CSceneMap6::CSceneMap6()
@@ -89,16 +88,9 @@ void CSceneMap6::InitScene()
 	Objs::InsertObj(map6, OBJ_MAP6, 10);
 
 
-
-
-	srand(time(NULL));
-
-	int s = rand() % 2 + 1; //50％の確立で敵出現
-	if (s == 1)
-	{
-		CObjEnemy*obj_enemy = new CObjEnemy();
-		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 100);
-	}
+	CObjEnemy*obj_enemy = new CObjEnemy();
+	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 100);
+	
 }
 //実行中メソッド
 void CSceneMap6::Scene()

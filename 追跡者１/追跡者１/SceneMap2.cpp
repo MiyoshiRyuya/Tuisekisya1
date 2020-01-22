@@ -58,9 +58,9 @@ void CSceneMap2::InitScene()
 
 	Draw::LoadImage(L"Jupiter.png", 32, TEX_SIZE_512);
 
-	Draw::LoadImage(L"Saturn.png", 33, TEX_SIZE_512);
+	Draw::LoadImage(L"Saturn.png", 30, TEX_SIZE_512);
 
-	Draw::LoadImage(L"Jupiter.png", 34, TEX_SIZE_512);
+	Draw::LoadImage(L"Unknown.png", 29, TEX_SIZE_512);
 
 	Draw::LoadImage(L"Chair.png", 50, TEX_SIZE_64);
 
@@ -85,6 +85,12 @@ void CSceneMap2::InitScene()
 
 	CObjTips3*obj_Tips3 = new CObjTips3();
 	Objs::InsertObj(obj_Tips3, OBJ_TIPS3, 10);
+
+	CObjTips4*obj_Tips4 = new CObjTips4();
+	Objs::InsertObj(obj_Tips4, OBJ_TIPS4, 10);
+
+	CObjTips5*obj_Tips5 = new CObjTips5();
+	Objs::InsertObj(obj_Tips5, OBJ_TIPS5, 10);
 
 	srand(time(NULL));
 

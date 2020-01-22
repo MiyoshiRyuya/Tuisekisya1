@@ -356,7 +356,7 @@ void CObjHero::Action()
 			this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
-			//Audio::Start(1);
+			Audio::Start(1);
 			g_Xz = 305;
 			g_Yz = 500;
 
@@ -369,7 +369,7 @@ void CObjHero::Action()
 			//this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
-			//Audio::Start(1);
+			Audio::Start(1);
 			g_Xz = 0;
 			g_Yz = 310;
 
@@ -382,7 +382,7 @@ void CObjHero::Action()
 			//this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
-			//Audio::Start(1);
+			Audio::Start(1);
 			g_Xz = 370;
 			g_Yz = 100;
 
@@ -395,7 +395,7 @@ void CObjHero::Action()
 			//this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
-			//Audio::Start(1);
+			Audio::Start(1);
 			g_Xz = 800;
 			g_Yz = 310;
 
@@ -408,7 +408,7 @@ void CObjHero::Action()
 		//this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-		//Audio::Start(1);
+		Audio::Start(1);
 		g_Xz = 800;
 		g_Yz = 270;
 
@@ -417,11 +417,12 @@ void CObjHero::Action()
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE10) != nullptr)
 	{
-		if (Input::GetVKey(VK_RETURN) == true) {
+		if (Input::GetVKey(VK_RETURN) == true) 
+		{
 		//this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-		//Audio::Start(1);
+		Audio::Start(1);
 		g_Xz = 800;
 		g_Yz = 270;
 
@@ -435,7 +436,7 @@ void CObjHero::Action()
 		//this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-		//Audio::Start(1);
+		Audio::Start(1);
 		g_Xz = 0;
 		g_Yz = 270;
 
@@ -448,7 +449,7 @@ void CObjHero::Action()
 		//this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-		//Audio::Start(1);
+		Audio::Start(1);
 		g_Xz = 0;
 		g_Yz = 270;
 
@@ -461,7 +462,7 @@ void CObjHero::Action()
 			//this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
-			//Audio::Start(1);
+			Audio::Start(1);
 			g_Xz = 0;
 			g_Yz = 310;
 
@@ -477,7 +478,7 @@ void CObjHero::Action()
 			if (Input::GetVKey(VK_RETURN) == true) {
 				Hits::DeleteHitBox(this);
 
-				//Audio::Start(1);
+				Audio::Start(1);
 				g_Xz = 100;
 				g_Yz = 120;
 
