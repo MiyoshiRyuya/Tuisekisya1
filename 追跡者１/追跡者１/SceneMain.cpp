@@ -32,7 +32,7 @@ void CSceneMain::InitScene()
 {
 
 	Audio::LoadAudio(0, L"desperate .wav", SOUND_TYPE::BACK_MUSIC);
-
+	Audio::LoadAudio(1, L"itemgetseb.wav", EFFECT);
 
 	//バックミュージックスタート
 	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
