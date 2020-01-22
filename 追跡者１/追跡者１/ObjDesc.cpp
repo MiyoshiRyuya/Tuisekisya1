@@ -49,5 +49,13 @@ void CObjDesc::Draw()
 	Font::StrDraw(L"Mキー    メニュー画面を開く", 100, 220, 23, c);
 
 
-	
+	Font::StrDraw(L"メニュー操作説明", 240, 320, 40, c);
+
+	Font::StrDraw(L"W,Sキー 上下移動", 100, 380, 23, c);
+
+	Font::StrDraw(L"A,Dキー 左右移動", 100, 420, 23, c);
+
+	Font::StrDraw(L"Enterキー　決定", 100, 460, 23, c);
+
+	Font::StrDraw(L"Enterキーでタイトルに移動", 100, 570, 23, c);
 }

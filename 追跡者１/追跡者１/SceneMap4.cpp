@@ -63,7 +63,6 @@ void CSceneMap4::InitScene()
 	//外部グラフィックファイルを読み込み5番目に登録
 	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
 
-
 	//外部グラフィックファイルを読み込み10番目に登録
 	Draw::LoadImage(L"BlackMirror.png", 10, TEX_SIZE_64);
 
