@@ -6,6 +6,7 @@
 #include "GameL\SceneObjManager.h"
 #include "GameL\DrawFont.h"
 #include "GameL\DrawTexture.h"
+#include "GameL\Audio.h"
 
 
 //使用するネームスペース
@@ -36,6 +37,13 @@ CSceneCloset::~CSceneCloset()
 //ゲームメイン初期化メソッド
 void CSceneCloset::InitScene()
 {
+
+	//効果音
+	/*
+	Audio::LoadAudio(1, L"closet SE.wav", SOUND_TYPE::EFFECT);
+	float Volume1 = Audio::VolumeMaster(1.0f);
+	Audio::Start(0);
+	*/
 	if (closetflag==true)
 	{
 		//クローゼットオブジェクト

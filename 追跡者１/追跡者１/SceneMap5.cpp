@@ -35,7 +35,7 @@ void CSceneMap5::InitScene()
 
 
 	//バックミュージックスタート
-	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
+	float Volume = Audio::VolumeMaster(-3.0f); //マスターボリュームを下げない
 	Audio::Start(0); //音楽スタート
 
 

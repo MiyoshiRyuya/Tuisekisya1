@@ -6,6 +6,7 @@
 #include"ObjHero.h"
 #include "GameHead.h"
 #include "ObjCloset.h"
+#include "GameL\Audio.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -32,11 +33,11 @@ void CObjCloset::Action()
 
 	if (flag == true)
 	{
+
 		if (Memoflag2 == true)
 		{
 			if (Input::GetVKey(VK_RETURN) == true)
 			{
-
 				Memo3flag = true;
 			}
 		}
