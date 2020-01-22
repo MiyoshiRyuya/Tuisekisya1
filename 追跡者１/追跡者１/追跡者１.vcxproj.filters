@@ -61,6 +61,9 @@
     <Filter Include="ソース ファイル\操作説明">
       <UniqueIdentifier>{656b15f6-d907-4b75-bbfc-69896e1f86de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\惑星">
+      <UniqueIdentifier>{289fa5cf-fe29-46e0-97f2-92bbf20231b6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -423,14 +426,23 @@
     <ClCompile Include="ObjTips1.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClCompile>
-    <ClCompile Include="ObjTips2.cpp">
-      <Filter>ソース ファイル\Furniture</Filter>
-    </ClCompile>
     <ClCompile Include="ObjDesc.cpp">
       <Filter>ソース ファイル\操作説明</Filter>
     </ClCompile>
     <ClCompile Include="SceneDesc.cpp">
       <Filter>ソース ファイル\操作説明</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTips2.cpp">
+      <Filter>ソース ファイル\惑星</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTips3.cpp">
+      <Filter>ソース ファイル\惑星</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTips4.cpp">
+      <Filter>ソース ファイル\惑星</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTips5.cpp">
+      <Filter>ソース ファイル\惑星</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -743,14 +755,23 @@
     <ClInclude Include="ObjTips1.h">
       <Filter>ソース ファイル\Furniture</Filter>
     </ClInclude>
-    <ClInclude Include="ObjTips2.h">
-      <Filter>ソース ファイル\Furniture</Filter>
-    </ClInclude>
     <ClInclude Include="ObjDesc.h">
       <Filter>ソース ファイル\操作説明</Filter>
     </ClInclude>
     <ClInclude Include="SceneDesc.h">
       <Filter>ソース ファイル\操作説明</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTips2.h">
+      <Filter>ソース ファイル\惑星</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTips3.h">
+      <Filter>ソース ファイル\惑星</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTips4.h">
+      <Filter>ソース ファイル\惑星</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTips5.h">
+      <Filter>ソース ファイル\惑星</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

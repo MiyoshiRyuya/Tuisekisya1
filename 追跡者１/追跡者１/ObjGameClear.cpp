@@ -18,27 +18,21 @@ void CObjGameClear::Init()
 	m_mou_y = 0.0f;
 	m_mou_r = false;
 	m_mou_l = false;
+	flag = false;
 }
 
 //アクション
 void CObjGameClear::Action()
 {
-
-
-
-	//マウスの位置を取得
-	m_mou_x = (float)Input::GetPosX();
-	m_mou_y = (float)Input::GetPosY();
-	//マウスのボタンの状態
-	m_mou_r = Input::GetMouButtonR();
-	m_mou_l = Input::GetMouButtonL();
-
-	//マウス左クリックを押したらシーンメインに移行する
-	if (m_mou_x > 0 && m_mou_x < 730 && m_mou_y>0 && m_mou_y < 600)
+	if (Input::GetVKey(VK_RETURN) == true)
 	{
-		//マウスが押されたらタイトル画面に移動
-		if (m_mou_l == true)
+		flag = true;
+	}
+	if (flag == true)
+	{
+		if (Input::GetVKey(VK_RETURN) == false)
 		{
+			Audio::Start(1);
 			Scene::SetScene(new CSceneTitle());
 		}
 	}

@@ -477,7 +477,7 @@ void CObjHero::Action()
 			if (Input::GetVKey(VK_RETURN) == true) {
 				Hits::DeleteHitBox(this);
 
-				Audio::Start(1);
+				//Audio::Start(1);
 				g_Xz = 100;
 				g_Yz = 120;
 

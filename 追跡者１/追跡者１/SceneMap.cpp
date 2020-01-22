@@ -7,7 +7,7 @@
 #include "GameL\DrawTexture.h"
 #include "GameL\DrawFont.h"
 #include "GameL\UserData.h"
-
+#include "GameL\Audio.h"
 //使用するネームスペース
 using namespace GameL;
 
@@ -16,6 +16,7 @@ using namespace GameL;
 #include"SceneMap.h"
 #include "SceneCloset.h"
 #include<time.h>
+
 
 //コンストラクタ
 CSceneMap::CSceneMap()
@@ -52,6 +53,10 @@ void CSceneMap::InitScene()
 	//クローゼット表示
 	CObjCloset*obj_Closet = new CObjCloset();
 	Objs::InsertObj(obj_Closet, OBJ_CLOSET, 11);
+
+	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
+	float Volume1 = Audio::VolumeMaster(1.0f);
+	Audio::Start(1);
 
 
 	srand(time(NULL));

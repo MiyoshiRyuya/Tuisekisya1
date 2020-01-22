@@ -63,6 +63,9 @@ enum OBJ_NAME
 	OBJ_FURNITURE43,
 	OBJ_TIPS1,
 	OBJ_TIPS2,
+	OBJ_TIPS3,
+	OBJ_TIPS4,
+	OBJ_TIPS5,
 	OBJ_S,
 
 	
@@ -208,6 +211,9 @@ extern float genzaiti; //åªç›ín
 #include "ObjFurniture43.h"
 #include "ObjTips1.h"
 #include "ObjTips2.h"
+#include "ObjTips3.h"
+#include "ObjTips4.h"
+#include "ObjTips5.h"
 #include "Objs.h"
 
 //ÉÅÉjÉÖÅ[
