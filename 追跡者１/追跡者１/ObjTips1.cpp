@@ -5,10 +5,11 @@
 
 #include"GameHead.h"
 #include"ObjTips1.h"
+#include<Windows.h>
 
 using namespace GameL;
 bool Memoflag1 = false;
-
+bool Textflag1 = false;
 void CObjTips1::Init()
 {
 	
@@ -22,6 +23,11 @@ void CObjTips1::Init()
 		this->SetStatus(false);   //自身に削除命令を出す。
 		Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
 	}
+
+	if (Textflag1 == true)
+	{
+
+	}
 }
 
 void CObjTips1::Action()
@@ -34,7 +40,10 @@ void CObjTips1::Action()
 		{
 				Memoflag1 = true;
 				this->SetStatus(false);   //自身に削除命令を出す。
-				Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
+				Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。]
+				Textflag1 = true;
+				Sleep(3000);
+				Textflag1 = false;
 		}
 	}
 }

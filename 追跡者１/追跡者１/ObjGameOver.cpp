@@ -18,15 +18,24 @@ void CObjGameOver::Init()
 	m_mou_y = 0.0f;
 	m_mou_r = false;
 	m_mou_l = false;
+	flag = false;
 }
 
 //アクション
 void CObjGameOver::Action()
 {
-		//マウスが押されたらシーンメインに移動
+
 	if (Input::GetVKey(VK_RETURN) == true)
 	{
-		Scene::SetScene(new CSceneTitle());
+		flag = true;
+	}
+	if (flag == true)
+	{
+		if (Input::GetVKey(VK_RETURN) == false)
+		{
+			Audio::Start(1);
+			Scene::SetScene(new CSceneTitle());
+		}
 	}
 	
 }

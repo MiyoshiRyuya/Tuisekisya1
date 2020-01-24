@@ -15,7 +15,6 @@ using namespace GameL;
 #include "GameHead.h"
 #include "SceneMap6.h"
 #include "ObjEnemy.h"
-#include<time.h>
 
 //コンストラクタ
 CSceneMap6::CSceneMap6()
@@ -40,7 +39,10 @@ void CSceneMap6::InitScene()
 	Audio::Start(0); //音楽スタート
 
 
-
+	//ドアの効果音
+	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
+	float Volume1 = Audio::VolumeMaster(1.0f);
+	Audio::Start(1);
 
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
@@ -89,16 +91,9 @@ void CSceneMap6::InitScene()
 	Objs::InsertObj(map6, OBJ_MAP6, 10);
 
 
-
-
-	srand(time(NULL));
-
-	int s = rand() % 2 + 1; //50％の確立で敵出現
-	if (s == 1)
-	{
-		CObjEnemy*obj_enemy = new CObjEnemy();
-		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 100);
-	}
+	CObjEnemy*obj_enemy = new CObjEnemy();
+	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 100);
+	
 }
 //実行中メソッド
 void CSceneMap6::Scene()
