@@ -22,6 +22,9 @@ extern bool Memo3flag;
 extern bool Memoflag1;
 extern bool Memoflag2;
 
+extern float g_Xz;
+extern float g_Yz;
+
 //イニシャライズ
 void CObjMenu2::Init()
 {
@@ -45,6 +48,8 @@ void CObjMenu2::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == false)
 		{
+			g_Xz = 100;
+			g_Yz = 120;
 			Scene::SetScene(new CSceneTitle());
 		}
 	}
