@@ -133,6 +133,7 @@ enum HIT_ELEMENTS
 	ELEMENT_MYS,
 	ELEMENT_SOLVE,
 	ELEMENT_MEMO,
+	ELEMENT_PURPLE,
 };
 //------------------------------------------------
 

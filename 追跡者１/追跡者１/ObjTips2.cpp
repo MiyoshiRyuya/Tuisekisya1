@@ -36,7 +36,7 @@ void CObjTips2::Action()
 	{
 		Sleep(1000);
 		this->SetStatus(false);   //自身に削除命令を出す。
-		Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
+		//Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
 	}
 
 	if (hit->CheckElementHit(ELEMENT_PLAYER) == true)
@@ -81,7 +81,7 @@ void CObjTips2::Draw()
 		src.m_right = 256.0f;
 		src.m_bottom = 256.0f;
 
-		dst.m_top = 300.0f;
+		dst.m_top = 230.0f;
 		dst.m_left = 300.0f;
 		dst.m_right = 556.0f;
 		dst.m_bottom = 456.0f;

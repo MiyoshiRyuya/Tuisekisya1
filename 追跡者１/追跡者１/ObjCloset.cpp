@@ -34,17 +34,12 @@ void CObjCloset::Init()
 void CObjCloset::Action()
 {
 
-/*	if (Textflag3 == true)
-	{
-		Sleep(1000);//1åé27ì˙êVâ¸êÊê∂Ç…ï∑Ç≠
-	}*/
-
 	if (flag == true)
 	{
 
 		if (Memoflag2 == true)
 		{
-			if (Input::GetVKey(VK_RETURN) == true)
+			if (Input::GetVKey('Q') == true)
 			{
 				Audio::Start(3);
 
@@ -92,7 +87,7 @@ void CObjCloset::Draw()
 		src.m_right = 256.0f;
 		src.m_bottom = 256.0f;
 
-		dst.m_top = 300.0f;
+		dst.m_top = 200.0f;
 		dst.m_left = 300.0f;
 		dst.m_right = 556.0f;
 		dst.m_bottom = 456.0f;
