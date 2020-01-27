@@ -71,6 +71,7 @@ void CObjTips2::Draw()
 	dst.m_right = 64.0f + m_px;
 	dst.m_bottom = 64.0f + m_py;
 
+	//Eartth
 	Draw::Draw(31, &src, &dst, c, 0.0f);
 
 	if (Textflag2 == true)

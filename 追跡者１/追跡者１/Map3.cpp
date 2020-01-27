@@ -1,5 +1,5 @@
 //ここにマップ名書いてください
-
+//寝室
 //使用するヘッダーファイル
 #include "GameL\DrawTexture.h"
 #include "GameL\WinInputs.h"
