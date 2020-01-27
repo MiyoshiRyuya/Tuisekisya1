@@ -47,6 +47,8 @@ void CSceneMap4::InitScene()
 	float Volume1 = Audio::VolumeMaster(1.0f);
 	Audio::Start(1);
 
+	//メモ1入手時のSE
+	Audio::LoadAudio(3, L"itemgetseb .wav", SOUND_TYPE::EFFECT);
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
@@ -119,6 +121,12 @@ void CSceneMap4::InitScene()
 
 	//外部グラフィックファイルを読み込み20番に登録（謎解きヒント
 	Draw::LoadImage(L"Tips.png", 50, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み20番に登録（謎解きヒント
+	Draw::LoadImage(L"Tips.png", 49, TEX_SIZE_64);
+
+	//謎解きメモ
+	Draw::LoadImage(L"Text1.png", 35, TEX_SIZE_64);
 
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();

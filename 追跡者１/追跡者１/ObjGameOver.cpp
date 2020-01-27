@@ -33,7 +33,7 @@ void CObjGameOver::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == false)
 		{
-			Audio::Start(1);
+			Audio::Start(0);
 			Scene::SetScene(new CSceneTitle());
 		}
 	}

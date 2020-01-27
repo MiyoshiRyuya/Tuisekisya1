@@ -504,7 +504,6 @@ void CObjHero::Action()
 	{
 		Memoflag1 = true;
 		Memoflag2 = true;
-		Memo3flag = true;
 	}
 }
 

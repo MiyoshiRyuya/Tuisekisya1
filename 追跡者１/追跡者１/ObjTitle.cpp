@@ -14,6 +14,9 @@ extern bool Memoflag2;
 extern bool Memo3flag;
 extern bool Tipsflag;
 extern bool itemflag;
+extern bool Textflag1;
+extern bool Textflag2;
+extern bool Textflag3;
 //イニシャライズ
 void CObjTitle::Init()
 {
@@ -31,6 +34,9 @@ void CObjTitle::Action()
 	Memo3flag = false;
 	Tipsflag = false;
 	itemflag = false;
+	Textflag1 = false;
+	Textflag2 = false;
+	Textflag3 = false;
 	
 		//マウスが押されたらシーンメインに移動
 	if (Migi4 == 1)

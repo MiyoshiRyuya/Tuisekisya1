@@ -52,5 +52,5 @@ void CObjTips3::Draw()
 	dst.m_right = 64.0f + m_px;
 	dst.m_bottom = 64.0f + m_py;
 
-	Draw::Draw(32, &src, &dst, c, 0.0f);
+	Draw::Draw(36, &src, &dst, c, 0.0f);
 }

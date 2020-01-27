@@ -40,29 +40,6 @@ void CObjMap6::Init()
 //ƒAƒNƒVƒ‡ƒ“
 void CObjMap6::Action()
 {
-	/*CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_x, m_y);
-
-	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr) {
-		if (Input::GetVKey(VK_RETURN) ==true){
-			this->SetStatus(false);
-			Hits::DeleteHitBox(this);
-
-			//g_Xz = 400;
-			//g_Yz = 300;
-
-			Scene::SetScene(new CSceneMap5());
-		}
-
-	}
-
-	/*if (hit->CheckObjNameHit(OBJ_HERO) != nullptr) {
-		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
-		
-		g_Xz = 400;
-		g_Yz = 300;
-	}*/
 	genzaiti = 6;
 }
 

@@ -3,6 +3,8 @@
 #include"GameL/WinInputs.h"
 #include"GameL/SceneManager.h"
 #include"GameL/HitBoxManager.h"
+#include"GameL\Audio.h"
+
 #include"ObjHero.h"
 #include "GameHead.h"
 #include "ObjCloset.h"
@@ -11,6 +13,7 @@
 //使用するネームスペース
 using namespace GameL;
 bool Memo3flag = false;
+bool Textflag3 = false;
 extern bool Memoflag2;
 //イニシャライズ
 void CObjCloset::Init()
@@ -31,6 +34,11 @@ void CObjCloset::Init()
 void CObjCloset::Action()
 {
 
+/*	if (Textflag3 == true)
+	{
+		Sleep(1000);//1月27日新改先生に聞く
+	}*/
+
 	if (flag == true)
 	{
 
@@ -38,7 +46,10 @@ void CObjCloset::Action()
 		{
 			if (Input::GetVKey(VK_RETURN) == true)
 			{
+				Audio::Start(3);
+
 				Memo3flag = true;
+				Textflag3 = true;
 			}
 		}
 		//Eボタンを押すとゲーム画面に移動する
@@ -73,4 +84,19 @@ void CObjCloset::Draw()
 
 	//描画
 	Draw::Draw(11, &src, &dst, c, 0.0f);
+
+	if (Textflag3 == true)
+	{
+		src.m_top = 0.0f;
+		src.m_left = 0.0f;
+		src.m_right = 256.0f;
+		src.m_bottom = 256.0f;
+
+		dst.m_top = 300.0f;
+		dst.m_left = 300.0f;
+		dst.m_right = 556.0f;
+		dst.m_bottom = 456.0f;
+
+		Draw::Draw(45, &src, &dst, c, 0.0f);
+	}
 }

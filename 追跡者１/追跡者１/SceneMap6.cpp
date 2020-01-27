@@ -70,6 +70,8 @@ void CSceneMap6::InitScene()
 
 	Draw::LoadImageW(L"\š‰Ë.png", 12, TEX_SIZE_64);
 
+
+
 	//Œø‰Ê‰¹
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
 

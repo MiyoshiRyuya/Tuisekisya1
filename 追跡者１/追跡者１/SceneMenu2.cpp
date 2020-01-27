@@ -32,7 +32,7 @@ void CSceneMenu2::InitScene()
 {
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"ToukaMenu2.png", 0, TEX_SIZE_512);
-	Draw::LoadImage(L"無題.png", 1, TEX_SIZE_512);
+	Draw::LoadImage(L"Tips4.png", 1, TEX_SIZE_512);
 
 	Draw::LoadImage(L"Tips.png", 2, TEX_SIZE_512);
 	Draw::LoadImage(L"Tips3.png", 3, TEX_SIZE_512);
