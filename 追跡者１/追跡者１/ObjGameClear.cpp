@@ -19,21 +19,27 @@ void CObjGameClear::Init()
 	m_mou_r = false;
 	m_mou_l = false;
 	flag = false;
+	time = 0;
 }
 
 //アクション
 void CObjGameClear::Action()
 {
-	if (Input::GetVKey(VK_RETURN) == true)
+	time++;
+
+	if (time >= 10)
 	{
-		flag = true;
-	}
-	if (flag == true)
-	{
-		if (Input::GetVKey(VK_RETURN) == false)
+		if (Input::GetVKey(VK_RETURN) == true)
 		{
-			//Audio::Start(1);
-			Scene::SetScene(new CSceneTitle());
+			flag = true;
+		}
+		if (flag == true)
+		{
+			if (Input::GetVKey(VK_RETURN) == false)
+			{
+				//Audio::Start(1);
+				Scene::SetScene(new CSceneTitle());
+			}
 		}
 	}
 }
@@ -61,11 +67,9 @@ void CObjGameClear::Draw()
 	dst.m_bottom = 600.0f;
 
 
-	
-
 	Draw::Draw(10, &src, &dst, c, 0.0f);
 	//外部グラフィックファイルを読み込み0番目に登録
 	Draw::LoadImage(L"GameClear.png", 10, TEX_SIZE_512);
 
-	Font::StrDraw(L"Left-Click", 360, 510, 24, c);
+	Font::StrDraw(L"Press Enter", 360, 510, 24, c);
 }
