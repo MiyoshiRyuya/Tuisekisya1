@@ -10,6 +10,7 @@
 #include "ObjMenu2.h"
 #include "GameL\Audio.h"
 
+
 //使用するネームスペース
 using namespace GameL;
 
@@ -50,7 +51,6 @@ void CObjItem::Action()
 		{
 			if ( Memo3flag==true)
 			{
-				Audio::Start(1);
 
 				deleteflag = true;
 				this->SetStatus(false);   //自身に削除命令を出す。
@@ -58,7 +58,11 @@ void CObjItem::Action()
 			}
 		}
 	}
+	Audio::LoadAudio(0, L"itemgetseb.wav", SOUND_TYPE::EFFECT);
+	float Volume = Audio::VolumeMaster(1.0f);
+	Audio::Start(0);
 
+	
 }
 
 
