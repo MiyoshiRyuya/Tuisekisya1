@@ -49,14 +49,17 @@ void CSceneMap3::InitScene()
 	//外部グラフィックファイルを読み込み2番目に登録(512*512pixel)
 	Draw::LoadImage(L"FloorEX.png", 2, TEX_SIZE_512);
 
-	//外部グラフィックファイルを読み込み5番目に登録w
+	//外部グラフィックファイルを読み込み5番目に登録(64*64pixel)
 	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
 
 	//外部グラフィックファイルを読み込み11番に登録（64×64ピクセル）
 	Draw::LoadImage(L"Closet1.png", 11, TEX_SIZE_64);
 
-	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
-	Objs::InsertObj(obj, OBJ_HERO, 10);//作った主人公オブジェクトをオブジェクトマネージャーに登録
+	//主人公オブジェクト作成
+	CObjHero*obj = new CObjHero();
+
+	//作った主人公オブジェクトをオブジェクトマネージャーに登録
+	Objs::InsertObj(obj, OBJ_HERO, 10);
 
 	//外部グラフィックファイルを読み込み3番目に登録
 	Draw::LoadImage(L"Hari.png", 3, TEX_SIZE_64);

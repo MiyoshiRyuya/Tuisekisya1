@@ -1,5 +1,5 @@
 //ここにマップ名書いてください
-
+//廊下
 //使用するヘッダーファイル
 #include "GameL\DrawTexture.h"
 #include "GameL\WinInputs.h"
@@ -171,7 +171,6 @@ void CObjMap2::Draw()
 	Draw::Draw(51, &src, &dst, c, 0.0f);
 
 	//植木描画1
-
 	dst.m_top = 0.0f + ky-10;
 	dst.m_left = 64.0f + kx;
 	dst.m_right = 0.0f + kx;
@@ -218,6 +217,10 @@ void CObjMap2::Draw()
 	//描画
 	Draw::Draw(9, &src, &dst, c, 0.0f);
 
+
+
+
+
 	//ろうそく
 	src.m_top = 0.0f;
 	src.m_left = 320.0f;
@@ -251,6 +254,10 @@ void CObjMap2::Draw()
 	dst.m_bottom = 80.0f + 70;
 
 	Draw::Draw(15, &src, &dst, c, 0.0f);
+
+
+
+
 
 	//カーペット
 	src.m_top = 0.0f;
