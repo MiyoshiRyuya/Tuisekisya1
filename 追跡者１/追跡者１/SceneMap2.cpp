@@ -31,7 +31,7 @@ CSceneMap2::~CSceneMap2()
 //初期化メソッド
 void CSceneMap2::InitScene()
 {
-	Audio::LoadAudio(0, L"amenisuteraretaningyou.wav", SOUND_TYPE::BACK_MUSIC);
+	//Audio::LoadAudio(0, L"amenisuteraretaningyou.wav", SOUND_TYPE::BACK_MUSIC);
 
 
 	//バックミュージックスタート
@@ -84,8 +84,10 @@ void CSceneMap2::InitScene()
 	//謎解きメモ
 	Draw::LoadImage(L"Text2.png", 40, TEX_SIZE_64);
 
-	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
-	Objs::InsertObj(obj, OBJ_HERO, 10);//作った主人公オブジェクトをオブジェクトマネージャーに登録
+	//主人公オブジェクト作成
+	CObjHero*obj = new CObjHero();
+	//作った主人公オブジェクトをオブジェクトマネージャーに登録
+	Objs::InsertObj(obj, OBJ_HERO, 10);
 
 	CObjMap2*obj_m2 = new CObjMap2();
 	Objs::InsertObj(obj_m2, OBJ_MAP5, 1);

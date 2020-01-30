@@ -37,7 +37,7 @@ void CSceneMap6::InitScene()
 	//バックミュージックスタート
 	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
 	Audio::Start(0); //音楽スタート
-
+	
 
 	//ドアの効果音
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
@@ -72,8 +72,6 @@ void CSceneMap6::InitScene()
 
 
 
-	//効果音
-	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 100);//作った主人公オブジェクトをオブジェクトマネージャーに登録
