@@ -17,6 +17,8 @@ extern bool itemflag;
 extern bool Textflag1;
 extern bool Textflag2;
 extern bool Textflag3;
+
+
 //イニシャライズ
 void CObjTitle::Init()
 {
