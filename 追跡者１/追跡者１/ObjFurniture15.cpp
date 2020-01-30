@@ -10,10 +10,10 @@ using namespace GameL;
 
 void CObjFurniture15::Init()
 {
-	m_x = 272;
-	m_y = 150;
+	m_x = 300;
+	m_y = 100;
 
-	Hits::SetHitBox(this, m_x + 10, m_y + 10, 64, 50, ELEMENT_BLUE, OBJ_MAP6, 1);
+	Hits::SetHitBox(this, m_x + 10, m_y + 10, 64, 64, ELEMENT_BLUE, OBJ_MAP6, 1);
 
 }
 
@@ -43,4 +43,5 @@ void CObjFurniture15::Draw()
 	dst.m_bottom = 64.0f + m_y;
 
 	Draw::Draw(16, &src, &dst, c, 0.0f);
+
 }
