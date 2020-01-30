@@ -36,6 +36,8 @@ void CSceneDesc::InitScene()
 
 	Draw::LoadImage(L"Tips.png", 2, TEX_SIZE_512);
 	Draw::LoadImage(L"Tips3.png", 3, TEX_SIZE_512);
+
+
 	//出力させる文字のグラフィックを作成
 	Font::SetStrTex(L"MENU");
 	Font::SetStrTex(L"所持アイテム確認");
@@ -51,6 +53,7 @@ void CSceneDesc::InitScene()
 	Audio::LoadAudio(2, L"menu2_idou.wav", SOUND_TYPE::EFFECT);
 	Audio::LoadAudio(3, L"menu2_kettei.wav", SOUND_TYPE::EFFECT);
 	Audio::LoadAudio(4, L"menyu.wav", SOUND_TYPE::EFFECT);
+
 
 	//Menu2オブジェクト
 	CObjDesc*obj_desc = new CObjDesc();

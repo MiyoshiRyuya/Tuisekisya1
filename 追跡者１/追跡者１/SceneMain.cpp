@@ -112,10 +112,6 @@ void CSceneMain::InitScene()
 	Draw::LoadImage(L"BlackMirror.png", 10, TEX_SIZE_64);
 
 
-	//CObjstage*objb = new CObjstage(map);
-	//Objs::InsertObj(objb, OBJ_STAGE, 9);
-
-
 
 	//家具オブジェクト4作成
 	CObjFurniture4*obj_Furnirure4 = new CObjFurniture4();
@@ -146,9 +142,7 @@ void CSceneMain::InitScene()
 	CObjMain*obj_main = new CObjMain();
 	Objs::InsertObj(obj_main, OBJ_MAIN, 2);
 
-	//blockオブジェクト作成
-	//CObjstage*objb = new CObjstage(map);
-	//Objs::InsertObj(objb, OBJ_STAGE,9);
+
 }
 //ゲームメイン実行中メソッド
 void CSceneMain::Scene()
