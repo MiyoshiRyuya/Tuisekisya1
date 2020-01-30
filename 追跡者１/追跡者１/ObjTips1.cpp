@@ -34,7 +34,7 @@ void CObjTips1::Action()
 
 	if (Textflag1 == true)
 	{
-		Sleep(1000);
+		Sleep(3000);
 
 		this->SetStatus(false);   //自身に削除命令を出す。
 		//Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
