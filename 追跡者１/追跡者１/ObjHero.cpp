@@ -507,7 +507,7 @@ void CObjHero::Action()
 		Tipsflag = true;
 		Memoflag1 = true;
 		Memoflag2 = true;
-
+		Memo3flag = true;
 	}
 }
 

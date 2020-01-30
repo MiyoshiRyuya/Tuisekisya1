@@ -9,6 +9,8 @@
 using namespace GameL;
 extern bool Memoflag1;
 extern bool Tipsflag;
+
+
 void CObjTips3::Init()
 {
 
@@ -29,6 +31,8 @@ void CObjTips3::Action()
 			{
 				this->SetStatus(false);   //自身に削除命令を出す。
 				Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
+				g_Xz = 100;
+				g_Yz = 120;
 				Scene::SetScene(new CSceneGameOver());
 			}
 		}

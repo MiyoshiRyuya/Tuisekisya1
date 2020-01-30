@@ -48,11 +48,11 @@ void CSceneMap::InitScene()
 
 	//トラップオブジェクト
 	CObjtrap*obj_trap = new CObjtrap();
-	Objs::InsertObj(obj_trap, OBJ_TRAP, 6);
+	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 
 	//クローゼット表示
 	CObjCloset*obj_Closet = new CObjCloset();
-	Objs::InsertObj(obj_Closet, OBJ_CLOSET, 11);
+	Objs::InsertObj(obj_Closet, OBJ_CLOSET, 1);
 
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
 	float Volume1 = Audio::VolumeMaster(1.0f);
