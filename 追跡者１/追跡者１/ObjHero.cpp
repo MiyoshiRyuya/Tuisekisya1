@@ -26,6 +26,9 @@ bool Tipsflag = false;
 extern bool idou;
 bool itemflag = false;
 bool solveflag = false;
+
+int muki;//1=上下
+
 float CObjHero::Getflag()
 {
 	 return itemflag; 
@@ -86,6 +89,8 @@ void CObjHero::Action()
 		m_sita = 0;
 		m_ue = 0;
 		m_hidari = 0;
+		//if (Input::GetVKey('W') == false || Input::GetVKey('S') == false)
+		muki = 2;
 
 		m_ani_time += 1;
 		m_vx += 2.8f;
@@ -98,6 +103,9 @@ void CObjHero::Action()
 		m_ue = 0;
 		m_sita = 0;
 		m_migi = 0;
+		//if (Input::GetVKey('W') == false || Input::GetVKey('S') == false)
+		muki = 2;
+
 		m_ani_time += 1;
 		m_vx -= 2.8f;
 	}
@@ -108,6 +116,8 @@ void CObjHero::Action()
 		m_sita = 0;
 		m_migi = 0;
 		m_hidari = 0;
+		//if (Input::GetVKey('A') == false || Input::GetVKey('D') == false)
+		muki = 1;
 
 		m_ani_time += 1;
 		m_vy -= 2.8f;
@@ -119,6 +129,8 @@ void CObjHero::Action()
 		m_ue = 0;
 		m_migi = 0;
 		m_hidari = 0;
+		//if (Input::GetVKey('A') == false || Input::GetVKey('D') == false)
+		muki = 1;
 
 		m_ani_time += 1;
 		m_vy += 2.8f;
@@ -189,17 +201,24 @@ void CObjHero::Action()
 	//OBJ_MAP６に接触したら押し返されるプログラム
 	if (hit->CheckObjNameHit(OBJ_MAP6) != nullptr)
 	{
-		if (hitbo == 0 && hitbo != 2) {
+		if (hitbo == 0) {
 			if (Input::GetVKey('W') == true || Input::GetVKey('S') == true) {
+				//if(muki==2)
 				hitbo = 1;
 			}
-		}
-		if (hitbo == 0 && hitbo != 1) {
 			if (Input::GetVKey('A') == true || Input::GetVKey('D') == true) {
+				//if(muki==2 )
 				hitbo = 2;
 			}
 		}
 
+		/*if (hitbo == 0) {
+			if (Input::GetVKey('A') == true || Input::GetVKey('D') == true) {
+				hitbo = 2;
+			}
+		}*/
+
+		//上下の判定
 		if (hitbo == 1 && hitbo != 2) {
 			if (Input::GetVKey('W') == true) {
 				if (Input::GetVKey('S') == false)
@@ -211,7 +230,8 @@ void CObjHero::Action()
 			}
 		}
 
-		if (hitbo == 2 && hitbo != 1) {
+		//左右の判定
+		else if (hitbo == 2 && hitbo != 1) {
 			if (Input::GetVKey('A') == true) {
 				if (Input::GetVKey('D') == false)
 					m_px = g_Xz;
@@ -227,6 +247,7 @@ void CObjHero::Action()
 	}
 	else {
 		hitbo = 0;
+		muki = 0;
 	}
 
 	//主人公が領域外にいかない様にする処理
