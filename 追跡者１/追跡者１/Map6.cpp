@@ -40,6 +40,7 @@ void CObjMap6::Init()
 //ƒAƒNƒVƒ‡ƒ“
 void CObjMap6::Action()
 {
+
 	genzaiti = 6;
 }
 
