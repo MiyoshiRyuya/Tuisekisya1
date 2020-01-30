@@ -44,6 +44,9 @@ void CSceneMap6::InitScene()
 	float Volume1 = Audio::VolumeMaster(1.0f);
 	Audio::Start(1);
 
+	//メモ4入手時のSE
+	Audio::LoadAudio(4, L"itemgetseb .wav", SOUND_TYPE::EFFECT);
+
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
@@ -76,28 +79,32 @@ void CSceneMap6::InitScene()
 	Draw::LoadImageW(L"十字架.png", 12, TEX_SIZE_64);
 
 
+	//謎解きメモ
+	Draw::LoadImage(L"Text4.png", 30, TEX_SIZE_64);
+
+
 
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
-	Objs::InsertObj(obj, OBJ_HERO, 100);//作った主人公オブジェクトをオブジェクトマネージャーに登録
+	Objs::InsertObj(obj, OBJ_HERO, 10);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
 	CObjItem*obji = new CObjItem(393, 300);
 	Objs::InsertObj(obji, OBJ_ITEM, 1);
 
 	//トラップオブジェクト
 	CObjtrap1*obj_trap1 = new CObjtrap1(760, 540);
-	Objs::InsertObj(obj_trap1, OBJ_TRAP, 10);
+	Objs::InsertObj(obj_trap1, OBJ_TRAP, 5);
 
 	CObjtrap1*obj_trapp1 = new CObjtrap1(0, 150);
-	Objs::InsertObj(obj_trapp1, OBJ_TRAP, 10);
+	Objs::InsertObj(obj_trapp1, OBJ_TRAP, 5);
 
 	//マップ背景オブジェクト1作成
 	CObjMap6*map6 = new CObjMap6();
-	Objs::InsertObj(map6, OBJ_MAP6, 10);
+	Objs::InsertObj(map6, OBJ_MAP6, 5);
 
 	//敵オブジェクト作成
 	CObjEnemy*obj_enemy = new CObjEnemy();
-	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 100);
+	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
 	
 }
 //実行中メソッド
