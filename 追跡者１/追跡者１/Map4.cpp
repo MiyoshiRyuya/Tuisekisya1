@@ -1,5 +1,5 @@
 //ここにマップ名書いてください
-//Kitcen
+//キッチン
 
 //使用するヘッダーファイル
 #include "GameL\DrawTexture.h"

@@ -149,7 +149,7 @@ void CObjMap5::Draw()
 
 	Draw::Draw(52, &src, &dst, c, 90.0f);
 
-	//A–Ø‚“1
+	//A–Ø1
 	src.m_top = 0.0f;
 	src.m_left = 64.0f;
 	src.m_right = 0.0f;
@@ -239,7 +239,7 @@ void CObjMap5::Draw()
 	Draw::Draw(52, &src, &dst, c, 0.0f);
 
 
-	//–îˆó<
+	//–îˆó<<
 	src.m_top = 0.0f;
 	src.m_left = 64.0f;
 	src.m_right = 0.0f;

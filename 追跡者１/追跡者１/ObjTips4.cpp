@@ -52,5 +52,6 @@ void CObjTips4::Draw()
 	dst.m_right = 64.0f + m_px;
 	dst.m_bottom = 64.0f + m_py;
 
+	//Skysomething
 	Draw::Draw(34, &src, &dst, c, 0.0f);
 }
