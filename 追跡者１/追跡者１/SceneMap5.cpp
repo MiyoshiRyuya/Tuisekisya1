@@ -38,12 +38,12 @@ void CSceneMap5::InitScene()
 	float Volume = Audio::VolumeMaster(-3.0f); //マスターボリュームを下げない
 	Audio::Start(0); //音楽スタート
 
+
 	//ドアの効果音
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
 	float Volume1 = Audio::VolumeMaster(1.0f);
 	Audio::Start(1);
-
-
+	
 
 
 
@@ -72,7 +72,7 @@ void CSceneMap5::InitScene()
 
 	//Draw::LoadImageW(L"階段.png", 14, TEX_SIZE_512);
 
-	Draw::LoadImageW(L"カーペット２.png", 11, TEX_SIZE_512);
+	Draw::LoadImage(L"カーペット２.png", 11, TEX_SIZE_512);
 
 	Draw::LoadImage(L"階段がある壁.png", 9, TEX_SIZE_512);
 

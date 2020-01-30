@@ -33,17 +33,18 @@ void CSceneMap6::InitScene()
 	//音楽情報の読み込み
 	Audio::LoadAudio(0, L"kamen-night.wav", SOUND_TYPE::BACK_MUSIC);
 
+	
 
 	//バックミュージックスタート
 	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
 	Audio::Start(0); //音楽スタート
-
+	
 
 	//ドアの効果音
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
 	float Volume1 = Audio::VolumeMaster(1.0f);
 	Audio::Start(1);
-
+	
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
@@ -64,16 +65,11 @@ void CSceneMap6::InitScene()
 
 	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
 
-	Draw::LoadImageW(L"本棚横並び.png", 10, TEX_SIZE_512);
+	Draw::LoadImage(L"本棚横並び.png", 10, TEX_SIZE_512);
 
-	Draw::LoadImageW(L"カーペット２.png", 11, TEX_SIZE_512);
+	Draw::LoadImage(L"カーペット２.png", 11, TEX_SIZE_512);
 
-	Draw::LoadImageW(L"十字架.png", 12, TEX_SIZE_64);
-
-
-
-	//効果音
-	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
+	Draw::LoadImage(L"十字架.png", 12, TEX_SIZE_64);
 
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 100);//作った主人公オブジェクトをオブジェクトマネージャーに登録

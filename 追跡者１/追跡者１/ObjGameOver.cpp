@@ -19,25 +19,28 @@ void CObjGameOver::Init()
 	m_mou_r = false;
 	m_mou_l = false;
 	flag = false;
+	time = 0;
 }
 
 //アクション
 void CObjGameOver::Action()
 {
-
-	if (Input::GetVKey(VK_RETURN) == true)
+	time++;
+	if (time >= 10)
 	{
-		flag = true;
-	}
-	if (flag == true)
-	{
-		if (Input::GetVKey(VK_RETURN) == false)
+		if (Input::GetVKey(VK_RETURN) == true)
 		{
-			Audio::Start(0);
-			Scene::SetScene(new CSceneTitle());
+			flag = true;
+		}
+		if (flag == true)
+		{
+			if (Input::GetVKey(VK_RETURN) == false)
+			{
+				Audio::Start(0);
+				Scene::SetScene(new CSceneTitle());
+			}
 		}
 	}
-	
 }
 
 //ドロー

@@ -21,4 +21,5 @@ private:
 	bool m_mou_r;//マウスの右ボタン
 	bool m_mou_l;//マウスの左ボタン
 	bool flag;
+	int time;
 };
