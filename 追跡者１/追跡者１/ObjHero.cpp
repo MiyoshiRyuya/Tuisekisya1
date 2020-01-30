@@ -222,8 +222,6 @@ void CObjHero::Action()
 			}
 		}
 
-		//m_px = g_Xz;
-		//m_py = g_Yz;
 	}
 	else {
 		hitbo = 0;
