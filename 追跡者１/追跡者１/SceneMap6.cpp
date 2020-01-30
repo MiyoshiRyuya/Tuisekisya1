@@ -60,14 +60,19 @@ void CSceneMap6::InitScene()
 	//外部グラフィックファイルを読み込み9番目に登録
 	Draw::LoadImage(L"kabe1.png", 9, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み50番目に登録
 	Draw::LoadImage(L"Chair.png", 50, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み52番目に登録
 	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み10番目に登録
 	Draw::LoadImageW(L"本棚横並び.png", 10, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み11番目に登録
 	Draw::LoadImageW(L"カーペット２.png", 11, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み12番目に登録
 	Draw::LoadImageW(L"十字架.png", 12, TEX_SIZE_64);
 
 
@@ -90,7 +95,7 @@ void CSceneMap6::InitScene()
 	CObjMap6*map6 = new CObjMap6();
 	Objs::InsertObj(map6, OBJ_MAP6, 10);
 
-
+	//敵オブジェクト作成
 	CObjEnemy*obj_enemy = new CObjEnemy();
 	Objs::InsertObj(obj_enemy, OBJ_ENEMY, 100);
 	
