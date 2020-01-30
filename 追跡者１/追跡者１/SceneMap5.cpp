@@ -72,7 +72,7 @@ void CSceneMap5::InitScene()
 
 	//Draw::LoadImageW(L"階段.png", 14, TEX_SIZE_512);
 
-	Draw::LoadImageW(L"カーペット２.png", 11, TEX_SIZE_512);
+	Draw::LoadImage(L"カーペット２.png", 11, TEX_SIZE_512);
 
 	Draw::LoadImage(L"階段がある壁.png", 9, TEX_SIZE_512);
 
