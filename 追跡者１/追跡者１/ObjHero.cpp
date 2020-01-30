@@ -270,6 +270,8 @@ void CObjHero::Action()
 			//this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
+			Audio::Start(4);
+
 			g_Xz = 70;
 			g_Yz = 70;
 			bool closeton = false;
@@ -526,6 +528,7 @@ void CObjHero::Action()
 		Memoflag1 = true;
 		Memoflag2 = true;
 		Memo3flag = true;
+		itemflag = true;
 	}
 }
 

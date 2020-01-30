@@ -10,13 +10,13 @@ enum OBJ_NAME
 	OBJ_STAGE,
 	OBJ_ENEMY,
 
-	//罠
+	//罠------------------------------------------
 	OBJ_TRAP,
 
-	//アイテム
+	//アイテム------------------------------------
 	OBJ_ITEM,
 
-	//家具
+	//家具----------------------------------------
 	OBJ_FURNITURE,
 	OBJ_FURNITURE1,
 	OBJ_FURNITURE2,
@@ -69,7 +69,7 @@ enum OBJ_NAME
 	OBJ_S,
 
 	
-	//マップ
+	//マップ--------------------------------------------
 	OBJ_MAP,
 	OBJ_MAP2,
 	OBJ_MAP3,
@@ -78,21 +78,21 @@ enum OBJ_NAME
 	OBJ_MAP6,
 	OBJ_MAIN,
 
-	//マップ移動用
+	//マップ移動用--------------------------------------
 	OBJ_MOVE5,
 
-	//システム
+	//システム------------------------------------------
 	OBJ_SOLVE,
 	OBJ_SOLVE2,
 	OBJ_CLOSET,
 
-	//タイトル系
+	//タイトル系----------------------------------------
 	OBJ_TITLE,
 	OBJ_DESC,
 	OBJ_GAME_OVER,
 	OBJ_GAME_CLEAR,
 
-	//マップ移動用
+	//マップ移動用--------------------------------------
 	OBJ_MOVE1,
 	OBJ_MOVE2,
 	OBJ_MOVE3,
@@ -106,13 +106,13 @@ enum OBJ_NAME
 	OBJ_MOVE12,
 	OBJ_MOVE13,
 
-	//出口
+	//出口----------------------------------------------
 	OBJ_ESC,
 
-	//メニュー
+	//メニュー------------------------------------------
 	OBJ_MENU2,
 };
-//------------------------------------------------
+
 
 //当たり判定属性----------------------------------
 enum HIT_ELEMENTS
@@ -133,8 +133,9 @@ enum HIT_ELEMENTS
 	ELEMENT_MYS,
 	ELEMENT_SOLVE,
 	ELEMENT_MEMO,
+	ELEMENT_PURPLE,
 };
-//------------------------------------------------
+
 
 //------------------------------------------------
 //セーブ＆ロードとシーン間のやり取りするデータ
@@ -143,7 +144,7 @@ struct UserData
 	int mSeveData;	//サンプルセーブデータ
 	
 };
-//------------------------------------------------
+
 
 
 //ゲーム内で使用されるグローバル変数・定数・列挙--
@@ -164,13 +165,13 @@ extern float genzaiti; //現在地
 #include "ObjEnemy.h"
 #include "ObjDesc.h"
 
-//罠
+//罠----------------------------------------------
 #include "Objtrap.h"
 
-//アイテム
+//アイテム----------------------------------------
 #include "ObjItem.h"
 
-//家具
+//家具--------------------------------------------
 #include "ObjFurniture.h"
 #include "ObjFurniture4.h"
 #include "ObjFurniture5.h"
@@ -216,12 +217,12 @@ extern float genzaiti; //現在地
 #include "ObjTips5.h"
 #include "Objs.h"
 
-//メニュー
+
+//メニュー-----------------------------------------
 #include "ObjMenu2.h"
 
 
-
-//マップ
+//マップ-------------------------------------------
 #include "ObjMap.h"
 #include "Map2.h"
 #include "Map3.h"
@@ -238,7 +239,7 @@ extern float genzaiti; //現在地
 #include "ObjTitle.h"
 #include "ObjGameOver.h"
 #include "ObjGameClear.h"
-//------------------------------------------------
+
 
 //ゲームシーンクラスヘッダ------------------------
 #include "SceneMain.h"
@@ -260,9 +261,8 @@ extern float genzaiti; //現在地
 #include"SceneCloset.h"
 #include"Scenesolve.h"
 #include"Scenesolve2.h"
-//-----------------------------------------------
+
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
 #define SET_GAME_START  CSceneTitle
-//-----------------------------------------------

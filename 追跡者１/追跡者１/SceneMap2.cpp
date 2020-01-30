@@ -42,6 +42,8 @@ void CSceneMap2::InitScene()
 	float Volume1 = Audio::VolumeMaster(1.0f);
 	Audio::Start(1);
 
+	//メモ2入手時のSE
+	Audio::LoadAudio(3, L"itemgetseb .wav", SOUND_TYPE::EFFECT);
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
@@ -55,30 +57,44 @@ void CSceneMap2::InitScene()
 	//外部グラフィックファイルを読み込み9番目に登録
 	Draw::LoadImage(L"kabe1.png", 9, TEX_SIZE_512);
 
-	//外部グラフィックファイルを読み込み9番目に登録
+	//外部グラフィックファイルを読み込み31番目に登録
 	Draw::LoadImage(L"Earth.png", 31, TEX_SIZE_512);
 
-	Draw::LoadImage(L"Jupiter.png", 32, TEX_SIZE_512);
+	//外部グラフィックファイルを読み込み36番目に登録
+	Draw::LoadImage(L"Jupiter.png", 36, TEX_SIZE_512);
 
-	Draw::LoadImage(L"Saturn.png", 30, TEX_SIZE_512);
+	//外部グラフィックファイルを読み込み34番目に登録
+	Draw::LoadImage(L"Skysomething.png", 34, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み29番目に登録
 	Draw::LoadImage(L"Unknown.png", 29, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み50番目に登録
 	Draw::LoadImage(L"Chair.png", 50, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み51番目に登録
 	Draw::LoadImage(L"desk.png", 51, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み15番目に登録
 	Draw::LoadImage(L"kagus.png", 15, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み52番目に登録
 	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
 
-	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
-	Objs::InsertObj(obj, OBJ_HERO, 10);//作った主人公オブジェクトをオブジェクトマネージャーに登録
+	//謎解きメモ
+	Draw::LoadImage(L"Text2.png", 40, TEX_SIZE_64);
+
+	//主人公オブジェクト作成
+	CObjHero*obj = new CObjHero();
+	//作った主人公オブジェクトをオブジェクトマネージャーに登録
+	Objs::InsertObj(obj, OBJ_HERO, 10);
 
 	CObjMap2*obj_m2 = new CObjMap2();
 	Objs::InsertObj(obj_m2, OBJ_MAP5, 1);
 
-	//マップ背景オブジェクト1作成
+
+
+	//マップ背景オブジェクト作成
 	CObjMap*obj_map = new CObjMap();
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
 
@@ -93,6 +109,8 @@ void CSceneMap2::InitScene()
 
 	CObjTips5*obj_Tips5 = new CObjTips5();
 	Objs::InsertObj(obj_Tips5, OBJ_TIPS5, 10);
+
+
 
 	srand(time(NULL));
 

@@ -44,13 +44,14 @@ void CObjTips5::Draw()
 
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 64.0f;
-	src.m_bottom = 64.0f;
+	src.m_right = 512.0f;
+	src.m_bottom = 512.0f;
 
 	dst.m_top = 0.0f + m_py;
 	dst.m_left = 0.0f + m_px;
 	dst.m_right = 64.0f + m_px;
 	dst.m_bottom = 64.0f + m_py;
 
+	//Unknown
 	Draw::Draw(29, &src, &dst, c, 0.0f);
 }

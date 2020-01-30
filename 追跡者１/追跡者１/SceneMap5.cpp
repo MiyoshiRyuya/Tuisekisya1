@@ -35,7 +35,7 @@ void CSceneMap5::InitScene()
 
 
 	//バックミュージックスタート
-	float Volume = Audio::VolumeMaster(-3.0f); //マスターボリュームを下げない
+	float Volume = Audio::VolumeMaster(-3.0f); //マスターボリュームを3下げる
 	Audio::Start(0); //音楽スタート
 
 	//ドアの効果音
@@ -72,7 +72,7 @@ void CSceneMap5::InitScene()
 
 	//Draw::LoadImageW(L"階段.png", 14, TEX_SIZE_512);
 
-	Draw::LoadImageW(L"カーペット２.png", 11, TEX_SIZE_512);
+	Draw::LoadImage(L"カーペット２.png", 11, TEX_SIZE_512);
 
 	Draw::LoadImage(L"階段がある壁.png", 9, TEX_SIZE_512);
 
@@ -87,10 +87,6 @@ void CSceneMap5::InitScene()
 	//マップ背景オブジェクト1作成
 	CObjMap5*map5 = new CObjMap5();
 	Objs::InsertObj(map5, OBJ_MAP5, 1);
-
-	//トラップオブジェクト
-	//CObjtrap*obj_trap = new CObjtrap();
-	//Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 
 
 

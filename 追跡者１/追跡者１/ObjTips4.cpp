@@ -44,13 +44,14 @@ void CObjTips4::Draw()
 
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 64.0f;
-	src.m_bottom = 64.0f;
+	src.m_right = 512.0f;
+	src.m_bottom = 512.0f;
 
 	dst.m_top = 0.0f + m_py;
 	dst.m_left = 0.0f + m_px;
 	dst.m_right = 64.0f + m_px;
 	dst.m_bottom = 64.0f + m_py;
 
-	Draw::Draw(30, &src, &dst, c, 0.0f);
+	//Skysomething
+	Draw::Draw(34, &src, &dst, c, 0.0f);
 }

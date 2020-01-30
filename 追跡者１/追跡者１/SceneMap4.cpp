@@ -47,6 +47,8 @@ void CSceneMap4::InitScene()
 	float Volume1 = Audio::VolumeMaster(1.0f);
 	Audio::Start(1);
 
+	//メモ1入手時のSE
+	Audio::LoadAudio(3, L"itemgetseb .wav", SOUND_TYPE::EFFECT);
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
@@ -114,11 +116,17 @@ void CSceneMap4::InitScene()
 	//外部グラフィックファイルを読み込み25番目に登録
 	Draw::LoadImage(L"Meat3.png", 25, TEX_SIZE_64);
 
-	//外部グラフィックファイルを読み込み25番目に登録
+	//外部グラフィックファイルを読み込み26番目に登録
 	Draw::LoadImage(L"Knife1.png", 26, TEX_SIZE_64);
 
-	//外部グラフィックファイルを読み込み20番に登録（謎解きヒント
+	//外部グラフィックファイルを読み込み50番に登録（謎解きヒント
 	Draw::LoadImage(L"Tips.png", 50, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み49番に登録（謎解きヒント
+	Draw::LoadImage(L"Tips.png", 49, TEX_SIZE_64);
+
+	//謎解きメモ
+	Draw::LoadImage(L"Text1.png", 35, TEX_SIZE_64);
 
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();
@@ -137,12 +145,12 @@ void CSceneMap4::InitScene()
 		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 50);
 	}
 	
-	//謎解き
+	//謎解きオブジェクト作成
 	CObjTips1*obj_Tips1 = new CObjTips1();
 	Objs::InsertObj(obj_Tips1, OBJ_TIPS1, 50);
 
 	
-	//トラップオブジェクト
+	//トラップオブジェクト作成
 	CObjtrap*obj_trap = new CObjtrap(128, 188);
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 10);
 
