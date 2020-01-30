@@ -136,7 +136,7 @@ void CSceneMain::InitScene()
 	
 	//トラップオブジェクト
 	CObjtrap3*obj_trap1 = new CObjtrap3(170, 50);
-	Objs::InsertObj(obj_trap1, OBJ_TRAP, 2);
+	Objs::InsertObj(obj_trap1, OBJ_TRAP, 4);
 
 	//マップ背景オブジェクト1作成
 	CObjMap*obj_map = new CObjMap();

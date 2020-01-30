@@ -28,24 +28,22 @@ CSceneTitle::~CSceneTitle()
 void CSceneTitle::InitScene()
 {
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
-	//Draw::LoadImage(L"コントローラ.png", 1, TEX_SIZE_512);
 	Draw::LoadImage(L"Title.png", 0, TEX_SIZE_512);
-
-	//外部グラフィックファイルを読み込み1番目に登録(512*512)
-	//Draw::LoadImage(L"Title.png", 1, TEX_SIZE_512);
 
 	//タイトルオブジェクト作成
 	CObjTitle*obj = new CObjTitle();//タイトルオブジェクト作成
 	Objs::InsertObj(obj, OBJ_TITLE, 10);//タイトルオブジェクト登録
 
-		//音楽情報の読み込み
+	//音楽情報の読み込み
 	Audio::LoadAudio(0, L"TitleBGM.wav", SOUND_TYPE::BACK_MUSIC);
+
+	//バックミュージックスタート
+	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
+	Audio::Start(0); //音楽スタート
 
 	Audio::LoadAudio(1, L"menyu.wav", SOUND_TYPE::EFFECT);
 
-		//バックミュージックスタート
-	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
-	Audio::Start(0); //音楽スタート
+		
 
 }
 //ゲームメイン実行中メソッド

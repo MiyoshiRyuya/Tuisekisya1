@@ -36,6 +36,7 @@ void CSceneMenu2::InitScene()
 
 	Draw::LoadImage(L"Tips.png", 2, TEX_SIZE_512);
 	Draw::LoadImage(L"Tips3.png", 3, TEX_SIZE_512);
+
 	//出力させる文字のグラフィックを作成
 	Font::SetStrTex(L"MENU");
 	Font::SetStrTex(L"所持アイテム確認");
@@ -44,7 +45,7 @@ void CSceneMenu2::InitScene()
 	Font::SetStrTex(L"→");
 	Font::SetStrTex(L"所持アイテムがありません");
 	Font::SetStrTex(L"十字架");
-	Font::SetStrTex(L"rランボルギーニでタピオカ回すSEIKIN");
+
 
 	//効果音一覧
 	Audio::LoadAudio(1, L"menu2_cansel.wav", SOUND_TYPE::EFFECT);
