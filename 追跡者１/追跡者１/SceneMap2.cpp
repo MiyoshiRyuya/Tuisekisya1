@@ -31,7 +31,7 @@ CSceneMap2::~CSceneMap2()
 //初期化メソッド
 void CSceneMap2::InitScene()
 {
-	//Audio::LoadAudio(0, L"amenisuteraretaningyou.wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::LoadAudio(0, L"amenisuteraretaningyou.wav", SOUND_TYPE::BACK_MUSIC);
 
 
 	//バックミュージックスタート
