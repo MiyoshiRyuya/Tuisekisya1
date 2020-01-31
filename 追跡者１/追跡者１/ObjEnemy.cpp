@@ -14,6 +14,8 @@ using namespace GameL;
 float g_xz=0;
 float g_yz=0;
 
+extern bool Textflag4;
+
 
 void CObjEnemy::Init()
 {
@@ -117,4 +119,19 @@ void CObjEnemy::Draw()
 	dst.m_bottom = 156.0f+m_y;
 
 	Draw::Draw(5, &src, &dst, c, 0.0f);
+
+	if (Textflag4 == true)
+	{
+		src.m_top = 0.0f;
+		src.m_left = 0.0f;
+		src.m_right = 256.0f;
+		src.m_bottom = 256.0f;
+
+		dst.m_top = 230.0f;
+		dst.m_left = 300.0f;
+		dst.m_right = 556.0f;
+		dst.m_bottom = 456.0f;
+
+		Draw::Draw(30, &src, &dst, c, 0.0f);
+	}
 }
