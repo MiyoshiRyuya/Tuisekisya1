@@ -10,6 +10,7 @@
 #include "ObjHero.h"
 #include "ObjMenu.h"
 #include "ObjCloset.h"
+#include <Windows.h>
 
 
 //使用するネームスペース
@@ -172,7 +173,7 @@ void CObjHero::Action()
 	{
 		this->SetStatus(false);
 		//Hits::DeleteHitBox(this);
-
+		Sleep(1000);
 	   itemflag = false;
 	   Memo3flag = false;
 	   g_Xz = 100;
