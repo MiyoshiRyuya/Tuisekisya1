@@ -209,6 +209,11 @@ void CObjHero::Action()
 			}
 		}*/
 
+		if (Input::GetVKey('W') == true && Input::GetVKey('A') == true || Input::GetVKey('W') == true && Input::GetVKey('D') == true || Input::GetVKey('S') == true && Input::GetVKey('A') == true || Input::GetVKey('S') == true && Input::GetVKey('D') == true) {
+			m_py = g_Yz;
+			m_px = g_Xz;
+		}
+
 		//上下の判定
 		if (hitbo == 1 && hitbo != 2) {
 			if (Input::GetVKey('W') == true) {
