@@ -17,7 +17,7 @@ void CObjTips4::Init()
 
 	m_px = 500;
 	m_py = 360;
-	Hits::SetHitBox(this, m_px + 64, m_py + 64, 40, 50, ELEMENT_GREEN, OBJ_TIPS4, 1);
+	Hits::SetHitBox(this, m_px + 64, m_py + 64, 64, 50, ELEMENT_GREEN, OBJ_TIPS4, 1);
 }
 
 void CObjTips4::Action()
