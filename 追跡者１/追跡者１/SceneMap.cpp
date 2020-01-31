@@ -56,7 +56,7 @@ void CSceneMap::InitScene()
 
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
 	float Volume1 = Audio::VolumeMaster(1.0f);
-	Audio::Start(1);
+	//Audio::Start(1);
 
 
 	srand(time(NULL));
