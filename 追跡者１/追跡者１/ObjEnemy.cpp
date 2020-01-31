@@ -49,7 +49,7 @@ void CObjEnemy::Init()
 
 	m_ani_max_time = 4;
 
-	Hits::SetHitBox(this, m_x, m_y, 44, 140, ELEMENT_ENEMY, OBJ_ENEMY, 1);
+	Hits::SetHitBox(this, m_x, m_y, 42, 105, ELEMENT_ENEMY, OBJ_ENEMY, 1);
 
 }
 //ƒAƒNƒVƒ‡ƒ“
