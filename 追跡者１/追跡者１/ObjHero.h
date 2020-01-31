@@ -66,4 +66,6 @@ private:
 		int m_ani_frame; //アニメーションフレーム動作間隔
 		int m_ani_time; //アニメーション
 		int m_ani_time_max;//アニメーション間隔幅
+
+		int timeH; //時間
 };

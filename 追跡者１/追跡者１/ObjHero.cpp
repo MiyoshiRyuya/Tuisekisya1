@@ -57,6 +57,8 @@ void CObjHero::Init()
 	m_hit_right = false;
 	m_ani_time = 0;
 	m_ani_frame = 0;
+
+	timeH = 0; //時間測る君２
 	
 	Hits::SetHitBox(this, m_vx, m_vy, 64, 64, ELEMENT_PLAYER, OBJ_HERO, 1);
 
@@ -65,6 +67,7 @@ void CObjHero::Init()
 //アクション
 void CObjHero::Action()
 {
+
 	//移動ベクトルの破棄
 	m_vx = 0.0f;
 	m_vy = 0.0f;
@@ -331,7 +334,7 @@ void CObjHero::Action()
 			g_Xz = 800;
 			g_Yz = 310;
 
-			Scene::SetScene(new CSceneMap5());
+			Scene::SetScene(new CSceneMap5()); //Map6→Map5
 		}
 	}
 	//謎解きしないと入れないようにする
@@ -349,7 +352,7 @@ void CObjHero::Action()
 
 				solveflag = false;
 
-				Scene::SetScene(new CSceneMap6());
+				Scene::SetScene(new CSceneMap6()); //Map5→Map6
 			}
 		}
 	}
@@ -361,10 +364,10 @@ void CObjHero::Action()
 			Hits::DeleteHitBox(this);
 
 			Audio::Start(1);
-			g_Xz = 350;
+			g_Xz = 380;
 			g_Yz = 0;
 
-			Scene::SetScene(new CSceneMap4());
+			Scene::SetScene(new CSceneMap4()); //Map5→Map4
 		}
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE6) != nullptr)
@@ -374,10 +377,10 @@ void CObjHero::Action()
 			Hits::DeleteHitBox(this);
 
 			Audio::Start(1);
-			g_Xz = 305;
-			g_Yz = 500;
+			g_Xz = 363;
+			g_Yz = 510;
 
-			Scene::SetScene(new CSceneMap2());
+			Scene::SetScene(new CSceneMap2()); //Map5→Map2
 		
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE4) != nullptr)
@@ -390,7 +393,7 @@ void CObjHero::Action()
 			g_Xz = 0;
 			g_Yz = 310;
 
-			Scene::SetScene(new CSceneMap5());
+			Scene::SetScene(new CSceneMap5()); //Map4→Map5
 		}
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE7) != nullptr)
@@ -401,9 +404,9 @@ void CObjHero::Action()
 
 			Audio::Start(1);
 			g_Xz = 370;
-			g_Yz = 100;
+			g_Yz = 46;
 
-			Scene::SetScene(new CSceneMap5());
+			Scene::SetScene(new CSceneMap5()); //Map2→Map5
 		}
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE8) != nullptr)
@@ -414,9 +417,9 @@ void CObjHero::Action()
 
 			Audio::Start(1);
 			g_Xz = 800;
-			g_Yz = 310;
+			g_Yz = 260;
 
-			Scene::SetScene(new CSceneMap2());
+			Scene::SetScene(new CSceneMap2()); //Map3→Map2
 		}
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE9) != nullptr)
@@ -427,9 +430,9 @@ void CObjHero::Action()
 
 		Audio::Start(1);
 		g_Xz = 800;
-		g_Yz = 270;
+		g_Yz = 315;
 
-		Scene::SetScene(new CSceneMap3());
+		Scene::SetScene(new CSceneMap3()); //Map2→Map3
 		}
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE10) != nullptr)
@@ -443,7 +446,7 @@ void CObjHero::Action()
 		g_Xz = 800;
 		g_Yz = 270;
 
-		Scene::SetScene(new CSceneMain());
+		Scene::SetScene(new CSceneMain()); //Map2→Map1
 		}
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE11) != nullptr)
@@ -455,12 +458,12 @@ void CObjHero::Action()
 
 		Audio::Start(1);
 		g_Xz = 0;
-		g_Yz = 270;
+		g_Yz = 260;
 
-		Scene::SetScene(new CSceneMap2());
+		Scene::SetScene(new CSceneMap2()); //Map1→Map2
 	  }
 	}
-	else if (hit->CheckObjNameHit(OBJ_MOVE12) != nullptr)
+	/*else if (hit->CheckObjNameHit(OBJ_MOVE12) != nullptr)
 	{
 	if (Input::GetVKey(VK_RETURN) == true) {
 		//this->SetStatus(false);
@@ -485,7 +488,7 @@ void CObjHero::Action()
 
 			Scene::SetScene(new CSceneMap2());
 		}
-	}
+	}*/
 	//ここが反応するとゲームクリア
 	else if (hit->CheckObjNameHit(OBJ_ESC) != nullptr)
 	{
