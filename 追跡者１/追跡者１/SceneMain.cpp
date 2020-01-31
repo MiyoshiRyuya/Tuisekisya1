@@ -33,7 +33,7 @@ void CSceneMain::InitScene()
 
 	Audio::LoadAudio(0, L"desperate .wav", SOUND_TYPE::BACK_MUSIC);
 	Audio::LoadAudio(1, L"itemgetseb.wav", EFFECT);
-	Audio::LoadAudio(2, L"meet-goast (online-audio-converter.com).wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::LoadAudio(2, L"memai2 (online-audio-converter.com).wav", SOUND_TYPE::BACK_MUSIC);
 	//バックミュージックスタート
 	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
 	Audio::Start(0); //音楽スタート
