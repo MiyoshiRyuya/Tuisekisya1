@@ -40,7 +40,7 @@ void CObjTitle::Action()
 	Textflag2 = false;
 	Textflag3 = false;
 	
-		//マウスが押されたらシーンメインに移動
+		//エンターキーが押されたらシーンメインに移動
 	if (Migi4 == 1)
 	{
 		if (Input::GetVKey(VK_RETURN) == true)
