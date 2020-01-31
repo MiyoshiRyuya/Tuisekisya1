@@ -88,7 +88,7 @@ void CObjCloset::Draw()
 		src.m_bottom = 256.0f;
 
 		dst.m_top = 200.0f;
-		dst.m_left = 300.0f;
+		dst.m_left = 270.0f;
 		dst.m_right = 556.0f;
 		dst.m_bottom = 456.0f;
 
