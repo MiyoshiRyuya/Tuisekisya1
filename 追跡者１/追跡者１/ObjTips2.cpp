@@ -12,6 +12,7 @@ bool Memoflag2 = false;
 bool Textflag2 = false;
 extern bool Memoflag1;
 extern bool Tipsflag;
+
 void CObjTips2::Init()
 {
 	m_px = 640;

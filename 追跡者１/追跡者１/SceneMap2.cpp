@@ -46,6 +46,9 @@ void CSceneMap2::InitScene()
 	//メモ2入手時のSE
 	Audio::LoadAudio(3, L"itemgetseb .wav", SOUND_TYPE::EFFECT);
 
+	//メモ2入手時のSE
+	Audio::LoadAudio(6, L"poison.wav", SOUND_TYPE::EFFECT);
+
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 
@@ -85,10 +88,19 @@ void CSceneMap2::InitScene()
 	//謎解きメモ
 	Draw::LoadImage(L"Text2.png", 40, TEX_SIZE_64);
 
+	//謎解きメモ
+	Draw::LoadImage(L"Text5.png", 41, TEX_SIZE_64);
+
+	//謎解きメモ
+	Draw::LoadImage(L"Text6.png", 42, TEX_SIZE_64);
+
+	//謎解きメモ
+	Draw::LoadImage(L"Text6.png", 43, TEX_SIZE_64);
+
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();
 	//作った主人公オブジェクトをオブジェクトマネージャーに登録
-	Objs::InsertObj(obj, OBJ_HERO, 10);
+	Objs::InsertObj(obj, OBJ_HERO, 5);
 
 	CObjMap2*obj_m2 = new CObjMap2();
 	Objs::InsertObj(obj_m2, OBJ_MAP5, 1);
@@ -100,16 +112,16 @@ void CSceneMap2::InitScene()
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
 
 	CObjTips2*obj_Tips2 = new CObjTips2();
-	Objs::InsertObj(obj_Tips2, OBJ_TIPS2, 10);
+	Objs::InsertObj(obj_Tips2, OBJ_TIPS2, 5);
 
 	CObjTips3*obj_Tips3 = new CObjTips3();
-	Objs::InsertObj(obj_Tips3, OBJ_TIPS3, 10);
+	Objs::InsertObj(obj_Tips3, OBJ_TIPS3, 5);
 
 	CObjTips4*obj_Tips4 = new CObjTips4();
-	Objs::InsertObj(obj_Tips4, OBJ_TIPS4, 10);
+	Objs::InsertObj(obj_Tips4, OBJ_TIPS4, 4);
 
 	CObjTips5*obj_Tips5 = new CObjTips5();
-	Objs::InsertObj(obj_Tips5, OBJ_TIPS5, 10);
+	Objs::InsertObj(obj_Tips5, OBJ_TIPS5, 5);
 
 
 

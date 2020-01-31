@@ -17,6 +17,10 @@ extern bool itemflag;
 extern bool Textflag1;
 extern bool Textflag2;
 extern bool Textflag3;
+extern bool Textflag4;
+extern bool Textflag5;
+extern bool Textflag6;
+extern bool Textflag7;
 
 
 //イニシャライズ
@@ -39,6 +43,11 @@ void CObjTitle::Action()
 	Textflag1 = false;
 	Textflag2 = false;
 	Textflag3 = false;
+	Textflag4 = false;
+	Textflag5 = false;
+	Textflag6 = false;
+	Textflag7 = false;
+
 	
 		//エンターキーが押されたらシーンメインに移動
 	if (Migi4 == 1)
