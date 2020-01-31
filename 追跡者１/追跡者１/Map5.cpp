@@ -29,8 +29,8 @@ void CObjMap5::Init()
 	m_yy = 0;
 
 	Hits::SetHitBox(this, m_x, m_y, 340, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
-	Hits::SetHitBox(this, m_x+460, m_y+200, 90, 90, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
-	Hits::SetHitBox(this, m_x + 260, m_y + 200, 90, 90, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
+	Hits::SetHitBox(this, m_x+460, m_y+200, 90, 90, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì ï®Å@âE
+	Hits::SetHitBox(this, m_x + 260, m_y + 200, 90, 90, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇìÅ@ï®Å@ç∂
 
 	Hits::SetHitBox(this, m_x , m_y + 230, 60, 60, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì
 	Hits::SetHitBox(this, m_x , m_y + 400, 60, 60, ELEMENT_GREEN, OBJ_MAP6, 1);//êAñÿÇì

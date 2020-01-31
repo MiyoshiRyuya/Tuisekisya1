@@ -32,6 +32,7 @@ CSceneMap2::~CSceneMap2()
 void CSceneMap2::InitScene()
 {
 	Audio::LoadAudio(0, L"amenisuteraretaningyou.wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::LoadAudio(2, L"meet-goast (online-audio-converter.com).wav", SOUND_TYPE::BACK_MUSIC);
 
 
 	//バックミュージックスタート
@@ -117,6 +118,8 @@ void CSceneMap2::InitScene()
 	int s = rand() % 2 + 1; //50％の確立で敵出現
 	if (s == 1)
 	{
+		Audio::Stop(0);
+		Audio::Start(2);
 		CObjEnemy*obj_enemy = new CObjEnemy();
 		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
 	}

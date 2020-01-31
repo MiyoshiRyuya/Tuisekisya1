@@ -13,15 +13,10 @@ void CObjFurniture26::Init()
 	m_x = -6;
 	m_y = 150;
 
-	Hits::SetHitBox(this, m_x + 10, m_y + 10, 40, 50, ELEMENT_BLUE, OBJ_MAP6, 1);
-
 }
 
 void CObjFurniture26::Action()
 {
-
-	CHitBox*hit = Hits::GetHitBox(this);
-	hit->SetPos(m_x + 10, m_y + 10);
 
 }
 
