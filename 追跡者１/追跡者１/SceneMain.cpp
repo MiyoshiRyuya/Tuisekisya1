@@ -33,7 +33,7 @@ void CSceneMain::InitScene()
 
 	Audio::LoadAudio(0, L"desperate .wav", SOUND_TYPE::BACK_MUSIC);
 	Audio::LoadAudio(1, L"itemgetseb.wav", EFFECT);
-
+	Audio::LoadAudio(2, L"meet-goast (online-audio-converter.com).wav", SOUND_TYPE::BACK_MUSIC);
 	//バックミュージックスタート
 	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
 	Audio::Start(0); //音楽スタート
@@ -75,6 +75,9 @@ void CSceneMain::InitScene()
 	int s = rand() % 2 + 1; //50％の確立で敵出現
 	if (s == 1)
 	{
+		Audio::Stop(0);
+		Audio::Start(2);
+
 		CObjEnemy*obj_enemy = new CObjEnemy();
 		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
 	}

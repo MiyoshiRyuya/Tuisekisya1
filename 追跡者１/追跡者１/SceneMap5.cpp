@@ -35,13 +35,13 @@ void CSceneMap5::InitScene()
 
 
 	//バックミュージックスタート
-	float Volume = Audio::VolumeMaster(-3.0f); //マスターボリュームを3下げる
+	float Volume = Audio::Volume(1.0f,0); //マスターボリュームを3下げる
 	Audio::Start(0); //音楽スタート
 
 
 	//ドアの効果音
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
-	float Volume1 = Audio::VolumeMaster(1.0f);
+	float Volume1 = Audio::Volume(0.0f,1);
 	Audio::Start(1);
 	
 
