@@ -26,4 +26,5 @@ private:
 	float m_px;
 	float m_py;
 	bool flag;
+	int time;
 };
