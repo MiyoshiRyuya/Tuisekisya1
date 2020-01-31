@@ -36,7 +36,7 @@ void CSceneMap4::InitScene()
 
 	//音楽情報の読み込み
 	Audio::LoadAudio(0, L"bgm_noroi.wav", SOUND_TYPE::BACK_MUSIC);
-	Audio::LoadAudio(2, L"meet-goast (online-audio-converter.com).wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::LoadAudio(2, L"memai2 (online-audio-converter.com).wav", SOUND_TYPE::BACK_MUSIC);
 
 
 	//バックミュージックスタート
