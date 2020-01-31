@@ -33,6 +33,7 @@ void CObjCloset::Init()
 //アクション
 void CObjCloset::Action()
 {
+	time++;
 
 	if (flag == true)
 	{
@@ -47,13 +48,17 @@ void CObjCloset::Action()
 				Textflag3 = true;
 			}
 		}
-		//Eボタンを押すとゲーム画面に移動する
-		if (Input::GetVKey('E') == true)
+		if (time >= 10)
 		{
-
-			Scene::SetScene(new CSceneMap3());
+			//Eボタンを押すとゲーム画面に移動する
+			if (Input::GetVKey(VK_RETURN) == true)
+			{
+				Scene::SetScene(new CSceneMap3());
+				time = 0;
+			}
 		}
 	}
+
 }
 
 

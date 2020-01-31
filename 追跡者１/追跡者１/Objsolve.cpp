@@ -22,13 +22,16 @@ void CObjsolve::Init()
 //アクション
 void CObjsolve::Action()
 {
-
-	//Eボタンを押すとゲーム画面に移動する
-	if (Input::GetVKey('E') == true)
+	time++;
+	if (time >= 10)
 	{
-		Scene::SetScene(new CSceneMain());
+		//Eボタンを押すとゲーム画面に移動する
+		if (Input::GetVKey(VK_RETURN) == true)
+		{
+			Scene::SetScene(new CSceneMain());
+			time = 0;
+		}
 	}
-
 }
 
 //ドロー
