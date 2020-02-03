@@ -108,8 +108,6 @@ void CSceneMap2::InitScene()
 	CObjMap2*obj_m2 = new CObjMap2();
 	Objs::InsertObj(obj_m2, OBJ_MAP5, 1);
 
-
-
 	//マップ背景オブジェクト作成
 	CObjMap*obj_map = new CObjMap();
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
@@ -126,12 +124,10 @@ void CSceneMap2::InitScene()
 	CObjTips5*obj_Tips5 = new CObjTips5();
 	Objs::InsertObj(obj_Tips5, OBJ_TIPS5, 5);
 
-
-
 	srand(time(NULL));
 
-	int s = rand() % 2 + 1; //50％の確立で敵出現
-	if (s == 1)
+	int s = rand() % 4 + 1; //50％の確立で敵出現
+	if (1 <= s && s <= 3)
 	{
 		Audio::Stop(0);//敵が出現すると0番を止め
 		Audio::Start(2);//2番がスタートされる

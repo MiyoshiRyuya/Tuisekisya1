@@ -26,7 +26,7 @@ void CObjsolve::Action()
 
 	if (time >= 10)
 	{
-		//Eボタンを押すとゲーム画面に移動する
+		//Enterボタンを押すとゲーム画面に移動する
 		if (Input::GetVKey(VK_RETURN) == true)
 		{
 			Scene::SetScene(new CSceneMain());

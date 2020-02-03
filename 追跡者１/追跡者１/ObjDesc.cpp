@@ -6,6 +6,7 @@
 #include"GameHead.h"
 #include"ObjDesc.h"
 
+
 using namespace GameL;
 
 //イニシャライズ
@@ -17,20 +18,23 @@ void CObjDesc::Init()
 //アクション
 void CObjDesc::Action()
 {
+	time++;
 
 	if (Input::GetVKey(VK_RETURN) == true)
 	{
 		flag = true;
 	}
-	if (flag == true)
+	if (time >= 10)
 	{
-		if (Input::GetVKey(VK_RETURN) == false)
+		if (flag == true)
 		{
-			Audio::Start(1);
-			Scene::SetScene(new CSceneTitle());
+			if (Input::GetVKey(VK_RETURN) == false)
+			{
+				Audio::Start(1);
+				Scene::SetScene(new CSceneTitle());
+			}
 		}
 	}
-
 }
 
 //ドロー

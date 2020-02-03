@@ -471,32 +471,7 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneMap2()); //Map1→Map2
 	  }
 	}
-	/*else if (hit->CheckObjNameHit(OBJ_MOVE12) != nullptr)
-	{
-	if (Input::GetVKey(VK_RETURN) == true) {
-		//this->SetStatus(false);
-		Hits::DeleteHitBox(this);
-
-		Audio::Start(1);
-		g_Xz = 0;
-		g_Yz = 270;
-
-		Scene::SetScene(new CSceneMap2());
-	}
-	}
-	else if (hit->CheckObjNameHit(OBJ_MOVE13) != nullptr)
-	{
-		if (Input::GetVKey(VK_RETURN) == true) {
-			//this->SetStatus(false);
-			Hits::DeleteHitBox(this);
-
-			Audio::Start(1);
-			g_Xz = 0;
-			g_Yz = 310;
-
-			Scene::SetScene(new CSceneMap2());
-		}
-	}*/
+	
 	//ここが反応するとゲームクリア
 	else if (hit->CheckObjNameHit(OBJ_ESC) != nullptr)
 	{
@@ -533,14 +508,7 @@ void CObjHero::Action()
 		Memoflag1 = true;
 		Memoflag2 = true;
 		Memo3flag = true;
-		Tipsflag = true;
-		Textflag1 = true;
-		Textflag2 = true;
-		Textflag3 = true;
-		Textflag4 = true;
-		Textflag5 = true;
-		Textflag6 = true;
-		Textflag7 = true;
+		Tipsflag  = true;
 	}
 }
 
