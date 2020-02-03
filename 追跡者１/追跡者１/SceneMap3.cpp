@@ -37,7 +37,9 @@ void CSceneMap3::InitScene()
 	Audio::LoadAudio(4, L"doa.wav", SOUND_TYPE::EFFECT);
 
 	//バックミュージックスタート
-	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
+	float Volume2 = Audio::Volume(0.0f, 2); //ボリュームを下げない
+
+	float Volume = Audio::Volume(1.0f,0); //マスターボリュームを下げない
 	Audio::Start(0); //音楽スタート
 
 
@@ -93,8 +95,8 @@ void CSceneMap3::InitScene()
 	int s = rand() % 2 + 1; //50％の確立で敵出現
 	if (s == 1)
 	{
-		Audio::Stop(0);
-		Audio::Start(2);
+		Audio::Stop(0);//敵が出現すると0番を止め
+		Audio::Start(2);//2番がスタートされる
 
 		CObjEnemy*obj_enemy = new CObjEnemy();
 		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
