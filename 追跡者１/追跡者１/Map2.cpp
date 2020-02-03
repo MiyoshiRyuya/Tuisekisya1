@@ -22,8 +22,8 @@ void CObjMap2::Init()
 	//ˆÖŽq‚Ì“–‚½‚è”»’è
 	m_x = 0;
 	m_y = 0;
-	Hits::SetHitBox(this, m_x, m_y + 365, 50, 30, ELEMENT_GREEN, OBJ_MAP6, 2);
-	Hits::SetHitBox(this, m_x + 100, m_y + 390, 150, 150, ELEMENT_GREEN, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, m_x, m_y + 365, 35, 30, ELEMENT_GREEN, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, m_x + 100, m_y + 390, 150, 120, ELEMENT_GREEN, OBJ_MAP6, 2);
 	Hits::SetHitBox(this, m_x + 640, m_y + 380, 32, 32, ELEMENT_GREEN, OBJ_MAP6, 2);
 	Hits::SetHitBox(this, m_x + 640, m_y + 500, 32, 32, ELEMENT_GREEN, OBJ_MAP6, 2);
 	Hits::SetHitBox(this, m_x + 500, m_y + 500, 32, 32, ELEMENT_GREEN, OBJ_MAP6, 2);
