@@ -37,7 +37,6 @@ void CObjCloset::Action()
 
 	if (flag == true)
 	{
-
 		if (Memoflag2 == true)
 		{
 			if (Input::GetVKey('Q') == true)
@@ -92,8 +91,8 @@ void CObjCloset::Draw()
 		src.m_right = 256.0f;
 		src.m_bottom = 256.0f;
 
-		dst.m_top = 200.0f;
-		dst.m_left = 270.0f;
+		dst.m_top = 180.0f;
+		dst.m_left = 250.0f;
 		dst.m_right = 556.0f;
 		dst.m_bottom = 456.0f;
 

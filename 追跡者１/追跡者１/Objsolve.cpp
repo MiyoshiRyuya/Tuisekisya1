@@ -23,6 +23,7 @@ void CObjsolve::Init()
 void CObjsolve::Action()
 {
 	time++;
+
 	if (time >= 10)
 	{
 		//Eƒ{ƒ^ƒ“‚ð‰Ÿ‚·‚ÆƒQ[ƒ€‰æ–Ê‚ÉˆÚ“®‚·‚é

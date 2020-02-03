@@ -520,14 +520,6 @@ void CObjHero::Action()
 			}
 		}
 	}
-
-	if (Input::GetVKey('Z') == true)
-	{
-		Tipsflag = true;
-		Memoflag1 = true;
-		Memoflag2 = true;
-		Memo3flag = true;
-	}
 }
 
 //ドロー

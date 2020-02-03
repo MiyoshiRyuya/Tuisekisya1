@@ -89,7 +89,7 @@ void CSceneMap6::InitScene()
 	Objs::InsertObj(obj, OBJ_HERO, 10);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
 	CObjItem*obji = new CObjItem(393, 300);
-	Objs::InsertObj(obji, OBJ_ITEM, 13);
+	Objs::InsertObj(obji, OBJ_ITEM, 1);
 
 	//トラップオブジェクト
 	CObjtrap1*obj_trap1 = new CObjtrap1(760, 540);

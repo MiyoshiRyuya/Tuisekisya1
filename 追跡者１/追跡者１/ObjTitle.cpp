@@ -70,11 +70,14 @@ void CObjTitle::Action()
 		}
 	}
 
-	if (Input::GetVKey(VK_UP) == true) {
+	if (Input::GetVKey('W') == true)
+	{
 		Migi4 = 1;
 		time = 0;
 	}
-	else if (Input::GetVKey(VK_DOWN) == true) {
+
+	else if (Input::GetVKey('S') == true)
+	{
 		Migi4 = 2;
 		time = 0;
 	}
@@ -84,16 +87,6 @@ void CObjTitle::Action()
 void CObjTitle::Draw()
 {
 	float c[4] = { 1,1,1,1 };
-
-	Font::StrDraw(L"ゲームスタート", 340, 350, 28, c);
-	Font::StrDraw(L"操作説明", 340, 400, 23, c);
-
-	if (Migi4 == 1) {
-		Font::StrDraw(L"→", 300, 350, 32, c);
-	}
-	else if (Migi4 == 2) {
-		Font::StrDraw(L"→", 300, 400, 32, c);
-	}
 
 	RECT_F src;
 	RECT_F dst;
@@ -112,7 +105,7 @@ void CObjTitle::Draw()
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*209)
 	Draw::LoadImage(L"Title.png", 0, TEX_SIZE_512);
-
+	
 	Font::StrDraw(L"GAME START", 340, 350, 23, c);
 	Font::StrDraw(L"操作説明", 340, 380, 32, c);
 
