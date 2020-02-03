@@ -19,40 +19,44 @@ float genzaiti; //現在地
 //イニシャライズ
 void CObjMap2::Init()
 {
-	//椅子の当たり判定
+	//椅子の当たり判定----------------------------------------------------------------
 	m_x = 0;
 	m_y = 0;
-	Hits::SetHitBox(this, m_x, m_y + 365, 50, 30, ELEMENT_GREEN, OBJ_MAP6, 2);
-	Hits::SetHitBox(this, m_x + 100, m_y + 390, 150, 150, ELEMENT_GREEN, OBJ_MAP6, 2);
-	Hits::SetHitBox(this, m_x + 640, m_y + 380, 64, 64, ELEMENT_GREEN, OBJ_MAP6, 2);
-	Hits::SetHitBox(this, m_x + 640, m_y + 500, 64, 64, ELEMENT_GREEN, OBJ_MAP6, 2);
-	Hits::SetHitBox(this, m_x + 500, m_y + 500, 64, 64, ELEMENT_GREEN, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, m_x, m_y + 365, 35, 30, ELEMENT_GREEN, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, m_x + 100, m_y + 390, 150, 120, ELEMENT_GREEN, OBJ_MAP6, 2);
 
+	//惑星の机の当たり判定------------------------------------------------------------
+	Hits::SetHitBox(this, m_x + 640, m_y + 380, 32, 32, ELEMENT_GREEN, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, m_x + 640, m_y + 500, 32, 32, ELEMENT_GREEN, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, m_x + 500, m_y + 500, 32, 32, ELEMENT_GREEN, OBJ_MAP6, 2);
 	ax = 500;
 	ay = 380;
-	Hits::SetHitBox(this, ax, ay, 64, 64, ELEMENT_BLUE, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, ax, ay, 32, 32, ELEMENT_GREEN, OBJ_MAP6, 2);
 
-	//植木の当たり判定
+	//植木の当たり判定----------------------------------------------------------------
 	kx = 0;
 	ky = 200;
-	Hits::SetHitBox(this, kx, ky - 15, 60, 64, ELEMENT_GREEN, OBJ_MAP6, 2);
+	Hits::SetHitBox(this, kx + 15, ky - 10, 35, 60, ELEMENT_GREEN, OBJ_MAP6, 2);
 	Hits::SetHitBox(this, kx + 215, ky - 25, 35, 50, ELEMENT_GREEN, OBJ_MAP6, 2);
 	Hits::SetHitBox(this, kx + 415, ky - 5, 35, 50, ELEMENT_GREEN, OBJ_MAP6, 2);
 	Hits::SetHitBox(this, kx + 615, ky - 25, 35, 50, ELEMENT_GREEN, OBJ_MAP6, 2);
 
-
+	//壁紙の当たり判定----------------------------------------------------------------
 	bx = 0;
 	by = 0;
 	Hits::SetHitBox(this, bx, by, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
 
+	//Map3へ移動するときの当たり判定--------------------------------------------------
 	idouX = 0;
 	idouY = 0;
-	Hits::SetHitBox(this, idouX + 770, idouY + 250, 30, 100, ELEMENT_GREEN, OBJ_MOVE9, 1);
+	Hits::SetHitBox(this, idouX + 770, idouY + 250, 30, 100, ELEMENT_BLUE, OBJ_MOVE9, 1);
 
+	//Map1へ移動するときの当たり判定--------------------------------------------------
 	mx = 0;
 	my = 0;
 	Hits::SetHitBox(this, mx , my + 250, 30, 80, ELEMENT_BLUE, OBJ_MOVE10, 1);
 
+	//Map5移動するときの当たり判定----------------------------------------------------
 	x = 0;
 	y = 0;
 	Hits::SetHitBox(this, x += 300, y += 590, 150, 10, ELEMENT_RED, OBJ_MOVE7, 1);

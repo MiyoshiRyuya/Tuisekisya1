@@ -32,13 +32,13 @@ void CObjMap3::Init()
 	idouX = 750; //マップ移動用
 	idouY = 300;
 
-	Hits::SetHitBox(this, m_x -700, m_y + 400, 190, 200, ELEMENT_BLUE, OBJ_MAP6, 3);
+	Hits::SetHitBox(this, m_x -700, m_y + 400, 190, 200, ELEMENT_RED, OBJ_MAP6, 3);//血塗れベッド
 
-	Hits::SetHitBox(this, m_x + 10, m_y + 10, 248, 200, ELEMENT_BLUE, OBJ_MAP6, 3);
+	Hits::SetHitBox(this, m_x + 10, m_y + 10, 248, 200, ELEMENT_GREEN, OBJ_MAP6, 3);//ベッド
 	
-	Hits::SetHitBox(this, mx+10, my+10, 190, 200, ELEMENT_BLUE, OBJ_MAP6, 1);
+	Hits::SetHitBox(this, mx+10, my+10, 190, 200, ELEMENT_BLUE, OBJ_MAP6, 1);//机とソファ
 
-	Hits::SetHitBox(this, idouX + 10, idouY + 10, 150, 100, ELEMENT_RED, OBJ_MOVE8, 1);
+	Hits::SetHitBox(this, idouX + 10, idouY + 10, 150, 100, ELEMENT_RED, OBJ_MOVE8, 1);//Map3>Map2
 }
 
 //アクション

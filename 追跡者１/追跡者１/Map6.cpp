@@ -30,11 +30,11 @@ void CObjMap6::Init()
 	hon_y = 240;
 	
 	//オブジェクトの配置
-	Hits::SetHitBox(this, m_x, m_y, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
-	Hits::SetHitBox(this, m_x += 200, m_y += 240, 50, 250, ELEMENT_GREEN, OBJ_MAP6, 1);
-	Hits::SetHitBox(this, m_x += 200, m_y, 50, 250, ELEMENT_GREEN, OBJ_MAP6, 1);
-	Hits::SetHitBox(this, m_x += 200, m_y, 50, 250, ELEMENT_GREEN, OBJ_MAP6, 1);
-	Hits::SetHitBox(this, m_x -= 600, m_y += 60, 64, 100, ELEMENT_WHITE, OBJ_MOVE1, 1);
+	Hits::SetHitBox(this, m_x, m_y, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);//壁紙
+	Hits::SetHitBox(this, m_x += 200, m_y += 240, 50, 250, ELEMENT_GREEN, OBJ_MAP6, 1);//本棚　左
+	Hits::SetHitBox(this, m_x += 200, m_y, 50, 250, ELEMENT_GREEN, OBJ_MAP6, 1);//本棚　中央
+	Hits::SetHitBox(this, m_x += 200, m_y, 50, 250, ELEMENT_GREEN, OBJ_MAP6, 1);//本棚　右
+	Hits::SetHitBox(this, m_x -= 600, m_y += 60, 64, 100, ELEMENT_WHITE, OBJ_MOVE1, 1);//Map6>Map5
 }
 
 //アクション

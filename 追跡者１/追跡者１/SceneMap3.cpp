@@ -37,7 +37,7 @@ void CSceneMap3::InitScene()
 	Audio::LoadAudio(4, L"doa.wav", SOUND_TYPE::EFFECT);
 
 	//バックミュージックスタート
-	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
+	float Volume = Audio::VolumeMaster(-1.0f); //マスターボリュームを1下げる
 	Audio::Start(0); //音楽スタート
 
 
