@@ -28,7 +28,7 @@ void CObjMap5::Init()
 	m_xx = 0;
 	m_yy = 0;
 
-	Hits::SetHitBox(this, m_x, m_y, 340, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
+	Hits::SetHitBox(this, m_x, m_y, 340, 110, ELEMENT_GREEN, OBJ_MAP6, 1);//壁紙　左
 	Hits::SetHitBox(this, m_x + 470, m_y + 220, 80, 80, ELEMENT_GREEN, OBJ_MAP6, 1);//植木ｓ ピアノ　右
 	Hits::SetHitBox(this, m_x + 270, m_y + 205, 80, 80, ELEMENT_GREEN, OBJ_MAP6, 1);//植木ｓ　ピアノ　左
 
@@ -39,11 +39,11 @@ void CObjMap5::Init()
 	Hits::SetHitBox(this, m_x + 250, m_y + 500, 60, 95, ELEMENT_GREEN, OBJ_MAP6, 1);//植木ｓ
 	Hits::SetHitBox(this, m_x + 480, m_y + 500, 60, 95, ELEMENT_GREEN, OBJ_MAP6, 1);//植木ｓ
 
-	Hits::SetHitBox(this, m_x += 736, m_y += 300, 64, 100, ELEMENT_WHITE, OBJ_MOVE2, 1);
-	Hits::SetHitBox(this, m_x -= 736, m_y, 64, 100, ELEMENT_GREEN, OBJ_MOVE3, 1);
-	Hits::SetHitBox(this, m_x += 465, m_y -= 300, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);
-	Hits::SetHitBox(this, m_x -= 140, m_y += 550, 150, 50, ELEMENT_RED, OBJ_ESC, 1);
-	Hits::SetHitBox(this, m_x , m_y -= 550, 150, 10, ELEMENT_BLUE, OBJ_MOVE6, 1);
+	Hits::SetHitBox(this, m_x += 736, m_y += 300, 64, 100, ELEMENT_WHITE, OBJ_MOVE2, 1);//Map5>6
+	Hits::SetHitBox(this, m_x -= 736, m_y, 64, 100, ELEMENT_GREEN, OBJ_MOVE3, 1);//Map5>4
+	Hits::SetHitBox(this, m_x += 465, m_y -= 300, 800, 110, ELEMENT_GREEN, OBJ_MAP6, 1);//壁紙　右
+	Hits::SetHitBox(this, m_x -= 140, m_y += 550, 150, 50, ELEMENT_RED, OBJ_ESC, 1);//Map5>脱出
+	Hits::SetHitBox(this, m_x , m_y -= 550, 150, 10, ELEMENT_BLUE, OBJ_MOVE6, 1);//Map5>Map2
 }
 
 //アクション

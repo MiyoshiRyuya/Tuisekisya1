@@ -37,7 +37,7 @@ void CObjMain::Draw()
 
 	RECT_F src;
 	RECT_F dst;
-	//スカラ
+	//スカル
 	src.m_top = 0.0f;
 	src.m_left = 133.0f;
 	src.m_right = 215.0f;

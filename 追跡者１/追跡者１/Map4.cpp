@@ -33,7 +33,7 @@ void CObjMap4::Init()
 
 	//ˆÚ“®ŠÖ˜A
 	Hits::SetHitBox(this, m_x + 10, m_y + 10, 0, 0, ELEMENT_BLUE, OBJ_MAP4, 3);
-	Hits::SetHitBox(this, m_x + 10, m_y + 10, 50, 50, ELEMENT_RED, OBJ_MOVE4, 3);
+	Hits::SetHitBox(this, m_x + 10, m_y + 10, 50, 50, ELEMENT_RED, OBJ_MOVE4, 3);//Map4>Map5
 
 	
 }
