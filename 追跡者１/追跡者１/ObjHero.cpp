@@ -28,6 +28,14 @@ extern bool idou;
 bool itemflag = false;
 bool solveflag = false;
 
+extern bool Textflag1;
+extern bool Textflag2;
+extern bool Textflag3;
+extern bool Textflag4;
+extern bool Textflag5;
+extern bool Textflag6;
+extern bool Textflag7;
+
 int muki;//1=上下
 
 float CObjHero::Getflag()
@@ -518,6 +526,22 @@ void CObjHero::Action()
 				itemflag = true;
 			}
 		}
+	}
+
+	if (Input::GetVKey('P') == true)
+	{
+		Memoflag1 = true;
+		Memoflag2 = true;
+		Memo3flag = true;
+		Tipsflag = true;
+		itemflag = true;
+		Textflag1 = true;
+		Textflag2 = true;
+		Textflag3 = true;
+		Textflag4 = true;
+		Textflag5 = true;
+		Textflag6 = true;
+		Textflag7 = true;
 	}
 }
 
