@@ -33,7 +33,7 @@ void CSceneMap3::InitScene()
 {
 
 	Audio::LoadAudio(0, L"n105.wav", SOUND_TYPE::BACK_MUSIC);
-	Audio::LoadAudio(2, L"meet-goast (online-audio-converter.com).wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::LoadAudio(2, L"memai2 (online-audio-converter.com).wav", SOUND_TYPE::BACK_MUSIC);
 	Audio::LoadAudio(4, L"doa.wav", SOUND_TYPE::EFFECT);
 
 	//バックミュージックスタート

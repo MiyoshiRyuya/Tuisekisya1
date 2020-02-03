@@ -32,7 +32,7 @@ CSceneMap2::~CSceneMap2()
 void CSceneMap2::InitScene()
 {
 	Audio::LoadAudio(0, L"amenisuteraretaningyou.wav", SOUND_TYPE::BACK_MUSIC);
-	Audio::LoadAudio(2, L"meet-goast (online-audio-converter.com).wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::LoadAudio(2, L"memai2 (online-audio-converter.com).wav", SOUND_TYPE::BACK_MUSIC);
 
 
 	//バックミュージックスタート
@@ -88,14 +88,15 @@ void CSceneMap2::InitScene()
 	//謎解きメモ
 	Draw::LoadImage(L"Text2.png", 40, TEX_SIZE_64);
 
-	//謎解きメモ
+	//謎解きメモ(Poison)
 	Draw::LoadImage(L"Text5.png", 41, TEX_SIZE_64);
 
-	//謎解きメモ
+	//謎解きメモ(Poison)
 	Draw::LoadImage(L"Text6.png", 42, TEX_SIZE_64);
 
-	//謎解きメモ
+	//謎解きメモ(Poison)
 	Draw::LoadImage(L"Text6.png", 43, TEX_SIZE_64);
+
 
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();

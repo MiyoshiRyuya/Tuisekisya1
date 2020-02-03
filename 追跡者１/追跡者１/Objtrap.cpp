@@ -21,7 +21,7 @@ CObjtrap::CObjtrap(float x,float y)
 
 void CObjtrap::Init()
 {
-	Hits::SetHitBox(this, m_x, m_y, 64, 50, ELEMENT_RED, OBJ_TRAP, 1);
+	Hits::SetHitBox(this, m_x, m_y, 45, 40, ELEMENT_RED, OBJ_TRAP, 1);
 
 }
 
@@ -80,7 +80,7 @@ CObjtrap1::CObjtrap1(float x, float y)
 
 void CObjtrap1::Init()
 {
-	Hits::SetHitBox(this, m_x, m_y+10, 64, 50, ELEMENT_RED, OBJ_TRAP, 1);
+	Hits::SetHitBox(this, m_x, m_y+10, 45, 40, ELEMENT_RED, OBJ_TRAP, 1);
 
 }
 
@@ -135,7 +135,7 @@ CObjtrap2::CObjtrap2(float x, float y)
 
 void CObjtrap2::Init()
 {
-	Hits::SetHitBox(this, m_x+10, m_y, 40, 64, ELEMENT_RED, OBJ_TRAP, 1);
+	Hits::SetHitBox(this, m_x+10, m_y, 45, 40, ELEMENT_RED, OBJ_TRAP, 1);
 
 }
 
@@ -190,7 +190,7 @@ CObjtrap3::CObjtrap3(float x, float y)
 
 void CObjtrap3::Init()
 {
-	Hits::SetHitBox(this, m_x, m_y, 64, 50, ELEMENT_RED, OBJ_TRAP, 1);
+	Hits::SetHitBox(this, m_x, m_y, 45, 40, ELEMENT_RED, OBJ_TRAP, 1);
 
 }
 

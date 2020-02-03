@@ -42,7 +42,9 @@ void CObjDesc::Draw()
 
 	Font::StrDraw(L"W,A,S,Dキー 移動", 100, 100, 23, c);
 
-	Font::StrDraw(L"Enterキー　決定、アイテム獲得、ある場所に入る時", 100, 140, 23, c);
+	Font::StrDraw(L"Enterキー　決定、アイテム獲得、ある場所に入るとき、出るとき", 100, 140, 23, c);
+
+	Font::StrDraw(L"Qキー　    アイテム獲得", 100, 220, 23, c);
 
 	Font::StrDraw(L"Mキー      メニュー画面を開く", 100, 180, 23, c);
 
