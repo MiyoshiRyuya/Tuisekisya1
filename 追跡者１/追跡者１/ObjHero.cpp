@@ -534,7 +534,6 @@ void CObjHero::Action()
 		Memoflag2 = true;
 		Memo3flag = true;
 		Tipsflag = true;
-		itemflag = true;
 		Textflag1 = true;
 		Textflag2 = true;
 		Textflag3 = true;
