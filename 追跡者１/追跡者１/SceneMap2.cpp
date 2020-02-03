@@ -101,7 +101,7 @@ void CSceneMap2::InitScene()
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();
 	//作った主人公オブジェクトをオブジェクトマネージャーに登録
-	Objs::InsertObj(obj, OBJ_HERO, 5);
+	Objs::InsertObj(obj, OBJ_HERO, 3);
 
 	CObjMap2*obj_m2 = new CObjMap2();
 	Objs::InsertObj(obj_m2, OBJ_MAP5, 1);
@@ -134,7 +134,7 @@ void CSceneMap2::InitScene()
 		Audio::Stop(0);
 		Audio::Start(2);
 		CObjEnemy*obj_enemy = new CObjEnemy();
-		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);
+		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 3);
 	}
 
 }

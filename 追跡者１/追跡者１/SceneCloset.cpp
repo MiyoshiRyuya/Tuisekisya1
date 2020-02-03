@@ -42,6 +42,8 @@ void CSceneCloset::InitScene()
 	
 	Draw::LoadImageW(L"Text3.png", 45, TEX_SIZE_64);
 
+	Draw::LoadImageW(L"test.png", 46, TEX_SIZE_64);
+
 	if (closetflag==true)
 	{
 		//クローゼットオブジェクト
@@ -55,6 +57,8 @@ void CSceneCloset::InitScene()
 		Objs::InsertObj(obj_closet, OBJ_CLOSET, 1);
 	}
 
+	CObjtest*obj_test = new CObjtest();
+	Objs::InsertObj(obj_test, OBJ_TEST, 1);
 }
 
 //ゲームメイン実行中メソッド

@@ -26,15 +26,12 @@ void CObjTips1::Init()
 
 void CObjTips1::Action()
 {
-
-
-
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
 
 	if (Textflag1 == true)
 	{
-		Sleep(3000);
+		Sleep(1500);
 
 		this->SetStatus(false);   //自身に削除命令を出す。
 		//Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。

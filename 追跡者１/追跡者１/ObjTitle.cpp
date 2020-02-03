@@ -49,7 +49,7 @@ void CObjTitle::Action()
 	Textflag7 = false;
 
 	
-		//エンターキーが押されたらシーンメインに移動
+	//エンターキーが押されたらシーンメインに移動
 	if (Migi4 == 1)
 	{
 		if (Input::GetVKey(VK_RETURN) == true)
@@ -62,6 +62,7 @@ void CObjTitle::Action()
 
 	if (Migi4 == 2)
 	{
+		//タイトル画面→操作説明に移動
 		if (Input::GetVKey(VK_RETURN) == true)
 		{
 			Migi4 = 2;
@@ -69,13 +70,13 @@ void CObjTitle::Action()
 			Scene::SetScene(new CSceneDesc());
 		}
 	}
-
+	//タイトル画面矢印上に移動
 	if (Input::GetVKey('W') == true)
 	{
 		Migi4 = 1;
 		time = 0;
 	}
-
+	//タイトル画面矢印下に移動
 	else if (Input::GetVKey('S') == true)
 	{
 		Migi4 = 2;

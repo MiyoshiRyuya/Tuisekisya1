@@ -85,6 +85,7 @@ enum OBJ_NAME
 	OBJ_SOLVE,
 	OBJ_SOLVE2,
 	OBJ_CLOSET,
+	OBJ_TEST,
 
 	//タイトル系
 	OBJ_TITLE,
@@ -216,6 +217,7 @@ extern float genzaiti; //現在地
 #include "ObjTips4.h"
 #include "ObjTips5.h"
 #include "Objs.h"
+#include"Objtest.h"
 
 //メニュー
 #include "ObjMenu2.h"

@@ -26,9 +26,10 @@ void CObjTips3::Action()
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_px, m_py);
 
+
 	if (Textflag5 == true)
 	{
-		Sleep(1000);
+		Sleep(1500);
 
 		Scene::SetScene(new CSceneGameOver());
 

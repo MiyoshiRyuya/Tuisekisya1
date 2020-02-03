@@ -12,9 +12,6 @@
 
 //使用するネームスペース
 using namespace GameL;
-bool Memo3flag = false;
-bool Textflag3 = false;
-extern bool Memoflag2;
 //イニシャライズ
 void CObjCloset::Init()
 {
@@ -34,30 +31,15 @@ void CObjCloset::Init()
 void CObjCloset::Action()
 {
 	time++;
-
-	if (flag == true)
+	if (time >= 10)
 	{
-		if (Memoflag2 == true)
+		//Eボタンを押すとゲーム画面に移動する
+		if (Input::GetVKey(VK_RETURN) == true)
 		{
-			if (Input::GetVKey('Q') == true)
-			{
-				Audio::Start(3);
-
-				Memo3flag = true;
-				Textflag3 = true;
-			}
-		}
-		if (time >= 10)
-		{
-			//Eボタンを押すとゲーム画面に移動する
-			if (Input::GetVKey(VK_RETURN) == true)
-			{
-				Scene::SetScene(new CSceneMap3());
-				time = 0;
-			}
+			Scene::SetScene(new CSceneMap3());
+			time = 0;
 		}
 	}
-
 }
 
 
@@ -83,19 +65,4 @@ void CObjCloset::Draw()
 
 	//描画
 	Draw::Draw(11, &src, &dst, c, 0.0f);
-
-	if (Textflag3 == true)
-	{
-		src.m_top = 0.0f;
-		src.m_left = 0.0f;
-		src.m_right = 256.0f;
-		src.m_bottom = 256.0f;
-
-		dst.m_top = 180.0f;
-		dst.m_left = 250.0f;
-		dst.m_right = 556.0f;
-		dst.m_bottom = 456.0f;
-
-		Draw::Draw(45, &src, &dst, c, 0.0f);
-	}
 }

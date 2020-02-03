@@ -120,6 +120,7 @@ void CObjEnemy::Draw()
 
 	Draw::Draw(5, &src, &dst, c, 0.0f);
 
+	//十字架取得時テキスト表示
 	if (Textflag4 == true)
 	{
 		src.m_top = 0.0f;

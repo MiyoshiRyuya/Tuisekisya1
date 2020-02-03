@@ -58,11 +58,11 @@
     <Filter Include="ソース ファイル\惑星">
       <UniqueIdentifier>{289fa5cf-fe29-46e0-97f2-92bbf20231b6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Map\Main">
-      <UniqueIdentifier>{4b1e66fe-d1a0-4007-973f-de8b8d5d27cc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Hero">
       <UniqueIdentifier>{4a77a3bf-f683-4e12-b3f8-ee0efd33c8f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Main">
+      <UniqueIdentifier>{4b1e66fe-d1a0-4007-973f-de8b8d5d27cc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -229,10 +229,10 @@
       <Filter>ソース ファイル\Trap</Filter>
     </ClCompile>
     <ClCompile Include="ObjMain.cpp">
-      <Filter>ソース ファイル\Map\Main</Filter>
+      <Filter>ソース ファイル\Main</Filter>
     </ClCompile>
     <ClCompile Include="SceneMain.cpp">
-      <Filter>ソース ファイル\Map\Main</Filter>
+      <Filter>ソース ファイル\Main</Filter>
     </ClCompile>
     <ClCompile Include="ObjFurniture9.cpp">
       <Filter>ソース ファイル\Furniture</Filter>
@@ -444,6 +444,9 @@
     <ClCompile Include="ObjTips5.cpp">
       <Filter>ソース ファイル\惑星</Filter>
     </ClCompile>
+    <ClCompile Include="Objtest.cpp">
+      <Filter>ソース ファイル\クローゼット</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameL\Audio.h">
@@ -609,10 +612,10 @@
       <Filter>ソース ファイル\Trap</Filter>
     </ClInclude>
     <ClInclude Include="ObjMain.h">
-      <Filter>ソース ファイル\Map\Main</Filter>
+      <Filter>ソース ファイル\Main</Filter>
     </ClInclude>
     <ClInclude Include="SceneMain.h">
-      <Filter>ソース ファイル\Map\Main</Filter>
+      <Filter>ソース ファイル\Main</Filter>
     </ClInclude>
     <ClInclude Include="ObjFurniture9.h">
       <Filter>ソース ファイル\Furniture</Filter>
@@ -772,6 +775,9 @@
     </ClInclude>
     <ClInclude Include="ObjTips5.h">
       <Filter>ソース ファイル\惑星</Filter>
+    </ClInclude>
+    <ClInclude Include="Objtest.h">
+      <Filter>ソース ファイル\クローゼット</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

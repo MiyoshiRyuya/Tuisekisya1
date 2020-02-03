@@ -194,6 +194,7 @@
     <ClCompile Include="objstage.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Objtest.cpp" />
     <ClCompile Include="ObjTips3.cpp" />
     <ClCompile Include="ObjTips4.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -302,6 +303,7 @@
     <ClInclude Include="ObjMenu2.h" />
     <ClInclude Include="Objsolve.h" />
     <ClInclude Include="Objsolve2.h" />
+    <ClInclude Include="Objtest.h" />
     <ClInclude Include="ObjTips3.h" />
     <ClInclude Include="ObjTips4.h" />
     <ClInclude Include="ObjTips5.h" />

@@ -28,20 +28,20 @@ void CObjTips2::Init()
 
 void CObjTips2::Action()
 {
-	
-
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_px, m_py);
 
+	//メモ2取得時　時間を2秒止める
 	if (Textflag2 == true)
 	{
-		Sleep(1000);
+		Sleep(1500);
 		this->SetStatus(false);   //自身に削除命令を出す。
 		//Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
 	}
 
 	if (hit->CheckElementHit(ELEMENT_PLAYER) == true)
 	{
+		//メモ1を持ちながらTipsフラグを持っているならメモ2取得
 		if (Input::GetVKey(VK_RETURN) == true)
 		{
 			if (Memoflag1 == true&&Tipsflag==true)

@@ -27,7 +27,7 @@ void CObjTips4::Action()
 
 	if (Textflag6 == true)
 	{
-		Sleep(1000);
+		Sleep(1500);
 		Scene::SetScene(new CSceneGameOver());
 
 		this->SetStatus(false);   //©g‚Éíœ–½—ß‚ğo‚·B
