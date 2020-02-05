@@ -61,8 +61,8 @@ void CSceneMap::InitScene()
 
 	srand(time(NULL));
 
-	int s = rand() % 2 + 1; //50％の確立で敵出現
-	if (s == 1)
+	int s = rand() % 4 +1; //50％の確立で敵出現
+	if (1<=s&&s<=3)
 	{
 		CObjEnemy*obj_enemy = new CObjEnemy();
 		Objs::InsertObj(obj_enemy, OBJ_ENEMY, 10);

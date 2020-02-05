@@ -38,11 +38,11 @@ void CSceneMap2::InitScene()
 	//バックミュージックスタート
 	float Volume2 = Audio::Volume(0.0f, 2); //ボリュームを下げない
 
-	float Volume = Audio::Volume(-0.0f,0); //マスターボリュームを下げない
+	float Volume = Audio::Volume(0.0f,0); //マスターボリュームを下げない
 	Audio::Start(0); //音楽スタート
 
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
-	float Volume1 = Audio::VolumeMaster(1.0f);
+	float Volume1 = Audio::Volume(1.0f,1);
 	//Audio::Start(1);
 
 	//メモ2入手時のSE
@@ -108,8 +108,6 @@ void CSceneMap2::InitScene()
 	CObjMap2*obj_m2 = new CObjMap2();
 	Objs::InsertObj(obj_m2, OBJ_MAP5, 1);
 
-
-
 	//マップ背景オブジェクト作成
 	CObjMap*obj_map = new CObjMap();
 	Objs::InsertObj(obj_map, OBJ_MAP, 1);
@@ -126,12 +124,10 @@ void CSceneMap2::InitScene()
 	CObjTips5*obj_Tips5 = new CObjTips5();
 	Objs::InsertObj(obj_Tips5, OBJ_TIPS5, 5);
 
-
-
 	srand(time(NULL));
 
-	int s = rand() % 2 + 1; //50％の確立で敵出現
-	if (s == 1)
+	int s = rand() % 4 + 1; //50％の確立で敵出現
+	if (1 <= s && s <= 3)
 	{
 		Audio::Stop(0);//敵が出現すると0番を止め
 		Audio::Start(2);//2番がスタートされる

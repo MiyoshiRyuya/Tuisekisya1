@@ -86,7 +86,7 @@ void CSceneMain::InitScene()
 
 	//ƒhƒA‚ÌŒø‰Ê‰¹
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
-	float Volume1 = Audio::VolumeMaster(1.0f);
+	float Volume1 = Audio::Volume(1.0f,1);
 	//Audio::Start(1);
 
 	

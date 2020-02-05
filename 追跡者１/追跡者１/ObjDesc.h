@@ -17,4 +17,5 @@ public:
 
 private:
 	bool flag;
+	int time;
 };
