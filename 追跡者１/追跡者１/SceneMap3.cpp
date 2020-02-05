@@ -37,10 +37,10 @@ void CSceneMap3::InitScene()
 	Audio::LoadAudio(4, L"doa.wav", SOUND_TYPE::EFFECT);
 
 	//バックミュージックスタート
-	float Volume = Audio::VolumeMaster(-1.0f); //マスターボリュームを1下げる
+	float Volume = Audio::Volume(1.0f,0); //ボリュームを1下げる
 	Audio::Start(0); //音楽スタート
 
-
+	float Volume2 = Audio::Volume(0.0f, 2); //ボリュームを下げない
 
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
@@ -101,7 +101,7 @@ void CSceneMap3::InitScene()
 	}
 	
 	Audio::LoadAudio(1, L"OpenSE.wav", SOUND_TYPE::EFFECT);
-	float Volume1 = Audio::VolumeMaster(1.0f);
+	float Volume1 = Audio::Volume(1.0f,1);
 	Audio::Start(1);
 	
 }
