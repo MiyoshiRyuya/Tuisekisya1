@@ -40,5 +40,5 @@ void CObjFurniture32::Draw()
 	dst.m_right = 0.0f + m_x;
 	dst.m_bottom = 120.0f + m_y;
 
-	Draw::Draw(21, &src, &dst, c, 0.0f);
+	Draw::Draw(21, &src, &dst, c, 0.0f);//MOM
 }
