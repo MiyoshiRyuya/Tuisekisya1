@@ -36,7 +36,7 @@ void CObjMap2::Init()
 	//êAñÿÇÃìñÇΩÇËîªíË----------------------------------------------------------------
 	kx = 0;
 	ky = 200;
-	Hits::SetHitBox(this, kx + 15, ky - 10, 35, 60, ELEMENT_GREEN, OBJ_MAP6, 2);
+	
 	Hits::SetHitBox(this, kx + 215, ky - 25, 35, 50, ELEMENT_GREEN, OBJ_MAP6, 2);
 	Hits::SetHitBox(this, kx + 415, ky - 5, 35, 50, ELEMENT_GREEN, OBJ_MAP6, 2);
 	Hits::SetHitBox(this, kx + 615, ky - 25, 35, 50, ELEMENT_GREEN, OBJ_MAP6, 2);
@@ -177,15 +177,8 @@ void CObjMap2::Draw()
 
 	Draw::Draw(51, &src, &dst, c, 0.0f);
 
+	
 	//êAñÿï`âÊ1
-	dst.m_top = 0.0f + ky-10;
-	dst.m_left = 64.0f + kx;
-	dst.m_right = 0.0f + kx;
-	dst.m_bottom = 64.0f + ky-10;
-
-	Draw::Draw(52, &src, &dst, c, 0.0f);
-
-	//êAñÿï`âÊ2
 	dst.m_top = 0.0f + ky - 30;
 	dst.m_left = 64.0f + 200;
 	dst.m_right = 0.0f + 200;
@@ -193,7 +186,7 @@ void CObjMap2::Draw()
 
 	Draw::Draw(52, &src, &dst, c, 0.0f);
 
-	//êAñÿï`âÊ3
+	//êAñÿï`âÊ2
 	dst.m_top = 0.0f + ky - 10;
 	dst.m_left = 64.0f + 400;
 	dst.m_right = 0.0f + 400;
@@ -201,7 +194,7 @@ void CObjMap2::Draw()
 
 	Draw::Draw(52, &src, &dst, c, 0.0f);
 
-	//êAñÿï`âÊ4
+	//êAñÿï`âÊ3
 	dst.m_top = 0.0f + ky - 30;
 	dst.m_left = 64.0f + 600;
 	dst.m_right = 0.0f + 600;
