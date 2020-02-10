@@ -325,7 +325,7 @@ void CObjMenu2::Draw()
 
 	//最初の画面
 	if (GameOver == 0) {
-		Font::StrDraw(L"所持アイテム確認", 260, 140, 32, c);
+		Font::StrDraw(L"所持品確認", 260, 140, 32, c);
 		Font::StrDraw(L"ゲーム画面に戻る", 260, 240, 32, c);
 		Font::StrDraw(L"ゲームを終了する", 260, 340, 32, c);
 	}
@@ -340,7 +340,7 @@ void CObjMenu2::Draw()
 
 	else if (Item == 1&&Cross==0) {
 		if (itemflag == false && Memo3flag == false&&Memoflag1==false&&Memoflag2==false) {
-			Font::StrDraw(L"所持アイテムがありません", 220, 200, 32, c);
+			Font::StrDraw(L"所持品はありません", 220, 200, 32, c);
 		}
 		else {
 			if (Memoflag1==true)
