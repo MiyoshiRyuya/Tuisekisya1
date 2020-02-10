@@ -84,9 +84,10 @@ void CSceneMap3::InitScene()
 	CObjtrap1*obj_trap1 = new CObjtrap1(70, 550);
 	Objs::InsertObj(obj_trap1, OBJ_TRAP, 1);
 
+	
 	CObjCloset*obj_closet = new CObjCloset();
 	Objs::InsertObj(obj_closet, OBJ_CLOSET, 1); //ここが原因
-
+	
 	//マップ背景オブジェクト1作成
 	CObjMap3*map3 = new CObjMap3();
 	Objs::InsertObj(map3, OBJ_MAP3, 1);
