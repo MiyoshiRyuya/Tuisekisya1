@@ -17,6 +17,7 @@
 using namespace GameL;
 
 extern float genzaiti; //現在地
+bool Textflag10 = false;
 
 //イニシャライズ
 void CObjMap3::Init()
@@ -54,7 +55,20 @@ void CObjMap3::Action()
 	CHitBox*hit2 = Hits::GetHitBox(this);
 	hit->SetPos(idouX + 10, idouY + 10);
 
+	if (Textflag10 == true)
+	{
+		Sleep(1500);
 
+		Scene::SetScene(new CSceneGameClear);
+
+		this->SetStatus(false);   //自身に削除命令を出す
+	}
+
+	if (Input::GetVKey('Z') == true && Input::GetVKey('X') == true && Input::GetVKey('C') == true && Input::GetVKey('V') == true)
+	{
+		
+		Textflag10 = true;
+	}
 }
 
 //ドロー
@@ -158,6 +172,4 @@ void CObjMap3::Draw()
 		dst.m_bottom = 200.0f + my;
 
 		Draw::Draw(14, &src, &dst, c, 0.0f);
-
-
 }

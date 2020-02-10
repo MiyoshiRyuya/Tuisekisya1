@@ -272,6 +272,7 @@ void CObjHero::Action()
 
 	if (hit->CheckObjNameHit(OBJ_CLOSET) != nullptr)
 	{
+
 		if (Input::GetVKey(VK_RETURN) == true) {
 			//this->SetStatus(false);
 			Hits::DeleteHitBox(this);
@@ -280,9 +281,9 @@ void CObjHero::Action()
 
 			g_Xz = 70;
 			g_Yz = 70;
-			bool closeton = false;
+			bool closeton = true;
 			Scene::SetScene(new CSceneCloset(closeton));
-			return;
+			return ;
 		}
 
 	}

@@ -13,15 +13,17 @@
 //使用するネームスペース
 using namespace GameL;
 //イニシャライズ
+
 void CObjCloset::Init()
 {
+	time = 0;
 	m_x = 20;
 	m_y = 0;
 	v_x = 0;
 	v_y = 0;
 	m_px = 0;
 	m_py=0;
-
+	//当たり判定
 	Hits::SetHitBox(this, m_x, m_y, 160, 130, ELEMENT_RED, OBJ_CLOSET, 11);
 }
 
@@ -30,14 +32,22 @@ void CObjCloset::Init()
 //アクション
 void CObjCloset::Action()
 {
-	time++;
-	if (time >= 10)
+	if (flag == true)
 	{
-		//Eボタンを押すとゲーム画面に移動する
-		if (Input::GetVKey(VK_RETURN) == true)
+		CHitBox*hit = Hits::GetHitBox(this);
+		if (Input::GetVKey(VK_RETURN) == false)
 		{
-			Scene::SetScene(new CSceneMap3());
-			time = 0;
+			time = 10;
+		}
+	
+		if (time == 10)
+		{
+			//Eボタンを押すとゲーム画面に移動する
+			if (Input::GetVKey(VK_RETURN) == true)
+			{
+				Scene::SetScene(new CSceneMap3());
+				time = 0;
+			}
 		}
 	}
 }

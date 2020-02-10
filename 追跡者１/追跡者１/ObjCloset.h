@@ -9,8 +9,9 @@ using namespace GameL;
 class CObjCloset : public CObj
 {
 public:
-	CObjCloset() {};
-	~CObjCloset() {};	CObjCloset(bool closetflag) { flag = closetflag; };
+	CObjCloset() { flag = false; };
+	CObjCloset(bool closetflag) { flag = closetflag; };
+	~CObjCloset() {};	
 
 
 	void Init();
