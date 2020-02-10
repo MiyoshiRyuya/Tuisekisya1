@@ -17,7 +17,8 @@ extern float genzaiti; //現在地
 //イニシャライズ
 void CObjMap::Init()
 {
-
+	m_x = 0;
+	m_y = 0;
 }
 
 //アクション

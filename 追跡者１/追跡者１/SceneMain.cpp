@@ -86,7 +86,7 @@ void CSceneMain::InitScene()
 
 	//ドアの効果音
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
-	float Volume1 = Audio::VolumeMaster(1.0f);
+	float Volume1 = Audio::Volume(1.0f,1);
 	//Audio::Start(1);
 
 	
@@ -95,8 +95,6 @@ void CSceneMain::InitScene()
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)
 	Draw::LoadImage(L"Hero2.png", 0, TEX_SIZE_512);
 	
-	//Draw::LoadImage(L"ブロック.png",1,TEX_SIZE_512);
-
 	//外部グラフィックファイルを読み込み2番目に登録(512*512pixel)
 	Draw::LoadImage(L"FloorEX.png", 2, TEX_SIZE_512);
 
