@@ -45,6 +45,7 @@ void CObjtest::Action()
 
 	if (Memoflag2 == true)
 	{
+		//メモ2を持ちながらクローゼットの中でQを押すとメモ3取得
 		if (Input::GetVKey('Q') == true)
 		{
 			Audio::Start(3);

@@ -46,9 +46,6 @@
     <Filter Include="ソース ファイル\GameClear">
       <UniqueIdentifier>{b25c3e49-e4ad-4226-8ea7-d951b70b2d84}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\新しいMenu">
-      <UniqueIdentifier>{807d0d64-45a7-4cdf-98df-9223869e248e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\item">
       <UniqueIdentifier>{d6044157-da1c-4c00-b0d1-7b8ffbf273e2}</UniqueIdentifier>
     </Filter>
@@ -63,6 +60,9 @@
     </Filter>
     <Filter Include="ソース ファイル\Main">
       <UniqueIdentifier>{4b1e66fe-d1a0-4007-973f-de8b8d5d27cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\新しいMenu">
+      <UniqueIdentifier>{807d0d64-45a7-4cdf-98df-9223869e248e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
