@@ -104,8 +104,10 @@ void CSceneMain::InitScene()
 	//外部グラフィックファイルを読み込み6番目に登録
 	Draw::LoadImage(L"Hari.png", 16, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み13番目に登録
 	Draw::LoadImage(L"ueki.png", 13, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み15番目に登録
 	Draw::LoadImage(L"kagus.png", 15, TEX_SIZE_512);
 
 	//外部グラフィックファイルを読み込み9番目に登録
