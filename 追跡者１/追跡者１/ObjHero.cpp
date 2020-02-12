@@ -521,7 +521,7 @@ void CObjHero::Draw()
 	RECT_F src;
 	RECT_F dst;
 
-	int Ani1[5] =         // 上用
+	int Ani1[5] =         //上用
 	{
 		0,2,4,2,0,
 	};
