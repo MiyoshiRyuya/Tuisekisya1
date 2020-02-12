@@ -13,10 +13,10 @@
 using namespace GameL;
 
 #include "GameHead.h"
-#include"SceneMap2.h"
+#include "SceneMap2.h"
 #include "SceneMain.h"
 #include "ObjFurniture.h"
-#include<time.h>
+#include <time.h>
 
 //コンストラクタ
 CSceneMap2::CSceneMap2()
@@ -43,12 +43,12 @@ void CSceneMap2::InitScene()
 
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
 	float Volume1 = Audio::Volume(1.0f,1);
-	//Audio::Start(1);
+	
 
 	//メモ2入手時のSE
 	Audio::LoadAudio(3, L"itemgetseb .wav", SOUND_TYPE::EFFECT);
 
-	//メモ2入手時のSE
+	//間違いのモノを取得したときのSE
 	Audio::LoadAudio(6, L"poison.wav", SOUND_TYPE::EFFECT);
 
 	//外部グラフィックファイルを読み込み0番目に登録(512*512pixel)

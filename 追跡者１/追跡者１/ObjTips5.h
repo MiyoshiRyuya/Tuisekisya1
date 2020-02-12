@@ -3,7 +3,7 @@
 
 using namespace GameL;
 
-//オブジェクト：家具
+//オブジェクト：惑星
 class CObjTips5 :public CObj
 {
 public:

@@ -215,11 +215,6 @@ void CObjHero::Action()
 			}
 		}
 
-		/*if (hitbo == 0) {
-			if (Input::GetVKey('A') == true || Input::GetVKey('D') == true) {
-				hitbo = 2;
-			}
-		}*/
 
 		if (Input::GetVKey('W') == true && Input::GetVKey('A') == true || Input::GetVKey('W') == true && Input::GetVKey('D') == true || Input::GetVKey('S') == true && Input::GetVKey('A') == true || Input::GetVKey('S') == true && Input::GetVKey('D') == true) {
 			m_py = g_Yz;

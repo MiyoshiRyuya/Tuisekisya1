@@ -10,13 +10,13 @@ enum OBJ_NAME
 	OBJ_STAGE,
 	OBJ_ENEMY,
 
-	//罠
+	//罠-------------------------------------------
 	OBJ_TRAP,
 
-	//アイテム
+	//アイテム-------------------------------------
 	OBJ_ITEM,
 
-	//家具
+	//家具-----------------------------------------
 	OBJ_FURNITURE,
 	OBJ_FURNITURE1,
 	OBJ_FURNITURE2,
@@ -69,7 +69,7 @@ enum OBJ_NAME
 	OBJ_S,
 
 	
-	//マップ
+	//マップ------------------------------------
 	OBJ_MAP,
 	OBJ_MAP2,
 	OBJ_MAP3,
@@ -78,22 +78,22 @@ enum OBJ_NAME
 	OBJ_MAP6,
 	OBJ_MAIN,
 
-	//マップ移動用
+	//マップ移動用------------------------------
 	OBJ_MOVE5,
 
-	//システム
+	//システム----------------------------------
 	OBJ_SOLVE,
 	OBJ_SOLVE2,
 	OBJ_CLOSET,
 	OBJ_TEST,
 
-	//タイトル系
+	//タイトル系--------------------------------
 	OBJ_TITLE,
 	OBJ_DESC,
 	OBJ_GAME_OVER,
 	OBJ_GAME_CLEAR,
 
-	//マップ移動用
+	//マップ移動用------------------------------
 	OBJ_MOVE1,//Map6→Map5
 	OBJ_MOVE2,//Map5→Map6
 	OBJ_MOVE3,//Map5→Map4
@@ -102,15 +102,15 @@ enum OBJ_NAME
 	OBJ_MOVE7,//Map2→Map5
 	OBJ_MOVE8,//Map3→Map2
 	OBJ_MOVE9,//Map2→Map3
-	OBJ_MOVE10,//Map2→Map1
+	OBJ_MOVE10,//Map2→Map1(Map1=Scenemain)
 	OBJ_MOVE11,//Map1→Map2
 	OBJ_MOVE12,
 	OBJ_MOVE13,
 
-	//出口
+	//出口----------------------------------
 	OBJ_ESC,
 
-	//メニュー
+	//メニュー------------------------------
 	OBJ_MENU2,
 };
 //------------------------------------------------
@@ -166,13 +166,13 @@ extern float genzaiti; //現在地
 #include "ObjEnemy.h"
 #include "ObjDesc.h"
 
-//罠
+//罠----------------------------------------------
 #include "Objtrap.h"
 
-//アイテム
+//アイテム----------------------------------------
 #include "ObjItem.h"
 
-//家具
+//家具--------------------------------------------
 #include "ObjFurniture.h"
 #include "ObjFurniture4.h"
 #include "ObjFurniture5.h"
@@ -219,12 +219,12 @@ extern float genzaiti; //現在地
 #include "Objs.h"
 #include"Objtest.h"
 
-//メニュー
+//メニュー-----------------------------------------
 #include "ObjMenu2.h"
 
 
 
-//マップ
+//マップ-------------------------------------------
 #include "ObjMap.h"
 #include "Map2.h"
 #include "Map3.h"

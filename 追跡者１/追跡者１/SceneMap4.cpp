@@ -138,8 +138,6 @@ void CSceneMap4::InitScene()
 	CObjHero*obj = new CObjHero();
 	Objs::InsertObj(obj, OBJ_HERO, 100);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
-	//CObjstage*objb = new CObjstage(map);
-	//Objs::InsertObj(objb, OBJ_STAGE, 9);
 
 	//敵オブジェクト
 	srand(time(NULL));

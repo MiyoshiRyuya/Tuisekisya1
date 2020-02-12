@@ -84,10 +84,12 @@ void CSceneMap6::InitScene()
 
 
 
+	//主人公オブジェクト作成
+	CObjHero*obj = new CObjHero();
+	//作った主人公オブジェクトをオブジェクトマネージャーに登録
+	Objs::InsertObj(obj, OBJ_HERO, 10);
 
-	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
-	Objs::InsertObj(obj, OBJ_HERO, 10);//作った主人公オブジェクトをオブジェクトマネージャーに登録
-
+	//アイテムオブジェクト作成
 	CObjItem*obji = new CObjItem(393, 300);
 	Objs::InsertObj(obji, OBJ_ITEM, 1);
 

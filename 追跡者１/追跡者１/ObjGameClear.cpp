@@ -68,7 +68,7 @@ void CObjGameClear::Draw()
 
 
 	Draw::Draw(10, &src, &dst, c, 0.0f);
-	//外部グラフィックファイルを読み込み0番目に登録
+	//外部グラフィックファイルを読み込み10番目に登録
 	Draw::LoadImage(L"GameClear.png", 10, TEX_SIZE_512);
 
 	Font::StrDraw(L"Press Enter", 360, 510, 24, c);

@@ -46,7 +46,7 @@ void CSceneMap::InitScene()
 	CObjHero*obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 1);//作った主人公オブジェクトをオブジェクトマネージャーに登録
 
-	//トラップオブジェクト
+	//トラップオブジェクト作成
 	CObjtrap*obj_trap = new CObjtrap();
 	Objs::InsertObj(obj_trap, OBJ_TRAP, 1);
 
@@ -56,7 +56,7 @@ void CSceneMap::InitScene()
 
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
 	float Volume1 = Audio::VolumeMaster(1.0f);
-	//Audio::Start(1);
+	
 
 
 	srand(time(NULL));

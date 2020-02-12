@@ -42,7 +42,6 @@ void CSceneMap5::InitScene()
 	//ドアの効果音
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
 	float Volume1 = Audio::Volume(0.0f,1);
-	//Audio::Start(1);
 	
 
 
@@ -59,21 +58,25 @@ void CSceneMap5::InitScene()
 	//外部グラフィックファイルを読み込み6番目に登録
 	Draw::LoadImage(L"Hari.png", 6, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み52番目に登録
 	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み2番目に登録
 	Draw::LoadImage(L"FloorEX.png", 2, TEX_SIZE_512);
 
 	//外部グラフィックファイルを読み込み5番目に登録
 	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み12番目に登録
 	Draw::LoadImage(L"石畳.png", 12, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み13番目に登録
 	Draw::LoadImage(L"石造.png", 13, TEX_SIZE_512);
 
-	//Draw::LoadImageW(L"階段.png", 14, TEX_SIZE_512);
-
+	//外部グラフィックファイルを読み込み11番目に登録
 	Draw::LoadImage(L"カーペット２.png", 11, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み9番目に登録
 	Draw::LoadImage(L"階段がある壁.png", 9, TEX_SIZE_512);
 
 	

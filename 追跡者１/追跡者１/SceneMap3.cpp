@@ -37,7 +37,7 @@ void CSceneMap3::InitScene()
 	Audio::LoadAudio(4, L"doa.wav", SOUND_TYPE::EFFECT);
 
 	//バックミュージックスタート
-	float Volume = Audio::Volume(-0.01f,0); //ボリュームを1下げる
+	float Volume = Audio::Volume(-0.01f,0); //ボリュームを0.01下げる
 	Audio::Start(0); //音楽スタート
 
 	float Volume2 = Audio::Volume(0.0f, 2); //ボリュームを下げない
@@ -67,24 +67,27 @@ void CSceneMap3::InitScene()
 	//外部グラフィックファイルを読み込み3番目に登録
 	Draw::LoadImage(L"Hari.png", 3, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み12番目に登録
 	Draw::LoadImage(L"ueki.png", 12, TEX_SIZE_512);
 
+	//外部グラフィックファイルを読み込み13番目に登録
 	Draw::LoadImage(L"bed.png", 13, TEX_SIZE_64);
 
+	//外部グラフィックファイルを読み込み14番目に登録
 	Draw::LoadImage(L"SofaandTable.png", 14, TEX_SIZE_64);
 
-	//トラップオブジェクト
+	//トラップオブジェクト作成
 	CObjtrap2*obj_trap2 = new CObjtrap2(500,0);
 	Objs::InsertObj(obj_trap2, OBJ_TRAP, 1);
 
 	CObjtrap2*obj_trap2a = new CObjtrap2(242, 520);
 	Objs::InsertObj(obj_trap2a, OBJ_TRAP, 1);
 
-	//トラップオブジェクト
+	//トラップオブジェクト作成
 	CObjtrap1*obj_trap1 = new CObjtrap1(70, 550);
 	Objs::InsertObj(obj_trap1, OBJ_TRAP, 1);
 
-	
+	//クローゼットオブジェクト作成
 	CObjCloset*obj_closet = new CObjCloset();
 	Objs::InsertObj(obj_closet, OBJ_CLOSET, 1); //ここが原因
 	
