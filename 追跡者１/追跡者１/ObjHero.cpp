@@ -407,7 +407,6 @@ void CObjHero::Action()
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE7) != nullptr)
 	{
-		if (Input::GetVKey(VK_RETURN) == true) {
 			//this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
@@ -416,7 +415,6 @@ void CObjHero::Action()
 			g_Yz = 46;
 
 			Scene::SetScene(new CSceneMap5()); //Map2→Map5
-		}
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE8) != nullptr)
 	{
