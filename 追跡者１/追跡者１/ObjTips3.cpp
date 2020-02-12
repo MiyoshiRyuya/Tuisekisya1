@@ -12,6 +12,8 @@ extern bool Memoflag1;
 extern bool Tipsflag;
 bool Textflag5 = false;
 
+extern float g_Xz;
+extern float g_Yz;
 
 void CObjTips3::Init()
 {
@@ -30,6 +32,8 @@ void CObjTips3::Action()
 	if (Textflag5 == true)
 	{
 		Sleep(1500);
+		g_Xz = 100;
+		g_Yz = 120;
 
 		Scene::SetScene(new CSceneGameOver());
 
