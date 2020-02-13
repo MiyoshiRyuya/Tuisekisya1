@@ -83,12 +83,13 @@ void CObjMap6::Draw()
 	//•`‰æ
 	Draw::Draw(9, &src, &dst, c, 0.0f);
 
-	//–{’I‰¡•À‚Ñ•`‰æ
 	//Ø‚èæ‚èˆÊ’u‚Ìİ’è
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
 	src.m_right = 50.0f;
 	src.m_bottom = 295.0f;
+
+	//–{’I‰¡•À‚Ñ•`‰æ
 	dst.m_top = 240.0f;
 	dst.m_left = 200.0f;
 	dst.m_right = 250.0f;
@@ -137,7 +138,7 @@ void CObjMap6::Draw()
 	//•`‰æ
 	Draw::Draw(11, &src, &dst, c, 0.0f);
 
-	//ˆÖq•`‰æ1
+	//ˆÖq•`‰æ1----------------------------------------
 	src.m_top = 0.0f;
 	src.m_left = 64.0f;
 	src.m_right = 0.0f;

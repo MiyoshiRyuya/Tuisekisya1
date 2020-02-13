@@ -128,7 +128,7 @@ void CObjMap5::Draw()
 	Draw::Draw(9, &src, &dst, c, 0.0f);
 
 
-	//ƒsƒAƒm	
+	//ƒsƒAƒm------------------------------------------------------
 	src.m_top = 0.0f;
 	src.m_left = 64.0f;
 	src.m_right = 128.0f;
@@ -149,7 +149,7 @@ void CObjMap5::Draw()
 	Draw::Draw(52, &src, &dst, c, 90.0f);
 
 	
-	//’Œ‚P
+	//’Œ‚P-----------------------------------------
 	src.m_top = 0.0f;
 	src.m_left = 190.0f;
 	src.m_right = 128.0f;
@@ -169,7 +169,7 @@ void CObjMap5::Draw()
 
 	Draw::Draw(52, &src, &dst, c, 0.0f);
 
-	//ãOŸ~
+	//ãOŸ~-----------------------------------------------
 	src.m_top = 0.0f;
 	src.m_left = 256.0f;
 	src.m_right = 192.0f;
@@ -203,7 +203,7 @@ void CObjMap5::Draw()
 	Draw::Draw(52, &src, &dst, c, 0.0f);
 
 
-	//–îˆó<<
+	//–îˆó<<----------------------------------------------------
 	src.m_top = 0.0f;
 	src.m_left = 64.0f;
 	src.m_right = 0.0f;

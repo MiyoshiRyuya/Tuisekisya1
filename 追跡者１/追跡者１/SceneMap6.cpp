@@ -31,17 +31,15 @@ void CSceneMap6::InitScene()
 {
 
 	//音楽情報の読み込み
-	Audio::LoadAudio(0, L"kamen-night.wav", SOUND_TYPE::BACK_MUSIC);
-
-
 	//バックミュージックスタート
-	float Volume = Audio::Volume(1.0f, 0); //ボリュームを下げない
-	Audio::Start(0); //音楽スタート
-	
-
+	Audio::LoadAudio(0, L"kamen-night.wav", SOUND_TYPE::BACK_MUSIC);
 	//ドアの効果音
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
+	Audio::Start(0); //音楽スタート
+
+	float Volume = Audio::Volume(1.0f, 0); //ボリュームを下げない
 	float Volume1 = Audio::Volume(1.0f,1);
+
 	//Audio::Start(1);
 
 	//メモ4入手時のSE
@@ -63,12 +61,6 @@ void CSceneMap6::InitScene()
 	//外部グラフィックファイルを読み込み9番目に登録
 	Draw::LoadImage(L"kabe1.png", 9, TEX_SIZE_512);
 
-	//外部グラフィックファイルを読み込み50番目に登録
-	Draw::LoadImage(L"Chair.png", 50, TEX_SIZE_64);
-
-	//外部グラフィックファイルを読み込み52番目に登録
-	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
-
 	//外部グラフィックファイルを読み込み10番目に登録
 	Draw::LoadImageW(L"本棚横並び.png", 10, TEX_SIZE_512);
 
@@ -78,9 +70,17 @@ void CSceneMap6::InitScene()
 	//外部グラフィックファイルを読み込み12番目に登録
 	Draw::LoadImageW(L"十字架.png", 12, TEX_SIZE_64);
 
-
 	//謎解きメモ
 	Draw::LoadImage(L"Text4.png", 30, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み50番目に登録
+	Draw::LoadImage(L"Chair.png", 50, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み52番目に登録
+	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
+
+
+
 
 
 

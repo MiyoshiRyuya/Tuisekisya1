@@ -37,7 +37,6 @@ void CObjTips5::Action()
 		Scene::SetScene(new CSceneGameOver());
 
 		this->SetStatus(false);   //自身に削除命令を出す。
-		//Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
 	}
 
 	if (hit->CheckElementHit(ELEMENT_PLAYER) == true)

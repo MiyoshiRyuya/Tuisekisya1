@@ -269,7 +269,6 @@ void CObjHero::Action()
 	{
 
 		if (Input::GetVKey(VK_RETURN) == true) {
-			//this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
 			Audio::Start(4);
@@ -283,36 +282,13 @@ void CObjHero::Action()
 
 	}
 
-	//Eボタンを押すとゲーム画面に移動する
+	//Mボタンを押すとメニュー画面に移動する
 	if (Input::GetVKey('M') == true)
 	{
-		//Scene::SetScene(new CSceneMenu2());
 		CObjMenu2*obj_menu = new CObjMenu2();
 		Objs::InsertObj(obj_menu, OBJ_MENU2, 1);
 	}
 
-		if (hit->CheckObjNameHit(OBJ_MAP2) != nullptr)
-		{
-			this->SetStatus(false);
-			Hits::DeleteHitBox(this);
-
-			g_Xz = 70;
-			g_Yz = 70;
-
-			Scene::SetScene(new CSceneMap2());
-		}
-	
-
-	if (hit->CheckObjNameHit(OBJ_MAIN) != nullptr)
-	{
-		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
-
-		g_Xz = 70;
-		g_Yz = 70;
-
-		Scene::SetScene(new CSceneMain());
-	}
 	//謎解き
 	
 	if (hit->CheckElementHit(ELEMENT_MYS) == true)
@@ -347,7 +323,6 @@ void CObjHero::Action()
 		if (solveflag= true)
 		{
 			if (Input::GetVKey(VK_RETURN) == true) {
-				//this->SetStatus(false);
 				Hits::DeleteHitBox(this);
 
 				Audio::Start(1);
@@ -364,7 +339,6 @@ void CObjHero::Action()
 	else if (hit->CheckObjNameHit(OBJ_MOVE3) != nullptr)
 	{
 		if (Input::GetVKey(VK_RETURN) == true) {
-			//this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
 			Audio::Start(1);
@@ -390,7 +364,6 @@ void CObjHero::Action()
 	else if (hit->CheckObjNameHit(OBJ_MOVE4) != nullptr)
 	{
 		if (Input::GetVKey(VK_RETURN) == true) {
-			//this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
 			Audio::Start(1);
@@ -402,7 +375,6 @@ void CObjHero::Action()
 	}
 	else if (hit->CheckObjNameHit(OBJ_MOVE7) != nullptr)
 	{
-			//this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
 			Audio::Start(1);
@@ -414,7 +386,6 @@ void CObjHero::Action()
 	else if (hit->CheckObjNameHit(OBJ_MOVE8) != nullptr)
 	{
 		if (Input::GetVKey(VK_RETURN) == true) {
-			//this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 
 			Audio::Start(1);
@@ -427,7 +398,6 @@ void CObjHero::Action()
 	else if (hit->CheckObjNameHit(OBJ_MOVE9) != nullptr)
 	{
 		if (Input::GetVKey(VK_RETURN) == true) {
-		//this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
 		Audio::Start(1);
@@ -441,7 +411,6 @@ void CObjHero::Action()
 	{
 		if (Input::GetVKey(VK_RETURN) == true) 
 		{
-		//this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
 		Audio::Start(1);
@@ -455,7 +424,6 @@ void CObjHero::Action()
 	{
 	if (Input::GetVKey(VK_RETURN) == true)
 	 {
-		//this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
 		Audio::Start(1);

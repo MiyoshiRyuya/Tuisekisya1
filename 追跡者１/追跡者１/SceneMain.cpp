@@ -100,8 +100,11 @@ void CSceneMain::InitScene()
 	//外部グラフィックファイルを読み込み5番目に登録
 	Draw::LoadImage(L"Enemy1.png", 5, TEX_SIZE_64);
 
-	//外部グラフィックファイルを読み込み6番目に登録
-	Draw::LoadImage(L"Hari.png", 16, TEX_SIZE_64);
+	//外部グラフィックファイルを読み込み9番目に登録
+	Draw::LoadImage(L"SofaandTable.png", 9, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み10番目に登録
+	Draw::LoadImage(L"BlackMirror.png", 10, TEX_SIZE_64);
 
 	//外部グラフィックファイルを読み込み13番目に登録
 	Draw::LoadImage(L"ueki.png", 13, TEX_SIZE_512);
@@ -109,12 +112,8 @@ void CSceneMain::InitScene()
 	//外部グラフィックファイルを読み込み15番目に登録
 	Draw::LoadImage(L"kagus.png", 15, TEX_SIZE_512);
 
-	//外部グラフィックファイルを読み込み9番目に登録
-	Draw::LoadImage(L"SofaandTable.png", 9, TEX_SIZE_64);
-
-	//外部グラフィックファイルを読み込み10番目に登録
-	Draw::LoadImage(L"BlackMirror.png", 10, TEX_SIZE_64);
-
+	//外部グラフィックファイルを読み込み6番目に登録
+	Draw::LoadImage(L"Hari.png", 16, TEX_SIZE_64);
 
 
 	//家具オブジェクト4作成

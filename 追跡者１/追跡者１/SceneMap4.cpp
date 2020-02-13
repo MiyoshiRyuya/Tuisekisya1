@@ -77,9 +77,6 @@ void CSceneMap4::InitScene()
 	//外部グラフィックファイルを読み込み11番目に登録
 	Draw::LoadImage(L"SC-Candle.png", 11, TEX_SIZE_64);
 
-	//外部グラフィックファイルを読み込み
-	Draw::LoadImage(L"光.png", 30, TEX_SIZE_64);
-
 	//外部グラフィックファイルを読み込み12番目に登録
 	Draw::LoadImage(L"KitChen1.png", 12, TEX_SIZE_64);
 
@@ -125,14 +122,19 @@ void CSceneMap4::InitScene()
 	//外部グラフィックファイルを読み込み26番目に登録
 	Draw::LoadImage(L"Knife1.png", 26, TEX_SIZE_64);
 
-	//外部グラフィックファイルを読み込み50番に登録（謎解きヒント
-	Draw::LoadImage(L"Tips.png", 50, TEX_SIZE_64);
+	//外部グラフィックファイルを読み込み
+	Draw::LoadImage(L"光.png", 30, TEX_SIZE_64);
+
+	//謎解きメモ
+	Draw::LoadImage(L"Text1.png", 35, TEX_SIZE_64);
 
 	//外部グラフィックファイルを読み込み49番に登録（謎解きヒント
 	Draw::LoadImage(L"Tips.png", 49, TEX_SIZE_64);
 
-	//謎解きメモ
-	Draw::LoadImage(L"Text1.png", 35, TEX_SIZE_64);
+	//外部グラフィックファイルを読み込み50番に登録（謎解きヒント
+	Draw::LoadImage(L"Tips.png", 50, TEX_SIZE_64);
+
+
 
 	//主人公オブジェクト作成
 	CObjHero*obj = new CObjHero();

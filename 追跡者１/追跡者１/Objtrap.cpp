@@ -67,6 +67,10 @@ void CObjtrap::Draw()
 
 }
 
+
+
+
+
 //コンストラクタ
 CObjtrap1::CObjtrap1(float x, float y)
 {
@@ -122,6 +126,11 @@ void CObjtrap1::Draw()
 
 }
 
+
+
+
+
+
 //コンストラクタ
 CObjtrap2::CObjtrap2(float x, float y)
 {
@@ -176,6 +185,12 @@ void CObjtrap2::Draw()
 	Draw::Draw(3, &src, &dst, c, 180.0f);
 
 }
+
+
+
+
+
+
 
 //コンストラクタ
 CObjtrap3::CObjtrap3(float x, float y)

@@ -14,10 +14,6 @@ using namespace GameL;
 //イニシャライズ
 void CObjGameClear::Init()
 {
-	m_mou_x = 0.0f;
-	m_mou_y = 0.0f;
-	m_mou_r = false;
-	m_mou_l = false;
 	flag = false;
 	time = 0;
 }

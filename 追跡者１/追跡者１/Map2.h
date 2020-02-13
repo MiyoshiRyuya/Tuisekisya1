@@ -4,7 +4,7 @@
 //使用するネームスペース
 using namespace GameL;
 
-//オブジェクト：ブロック＆背景
+//オブジェクト
 class CObjMap2 : public CObj
 {
 public:
@@ -15,7 +15,7 @@ public:
 	void Draw();
 
 private:
-	float x;
+	float x;//Map5移動
 	float y;
 	float m_x;//椅子
 	float m_y;

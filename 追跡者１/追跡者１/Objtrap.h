@@ -22,6 +22,10 @@ private:
 
 };
 
+
+
+
+
 //オブジェクト：トラップ1
 class CObjtrap1 :public CObj
 {
@@ -42,6 +46,10 @@ private:
 
 };
 
+
+
+
+
 //オブジェクト：トラップ2
 class CObjtrap2 :public CObj
 {
@@ -61,6 +69,9 @@ private:
 	float vy;
 
 };
+
+
+
 
 //オブジェクト：トラップ3
 class CObjtrap3 :public CObj

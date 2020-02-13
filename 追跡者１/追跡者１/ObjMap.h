@@ -4,7 +4,7 @@
 //使用するネームスペース
 using namespace GameL;
 
-//オブジェクト：ブロック＆背景
+//オブジェクト：背景
 class CObjMap : public CObj
 {
 public:

@@ -116,7 +116,7 @@ void CObjMap3::Draw()
 		Draw::Draw(11, &src, &dst, c, 0.0f);
 
 
-		//オブジェクトbed
+		//オブジェクトbed-----------------------------------------
 		//切り取り位置の設定
 		src.m_top = 0.0f;
 		src.m_left = 90.0f;
@@ -144,7 +144,7 @@ void CObjMap3::Draw()
 		//描画
 		Draw::Draw(13, &src, &dst, c, 180.0f);
 
-		//カーペット
+		//カーペット----------------------------------------
 		src.m_top = 0.0f;
 		src.m_left = 320.0f;
 		src.m_right = 385.0f;
@@ -164,6 +164,7 @@ void CObjMap3::Draw()
 
 		Draw::Draw(12, &src, &dst, c, 0.0f);
 
+		//机とソファ---------------------------------------------------
 		src.m_top = 0.0f;
 		src.m_left = 128.0f;
 		src.m_right = 0.0f;

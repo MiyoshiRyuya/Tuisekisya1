@@ -36,14 +36,12 @@ void CSceneTitle::InitScene()
 
 	//音楽情報の読み込み
 	Audio::LoadAudio(0, L"TitleBGM.wav", SOUND_TYPE::BACK_MUSIC);
+	Audio::LoadAudio(1, L"menyu.wav", SOUND_TYPE::EFFECT);
 
 	//バックミュージックスタート
 	float Volume = Audio::VolumeMaster(-0.0f); //マスターボリュームを下げない
 	Audio::Start(0); //音楽スタート
 
-	Audio::LoadAudio(1, L"menyu.wav", SOUND_TYPE::EFFECT);
-
-		
 
 }
 //ゲームメイン実行中メソッド

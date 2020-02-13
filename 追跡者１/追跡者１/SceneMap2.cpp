@@ -38,7 +38,7 @@ void CSceneMap2::InitScene()
 	//バックミュージックスタート
 	float Volume2 = Audio::Volume(0.0f, 2); //ボリュームを下げない
 
-	float Volume = Audio::Volume(0.0f,0); //マスターボリュームを下げない
+	float Volume = Audio::Volume(0.0f,0); //ボリュームを下げない
 	Audio::Start(0); //音楽スタート
 
 	Audio::LoadAudio(1, L"doa.wav", SOUND_TYPE::EFFECT);
@@ -63,29 +63,20 @@ void CSceneMap2::InitScene()
 	//外部グラフィックファイルを読み込み9番目に登録
 	Draw::LoadImage(L"kabe1.png", 9, TEX_SIZE_512);
 
-	//外部グラフィックファイルを読み込み31番目に登録
-	Draw::LoadImage(L"Earth.png", 31, TEX_SIZE_512);
-
-	//外部グラフィックファイルを読み込み36番目に登録
-	Draw::LoadImage(L"Jupiter.png", 36, TEX_SIZE_512);
-
-	//外部グラフィックファイルを読み込み34番目に登録
-	Draw::LoadImage(L"Skysomething.png", 34, TEX_SIZE_512);
+	//外部グラフィックファイルを読み込み15番目に登録
+	Draw::LoadImage(L"kagus.png", 15, TEX_SIZE_512);
 
 	//外部グラフィックファイルを読み込み29番目に登録
 	Draw::LoadImage(L"Unknown.png", 29, TEX_SIZE_512);
 
-	//外部グラフィックファイルを読み込み50番目に登録
-	Draw::LoadImage(L"Chair.png", 50, TEX_SIZE_64);
+	//外部グラフィックファイルを読み込み31番目に登録
+	Draw::LoadImage(L"Earth.png", 31, TEX_SIZE_512);
 
-	//外部グラフィックファイルを読み込み51番目に登録
-	Draw::LoadImage(L"desk.png", 51, TEX_SIZE_64);
+	//外部グラフィックファイルを読み込み34番目に登録
+	Draw::LoadImage(L"Skysomething.png", 34, TEX_SIZE_512);
 
-	//外部グラフィックファイルを読み込み15番目に登録
-	Draw::LoadImage(L"kagus.png", 15, TEX_SIZE_512);
-
-	//外部グラフィックファイルを読み込み52番目に登録
-	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
+	//外部グラフィックファイルを読み込み36番目に登録
+	Draw::LoadImage(L"Jupiter.png", 36, TEX_SIZE_512);
 
 	//謎解きメモ
 	Draw::LoadImage(L"Text2.png", 40, TEX_SIZE_64);
@@ -98,6 +89,17 @@ void CSceneMap2::InitScene()
 
 	//謎解きメモ(Poison)
 	Draw::LoadImage(L"Text6.png", 43, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み50番目に登録
+	Draw::LoadImage(L"Chair.png", 50, TEX_SIZE_64);
+
+	//外部グラフィックファイルを読み込み51番目に登録
+	Draw::LoadImage(L"desk.png", 51, TEX_SIZE_64);
+
+
+	//外部グラフィックファイルを読み込み52番目に登録
+	Draw::LoadImage(L"ueki.png", 52, TEX_SIZE_512);
+
 
 
 	//主人公オブジェクト作成

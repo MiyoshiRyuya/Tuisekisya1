@@ -77,7 +77,7 @@ void CObjMap2::Draw()
 
 	RECT_F src;
 	RECT_F dst;
-	//椅子描画1
+	//椅子描画1----------------------------------------
 	src.m_top = 0.0f;
 	src.m_left = 64.0f;
 	src.m_right = 0.0f;
@@ -140,7 +140,7 @@ void CObjMap2::Draw()
 
 	Draw::Draw(50, &src, &dst, c, 270.0f);
 
-	//机描画
+	//机描画-------------------------------------------------
 	dst.m_top = 0.0f + ay;
 	dst.m_left = 64.0f + ax;
 	dst.m_right = 0.0f + ax;
@@ -178,7 +178,7 @@ void CObjMap2::Draw()
 	Draw::Draw(51, &src, &dst, c, 0.0f);
 
 	
-	//植木描画1
+	//植木描画1---------------------------------------------------------------
 	dst.m_top = 0.0f + ky - 30;
 	dst.m_left = 64.0f + 200;
 	dst.m_right = 0.0f + 200;
@@ -221,7 +221,7 @@ void CObjMap2::Draw()
 
 
 
-	//ろうそく
+	//ろうそく--------------------------------------------------
 	src.m_top = 0.0f;
 	src.m_left = 320.0f;
 	src.m_right = 256.0f;
@@ -259,7 +259,7 @@ void CObjMap2::Draw()
 
 
 
-	//カーペット
+	//カーペット----------------------------------------------------
 	src.m_top = 0.0f;
 	src.m_left = 320.0f;
 	src.m_right = 385.0f;
@@ -278,6 +278,4 @@ void CObjMap2::Draw()
 	dst.m_bottom = 85.0f + 250;
 
 	Draw::Draw(52, &src, &dst, c, 0.0f);
-
-
 }
