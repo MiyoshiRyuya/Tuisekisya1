@@ -40,7 +40,7 @@ void CObjtest::Action()
 	{
 		Sleep(1500);
 		this->SetStatus(false);   //自身に削除命令を出す。
-		//Hits::DeleteHitBox(this);//主人公機が所有するHitBoxに削除する。
+		
 	}
 
 	if (Memoflag2 == true)
