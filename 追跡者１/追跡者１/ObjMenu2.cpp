@@ -101,7 +101,6 @@ void CObjMenu2::Action()
 				}
 				else if (Input::GetVKey(VK_RETURN) == true)
 				{
-					//Audio::Start(3);
 					oto = 0;
 					if (genzaiti == 1)
 						Scene::SetScene(new CSceneMain());
@@ -228,7 +227,7 @@ void CObjMenu2::Action()
 				else if (Input::GetVKey(VK_RETURN) == true)
 				{
 					Audio::Start(3);
-					//GameOver = 0;
+				
 					Cross = 2;
 					time = 0;
 				}
@@ -251,7 +250,7 @@ void CObjMenu2::Action()
 				else if (Input::GetVKey(VK_RETURN) == true)
 				{
 					Audio::Start(3);
-					//GameOver = 0;
+					
 					Cross = 3;
 					time = 0;
 				}
@@ -274,7 +273,7 @@ void CObjMenu2::Action()
 				else if (Input::GetVKey(VK_RETURN) == true)
 				{
 					Audio::Start(3);
-					//GameOver = 0;
+			
 					Cross = 4;
 					time = 0;
 				}
@@ -294,7 +293,7 @@ void CObjMenu2::Action()
 				else if (Input::GetVKey(VK_RETURN) == true)
 				{
 					Audio::Start(3);
-					//GameOver = 0;
+					
 					Cross = 1;
 					time = 0;
 				}
@@ -303,7 +302,7 @@ void CObjMenu2::Action()
 		else if (Cross != 0) {
 			if (Input::GetVKey(VK_RETURN) == true) {
 				Audio::Start(1);
-				//GameOver = 0;
+				
 				Cross = 0;
 				time = 0;
 			}

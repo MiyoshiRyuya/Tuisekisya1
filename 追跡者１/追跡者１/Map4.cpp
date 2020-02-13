@@ -41,7 +41,7 @@ void CObjMap4::Init()
 //アクション
 void CObjMap4::Action()
 {
-
+	//メニュー画面からゲーム画面に戻った時、勝手に位置が初期化されないようにする
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x + 10, m_y + 10);
 	

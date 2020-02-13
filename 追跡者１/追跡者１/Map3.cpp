@@ -45,10 +45,13 @@ void CObjMap3::Init()
 //アクション
 void CObjMap3::Action()
 {
+	//メニュー画面からゲーム画面に戻った時、勝手に位置が初期化されないようにする
 	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x + 10, m_y + 10);
 
 	genzaiti = 3;
+
+
 	CHitBox*hit1 = Hits::GetHitBox(this);
 	hit->SetPos(mx+10 , my + 10);
 
